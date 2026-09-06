@@ -1,0 +1,55 @@
+{
+  "created_at": "2026-07-09T16:17:57.803776Z",
+  "display_name": "Seedance 2.0",
+  "id": "bdb3f081-1969-417f-a863-98693f81c4d8",
+  "job_type": "seedance_2_0",
+  "min_result_url": null,
+  "params": {
+    "aspect_ratio": "1:1",
+    "bitrate_mode": "standard",
+    "duration": 4,
+    "generate_audio": false,
+    "genre": "auto",
+    "height": 720,
+    "medias": [
+      {
+        "data": {
+          "id": "c7bd79f6-6c40-4d74-9ad8-636ffa877e34",
+          "type": "media_input",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/c7bd79f6-6c40-4d74-9ad8-636ffa877e34.png"
+        },
+        "role": "start_image"
+      },
+      {
+        "data": {
+          "id": "ad789cb9-f697-498c-92b7-b9b5f81b061d",
+          "type": "media_input",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/ad789cb9-f697-498c-92b7-b9b5f81b061d.png"
+        },
+        "role": "image"
+      },
+      {
+        "data": {
+          "id": "158b855b-32c0-4ec7-bb1d-ccb4bc068ac9",
+          "type": "media_input",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/158b855b-32c0-4ec7-bb1d-ccb4bc068ac9.png"
+        },
+        "role": "image"
+      }
+    ],
+    "mode": "std",
+    "model": "seedance_2_0",
+    "multi_prompt": [],
+    "multi_shot_mode": "custom",
+    "multi_shots": false,
+    "prompt": "Frontier Ledger illustrated game sprite reference. Use the exact referenced Baron: an enormous warm stage-outlaw boss, oxblood greatcoat, brass buttons, gold waistcoat, tall black hat, curled waxed mustache, broad heavy build, warm never grim. The playing card is tucked in the LEFT side of his hatband, so in this RIGHT profile view the card faces away from the camera and is NOT visible. Do not show a playing card, paper, badge, letter, or white rectangle on the near side of the hat. Full body RIGHT profile view, facing screen-right, walking steadily in place against a plain flat sand-colored background. Constant centered framing, locked footline and fixed scale, feet on a fixed ground line, no vertical drift, no camera motion, no zoom, no turn, no extra characters, no text or letters, no realistic firearms, no gore. Seamless 4-second loop with one clean readable gait cycle; keep proportions, silhouette, clothing, colors, linework, coat mass, mustache, and hidden hat-card side consistent frame to frame.",
+    "prompt_language": "en",
+    "reference_elements": [],
+    "resolution": "720p",
+    "speedramp": "auto",
+    "width": 720
+  },
+  "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/hf_20260709_161757_bdb3f081-1969-417f-a863-98693f81c4d8.mp4",
+  "status": "completed",
+  "thumbnail_url": "https://cdn.higgsfield.ai/user_3GAXxSRY94iz6800xAb2RitN2C7/hf_20260709_161757_bdb3f081-1969-417f-a863-98693f81c4d8_thumbnail.webp"
+}

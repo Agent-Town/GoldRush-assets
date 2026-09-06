@@ -1,0 +1,29 @@
+{
+  "created_at": "2026-07-10T09:26:02.498636Z",
+  "display_name": "GPT Image 2",
+  "id": "fd37dec9-fe73-4f90-aefa-0a3b28cfc0b2",
+  "job_type": "gpt_image_2",
+  "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/hf_20260710_092602_fd37dec9-fe73-4f90-aefa-0a3b28cfc0b2_min.webp",
+  "params": {
+    "aspect_ratio": "1:1",
+    "height": 2048,
+    "medias": [
+      {
+        "data": {
+          "id": "d97a05c7-77cb-4384-8522-4bb570059527",
+          "type": "media_input",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/d97a05c7-77cb-4384-8522-4bb570059527.png"
+        },
+        "role": "image"
+      }
+    ],
+    "model": "videotape-alpha",
+    "prompt": "Frontier Ledger illustrated game sprite reference. Use the exact referenced lighter build bandit thief, claim-jumper family poncho and hat, quick-step satchel thief, slim boots, small brass teal frontier-tech charm, no firearm. Pinned asymmetry: small loot satchel hangs on his LEFT hip; short pry hook and rope loop sit on his RIGHT belt; no guns or cartridge belts anywhere. RIGHT profile view, facing screen-right. Full body mid-stride walk pose, centered single figure, full body visible head to boots, plain flat sand-colored background, fixed ground line, readable silhouette. Keep the same clothing, colors, linework, proportions, and side-specific details as the reference turnaround. No mirroring, no letters, no numbers, no text, no logo, no watermark, no extra characters, no realistic firearms, no gore.",
+    "quality": "high",
+    "reference_elements": [],
+    "resolution": "2k",
+    "width": 2048
+  },
+  "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/hf_20260710_092602_fd37dec9-fe73-4f90-aefa-0a3b28cfc0b2.png",
+  "status": "completed"
+}

@@ -1,0 +1,62 @@
+{
+  "sheet": "assets/raw/char-baron-sheet-walk8.png",
+  "sheetSize": "3400x1700",
+  "cell": "425x425",
+  "alphaBad": 0,
+  "selected": {
+    "down": 1,
+    "left": 1,
+    "right": 2,
+    "up": 1
+  },
+  "rows": [
+    {
+      "dir": "down",
+      "take": 1,
+      "cell": "425x425",
+      "scale": 0.4941,
+      "widthMin": 513,
+      "widthMax": 583,
+      "heightMin": 782,
+      "heightMax": 792,
+      "heightDriftPx": 10,
+      "heightDriftPct": 1.3
+    },
+    {
+      "dir": "left",
+      "take": 1,
+      "cell": "425x425",
+      "scale": 0.4941,
+      "widthMin": 378,
+      "widthMax": 471,
+      "heightMin": 762,
+      "heightMax": 776,
+      "heightDriftPx": 14,
+      "heightDriftPct": 1.8
+    },
+    {
+      "dir": "right",
+      "take": 2,
+      "cell": "425x425",
+      "scale": 0.4941,
+      "widthMin": 462,
+      "widthMax": 588,
+      "heightMin": 831,
+      "heightMax": 844,
+      "heightDriftPx": 13,
+      "heightDriftPct": 1.5
+    },
+    {
+      "dir": "up",
+      "take": 1,
+      "cell": "425x425",
+      "scale": 0.4941,
+      "widthMin": 455,
+      "widthMax": 466,
+      "heightMin": 757,
+      "heightMax": 765,
+      "heightDriftPx": 8,
+      "heightDriftPct": 1
+    }
+  ]
+}

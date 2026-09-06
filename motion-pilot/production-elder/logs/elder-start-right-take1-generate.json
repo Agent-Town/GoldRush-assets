@@ -1,0 +1,45 @@
+{
+  "created_at": "2026-07-09T18:16:09.639801Z",
+  "display_name": "GPT Image 2",
+  "id": "b85fddf6-d3c6-4a7c-b167-6427ce69c845",
+  "job_type": "gpt_image_2",
+  "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/hf_20260709_181609_b85fddf6-d3c6-4a7c-b167-6427ce69c845_min.webp",
+  "params": {
+    "aspect_ratio": "1:1",
+    "height": 2048,
+    "medias": [
+      {
+        "data": {
+          "id": "3999ff0f-32fa-4069-9aa0-21ba4d002cc1",
+          "type": "media_input",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/3999ff0f-32fa-4069-9aa0-21ba4d002cc1.png"
+        },
+        "role": "image"
+      },
+      {
+        "data": {
+          "id": "ddb32ae9-551c-42a3-846a-bcd3deec9bfa",
+          "type": "media_input",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/ddb32ae9-551c-42a3-846a-bcd3deec9bfa.png"
+        },
+        "role": "image"
+      },
+      {
+        "data": {
+          "id": "50f6314f-ddef-401c-bea9-c55250467d8d",
+          "type": "media_input",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/50f6314f-ddef-401c-bea9-c55250467d8d.png"
+        },
+        "role": "image"
+      }
+    ],
+    "model": "videotape-alpha",
+    "prompt": "Frontier Ledger illustrated game sprite reference. Use the exact referenced elder: kind frail older frontier man, white beard, weathered hat, layered coat and fringed striped shawl, small teal pendant centered on his vest, pipe in his right hand. Pipe belongs in his RIGHT hand when visible; teal pendant stays centered on the vest; striped shawl fringe remains over both shoulders. RIGHT profile facing screen-right: right-hand pipe is far-side/mostly hidden; pendant is edge-on; no side swap. Full body RIGHT profile view, mid-stride walk pose, centered single figure, full body visible head to boots, plain flat sand-colored background, fixed ground line, readable silhouette. Keep the same clothing, colors, linework, proportions, and side-specific details as the reference images. No mirroring, no letters, no numbers, no text, no logo, no watermark, no extra characters, no realistic firearms, no gore.",
+    "quality": "high",
+    "reference_elements": [],
+    "resolution": "2k",
+    "width": 2048
+  },
+  "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/hf_20260709_181609_b85fddf6-d3c6-4a7c-b167-6427ce69c845.png",
+  "status": "completed"
+}

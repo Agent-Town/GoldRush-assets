@@ -1,0 +1,50 @@
+[
+  {
+    "dir": "down",
+    "selectedTake": 3,
+    "scale": 0.3863,
+    "widthMin": 362,
+    "widthMax": 378,
+    "heightMin": 817,
+    "heightMax": 822,
+    "heightDriftPx": 5,
+    "heightDriftPct": 0.6,
+    "qa": "Pass criteria: storekeeper glasses/mustache/pencil, left pocket tools viewer-right, centered front gait."
+  },
+  {
+    "dir": "left",
+    "selectedTake": 2,
+    "scale": 0.3863,
+    "widthMin": 259,
+    "widthMax": 373,
+    "heightMin": 801,
+    "heightMax": 815,
+    "heightDriftPx": 14,
+    "heightDriftPct": 1.7,
+    "qa": "Pass criteria: true left profile, far-side pencil/tools hidden, no side swap."
+  },
+  {
+    "dir": "right",
+    "selectedTake": 2,
+    "scale": 0.3863,
+    "widthMin": 217,
+    "widthMax": 446,
+    "heightMin": 835,
+    "heightMax": 849,
+    "heightDriftPx": 14,
+    "heightDriftPct": 1.6,
+    "qa": "Pass criteria: true right profile with pencil/pocket tools visible, tidy shopkeeper silhouette."
+  },
+  {
+    "dir": "up",
+    "selectedTake": 3,
+    "scale": 0.3863,
+    "widthMin": 306,
+    "widthMax": 311,
+    "heightMin": 780,
+    "heightMax": 788,
+    "heightDriftPx": 8,
+    "heightDriftPct": 1,
+    "qa": "Pass criteria: true back view, apron straps read, no front-face turn."
+  }
+]

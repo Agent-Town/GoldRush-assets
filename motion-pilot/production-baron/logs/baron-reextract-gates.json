@@ -1,0 +1,68 @@
+{
+  "generatedAt": "2026-07-10T00:00:00Z",
+  "method": "rembg-isolated-/tmp",
+  "sheet": "assets/raw/char-baron-sheet-walk8.png",
+  "evidenceSheet": "assets/motion-pilot/production-baron/char-baron-sheet-walk8.png",
+  "ownerContact": "assets/motion-pilot/production-baron/contact-sheets/baron-reextract-owner-contact.png",
+  "cell": "425x425",
+  "grid": "8x4",
+  "selected": {
+    "down": 1,
+    "left": 1,
+    "right": 2,
+    "up": 1
+  },
+  "rows": [
+    {
+      "dir": "down",
+      "selectedTake": 1,
+      "scale": 0.5092,
+      "widthMin": 486,
+      "widthMax": 556,
+      "heightMin": 754,
+      "heightMax": 766,
+      "heightDriftPx": 12,
+      "heightDriftPct": 1.6
+    },
+    {
+      "dir": "left",
+      "selectedTake": 1,
+      "scale": 0.5092,
+      "widthMin": 387,
+      "widthMax": 488,
+      "heightMin": 764,
+      "heightMax": 782,
+      "heightDriftPx": 18,
+      "heightDriftPct": 2.3
+    },
+    {
+      "dir": "right",
+      "selectedTake": 2,
+      "scale": 0.5092,
+      "widthMin": 424,
+      "widthMax": 541,
+      "heightMin": 802,
+      "heightMax": 819,
+      "heightDriftPx": 17,
+      "heightDriftPct": 2.1
+    },
+    {
+      "dir": "up",
+      "selectedTake": 1,
+      "scale": 0.5092,
+      "widthMin": 458,
+      "widthMax": 469,
+      "heightMin": 760,
+      "heightMax": 770,
+      "heightDriftPx": 10,
+      "heightDriftPct": 1.3
+    }
+  ],
+  "gates": {
+    "alphaBad": 0,
+    "nearMagentaInterior": 0,
+    "enclosedTransparentRegions": 0,
+    "enclosedBackgroundBlobs": 0,
+    "cellGeometry": "3400x1700"
+  }
+}

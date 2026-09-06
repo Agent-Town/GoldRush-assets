@@ -1,0 +1,55 @@
+{
+  "created_at": "2026-07-09T18:35:47.942653Z",
+  "display_name": "Seedance 2.0",
+  "id": "83b74d1e-7523-4a08-bc5e-deccce9ffd5e",
+  "job_type": "seedance_2_0",
+  "min_result_url": null,
+  "params": {
+    "aspect_ratio": "1:1",
+    "bitrate_mode": "standard",
+    "duration": 4,
+    "generate_audio": false,
+    "genre": "auto",
+    "height": 720,
+    "medias": [
+      {
+        "data": {
+          "id": "64fecfb8-def0-4933-981a-9b28531f2804",
+          "type": "media_input",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/64fecfb8-def0-4933-981a-9b28531f2804.png"
+        },
+        "role": "start_image"
+      },
+      {
+        "data": {
+          "id": "6e1d1de8-bd71-4ed4-9038-951c8eb5dc94",
+          "type": "media_input",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/6e1d1de8-bd71-4ed4-9038-951c8eb5dc94.png"
+        },
+        "role": "image"
+      },
+      {
+        "data": {
+          "id": "ab8015b2-9104-4041-ad16-d753e748ed0a",
+          "type": "media_input",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/ab8015b2-9104-4041-ad16-d753e748ed0a.png"
+        },
+        "role": "image"
+      }
+    ],
+    "mode": "std",
+    "model": "seedance_2_0",
+    "multi_prompt": [],
+    "multi_shot_mode": "custom",
+    "multi_shots": false,
+    "prompt": "Frontier Ledger illustrated game sprite reference. Use the exact referenced elder: kind frail older frontier man, white beard, weathered hat, layered coat and fringed striped shawl, small teal pendant centered on his vest, pipe in his right hand. Pipe belongs in his RIGHT hand when visible; teal pendant stays centered on the vest; striped shawl fringe remains over both shoulders. UP/back view walking away: no face visible, shawl back fringe and coat silhouette hold; pipe may be hidden on his right side. Full body UP back/away view, walking steadily in place against a plain flat sand-colored background. aged but readable small-step walk, frail and kind, not slow-motion, stable footline Constant centered framing, locked footline and fixed scale, feet on a fixed ground line, no vertical drift, no camera motion, no zoom, no turn, no mirroring, no extra characters, no text or letters, no realistic firearms, no gore. Seamless 4-second loop with one clean readable gait cycle; keep proportions, silhouette, clothing, colors, linework, and pinned side details consistent frame to frame.",
+    "prompt_language": "en",
+    "reference_elements": [],
+    "resolution": "720p",
+    "speedramp": "auto",
+    "width": 720
+  },
+  "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/hf_20260709_183547_83b74d1e-7523-4a08-bc5e-deccce9ffd5e.mp4",
+  "status": "completed",
+  "thumbnail_url": "https://cdn.higgsfield.ai/user_3GAXxSRY94iz6800xAb2RitN2C7/hf_20260709_183547_83b74d1e-7523-4a08-bc5e-deccce9ffd5e_thumbnail.webp"
+}

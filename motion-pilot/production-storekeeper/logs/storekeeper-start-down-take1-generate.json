@@ -1,0 +1,45 @@
+{
+  "created_at": "2026-07-09T17:32:02.418779Z",
+  "display_name": "GPT Image 2",
+  "id": "38fff783-54b2-4070-9c71-d5867f3a1677",
+  "job_type": "gpt_image_2",
+  "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/hf_20260709_173202_38fff783-54b2-4070-9c71-d5867f3a1677_min.webp",
+  "params": {
+    "aspect_ratio": "1:1",
+    "height": 2048,
+    "medias": [
+      {
+        "data": {
+          "id": "2099cf2f-4666-459a-9acc-28ae71e442af",
+          "type": "media_input",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/2099cf2f-4666-459a-9acc-28ae71e442af_resize.jpg"
+        },
+        "role": "image"
+      },
+      {
+        "data": {
+          "id": "51b351bd-0285-4799-91c7-61d6d3ea9b25",
+          "type": "media_input",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/51b351bd-0285-4799-91c7-61d6d3ea9b25.png"
+        },
+        "role": "image"
+      },
+      {
+        "data": {
+          "id": "1fc8bb05-7ea8-4eae-8414-91ab2e748064",
+          "type": "media_input",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/1fc8bb05-7ea8-4eae-8414-91ab2e748064.png"
+        },
+        "role": "image"
+      }
+    ],
+    "model": "videotape-alpha",
+    "prompt": "Frontier Ledger illustrated game sprite reference. Use the exact referenced storekeeper: tidy middle-aged shopkeeper, round spectacles, small curled mustache, side-parted dark hair, pencil tucked behind his left ear, cream rolled-sleeve shirt, rust-brown vest, brown work apron, notebook slips and small vial in apron pocket. Pencil is tucked behind his LEFT ear; notebook slips and small vial sit in the LEFT apron pocket; screen-right profiles show these details, screen-left profiles hide them far-side. DOWN/front view: pencil behind his left ear appears on viewer-right; notebook slips and vial stay in the left apron pocket on viewer-right. Full body DOWN front view, mid-stride walk pose, centered single figure, full body visible head to boots, plain flat sand-colored background, fixed ground line, readable silhouette. Keep the same clothing, colors, linework, proportions, and side-specific details as the reference images. No mirroring, no letters, no numbers, no text, no logo, no watermark, no extra characters, no realistic firearms, no gore.",
+    "quality": "high",
+    "reference_elements": [],
+    "resolution": "2k",
+    "width": 2048
+  },
+  "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/hf_20260709_173202_38fff783-54b2-4070-9c71-d5867f3a1677.png",
+  "status": "completed"
+}

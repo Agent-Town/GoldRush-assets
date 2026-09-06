@@ -1,0 +1,39 @@
+[
+  {
+    "created_at": "2026-07-09T15:34:55.780836Z",
+    "display_name": "GPT Image 2",
+    "id": "2c916932-1f36-47a8-81cd-f2aea0a06946",
+    "job_type": "gpt_image_2",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/hf_20260709_153455_2c916932-1f36-47a8-81cd-f2aea0a06946_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [
+        {
+          "data": {
+            "id": "547ff085-6a11-4d00-b8c8-e44946c7a3e7",
+            "type": "media_input",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/547ff085-6a11-4d00-b8c8-e44946c7a3e7.png"
+          },
+          "role": "image"
+        },
+        {
+          "data": {
+            "id": "443144ae-c06a-4e22-9643-4ec46c513ae9",
+            "type": "media_input",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/443144ae-c06a-4e22-9643-4ec46c513ae9.png"
+          },
+          "role": "image"
+        }
+      ],
+      "model": "videotape-alpha",
+      "prompt": "Frontier Ledger illustrated game sprite reference. Use the exact referenced hero from both turnaround sheets: one young WOMAN miner, female, slight build, braided hair under her brimmed hat, tan frontier coat, satchel on her LEFT hip, small teal chest lantern. PAN HAND = RIGHT: LEFT profile facing screen-left shows her LEFT side and left-hip satchel clearly on the near side; the brass pan is on her RIGHT far side, mostly hidden behind her body -- NOT visible in her near hand and NOT re-gripped. Full body LEFT profile view, mid-stride walk pose facing screen-left, centered single figure, full body visible head to boots, plain flat sand-colored background, fixed ground line, readable silhouette, same clothing, colors, linework, and proportions as the references. Do not mirror the character. No letters, no numbers, no text, no logo, no watermark, no extra characters, no realistic firearms, no gore.",
+      "quality": "high",
+      "reference_elements": [],
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/hf_20260709_153455_2c916932-1f36-47a8-81cd-f2aea0a06946.png",
+    "status": "completed"
+  }
+]

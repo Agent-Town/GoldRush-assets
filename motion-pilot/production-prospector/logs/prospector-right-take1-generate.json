@@ -1,0 +1,47 @@
+{
+  "created_at": "2026-07-09T09:14:16.107456Z",
+  "display_name": "Seedance 2.0",
+  "id": "c0bd0015-b45b-48b2-be16-55df33df9c08",
+  "job_type": "seedance_2_0",
+  "min_result_url": null,
+  "params": {
+    "aspect_ratio": "1:1",
+    "bitrate_mode": "standard",
+    "duration": 4,
+    "generate_audio": true,
+    "genre": "auto",
+    "height": 720,
+    "medias": [
+      {
+        "data": {
+          "id": "a6cc2b21-41b2-4835-97b9-ca1385b199ae",
+          "type": "media_input",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/a6cc2b21-41b2-4835-97b9-ca1385b199ae.png"
+        },
+        "role": "start_image"
+      },
+      {
+        "data": {
+          "id": "845f0df2-80d6-47c4-8422-27d6de48d151",
+          "type": "media_input",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/845f0df2-80d6-47c4-8422-27d6de48d151.png"
+        },
+        "role": "image"
+      }
+    ],
+    "mode": "std",
+    "model": "seedance_2_0",
+    "multi_prompt": [],
+    "multi_shot_mode": "custom",
+    "multi_shots": false,
+    "prompt": "Frontier Ledger illustrated game sprite reference. Use the exact referenced agent: a small round brass automaton with riveted plates, a glowing teal core, and a soft hover-jet glow beneath — no legs, it floats. Full body right profile view, drifting toward the right, hovering steadily in place against a plain flat sand-colored background with a gentle rhythmic vertical bob and a soft jet flicker. Constant centered framing, locked altitude band and fixed scale, no drift, no camera motion, no zoom, no turn, no extra characters, no text or letters, no firearms, no gore. Seamless 4-second loop with one clean readable bob cycle; keep proportions, silhouette, materials, colors, and linework consistent frame to frame.",
+    "prompt_language": "en",
+    "reference_elements": [],
+    "resolution": "720p",
+    "speedramp": "auto",
+    "width": 720
+  },
+  "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/hf_20260709_091416_c0bd0015-b45b-48b2-be16-55df33df9c08.mp4",
+  "status": "completed",
+  "thumbnail_url": "https://cdn.higgsfield.ai/user_3GAXxSRY94iz6800xAb2RitN2C7/hf_20260709_091416_c0bd0015-b45b-48b2-be16-55df33df9c08_thumbnail.webp"
+}

@@ -1,0 +1,68 @@
+{
+  "generatedAt": "2026-07-10T00:00:00Z",
+  "method": "rembg-isolated-/tmp",
+  "sheet": "assets/raw/char-storekeeper-sheet-walk8.png",
+  "evidenceSheet": "assets/motion-pilot/production-storekeeper/char-storekeeper-sheet-walk8.png",
+  "ownerContact": "assets/motion-pilot/production-storekeeper/contact-sheets/storekeeper-reextract-owner-contact.png",
+  "cell": "280x340",
+  "grid": "8x4",
+  "selected": {
+    "down": 3,
+    "left": 2,
+    "right": 2,
+    "up": 3
+  },
+  "rows": [
+    {
+      "dir": "down",
+      "selectedTake": 3,
+      "scale": 0.3796,
+      "widthMin": 370,
+      "widthMax": 384,
+      "heightMin": 822,
+      "heightMax": 830,
+      "heightDriftPx": 8,
+      "heightDriftPct": 1.0
+    },
+    {
+      "dir": "left",
+      "selectedTake": 2,
+      "scale": 0.3796,
+      "widthMin": 262,
+      "widthMax": 378,
+      "heightMin": 806,
+      "heightMax": 822,
+      "heightDriftPx": 16,
+      "heightDriftPct": 1.9
+    },
+    {
+      "dir": "right",
+      "selectedTake": 2,
+      "scale": 0.3796,
+      "widthMin": 217,
+      "widthMax": 448,
+      "heightMin": 840,
+      "heightMax": 851,
+      "heightDriftPx": 11,
+      "heightDriftPct": 1.3
+    },
+    {
+      "dir": "up",
+      "selectedTake": 3,
+      "scale": 0.3796,
+      "widthMin": 312,
+      "widthMax": 316,
+      "heightMin": 786,
+      "heightMax": 792,
+      "heightDriftPx": 6,
+      "heightDriftPct": 0.8
+    }
+  ],
+  "gates": {
+    "alphaBad": 0,
+    "nearMagentaInterior": 0,
+    "enclosedTransparentRegions": 0,
+    "enclosedBackgroundBlobs": 0,
+    "cellGeometry": "2240x1360"
+  }
+}
