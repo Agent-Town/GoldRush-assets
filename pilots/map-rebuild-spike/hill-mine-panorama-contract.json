@@ -1,0 +1,90 @@
+{
+  "asset": "hill-mine-panorama.glb",
+  "map": "hill-mine",
+  "renderOnly": true,
+  "style": "engraved Epoch 2 steamworks county kit-plate horizon; warm valley against a darker fevered rim",
+  "signature": "scarred mine terraces beneath broken high-country ridges and a smoke-dim rim",
+  "exposure": {
+    "mode": "bakedIntoAtlas",
+    "linearMultiplier": 0.45
+  },
+  "lawVersion": "PANORAMA LAW v2",
+  "namedCorrections": {
+    "paintedWall": "sunk sky ring behind an irregular closer ridge belt with a dusty haze transition",
+    "ceiling": "engraving density grades from dense horizon to near-plain parchment zenith",
+    "echo": "asymmetric cloud and dust edits plus independent near/far ridge profiles break mirrored repetition"
+  },
+  "projection": {
+    "skyRingRadiusMeters": 190.0,
+    "ridgeFootRadiusMeters": 161.5,
+    "ridgeOccluderRadiusMeters": 174.0,
+    "ridgeFootRadiusRangeMeters": [
+      159.8,
+      163.2
+    ],
+    "ridgeOccluderRadiusRangeMeters": [
+      172.3,
+      175.7
+    ],
+    "skyBottomMeters": -10.0,
+    "skyTopMeters": 130.0,
+    "ridgeTopFormulaMeters": "5.0 + silhouetteFraction * 55.0"
+  },
+  "mount": {
+    "id": "hill-mine-panorama",
+    "asset": "hill-mine-panorama.glb",
+    "position": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "rotation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "renderOnly": true,
+    "ownership": "separate mounted scenery; never terrain or gameplay bounds"
+  },
+  "nonInterference": {
+    "playfieldBounds": "unchanged",
+    "spawnEdges": "unchanged",
+    "fogGating": "unchanged",
+    "waterBuildSpawnMasks": "unchanged"
+  },
+  "meshCount": 1,
+  "primitiveCount": 1,
+  "materialCount": 1,
+  "vertices": 1351,
+  "triangles": 1920,
+  "triangleBudget": 4000,
+  "texture": {
+    "count": 1,
+    "width": 2048,
+    "height": 2048,
+    "embedded": true
+  },
+  "sourceArt": [
+    "assets/processed/kit-era-2.png",
+    "assets/raw/plate-contract-hill-mine.png"
+  ],
+  "files": {
+    "blend": {
+      "bytes": 424200,
+      "sha256": "a2f199e564b6a79e6b5fff04d292900f4359750c601599178e0d96164a593a67"
+    },
+    "glb": {
+      "bytes": 481404,
+      "sha256": "1d53018afbefd96e05d1d0f026a7aef419917ea0ffad148134025135a7f1c1fe"
+    },
+    "atlas": {
+      "bytes": 331265,
+      "sha256": "a6c70905ca2e35c613bd673b6a54ea989170ec3ed97430b186be9ba3940b66e2"
+    }
+  }
+}

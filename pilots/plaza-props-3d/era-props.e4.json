@@ -1,0 +1,41 @@
+{
+  "epoch": 4,
+  "atlas": "era-props-e4-atlas.png",
+  "props": [
+    {
+      "id": "e4-fuel-rack-west",
+      "glb": "fuel-rack.e4.glb",
+      "position": { "x": -11, "z": 0 },
+      "rotation": 3.22,
+      "scale": 1.2
+    },
+    {
+      "id": "e4-road-marker-southeast",
+      "glb": "road-marker.e4.glb",
+      "position": { "x": 9, "z": -14 },
+      "rotation": 2.94,
+      "scale": 1.5
+    },
+    {
+      "id": "e4-road-marker-east",
+      "glb": "road-marker.e4.glb",
+      "position": { "x": 11, "z": 0 },
+      "rotation": 3.34,
+      "scale": 1
+    },
+    {
+      "id": "e4-filling-shed-southwest",
+      "glb": "filling-shed.e4.glb",
+      "position": { "x": -9, "z": -14 },
+      "rotation": 3.24,
+      "scale": 1.2
+    },
+    {
+      "id": "e4-motor-roadway",
+      "glb": "motor-roadway.e4.glb",
+      "position": { "x": 0, "z": 0 },
+      "rotation": 0,
+      "scale": 1
+    }
+  ]
+}

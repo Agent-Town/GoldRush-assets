@@ -1,0 +1,248 @@
+{
+  "map": "blackout-ridge",
+  "era": 3,
+  "referenceBase": "e91dc835a7a8f0e873dfee1c236e67860173eeb3",
+  "sourceLadder": [
+    "reuse",
+    "derive",
+    "build-new"
+  ],
+  "atlas": {
+    "asset": "landmarks/blackout-ridge/blackout-ridge-landmarks-atlas.png",
+    "width": 1024,
+    "height": 1024,
+    "sharedByEveryAsset": true,
+    "sha256": "8ba525bd84d042a7b54e434d8560d91d0be27a0aecf99a2fe5b85a946be9a3c5"
+  },
+  "blend": {
+    "asset": "landmarks/blackout-ridge/blackout-ridge-landmarks.blend",
+    "sha256": "059b909c08c51936cbf175bc4b6a1ad677a3da87a6dc997d12d295bb1d0daa31"
+  },
+  "assets": {
+    "off-map-current-receiver": {
+      "asset": "landmarks/blackout-ridge/off-map-current-receiver.glb",
+      "sourceTier": "derive",
+      "sources": [
+        "assets/pilots/plaza-props-3d/wire-run.e3.glb",
+        "assets/pilots/plaza-props-3d/insulator-post.e3.glb",
+        "assets/raw/plate-e3-bld-pylon-set.png"
+      ],
+      "terrainConformed": false,
+      "triangles": 1316,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -4.1,
+          -2.4,
+          0.0
+        ],
+        "max": [
+          4.1,
+          2.4,
+          10.25
+        ]
+      },
+      "sha256": "1009de1daa4bdafd1cefca6de82724df42d7b0700ecb1331e7e55971ae845c0e",
+      "footprint": {"kind":"rect","w":5.904,"d":3.456}
+    },
+    "trunk-line-breaker-shelter": {
+      "asset": "landmarks/blackout-ridge/trunk-line-breaker-shelter.glb",
+      "sourceTier": "reuse",
+      "sources": [
+        "assets/pilots/plaza-props-3d/transformer-shed.e3.glb",
+        "assets/pilots/plaza-props-3d/insulator-post.e3.glb"
+      ],
+      "terrainConformed": false,
+      "triangles": 1456,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -3.4,
+          -2.6,
+          0.0
+        ],
+        "max": [
+          3.4,
+          2.6,
+          7.1
+        ]
+      },
+      "sha256": "969cb3e0579c50dca659248c2001390d2560475fcf5f4023148cfe3c881d58cc",
+      "footprint": {"kind":"rect","w":4.896,"d":3.744}
+    },
+    "breath-bank-service-rack": {
+      "asset": "landmarks/blackout-ridge/breath-bank-service-rack.glb",
+      "sourceTier": "reuse",
+      "sources": [
+        "assets/pilots/plaza-props-3d/wire-run.e3.glb",
+        "assets/raw/plate-e3-bld-arc-lamp.png"
+      ],
+      "terrainConformed": false,
+      "triangles": 1044,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -4.3,
+          -2.4,
+          0.0
+        ],
+        "max": [
+          4.3,
+          2.4,
+          4.25
+        ]
+      },
+      "sha256": "c03bbab275da0502e427952ac6541b8104a081a4cf348e94e17c2bf128b56d76",
+      "footprint": {"kind":"rect","w":6.192,"d":3.456}
+    },
+    "ridge-switch-house": {
+      "asset": "landmarks/blackout-ridge/ridge-switch-house.glb",
+      "sourceTier": "derive",
+      "sources": [
+        "assets/pilots/plaza-props-3d/transformer-shed.e3.glb",
+        "assets/raw/plate-e3-bld-arc-lamp.png"
+      ],
+      "terrainConformed": false,
+      "triangles": 856,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -3.7,
+          -2.9,
+          0.0
+        ],
+        "max": [
+          3.7,
+          2.9,
+          7.4
+        ]
+      },
+      "sha256": "07d221d21e062210ddfc55288a73f1ecf1880da10c31d83a6ecd0a0feff689d0",
+      "footprint": {"kind":"rect","w":5.328,"d":4.176}
+    },
+    "blackout-watch-lamp": {
+      "asset": "landmarks/blackout-ridge/blackout-watch-lamp.glb",
+      "sourceTier": "reuse",
+      "sources": [
+        "assets/pilots/run3d/sentry-beacon.glb",
+        "assets/pilots/plaza-props-3d/insulator-post.e3.glb"
+      ],
+      "terrainConformed": false,
+      "triangles": 956,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -1.9,
+          -1.9,
+          0.0
+        ],
+        "max": [
+          1.9,
+          1.9,
+          8.92
+        ]
+      },
+      "sha256": "8cc781f2c9b8b3e6c40a14a2966620b3deba6cffc5541915881af699281438bb",
+      "footprint": {"kind":"radius","radius":1.368}
+    }
+  },
+  "mounts": [
+    {
+      "id": "off-map-current-receiver",
+      "position": [
+        -36.0,
+        0.0,
+        -44.0
+      ],
+      "rotation": [
+        0.0,
+        0.16,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/blackout-ridge/off-map-current-receiver.glb"
+    },
+    {
+      "id": "trunk-line-breaker-shelter",
+      "position": [
+        -36.0,
+        0.0,
+        -18.0
+      ],
+      "rotation": [
+        0.0,
+        0.22,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/blackout-ridge/trunk-line-breaker-shelter.glb"
+    },
+    {
+      "id": "breath-bank-service-rack",
+      "position": [
+        32.0,
+        0.0,
+        4.0
+      ],
+      "rotation": [
+        0.0,
+        -0.16,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/blackout-ridge/breath-bank-service-rack.glb"
+    },
+    {
+      "id": "ridge-switch-house",
+      "position": [
+        36.0,
+        0.0,
+        28.0
+      ],
+      "rotation": [
+        0.0,
+        -0.18,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/blackout-ridge/ridge-switch-house.glb"
+    },
+    {
+      "id": "blackout-watch-lamp",
+      "position": [
+        0.0,
+        0.0,
+        44.0
+      ],
+      "rotation": [
+        0.0,
+        3.1416,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/blackout-ridge/blackout-watch-lamp.glb"
+    }
+  ],
+  "simulation": "none; terrain, collision, movement, placement, water, spawns, and fog remain unchanged",
+  "mountInterlock": "resolved-3d-d"
+}

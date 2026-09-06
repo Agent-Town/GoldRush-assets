@@ -1,0 +1,1119 @@
+{
+  "law": "reuse > derive > build-new; era-stamped; grit-dressed",
+  "packs": {
+    "archive-world": {
+      "archive-entry-gate": {
+        "sourceTier": "derive",
+        "sources": [
+          "assets/pilots/map-rebuild-spike/landmarks/ember-shore/center-vein-bridge-school.glb",
+          "assets/raw/plate-e10-worlds.png"
+        ],
+        "asset": "landmarks/archive-world/archive-entry-gate.glb"
+      },
+      "west-stack-ruin": {
+        "sourceTier": "reuse",
+        "sources": [
+          "assets/pilots/map-rebuild-spike/landmarks/ember-shore/shore-preserve-rack.glb",
+          "assets/raw/plate-e10-worlds.png"
+        ],
+        "asset": "landmarks/archive-world/west-stack-ruin.glb"
+      },
+      "east-stack-ruin": {
+        "sourceTier": "derive",
+        "sources": [
+          "assets/pilots/map-rebuild-spike/landmarks/ember-shore/shore-preserve-rack.glb",
+          "assets/raw/plate-e10-worlds.png"
+        ],
+        "asset": "landmarks/archive-world/east-stack-ruin.glb"
+      },
+      "warning-shelf-ruin": {
+        "sourceTier": "reuse",
+        "sources": [
+          "assets/pilots/map-rebuild-spike/landmarks/ember-shore/cooled-titan-shelf.glb",
+          "assets/raw/plate-e10-worlds.png"
+        ],
+        "asset": "landmarks/archive-world/warning-shelf-ruin.glb"
+      },
+      "ours-unless-marker": {
+        "sourceTier": "derive",
+        "sources": [
+          "assets/raw/plate-e10-worlds.png",
+          "assets/raw/plate-e10-charter-press-hall.png"
+        ],
+        "asset": "landmarks/archive-world/ours-unless-marker.glb"
+      }
+    },
+    "baron": {
+      "fortified_far_bank": {
+        "sourceTier": "reuse",
+        "sources": [
+          "assets/pilots/run3d/palisade.glb"
+        ],
+        "asset": "landmarks/baron/fortified_far_bank.glb"
+      },
+      "seized_headframe": {
+        "sourceTier": "build-new",
+        "sources": [
+          "assets/raw/plate-contract-baron.png"
+        ],
+        "asset": "landmarks/baron/seized_headframe.glb"
+      },
+      "rocket_cart": {
+        "sourceTier": "reuse",
+        "sources": [
+          "assets/pilots/railcar-3d/railcar.glb"
+        ],
+        "asset": "landmarks/baron/rocket_cart.glb"
+      },
+      "siege_line": {
+        "sourceTier": "reuse",
+        "sources": [
+          "assets/pilots/run3d/palisade.glb"
+        ],
+        "asset": "landmarks/baron/siege_line.glb"
+      },
+      "oxblood_banners": {
+        "sourceTier": "build-new",
+        "sources": [
+          "assets/raw/plate-contract-baron.png"
+        ],
+        "asset": "landmarks/baron/oxblood_banners.glb"
+      }
+    },
+    "boneyard": {
+      "flivver-row-west-a": {
+        "sourceTier": "derive",
+        "sources": [
+          "assets/pilots/plaza-props-3d/covered_wagon.e4.glb",
+          "assets/raw/plate-e4-enemy-motorgang.png"
+        ],
+        "asset": "landmarks/boneyard/flivver-row-west-a.glb"
+      },
+      "flivver-row-west-b": {
+        "sourceTier": "derive",
+        "sources": [
+          "assets/pilots/plaza-props-3d/covered_wagon.e4.glb",
+          "assets/raw/plate-e4-enemy-motorgang.png"
+        ],
+        "asset": "landmarks/boneyard/flivver-row-west-b.glb"
+      },
+      "flivver-row-west-c": {
+        "sourceTier": "derive",
+        "sources": [
+          "assets/pilots/plaza-props-3d/covered_wagon.e4.glb",
+          "assets/raw/plate-e4-enemy-motorgang.png"
+        ],
+        "asset": "landmarks/boneyard/flivver-row-west-c.glb"
+      },
+      "spent-boiler-west": {
+        "sourceTier": "reuse",
+        "sources": [
+          "assets/pilots/run3d/boiler-house.glb",
+          "assets/raw/plate-e4-bld-set.png"
+        ],
+        "asset": "landmarks/boneyard/spent-boiler-west.glb"
+      },
+      "spent-boiler-east": {
+        "sourceTier": "reuse",
+        "sources": [
+          "assets/pilots/run3d/boiler-house.glb",
+          "assets/raw/plate-e4-bld-set.png"
+        ],
+        "asset": "landmarks/boneyard/spent-boiler-east.glb"
+      },
+      "flivver-row-east-a": {
+        "sourceTier": "derive",
+        "sources": [
+          "assets/pilots/plaza-props-3d/covered_wagon.e4.glb",
+          "assets/raw/plate-e4-enemy-motorgang.png"
+        ],
+        "asset": "landmarks/boneyard/flivver-row-east-a.glb"
+      },
+      "flivver-row-east-b": {
+        "sourceTier": "derive",
+        "sources": [
+          "assets/pilots/plaza-props-3d/covered_wagon.e4.glb",
+          "assets/raw/plate-e4-enemy-motorgang.png"
+        ],
+        "asset": "landmarks/boneyard/flivver-row-east-b.glb"
+      },
+      "flivver-row-east-c": {
+        "sourceTier": "derive",
+        "sources": [
+          "assets/pilots/plaza-props-3d/covered_wagon.e4.glb",
+          "assets/raw/plate-e4-enemy-motorgang.png"
+        ],
+        "asset": "landmarks/boneyard/flivver-row-east-c.glb"
+      },
+      "hauler-bed-north-a": {
+        "sourceTier": "derive",
+        "sources": [
+          "assets/pilots/plaza-props-3d/covered_wagon.e4.glb",
+          "assets/raw/boss-land-yacht.png"
+        ],
+        "asset": "landmarks/boneyard/hauler-bed-north-a.glb"
+      },
+      "hauler-bed-north-b": {
+        "sourceTier": "derive",
+        "sources": [
+          "assets/pilots/plaza-props-3d/covered_wagon.e4.glb",
+          "assets/raw/boss-land-yacht-damage.png"
+        ],
+        "asset": "landmarks/boneyard/hauler-bed-north-b.glb"
+      },
+      "half-buried-sleeper": {
+        "sourceTier": "derive",
+        "sources": [
+          "assets/raw/boss-land-yacht-damage.png",
+          "assets/raw/plate-e4-bld-set.png"
+        ],
+        "asset": "landmarks/boneyard/half-buried-sleeper.glb"
+      },
+      "unmarked-wagon": {
+        "sourceTier": "reuse",
+        "sources": [
+          "assets/pilots/plaza-props-3d/covered_wagon.e4.glb",
+          "assets/raw/plate-e4-bld-set.png"
+        ],
+        "asset": "landmarks/boneyard/unmarked-wagon.glb"
+      }
+    },
+    "devils-alley": {
+      "south-anchor-gate": {
+        "sourceTier": "derive",
+        "sources": [
+          "assets/pilots/map-rebuild-spike/landmarks/dome-basin/canal-gate-works.glb",
+          "assets/raw/plate-e9-enemy-dust-devil.png"
+        ],
+        "asset": "landmarks/devils-alley/south-anchor-gate.glb"
+      },
+      "west-wind-anchor": {
+        "sourceTier": "reuse",
+        "sources": [
+          "assets/pilots/map-rebuild-spike/landmarks/dome-basin/dust-devil-warning-mast.glb",
+          "assets/raw/plate-e9-enemy-dust-devil.png"
+        ],
+        "asset": "landmarks/devils-alley/west-wind-anchor.glb"
+      },
+      "center-wind-anchor": {
+        "sourceTier": "derive",
+        "sources": [
+          "assets/pilots/map-rebuild-spike/landmarks/dome-basin/dust-devil-warning-mast.glb",
+          "assets/raw/plate-e9-enemy-dust-devil.png"
+        ],
+        "asset": "landmarks/devils-alley/center-wind-anchor.glb"
+      },
+      "east-wind-anchor": {
+        "sourceTier": "derive",
+        "sources": [
+          "assets/pilots/map-rebuild-spike/landmarks/dome-basin/dust-devil-warning-mast.glb",
+          "assets/raw/plate-e9-enemy-dust-devil.png"
+        ],
+        "asset": "landmarks/devils-alley/east-wind-anchor.glb"
+      },
+      "north-anchor-gate": {
+        "sourceTier": "derive",
+        "sources": [
+          "assets/pilots/map-rebuild-spike/landmarks/dome-basin/canal-gate-works.glb",
+          "assets/raw/plate-e9-enemy-dust-devil.png"
+        ],
+        "asset": "landmarks/devils-alley/north-anchor-gate.glb"
+      }
+    },
+    "dome-basin": {
+      "canal-gate-works": {
+        "sourceTier": "reuse",
+        "sources": [
+          "assets/pilots/plaza-props-3d/canal-segment-dry.e9.glb",
+          "assets/raw/plate-e9-bld-canal-works.png"
+        ],
+        "asset": "landmarks/dome-basin/canal-gate-works.glb"
+      },
+      "ice-quarry-hoist": {
+        "sourceTier": "reuse",
+        "sources": [
+          "assets/pilots/plaza-props-3d/ice-blocks.e9.glb",
+          "assets/raw/plate-e9-bld-canal-works.png"
+        ],
+        "asset": "landmarks/dome-basin/ice-quarry-hoist.glb"
+      },
+      "seed-row-weather-station": {
+        "sourceTier": "reuse",
+        "sources": [
+          "assets/pilots/plaza-props-3d/survey-cairn.e9.glb",
+          "assets/raw/plate-e9-bld-canal-works.png"
+        ],
+        "asset": "landmarks/dome-basin/seed-row-weather-station.glb"
+      },
+      "ark-yard-scaffold": {
+        "sourceTier": "reuse",
+        "sources": [
+          "assets/pilots/plaza-props-3d/ark-scaffold-stage-2.e9.glb",
+          "assets/raw/plate-e9-bld-canal-works.png"
+        ],
+        "asset": "landmarks/dome-basin/ark-yard-scaffold.glb"
+      },
+      "dust-devil-warning-mast": {
+        "sourceTier": "derive",
+        "sources": [
+          "assets/raw/plate-e9-enemy-dust-devil.png",
+          "assets/processed/kit-era-9.png"
+        ],
+        "asset": "landmarks/dome-basin/dust-devil-warning-mast.glb"
+      }
+    },
+    "dry-gulch": {
+      "ruined_mining_operation": {
+        "sourceTier": "derive",
+        "sources": [
+          "assets/pilots/stamp-mill-3d/stamp-mill.glb",
+          "assets/processed/bld-stamp-mill.png"
+        ],
+        "asset": "landmarks/dry-gulch/ruined_mining_operation.glb"
+      },
+      "abandoned_farmhouse": {
+        "sourceTier": "derive",
+        "sources": [
+          "assets/pilots/claim-office-3d/claim-office.glb",
+          "assets/processed/bld-claim-office.png"
+        ],
+        "asset": "landmarks/dry-gulch/abandoned_farmhouse.glb"
+      },
+      "cactus_thicket": {
+        "sourceTier": "build-new",
+        "sources": [
+          "assets/raw/plate-contract-dry-gulch.png"
+        ],
+        "asset": "landmarks/dry-gulch/cactus_thicket.glb"
+      },
+      "bison_skeleton": {
+        "sourceTier": "build-new",
+        "sources": [
+          "assets/raw/plate-contract-dry-gulch.png"
+        ],
+        "asset": "landmarks/dry-gulch/bison_skeleton.glb"
+      },
+      "isolated_spring": {
+        "sourceTier": "build-new",
+        "sources": [
+          "assets/raw/plate-contract-dry-gulch.png"
+        ],
+        "asset": "landmarks/dry-gulch/isolated_spring.glb"
+      }
+    },
+    "dust-flats": {
+      "north-railhead-storm-tower": {
+        "sourceTier": "derive",
+        "sources": [
+          "assets/raw/bld-watchtower.png",
+          "assets/pilots/plaza-props-3d/road-marker.e4.glb"
+        ],
+        "asset": "landmarks/dust-flats/north-railhead-storm-tower.glb"
+      },
+      "west-road-wrecker-shed": {
+        "sourceTier": "reuse",
+        "sources": [
+          "assets/pilots/plaza-props-3d/filling-shed.e4.glb",
+          "assets/pilots/plaza-props-3d/water_trough.e4.glb"
+        ],
+        "asset": "landmarks/dust-flats/west-road-wrecker-shed.glb"
+      },
+      "east-horizon-fuel-reserve": {
+        "sourceTier": "reuse",
+        "sources": [
+          "assets/pilots/plaza-props-3d/fuel-rack.e4.glb",
+          "assets/pilots/plaza-props-3d/water_trough.e4.glb"
+        ],
+        "asset": "landmarks/dust-flats/east-horizon-fuel-reserve.glb"
+      },
+      "south-grade-charting-post": {
+        "sourceTier": "derive",
+        "sources": [
+          "assets/raw/bld-grader-post.png",
+          "assets/pilots/plaza-props-3d/motor-roadway.e4.glb"
+        ],
+        "asset": "landmarks/dust-flats/south-grade-charting-post.glb"
+      },
+      "dry-wash-recovery-gantry": {
+        "sourceTier": "reuse",
+        "sources": [
+          "assets/pilots/plaza-props-3d/road-marker.e4.glb",
+          "assets/pilots/plaza-props-3d/motor-roadway.e4.glb",
+          "assets/pilots/plaza-props-3d/water_trough.e4.glb"
+        ],
+        "asset": "landmarks/dust-flats/dry-wash-recovery-gantry.glb"
+      }
+    },
+    "eclipse": {
+      "eclipse-shadow-dial": {
+        "sourceTier": "derive",
+        "sources": [
+          "assets/raw/plate-e8-bld-set.png",
+          "assets/processed/kit-era-8.png"
+        ],
+        "asset": "landmarks/eclipse/eclipse-shadow-dial.glb"
+      },
+      "west-rim-solar-witness": {
+        "sourceTier": "derive",
+        "sources": [
+          "assets/raw/plate-e8-bld-set.png",
+          "assets/processed/kit-era-8.png"
+        ],
+        "asset": "landmarks/eclipse/west-rim-solar-witness.glb"
+      },
+      "east-rim-solar-witness": {
+        "sourceTier": "derive",
+        "sources": [
+          "assets/raw/plate-e8-bld-set.png",
+          "assets/processed/kit-era-8.png"
+        ],
+        "asset": "landmarks/eclipse/east-rim-solar-witness.glb"
+      },
+      "launch-shadow-gate": {
+        "sourceTier": "derive",
+        "sources": [
+          "assets/raw/plate-e8-bld-set.png",
+          "assets/pilots/map-rebuild-spike/landmarks/mare-claim/lava-tube-survey-gantry.glb"
+        ],
+        "asset": "landmarks/eclipse/launch-shadow-gate.glb"
+      },
+      "mass-driver-eclipse-marker": {
+        "sourceTier": "derive",
+        "sources": [
+          "assets/raw/plate-e8-bld-set.png",
+          "assets/processed/kit-era-8.png"
+        ],
+        "asset": "landmarks/eclipse/mass-driver-eclipse-marker.glb"
+      }
+    },
+    "ember-shore": {
+      "last-warm-vent-altar": {
+        "sourceTier": "reuse",
+        "sources": [
+          "assets/pilots/plaza-props-3d/engine-glow-ward.e10.glb",
+          "assets/raw/plate-e10-worlds.png"
+        ],
+        "asset": "landmarks/ember-shore/last-warm-vent-altar.glb"
+      },
+      "cooled-titan-shelf": {
+        "sourceTier": "reuse",
+        "sources": [
+          "assets/pilots/plaza-props-3d/engine-glow-idle.e10.glb",
+          "assets/raw/plate-e10-worlds.png"
+        ],
+        "asset": "landmarks/ember-shore/cooled-titan-shelf.glb"
+      },
+      "west-vein-cooling-marker": {
+        "sourceTier": "derive",
+        "sources": [
+          "assets/raw/plate-e10-worlds.png",
+          "assets/processed/kit-era-10.png"
+        ],
+        "asset": "landmarks/ember-shore/west-vein-cooling-marker.glb"
+      },
+      "center-vein-bridge-school": {
+        "sourceTier": "reuse",
+        "sources": [
+          "assets/pilots/plaza-props-3d/bridge-school.e10.glb",
+          "assets/raw/plate-e10-worlds.png"
+        ],
+        "asset": "landmarks/ember-shore/center-vein-bridge-school.glb"
+      },
+      "shore-preserve-rack": {
+        "sourceTier": "reuse",
+        "sources": [
+          "assets/pilots/plaza-props-3d/preserve-rack.e10.glb",
+          "assets/raw/plate-e10-worlds.png"
+        ],
+        "asset": "landmarks/ember-shore/shore-preserve-rack.glb"
+      }
+    },
+    "fairground": {
+      "south-midway-admission-arch": {
+        "sourceTier": "derive",
+        "sources": [
+          "assets/pilots/plaza-props-3d/insulator-post.e3.glb",
+          "assets/pilots/plaza-props-3d/wire-run.e3.glb",
+          "assets/raw/plate-e3-bld-arc-lamp.png"
+        ],
+        "asset": "landmarks/fairground/south-midway-admission-arch.glb"
+      },
+      "west-current-calliope-wagon": {
+        "sourceTier": "reuse",
+        "sources": [
+          "assets/pilots/plaza-props-3d/covered_wagon.e3.glb"
+        ],
+        "asset": "landmarks/fairground/west-current-calliope-wagon.glb"
+      },
+      "east-mothglass-prize-cage": {
+        "sourceTier": "derive",
+        "sources": [
+          "assets/pilots/plaza-props-3d/insulator-post.e3.glb",
+          "assets/raw/plate-e3-mothswarm.png"
+        ],
+        "asset": "landmarks/fairground/east-mothglass-prize-cage.glb"
+      },
+      "north-crowd-counting-rostrum": {
+        "sourceTier": "reuse",
+        "sources": [
+          "assets/pilots/plaza-props-3d/transformer-shed.e3.glb",
+          "assets/pilots/plaza-props-3d/insulator-post.e3.glb"
+        ],
+        "asset": "landmarks/fairground/north-crowd-counting-rostrum.glb"
+      },
+      "fair-bell-battery-kiosk": {
+        "sourceTier": "reuse",
+        "sources": [
+          "assets/pilots/plaza-props-3d/transformer-shed.e3.glb",
+          "assets/pilots/plaza-props-3d/wire-run.e3.glb"
+        ],
+        "asset": "landmarks/fairground/fair-bell-battery-kiosk.glb"
+      }
+    },
+    "far-side": {
+      "far-side-landing-frame": {
+        "sourceTier": "derive",
+        "sources": [
+          "assets/pilots/map-rebuild-spike/landmarks/mare-claim/lava-tube-survey-gantry.glb",
+          "assets/raw/plate-e8-bld-set.png"
+        ],
+        "asset": "landmarks/far-side/far-side-landing-frame.glb"
+      },
+      "probe-recovery-cradle": {
+        "sourceTier": "derive",
+        "sources": [
+          "assets/raw/plate-e8-bld-set.png",
+          "assets/pilots/plaza-props-3d/crater-rim-set.e8.glb"
+        ],
+        "asset": "landmarks/far-side/probe-recovery-cradle.glb"
+      },
+      "west-comms-shadow-marker": {
+        "sourceTier": "derive",
+        "sources": [
+          "assets/raw/plate-e8-bld-set.png",
+          "assets/processed/kit-era-8.png"
+        ],
+        "asset": "landmarks/far-side/west-comms-shadow-marker.glb"
+      },
+      "east-suit-cache-rack": {
+        "sourceTier": "derive",
+        "sources": [
+          "assets/raw/plate-e8-bld-set.png",
+          "assets/pilots/plaza-props-3d/lander-legs.e8.glb"
+        ],
+        "asset": "landmarks/far-side/east-suit-cache-rack.glb"
+      },
+      "far-horizon-listening-post": {
+        "sourceTier": "derive",
+        "sources": [
+          "assets/raw/plate-e8-bld-set.png",
+          "assets/pilots/map-rebuild-spike/landmarks/mare-claim/earthrise-listening-array.glb"
+        ],
+        "asset": "landmarks/far-side/far-horizon-listening-post.glb"
+      }
+    },
+    "gusher-county": {
+      "derrick-01": {
+        "sourceTier": "derive",
+        "sources": [
+          "assets/raw/bld-derrick.png",
+          "assets/raw/plate-e4-bld-set.png"
+        ],
+        "asset": "landmarks/gusher-county/derrick-01.glb"
+      },
+      "derrick-02": {
+        "sourceTier": "derive",
+        "sources": [
+          "assets/raw/bld-derrick.png",
+          "assets/raw/plate-e4-bld-set.png"
+        ],
+        "asset": "landmarks/gusher-county/derrick-02.glb"
+      },
+      "derrick-03": {
+        "sourceTier": "derive",
+        "sources": [
+          "assets/raw/bld-derrick.png",
+          "assets/raw/plate-e4-bld-set.png"
+        ],
+        "asset": "landmarks/gusher-county/derrick-03.glb"
+      },
+      "derrick-04": {
+        "sourceTier": "derive",
+        "sources": [
+          "assets/raw/bld-derrick.png",
+          "assets/raw/plate-e4-bld-set.png"
+        ],
+        "asset": "landmarks/gusher-county/derrick-04.glb"
+      },
+      "derrick-05": {
+        "sourceTier": "derive",
+        "sources": [
+          "assets/raw/bld-derrick.png",
+          "assets/raw/plate-e4-bld-set.png"
+        ],
+        "asset": "landmarks/gusher-county/derrick-05.glb"
+      },
+      "derrick-06": {
+        "sourceTier": "derive",
+        "sources": [
+          "assets/raw/bld-derrick.png",
+          "assets/raw/plate-e4-bld-set.png"
+        ],
+        "asset": "landmarks/gusher-county/derrick-06.glb"
+      },
+      "derrick-07": {
+        "sourceTier": "derive",
+        "sources": [
+          "assets/raw/bld-derrick.png",
+          "assets/raw/plate-e4-bld-set.png"
+        ],
+        "asset": "landmarks/gusher-county/derrick-07.glb"
+      },
+      "derrick-08": {
+        "sourceTier": "derive",
+        "sources": [
+          "assets/raw/bld-derrick.png",
+          "assets/raw/plate-e4-bld-set.png"
+        ],
+        "asset": "landmarks/gusher-county/derrick-08.glb"
+      },
+      "outhouse-geyser": {
+        "sourceTier": "derive",
+        "sources": [
+          "assets/raw/prop-gusher.png",
+          "assets/raw/plate-e4-bld-set.png"
+        ],
+        "asset": "landmarks/gusher-county/outhouse-geyser.glb"
+      },
+      "county-camp-rig": {
+        "sourceTier": "reuse",
+        "sources": [
+          "assets/pilots/plaza-props-3d/filling-shed.e4.glb",
+          "assets/pilots/plaza-props-3d/fuel-rack.e4.glb",
+          "assets/raw/plate-e4-bld-set.png"
+        ],
+        "asset": "landmarks/gusher-county/county-camp-rig.glb"
+      }
+    },
+    "hill-mine": {
+      "mine-mouth-and-ruined-headframe": {
+        "sourceTier": "build-new",
+        "sources": [
+          "assets/raw/plate-contract-hill-mine.png"
+        ],
+        "asset": "landmarks/hill-mine/mine-mouth-and-ruined-headframe.glb"
+      },
+      "boiler-house-site": {
+        "sourceTier": "reuse",
+        "sources": [
+          "assets/pilots/run3d/boiler-house.glb"
+        ],
+        "asset": "landmarks/hill-mine/boiler-house-site.glb"
+      },
+      "flooded-gallery": {
+        "sourceTier": "derive",
+        "sources": [
+          "assets/pilots/run3d/sluice.glb",
+          "assets/processed/ter-rail-elements-r0c2.png"
+        ],
+        "asset": "landmarks/hill-mine/flooded-gallery.glb"
+      },
+      "switchback-rail-kit": {
+        "sourceTier": "derive",
+        "sources": [
+          "assets/processed/ter-rail-elements-r0c2.png"
+        ],
+        "asset": "landmarks/hill-mine/switchback-rail-kit.glb"
+      },
+      "tailings-and-scree-pack": {
+        "sourceTier": "reuse",
+        "sources": [
+          "assets/pilots/run3d/stockpile.glb"
+        ],
+        "asset": "landmarks/hill-mine/tailings-and-scree-pack.glb"
+      }
+    },
+    "incline": {
+      "lower-yard-engine-crane": {
+        "sourceTier": "reuse",
+        "sources": [
+          "assets/pilots/map-rebuild-spike/landmarks/pressure-garden/garden-pressure-manifold.glb"
+        ],
+        "asset": "landmarks/incline/lower-yard-engine-crane.glb"
+      },
+      "west-line-brake-tower": {
+        "sourceTier": "reuse",
+        "sources": [
+          "assets/pilots/map-rebuild-spike/landmarks/twin-banks/north_bank_winch.glb"
+        ],
+        "asset": "landmarks/incline/west-line-brake-tower.glb"
+      },
+      "east-line-brake-tower": {
+        "sourceTier": "reuse",
+        "sources": [
+          "assets/pilots/map-rebuild-spike/landmarks/twin-banks/north_bank_winch.glb"
+        ],
+        "asset": "landmarks/incline/east-line-brake-tower.glb"
+      },
+      "upper-ore-cable-house": {
+        "sourceTier": "reuse",
+        "sources": [
+          "assets/pilots/map-rebuild-spike/landmarks/twin-banks/north_bank_winch.glb",
+          "assets/pilots/plaza-props-3d/coal-bin.e2.glb"
+        ],
+        "asset": "landmarks/incline/upper-ore-cable-house.glb"
+      },
+      "ford-service-pump": {
+        "sourceTier": "reuse",
+        "sources": [
+          "assets/pilots/map-rebuild-spike/landmarks/pressure-garden/water-band-pump-station.glb"
+        ],
+        "asset": "landmarks/incline/ford-service-pump.glb"
+      }
+    },
+    "long-road": {
+      "west-way-station": {
+        "sourceTier": "reuse",
+        "sources": [
+          "assets/pilots/map-rebuild-spike/landmarks/dust-flats/west-road-wrecker-shed.glb",
+          "assets/pilots/plaza-props-3d/fuel-rack.e4.glb"
+        ],
+        "asset": "landmarks/long-road/west-way-station.glb"
+      },
+      "middle-way-station": {
+        "sourceTier": "reuse",
+        "sources": [
+          "assets/pilots/plaza-props-3d/filling-shed.e4.glb",
+          "assets/pilots/plaza-props-3d/fuel-rack.e4.glb"
+        ],
+        "asset": "landmarks/long-road/middle-way-station.glb"
+      },
+      "east-way-station": {
+        "sourceTier": "reuse",
+        "sources": [
+          "assets/pilots/map-rebuild-spike/landmarks/dust-flats/north-railhead-storm-tower.glb",
+          "assets/pilots/plaza-props-3d/road-marker.e4.glb"
+        ],
+        "asset": "landmarks/long-road/east-way-station.glb"
+      },
+      "convoy-lead-hauler-start": {
+        "sourceTier": "derive",
+        "sources": [
+          "assets/pilots/plaza-props-3d/covered_wagon.e4.glb",
+          "assets/raw/plate-e4-enemy-motorgang.png",
+          "assets/raw/boss-land-yacht.png"
+        ],
+        "asset": "landmarks/long-road/convoy-lead-hauler-start.glb"
+      },
+      "east-railhead": {
+        "sourceTier": "reuse",
+        "sources": [
+          "assets/pilots/map-rebuild-spike/landmarks/dust-flats/dry-wash-recovery-gantry.glb",
+          "assets/pilots/plaza-props-3d/motor-roadway.e4.glb"
+        ],
+        "asset": "landmarks/long-road/east-railhead.glb"
+      }
+    },
+    "mare-claim": {
+      "earthrise-listening-array": {
+        "sourceTier": "derive",
+        "sources": [
+          "assets/raw/plate-e8-bld-set.png",
+          "assets/processed/kit-era-8.png"
+        ],
+        "asset": "landmarks/mare-claim/earthrise-listening-array.glb"
+      },
+      "lava-tube-survey-gantry": {
+        "sourceTier": "derive",
+        "sources": [
+          "assets/raw/plate-e8-bld-set.png",
+          "assets/processed/kit-era-8.png"
+        ],
+        "asset": "landmarks/mare-claim/lava-tube-survey-gantry.glb"
+      },
+      "regolith-core-yard": {
+        "sourceTier": "reuse",
+        "sources": [
+          "assets/pilots/plaza-props-3d/crater-rim-set.e8.glb",
+          "assets/raw/plate-e8-bld-set.png"
+        ],
+        "asset": "landmarks/mare-claim/regolith-core-yard.glb"
+      },
+      "west-rim-debris-catcher": {
+        "sourceTier": "reuse",
+        "sources": [
+          "assets/pilots/plaza-props-3d/lander-legs.e8.glb",
+          "assets/raw/plate-e8-bld-set.png"
+        ],
+        "asset": "landmarks/mare-claim/west-rim-debris-catcher.glb"
+      },
+      "east-rim-debris-catcher": {
+        "sourceTier": "reuse",
+        "sources": [
+          "assets/pilots/plaza-props-3d/lander-legs.e8.glb",
+          "assets/raw/plate-e8-bld-set.png"
+        ],
+        "asset": "landmarks/mare-claim/east-rim-debris-catcher.glb"
+      }
+    },
+    "night-shift": {
+      "seven_lantern_terraces": {
+        "sourceTier": "reuse",
+        "sources": [
+          "assets/pilots/run3d/lantern-post.glb"
+        ],
+        "asset": "landmarks/night-shift/seven_lantern_terraces.glb"
+      },
+      "lampworks_yard": {
+        "sourceTier": "reuse",
+        "sources": [
+          "assets/pilots/run3d/lantern-post.glb",
+          "assets/pilots/run3d/boiler-house.glb",
+          "assets/pilots/run3d/stockpile.glb"
+        ],
+        "asset": "landmarks/night-shift/lampworks_yard.glb"
+      },
+      "dark_rock_shoulders": {
+        "sourceTier": "build-new",
+        "sources": [
+          "assets/raw/plate-contract-night-shift.png"
+        ],
+        "asset": "landmarks/night-shift/dark_rock_shoulders.glb"
+      },
+      "central_ford": {
+        "sourceTier": "reuse",
+        "sources": [
+          "assets/pilots/run3d/sluice.glb"
+        ],
+        "asset": "landmarks/night-shift/central_ford.glb"
+      },
+      "night_work_road": {
+        "sourceTier": "build-new",
+        "sources": [
+          "assets/raw/plate-contract-night-shift.png"
+        ],
+        "asset": "landmarks/night-shift/night_work_road.glb"
+      }
+    },
+    "old-canal": {
+      "south-survey-rig": {
+        "sourceTier": "reuse",
+        "sources": [
+          "assets/pilots/map-rebuild-spike/landmarks/dome-basin/seed-row-weather-station.glb",
+          "assets/raw/plate-e9-bld-canal-works.png"
+        ],
+        "asset": "landmarks/old-canal/south-survey-rig.glb"
+      },
+      "canal-segment-a-marker": {
+        "sourceTier": "derive",
+        "sources": [
+          "assets/pilots/map-rebuild-spike/landmarks/dome-basin/canal-gate-works.glb",
+          "assets/raw/plate-e9-bld-canal-works.png"
+        ],
+        "asset": "landmarks/old-canal/canal-segment-a-marker.glb"
+      },
+      "canal-segment-b-marker": {
+        "sourceTier": "derive",
+        "sources": [
+          "assets/pilots/map-rebuild-spike/landmarks/dome-basin/canal-gate-works.glb",
+          "assets/raw/plate-e9-bld-canal-works.png"
+        ],
+        "asset": "landmarks/old-canal/canal-segment-b-marker.glb"
+      },
+      "canal-segment-c-marker": {
+        "sourceTier": "derive",
+        "sources": [
+          "assets/pilots/map-rebuild-spike/landmarks/dome-basin/canal-gate-works.glb",
+          "assets/raw/plate-e9-bld-canal-works.png"
+        ],
+        "asset": "landmarks/old-canal/canal-segment-c-marker.glb"
+      },
+      "north-outflow-gate": {
+        "sourceTier": "reuse",
+        "sources": [
+          "assets/pilots/map-rebuild-spike/landmarks/dome-basin/canal-gate-works.glb",
+          "assets/raw/plate-e9-bld-canal-works.png"
+        ],
+        "asset": "landmarks/old-canal/north-outflow-gate.glb"
+      }
+    },
+    "regatta": {
+      "start-line-rig": {
+        "sourceTier": "reuse",
+        "sources": [
+          "assets/pilots/plaza-props-3d/harbor-lantern.e5.glb",
+          "assets/pilots/plaza-props-3d/rope-buoy-rack.e5.glb"
+        ],
+        "asset": "landmarks/regatta/start-line-rig.glb"
+      },
+      "finish-line-rig": {
+        "sourceTier": "reuse",
+        "sources": [
+          "assets/pilots/plaza-props-3d/harbor-lantern.e5.glb",
+          "assets/pilots/plaza-props-3d/rope-buoy-rack.e5.glb"
+        ],
+        "asset": "landmarks/regatta/finish-line-rig.glb"
+      },
+      "northwest-buoy-line-anchor": {
+        "sourceTier": "reuse",
+        "sources": [
+          "assets/pilots/plaza-props-3d/rope-buoy-rack.e5.glb",
+          "assets/raw/prop-buoys.png"
+        ],
+        "asset": "landmarks/regatta/northwest-buoy-line-anchor.glb"
+      },
+      "midcourse-buoy-line-anchor": {
+        "sourceTier": "reuse",
+        "sources": [
+          "assets/pilots/plaza-props-3d/rope-buoy-rack.e5.glb",
+          "assets/raw/prop-buoys.png"
+        ],
+        "asset": "landmarks/regatta/midcourse-buoy-line-anchor.glb"
+      },
+      "northeast-buoy-line-anchor": {
+        "sourceTier": "reuse",
+        "sources": [
+          "assets/pilots/plaza-props-3d/rope-buoy-rack.e5.glb",
+          "assets/raw/prop-buoys.png"
+        ],
+        "asset": "landmarks/regatta/northeast-buoy-line-anchor.glb"
+      },
+      "spectator-raft-port": {
+        "sourceTier": "reuse",
+        "sources": [
+          "assets/pilots/plaza-props-3d/covered_wagon.e5.glb",
+          "assets/raw/plate-e5-bld-claimboat.png"
+        ],
+        "asset": "landmarks/regatta/spectator-raft-port.glb"
+      },
+      "spectator-raft-starboard": {
+        "sourceTier": "reuse",
+        "sources": [
+          "assets/pilots/plaza-props-3d/covered_wagon.e5.glb",
+          "assets/raw/plate-e5-bld-claimboat.png"
+        ],
+        "asset": "landmarks/regatta/spectator-raft-starboard.glb"
+      },
+      "judges-tower": {
+        "sourceTier": "derive",
+        "sources": [
+          "assets/raw/plate-e5-bld-lighthouse.png",
+          "assets/raw/plate-e5-bld-claimboat.png"
+        ],
+        "asset": "landmarks/regatta/judges-tower.glb"
+      }
+    },
+    "relay-rush": {
+      "rush-start-horn": {
+        "sourceTier": "derive",
+        "sources": [
+          "assets/raw/kit-era-7.png",
+          "assets/raw/plate-e7-bld-relay-tower.png"
+        ],
+        "asset": "landmarks/relay-rush/rush-start-horn.glb"
+      },
+      "rush-relay-r1-frame": {
+        "sourceTier": "derive",
+        "sources": [
+          "assets/raw/kit-era-7.png",
+          "assets/raw/plate-e7-bld-relay-tower.png"
+        ],
+        "asset": "landmarks/relay-rush/rush-relay-r1-frame.glb"
+      },
+      "rush-relay-r2-frame": {
+        "sourceTier": "derive",
+        "sources": [
+          "assets/raw/kit-era-7.png",
+          "assets/raw/plate-e7-bld-relay-tower.png"
+        ],
+        "asset": "landmarks/relay-rush/rush-relay-r2-frame.glb"
+      },
+      "rush-relay-r3-frame": {
+        "sourceTier": "derive",
+        "sources": [
+          "assets/raw/kit-era-7.png",
+          "assets/raw/plate-e7-bld-relay-tower.png"
+        ],
+        "asset": "landmarks/relay-rush/rush-relay-r3-frame.glb"
+      },
+      "rush-relay-r4-frame": {
+        "sourceTier": "derive",
+        "sources": [
+          "assets/raw/kit-era-7.png",
+          "assets/raw/plate-e7-bld-relay-tower.png"
+        ],
+        "asset": "landmarks/relay-rush/rush-relay-r4-frame.glb"
+      }
+    },
+    "relay-valley": {
+      "west-ridge-dish-cluster": {
+        "sourceTier": "derive",
+        "sources": [
+          "assets/raw/kit-era-7.png",
+          "assets/raw/plate-e7-bld-relay-tower.png"
+        ],
+        "asset": "landmarks/relay-valley/west-ridge-dish-cluster.glb"
+      },
+      "east-ridge-dish-cluster": {
+        "sourceTier": "derive",
+        "sources": [
+          "assets/raw/kit-era-7.png",
+          "assets/raw/plate-e7-bld-relay-tower.png"
+        ],
+        "asset": "landmarks/relay-valley/east-ridge-dish-cluster.glb"
+      },
+      "dead-gap-charting-station": {
+        "sourceTier": "derive",
+        "sources": [
+          "assets/raw/kit-era-7.png",
+          "assets/raw/plate-e7-bld-playbook-library.png"
+        ],
+        "asset": "landmarks/relay-valley/dead-gap-charting-station.glb"
+      },
+      "valley-cable-drum-yard": {
+        "sourceTier": "reuse",
+        "sources": [
+          "assets/pilots/run3d/stockpile.glb",
+          "assets/raw/kit-era-7.png"
+        ],
+        "asset": "landmarks/relay-valley/valley-cable-drum-yard.glb"
+      },
+      "drone-recovery-beacon": {
+        "sourceTier": "reuse",
+        "sources": [
+          "assets/pilots/run3d/sentry-beacon.glb",
+          "assets/raw/kit-era-7.png"
+        ],
+        "asset": "landmarks/relay-valley/drone-recovery-beacon.glb"
+      }
+    },
+    "the-claim": {
+      "active_headframe": {
+        "sourceTier": "build-new",
+        "sources": [
+          "assets/raw/plate-contract-the-claim.png"
+        ],
+        "asset": "landmarks/the-claim/active_headframe.glb"
+      },
+      "maintained_claim_house": {
+        "sourceTier": "derive",
+        "sources": [
+          "assets/pilots/claim-office-3d/claim-office.glb",
+          "assets/processed/bld-claim-office.png"
+        ],
+        "asset": "landmarks/the-claim/maintained_claim_house.glb"
+      },
+      "working_camp": {
+        "sourceTier": "reuse",
+        "sources": [
+          "assets/pilots/plaza-props-3d/covered_wagon.glb",
+          "assets/pilots/run3d/stockpile.glb"
+        ],
+        "asset": "landmarks/the-claim/working_camp.glb"
+      },
+      "claim_stake": {
+        "sourceTier": "build-new",
+        "sources": [
+          "assets/raw/kit-era-1.png"
+        ],
+        "asset": "landmarks/the-claim/claim_stake.glb"
+      },
+      "riparian_dressing_pack": {
+        "sourceTier": "reuse",
+        "sources": [
+          "assets/pilots/run3d/sluice.glb"
+        ],
+        "asset": "landmarks/the-claim/riparian_dressing_pack.glb"
+      }
+    },
+    "trestle": {
+      "trestle-crossing": {
+        "sourceTier": "derive",
+        "sources": [
+          "assets/processed/ter-rail-elements-r0c2.png"
+        ],
+        "asset": "landmarks/trestle/trestle-crossing.glb"
+      },
+      "south-boiler-site": {
+        "sourceTier": "reuse",
+        "sources": [
+          "assets/pilots/run3d/boiler-house.glb"
+        ],
+        "asset": "landmarks/trestle/south-boiler-site.glb"
+      },
+      "north-boiler-site": {
+        "sourceTier": "reuse",
+        "sources": [
+          "assets/pilots/run3d/boiler-house.glb"
+        ],
+        "asset": "landmarks/trestle/north-boiler-site.glb"
+      },
+      "south-approach-kit": {
+        "sourceTier": "reuse",
+        "sources": [
+          "assets/pilots/run3d/palisade.glb",
+          "assets/pilots/plaza-props-3d/coal-bin.e2.glb",
+          "assets/pilots/plaza-props-3d/pipe-run.e2.glb"
+        ],
+        "asset": "landmarks/trestle/south-approach-kit.glb"
+      },
+      "north-approach-kit": {
+        "sourceTier": "reuse",
+        "sources": [
+          "assets/pilots/run3d/palisade.glb",
+          "assets/pilots/plaza-props-3d/coal-bin.e2.glb",
+          "assets/pilots/plaza-props-3d/pipe-run.e2.glb"
+        ],
+        "asset": "landmarks/trestle/north-approach-kit.glb"
+      },
+      "mine-spur-kit": {
+        "sourceTier": "derive",
+        "sources": [
+          "assets/processed/ter-rail-elements-r0c2.png",
+          "assets/pilots/plaza-props-3d/coal-bin.e2.glb"
+        ],
+        "asset": "landmarks/trestle/mine-spur-kit.glb"
+      }
+    },
+    "twin-banks": {
+      "north_bank_homestead": {
+        "sourceTier": "derive",
+        "sources": [
+          "assets/pilots/claim-office-3d/claim-office.glb",
+          "assets/raw/plate-contract-twin-banks.png"
+        ],
+        "asset": "landmarks/twin-banks/north_bank_homestead.glb"
+      },
+      "south_bank_homestead": {
+        "sourceTier": "derive",
+        "sources": [
+          "assets/pilots/claim-office-3d/claim-office.glb",
+          "assets/raw/plate-contract-twin-banks.png"
+        ],
+        "asset": "landmarks/twin-banks/south_bank_homestead.glb"
+      },
+      "north_bank_winch": {
+        "sourceTier": "build-new",
+        "sources": [
+          "assets/raw/plate-contract-twin-banks.png"
+        ],
+        "asset": "landmarks/twin-banks/north_bank_winch.glb"
+      },
+      "south_bank_winch": {
+        "sourceTier": "build-new",
+        "sources": [
+          "assets/raw/plate-contract-twin-banks.png"
+        ],
+        "asset": "landmarks/twin-banks/south_bank_winch.glb"
+      },
+      "floodplain_dressing_pack": {
+        "sourceTier": "reuse",
+        "sources": [
+          "assets/pilots/run3d/sluice.glb",
+          "assets/pilots/run3d/stockpile.glb"
+        ],
+        "asset": "landmarks/twin-banks/floodplain_dressing_pack.glb"
+      }
+    }
+  }
+}

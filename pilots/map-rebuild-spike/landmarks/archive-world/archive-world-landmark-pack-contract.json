@@ -1,0 +1,246 @@
+{
+  "map": "archive-world",
+  "era": 10,
+  "referenceBase": "2ea792726eb5b0de0198e257db722651a4c5eaf7",
+  "sourceLadder": [
+    "reuse",
+    "derive",
+    "build-new"
+  ],
+  "atlas": {
+    "asset": "landmarks/archive-world/archive-world-landmarks-atlas.png",
+    "width": 1024,
+    "height": 1024,
+    "sharedByEveryAsset": true,
+    "sha256": "4eae904b8ffecb8f7813fc406c3793e0360631b0ec991112486b8cacfb46afa2"
+  },
+  "blend": {
+    "asset": "landmarks/archive-world/archive-world-landmarks.blend",
+    "sha256": "2bb268af9a3ee99c4060020368e2a0a7b92e70b8976160da1e90b293f6a9d3a9"
+  },
+  "assets": {
+    "archive-entry-gate": {
+      "asset": "landmarks/archive-world/archive-entry-gate.glb",
+      "sourceTier": "derive",
+      "sources": [
+        "assets/pilots/map-rebuild-spike/landmarks/ember-shore/center-vein-bridge-school.glb",
+        "assets/raw/plate-e10-worlds.png"
+      ],
+      "terrainConformed": false,
+      "triangles": 1128,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -5.3,
+          -2.4,
+          0.0
+        ],
+        "max": [
+          5.3,
+          2.4,
+          8.69
+        ]
+      },
+      "sha256": "401ca165a1916c5d1f9c9820e8ae4d01244691b0e7f38d40f9bcf488c1685565"
+    },
+    "west-stack-ruin": {
+      "asset": "landmarks/archive-world/west-stack-ruin.glb",
+      "sourceTier": "reuse",
+      "sources": [
+        "assets/pilots/map-rebuild-spike/landmarks/ember-shore/shore-preserve-rack.glb",
+        "assets/raw/plate-e10-worlds.png"
+      ],
+      "terrainConformed": false,
+      "triangles": 852,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -3.7,
+          -2.6,
+          0.0
+        ],
+        "max": [
+          3.7,
+          2.6,
+          5.96
+        ]
+      },
+      "sha256": "dbce0f1f80c84bbae4335895c0ab784cb90c5e1247630df770f6bcff54103f00",
+      "footprint": {"kind":"rect","w":5.328,"d":3.744}
+    },
+    "east-stack-ruin": {
+      "asset": "landmarks/archive-world/east-stack-ruin.glb",
+      "sourceTier": "derive",
+      "sources": [
+        "assets/pilots/map-rebuild-spike/landmarks/ember-shore/shore-preserve-rack.glb",
+        "assets/raw/plate-e10-worlds.png"
+      ],
+      "terrainConformed": false,
+      "triangles": 968,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -3.7,
+          -2.6,
+          0.0
+        ],
+        "max": [
+          3.7,
+          2.6,
+          5.96
+        ]
+      },
+      "sha256": "65603e1dc0fa0ba320a39aab2c6bdcc0f968ce5cb2bffd7e2b486dea6cc8cdfa",
+      "footprint": {"kind":"rect","w":5.328,"d":3.744}
+    },
+    "warning-shelf-ruin": {
+      "asset": "landmarks/archive-world/warning-shelf-ruin.glb",
+      "sourceTier": "reuse",
+      "sources": [
+        "assets/pilots/map-rebuild-spike/landmarks/ember-shore/cooled-titan-shelf.glb",
+        "assets/raw/plate-e10-worlds.png"
+      ],
+      "terrainConformed": false,
+      "triangles": 1024,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -4.2,
+          -2.7,
+          0.0
+        ],
+        "max": [
+          4.2,
+          2.7,
+          7.56
+        ]
+      },
+      "sha256": "7de5e9d23e47ed2a0208a78c0c563de90e1d333d806e979674fc4d66287617d4",
+      "footprint": {"kind":"rect","w":6.048,"d":3.888}
+    },
+    "ours-unless-marker": {
+      "asset": "landmarks/archive-world/ours-unless-marker.glb",
+      "sourceTier": "derive",
+      "sources": [
+        "assets/raw/plate-e10-worlds.png",
+        "assets/raw/plate-e10-charter-press-hall.png"
+      ],
+      "terrainConformed": false,
+      "triangles": 288,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -2.9,
+          -1.9,
+          0.0
+        ],
+        "max": [
+          2.9,
+          1.9,
+          5.7
+        ]
+      },
+      "sha256": "729b29cd97e4f88ca77f56860c2fc4863871e391807e6713d224ae07040ccf79",
+      "footprint": {"kind":"rect","w":4.176,"d":2.736}
+    }
+  },
+  "mounts": [
+    {
+      "id": "archive-entry-gate",
+      "asset": "landmarks/archive-world/archive-entry-gate.glb",
+      "position": [
+        0.0,
+        0.18,
+        -46.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "id": "west-stack-ruin",
+      "asset": "landmarks/archive-world/west-stack-ruin.glb",
+      "position": [
+        -28.0,
+        0.56,
+        -6.0
+      ],
+      "rotation": [
+        0.0,
+        0.1,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "id": "east-stack-ruin",
+      "asset": "landmarks/archive-world/east-stack-ruin.glb",
+      "position": [
+        28.0,
+        0.78,
+        -6.0
+      ],
+      "rotation": [
+        0.0,
+        -0.1,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "id": "warning-shelf-ruin",
+      "asset": "landmarks/archive-world/warning-shelf-ruin.glb",
+      "position": [
+        -14.0,
+        1.08,
+        40.0
+      ],
+      "rotation": [
+        0.0,
+        0.08,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ours-unless-marker",
+      "asset": "landmarks/archive-world/ours-unless-marker.glb",
+      "position": [
+        0.0,
+        1.08,
+        46.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        0.74,
+        0.74,
+        0.74
+      ]
+    }
+  ],
+  "simulation": "none; terrain, collision, movement, placement, water, spawns, and fog remain unchanged",
+  "mountInterlock": "resolved-3d-d"
+}

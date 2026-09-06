@@ -1,0 +1,103 @@
+{
+  "asset": "regatta-panorama.glb",
+  "map": "regatta",
+  "renderOnly": true,
+  "style": "engraved Epoch 5 post-flood harbor chain kit-plate horizon; open working sea against a tea-coloured weather rim",
+  "signature": "an open racing sea with one low charcoal weather bank, unequal mast cues, and no confirming coast",
+  "exposure": {
+    "mode": "bakedIntoAtlas",
+    "linearMultiplier": 0.96
+  },
+  "lawVersion": "PANORAMA LAW v2",
+  "namedCorrections": {
+    "paintedWall": "deep-sunk cylindrical sky ring behind the code-owned sea; continuous tea gradient, no seam band",
+    "ceiling": "engraving density grades from dense horizon to near-plain parchment zenith",
+    "echo": "asymmetric cloud and dust edits plus independent near/far ridge profiles break mirrored repetition"
+  },
+  "projection": {
+    "skyRingRadiusMeters": 190.0,
+    "ridgeFootRadiusMeters": 161.5,
+    "ridgeOccluderRadiusMeters": 174.0,
+    "farRidgeRadiusMeters": null,
+    "ridgeFootRadiusRangeMeters": [
+      159.8,
+      163.2
+    ],
+    "ridgeOccluderRadiusRangeMeters": [
+      172.3,
+      175.7
+    ],
+    "skyBottomMeters": -160.0,
+    "skyTopMeters": 130.0,
+    "ridgeTopFormulaMeters": "-80.0; dormant belt far below code-owned sea",
+    "farRidgeTopFormulaMeters": null,
+    "groundSkirtInnerBoundaryMeters": {
+      "shape": "expanded-playfield-rectangle",
+      "halfExtents": [
+        64.0,
+        64.0
+      ],
+      "margin": 0.01
+    },
+    "groundSkirtOuterRadiusMeters": 190.0,
+    "groundSkirtRole": "submerged scenery apron under the code-owned sea; no water or gameplay authority"
+  },
+  "mount": {
+    "id": "regatta-panorama",
+    "asset": "regatta-panorama.glb",
+    "position": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "rotation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "renderOnly": true,
+    "ownership": "separate mounted scenery; never terrain or gameplay bounds"
+  },
+  "earthSide": null,
+  "nonInterference": {
+    "playfieldBounds": "unchanged",
+    "spawnEdges": "unchanged",
+    "fogGating": "unchanged",
+    "waterBuildSpawnMasks": "unchanged"
+  },
+  "meshCount": 1,
+  "primitiveCount": 1,
+  "materialCount": 1,
+  "vertices": 1868,
+  "triangles": 2704,
+  "triangleBudget": 4000,
+  "texture": {
+    "count": 1,
+    "width": 2048,
+    "height": 2048,
+    "embedded": true
+  },
+  "sourceArt": [
+    "assets/processed/kit-era-5.png",
+    "assets/raw/ter-shelf-atlas.png"
+  ],
+  "files": {
+    "blend": {
+      "bytes": 767730,
+      "sha256": "e2c5783c1f1f50cf348c818efd85d5baed9f36a5baf511d4e0f55c1074af02ac"
+    },
+    "glb": {
+      "bytes": 737052,
+      "sha256": "50f7c28128b87a7853d3dd20b1ddcb942f2b09374310e23592462f1a2f26c391"
+    },
+    "atlas": {
+      "bytes": 636866,
+      "sha256": "93a262c9b636c5e18ed5a7414135055f5e0cbb3ce3ca70d58f23d67df2c143c8"
+    }
+  }
+}

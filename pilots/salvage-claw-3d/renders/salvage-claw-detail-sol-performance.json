@@ -1,0 +1,48 @@
+{
+  "harness": "Gold Rush game boot rig, production contract scene and gameplay camera, renderer.info sampled after the boss model mounted",
+  "route": "/?debug&profile&epoch=epoch-8-orbital&contract=e8-mare-claim&nowaves&nolevel&nopause&seed=detail-duel-boot",
+  "samples": 180,
+  "viewport": [
+    1280,
+    800
+  ],
+  "assetTriangles": {
+    "original": 10164,
+    "detailSol": 34540
+  },
+  "original": {
+    "frameMsP95": 133.2,
+    "callsP95": 98,
+    "trianglesP95": 121566,
+    "geometriesMax": 95,
+    "texturesMax": 24,
+    "camera": {
+      "scene": "run",
+      "distanceScale": 1,
+      "targetDistanceScale": 1,
+      "minDistanceScale": 0.7,
+      "maxDistanceScale": 1.6,
+      "baseDistance": 31.958254019892887,
+      "targetDistance": 31.958254019892887,
+      "actualDistance": 31.958254019892887
+    }
+  },
+  "detailSol": {
+    "frameMsP95": 151.3,
+    "callsP95": 98,
+    "trianglesP95": 170318,
+    "geometriesMax": 95,
+    "texturesMax": 24,
+    "camera": {
+      "scene": "run",
+      "distanceScale": 1,
+      "targetDistanceScale": 1,
+      "minDistanceScale": 0.7,
+      "maxDistanceScale": 1.6,
+      "baseDistance": 31.958254019892887,
+      "targetDistance": 31.958254019892887,
+      "actualDistance": 31.958254019892887
+    }
+  },
+  "interpretation": "Calls and GPU resource counts are the stable comparison. Headless frame p95 is backend- and scheduler-sensitive and is not a desktop or mobile guarantee."
+}

@@ -1,0 +1,430 @@
+{
+  "asset": "trestle-terrain.glb",
+  "contractId": "e2-trestle",
+  "tileId": "e2-trestle",
+  "renderOnly": true,
+  "simulation": "factory masks, collision, movement, spawns, placement, and TileHeight remain unchanged",
+  "heightSocket": "Terrain.visualY",
+  "theme": "long rail crossing pinched between defended gorge approaches",
+  "regionalFamily": {
+    "epoch": "Epoch 2 steamworks county",
+    "shared": [
+      "ochre-rust earth",
+      "soot iron",
+      "tarred timber",
+      "murky working water",
+      "sparse cacti",
+      "engraved frontier grit"
+    ],
+    "unique": [
+      "authored height silhouette",
+      "rail geometry",
+      "build-zone rhythm",
+      "landmark mounts",
+      "panorama quadrant composition"
+    ]
+  },
+  "boundsMeters": {
+    "min": [
+      -48.0,
+      -48.0,
+      -0.8765
+    ],
+    "max": [
+      48.0,
+      48.0,
+      1.2054
+    ]
+  },
+  "meshCount": 1,
+  "primitiveCount": 1,
+  "materialCount": 1,
+  "vertices": 16641,
+  "triangles": 32768,
+  "triangleBudget": 60000,
+  "texture": {
+    "count": 1,
+    "width": 2048,
+    "height": 2048,
+    "embedded": true
+  },
+  "maskTruth": {
+    "source": "assets/contracts/epoch-2-steamworks/contracts.json",
+    "tileId": "e2-trestle",
+    "size": 96,
+    "river": true,
+    "ford": true,
+    "fords": [
+      {
+        "id": "trestle",
+        "x": 0,
+        "halfWidth": 3
+      }
+    ],
+    "buildZones": [
+      {
+        "id": "south-approach",
+        "bank": "south",
+        "minX": -30,
+        "maxX": 30,
+        "minZ": -30,
+        "maxZ": -7
+      },
+      {
+        "id": "north-approach",
+        "bank": "north",
+        "minX": -30,
+        "maxX": 30,
+        "minZ": 7,
+        "maxZ": 30
+      }
+    ],
+    "stakeMarkers": [
+      {
+        "id": "south-boiler-site",
+        "x": 12,
+        "z": -12,
+        "heroStart": true
+      },
+      {
+        "id": "north-boiler-site",
+        "x": -12,
+        "z": 12,
+        "heroStart": false
+      }
+    ],
+    "rails": [
+      {
+        "style": "steamworks",
+        "points": [
+          {
+            "x": 0,
+            "z": -46
+          },
+          {
+            "x": 0,
+            "z": -22
+          },
+          {
+            "x": 0,
+            "z": -7
+          },
+          {
+            "x": 0,
+            "z": 7
+          },
+          {
+            "x": 0,
+            "z": 22
+          },
+          {
+            "x": 0,
+            "z": 46
+          }
+        ]
+      },
+      {
+        "style": "mine-spur",
+        "points": [
+          {
+            "x": -30,
+            "z": -18
+          },
+          {
+            "x": -14,
+            "z": -18
+          },
+          {
+            "x": 0,
+            "z": -22
+          },
+          {
+            "x": 18,
+            "z": -26
+          }
+        ]
+      }
+    ],
+    "waterSources": [],
+    "harvestAnchors": [
+      {
+        "x": -24,
+        "z": -20
+      },
+      {
+        "x": 24,
+        "z": -20
+      },
+      {
+        "x": -24,
+        "z": 20
+      },
+      {
+        "x": 24,
+        "z": 20
+      }
+    ],
+    "elevation": {
+      "cellSize": 2,
+      "analytic": {
+        "bowlDepth": 0.7,
+        "bowlRadius": 12,
+        "bowlCenterX": 0,
+        "bowlCenterZ": 0,
+        "ridgeAmp": 0.8,
+        "ridgeWidth": 18,
+        "ridgeLength": 42,
+        "ridgeX": 28,
+        "ridgeZ": 0
+      }
+    },
+    "heightfield": {
+      "id": "trestle-gorge-banks",
+      "mode": "visual",
+      "bankRelief": {
+        "amount": 0.45,
+        "width": 9
+      }
+    },
+    "water": {
+      "id": "trestle-gorge-river",
+      "visualHalfWidth": 10,
+      "depths": {
+        "river": 1.25,
+        "ford": 0.3,
+        "shallows": 0.25
+      },
+      "speedMul": {
+        "river": 0.45,
+        "ford": 0.8,
+        "shallows": 0.72
+      }
+    },
+    "lanes": {
+      "spawnEdges": [
+        "south",
+        "north",
+        "east",
+        "west"
+      ],
+      "territoryRingBiasWaves": 0,
+      "territoryRingLaneBias": 0
+    },
+    "spawnGates": [],
+    "coalSeams": [],
+    "trestleDeck": {
+      "id": "trestle-deck",
+      "minX": -3,
+      "maxX": 3,
+      "minZ": -7,
+      "maxZ": 7
+    }
+  },
+  "waterAgreement": {
+    "deepBand": {
+      "minZ": -5,
+      "maxZ": 5
+    },
+    "shallowsEnd": {
+      "minZ": -6.25,
+      "maxZ": 6.25
+    },
+    "placeableBankStartsBeyondAbsZ": 6.25,
+    "factoryVisualHalfWidth": 10,
+    "sluiceSamples": [
+      {
+        "x": -24,
+        "z": -7
+      },
+      {
+        "x": 24,
+        "z": -7
+      },
+      {
+        "x": -24,
+        "z": 7
+      },
+      {
+        "x": 24,
+        "z": 7
+      }
+    ]
+  },
+  "waterVisualRuling": "render bank seam follows the gameplay mask so sluice-placeable banks do not look submerged",
+  "landmarkMountSpace": {
+    "coordinates": "game X/Y/Z",
+    "positionY": "local offset added to Terrain.visualY at the mount X/Z",
+    "rotation": "XYZ Euler radians",
+    "scale": "XYZ multiplier",
+    "ownership": "landmark assets mount at runtime and are never baked into terrain"
+  },
+  "landmarkMounts": [
+    {
+      "id": "trestle-crossing",
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/trestle/trestle-crossing.glb"
+    },
+    {
+      "id": "south-boiler-site",
+      "position": [
+        12.0,
+        0.0,
+        -12.0
+      ],
+      "rotation": [
+        0.0,
+        0.08,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/trestle/south-boiler-site.glb"
+    },
+    {
+      "id": "north-boiler-site",
+      "position": [
+        -12.0,
+        0.0,
+        12.0
+      ],
+      "rotation": [
+        0.0,
+        -0.06,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/trestle/north-boiler-site.glb"
+    },
+    {
+      "id": "south-approach-kit",
+      "position": [
+        0.0,
+        -0.075577,
+        -22.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/trestle/south-approach-kit.glb",
+      "terrainConformOffsetY": -0.075577
+    },
+    {
+      "id": "north-approach-kit",
+      "position": [
+        0.0,
+        -0.031021,
+        22.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/trestle/north-approach-kit.glb",
+      "terrainConformOffsetY": -0.031021
+    },
+    {
+      "id": "mine-spur-kit",
+      "position": [
+        -14.0,
+        0.0,
+        -18.0
+      ],
+      "rotation": [
+        0.0,
+        -0.1,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/trestle/mine-spur-kit.glb"
+    }
+  ],
+  "panoramaMount": {
+    "id": "trestle-panorama",
+    "asset": "trestle-panorama.glb",
+    "position": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "rotation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "renderOnly": true,
+    "ownership": "separate mounted scenery; never terrain or gameplay bounds"
+  },
+  "sourceArt": [
+    "assets/processed/terrain-bank-tile.png",
+    "assets/processed/terrain-bank-tile-b.png",
+    "assets/processed/terrain-bank-tile-c.png",
+    "assets/processed/terrain-river-tile.png",
+    "assets/processed/ter-rail-elements-r0c2.png",
+    "assets/processed/kit-era-2.png"
+  ],
+  "atlas": "trestle-terrain-atlas.png",
+  "files": {
+    "blend": {
+      "bytes": 8174591,
+      "sha256": "5e9f2211c46f782cf20a4a69582131c1f63041665828db65497432e9ab13ea9a"
+    },
+    "glb": {
+      "bytes": 8091320,
+      "sha256": "c0c381d8de5f344779b6c81d21b93dc644dd9e3163dc69c6e936aab1c8ecec06"
+    },
+    "atlas": {
+      "bytes": 7360439,
+      "sha256": "865747ed3d5cb1ab16a42f6f324d1c00c08a1020e15fb861a356d65eb766bd18"
+    }
+  },
+  "landmarkPack": {
+    "contract": "landmarks/trestle/trestle-landmark-pack-contract.json",
+    "atlas": "landmarks/trestle/trestle-landmarks-atlas.png",
+    "era": 2,
+    "sourceLadder": "reuse > derive > build-new",
+    "ownership": "separate mounted render-only GLBs; no simulation authority"
+  }
+}

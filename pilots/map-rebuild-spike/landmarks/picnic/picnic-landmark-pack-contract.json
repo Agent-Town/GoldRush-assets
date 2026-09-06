@@ -1,0 +1,242 @@
+{
+  "map": "picnic",
+  "era": 6,
+  "referenceBase": "db430cb92290ca15e3f0190592a727b6974bffd7",
+  "sourceLadder": [
+    "reuse",
+    "derive",
+    "build-new"
+  ],
+  "atlas": {
+    "asset": "landmarks/picnic/picnic-landmarks-atlas.png",
+    "width": 1024,
+    "height": 1024,
+    "sharedByEveryAsset": true,
+    "sha256": "2046aa476a50ab31bbfc9e2fb658114ebee624c2d53498e687698894c761384b"
+  },
+  "blend": {
+    "asset": "landmarks/picnic/picnic-landmarks.blend",
+    "sha256": "e4657dbef2c2794b5dc1b5d0c0699ec38d8403f9140b52d603acd4f451c4cb47"
+  },
+  "assets": {
+    "picnic-staging-gate": {
+      "asset": "landmarks/picnic/picnic-staging-gate.glb",
+      "sourceTier": "derive",
+      "sources": [
+        "assets/raw/kit-era-6.png",
+        "assets/pilots/map-rebuild-spike/glow-mesa-terrain.glb"
+      ],
+      "terrainConformed": false,
+      "triangles": 288,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -4.5,
+          -0.22,
+          0.0
+        ],
+        "max": [
+          4.5,
+          0.22,
+          5.49
+        ]
+      },
+      "sha256": "8da3800ab183b82c7911f7a7c1f871600d46ee4601f911e60139e55a37898c8e"
+    },
+    "west-picnic-blanket": {
+      "asset": "landmarks/picnic/west-picnic-blanket.glb",
+      "sourceTier": "derive",
+      "sources": [
+        "assets/raw/kit-era-6.png",
+        "assets/contracts/epoch-6-atomic/mask-tables/e6-picnic.json"
+      ],
+      "terrainConformed": false,
+      "triangles": 324,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -4.2665,
+          -3.1406,
+          0.0
+        ],
+        "max": [
+          4.2665,
+          3.1406,
+          1.64
+        ]
+      },
+      "sha256": "214473b7765e30bc3b820e2e8f15d9a60a67cadf022d789544913f14cede8a0a"
+    },
+    "center-picnic-blanket": {
+      "asset": "landmarks/picnic/center-picnic-blanket.glb",
+      "sourceTier": "derive",
+      "sources": [
+        "assets/raw/kit-era-6.png",
+        "assets/contracts/epoch-6-atomic/mask-tables/e6-picnic.json"
+      ],
+      "terrainConformed": false,
+      "triangles": 516,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -4.1572,
+          -2.9814,
+          0.0
+        ],
+        "max": [
+          4.1572,
+          2.9814,
+          2.25
+        ]
+      },
+      "sha256": "7b2f1f863e8005cbdf06089484c4d13478776d3356d191fe7988a2ad99633b99"
+    },
+    "east-picnic-blanket": {
+      "asset": "landmarks/picnic/east-picnic-blanket.glb",
+      "sourceTier": "derive",
+      "sources": [
+        "assets/raw/kit-era-6.png",
+        "assets/contracts/epoch-6-atomic/mask-tables/e6-picnic.json"
+      ],
+      "terrainConformed": false,
+      "triangles": 324,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -4.3186,
+          -3.2184,
+          0.0
+        ],
+        "max": [
+          4.3186,
+          3.2184,
+          1.64
+        ]
+      },
+      "sha256": "fb18ef8ddf162ac6928b071a413ef6d4dd1325c937bca2f9c1c0155fd1ef9661"
+    },
+    "mesa-civilian-shade": {
+      "asset": "landmarks/picnic/mesa-civilian-shade.glb",
+      "sourceTier": "derive",
+      "sources": [
+        "assets/raw/kit-era-6.png",
+        "assets/pilots/map-rebuild-spike/glow-mesa-terrain.glb"
+      ],
+      "terrainConformed": false,
+      "triangles": 216,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -4.7203,
+          -3.2815,
+          0.0
+        ],
+        "max": [
+          4.7203,
+          3.2815,
+          4.3882
+        ]
+      },
+      "sha256": "7be61299d70ee0f633a607c5811cf86539d18e7eb6a798a9c3e0123779a566ac",
+      "footprint": {"kind":"rect","w":6.797,"d":4.725}
+    }
+  },
+  "mounts": [
+    {
+      "id": "picnic-staging-gate",
+      "position": [
+        0.0,
+        0.0,
+        -54.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/picnic/picnic-staging-gate.glb"
+    },
+    {
+      "id": "west-picnic-blanket",
+      "position": [
+        -16.0,
+        0.0,
+        18.0
+      ],
+      "rotation": [
+        0.0,
+        0.08,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/picnic/west-picnic-blanket.glb"
+    },
+    {
+      "id": "center-picnic-blanket",
+      "position": [
+        0.0,
+        0.0,
+        26.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/picnic/center-picnic-blanket.glb"
+    },
+    {
+      "id": "east-picnic-blanket",
+      "position": [
+        16.0,
+        0.0,
+        18.0
+      ],
+      "rotation": [
+        0.0,
+        -0.08,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/picnic/east-picnic-blanket.glb"
+    },
+    {
+      "id": "mesa-civilian-shade",
+      "position": [
+        0.0,
+        0.0,
+        40.0
+      ],
+      "rotation": [
+        0.0,
+        3.1416,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/picnic/mesa-civilian-shade.glb"
+    }
+  ],
+  "simulation": "none; terrain, collision, movement, placement, water, spawns, and fog remain unchanged"
+}

@@ -1,0 +1,483 @@
+{
+  "asset": "regatta-terrain.glb",
+  "contractId": "e5-regatta",
+  "tileId": "e5-regatta",
+  "renderOnly": true,
+  "simulation": "planar movement, collision, spawns, race checkpoints, fast-water state, Claim-Boat placement, and combat remain unchanged",
+  "heightSocket": "Terrain.visualY",
+  "waterSurface": {
+    "owner": "runtime DeepwaterClaimTile",
+    "includedInTerrainGLB": false,
+    "reason": "sea surface, swell, fast-water state, and water classification stay code-owned"
+  },
+  "theme": "an open-water storm race over a bent scoured course, five submerged beacon rises, and a dark fast-water shelf",
+  "regionalFamily": {
+    "epoch": "Epoch 5 post-flood harbor chain",
+    "shared": [
+      "blue-green parchment depth",
+      "tar-dark working water shadows",
+      "brass course scars",
+      "charcoal storm fronts",
+      "tea-coloured open-sea distance",
+      "warm lantern persistence"
+    ],
+    "unique": [
+      "bent beacon-course bathymetry",
+      "five submerged beacon rises",
+      "storm-front scarp",
+      "open-sea panorama"
+    ]
+  },
+  "boundsMeters": {
+    "min": [
+      -64.0,
+      -64.0,
+      -5.6458
+    ],
+    "max": [
+      64.0,
+      64.0,
+      -1.6576
+    ]
+  },
+  "meshCount": 1,
+  "primitiveCount": 1,
+  "materialCount": 1,
+  "vertices": 16641,
+  "triangles": 32768,
+  "triangleBudget": 60000,
+  "texture": {
+    "count": 1,
+    "width": 2048,
+    "height": 2048,
+    "embedded": true
+  },
+  "maskTable": "assets/contracts/epoch-5-deepwater/mask-tables/e5-regatta.json",
+  "maskTruth": {
+    "source": "assets/contracts/epoch-5-deepwater/contracts.json; lore/STORYBOOK.md:281-284",
+    "tileId": "e5-regatta",
+    "size": 128,
+    "dimensions": {
+      "width": 128,
+      "height": 128
+    },
+    "buildZones": [
+      {
+        "id": "claim-boat-deck-mask",
+        "bank": "north",
+        "minX": -54,
+        "maxX": -44,
+        "minZ": -5,
+        "maxZ": 5
+      }
+    ],
+    "stakeMarkers": [
+      {
+        "id": "claim-boat",
+        "x": -49,
+        "z": 0,
+        "lossCondition": true
+      }
+    ],
+    "waterSources": [
+      {
+        "kind": "spring_pond",
+        "x": 0,
+        "z": 0,
+        "radius": 64
+      }
+    ],
+    "harvestAnchors": [],
+    "water": {
+      "id": "deepwater-surface-placeholder",
+      "depths": {
+        "springPond": 0.2
+      },
+      "speedMul": {
+        "springPond": 1
+      }
+    },
+    "deepwater": {
+      "waterTile": {
+        "id": "e5-regatta",
+        "size": 128,
+        "regions": [
+          {
+            "id": "open-water",
+            "minX": -64,
+            "maxX": 64,
+            "minZ": -64,
+            "maxZ": 64,
+            "depth": 0,
+            "depthClass": "surface",
+            "travel": [
+              "swim",
+              "boat"
+            ]
+          },
+          {
+            "id": "storm-front-fast-water",
+            "minX": -64,
+            "maxX": 64,
+            "minZ": 34,
+            "maxZ": 54,
+            "depth": 0,
+            "depthClass": "surface",
+            "travel": [
+              "boat"
+            ]
+          }
+        ]
+      },
+      "claimBoat": {
+        "id": "claim-boat",
+        "initialAnchorId": "start-line",
+        "anchors": [
+          {
+            "id": "start-line",
+            "x": -49,
+            "z": 0
+          },
+          {
+            "id": "finish-line",
+            "x": 49,
+            "z": 0
+          }
+        ],
+        "pads": [
+          {
+            "id": "bow",
+            "x": 0,
+            "z": -3
+          },
+          {
+            "id": "port",
+            "x": -3,
+            "z": 1
+          },
+          {
+            "id": "starboard",
+            "x": 3,
+            "z": 1
+          }
+        ]
+      },
+      "stormTrack": {
+        "regionId": "storm-front-fast-water",
+        "westX": -64,
+        "eastX": 64
+      },
+      "corsairWaveSize": 3,
+      "wrecks": []
+    },
+    "raceCourse": {
+      "fastWaterZone": {
+        "id": "storm-front-fast-water",
+        "minX": -54,
+        "maxX": 54,
+        "minZ": 34,
+        "maxZ": 54
+      },
+      "beacons": [
+        {
+          "id": "start-beacon",
+          "x": -49,
+          "z": 0,
+          "radius": 3
+        },
+        {
+          "id": "northwest-checkpoint",
+          "x": -28,
+          "z": 38,
+          "radius": 3
+        },
+        {
+          "id": "midcourse-checkpoint",
+          "x": 0,
+          "z": 18,
+          "radius": 3
+        },
+        {
+          "id": "northeast-checkpoint",
+          "x": 28,
+          "z": 38,
+          "radius": 3
+        },
+        {
+          "id": "finish-beacon",
+          "x": 49,
+          "z": 0,
+          "radius": 3
+        }
+      ]
+    },
+    "weather": {
+      "cycleSeconds": 24,
+      "clearSeconds": 5,
+      "telegraphSeconds": 3,
+      "stormSeconds": 10,
+      "stormMovementMultiplier": 0.72,
+      "stormVisibilityMultiplier": 0.58,
+      "hazeColor": "#335f64",
+      "hazeStrength": 0.28
+    },
+    "enemyRoster": [
+      {
+        "id": "corsair_racer",
+        "label": "Corsair Racer",
+        "waveMin": 1,
+        "hpScale": 1,
+        "speedMult": 1.15,
+        "visualScale": 1.2,
+        "tint": "#8f4f32",
+        "spawnEdges": [
+          "west"
+        ],
+        "spawnGates": [
+          {
+            "edge": "west",
+            "x": -62,
+            "z": 0
+          }
+        ],
+        "unitClass": "vehicle",
+        "vehicleChassis": "e4-hauler",
+        "travelClass": "boat",
+        "waterRegions": [
+          "open-water",
+          "storm-front-fast-water"
+        ],
+        "art": "placeholder"
+      }
+    ],
+    "lanes": {
+      "spawnEdges": [
+        "west"
+      ],
+      "territoryRingBiasWaves": 0,
+      "territoryRingLaneBias": 0
+    },
+    "spawnGates": [
+      {
+        "edge": "west",
+        "x": -62,
+        "z": 0
+      }
+    ]
+  },
+  "maskAgreement": {
+    "openWater": "surface and travel classification remain runtime-owned",
+    "fastWater": "dark submerged storm shelf follows the published x=-54..54 z=34..54 race zone without claiming water speed",
+    "beacons": "five submerged foundation rises follow the published checkpoint centers and radii",
+    "claimBoatDeck": "delegated to the separate runtime Claim-Boat body; no terrain deck is baked"
+  },
+  "landmarkMounts": [
+    {
+      "id": "start-line-rig",
+      "position": [
+        -49.0,
+        2.3773,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/regatta/start-line-rig.glb"
+    },
+    {
+      "id": "finish-line-rig",
+      "position": [
+        49.0,
+        2.3789,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/regatta/finish-line-rig.glb"
+    },
+    {
+      "id": "northwest-buoy-line-anchor",
+      "position": [
+        -28.0,
+        4.0829,
+        38.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/regatta/northwest-buoy-line-anchor.glb"
+    },
+    {
+      "id": "midcourse-buoy-line-anchor",
+      "position": [
+        0.0,
+        2.1988,
+        18.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/regatta/midcourse-buoy-line-anchor.glb"
+    },
+    {
+      "id": "northeast-buoy-line-anchor",
+      "position": [
+        28.0,
+        4.0877,
+        38.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/regatta/northeast-buoy-line-anchor.glb"
+    },
+    {
+      "id": "spectator-raft-port",
+      "position": [
+        -18.0,
+        3.436,
+        -20.0
+      ],
+      "rotation": [
+        0.0,
+        0.12,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/regatta/spectator-raft-port.glb"
+    },
+    {
+      "id": "spectator-raft-starboard",
+      "position": [
+        18.0,
+        3.2154,
+        -20.0
+      ],
+      "rotation": [
+        0.0,
+        -0.1,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/regatta/spectator-raft-starboard.glb"
+    },
+    {
+      "id": "judges-tower",
+      "position": [
+        0.0,
+        5.5367,
+        48.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/regatta/judges-tower.glb"
+    }
+  ],
+  "landmarkMountSpace": {
+    "coordinates": "game X/Y/Z",
+    "positionY": "local offset added to Terrain.visualY at the mount X/Z; Regatta offsets lift floating furniture from bathymetry to the code-owned sea surface",
+    "rotation": "XYZ Euler radians",
+    "scale": "XYZ multiplier",
+    "ownership": "landmark assets mount at runtime and are never baked into terrain"
+  },
+  "panoramaMount": {
+    "id": "regatta-panorama",
+    "asset": "regatta-panorama.glb",
+    "position": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "rotation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "renderOnly": true,
+    "ownership": "separate mounted scenery; never terrain or gameplay bounds"
+  },
+  "evidenceRig": "runtime-water proxy, warm Claim-Boat lanterns, five course beacons, and course trace; all helpers removed before terrain save/export",
+  "sourceArt": [
+    "assets/processed/kit-era-5.png",
+    "assets/raw/ter-shelf-atlas.png"
+  ],
+  "atlas": "regatta-terrain-atlas.png",
+  "files": {
+    "blend": {
+      "bytes": 9558330,
+      "sha256": "6bb3aa70f6631bf1c0b647fe3ad20a01f9c6a6f0be0781bd1cd1b3c2e1e3530d"
+    },
+    "glb": {
+      "bytes": 9471464,
+      "sha256": "66ad4fe9edee65b512984be599fcf1919c587084b71018fc2a59086ddea045b3"
+    },
+    "atlas": {
+      "bytes": 8740529,
+      "sha256": "b6ded4f0fc45b80f93ce43c0369bb4c27091f9668751910975a386ddc1b14fae"
+    }
+  },
+  "landmarkPack": {
+    "contract": "landmarks/regatta/regatta-landmark-pack-contract.json",
+    "atlas": "landmarks/regatta/regatta-landmarks-atlas.png",
+    "era": 5,
+    "sourceLadder": "reuse > derive > build-new",
+    "ownership": "separate mounted render-only GLBs; no simulation authority"
+  }
+}

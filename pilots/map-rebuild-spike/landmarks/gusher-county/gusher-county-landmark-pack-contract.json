@@ -1,0 +1,467 @@
+{
+  "map": "gusher-county",
+  "era": 4,
+  "referenceBase": "27587b7c6efbb804743f9f6aad192fd8df52bfd2",
+  "sourceLadder": [
+    "reuse",
+    "derive",
+    "build-new"
+  ],
+  "atlas": {
+    "asset": "landmarks/gusher-county/gusher-county-landmarks-atlas.png",
+    "width": 1024,
+    "height": 1024,
+    "sharedByEveryAsset": true,
+    "sha256": "4ca9b758c04c8cd1cf570e86d96d493492c002f8a0caea06302d5303ecc551d5"
+  },
+  "blend": {
+    "asset": "landmarks/gusher-county/gusher-county-landmarks.blend",
+    "sha256": "1ff30919eb62a4c8e51cd12b5ea456c266c6f0231b8d35f55ec932ad8b354899"
+  },
+  "assets": {
+    "derrick-01": {
+      "asset": "landmarks/gusher-county/derrick-01.glb",
+      "sourceTier": "derive",
+      "sources": [
+        "assets/raw/bld-derrick.png",
+        "assets/raw/plate-e4-bld-set.png"
+      ],
+      "terrainConformed": false,
+      "triangles": 868,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -2.6901,
+          -2.3072,
+          0.0
+        ],
+        "max": [
+          2.6901,
+          2.3072,
+          7.245
+        ]
+      },
+      "sha256": "d2851e2169608b4d5022d4c10095764117704887a42a6748103ed4313b7bab75",
+      "footprint": {"kind":"radius","radius":1.661}
+    },
+    "derrick-02": {
+      "asset": "landmarks/gusher-county/derrick-02.glb",
+      "sourceTier": "derive",
+      "sources": [
+        "assets/raw/bld-derrick.png",
+        "assets/raw/plate-e4-bld-set.png"
+      ],
+      "terrainConformed": false,
+      "triangles": 536,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -2.7,
+          -2.1,
+          0.0
+        ],
+        "max": [
+          2.7,
+          2.1,
+          4.92
+        ]
+      },
+      "sha256": "932e5d908c67a97d3cd0869b96d914de310496d3a0b83f3ec9bdb59d433fd686",
+      "footprint": {"kind":"rect","w":3.888,"d":3.024}
+    },
+    "derrick-03": {
+      "asset": "landmarks/gusher-county/derrick-03.glb",
+      "sourceTier": "derive",
+      "sources": [
+        "assets/raw/bld-derrick.png",
+        "assets/raw/plate-e4-bld-set.png"
+      ],
+      "terrainConformed": false,
+      "triangles": 684,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -2.6874,
+          -2.2,
+          0.0
+        ],
+        "max": [
+          2.6874,
+          2.2,
+          7.3
+        ]
+      },
+      "sha256": "353fb6c8a3c10f235526b7f006fc929b1b724f9ea2f2d030aa2519216a42c403",
+      "footprint": {"kind":"rect","w":3.87,"d":3.168}
+    },
+    "derrick-04": {
+      "asset": "landmarks/gusher-county/derrick-04.glb",
+      "sourceTier": "derive",
+      "sources": [
+        "assets/raw/bld-derrick.png",
+        "assets/raw/plate-e4-bld-set.png"
+      ],
+      "terrainConformed": false,
+      "triangles": 564,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -2.7,
+          -2.15,
+          0.0
+        ],
+        "max": [
+          2.7,
+          2.15,
+          6.75
+        ]
+      },
+      "sha256": "11ebb82fcf6200143181fef8ac444d0096bc0d0df4ca952e0bddd155bf82ed1d",
+      "footprint": {"kind":"rect","w":3.888,"d":3.096}
+    },
+    "derrick-05": {
+      "asset": "landmarks/gusher-county/derrick-05.glb",
+      "sourceTier": "derive",
+      "sources": [
+        "assets/raw/bld-derrick.png",
+        "assets/raw/plate-e4-bld-set.png"
+      ],
+      "terrainConformed": false,
+      "triangles": 892,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -2.6132,
+          -2.2156,
+          0.0
+        ],
+        "max": [
+          2.6132,
+          2.2156,
+          7.245
+        ]
+      },
+      "sha256": "e6c26bf73f26c47553bbd951a0a8ae809451b05ee3677fb9f8461a5852f1c413",
+      "footprint": {"kind":"radius","radius":1.595}
+    },
+    "derrick-06": {
+      "asset": "landmarks/gusher-county/derrick-06.glb",
+      "sourceTier": "derive",
+      "sources": [
+        "assets/raw/bld-derrick.png",
+        "assets/raw/plate-e4-bld-set.png"
+      ],
+      "terrainConformed": false,
+      "triangles": 536,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -2.7,
+          -2.1,
+          0.0
+        ],
+        "max": [
+          2.7,
+          2.1,
+          4.92
+        ]
+      },
+      "sha256": "866d540dd21b0ce0ee48f8775615e09d1d8937b9d327bc5f7b448c75749e3758",
+      "footprint": {"kind":"rect","w":3.888,"d":3.024}
+    },
+    "derrick-07": {
+      "asset": "landmarks/gusher-county/derrick-07.glb",
+      "sourceTier": "derive",
+      "sources": [
+        "assets/raw/bld-derrick.png",
+        "assets/raw/plate-e4-bld-set.png"
+      ],
+      "terrainConformed": false,
+      "triangles": 684,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -2.6874,
+          -2.2,
+          0.0
+        ],
+        "max": [
+          2.6874,
+          2.2,
+          7.3
+        ]
+      },
+      "sha256": "2a4777446179cb704f3ff7e79e734a1b43488e2803268b91b4af717193c9c57e",
+      "footprint": {"kind":"rect","w":3.87,"d":3.168}
+    },
+    "derrick-08": {
+      "asset": "landmarks/gusher-county/derrick-08.glb",
+      "sourceTier": "derive",
+      "sources": [
+        "assets/raw/bld-derrick.png",
+        "assets/raw/plate-e4-bld-set.png"
+      ],
+      "terrainConformed": false,
+      "triangles": 564,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -2.7,
+          -2.15,
+          0.0
+        ],
+        "max": [
+          2.7,
+          2.15,
+          7.35
+        ]
+      },
+      "sha256": "571142d5722904672457a5e4ef8ae1a0e819161c91fdd76181f1c9c1e1d344fb",
+      "footprint": {"kind":"rect","w":3.888,"d":3.096}
+    },
+    "outhouse-geyser": {
+      "asset": "landmarks/gusher-county/outhouse-geyser.glb",
+      "sourceTier": "derive",
+      "sources": [
+        "assets/raw/prop-gusher.png",
+        "assets/raw/plate-e4-bld-set.png"
+      ],
+      "terrainConformed": false,
+      "triangles": 640,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -1.735,
+          -1.3951,
+          0.0
+        ],
+        "max": [
+          1.735,
+          1.3951,
+          7.5
+        ]
+      },
+      "sha256": "fee4a3d08b58b56ce6f0eb89a2fe39d3e56ed87733c3d2aef24f8c331d347a5b",
+      "footprint": {"kind":"rect","w":2.498,"d":2.009}
+    },
+    "county-camp-rig": {
+      "asset": "landmarks/gusher-county/county-camp-rig.glb",
+      "sourceTier": "reuse",
+      "sources": [
+        "assets/pilots/plaza-props-3d/filling-shed.e4.glb",
+        "assets/pilots/plaza-props-3d/fuel-rack.e4.glb",
+        "assets/raw/plate-e4-bld-set.png"
+      ],
+      "terrainConformed": false,
+      "triangles": 1584,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -4.5887,
+          -2.7998,
+          0.0
+        ],
+        "max": [
+          4.5887,
+          2.7998,
+          6.25
+        ]
+      },
+      "sha256": "998410b6380e4a002e1007737dc94f885bf6a89d743ea546a796959522137482",
+      "footprint": {"kind":"rect","w":6.608,"d":4.032}
+    }
+  },
+  "mounts": [
+    {
+      "id": "derrick-01",
+      "asset": "landmarks/gusher-county/derrick-01.glb",
+      "position": [
+        -56,
+        0.44,
+        -36
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "id": "derrick-02",
+      "asset": "landmarks/gusher-county/derrick-02.glb",
+      "position": [
+        -40,
+        0.44,
+        -48
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "id": "derrick-03",
+      "asset": "landmarks/gusher-county/derrick-03.glb",
+      "position": [
+        40,
+        0.62,
+        -44
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "id": "derrick-04",
+      "asset": "landmarks/gusher-county/derrick-04.glb",
+      "position": [
+        56,
+        0.62,
+        -32
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "id": "derrick-05",
+      "asset": "landmarks/gusher-county/derrick-05.glb",
+      "position": [
+        -44,
+        0.78,
+        44
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "id": "derrick-06",
+      "asset": "landmarks/gusher-county/derrick-06.glb",
+      "position": [
+        -16,
+        0.78,
+        52
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "id": "derrick-07",
+      "asset": "landmarks/gusher-county/derrick-07.glb",
+      "position": [
+        20,
+        0.78,
+        48
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "id": "derrick-08",
+      "asset": "landmarks/gusher-county/derrick-08.glb",
+      "position": [
+        48,
+        0.78,
+        40
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "id": "outhouse-geyser",
+      "asset": "landmarks/gusher-county/outhouse-geyser.glb",
+      "position": [
+        14.0,
+        0.18,
+        -10.0
+      ],
+      "rotation": [
+        0.0,
+        0.12,
+        0.0
+      ],
+      "scale": [
+        0.82,
+        0.82,
+        0.82
+      ]
+    },
+    {
+      "id": "county-camp-rig",
+      "asset": "landmarks/gusher-county/county-camp-rig.glb",
+      "position": [
+        0.0,
+        0.18,
+        -4.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  ],
+  "simulation": "none; terrain, collision, movement, placement, water, spawns, and fog remain unchanged"
+}

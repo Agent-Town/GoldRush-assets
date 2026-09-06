@@ -1,0 +1,243 @@
+{
+  "map": "dry-gulch",
+  "era": 1,
+  "sourceLadder": [
+    "reuse",
+    "derive",
+    "build-new"
+  ],
+  "atlas": {
+    "asset": "landmarks/dry-gulch/dry-gulch-landmarks-atlas.png",
+    "width": 1024,
+    "height": 1024,
+    "sharedByEveryAsset": true,
+    "sha256": "65a71f86e2c61d9ef24ec4c2aa988bd3dfe121b8376be6436b35b880435aaa45"
+  },
+  "blend": {
+    "asset": "landmarks/dry-gulch/dry-gulch-landmarks.blend",
+    "sha256": "fc3a36be452e63ea28dcd5afbb5b55c528394a30352eabe5f978084c14186b8b"
+  },
+  "assets": {
+    "ruined_mining_operation": {
+      "asset": "landmarks/dry-gulch/ruined_mining_operation.glb",
+      "sourceTier": "derive",
+      "sources": [
+        "assets/pilots/stamp-mill-3d/stamp-mill.glb",
+        "assets/processed/bld-stamp-mill.png"
+      ],
+      "terrainConformed": false,
+      "triangles": 1452,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -4.4108,
+          -2.948,
+          0.0
+        ],
+        "max": [
+          4.4108,
+          2.948,
+          5.8092
+        ]
+      },
+      "sha256": "6be7633f4407a5d650daa7eeb1146c185f843116decf6cb9bc13e2c55d42dff0",
+      "footprint": {"kind":"rect","w":6.352,"d":4.245}
+    },
+    "abandoned_farmhouse": {
+      "asset": "landmarks/dry-gulch/abandoned_farmhouse.glb",
+      "sourceTier": "derive",
+      "sources": [
+        "assets/pilots/claim-office-3d/claim-office.glb",
+        "assets/processed/bld-claim-office.png"
+      ],
+      "terrainConformed": false,
+      "triangles": 2444,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -3.6,
+          -2.7902,
+          0.0
+        ],
+        "max": [
+          3.6,
+          2.7902,
+          5.1795
+        ]
+      },
+      "sha256": "19e1af0002fe3f527e9b211592ff362328b018f0a4550bed84b402cf54dad749",
+      "footprint": {"kind":"rect","w":5.184,"d":4.018}
+    },
+    "cactus_thicket": {
+      "asset": "landmarks/dry-gulch/cactus_thicket.glb",
+      "sourceTier": "build-new",
+      "sources": [
+        "assets/raw/plate-contract-dry-gulch.png"
+      ],
+      "terrainConformed": true,
+      "triangles": 576,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -5.234,
+          -2.9781,
+          0.0
+        ],
+        "max": [
+          5.234,
+          2.9781,
+          4.5569
+        ]
+      },
+      "sha256": "d2440aa99897316b11b0b0168ce551559395e48b1236192d2864e63fb11308e4",
+      "footprint": {"kind":"rect","w":7.537,"d":4.288}
+    },
+    "bison_skeleton": {
+      "asset": "landmarks/dry-gulch/bison_skeleton.glb",
+      "sourceTier": "build-new",
+      "sources": [
+        "assets/raw/plate-contract-dry-gulch.png"
+      ],
+      "terrainConformed": false,
+      "triangles": 364,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -3.2755,
+          -1.241,
+          0.0
+        ],
+        "max": [
+          3.2755,
+          1.241,
+          1.1233
+        ]
+      },
+      "sha256": "f540c4fb854b2d3a3ebc665083060ac3cfcd9913362fb7ebaf262691e192842a",
+      "footprint": {"kind":"rect","w":4.717,"d":1.787}
+    },
+    "isolated_spring": {
+      "asset": "landmarks/dry-gulch/isolated_spring.glb",
+      "sourceTier": "build-new",
+      "sources": [
+        "assets/raw/plate-contract-dry-gulch.png"
+      ],
+      "terrainConformed": false,
+      "triangles": 484,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -3.4025,
+          -2.7,
+          0.0
+        ],
+        "max": [
+          3.4025,
+          2.7,
+          0.6
+        ]
+      },
+      "sha256": "48be8e9947afdfece3738e67b0f94fc21d2b1396607da5ad7ba8a2fc0be01d73",
+      "footprint": {"kind":"rect","w":4.9,"d":3.888}
+    }
+  },
+  "mounts": [
+    {
+      "id": "ruined_mining_operation",
+      "position": [
+        2.0,
+        0.0,
+        -5.8
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/dry-gulch/ruined_mining_operation.glb"
+    },
+    {
+      "id": "abandoned_farmhouse",
+      "position": [
+        10.5,
+        0.0,
+        14.5
+      ],
+      "rotation": [
+        0.0,
+        -0.12,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/dry-gulch/abandoned_farmhouse.glb"
+    },
+    {
+      "id": "cactus_thicket",
+      "position": [
+        18.3,
+        -0.170662,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/dry-gulch/cactus_thicket.glb",
+      "terrainConformOffsetY": -0.170662
+    },
+    {
+      "id": "bison_skeleton",
+      "position": [
+        -8.0,
+        0.0,
+        12.5
+      ],
+      "rotation": [
+        0.0,
+        0.18,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/dry-gulch/bison_skeleton.glb"
+    },
+    {
+      "id": "isolated_spring",
+      "position": [
+        -18.0,
+        0.0,
+        -18.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/dry-gulch/isolated_spring.glb"
+    }
+  ],
+  "simulation": "none; terrain, collision, movement, placement, water, spawns, and fog remain unchanged"
+}

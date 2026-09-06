@@ -1,0 +1,250 @@
+{
+  "map": "canyon-works",
+  "era": 3,
+  "referenceBase": "e91dc835a7a8f0e873dfee1c236e67860173eeb3",
+  "sourceLadder": [
+    "reuse",
+    "derive",
+    "build-new"
+  ],
+  "atlas": {
+    "asset": "landmarks/canyon-works/canyon-works-landmarks-atlas.png",
+    "width": 1024,
+    "height": 1024,
+    "sharedByEveryAsset": true,
+    "sha256": "5819f8eec12371756a0b2b36342bdbf8560ee3c4e99c16f35fe2cae28c1bbd5b"
+  },
+  "blend": {
+    "asset": "landmarks/canyon-works/canyon-works-landmarks.blend",
+    "sha256": "9b2ae77e097dff6244bacc41fdd9451e4fa6f35d835fc21e1e8323a1633f2d8c"
+  },
+  "assets": {
+    "sub-hall-dynamo-house": {
+      "asset": "landmarks/canyon-works/sub-hall-dynamo-house.glb",
+      "sourceTier": "derive",
+      "sources": [
+        "assets/pilots/plaza-props-3d/transformer-shed.e3.glb",
+        "assets/pilots/plaza-props-3d/insulator-post.e3.glb",
+        "assets/raw/ter-canyon-atlas.png"
+      ],
+      "terrainConformed": false,
+      "triangles": 1768,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -3.9,
+          -2.5,
+          0.0
+        ],
+        "max": [
+          3.9,
+          2.5,
+          6.55
+        ]
+      },
+      "sha256": "7b8bdf46b93e23dbb44e29564ee94eb24e40f764db9052c260814361d137e92a",
+      "footprint": {"kind":"rect","w":5.616,"d":3.6}
+    },
+    "west-switchback-line-house": {
+      "asset": "landmarks/canyon-works/west-switchback-line-house.glb",
+      "sourceTier": "reuse",
+      "sources": [
+        "assets/pilots/plaza-props-3d/transformer-shed.e3.glb",
+        "assets/pilots/plaza-props-3d/wire-run.e3.glb",
+        "assets/pilots/plaza-props-3d/insulator-post.e3.glb"
+      ],
+      "terrainConformed": false,
+      "triangles": 1616,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -2.9,
+          -2.3,
+          0.0
+        ],
+        "max": [
+          2.9,
+          2.3,
+          5.4796
+        ]
+      },
+      "sha256": "357caf27edb7b5378b00f50ea3c53ccea250733bd5a216e2a6b048f56e220b1b",
+      "footprint": {"kind":"rect","w":4.176,"d":3.312}
+    },
+    "east-switchback-line-house": {
+      "asset": "landmarks/canyon-works/east-switchback-line-house.glb",
+      "sourceTier": "reuse",
+      "sources": [
+        "assets/pilots/plaza-props-3d/transformer-shed.e3.glb",
+        "assets/pilots/plaza-props-3d/wire-run.e3.glb",
+        "assets/pilots/plaza-props-3d/insulator-post.e3.glb"
+      ],
+      "terrainConformed": false,
+      "triangles": 1616,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -2.9,
+          -2.3,
+          0.0
+        ],
+        "max": [
+          2.9,
+          2.3,
+          5.4796
+        ]
+      },
+      "sha256": "7e682de1033858ab8dbc42dbd0e7623c7e4cfa7aefd1229531a8f2fee64efeb8",
+      "footprint": {"kind":"rect","w":4.176,"d":3.312}
+    },
+    "dam-crest-gate-house": {
+      "asset": "landmarks/canyon-works/dam-crest-gate-house.glb",
+      "sourceTier": "derive",
+      "sources": [
+        "assets/pilots/plaza-props-3d/transformer-shed.e3.glb",
+        "assets/pilots/plaza-props-3d/wire-run.e3.glb",
+        "assets/raw/ter-canyon-atlas.png"
+      ],
+      "terrainConformed": false,
+      "triangles": 1872,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -4.6,
+          -2.4,
+          0.0
+        ],
+        "max": [
+          4.6,
+          2.4,
+          4.3
+        ]
+      },
+      "sha256": "e6d65c2c3c64fc5424873300a3e83773fdc87602cd553cb4294e25926cbc55e1"
+    },
+    "downriver-tram-lamp": {
+      "asset": "landmarks/canyon-works/downriver-tram-lamp.glb",
+      "sourceTier": "reuse",
+      "sources": [
+        "assets/pilots/run3d/lantern-post.glb",
+        "assets/pilots/plaza-props-3d/insulator-post.e3.glb"
+      ],
+      "terrainConformed": false,
+      "triangles": 820,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -2.1,
+          -1.6,
+          0.0
+        ],
+        "max": [
+          2.1,
+          1.6,
+          4.69
+        ]
+      },
+      "sha256": "7a62f392dea9531eb6a5e3f27eef7003b8f801f1edf3c84340847fea7b3823c1",
+      "footprint": {"kind":"rect","w":3.024,"d":2.304}
+    }
+  },
+  "mounts": [
+    {
+      "id": "sub-hall-dynamo-house",
+      "position": [
+        0.0,
+        0.0,
+        -54.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/canyon-works/sub-hall-dynamo-house.glb"
+    },
+    {
+      "id": "west-switchback-line-house",
+      "position": [
+        -38.0,
+        0.0,
+        -18.0
+      ],
+      "rotation": [
+        0.0,
+        0.18,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/canyon-works/west-switchback-line-house.glb"
+    },
+    {
+      "id": "east-switchback-line-house",
+      "position": [
+        38.0,
+        0.0,
+        -18.0
+      ],
+      "rotation": [
+        0.0,
+        -0.18,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/canyon-works/east-switchback-line-house.glb"
+    },
+    {
+      "id": "dam-crest-gate-house",
+      "position": [
+        0.0,
+        0.0,
+        8.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/canyon-works/dam-crest-gate-house.glb"
+    },
+    {
+      "id": "downriver-tram-lamp",
+      "position": [
+        44.0,
+        0.0,
+        42.0
+      ],
+      "rotation": [
+        0.0,
+        -0.24,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/canyon-works/downriver-tram-lamp.glb"
+    }
+  ],
+  "simulation": "none; terrain, collision, movement, placement, water, spawns, and fog remain unchanged",
+  "mountInterlock": "resolved-3d-d"
+}

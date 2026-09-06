@@ -1,0 +1,396 @@
+{
+  "asset": "half-life-hollow-terrain.glb",
+  "contractId": "e6-half-life-hollow",
+  "tileId": "e6-half-life-hollow",
+  "renderOnly": true,
+  "simulation": "planar; glow bridges, causeway expiry, countdown-safe state, route recalculation, extraction, movement, collision, placement, and spawns remain code-owned and unchanged",
+  "heightSocket": "Terrain.visualY",
+  "theme": "a deep expiring hollow with four permanent abutment shelves and three empty runtime-owned crossings winding south to north",
+  "regionalFamily": {
+    "epoch": "Epoch 6 atomic homestead",
+    "shared": [
+      "chrome and pastel enamel over parchment warmth",
+      "soft teal starstone cues",
+      "amber Combine work scars",
+      "engraved fade steps rather than corrosion",
+      "hard desert grit outside polished effort"
+    ],
+    "unique": [
+      "deep countdown hollow",
+      "four offset shelf abutments",
+      "three empty crossing sockets",
+      "north extraction notch"
+    ]
+  },
+  "boundsMeters": {
+    "min": [
+      -64.0,
+      -64.0,
+      -2.41
+    ],
+    "max": [
+      64.0,
+      64.0,
+      2.9533
+    ]
+  },
+  "meshCount": 1,
+  "primitiveCount": 1,
+  "materialCount": 1,
+  "vertices": 16641,
+  "triangles": 32768,
+  "triangleBudget": 60000,
+  "texture": {
+    "count": 1,
+    "width": 2048,
+    "height": 2048,
+    "embedded": true
+  },
+  "maskTable": "assets/contracts/epoch-6-atomic/mask-tables/e6-half-life-hollow.json",
+  "maskTruth": {
+    "source": "assets/contracts/epoch-6-atomic/contracts.json; lore/STORYBOOK.md \u2014 E6 \"New maps, specified for whoever builds them\"",
+    "tileId": "e6-half-life-hollow",
+    "size": 128,
+    "dimensions": {
+      "width": 128,
+      "height": 128
+    },
+    "river": false,
+    "ford": false,
+    "buildZones": [
+      {
+        "id": "south-launch-shelf",
+        "bank": "south",
+        "minX": -38,
+        "maxX": 38,
+        "minZ": -54,
+        "maxZ": -40
+      },
+      {
+        "id": "west-countdown-ground",
+        "bank": "south",
+        "minX": -42,
+        "maxX": -8,
+        "minZ": -22,
+        "maxZ": -6
+      },
+      {
+        "id": "east-countdown-ground",
+        "bank": "north",
+        "minX": 8,
+        "maxX": 42,
+        "minZ": 10,
+        "maxZ": 26
+      },
+      {
+        "id": "north-extraction-shelf",
+        "bank": "north",
+        "minX": -28,
+        "maxX": 28,
+        "minZ": 40,
+        "maxZ": 54
+      }
+    ],
+    "glowBridges": [
+      {
+        "id": "south-glow-bridge",
+        "minX": -8,
+        "maxX": 8,
+        "minZ": -40,
+        "maxZ": -22
+      },
+      {
+        "id": "north-glow-bridge",
+        "minX": -8,
+        "maxX": 8,
+        "minZ": 26,
+        "maxZ": 40
+      }
+    ],
+    "causeways": [
+      {
+        "id": "center-dial-causeway",
+        "minX": -8,
+        "maxX": 8,
+        "minZ": -6,
+        "maxZ": 10
+      }
+    ],
+    "countdownGround": [
+      {
+        "id": "west-countdown-ground",
+        "minX": -42,
+        "maxX": -8,
+        "minZ": -22,
+        "maxZ": -6
+      },
+      {
+        "id": "east-countdown-ground",
+        "minX": 8,
+        "maxX": 42,
+        "minZ": 10,
+        "maxZ": 26
+      }
+    ],
+    "stakeMarkers": [
+      {
+        "id": "hollow-extraction",
+        "x": 0,
+        "z": 48,
+        "lossCondition": false
+      }
+    ],
+    "waterSources": [],
+    "harvestAnchors": [],
+    "heightfield": {
+      "id": "half-life-hollow-expiry-course",
+      "mode": "visual"
+    },
+    "extractionRoute": [
+      {
+        "x": 0,
+        "z": -48
+      },
+      {
+        "x": 0,
+        "z": -30
+      },
+      {
+        "x": -24,
+        "z": -14
+      },
+      {
+        "x": 0,
+        "z": 2
+      },
+      {
+        "x": 24,
+        "z": 18
+      },
+      {
+        "x": 0,
+        "z": 34
+      },
+      {
+        "x": 0,
+        "z": 48
+      }
+    ],
+    "lanes": {
+      "spawnEdges": [
+        "west",
+        "east"
+      ],
+      "territoryRingBiasWaves": 0,
+      "territoryRingLaneBias": 0
+    },
+    "spawnGates": []
+  },
+  "waterAgreement": {
+    "river": false,
+    "waterSources": []
+  },
+  "buildZoneFlatness": [
+    {
+      "id": "south-launch-shelf",
+      "bounds": [
+        -38,
+        38,
+        -54,
+        -40
+      ],
+      "sampledSurfacePoints": 1225,
+      "maxDeviationMeters": 0.0
+    },
+    {
+      "id": "west-countdown-ground",
+      "bounds": [
+        -42,
+        -8,
+        -22,
+        -6
+      ],
+      "sampledSurfacePoints": 1225,
+      "maxDeviationMeters": 0.0
+    },
+    {
+      "id": "east-countdown-ground",
+      "bounds": [
+        8,
+        42,
+        10,
+        26
+      ],
+      "sampledSurfacePoints": 1225,
+      "maxDeviationMeters": 0.0
+    },
+    {
+      "id": "north-extraction-shelf",
+      "bounds": [
+        -28,
+        28,
+        40,
+        54
+      ],
+      "sampledSurfacePoints": 1225,
+      "maxDeviationMeters": 0.0
+    }
+  ],
+  "runtimeVisualsAbsent": [
+    "south glow bridge",
+    "north glow bridge",
+    "center dial causeway"
+  ],
+  "landmarkMounts": [
+    {
+      "id": "south-countdown-gate",
+      "position": [
+        0.0,
+        0.0,
+        -59.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/half-life-hollow/south-countdown-gate.glb"
+    },
+    {
+      "id": "west-hollow-warning-pylon",
+      "position": [
+        -52.0,
+        0.0,
+        -17.0
+      ],
+      "rotation": [
+        0.0,
+        0.12,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/half-life-hollow/west-hollow-warning-pylon.glb"
+    },
+    {
+      "id": "east-hollow-warning-pylon",
+      "position": [
+        52.0,
+        0.0,
+        20.0
+      ],
+      "rotation": [
+        0.0,
+        -0.14,
+        0.0
+      ],
+      "scale": [
+        0.96,
+        0.96,
+        0.96
+      ],
+      "asset": "landmarks/half-life-hollow/east-hollow-warning-pylon.glb"
+    },
+    {
+      "id": "expired-appliance-convoy",
+      "position": [
+        -48.0,
+        0.0,
+        43.0
+      ],
+      "rotation": [
+        0.0,
+        0.22,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/half-life-hollow/expired-appliance-convoy.glb"
+    },
+    {
+      "id": "north-extraction-gantry",
+      "position": [
+        36.0,
+        0.0,
+        50.0
+      ],
+      "rotation": [
+        0.0,
+        -0.08,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/half-life-hollow/north-extraction-gantry.glb"
+    }
+  ],
+  "landmarkMountSpace": {
+    "coordinates": "game X/Y/Z",
+    "positionY": "local offset added to Terrain.visualY at the mount X/Z",
+    "rotation": "XYZ Euler radians",
+    "scale": "XYZ multiplier",
+    "ownership": "landmark assets mount at runtime and are never baked into terrain"
+  },
+  "panoramaMount": {
+    "id": "half-life-hollow-panorama",
+    "asset": "half-life-hollow-panorama.glb",
+    "position": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "rotation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "renderOnly": true,
+    "ownership": "separate mounted scenery; never terrain or gameplay bounds"
+  },
+  "evidenceRig": "E6 point-light cues plus contract-specific runtime proxies, rubble, cacti, and masks; all helpers removed before save/export",
+  "sourceArt": [
+    "assets/processed/kit-era-6.png",
+    "assets/pilots/map-rebuild-spike/glow-mesa-terrain-atlas.png"
+  ],
+  "atlas": "half-life-hollow-terrain-atlas.png",
+  "files": {
+    "blend": {
+      "bytes": 9049072,
+      "sha256": "fc1ce383c1749a3a94459e1e41c426f9e0608dacad527bf331835e505fa94e16"
+    },
+    "glb": {
+      "bytes": 8975676,
+      "sha256": "fc9b0f73723f10beadc19b063f26d9505ca5e3f6f590d0b4a62a641f2bbe6651"
+    },
+    "atlas": {
+      "bytes": 8244537,
+      "sha256": "f2c64077baa36adbfd068f76474198d17871a28010fda1e56dadd2cc22069573"
+    }
+  },
+  "landmarkPack": {
+    "contract": "landmarks/half-life-hollow/half-life-hollow-landmark-pack-contract.json",
+    "atlas": "landmarks/half-life-hollow/half-life-hollow-landmarks-atlas.png",
+    "era": 6,
+    "sourceLadder": "reuse > derive > build-new",
+    "ownership": "separate mounted render-only GLBs; no simulation authority"
+  }
+}

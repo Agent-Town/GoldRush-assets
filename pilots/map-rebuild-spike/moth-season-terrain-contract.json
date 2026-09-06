@@ -1,0 +1,272 @@
+{
+  "asset": "moth-season-terrain.glb",
+  "contractId": "e3-moth-season",
+  "tileId": "e3-moth-season",
+  "renderOnly": true,
+  "simulation": "planar masks, movement, collision, spawns, placement, and combat remain unchanged",
+  "heightSocket": "Terrain.visualY",
+  "theme": "two lamp-lit yards flanking a low black north-south migration corridor",
+  "regionalFamily": {
+    "epoch": "Epoch 3 voltage canyon",
+    "shared": [
+      "ink-blue canyon dusk",
+      "stained copper earth",
+      "deep engraved shadow",
+      "restrained voltage teal",
+      "sparse cacti",
+      "lantern warmth"
+    ],
+    "unique": [
+      "authored terrain silhouette",
+      "mask rhythm",
+      "night-light composition",
+      "panorama profile"
+    ]
+  },
+  "boundsMeters": {
+    "min": [
+      -40.0,
+      -40.0,
+      -0.3338
+    ],
+    "max": [
+      40.0,
+      40.0,
+      3.3491
+    ]
+  },
+  "meshCount": 1,
+  "primitiveCount": 1,
+  "materialCount": 1,
+  "vertices": 16641,
+  "triangles": 32768,
+  "triangleBudget": 60000,
+  "texture": {
+    "count": 1,
+    "width": 2048,
+    "height": 2048,
+    "embedded": true
+  },
+  "maskTable": "assets/contracts/epoch-3-voltage/mask-tables/e3-moth-season.json",
+  "maskTruth": {
+    "source": "assets/contracts/epoch-3-voltage/contracts.json",
+    "tileId": "e3-moth-season",
+    "size": 80,
+    "river": false,
+    "ford": false,
+    "buildZones": [
+      {
+        "id": "west-lit-yard",
+        "bank": "north",
+        "minX": -32,
+        "maxX": -8,
+        "minZ": -24,
+        "maxZ": 24
+      },
+      {
+        "id": "dark-corridor",
+        "bank": "north",
+        "minX": -6,
+        "maxX": 6,
+        "minZ": -34,
+        "maxZ": 34
+      },
+      {
+        "id": "east-tithe-yard",
+        "bank": "north",
+        "minX": 8,
+        "maxX": 32,
+        "minZ": -24,
+        "maxZ": 24
+      }
+    ],
+    "waterSources": [],
+    "lanes": {
+      "spawnEdges": [
+        "north",
+        "south"
+      ],
+      "territoryRingBiasWaves": 0,
+      "territoryRingLaneBias": 0
+    },
+    "spawnGates": [],
+    "dayNightCycle": {
+      "periodSeconds": 24,
+      "duskRampSeconds": 2,
+      "dawnRampSeconds": 2,
+      "nightDepth": 1,
+      "nightLocked": true
+    },
+    "mothSeason": {
+      "radiusWeight": 1,
+      "decoyWeight": 2,
+      "mothsPerLightPerWave": 1,
+      "nightSpeedOutsideLight": 1.12,
+      "litThreshold": 0.35,
+      "attachDamagePerSecond": 6
+    }
+  },
+  "waterAgreement": {
+    "river": false,
+    "waterSources": []
+  },
+  "pylonSiteFlatness": [],
+  "pylonFlatnessLimitMeters": 0.02,
+  "landmarkFreeze": "lifted; canonical mounted landmark pack records backfilled by the mounts sweep",
+  "landmarkMounts": [
+    {
+      "id": "north-migration-watch-gate",
+      "position": [
+        0.0,
+        0.0,
+        42.0
+      ],
+      "rotation": [
+        0.0,
+        3.1416,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/moth-season/north-migration-watch-gate.glb"
+    },
+    {
+      "id": "south-quiet-road-gate",
+      "position": [
+        0.0,
+        0.0,
+        -42.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/moth-season/south-quiet-road-gate.glb"
+    },
+    {
+      "id": "west-lamplighter-refuge",
+      "position": [
+        -38.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.18,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/moth-season/west-lamplighter-refuge.glb"
+    },
+    {
+      "id": "east-tithe-bell-house",
+      "position": [
+        38.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.18,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/moth-season/east-tithe-bell-house.glb"
+    },
+    {
+      "id": "mothglass-counting-cage",
+      "position": [
+        0.0,
+        0.0,
+        36.0
+      ],
+      "rotation": [
+        0.0,
+        3.1416,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/moth-season/mothglass-counting-cage.glb"
+    }
+  ],
+  "panoramaMount": {
+    "id": "moth-season-panorama",
+    "asset": "moth-season-panorama.glb",
+    "position": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "rotation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "renderOnly": true,
+    "ownership": "separate mounted scenery; never terrain or gameplay bounds"
+  },
+  "nightRig": "dusk/deep shadow with code-owned lamp positions represented by render-only warm lights",
+  "sourceArt": [
+    "assets/processed/terrain-bank-tile.png",
+    "assets/processed/terrain-bank-tile-c.png",
+    "assets/processed/terrain-river-tile.png",
+    "assets/processed/ter-rail-elements-r0c2.png",
+    "assets/processed/kit-era-3.png",
+    "assets/raw/plate-e3-mothswarm.png"
+  ],
+  "atlas": "moth-season-terrain-atlas.png",
+  "files": {
+    "blend": {
+      "bytes": 8319307,
+      "sha256": "902bf33fe2003679e55ea2b23587cf01a1d22d28b4777a4b7a1edbd9c7beec0c"
+    },
+    "glb": {
+      "bytes": 8235400,
+      "sha256": "7861776cbfdf762e10508c9683c0d80eb63b7636b758b88cadb9ed92db3b721f"
+    },
+    "atlas": {
+      "bytes": 7504529,
+      "sha256": "f06c5e9a42a0b213443481bb89dc64c0749ebbd39d304cc68f875b6f2d224533"
+    }
+  },
+  "landmarkMountSpace": {
+    "coordinates": "game X/Y/Z",
+    "positionY": "local offset added to Terrain.visualY at the mount X/Z",
+    "rotation": "XYZ Euler radians",
+    "scale": "XYZ multiplier",
+    "ownership": "landmark assets mount at runtime and are never baked into terrain"
+  },
+  "landmarkPack": {
+    "contract": "landmarks/moth-season/moth-season-landmark-pack-contract.json",
+    "atlas": "landmarks/moth-season/moth-season-landmarks-atlas.png",
+    "era": 3,
+    "sourceLadder": "reuse > derive > build-new",
+    "ownership": "separate mounted render-only GLBs; no simulation authority"
+  }
+}

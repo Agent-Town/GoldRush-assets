@@ -1,0 +1,103 @@
+{
+  "asset": "moth-season-panorama.glb",
+  "map": "moth-season",
+  "renderOnly": true,
+  "style": "engraved Epoch 3 voltage canyon kit-plate horizon; warm valley against a darker fevered rim",
+  "signature": "a narrow black migration corridor between two low lamp-lit yard horizons",
+  "exposure": {
+    "mode": "bakedIntoAtlas",
+    "linearMultiplier": 1.44
+  },
+  "lawVersion": "PANORAMA LAW v2",
+  "namedCorrections": {
+    "paintedWall": "sunk sky ring behind an irregular closer ridge belt with a dusty haze transition",
+    "ceiling": "engraving density grades from dense horizon to near-plain parchment zenith",
+    "echo": "asymmetric cloud and dust edits plus independent near/far ridge profiles break mirrored repetition"
+  },
+  "projection": {
+    "skyRingRadiusMeters": 190.0,
+    "ridgeFootRadiusMeters": 161.5,
+    "ridgeOccluderRadiusMeters": 174.0,
+    "farRidgeRadiusMeters": [
+      177.0,
+      184.0
+    ],
+    "ridgeFootRadiusRangeMeters": [
+      159.8,
+      163.2
+    ],
+    "ridgeOccluderRadiusRangeMeters": [
+      172.3,
+      175.7
+    ],
+    "skyBottomMeters": -10.0,
+    "skyTopMeters": 130.0,
+    "ridgeTopFormulaMeters": "5.0 + silhouetteFraction * 55.0",
+    "groundSkirtInnerBoundaryMeters": {
+      "shape": "expanded-playfield-rectangle",
+      "halfExtents": [
+        40.0,
+        40.0
+      ],
+      "margin": 1.0
+    },
+    "groundSkirtOuterRadiusMeters": 161.5
+  },
+  "mount": {
+    "id": "moth-season-panorama",
+    "asset": "moth-season-panorama.glb",
+    "position": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "rotation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "renderOnly": true,
+    "ownership": "separate mounted scenery; never terrain or gameplay bounds"
+  },
+  "nonInterference": {
+    "playfieldBounds": "unchanged",
+    "spawnEdges": "unchanged",
+    "fogGating": "unchanged",
+    "waterBuildSpawnMasks": "unchanged"
+  },
+  "meshCount": 1,
+  "primitiveCount": 1,
+  "materialCount": 1,
+  "vertices": 1931,
+  "triangles": 2496,
+  "triangleBudget": 4000,
+  "texture": {
+    "count": 1,
+    "width": 2048,
+    "height": 2048,
+    "embedded": true
+  },
+  "sourceArt": [
+    "assets/processed/kit-era-3.png",
+    "assets/raw/plate-e3-mothswarm.png"
+  ],
+  "files": {
+    "blend": {
+      "bytes": 631227,
+      "sha256": "5db91bee75dc89cad1b63b9f8513471e555aeea703e107f19e4065224a444de8"
+    },
+    "glb": {
+      "bytes": 784052,
+      "sha256": "ec75d6c6e2a0c6fd19245cf4f1aa178833732234d0089fa1b130f63ab5aa9f52"
+    },
+    "atlas": {
+      "bytes": 511386,
+      "sha256": "74af1110998ed29b3e82c1d080bf1cd5e8bea3ab8a35b51a88a7cef92f887126"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "epoch": 8,
+  "floodReset": true,
+  "atlas": "era-props-e8-atlas.png",
+  "props": [
+    {
+      "id": "e8-journey-flag-line-port",
+      "glb": "journey-flag-line.e8.glb",
+      "position": { "x": -16.4, "z": 0.0 },
+      "rotation": 1.5708,
+      "scale": 1.0
+    },
+    {
+      "id": "e8-crater-rim-survey-northwest",
+      "glb": "crater-rim-set.e8.glb",
+      "position": { "x": -14.2, "z": 11.6 },
+      "rotation": 2.42,
+      "scale": 1.0
+    },
+    {
+      "id": "e8-lander-legs-starboard",
+      "glb": "lander-legs.e8.glb",
+      "position": { "x": 14.4, "z": -10.4 },
+      "rotation": -0.38,
+      "scale": 1.0
+    }
+  ]
+}

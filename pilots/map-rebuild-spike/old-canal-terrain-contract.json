@@ -1,0 +1,408 @@
+{
+  "asset": "old-canal-terrain.glb",
+  "contractId": "e9-old-canal",
+  "tileId": "e9-old-canal",
+  "renderOnly": true,
+  "simulation": "planar; movement, collision, placement, spawns, persistence, water, and event mechanics remain code-owned and unchanged",
+  "heightSocket": "Terrain.visualY",
+  "theme": "a dry wrong-survey canal cut through three inherited decision basins between survey and outflow yards",
+  "regionalFamily": {
+    "epoch": "Epoch 9 redfields heart-era",
+    "shared": [
+      "rust-red engraved dunes",
+      "parchment abrasion",
+      "deep survey shadow",
+      "warm dome-work light",
+      "literal E1 green only where authored"
+    ],
+    "unique": "sunken crooked canal segments with broken spoil shoulders"
+  },
+  "meshCount": 1,
+  "primitiveCount": 1,
+  "materialCount": 1,
+  "vertices": 16641,
+  "triangles": 32768,
+  "triangleBudget": 60000,
+  "texture": {
+    "count": 1,
+    "width": 2048,
+    "height": 2048,
+    "embedded": true
+  },
+  "maskTable": "assets/contracts/epoch-9-redfields/mask-tables/e9-old-canal.json",
+  "maskTruth": {
+    "source": "assets/contracts/epoch-9-redfields/contracts.json; lore/STORYBOOK.md E9 contracts",
+    "tileId": "e9-old-canal",
+    "size": 128,
+    "dimensions": {
+      "width": 128,
+      "height": 128
+    },
+    "river": false,
+    "ford": false,
+    "buildZones": [
+      {
+        "id": "south-survey-yard",
+        "bank": "south",
+        "minX": -30,
+        "maxX": 30,
+        "minZ": -54,
+        "maxZ": -42
+      },
+      {
+        "id": "old-canal-segment-a",
+        "bank": "south",
+        "minX": -42,
+        "maxX": -18,
+        "minZ": -32,
+        "maxZ": -14
+      },
+      {
+        "id": "old-canal-segment-b",
+        "bank": "north",
+        "minX": -10,
+        "maxX": 14,
+        "minZ": -8,
+        "maxZ": 8
+      },
+      {
+        "id": "old-canal-segment-c",
+        "bank": "north",
+        "minX": 20,
+        "maxX": 44,
+        "minZ": 14,
+        "maxZ": 32
+      },
+      {
+        "id": "north-outflow-yard",
+        "bank": "north",
+        "minX": -30,
+        "maxX": 30,
+        "minZ": 42,
+        "maxZ": 54
+      }
+    ],
+    "canalDecisionZones": [
+      {
+        "id": "old-canal-segment-a",
+        "choice": "redig-or-demolish",
+        "minX": -42,
+        "maxX": -18,
+        "minZ": -32,
+        "maxZ": -14
+      },
+      {
+        "id": "old-canal-segment-b",
+        "choice": "redig-or-demolish",
+        "minX": -10,
+        "maxX": 14,
+        "minZ": -8,
+        "maxZ": 8
+      },
+      {
+        "id": "old-canal-segment-c",
+        "choice": "redig-or-demolish",
+        "minX": 20,
+        "maxX": 44,
+        "minZ": 14,
+        "maxZ": 32
+      }
+    ],
+    "stakeMarkers": [
+      {
+        "id": "decide-segment-a",
+        "x": -30,
+        "z": -23,
+        "lossCondition": false
+      },
+      {
+        "id": "decide-segment-b",
+        "x": 2,
+        "z": 0,
+        "lossCondition": false
+      },
+      {
+        "id": "decide-segment-c",
+        "x": 32,
+        "z": 23,
+        "lossCondition": false
+      }
+    ],
+    "waterSources": [],
+    "harvestAnchors": [],
+    "heightfield": {
+      "id": "old-canal-wrong-survey",
+      "mode": "visual"
+    },
+    "inheritedCanalRoute": {
+      "style": "old-digger-canal",
+      "points": [
+        {
+          "x": -46,
+          "z": -38
+        },
+        {
+          "x": -30,
+          "z": -23
+        },
+        {
+          "x": -12,
+          "z": -26
+        },
+        {
+          "x": 2,
+          "z": 0
+        },
+        {
+          "x": 26,
+          "z": 6
+        },
+        {
+          "x": 32,
+          "z": 23
+        },
+        {
+          "x": 12,
+          "z": 48
+        }
+      ]
+    },
+    "lanes": {
+      "spawnEdges": [
+        "north",
+        "west",
+        "east"
+      ],
+      "territoryRingBiasWaves": 0,
+      "territoryRingLaneBias": 0,
+      "patrolRoutes": []
+    },
+    "spawnGates": []
+  },
+  "waterAgreement": {
+    "river": false,
+    "waterSources": []
+  },
+  "buildZoneFlatness": [
+    {
+      "id": "south-survey-yard",
+      "bounds": [
+        -30,
+        30,
+        -54,
+        -42
+      ],
+      "sampledSurfacePoints": 2145,
+      "maxDeviationMeters": 0.0
+    },
+    {
+      "id": "old-canal-segment-a",
+      "bounds": [
+        -42,
+        -18,
+        -32,
+        -14
+      ],
+      "sampledSurfacePoints": 2145,
+      "maxDeviationMeters": 0.0
+    },
+    {
+      "id": "old-canal-segment-b",
+      "bounds": [
+        -10,
+        14,
+        -8,
+        8
+      ],
+      "sampledSurfacePoints": 2145,
+      "maxDeviationMeters": 0.0
+    },
+    {
+      "id": "old-canal-segment-c",
+      "bounds": [
+        20,
+        44,
+        14,
+        32
+      ],
+      "sampledSurfacePoints": 2145,
+      "maxDeviationMeters": 0.0
+    },
+    {
+      "id": "north-outflow-yard",
+      "bounds": [
+        -30,
+        30,
+        42,
+        54
+      ],
+      "sampledSurfacePoints": 2145,
+      "maxDeviationMeters": 0.0
+    }
+  ],
+  "landmarkMounts": [
+    {
+      "id": "south-survey-rig",
+      "asset": "landmarks/old-canal/south-survey-rig.glb",
+      "position": [
+        0.0,
+        0.35,
+        -48.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "id": "canal-segment-a-marker",
+      "asset": "landmarks/old-canal/canal-segment-a-marker.glb",
+      "position": [
+        -30.0,
+        -1.1,
+        -23.0
+      ],
+      "rotation": [
+        0.0,
+        0.12,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "id": "canal-segment-b-marker",
+      "asset": "landmarks/old-canal/canal-segment-b-marker.glb",
+      "position": [
+        2.0,
+        -1.42,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.08,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "id": "canal-segment-c-marker",
+      "asset": "landmarks/old-canal/canal-segment-c-marker.glb",
+      "position": [
+        32.0,
+        -1.18,
+        23.0
+      ],
+      "rotation": [
+        0.0,
+        0.15,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "id": "north-outflow-gate",
+      "asset": "landmarks/old-canal/north-outflow-gate.glb",
+      "position": [
+        0.0,
+        0.24,
+        48.0
+      ],
+      "rotation": [
+        0.0,
+        3.1416,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  ],
+  "landmarkMountSpace": {
+    "coordinates": "game X/Y/Z",
+    "positionY": "local offset added to Terrain.visualY at the mount X/Z",
+    "rotation": "XYZ Euler radians",
+    "scale": "XYZ multiplier",
+    "ownership": "landmark assets mount at runtime and are never baked into terrain"
+  },
+  "panoramaMount": {
+    "id": "old-canal-panorama",
+    "asset": "old-canal-panorama.glb",
+    "position": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "rotation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "renderOnly": true,
+    "ownership": "separate mounted scenery; never terrain or gameplay bounds"
+  },
+  "runtimeVisualsAbsent": [
+    "persistent green state",
+    "moving dust devils",
+    "building relocation",
+    "canal choices",
+    "future water flow",
+    "spawn gates"
+  ],
+  "verdictPreviewOnly": {
+    "excludedFromBlendAndGlb": true,
+    "reason": "route lines, dust columns, rubble, mount proxies, mask overlays, and lights are evidence helpers only"
+  },
+  "sourceArt": [
+    "assets/processed/kit-era-9.png",
+    "assets/raw/plate-e9-bld-canal-works.png",
+    "assets/processed/terrain-bank-tile.png",
+    "assets/processed/terrain-bank-tile-c.png"
+  ],
+  "atlas": "old-canal-terrain-atlas.png",
+  "files": {
+    "blend": {
+      "bytes": 8715016,
+      "sha256": "1fbb36c2cafe91154361ef06055eaadf28103eacadd2eed32810d1402b6e6668"
+    },
+    "glb": {
+      "bytes": 8643292,
+      "sha256": "60f56a19ab72af4f01c32c31351e0e00fc37892f442bb70f25d22b2cade5d239"
+    },
+    "atlas": {
+      "bytes": 7912238,
+      "sha256": "b86904a5fa69a8abded604f06268cf9c68591498a44ebd18c44b3dc4b3fd047c"
+    }
+  },
+  "landmarkPack": {
+    "contract": "landmarks/old-canal/old-canal-landmark-pack-contract.json",
+    "atlas": "landmarks/old-canal/old-canal-landmarks-atlas.png",
+    "era": 9,
+    "sourceLadder": "reuse > derive > build-new",
+    "ownership": "separate mounted render-only GLBs; no simulation authority"
+  }
+}

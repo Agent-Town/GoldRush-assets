@@ -1,0 +1,106 @@
+{
+  "asset": "seed-run-panorama.glb",
+  "map": "seed-run",
+  "renderOnly": true,
+  "style": "engraved Epoch 9 redfields heart-era kit-plate horizon; warm valley against a darker fevered rim",
+  "signature": "a rising seed road between unequal rust-red dune shelves and one thin green promise at the basin rim",
+  "exposure": {
+    "mode": "bakedIntoAtlas",
+    "linearMultiplier": 0.82
+  },
+  "lawVersion": "PANORAMA LAW v2",
+  "namedCorrections": {
+    "paintedWall": "sunk sky ring behind an irregular closer ridge belt with a dusty haze transition",
+    "ceiling": "engraving density grades from dense horizon to near-plain parchment zenith",
+    "echo": "asymmetric cloud and dust edits plus independent near/far ridge profiles break mirrored repetition"
+  },
+  "projection": {
+    "skyRingRadiusMeters": 190.0,
+    "ridgeFootRadiusMeters": 161.5,
+    "ridgeOccluderRadiusMeters": 174.0,
+    "farRidgeRadiusMeters": [
+      177.0,
+      184.0
+    ],
+    "ridgeFootRadiusRangeMeters": [
+      159.8,
+      163.2
+    ],
+    "ridgeOccluderRadiusRangeMeters": [
+      172.3,
+      175.7
+    ],
+    "skyBottomMeters": -10.0,
+    "skyTopMeters": 130.0,
+    "ridgeTopFormulaMeters": "5.0 + silhouetteFraction * 55.0",
+    "farRidgeTopFormulaMeters": "8.0 + silhouetteFraction * 55.0",
+    "groundSkirtInnerBoundaryMeters": {
+      "shape": "expanded-playfield-rectangle",
+      "halfExtents": [
+        64.0,
+        64.0
+      ],
+      "margin": 0.01
+    },
+    "groundSkirtOuterRadiusMeters": 161.5,
+    "groundSkirtRole": "county ground scenery"
+  },
+  "mount": {
+    "id": "seed-run-panorama",
+    "asset": "seed-run-panorama.glb",
+    "position": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "rotation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "renderOnly": true,
+    "ownership": "separate mounted scenery; never terrain or gameplay bounds"
+  },
+  "earthSide": null,
+  "nonInterference": {
+    "playfieldBounds": "unchanged",
+    "spawnEdges": "unchanged",
+    "fogGating": "unchanged",
+    "waterBuildSpawnMasks": "unchanged"
+  },
+  "meshCount": 1,
+  "primitiveCount": 1,
+  "materialCount": 1,
+  "vertices": 2222,
+  "triangles": 3072,
+  "triangleBudget": 4000,
+  "texture": {
+    "count": 1,
+    "width": 2048,
+    "height": 2048,
+    "embedded": true
+  },
+  "sourceArt": [
+    "assets/processed/kit-era-9.png",
+    "assets/raw/plate-e9-bld-canal-works.png"
+  ],
+  "files": {
+    "blend": {
+      "bytes": 655002,
+      "sha256": "fafa0bd9112a2cba862f64a876bcb5f8347c11eca8240b9f5f790712c73506af"
+    },
+    "glb": {
+      "bytes": 652824,
+      "sha256": "0ce53428f31ed7503759b5bca344bd375e1752a18f246d65975a22f5651ad503"
+    },
+    "atlas": {
+      "bytes": 534855,
+      "sha256": "044cd3ce87b3c06535a6b410db92bc7d52770629a1afb61f4efdc2ac1e7e89d5"
+    }
+  }
+}

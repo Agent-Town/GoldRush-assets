@@ -1,0 +1,248 @@
+{
+  "asset": "the-claim-terrain.glb",
+  "tileId": "frontier-river-claim",
+  "renderOnly": true,
+  "simulation": "planar and unchanged",
+  "heightSocket": "Terrain.visualY",
+  "coordinates": {
+    "blender": "X/-gameZ with Blender Z as visual height",
+    "glbAndGame": "X/Z with Y=Terrain.visualY"
+  },
+  "boundsMeters": {
+    "min": [
+      -32.0,
+      -32.0,
+      -0.51
+    ],
+    "max": [
+      32.0,
+      32.0,
+      2.2383
+    ]
+  },
+  "meshCount": 1,
+  "primitiveCount": 1,
+  "materialCount": 1,
+  "texture": {
+    "count": 1,
+    "width": 2048,
+    "height": 2048,
+    "embedded": true
+  },
+  "vertices": 16641,
+  "triangles": 32768,
+  "triangleBudget": 60000,
+  "waterTruth": {
+    "river": {
+      "minZ": -5.0,
+      "maxZ": 5.0
+    },
+    "shallowsWidth": 1.25,
+    "ford": {
+      "minX": -3.0,
+      "maxX": 3.0
+    },
+    "note": "The S-curve is a deeper visual channel inside the fixed river band; outer banks do not meander."
+  },
+  "landmarkMountSpace": {
+    "coordinates": "game X/Y/Z",
+    "positionY": "local offset added to Terrain.visualY at the mount X/Z",
+    "rotation": "XYZ Euler radians",
+    "scale": "XYZ multiplier",
+    "ownership": "landmark assets mount at runtime and are never baked into terrain"
+  },
+  "landmarkMounts": [
+    {
+      "id": "active_headframe",
+      "position": [
+        -13.0,
+        0.0,
+        -8.8
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/the-claim/active_headframe.glb"
+    },
+    {
+      "id": "maintained_claim_house",
+      "position": [
+        10.5,
+        0.0,
+        14.5
+      ],
+      "rotation": [
+        0.0,
+        -0.12,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/the-claim/maintained_claim_house.glb"
+    },
+    {
+      "id": "working_camp",
+      "position": [
+        -8.5,
+        -0.212883,
+        16.5
+      ],
+      "rotation": [
+        0.0,
+        0.1,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/the-claim/working_camp.glb",
+      "terrainConformOffsetY": -0.212883
+    },
+    {
+      "id": "claim_stake",
+      "position": [
+        6.5,
+        0.0,
+        10.5
+      ],
+      "rotation": [
+        0.0,
+        0.08,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/the-claim/claim_stake.glb"
+    },
+    {
+      "id": "riparian_dressing_pack",
+      "position": [
+        0.0,
+        -0.045951,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/the-claim/riparian_dressing_pack.glb",
+      "terrainConformOffsetY": -0.045951
+    }
+  ],
+  "landmarkPack": {
+    "contract": "landmarks/the-claim/the-claim-landmark-pack-contract.json",
+    "atlas": "landmarks/the-claim/the-claim-landmarks-atlas.png",
+    "era": 1,
+    "sourceLadder": "reuse > derive > build-new",
+    "ownership": "separate mounted render-only GLBs; no simulation authority"
+  },
+  "panoramaMount": {
+    "id": "the-claim-panorama",
+    "asset": "the-claim-panorama.glb",
+    "position": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "rotation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "renderOnly": true,
+    "ownership": "separate mounted scenery; never terrain or gameplay bounds"
+  },
+  "ownerPreview": {
+    "exported": false,
+    "purpose": "owner composition verdict only; production fixtures remain a later attended slice",
+    "theme": "living-working-claim",
+    "landmarks": [
+      "active_headframe",
+      "maintained_claim_house",
+      "working_tent_camp",
+      "fresh_claim_stake",
+      "riparian_edge"
+    ],
+    "objects": 125,
+    "meshObjects": 125,
+    "curveObjects": 0,
+    "approxTrianglesBeforeCurveTessellation": 2292,
+    "materials": 17,
+    "supportClutter": {
+      "riverRocks": 6,
+      "reedClusters": 8,
+      "cacti": 5
+    },
+    "exteriorSurround": {
+      "exported": false,
+      "purpose": "owner exterior verdict only; runtime vista remains code-owned",
+      "radiusMeters": 160.0,
+      "groundSegments": {
+        "far": 20,
+        "near": 16,
+        "edge": 64
+      },
+      "objects": 61,
+      "approxTriangles": 39388,
+      "regionalGrammar": [
+        "open river valley",
+        "faceted ochre mesas",
+        "sparse cacti",
+        "worked extraction scars"
+      ],
+      "claimSignature": [
+        "two meandering river exits",
+        "distant headframe",
+        "tailings shoulder"
+      ]
+    }
+  },
+  "sourceArt": [
+    "assets/processed/terrain-bank-tile.png",
+    "assets/processed/terrain-bank-tile-b.png",
+    "assets/processed/terrain-bank-tile-c.png",
+    "assets/processed/terrain-river-tile.png",
+    "assets/raw/kit-era-1.png",
+    "assets/raw/plate-contract-the-claim.png"
+  ],
+  "files": {
+    "blend": {
+      "bytes": 8206953,
+      "sha256": "bb716239fcb51e23bc2b89a12f7a2bd863d143d16b7fba9825596155a88fb597"
+    },
+    "glb": {
+      "bytes": 8126136,
+      "sha256": "e240e7ebf5ef5d0a757269ab456fa3bddd3c49533c618e871f258abdbd2088de"
+    },
+    "atlas": {
+      "bytes": 7395212,
+      "sha256": "c1ff0f33c9b3ff04f87ec578510002fdfff95646a4ec8c8c00b9e22f16f4f98b"
+    }
+  }
+}

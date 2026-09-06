@@ -1,0 +1,379 @@
+{
+  "map": "regatta",
+  "era": 5,
+  "referenceBase": "ce7c3843611286e5158f50cc2f7949e88100621e",
+  "sourceLadder": [
+    "reuse",
+    "derive",
+    "build-new"
+  ],
+  "atlas": {
+    "asset": "landmarks/regatta/regatta-landmarks-atlas.png",
+    "width": 1024,
+    "height": 1024,
+    "sharedByEveryAsset": true,
+    "sha256": "7b168e10480e8b70eaca6564e556bfe63e5e9c2542bb0073d5e6fe432bb68f0a"
+  },
+  "blend": {
+    "asset": "landmarks/regatta/regatta-landmarks.blend",
+    "sha256": "54f0e4ad86bcdd4851315d1af7aa323e4811c8380b512ac626ab23f03d25b2d7"
+  },
+  "assets": {
+    "start-line-rig": {
+      "asset": "landmarks/regatta/start-line-rig.glb",
+      "sourceTier": "reuse",
+      "sources": [
+        "assets/pilots/plaza-props-3d/harbor-lantern.e5.glb",
+        "assets/pilots/plaza-props-3d/rope-buoy-rack.e5.glb"
+      ],
+      "terrainConformed": false,
+      "triangles": 1908,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -3.075,
+          -0.9722,
+          0.0
+        ],
+        "max": [
+          3.075,
+          0.9722,
+          6.77
+        ]
+      },
+      "sha256": "1de99d12885ec2686e1aadd950ed85a893a8c573fcd059526fdd11e126577999",
+      "footprint": {"kind":"rect","w":4.428,"d":1.4}
+    },
+    "finish-line-rig": {
+      "asset": "landmarks/regatta/finish-line-rig.glb",
+      "sourceTier": "reuse",
+      "sources": [
+        "assets/pilots/plaza-props-3d/harbor-lantern.e5.glb",
+        "assets/pilots/plaza-props-3d/rope-buoy-rack.e5.glb"
+      ],
+      "terrainConformed": false,
+      "triangles": 2028,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -3.075,
+          -0.9722,
+          0.0
+        ],
+        "max": [
+          3.075,
+          0.9722,
+          6.77
+        ]
+      },
+      "sha256": "9df2a25ab11b3bd28929ab1930fce4986725acc6fe037aec338f6a05d8e35167",
+      "footprint": {"kind":"rect","w":4.428,"d":1.4}
+    },
+    "northwest-buoy-line-anchor": {
+      "asset": "landmarks/regatta/northwest-buoy-line-anchor.glb",
+      "sourceTier": "reuse",
+      "sources": [
+        "assets/pilots/plaza-props-3d/rope-buoy-rack.e5.glb",
+        "assets/raw/prop-buoys.png"
+      ],
+      "terrainConformed": false,
+      "triangles": 1156,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -1.0724,
+          -1.1,
+          0.0
+        ],
+        "max": [
+          1.0724,
+          1.1,
+          3.55
+        ]
+      },
+      "sha256": "dc9aa49088488445a12be54eca69dc3ddd10e0914c38557230d436e4dfce3f9d",
+      "footprint": {"kind":"radius","radius":0.772}
+    },
+    "midcourse-buoy-line-anchor": {
+      "asset": "landmarks/regatta/midcourse-buoy-line-anchor.glb",
+      "sourceTier": "reuse",
+      "sources": [
+        "assets/pilots/plaza-props-3d/rope-buoy-rack.e5.glb",
+        "assets/raw/prop-buoys.png"
+      ],
+      "terrainConformed": false,
+      "triangles": 1156,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -1.0724,
+          -1.1,
+          0.0
+        ],
+        "max": [
+          1.0724,
+          1.1,
+          3.55
+        ]
+      },
+      "sha256": "1a2a542d657d93eecfd6c85bfe6522058e7fc4935e31c156c144e68e9669bc33",
+      "footprint": {"kind":"radius","radius":0.772}
+    },
+    "northeast-buoy-line-anchor": {
+      "asset": "landmarks/regatta/northeast-buoy-line-anchor.glb",
+      "sourceTier": "reuse",
+      "sources": [
+        "assets/pilots/plaza-props-3d/rope-buoy-rack.e5.glb",
+        "assets/raw/prop-buoys.png"
+      ],
+      "terrainConformed": false,
+      "triangles": 1156,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -1.0724,
+          -1.1,
+          0.0
+        ],
+        "max": [
+          1.0724,
+          1.1,
+          3.55
+        ]
+      },
+      "sha256": "f5c6408015694c8986c2c390b70e5696953bd5aedcdc18fa68777599c5ff1021",
+      "footprint": {"kind":"radius","radius":0.772}
+    },
+    "spectator-raft-port": {
+      "asset": "landmarks/regatta/spectator-raft-port.glb",
+      "sourceTier": "reuse",
+      "sources": [
+        "assets/pilots/plaza-props-3d/covered_wagon.e5.glb",
+        "assets/raw/plate-e5-bld-claimboat.png"
+      ],
+      "terrainConformed": false,
+      "triangles": 1680,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -2.375,
+          -1.845,
+          0.0
+        ],
+        "max": [
+          2.375,
+          1.845,
+          3.39
+        ]
+      },
+      "sha256": "90b68079b3e49bde73da62a035482e0e0d28097198a84d2dec26a2e4bb846a5e",
+      "footprint": {"kind":"rect","w":3.42,"d":2.657}
+    },
+    "spectator-raft-starboard": {
+      "asset": "landmarks/regatta/spectator-raft-starboard.glb",
+      "sourceTier": "reuse",
+      "sources": [
+        "assets/pilots/plaza-props-3d/covered_wagon.e5.glb",
+        "assets/raw/plate-e5-bld-claimboat.png"
+      ],
+      "terrainConformed": false,
+      "triangles": 1680,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -2.375,
+          -1.845,
+          0.0
+        ],
+        "max": [
+          2.375,
+          1.845,
+          3.39
+        ]
+      },
+      "sha256": "7c92f242d7b37a868cb34704c354cf50793617218f99c16be3c0d8dc90a1073c",
+      "footprint": {"kind":"rect","w":3.42,"d":2.657}
+    },
+    "judges-tower": {
+      "asset": "landmarks/regatta/judges-tower.glb",
+      "sourceTier": "derive",
+      "sources": [
+        "assets/raw/plate-e5-bld-lighthouse.png",
+        "assets/raw/plate-e5-bld-claimboat.png"
+      ],
+      "terrainConformed": false,
+      "triangles": 1204,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -2.625,
+          -1.93,
+          0.0
+        ],
+        "max": [
+          2.625,
+          1.93,
+          9.48
+        ]
+      },
+      "sha256": "cded1a8fa5a6796c2d3efa31d85d10a3f395cab853c1d81ccbf3f6155ffd0fef",
+      "footprint": {"kind":"rect","w":3.78,"d":2.779}
+    }
+  },
+  "mounts": [
+    {
+      "id": "start-line-rig",
+      "position": [
+        -49.0,
+        2.3773,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/regatta/start-line-rig.glb"
+    },
+    {
+      "id": "finish-line-rig",
+      "position": [
+        49.0,
+        2.3789,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/regatta/finish-line-rig.glb"
+    },
+    {
+      "id": "northwest-buoy-line-anchor",
+      "position": [
+        -28.0,
+        4.0829,
+        38.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/regatta/northwest-buoy-line-anchor.glb"
+    },
+    {
+      "id": "midcourse-buoy-line-anchor",
+      "position": [
+        0.0,
+        2.1988,
+        18.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/regatta/midcourse-buoy-line-anchor.glb"
+    },
+    {
+      "id": "northeast-buoy-line-anchor",
+      "position": [
+        28.0,
+        4.0877,
+        38.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/regatta/northeast-buoy-line-anchor.glb"
+    },
+    {
+      "id": "spectator-raft-port",
+      "position": [
+        -18.0,
+        3.436,
+        -20.0
+      ],
+      "rotation": [
+        0.0,
+        0.12,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/regatta/spectator-raft-port.glb"
+    },
+    {
+      "id": "spectator-raft-starboard",
+      "position": [
+        18.0,
+        3.2154,
+        -20.0
+      ],
+      "rotation": [
+        0.0,
+        -0.1,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/regatta/spectator-raft-starboard.glb"
+    },
+    {
+      "id": "judges-tower",
+      "position": [
+        0.0,
+        5.5367,
+        48.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/regatta/judges-tower.glb"
+    }
+  ],
+  "simulation": "none; terrain, collision, movement, placement, water, spawns, and fog remain unchanged",
+  "mountInterlock": "resolved-3d-d"
+}

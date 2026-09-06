@@ -1,0 +1,391 @@
+{
+  "blender": "5.1.2",
+  "sourcePlate": "assets/raw/plate-e2-boss-component.png",
+  "railGauge": 0.78,
+  "sleeperSpacing": 0.9,
+  "chosenLength": 2.4,
+  "lengthGaugeRatio": 3.0769,
+  "damageImplementation": "one morph target on each of the three named component meshes",
+  "sourceScene": {
+    "meshObjects": [
+      "Railcar_Boiler",
+      "Railcar_Cabin",
+      "Railcar_Wheels"
+    ],
+    "cameras": [],
+    "lights": [],
+    "actions": []
+  },
+  "checked": {
+    "sha256": "2abe1fceb5bf7f8e9ea3ba4c2dc4a42e28aa7d9e04b2327d9842862ae48d99b9",
+    "bytes": 2331368,
+    "nodes": [
+      "Railcar_Wheels",
+      "Railcar_Boiler",
+      "Railcar_Cabin"
+    ],
+    "nodeCount": 3,
+    "bindings": [
+      {
+        "node": "Railcar_Wheels",
+        "mesh": "Railcar_WheelsMesh",
+        "targets": [
+          "Damage_BentWheels"
+        ],
+        "defaultWeights": [
+          0
+        ]
+      },
+      {
+        "node": "Railcar_Boiler",
+        "mesh": "Railcar_BoilerMesh",
+        "targets": [
+          "Damage_VentingBoiler"
+        ],
+        "defaultWeights": [
+          0
+        ]
+      },
+      {
+        "node": "Railcar_Cabin",
+        "mesh": "Railcar_CabinMesh",
+        "targets": [
+          "Damage_CrackedCabin"
+        ],
+        "defaultWeights": [
+          0
+        ]
+      }
+    ],
+    "nodeTransforms": {
+      "Railcar_Wheels": {
+        "translation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "matrix": null
+      },
+      "Railcar_Boiler": {
+        "translation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "matrix": null
+      },
+      "Railcar_Cabin": {
+        "translation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "matrix": null
+      }
+    },
+    "meshes": 3,
+    "meshNames": [
+      "Railcar_WheelsMesh",
+      "Railcar_BoilerMesh",
+      "Railcar_CabinMesh"
+    ],
+    "primitives": 3,
+    "primitiveMaterials": [
+      0,
+      0,
+      0
+    ],
+    "triangles": 10948,
+    "morphTargets": {
+      "Railcar_WheelsMesh": [
+        "Damage_BentWheels"
+      ],
+      "Railcar_BoilerMesh": [
+        "Damage_VentingBoiler"
+      ],
+      "Railcar_CabinMesh": [
+        "Damage_CrackedCabin"
+      ]
+    },
+    "targetCounts": {
+      "Railcar_WheelsMesh": 1,
+      "Railcar_BoilerMesh": 1,
+      "Railcar_CabinMesh": 1
+    },
+    "materials": 1,
+    "materialTextureBindings": [
+      {
+        "material": 0,
+        "baseColorTexture": 0,
+        "image": 0
+      }
+    ],
+    "textureSources": [
+      0
+    ],
+    "images": 1,
+    "embeddedImages": 1,
+    "imageDimensions": [
+      [
+        1024,
+        1024
+      ]
+    ],
+    "cameras": 0,
+    "lights": 0,
+    "animations": 0,
+    "bounds": {
+      "min": [
+        -1.2,
+        0,
+        -0.62414
+      ],
+      "max": [
+        1.2,
+        1.202,
+        0.62414
+      ],
+      "size": [
+        2.4,
+        1.202,
+        1.248279
+      ],
+      "center": [
+        0.0,
+        0.601,
+        0.0
+      ]
+    }
+  },
+  "reexported": {
+    "sha256": "2abe1fceb5bf7f8e9ea3ba4c2dc4a42e28aa7d9e04b2327d9842862ae48d99b9",
+    "bytes": 2331368,
+    "nodes": [
+      "Railcar_Wheels",
+      "Railcar_Boiler",
+      "Railcar_Cabin"
+    ],
+    "nodeCount": 3,
+    "bindings": [
+      {
+        "node": "Railcar_Wheels",
+        "mesh": "Railcar_WheelsMesh",
+        "targets": [
+          "Damage_BentWheels"
+        ],
+        "defaultWeights": [
+          0
+        ]
+      },
+      {
+        "node": "Railcar_Boiler",
+        "mesh": "Railcar_BoilerMesh",
+        "targets": [
+          "Damage_VentingBoiler"
+        ],
+        "defaultWeights": [
+          0
+        ]
+      },
+      {
+        "node": "Railcar_Cabin",
+        "mesh": "Railcar_CabinMesh",
+        "targets": [
+          "Damage_CrackedCabin"
+        ],
+        "defaultWeights": [
+          0
+        ]
+      }
+    ],
+    "nodeTransforms": {
+      "Railcar_Wheels": {
+        "translation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "matrix": null
+      },
+      "Railcar_Boiler": {
+        "translation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "matrix": null
+      },
+      "Railcar_Cabin": {
+        "translation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "matrix": null
+      }
+    },
+    "meshes": 3,
+    "meshNames": [
+      "Railcar_WheelsMesh",
+      "Railcar_BoilerMesh",
+      "Railcar_CabinMesh"
+    ],
+    "primitives": 3,
+    "primitiveMaterials": [
+      0,
+      0,
+      0
+    ],
+    "triangles": 10948,
+    "morphTargets": {
+      "Railcar_WheelsMesh": [
+        "Damage_BentWheels"
+      ],
+      "Railcar_BoilerMesh": [
+        "Damage_VentingBoiler"
+      ],
+      "Railcar_CabinMesh": [
+        "Damage_CrackedCabin"
+      ]
+    },
+    "targetCounts": {
+      "Railcar_WheelsMesh": 1,
+      "Railcar_BoilerMesh": 1,
+      "Railcar_CabinMesh": 1
+    },
+    "materials": 1,
+    "materialTextureBindings": [
+      {
+        "material": 0,
+        "baseColorTexture": 0,
+        "image": 0
+      }
+    ],
+    "textureSources": [
+      0
+    ],
+    "images": 1,
+    "embeddedImages": 1,
+    "imageDimensions": [
+      [
+        1024,
+        1024
+      ]
+    ],
+    "cameras": 0,
+    "lights": 0,
+    "animations": 0,
+    "bounds": {
+      "min": [
+        -1.2,
+        0,
+        -0.62414
+      ],
+      "max": [
+        1.2,
+        1.202,
+        0.62414
+      ],
+      "size": [
+        2.4,
+        1.202,
+        1.248279
+      ],
+      "center": [
+        0.0,
+        0.601,
+        0.0
+      ]
+    }
+  },
+  "byteIdentical": true,
+  "semanticIdentical": {
+    "nodes": true,
+    "nodeCount": true,
+    "bindings": true,
+    "nodeTransforms": true,
+    "meshes": true,
+    "meshNames": true,
+    "primitives": true,
+    "primitiveMaterials": true,
+    "triangles": true,
+    "morphTargets": true,
+    "targetCounts": true,
+    "materials": true,
+    "materialTextureBindings": true,
+    "textureSources": true,
+    "images": true,
+    "embeddedImages": true,
+    "imageDimensions": true,
+    "cameras": true,
+    "lights": true,
+    "animations": true,
+    "bounds": true
+  }
+}

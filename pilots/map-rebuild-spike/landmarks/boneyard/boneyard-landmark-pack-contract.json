@@ -1,0 +1,555 @@
+{
+  "map": "boneyard",
+  "era": 4,
+  "referenceBase": "27587b7c6efbb804743f9f6aad192fd8df52bfd2",
+  "sourceLadder": [
+    "reuse",
+    "derive",
+    "build-new"
+  ],
+  "atlas": {
+    "asset": "landmarks/boneyard/boneyard-landmarks-atlas.png",
+    "width": 1024,
+    "height": 1024,
+    "sharedByEveryAsset": true,
+    "sha256": "5263a4536d8ece9b354819b42690d49fe80b34972d62103373e8aea692d8bbb0"
+  },
+  "blend": {
+    "asset": "landmarks/boneyard/boneyard-landmarks.blend",
+    "sha256": "f2e69aa860938dc30b2a2b9bb1d5594ba41bfe50ba24384cea2451dc1a8803ca"
+  },
+  "assets": {
+    "flivver-row-west-a": {
+      "asset": "landmarks/boneyard/flivver-row-west-a.glb",
+      "sourceTier": "derive",
+      "sources": [
+        "assets/pilots/plaza-props-3d/covered_wagon.e4.glb",
+        "assets/raw/plate-e4-enemy-motorgang.png"
+      ],
+      "terrainConformed": false,
+      "triangles": 512,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -2.9241,
+          -1.7086,
+          0.0
+        ],
+        "max": [
+          2.9241,
+          1.7086,
+          2.85
+        ]
+      },
+      "sha256": "b923e9372f8e43119c3f4023c838880c16620e6988951ee73b61bd325a0ec71f",
+      "footprint": {"kind":"rect","w":4.211,"d":2.46}
+    },
+    "flivver-row-west-b": {
+      "asset": "landmarks/boneyard/flivver-row-west-b.glb",
+      "sourceTier": "derive",
+      "sources": [
+        "assets/pilots/plaza-props-3d/covered_wagon.e4.glb",
+        "assets/raw/plate-e4-enemy-motorgang.png"
+      ],
+      "terrainConformed": false,
+      "triangles": 512,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -2.9507,
+          -1.7256,
+          0.0
+        ],
+        "max": [
+          2.9507,
+          1.7256,
+          2.85
+        ]
+      },
+      "sha256": "6c7b8c7aff703dc375f0ff8292e1fe40032e2aaeb2fb67ca1ed0606d3889e99e",
+      "footprint": {"kind":"rect","w":4.249,"d":2.485}
+    },
+    "flivver-row-west-c": {
+      "asset": "landmarks/boneyard/flivver-row-west-c.glb",
+      "sourceTier": "derive",
+      "sources": [
+        "assets/pilots/plaza-props-3d/covered_wagon.e4.glb",
+        "assets/raw/plate-e4-enemy-motorgang.png"
+      ],
+      "terrainConformed": false,
+      "triangles": 544,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -3.2241,
+          -1.7136,
+          0.0
+        ],
+        "max": [
+          3.2241,
+          1.7136,
+          2.85
+        ]
+      },
+      "sha256": "27d53c9e7c107f5be8fd8006bd22c9378b9c422f610dae47cd037b5e86c8a4be",
+      "footprint": {"kind":"rect","w":4.643,"d":2.468}
+    },
+    "spent-boiler-west": {
+      "asset": "landmarks/boneyard/spent-boiler-west.glb",
+      "sourceTier": "reuse",
+      "sources": [
+        "assets/pilots/run3d/boiler-house.glb",
+        "assets/raw/plate-e4-bld-set.png"
+      ],
+      "terrainConformed": false,
+      "triangles": 720,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -2.7047,
+          -1.8202,
+          0.0
+        ],
+        "max": [
+          2.7047,
+          1.8202,
+          5.5183
+        ]
+      },
+      "sha256": "85c59d60ba6586ce8f2095bb05dea164bd89292f204f25627b826a7438cef8ba",
+      "footprint": {"kind":"rect","w":3.895,"d":2.621}
+    },
+    "spent-boiler-east": {
+      "asset": "landmarks/boneyard/spent-boiler-east.glb",
+      "sourceTier": "reuse",
+      "sources": [
+        "assets/pilots/run3d/boiler-house.glb",
+        "assets/raw/plate-e4-bld-set.png"
+      ],
+      "terrainConformed": false,
+      "triangles": 720,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -2.6734,
+          -1.814,
+          0.0
+        ],
+        "max": [
+          2.6734,
+          1.814,
+          5.5183
+        ]
+      },
+      "sha256": "50cbe6751bb02d63b0aa3695c01dc4ea7ae9365944ae66f2eeffd701fb7c5458",
+      "footprint": {"kind":"rect","w":3.85,"d":2.612}
+    },
+    "flivver-row-east-a": {
+      "asset": "landmarks/boneyard/flivver-row-east-a.glb",
+      "sourceTier": "derive",
+      "sources": [
+        "assets/pilots/plaza-props-3d/covered_wagon.e4.glb",
+        "assets/raw/plate-e4-enemy-motorgang.png"
+      ],
+      "terrainConformed": false,
+      "triangles": 512,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -2.9274,
+          -1.656,
+          0.0
+        ],
+        "max": [
+          2.9274,
+          1.656,
+          2.85
+        ]
+      },
+      "sha256": "c776d87611b8d7e1821c783351bba5988b514ae73c965cf34910b93e09c89436",
+      "footprint": {"kind":"rect","w":4.215,"d":2.385}
+    },
+    "flivver-row-east-b": {
+      "asset": "landmarks/boneyard/flivver-row-east-b.glb",
+      "sourceTier": "derive",
+      "sources": [
+        "assets/pilots/plaza-props-3d/covered_wagon.e4.glb",
+        "assets/raw/plate-e4-enemy-motorgang.png"
+      ],
+      "terrainConformed": false,
+      "triangles": 512,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -2.9104,
+          -1.6738,
+          0.0
+        ],
+        "max": [
+          2.9104,
+          1.6738,
+          2.85
+        ]
+      },
+      "sha256": "e3ecd0451c10d11d7be2617428c4a73dc6017d1db3ebf851686ff35f74e57cce",
+      "footprint": {"kind":"rect","w":4.191,"d":2.41}
+    },
+    "flivver-row-east-c": {
+      "asset": "landmarks/boneyard/flivver-row-east-c.glb",
+      "sourceTier": "derive",
+      "sources": [
+        "assets/pilots/plaza-props-3d/covered_wagon.e4.glb",
+        "assets/raw/plate-e4-enemy-motorgang.png"
+      ],
+      "terrainConformed": false,
+      "triangles": 544,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -3.2241,
+          -1.7136,
+          0.0
+        ],
+        "max": [
+          3.2241,
+          1.7136,
+          2.85
+        ]
+      },
+      "sha256": "68dd42d99282058cbd8be662dd6f281f5f1dfdb4033cb0f53d75b02ef17e9619",
+      "footprint": {"kind":"rect","w":4.643,"d":2.468}
+    },
+    "hauler-bed-north-a": {
+      "asset": "landmarks/boneyard/hauler-bed-north-a.glb",
+      "sourceTier": "derive",
+      "sources": [
+        "assets/pilots/plaza-props-3d/covered_wagon.e4.glb",
+        "assets/raw/boss-land-yacht.png"
+      ],
+      "terrainConformed": false,
+      "triangles": 412,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -3.6531,
+          -2.05,
+          0.0
+        ],
+        "max": [
+          3.6531,
+          2.05,
+          3.07
+        ]
+      },
+      "sha256": "b42cb173bb292c5d7df1c618195ff9cc6ef27b39b90da17a05a3e6acc54342be",
+      "footprint": {"kind":"rect","w":5.26,"d":2.952}
+    },
+    "hauler-bed-north-b": {
+      "asset": "landmarks/boneyard/hauler-bed-north-b.glb",
+      "sourceTier": "derive",
+      "sources": [
+        "assets/pilots/plaza-props-3d/covered_wagon.e4.glb",
+        "assets/raw/boss-land-yacht-damage.png"
+      ],
+      "terrainConformed": false,
+      "triangles": 412,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -3.6531,
+          -2.05,
+          0.0
+        ],
+        "max": [
+          3.6531,
+          2.05,
+          3.07
+        ]
+      },
+      "sha256": "a09cb9b8431ec4baef0cb134009fa19a4603dba05bad2a4b74b34d7fa3170687",
+      "footprint": {"kind":"rect","w":5.26,"d":2.952}
+    },
+    "half-buried-sleeper": {
+      "asset": "landmarks/boneyard/half-buried-sleeper.glb",
+      "sourceTier": "derive",
+      "sources": [
+        "assets/raw/boss-land-yacht-damage.png",
+        "assets/raw/plate-e4-bld-set.png"
+      ],
+      "terrainConformed": false,
+      "triangles": 208,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -4.9011,
+          -2.7439,
+          0.0
+        ],
+        "max": [
+          4.9011,
+          2.7439,
+          5.1372
+        ]
+      },
+      "sha256": "cdb9f5f55b43f3c3636b8bea644e49788e7d0bb1f53a2df04396134c570d4c1b",
+      "footprint": {"kind":"rect","w":7.058,"d":3.951}
+    },
+    "unmarked-wagon": {
+      "asset": "landmarks/boneyard/unmarked-wagon.glb",
+      "sourceTier": "reuse",
+      "sources": [
+        "assets/pilots/plaza-props-3d/covered_wagon.e4.glb",
+        "assets/raw/plate-e4-bld-set.png"
+      ],
+      "terrainConformed": false,
+      "triangles": 1920,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -4.2838,
+          -1.8601,
+          0.0
+        ],
+        "max": [
+          4.2838,
+          1.8601,
+          4.15
+        ]
+      },
+      "sha256": "ca7d3d7a02cbf65caef2146acea8e1f2905795578488856ec7aa1f4203ea1b81",
+      "footprint": {"kind":"rect","w":6.169,"d":2.679}
+    }
+  },
+  "mounts": [
+    {
+      "id": "flivver-row-west-a",
+      "asset": "landmarks/boneyard/flivver-row-west-a.glb",
+      "position": [
+        -48.0,
+        0.48,
+        -12.0
+      ],
+      "rotation": [
+        0.0,
+        0.18,
+        0.0
+      ],
+      "scale": [
+        0.82,
+        0.82,
+        0.82
+      ]
+    },
+    {
+      "id": "flivver-row-west-b",
+      "asset": "landmarks/boneyard/flivver-row-west-b.glb",
+      "position": [
+        -36.0,
+        0.48,
+        4.0
+      ],
+      "rotation": [
+        0.0,
+        -0.1,
+        0.0
+      ],
+      "scale": [
+        0.86,
+        0.86,
+        0.86
+      ]
+    },
+    {
+      "id": "flivver-row-west-c",
+      "asset": "landmarks/boneyard/flivver-row-west-c.glb",
+      "position": [
+        -24.0,
+        0.48,
+        18.0
+      ],
+      "rotation": [
+        0.0,
+        0.08,
+        0.0
+      ],
+      "scale": [
+        0.8,
+        0.8,
+        0.8
+      ]
+    },
+    {
+      "id": "spent-boiler-west",
+      "asset": "landmarks/boneyard/spent-boiler-west.glb",
+      "position": [
+        -18.0,
+        0.48,
+        -8.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        0.9,
+        0.9,
+        0.9
+      ]
+    },
+    {
+      "id": "spent-boiler-east",
+      "asset": "landmarks/boneyard/spent-boiler-east.glb",
+      "position": [
+        18.0,
+        0.62,
+        -8.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        0.9,
+        0.9,
+        0.9
+      ]
+    },
+    {
+      "id": "flivver-row-east-a",
+      "asset": "landmarks/boneyard/flivver-row-east-a.glb",
+      "position": [
+        24.0,
+        0.62,
+        18.0
+      ],
+      "rotation": [
+        0.0,
+        -0.12,
+        0.0
+      ],
+      "scale": [
+        0.84,
+        0.84,
+        0.84
+      ]
+    },
+    {
+      "id": "flivver-row-east-b",
+      "asset": "landmarks/boneyard/flivver-row-east-b.glb",
+      "position": [
+        36.0,
+        0.62,
+        4.0
+      ],
+      "rotation": [
+        0.0,
+        0.14,
+        0.0
+      ],
+      "scale": [
+        0.88,
+        0.88,
+        0.88
+      ]
+    },
+    {
+      "id": "flivver-row-east-c",
+      "asset": "landmarks/boneyard/flivver-row-east-c.glb",
+      "position": [
+        48.0,
+        0.62,
+        -12.0
+      ],
+      "rotation": [
+        0.0,
+        -0.06,
+        0.0
+      ],
+      "scale": [
+        0.82,
+        0.82,
+        0.82
+      ]
+    },
+    {
+      "id": "hauler-bed-north-a",
+      "asset": "landmarks/boneyard/hauler-bed-north-a.glb",
+      "position": [
+        -8.0,
+        0.1996,
+        34.0
+      ],
+      "rotation": [
+        0.0,
+        0.04,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "id": "hauler-bed-north-b",
+      "asset": "landmarks/boneyard/hauler-bed-north-b.glb",
+      "position": [
+        8.0,
+        0.2219,
+        34.0
+      ],
+      "rotation": [
+        0.0,
+        -0.05,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "id": "half-buried-sleeper",
+      "asset": "landmarks/boneyard/half-buried-sleeper.glb",
+      "position": [
+        34.0,
+        -0.253,
+        36.0
+      ],
+      "rotation": [
+        0.0,
+        0.22,
+        0.0
+      ],
+      "scale": [
+        1.18,
+        1.18,
+        1.18
+      ]
+    },
+    {
+      "id": "unmarked-wagon",
+      "asset": "landmarks/boneyard/unmarked-wagon.glb",
+      "position": [
+        -38.0,
+        0.1649,
+        30.0
+      ],
+      "rotation": [
+        0.0,
+        -0.18,
+        0.0
+      ],
+      "scale": [
+        0.92,
+        0.92,
+        0.92
+      ]
+    }
+  ],
+  "simulation": "none; terrain, collision, movement, placement, water, spawns, and fog remain unchanged",
+  "mountInterlock": "resolved-3d-d"
+}

@@ -1,0 +1,41 @@
+{
+  "epoch": 3,
+  "atlas": "era-props-e3-atlas.png",
+  "props": [
+    {
+      "id": "e3-wire-run-west",
+      "glb": "wire-run.e3.glb",
+      "position": { "x": -10, "z": -4 },
+      "rotation": 1.48,
+      "scale": 1
+    },
+    {
+      "id": "e3-wire-run-east",
+      "glb": "wire-run.e3.glb",
+      "position": { "x": 10, "z": -4 },
+      "rotation": -1.48,
+      "scale": 1
+    },
+    {
+      "id": "e3-insulator-post-west",
+      "glb": "insulator-post.e3.glb",
+      "position": { "x": -8, "z": 7 },
+      "rotation": -0.2,
+      "scale": 1
+    },
+    {
+      "id": "e3-insulator-post-east",
+      "glb": "insulator-post.e3.glb",
+      "position": { "x": 3, "z": -7 },
+      "rotation": 0.2,
+      "scale": 1
+    },
+    {
+      "id": "e3-transformer-shed-plaza-edge",
+      "glb": "transformer-shed.e3.glb",
+      "position": { "x": 4, "z": -9.5 },
+      "rotation": 0.28,
+      "scale": 1
+    }
+  ]
+}

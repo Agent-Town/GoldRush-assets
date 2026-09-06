@@ -1,0 +1,299 @@
+{
+  "map": "night-shift",
+  "era": 1,
+  "sourceLadder": [
+    "reuse",
+    "derive",
+    "build-new"
+  ],
+  "atlas": {
+    "asset": "landmarks/night-shift/night-shift-landmarks-atlas.png",
+    "width": 1024,
+    "height": 1024,
+    "sharedByEveryAsset": true,
+    "sha256": "eb1fb50cf4c1b4a73e5ddf6e52ab485181ab4d55f4c12e3173f5306c13c534e0"
+  },
+  "blend": {
+    "asset": "landmarks/night-shift/night-shift-landmarks.blend",
+    "sha256": "ff5e08c666336d29e1178968df8875b3378d16f06968134e0f485dbf4ecd67e4"
+  },
+  "assets": {
+    "seven_lantern_terraces": {
+      "asset": "landmarks/night-shift/seven_lantern_terraces.glb",
+      "sourceTier": "reuse",
+      "sources": [
+        "assets/pilots/run3d/lantern-post.glb"
+      ],
+      "terrainConformed": true,
+      "triangles": 2072,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -23.9224,
+          -22.6066,
+          0.0
+        ],
+        "max": [
+          23.9224,
+          22.6066,
+          4.288
+        ]
+      },
+      "sha256": "245f47a83a8321e74bf4a5ebe73630f13c1ac0bddb0eb19221a97e0020c6b310",
+      "authoredFixturePositions": [
+        {
+          "id": "lantern_post",
+          "x": 0,
+          "z": 16,
+          "rotationSteps": 0,
+          "wrecked": true,
+          "relightCost": 8
+        },
+        {
+          "id": "lantern_post",
+          "x": -16,
+          "z": 18,
+          "rotationSteps": 1,
+          "wrecked": true,
+          "relightCost": 8
+        },
+        {
+          "id": "lantern_post",
+          "x": 16,
+          "z": 18,
+          "rotationSteps": 3,
+          "wrecked": true,
+          "relightCost": 8
+        },
+        {
+          "id": "lantern_post",
+          "x": -22,
+          "z": -12,
+          "rotationSteps": 1,
+          "wrecked": true,
+          "relightCost": 8
+        },
+        {
+          "id": "lantern_post",
+          "x": 22,
+          "z": -12,
+          "rotationSteps": 3,
+          "wrecked": true,
+          "relightCost": 8
+        },
+        {
+          "id": "lantern_post",
+          "x": -10,
+          "z": -24,
+          "rotationSteps": 2,
+          "wrecked": true,
+          "relightCost": 8
+        },
+        {
+          "id": "lantern_post",
+          "x": 10,
+          "z": -24,
+          "rotationSteps": 2,
+          "wrecked": true,
+          "relightCost": 8
+        }
+      ]
+    },
+    "lampworks_yard": {
+      "asset": "landmarks/night-shift/lampworks_yard.glb",
+      "sourceTier": "reuse",
+      "sources": [
+        "assets/pilots/run3d/lantern-post.glb",
+        "assets/pilots/run3d/boiler-house.glb",
+        "assets/pilots/run3d/stockpile.glb"
+      ],
+      "terrainConformed": false,
+      "triangles": 1856,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -5.975,
+          -2.95,
+          0.0
+        ],
+        "max": [
+          5.975,
+          2.95,
+          4.3
+        ]
+      },
+      "sha256": "711b92887c0fb15ad595a5ce23fedc2a4853d4968947210ccfec6f223fcf4340",
+      "footprint": {"kind":"rect","w":8.604,"d":4.248}
+    },
+    "dark_rock_shoulders": {
+      "asset": "landmarks/night-shift/dark_rock_shoulders.glb",
+      "sourceTier": "build-new",
+      "sources": [
+        "assets/raw/plate-contract-night-shift.png"
+      ],
+      "terrainConformed": true,
+      "triangles": 320,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -31.4833,
+          -20.0714,
+          0.0
+        ],
+        "max": [
+          31.4833,
+          20.0714,
+          9.7564
+        ]
+      },
+      "sha256": "42e8201063f9edae1a6b0f341ce38ec43e236b4828d43c8fe65e1f5ebb005973"
+    },
+    "central_ford": {
+      "asset": "landmarks/night-shift/central_ford.glb",
+      "sourceTier": "reuse",
+      "sources": [
+        "assets/pilots/run3d/sluice.glb"
+      ],
+      "terrainConformed": false,
+      "triangles": 944,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -3.6,
+          -5.7656,
+          0.0
+        ],
+        "max": [
+          3.6,
+          5.7656,
+          2.71
+        ]
+      },
+      "sha256": "866bb85ba1185f519901d70b34a426ab2b75057bcbced46d684984ddfb3adfcf"
+    },
+    "night_work_road": {
+      "asset": "landmarks/night-shift/night_work_road.glb",
+      "sourceTier": "build-new",
+      "sources": [
+        "assets/raw/plate-contract-night-shift.png"
+      ],
+      "terrainConformed": true,
+      "triangles": 648,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -2.0964,
+          -29.675,
+          0.0
+        ],
+        "max": [
+          2.0964,
+          29.675,
+          1.4662
+        ]
+      },
+      "sha256": "720cb2b5cae76c1b1ba7a8f534c953cce04348078ceea5819f627f7fcdd9fb90"
+    }
+  },
+  "mounts": [
+    {
+      "id": "seven_lantern_terraces",
+      "position": [
+        0.0,
+        0.63533,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/night-shift/seven_lantern_terraces.glb",
+      "terrainConformOffsetY": 0.63533
+    },
+    {
+      "id": "lampworks_yard",
+      "position": [
+        8.0,
+        0.0,
+        18.0
+      ],
+      "rotation": [
+        0.0,
+        -0.12,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/night-shift/lampworks_yard.glb"
+    },
+    {
+      "id": "dark_rock_shoulders",
+      "position": [
+        0.0,
+        -1.394998,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/night-shift/dark_rock_shoulders.glb",
+      "terrainConformOffsetY": -1.394998
+    },
+    {
+      "id": "central_ford",
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/night-shift/central_ford.glb"
+    },
+    {
+      "id": "night_work_road",
+      "position": [
+        0.0,
+        -0.001221,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/night-shift/night_work_road.glb",
+      "terrainConformOffsetY": -0.001221
+    }
+  ],
+  "simulation": "none; terrain, collision, movement, placement, water, spawns, and fog remain unchanged"
+}

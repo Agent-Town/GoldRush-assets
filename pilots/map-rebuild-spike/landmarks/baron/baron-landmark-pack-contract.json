@@ -1,0 +1,239 @@
+{
+  "map": "baron",
+  "era": 1,
+  "sourceLadder": [
+    "reuse",
+    "derive",
+    "build-new"
+  ],
+  "atlas": {
+    "asset": "landmarks/baron/baron-landmarks-atlas.png",
+    "width": 1024,
+    "height": 1024,
+    "sharedByEveryAsset": true,
+    "sha256": "e916e9ade127337c122707bc11eb2694320d63c32a01c3ce647bd12ee24b62d0"
+  },
+  "blend": {
+    "asset": "landmarks/baron/baron-landmarks.blend",
+    "sha256": "b9814b25a6f046fa1af5d68582826068650b7ab3b29f4e2f586f81e33e0594d8"
+  },
+  "assets": {
+    "fortified_far_bank": {
+      "asset": "landmarks/baron/fortified_far_bank.glb",
+      "sourceTier": "reuse",
+      "sources": [
+        "assets/pilots/run3d/palisade.glb"
+      ],
+      "terrainConformed": true,
+      "triangles": 2004,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -14.9,
+          -1.55,
+          0.0
+        ],
+        "max": [
+          14.9,
+          1.55,
+          4.3912
+        ]
+      },
+      "sha256": "ef7a6fd7a1735c040b80973cf74ad68bc4dd75fc94407c08f83653291f177b99"
+    },
+    "seized_headframe": {
+      "asset": "landmarks/baron/seized_headframe.glb",
+      "sourceTier": "build-new",
+      "sources": [
+        "assets/raw/plate-contract-baron.png"
+      ],
+      "terrainConformed": false,
+      "triangles": 220,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -2.2,
+          -1.4,
+          0.0
+        ],
+        "max": [
+          2.2,
+          1.4,
+          6.2613
+        ]
+      },
+      "sha256": "380d200567f31144bd7bc9f653d8260372fb5114235143b8854eb7cc97422465"
+    },
+    "rocket_cart": {
+      "asset": "landmarks/baron/rocket_cart.glb",
+      "sourceTier": "reuse",
+      "sources": [
+        "assets/pilots/railcar-3d/railcar.glb"
+      ],
+      "terrainConformed": false,
+      "triangles": 2844,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -2.925,
+          -1.31,
+          0.0
+        ],
+        "max": [
+          2.925,
+          1.31,
+          3.0
+        ]
+      },
+      "sha256": "3287781c77f5f0d47cab492b006588374cca370de0e30194c1e44dedf5b215e2",
+      "footprint": {"kind":"rect","w":2.437,"d":1.476}
+    },
+    "siege_line": {
+      "asset": "landmarks/baron/siege_line.glb",
+      "sourceTier": "reuse",
+      "sources": [
+        "assets/pilots/run3d/palisade.glb"
+      ],
+      "terrainConformed": true,
+      "triangles": 1980,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -13.8,
+          -0.45,
+          0.0
+        ],
+        "max": [
+          13.8,
+          0.45,
+          3.9192
+        ]
+      },
+      "sha256": "41954aea1ff176c06bda2ae5bd7e0afd0988a8f50846b3281a154f769fe9fc78"
+    },
+    "oxblood_banners": {
+      "asset": "landmarks/baron/oxblood_banners.glb",
+      "sourceTier": "build-new",
+      "sources": [
+        "assets/raw/plate-contract-baron.png"
+      ],
+      "terrainConformed": true,
+      "triangles": 180,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -14.799,
+          -8.695,
+          0.0
+        ],
+        "max": [
+          14.799,
+          8.695,
+          6.1529
+        ]
+      },
+      "sha256": "821c7e3c1ae289a4dccb985c7d9378fc3f3e3a0c94ed496e31c6fa4ad6bb92af"
+    }
+  },
+  "mounts": [
+    {
+      "id": "fortified_far_bank",
+      "position": [
+        0.0,
+        0.0,
+        -10.8
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/baron/fortified_far_bank.glb",
+      "terrainConformOffsetY": 0.0
+    },
+    {
+      "id": "seized_headframe",
+      "position": [
+        -13.0,
+        0.0,
+        13.0
+      ],
+      "rotation": [
+        0.0,
+        0.06,
+        0.0
+      ],
+      "scale": [
+        1.2,
+        1.2,
+        1.2
+      ],
+      "asset": "landmarks/baron/seized_headframe.glb"
+    },
+    {
+      "id": "rocket_cart",
+      "position": [
+        12.5,
+        0.0,
+        14.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/baron/rocket_cart.glb"
+    },
+    {
+      "id": "siege_line",
+      "position": [
+        0.0,
+        -0.005081,
+        -7.4
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/baron/siege_line.glb",
+      "terrainConformOffsetY": -0.005081
+    },
+    {
+      "id": "oxblood_banners",
+      "position": [
+        0.0,
+        0.563469,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/baron/oxblood_banners.glb",
+      "terrainConformOffsetY": 0.563469
+    }
+  ],
+  "simulation": "none; terrain, collision, movement, placement, water, spawns, and fog remain unchanged"
+}

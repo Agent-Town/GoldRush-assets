@@ -1,0 +1,246 @@
+{
+  "map": "fairground",
+  "era": 3,
+  "referenceBase": "30576b07f2d4a14a65ac5692068f1c1d94b9d388",
+  "sourceLadder": [
+    "reuse",
+    "derive",
+    "build-new"
+  ],
+  "atlas": {
+    "asset": "landmarks/fairground/fairground-landmarks-atlas.png",
+    "width": 1024,
+    "height": 1024,
+    "sharedByEveryAsset": true,
+    "sha256": "3573fb688b1ae37ff45b00f7be6dbc6b3e08e797c0b84e875c9edda1be560f40"
+  },
+  "blend": {
+    "asset": "landmarks/fairground/fairground-landmarks.blend",
+    "sha256": "eeb02caf7d6a0504c172ccc9c89045f1cbaad680222932f7e2b4ae8695baa5f4"
+  },
+  "assets": {
+    "south-midway-admission-arch": {
+      "asset": "landmarks/fairground/south-midway-admission-arch.glb",
+      "sourceTier": "derive",
+      "sources": [
+        "assets/pilots/plaza-props-3d/insulator-post.e3.glb",
+        "assets/pilots/plaza-props-3d/wire-run.e3.glb",
+        "assets/raw/plate-e3-bld-arc-lamp.png"
+      ],
+      "terrainConformed": false,
+      "triangles": 1324,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -3.975,
+          -0.95,
+          0.0
+        ],
+        "max": [
+          3.975,
+          0.95,
+          6.3802
+        ]
+      },
+      "sha256": "01486bcf068c69a4a1f4421acc2ccf0a8f50ab586c2e83b11c3e084e21354a23"
+    },
+    "west-current-calliope-wagon": {
+      "asset": "landmarks/fairground/west-current-calliope-wagon.glb",
+      "sourceTier": "reuse",
+      "sources": [
+        "assets/pilots/plaza-props-3d/covered_wagon.e3.glb"
+      ],
+      "terrainConformed": false,
+      "triangles": 2696,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -3.095,
+          -1.8739,
+          0.0
+        ],
+        "max": [
+          3.095,
+          1.8739,
+          5.54
+        ]
+      },
+      "sha256": "e35fe0556a3443764f3b8b49ef07577973dc38580c8b0371ba7271a7446cd461",
+      "footprint": {"kind":"rect","w":4.457,"d":2.698}
+    },
+    "east-mothglass-prize-cage": {
+      "asset": "landmarks/fairground/east-mothglass-prize-cage.glb",
+      "sourceTier": "derive",
+      "sources": [
+        "assets/pilots/plaza-props-3d/insulator-post.e3.glb",
+        "assets/raw/plate-e3-mothswarm.png"
+      ],
+      "terrainConformed": false,
+      "triangles": 1048,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -2.27,
+          -1.7296,
+          0.0
+        ],
+        "max": [
+          2.27,
+          1.7296,
+          5.3929
+        ]
+      },
+      "sha256": "dc610c9946d874e81519bb739bed054ce5595918f12a4f3605d293da345775fd",
+      "footprint": {"kind":"rect","w":3.269,"d":2.491}
+    },
+    "north-crowd-counting-rostrum": {
+      "asset": "landmarks/fairground/north-crowd-counting-rostrum.glb",
+      "sourceTier": "reuse",
+      "sources": [
+        "assets/pilots/plaza-props-3d/transformer-shed.e3.glb",
+        "assets/pilots/plaza-props-3d/insulator-post.e3.glb"
+      ],
+      "terrainConformed": false,
+      "triangles": 1196,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -3.65,
+          -2.2797,
+          0.0
+        ],
+        "max": [
+          3.65,
+          2.2797,
+          5.29
+        ]
+      },
+      "sha256": "0f7ab32d3b1e6d37db7de2bfc69890b120ab63f27aa4304b2b3738e1b6f80c89",
+      "footprint": {"kind":"rect","w":5.256,"d":3.283}
+    },
+    "fair-bell-battery-kiosk": {
+      "asset": "landmarks/fairground/fair-bell-battery-kiosk.glb",
+      "sourceTier": "reuse",
+      "sources": [
+        "assets/pilots/plaza-props-3d/transformer-shed.e3.glb",
+        "assets/pilots/plaza-props-3d/wire-run.e3.glb"
+      ],
+      "terrainConformed": false,
+      "triangles": 1268,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -2.6,
+          -1.9,
+          0.0
+        ],
+        "max": [
+          2.6,
+          1.9,
+          6.205
+        ]
+      },
+      "sha256": "7d6b909868f733a0f938762d7acdc465bd038562dd70000cba484cbe3650e1b2",
+      "footprint": {"kind":"rect","w":3.744,"d":2.736}
+    }
+  },
+  "mounts": [
+    {
+      "id": "south-midway-admission-arch",
+      "position": [
+        0.0,
+        0.0,
+        -42.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/fairground/south-midway-admission-arch.glb"
+    },
+    {
+      "id": "west-current-calliope-wagon",
+      "position": [
+        -42.0,
+        0.0,
+        10.0
+      ],
+      "rotation": [
+        0.0,
+        0.16,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/fairground/west-current-calliope-wagon.glb"
+    },
+    {
+      "id": "east-mothglass-prize-cage",
+      "position": [
+        42.0,
+        0.0,
+        10.0
+      ],
+      "rotation": [
+        0.0,
+        -0.16,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/fairground/east-mothglass-prize-cage.glb"
+    },
+    {
+      "id": "north-crowd-counting-rostrum",
+      "position": [
+        0.0,
+        0.0,
+        34.0
+      ],
+      "rotation": [
+        0.0,
+        3.1416,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/fairground/north-crowd-counting-rostrum.glb"
+    },
+    {
+      "id": "fair-bell-battery-kiosk",
+      "position": [
+        8.0,
+        0.0,
+        34.0
+      ],
+      "rotation": [
+        0.0,
+        -0.1,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/fairground/fair-bell-battery-kiosk.glb"
+    }
+  ],
+  "simulation": "none; terrain, collision, movement, placement, water, spawns, and fog remain unchanged",
+  "mountInterlock": "resolved-3d-d"
+}

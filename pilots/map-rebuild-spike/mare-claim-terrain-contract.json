@@ -1,0 +1,546 @@
+{
+  "asset": "mare-claim-terrain.glb",
+  "contractId": "e8-mare-claim",
+  "tileId": "e8-mare-claim",
+  "renderOnly": true,
+  "simulation": "planar masks, movement, collision, spawns, placement, and combat remain unchanged",
+  "heightSocket": "Terrain.visualY",
+  "theme": "a warm-grey crater claim held inside one exact h6 rim ring, with a black lava-tube mouth, landing scorch, and mass-driver scar across an intentionally empty mare",
+  "regionalFamily": {
+    "epoch": "Epoch 8 orbital claim",
+    "shared": [
+      "warm grey stippled engraving",
+      "silver-and-teal over parchment",
+      "brass work scars",
+      "glass-dome honey light",
+      "basalt shadow pockets",
+      "drawn vacuum negative space"
+    ],
+    "unique": [
+      "authored terrain silhouette",
+      "mask rhythm",
+      "crater-rim, lava-mouth, landing-scorch, and mass-driver composition",
+      "panorama profile"
+    ]
+  },
+  "boundsMeters": {
+    "min": [
+      -64.0,
+      -64.0,
+      -3.1074
+    ],
+    "max": [
+      64.0,
+      64.0,
+      6.0
+    ]
+  },
+  "meshCount": 1,
+  "primitiveCount": 1,
+  "materialCount": 1,
+  "vertices": 16641,
+  "triangles": 32768,
+  "triangleBudget": 60000,
+  "texture": {
+    "count": 1,
+    "width": 2048,
+    "height": 2048,
+    "embedded": true
+  },
+  "maskTable": "assets/contracts/epoch-8-orbital/mask-tables/e8-mare-claim.json",
+  "maskTruth": {
+    "source": "assets/contracts/epoch-8-orbital/contracts.json; specs/epoch-saga/e8-orbital-bundle.md \u00a7B",
+    "tileId": "e8-mare-claim",
+    "size": 128,
+    "dimensions": {
+      "width": 128,
+      "height": 128
+    },
+    "river": false,
+    "ford": false,
+    "buildZones": [
+      {
+        "id": "rim-premium-pad-west",
+        "bank": "north",
+        "minX": -50,
+        "maxX": -38,
+        "minZ": 42,
+        "maxZ": 52
+      },
+      {
+        "id": "rim-premium-pad-east",
+        "bank": "north",
+        "minX": 38,
+        "maxX": 50,
+        "minZ": 42,
+        "maxZ": 52
+      },
+      {
+        "id": "dome-cluster-pad-west",
+        "bank": "north",
+        "minX": -24,
+        "maxX": -12,
+        "minZ": -6,
+        "maxZ": 6
+      },
+      {
+        "id": "dome-cluster-pad-center",
+        "bank": "north",
+        "minX": -6,
+        "maxX": 6,
+        "minZ": -6,
+        "maxZ": 6
+      },
+      {
+        "id": "dome-cluster-pad-east",
+        "bank": "north",
+        "minX": 12,
+        "maxX": 24,
+        "minZ": -6,
+        "maxZ": 6
+      },
+      {
+        "id": "launch-pad",
+        "bank": "south",
+        "minX": -40,
+        "maxX": -20,
+        "minZ": -40,
+        "maxZ": -22
+      },
+      {
+        "id": "mass-driver-rail-footing",
+        "bank": "south",
+        "minX": -8,
+        "maxX": 54,
+        "minZ": -40,
+        "maxZ": -28
+      }
+    ],
+    "stakeMarkers": [],
+    "rails": [
+      {
+        "style": "mass-driver",
+        "points": [
+          {
+            "x": -4,
+            "z": -34
+          },
+          {
+            "x": 16,
+            "z": -34
+          },
+          {
+            "x": 36,
+            "z": -34
+          },
+          {
+            "x": 54,
+            "z": -34
+          }
+        ]
+      }
+    ],
+    "waterSources": [],
+    "harvestAnchors": [
+      {
+        "x": -34,
+        "z": 12
+      },
+      {
+        "x": -22,
+        "z": 26
+      },
+      {
+        "x": -8,
+        "z": 20
+      },
+      {
+        "x": 16,
+        "z": 22
+      },
+      {
+        "x": 30,
+        "z": 30
+      },
+      {
+        "x": 34,
+        "z": 12
+      }
+    ],
+    "heightfield": {
+      "id": "mare-claim-rim-ring",
+      "mode": "visual"
+    },
+    "gravity": {
+      "feelG": 0.6,
+      "lobArcDistanceMultiplier": 2.4,
+      "movement": "floaty"
+    },
+    "atmosphere": {
+      "airIsWall": true,
+      "outsideDomes": "suit-timer"
+    },
+    "rimBands": [
+      {
+        "id": "crater-rim-north-h6",
+        "height": 6,
+        "minX": -54,
+        "maxX": 54,
+        "minZ": 42,
+        "maxZ": 54
+      },
+      {
+        "id": "crater-rim-south-h6",
+        "height": 6,
+        "minX": -54,
+        "maxX": 54,
+        "minZ": -54,
+        "maxZ": -42
+      },
+      {
+        "id": "crater-rim-west-h6",
+        "height": 6,
+        "minX": -54,
+        "maxX": -42,
+        "minZ": -42,
+        "maxZ": 42
+      },
+      {
+        "id": "crater-rim-east-h6",
+        "height": 6,
+        "minX": 42,
+        "maxX": 54,
+        "minZ": -42,
+        "maxZ": 42
+      }
+    ],
+    "mareFlat": {
+      "id": "mare-flat-h0",
+      "height": 0,
+      "minX": -42,
+      "maxX": 42,
+      "minZ": -42,
+      "maxZ": 42
+    },
+    "lavaTubeMouth": {
+      "id": "lava-tube-mouth",
+      "minX": -38,
+      "maxX": -24,
+      "minZ": 18,
+      "maxZ": 32
+    },
+    "debrisArcLanes": [
+      {
+        "id": "debris-arc-rim",
+        "points": [
+          {
+            "x": -50,
+            "z": 46
+          },
+          {
+            "x": -26,
+            "z": 54
+          },
+          {
+            "x": 0,
+            "z": 48
+          },
+          {
+            "x": 26,
+            "z": 54
+          },
+          {
+            "x": 50,
+            "z": 46
+          }
+        ]
+      }
+    ],
+    "lanes": {
+      "spawnEdges": [
+        "north",
+        "west",
+        "east"
+      ],
+      "territoryRingBiasWaves": 0,
+      "territoryRingLaneBias": 0,
+      "patrolRoutes": [
+        {
+          "id": "debris-arc-rim",
+          "points": [
+            {
+              "x": -50,
+              "z": 46
+            },
+            {
+              "x": -26,
+              "z": 54
+            },
+            {
+              "x": 0,
+              "z": 48
+            },
+            {
+              "x": 26,
+              "z": 54
+            },
+            {
+              "x": 50,
+              "z": 46
+            }
+          ]
+        }
+      ]
+    },
+    "spawnGates": []
+  },
+  "waterAgreement": {
+    "river": false,
+    "waterSources": []
+  },
+  "pylonSiteFlatness": [],
+  "capacitorSiteFlatness": [],
+  "fixtureZoneFlatness": [],
+  "buildZoneFlatness": [
+    {
+      "id": "rim-premium-pad-west",
+      "bounds": [
+        -50,
+        -38,
+        42,
+        52
+      ],
+      "sampledSurfacePoints": 1225,
+      "maxDeviationMeters": 0.0
+    },
+    {
+      "id": "rim-premium-pad-east",
+      "bounds": [
+        38,
+        50,
+        42,
+        52
+      ],
+      "sampledSurfacePoints": 1225,
+      "maxDeviationMeters": 0.0
+    },
+    {
+      "id": "dome-cluster-pad-west",
+      "bounds": [
+        -24,
+        -12,
+        -6,
+        6
+      ],
+      "sampledSurfacePoints": 1225,
+      "maxDeviationMeters": 0.0
+    },
+    {
+      "id": "dome-cluster-pad-center",
+      "bounds": [
+        -6,
+        6,
+        -6,
+        6
+      ],
+      "sampledSurfacePoints": 1225,
+      "maxDeviationMeters": 0.0
+    },
+    {
+      "id": "dome-cluster-pad-east",
+      "bounds": [
+        12,
+        24,
+        -6,
+        6
+      ],
+      "sampledSurfacePoints": 1225,
+      "maxDeviationMeters": 0.0
+    },
+    {
+      "id": "launch-pad",
+      "bounds": [
+        -40,
+        -20,
+        -40,
+        -22
+      ],
+      "sampledSurfacePoints": 1225,
+      "maxDeviationMeters": 0.0
+    },
+    {
+      "id": "mass-driver-rail-footing",
+      "bounds": [
+        -8,
+        54,
+        -40,
+        -28
+      ],
+      "sampledSurfacePoints": 1225,
+      "maxDeviationMeters": 0.0
+    }
+  ],
+  "pylonFlatnessLimitMeters": 0.02,
+  "fixtureFlatnessLimitMeters": 0.02,
+  "landmarkFreeze": "lifted; canonical mounted landmark pack records backfilled by the mounts sweep",
+  "landmarkMounts": [
+    {
+      "id": "earthrise-listening-array",
+      "position": [
+        0.0,
+        0.0,
+        56.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/mare-claim/earthrise-listening-array.glb"
+    },
+    {
+      "id": "lava-tube-survey-gantry",
+      "position": [
+        -42.0,
+        0.0,
+        28.0
+      ],
+      "rotation": [
+        0.0,
+        0.18,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/mare-claim/lava-tube-survey-gantry.glb"
+    },
+    {
+      "id": "regolith-core-yard",
+      "position": [
+        22.0,
+        0.0,
+        18.0
+      ],
+      "rotation": [
+        0.0,
+        -0.12,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/mare-claim/regolith-core-yard.glb"
+    },
+    {
+      "id": "west-rim-debris-catcher",
+      "position": [
+        -56.0,
+        0.0,
+        20.0
+      ],
+      "rotation": [
+        0.0,
+        0.16,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/mare-claim/west-rim-debris-catcher.glb"
+    },
+    {
+      "id": "east-rim-debris-catcher",
+      "position": [
+        56.0,
+        0.0,
+        20.0
+      ],
+      "rotation": [
+        0.0,
+        -0.16,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/mare-claim/east-rim-debris-catcher.glb"
+    }
+  ],
+  "verdictPreviewOnly": {
+    "assets": [
+      "assets/pilots/dome-commons-3d/dome-commons-plate.glb"
+    ],
+    "excludedFromBlendAndGlb": true,
+    "reason": "the existing E8 dome body and procedural launch/rail cues establish lunar scale without authoring landmark mounts, collision, or placement authority"
+  },
+  "panoramaMount": {
+    "id": "mare-claim-panorama",
+    "asset": "mare-claim-panorama.glb",
+    "position": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "rotation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "renderOnly": true,
+    "ownership": "separate mounted scenery; never terrain or gameplay bounds"
+  },
+  "evidenceRig": "vacuum-black orbital raking light with honey habitat warmth and restrained agent teal; all lights render-only",
+  "sourceArt": [
+    "assets/processed/terrain-bank-tile-c.png",
+    "assets/processed/kit-era-8.png",
+    "assets/raw/plate-e8-bld-set.png"
+  ],
+  "atlas": "mare-claim-terrain-atlas.png",
+  "files": {
+    "blend": {
+      "bytes": 5290335,
+      "sha256": "be1b50387f125305c32d9b7974d429693f94f6a81a65cf4a6f7db7be345cb77c"
+    },
+    "glb": {
+      "bytes": 5256548,
+      "sha256": "02bb786ee96f8bf361f19ca1fc51dd02273ec9beeb485060d648bff30522f66e"
+    },
+    "atlas": {
+      "bytes": 4525700,
+      "sha256": "b4e36e0d815ff5c723400ed424fd8678a8c326ba1b6b6bfc5efa1e125569496d"
+    }
+  },
+  "landmarkMountSpace": {
+    "coordinates": "game X/Y/Z",
+    "positionY": "local offset added to Terrain.visualY at the mount X/Z",
+    "rotation": "XYZ Euler radians",
+    "scale": "XYZ multiplier",
+    "ownership": "landmark assets mount at runtime and are never baked into terrain"
+  },
+  "landmarkPack": {
+    "contract": "landmarks/mare-claim/mare-claim-landmark-pack-contract.json",
+    "atlas": "landmarks/mare-claim/mare-claim-landmarks-atlas.png",
+    "era": 8,
+    "sourceLadder": "reuse > derive > build-new",
+    "ownership": "separate mounted render-only GLBs; no simulation authority"
+  }
+}
