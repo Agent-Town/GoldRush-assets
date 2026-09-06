@@ -1,0 +1,45 @@
+{
+  "created_at": "2026-07-09T17:10:36.196836Z",
+  "display_name": "GPT Image 2",
+  "id": "85196264-5b11-41ee-8dc6-f7a4f14a20ba",
+  "job_type": "gpt_image_2",
+  "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/hf_20260709_171036_85196264-5b11-41ee-8dc6-f7a4f14a20ba_min.webp",
+  "params": {
+    "aspect_ratio": "1:1",
+    "height": 2048,
+    "medias": [
+      {
+        "data": {
+          "id": "30630b0b-45aa-4ad0-978a-d74e8d3b2d8d",
+          "type": "media_input",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/30630b0b-45aa-4ad0-978a-d74e8d3b2d8d.png"
+        },
+        "role": "image"
+      },
+      {
+        "data": {
+          "id": "71812417-06eb-47c5-b7d2-fb7cd722ccaa",
+          "type": "media_input",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/71812417-06eb-47c5-b7d2-fb7cd722ccaa.png"
+        },
+        "role": "image"
+      },
+      {
+        "data": {
+          "id": "51979258-ba2c-43b6-987b-f1ec696880ec",
+          "type": "media_input",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/51979258-ba2c-43b6-987b-f1ec696880ec.png"
+        },
+        "role": "image"
+      }
+    ],
+    "model": "videotape-alpha",
+    "prompt": "Frontier Ledger illustrated game sprite reference. Use the exact referenced tavernkeeper: warm stocky bearded man, broad straw hat, cream rolled-sleeve shirt, rust waistcoat, dark leather tavern apron, friendly rounded face, thick mustache and beard. Towel and large apron utility pocket are on his LEFT side; front views show them on viewer-right, left profiles show them near/visible, right profiles hide them on the far side. UP/back view walking away: towel drapes from his left shoulder and the back apron tie stays centered. Full body UP back view, mid-stride walk pose, centered single figure, full body visible head to boots, plain flat sand-colored background, fixed ground line, readable silhouette. Keep the same clothing, colors, linework, proportions, and side-specific details as the reference images. No mirroring, no letters, no numbers, no text, no logo, no watermark, no extra characters, no realistic firearms, no gore.",
+    "quality": "high",
+    "reference_elements": [],
+    "resolution": "2k",
+    "width": 2048
+  },
+  "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/hf_20260709_171036_85196264-5b11-41ee-8dc6-f7a4f14a20ba.png",
+  "status": "completed"
+}

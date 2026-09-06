@@ -1,0 +1,12 @@
+{
+  "maeGray8": 4.403567314147949,
+  "rmseGray8": 13.953946113586426,
+  "diffRatio16": 0.08447716346153847,
+  "diffRatio32": 0.0469140625,
+  "diffRatio64": 0.015150240384615385,
+  "avgLuminanceIntact8": 53.20090866088867,
+  "avgLuminanceAct3_8": 53.2420768737793,
+  "edgeEnergyIntact": 2.5684163570404053,
+  "edgeEnergyAct3": 2.7111124992370605,
+  "target": "beached wheels, slack grab crane, and cracked wheelhouse remain one readable land-yacht wreck"
+}

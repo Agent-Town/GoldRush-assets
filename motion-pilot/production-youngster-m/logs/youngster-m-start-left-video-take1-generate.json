@@ -1,0 +1,55 @@
+{
+  "created_at": "2026-07-09T19:04:11.629477Z",
+  "display_name": "Seedance 2.0",
+  "id": "4f040adb-eb9d-4bd5-a897-51b5aee6e6e1",
+  "job_type": "seedance_2_0",
+  "min_result_url": null,
+  "params": {
+    "aspect_ratio": "1:1",
+    "bitrate_mode": "standard",
+    "duration": 4,
+    "generate_audio": false,
+    "genre": "auto",
+    "height": 720,
+    "medias": [
+      {
+        "data": {
+          "id": "7440a43e-e336-4a9d-bd50-c51700cddfa1",
+          "type": "media_input",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/7440a43e-e336-4a9d-bd50-c51700cddfa1.png"
+        },
+        "role": "start_image"
+      },
+      {
+        "data": {
+          "id": "9cc6c0c5-b63a-489c-bec5-a9a7c2bb9072",
+          "type": "media_input",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/9cc6c0c5-b63a-489c-bec5-a9a7c2bb9072.png"
+        },
+        "role": "image"
+      },
+      {
+        "data": {
+          "id": "66da3241-c383-4aba-9dc7-e511fba56e72",
+          "type": "media_input",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/66da3241-c383-4aba-9dc7-e511fba56e72.png"
+        },
+        "role": "image"
+      }
+    ],
+    "mode": "std",
+    "model": "seedance_2_0",
+    "multi_prompt": [],
+    "multi_shot_mode": "custom",
+    "multi_shots": false,
+    "prompt": "Frontier Ledger illustrated game sprite reference. Use the exact referenced youngster boy, fully clothed minor, newsboy cap, curly hair, freckles, cream shirt, rust vest, suspenders, belted trousers, rolled cuffs, boots, teal lantern hanging from his left hip. Lantern hangs from his LEFT hip; suspenders and vest stay fixed; he is a fully clothed minor in every frame. LEFT profile facing screen-left: left-hip lantern is far-side/mostly hidden; do not move it to the near side; fully clothed. Full body LEFT profile view, walking steadily in place against a plain flat sand-colored background. lively short-stride child walk, playful but modest, fully clothed, no running and no exaggerated posing Constant centered framing, locked footline and fixed scale, feet on a fixed ground line, no vertical drift, no camera motion, no zoom, no turn, no mirroring, no extra characters, no text or letters, no realistic firearms, no gore. Seamless 4-second loop with one clean readable gait cycle; keep proportions, silhouette, clothing, colors, linework, and pinned side details consistent frame to frame.",
+    "prompt_language": "en",
+    "reference_elements": [],
+    "resolution": "720p",
+    "speedramp": "auto",
+    "width": 720
+  },
+  "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/hf_20260709_190411_4f040adb-eb9d-4bd5-a897-51b5aee6e6e1.mp4",
+  "status": "completed",
+  "thumbnail_url": "https://cdn.higgsfield.ai/user_3GAXxSRY94iz6800xAb2RitN2C7/hf_20260709_190411_4f040adb-eb9d-4bd5-a897-51b5aee6e6e1_thumbnail.webp"
+}

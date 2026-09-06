@@ -1,0 +1,90 @@
+{
+  "asset": "baron-panorama.glb",
+  "map": "baron",
+  "renderOnly": true,
+  "style": "engraved Epoch 1 kit-plate horizon; warm valley against a darker fevered rim",
+  "signature": "occupied wind-cut ridge rhythm against a darker fevered rim",
+  "exposure": {
+    "mode": "bakedIntoAtlas",
+    "linearMultiplier": 0.5
+  },
+  "lawVersion": "PANORAMA LAW v2",
+  "namedCorrections": {
+    "paintedWall": "sunk sky ring behind an irregular closer ridge belt with a dusty haze transition",
+    "ceiling": "engraving density grades from dense horizon to near-plain parchment zenith",
+    "echo": "asymmetric cloud and dust edits plus independent near/far ridge profiles break mirrored repetition"
+  },
+  "projection": {
+    "skyRingRadiusMeters": 190.0,
+    "ridgeFootRadiusMeters": 161.5,
+    "ridgeOccluderRadiusMeters": 174.0,
+    "ridgeFootRadiusRangeMeters": [
+      159.8,
+      163.2
+    ],
+    "ridgeOccluderRadiusRangeMeters": [
+      172.3,
+      175.7
+    ],
+    "skyBottomMeters": -10.0,
+    "skyTopMeters": 130.0,
+    "ridgeTopFormulaMeters": "5.0 + silhouetteFraction * 55.0"
+  },
+  "mount": {
+    "id": "baron-panorama",
+    "asset": "baron-panorama.glb",
+    "position": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "rotation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "renderOnly": true,
+    "ownership": "separate mounted scenery; never terrain or gameplay bounds"
+  },
+  "nonInterference": {
+    "playfieldBounds": "unchanged",
+    "spawnEdges": "unchanged",
+    "fogGating": "unchanged",
+    "waterBuildSpawnMasks": "unchanged"
+  },
+  "meshCount": 1,
+  "primitiveCount": 1,
+  "materialCount": 1,
+  "vertices": 1351,
+  "triangles": 1920,
+  "triangleBudget": 4000,
+  "texture": {
+    "count": 1,
+    "width": 2048,
+    "height": 2048,
+    "embedded": true
+  },
+  "sourceArt": [
+    "assets/processed/kit-era-1.png",
+    "assets/raw/plate-contract-baron.png"
+  ],
+  "files": {
+    "blend": {
+      "bytes": 470204,
+      "sha256": "4eea509c215896d8ef885ee7fa6d2022cd7f34e61085929a51989aebc1e55c6e"
+    },
+    "glb": {
+      "bytes": 527688,
+      "sha256": "82753d0923986d72a5feec271aacc6c1fb8fd4de90ab4e38ebc57ccd70fe577a"
+    },
+    "atlas": {
+      "bytes": 377631,
+      "sha256": "1a3eb50e320015cefe462ce7606e39c169afffdc924663eee130db629832a414"
+    }
+  }
+}

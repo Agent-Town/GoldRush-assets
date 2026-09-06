@@ -1,0 +1,102 @@
+{
+  "asset": "deepwater-claim-panorama.glb",
+  "map": "deepwater-claim",
+  "renderOnly": true,
+  "style": "engraved Epoch 5 post-flood harbor chain kit-plate horizon; open working sea against a tea-coloured weather rim",
+  "signature": "an open drowned horizon with unequal weather cells, low wreck-mast suggestions, and no confirming coast",
+  "exposure": {
+    "mode": "bakedIntoAtlas",
+    "linearMultiplier": 0.94
+  },
+  "lawVersion": "PANORAMA LAW v2",
+  "namedCorrections": {
+    "paintedWall": "deep-sunk cylindrical sky ring behind the code-owned sea; continuous tea gradient, no seam band",
+    "ceiling": "engraving density grades from dense horizon to near-plain parchment zenith",
+    "echo": "asymmetric cloud and dust edits plus independent near/far ridge profiles break mirrored repetition"
+  },
+  "projection": {
+    "skyRingRadiusMeters": 190.0,
+    "ridgeFootRadiusMeters": 161.5,
+    "ridgeOccluderRadiusMeters": 174.0,
+    "farRidgeRadiusMeters": null,
+    "ridgeFootRadiusRangeMeters": [
+      159.8,
+      163.2
+    ],
+    "ridgeOccluderRadiusRangeMeters": [
+      172.3,
+      175.7
+    ],
+    "skyBottomMeters": -160.0,
+    "skyTopMeters": 130.0,
+    "ridgeTopFormulaMeters": "-80.0; dormant belt far below code-owned sea",
+    "farRidgeTopFormulaMeters": null,
+    "groundSkirtInnerBoundaryMeters": {
+      "shape": "expanded-playfield-rectangle",
+      "halfExtents": [
+        64.0,
+        64.0
+      ],
+      "margin": 0.01
+    },
+    "groundSkirtOuterRadiusMeters": 190.0,
+    "groundSkirtRole": "submerged scenery apron under the code-owned sea; no water or gameplay authority"
+  },
+  "mount": {
+    "id": "deepwater-claim-panorama",
+    "asset": "deepwater-claim-panorama.glb",
+    "position": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "rotation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "renderOnly": true,
+    "ownership": "separate mounted scenery; never terrain or gameplay bounds"
+  },
+  "nonInterference": {
+    "playfieldBounds": "unchanged",
+    "spawnEdges": "unchanged",
+    "fogGating": "unchanged",
+    "waterBuildSpawnMasks": "unchanged"
+  },
+  "meshCount": 1,
+  "primitiveCount": 1,
+  "materialCount": 1,
+  "vertices": 1868,
+  "triangles": 2704,
+  "triangleBudget": 4000,
+  "texture": {
+    "count": 1,
+    "width": 2048,
+    "height": 2048,
+    "embedded": true
+  },
+  "sourceArt": [
+    "assets/processed/kit-era-5.png",
+    "assets/raw/ter-shelf-atlas.png"
+  ],
+  "files": {
+    "blend": {
+      "bytes": 1739738,
+      "sha256": "95279ba4f134540b70a9f162b7b20cb29c602ffb9b2f0f706a81cc2440ee0ab7"
+    },
+    "glb": {
+      "bytes": 1705824,
+      "sha256": "5ab61c4f7480a0b6a65d77397b3cb2132896421d0dc32bae0184b7b5c80938e4"
+    },
+    "atlas": {
+      "bytes": 1605608,
+      "sha256": "9bdf0dd7f95bb047a79001c7b083ef3ddd3bf761d48c4a4f26b3a2be1e3bdfea"
+    }
+  }
+}

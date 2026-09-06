@@ -1,0 +1,430 @@
+{
+  "blender": "5.1.2",
+  "baseSha": "de21f043a8c3b4c69950afbca0c7a612c6826e88",
+  "sourcePlates": {
+    "assets/raw/boss-land-yacht.png": "b3b4ecc4d3c2f829dbd54c982d47d0a6b1fadb07b330421fefe09ff530165e4e",
+    "assets/raw/boss-land-yacht-damage.png": "a2ce82a34c12cc1932f7a326538ea827b0f6ef2836d8d99035c3035d6192ca54"
+  },
+  "runtimeSystem": {
+    "path": "src/systems/LandYachtBossSystem.ts",
+    "sha256": "1b86b904a1fbb50ddb8f84e1abcd50d5105a936411db59b4b73c664e7660ce24",
+    "componentIds": [
+      "wheels",
+      "crane",
+      "wheelhouse"
+    ]
+  },
+  "damageImplementation": "one morph target on each exact live component mesh",
+  "chosenLength": 9.4,
+  "sourceScene": {
+    "meshObjects": [
+      "crane",
+      "wheelhouse",
+      "wheels"
+    ],
+    "cameras": [],
+    "lights": [],
+    "actions": []
+  },
+  "checked": {
+    "sha256": "902191310b8cf604a1196902696ff14de78811f81bb30dd4bb5a3011f5ce7a01",
+    "bytes": 2401596,
+    "nodes": [
+      "wheels",
+      "crane",
+      "wheelhouse"
+    ],
+    "nodeCount": 3,
+    "bindings": [
+      {
+        "node": "wheels",
+        "mesh": "wheelsMesh",
+        "targets": [
+          "Damage_BeachedWheels"
+        ],
+        "defaultWeights": [
+          0
+        ]
+      },
+      {
+        "node": "crane",
+        "mesh": "craneMesh",
+        "targets": [
+          "Damage_SlackCrane"
+        ],
+        "defaultWeights": [
+          0
+        ]
+      },
+      {
+        "node": "wheelhouse",
+        "mesh": "wheelhouseMesh",
+        "targets": [
+          "Damage_CrackedWheelhouse"
+        ],
+        "defaultWeights": [
+          0
+        ]
+      }
+    ],
+    "nodeTransforms": {
+      "wheels": {
+        "translation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "matrix": null
+      },
+      "crane": {
+        "translation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "matrix": null
+      },
+      "wheelhouse": {
+        "translation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "matrix": null
+      }
+    },
+    "meshes": 3,
+    "meshNames": [
+      "wheelsMesh",
+      "craneMesh",
+      "wheelhouseMesh"
+    ],
+    "primitives": 3,
+    "primitiveMaterials": [
+      0,
+      0,
+      0
+    ],
+    "triangles": 10632,
+    "morphTargets": {
+      "wheelsMesh": [
+        "Damage_BeachedWheels"
+      ],
+      "craneMesh": [
+        "Damage_SlackCrane"
+      ],
+      "wheelhouseMesh": [
+        "Damage_CrackedWheelhouse"
+      ]
+    },
+    "targetCounts": {
+      "wheelsMesh": 1,
+      "craneMesh": 1,
+      "wheelhouseMesh": 1
+    },
+    "materials": 1,
+    "materialTextureBindings": [
+      {
+        "material": 0,
+        "baseColorTexture": 0,
+        "image": 0
+      }
+    ],
+    "materialContract": [
+      {
+        "metallicFactor": 0,
+        "roughnessFactor": 0.8999999761581421,
+        "doubleSided": true,
+        "hasBaseColorTexture": true,
+        "hasEmissiveTexture": false,
+        "emissiveFactor": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "textureSources": [
+      0
+    ],
+    "images": 1,
+    "embeddedImages": 1,
+    "imageDimensions": [
+      [
+        1024,
+        1024
+      ]
+    ],
+    "cameras": 0,
+    "lights": 0,
+    "animations": 0,
+    "bounds": {
+      "min": [
+        -4.7,
+        0,
+        -2.366207
+      ],
+      "max": [
+        4.7,
+        6.76943,
+        2.366207
+      ],
+      "size": [
+        9.4,
+        6.76943,
+        4.732414
+      ],
+      "center": [
+        0.0,
+        3.384715,
+        0.0
+      ]
+    }
+  },
+  "reexported": {
+    "sha256": "902191310b8cf604a1196902696ff14de78811f81bb30dd4bb5a3011f5ce7a01",
+    "bytes": 2401596,
+    "nodes": [
+      "wheels",
+      "crane",
+      "wheelhouse"
+    ],
+    "nodeCount": 3,
+    "bindings": [
+      {
+        "node": "wheels",
+        "mesh": "wheelsMesh",
+        "targets": [
+          "Damage_BeachedWheels"
+        ],
+        "defaultWeights": [
+          0
+        ]
+      },
+      {
+        "node": "crane",
+        "mesh": "craneMesh",
+        "targets": [
+          "Damage_SlackCrane"
+        ],
+        "defaultWeights": [
+          0
+        ]
+      },
+      {
+        "node": "wheelhouse",
+        "mesh": "wheelhouseMesh",
+        "targets": [
+          "Damage_CrackedWheelhouse"
+        ],
+        "defaultWeights": [
+          0
+        ]
+      }
+    ],
+    "nodeTransforms": {
+      "wheels": {
+        "translation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "matrix": null
+      },
+      "crane": {
+        "translation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "matrix": null
+      },
+      "wheelhouse": {
+        "translation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "matrix": null
+      }
+    },
+    "meshes": 3,
+    "meshNames": [
+      "wheelsMesh",
+      "craneMesh",
+      "wheelhouseMesh"
+    ],
+    "primitives": 3,
+    "primitiveMaterials": [
+      0,
+      0,
+      0
+    ],
+    "triangles": 10632,
+    "morphTargets": {
+      "wheelsMesh": [
+        "Damage_BeachedWheels"
+      ],
+      "craneMesh": [
+        "Damage_SlackCrane"
+      ],
+      "wheelhouseMesh": [
+        "Damage_CrackedWheelhouse"
+      ]
+    },
+    "targetCounts": {
+      "wheelsMesh": 1,
+      "craneMesh": 1,
+      "wheelhouseMesh": 1
+    },
+    "materials": 1,
+    "materialTextureBindings": [
+      {
+        "material": 0,
+        "baseColorTexture": 0,
+        "image": 0
+      }
+    ],
+    "materialContract": [
+      {
+        "metallicFactor": 0,
+        "roughnessFactor": 0.8999999761581421,
+        "doubleSided": true,
+        "hasBaseColorTexture": true,
+        "hasEmissiveTexture": false,
+        "emissiveFactor": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "textureSources": [
+      0
+    ],
+    "images": 1,
+    "embeddedImages": 1,
+    "imageDimensions": [
+      [
+        1024,
+        1024
+      ]
+    ],
+    "cameras": 0,
+    "lights": 0,
+    "animations": 0,
+    "bounds": {
+      "min": [
+        -4.7,
+        0,
+        -2.366207
+      ],
+      "max": [
+        4.7,
+        6.76943,
+        2.366207
+      ],
+      "size": [
+        9.4,
+        6.76943,
+        4.732414
+      ],
+      "center": [
+        0.0,
+        3.384715,
+        0.0
+      ]
+    }
+  },
+  "byteIdentical": true,
+  "semanticIdentical": {
+    "nodes": true,
+    "nodeCount": true,
+    "bindings": true,
+    "nodeTransforms": true,
+    "meshes": true,
+    "meshNames": true,
+    "primitives": true,
+    "primitiveMaterials": true,
+    "triangles": true,
+    "morphTargets": true,
+    "targetCounts": true,
+    "materials": true,
+    "materialTextureBindings": true,
+    "materialContract": true,
+    "textureSources": true,
+    "images": true,
+    "embeddedImages": true,
+    "imageDimensions": true,
+    "cameras": true,
+    "lights": true,
+    "animations": true,
+    "bounds": true
+  }
+}

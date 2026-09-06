@@ -1,0 +1,55 @@
+{
+  "created_at": "2026-07-09T17:24:51.388702Z",
+  "display_name": "Seedance 2.0",
+  "id": "3d7cc954-eabe-4497-af9b-96f99b8a441f",
+  "job_type": "seedance_2_0",
+  "min_result_url": null,
+  "params": {
+    "aspect_ratio": "1:1",
+    "bitrate_mode": "standard",
+    "duration": 4,
+    "generate_audio": false,
+    "genre": "auto",
+    "height": 720,
+    "medias": [
+      {
+        "data": {
+          "id": "1e7be4bf-e812-4d79-8bd5-b7bb0e5a4d2d",
+          "type": "media_input",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/1e7be4bf-e812-4d79-8bd5-b7bb0e5a4d2d.png"
+        },
+        "role": "start_image"
+      },
+      {
+        "data": {
+          "id": "7904db55-970c-4459-9481-053a17ee93f7",
+          "type": "media_input",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/7904db55-970c-4459-9481-053a17ee93f7.png"
+        },
+        "role": "image"
+      },
+      {
+        "data": {
+          "id": "c3b7b6a3-0180-4282-848b-143229da2621",
+          "type": "media_input",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/c3b7b6a3-0180-4282-848b-143229da2621.png"
+        },
+        "role": "image"
+      }
+    ],
+    "mode": "std",
+    "model": "seedance_2_0",
+    "multi_prompt": [],
+    "multi_shot_mode": "custom",
+    "multi_shots": false,
+    "prompt": "Frontier Ledger illustrated game sprite reference. Use the exact referenced tavernkeeper: warm stocky bearded man, broad straw hat, cream rolled-sleeve shirt, rust waistcoat, dark leather tavern apron, friendly rounded face, thick mustache and beard. Towel and large apron utility pocket are on his LEFT side; front views show them on viewer-right, screen-right profiles show them near/visible, screen-left profiles hide them on the far side. DOWN/front view: towel and apron pocket stay on his left side, viewer-right. Full body DOWN front view, walking steadily in place against a plain flat sand-colored background. steady warm tavernkeeper walk with real weight, relaxed arms, no swagger and no combat posture Constant centered framing, locked footline and fixed scale, feet on a fixed ground line, no vertical drift, no camera motion, no zoom, no turn, no mirroring, no extra characters, no text or letters, no realistic firearms, no gore. Seamless 4-second loop with one clean readable gait cycle; keep proportions, silhouette, clothing, colors, linework, and pinned side details consistent frame to frame.",
+    "prompt_language": "en",
+    "reference_elements": [],
+    "resolution": "720p",
+    "speedramp": "auto",
+    "width": 720
+  },
+  "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/hf_20260709_172451_3d7cc954-eabe-4497-af9b-96f99b8a441f.mp4",
+  "status": "completed",
+  "thumbnail_url": "https://cdn.higgsfield.ai/user_3GAXxSRY94iz6800xAb2RitN2C7/hf_20260709_172451_3d7cc954-eabe-4497-af9b-96f99b8a441f_thumbnail.webp"
+}

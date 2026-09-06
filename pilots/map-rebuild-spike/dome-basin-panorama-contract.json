@@ -1,0 +1,106 @@
+{
+  "asset": "dome-basin-panorama.glb",
+  "map": "dome-basin",
+  "renderOnly": true,
+  "style": "engraved Epoch 9 Red Fields kit-plate horizon; rust-red basin county with asymmetrical hatch-spiral dust devils and a quiet parchment zenith",
+  "signature": "a rust-red basin county held between an ice-quarry rim, asymmetric dune shelves, and two distant hatch-spiral dust columns",
+  "exposure": {
+    "mode": "bakedIntoAtlas",
+    "linearMultiplier": 0.88
+  },
+  "lawVersion": "PANORAMA LAW v2",
+  "namedCorrections": {
+    "paintedWall": "sunk rust sky behind two irregular red ridge layers and a terrain-sampled dry ground skirt",
+    "ceiling": "engraving density grades from dense horizon to near-plain parchment zenith",
+    "echo": "two unequal hatch-spiral dust columns and independent red ridges break quadrant repetition"
+  },
+  "projection": {
+    "skyRingRadiusMeters": 190.0,
+    "ridgeFootRadiusMeters": 161.5,
+    "ridgeOccluderRadiusMeters": 174.0,
+    "farRidgeRadiusMeters": [
+      177.0,
+      184.0
+    ],
+    "ridgeFootRadiusRangeMeters": [
+      159.8,
+      163.2
+    ],
+    "ridgeOccluderRadiusRangeMeters": [
+      172.3,
+      175.7
+    ],
+    "skyBottomMeters": -10.0,
+    "skyTopMeters": 130.0,
+    "ridgeTopFormulaMeters": "1.8 + silhouetteFraction * 26.0",
+    "farRidgeTopFormulaMeters": "2.2 + silhouetteFraction * 24.0",
+    "groundSkirtInnerBoundaryMeters": {
+      "shape": "expanded-playfield-rectangle",
+      "halfExtents": [
+        64.0,
+        64.0
+      ],
+      "margin": 0.01
+    },
+    "groundSkirtOuterRadiusMeters": 161.5,
+    "groundSkirtRole": "dry red scenery apron; never channel water and never gameplay authority"
+  },
+  "mount": {
+    "id": "dome-basin-panorama",
+    "asset": "dome-basin-panorama.glb",
+    "position": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "rotation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "renderOnly": true,
+    "ownership": "separate mounted scenery; never terrain or gameplay bounds"
+  },
+  "earthSide": null,
+  "nonInterference": {
+    "playfieldBounds": "unchanged",
+    "spawnEdges": "unchanged",
+    "fogGating": "unchanged",
+    "waterBuildSpawnMasks": "unchanged"
+  },
+  "meshCount": 1,
+  "primitiveCount": 1,
+  "materialCount": 1,
+  "vertices": 2222,
+  "triangles": 3072,
+  "triangleBudget": 4000,
+  "texture": {
+    "count": 1,
+    "width": 2048,
+    "height": 2048,
+    "embedded": true
+  },
+  "sourceArt": [
+    "assets/processed/kit-era-9.png",
+    "assets/raw/plate-e9-bld-canal-works.png"
+  ],
+  "files": {
+    "blend": {
+      "bytes": 976097,
+      "sha256": "c4f44edf587ddb22d7e4cdb93c7cc9159fd78ec6be7d166fce0ff90f59a9ae2e"
+    },
+    "glb": {
+      "bytes": 977736,
+      "sha256": "1330d01f9bddda187a1498d7eb967fdba61a036b6be2cd98edef1a63ea1eca85"
+    },
+    "atlas": {
+      "bytes": 859758,
+      "sha256": "d4e1234365d9e4012ddaf65376a64e9b9974544e1eecbc9214f74d8239eaade6"
+    }
+  }
+}

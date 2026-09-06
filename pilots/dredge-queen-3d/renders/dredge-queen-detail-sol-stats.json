@@ -1,0 +1,110 @@
+{
+  "model": "assets/pilots/dredge-queen-3d/dredge-queen-detail-sol.glb",
+  "blender": "5.1.2",
+  "sha256": "dc79e7862726d93588b1286fc61c811779a5c82fce7e1a44d08cc9ac3d697f66",
+  "bytes": 8079044,
+  "triangles": 42976,
+  "materials": 1,
+  "drawCallsExpected": 4,
+  "atlasDimensions": [
+    [
+      2048,
+      2048
+    ]
+  ],
+  "bounds": {
+    "min": [
+      -4,
+      0,
+      -2.491563
+    ],
+    "max": [
+      4,
+      5.33333,
+      2.491563
+    ],
+    "size": [
+      8,
+      5.33333,
+      4.983127
+    ],
+    "center": [
+      0.0,
+      2.666665,
+      0.0
+    ]
+  },
+  "nodes": [
+    "claw",
+    "paddle_port",
+    "paddle_starboard",
+    "hold"
+  ],
+  "bindings": [
+    {
+      "node": "claw",
+      "mesh": "clawMesh",
+      "targets": [
+        "Damage_SlackClaw"
+      ],
+      "defaultWeights": [
+        0
+      ]
+    },
+    {
+      "node": "paddle_port",
+      "mesh": "paddle_portMesh",
+      "targets": [
+        "Damage_BrokenPortPaddle"
+      ],
+      "defaultWeights": [
+        0
+      ]
+    },
+    {
+      "node": "paddle_starboard",
+      "mesh": "paddle_starboardMesh",
+      "targets": [
+        "Damage_BrokenStarboardPaddle"
+      ],
+      "defaultWeights": [
+        0
+      ]
+    },
+    {
+      "node": "hold",
+      "mesh": "holdMesh",
+      "targets": [
+        "Damage_CrackedLootHold"
+      ],
+      "defaultWeights": [
+        0
+      ]
+    }
+  ],
+  "byteIdenticalReexport": true,
+  "semanticIdentical": {
+    "nodes": true,
+    "nodeCount": true,
+    "bindings": true,
+    "nodeTransforms": true,
+    "meshes": true,
+    "meshNames": true,
+    "primitives": true,
+    "primitiveMaterials": true,
+    "triangles": true,
+    "morphTargets": true,
+    "targetCounts": true,
+    "materials": true,
+    "materialTextureBindings": true,
+    "materialContract": true,
+    "textureSources": true,
+    "images": true,
+    "embeddedImages": true,
+    "imageDimensions": true,
+    "cameras": true,
+    "lights": true,
+    "animations": true,
+    "bounds": true
+  }
+}

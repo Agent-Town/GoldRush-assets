@@ -1,0 +1,630 @@
+{
+  "asset": "boneyard-terrain.glb",
+  "contractId": "e4-boneyard",
+  "tileId": "e4-boneyard",
+  "renderOnly": true,
+  "simulation": "planar; movement, collision, placement, spawns, convoy, eruptions, salvage, wake triggers, weather, and combat remain code-owned",
+  "heightSocket": "Terrain.visualY",
+  "theme": "a quiet salvage valley with two exact machine rows, a defended gate shelf, and one half-buried northern sleeper hollow",
+  "regionalFamily": {
+    "epoch": "Epoch 4 motor frontier",
+    "shared": [
+      "dust-warm ochre",
+      "tar-dark stains",
+      "engraved wheel scars",
+      "sun-cracked earth",
+      "sparse cacti",
+      "hazy motor distance"
+    ],
+    "unique": "paired salvage terraces, forked approach cuts, rust pockets, and a deliberately undisturbed sleeper hollow"
+  },
+  "boundsMeters": {
+    "min": [
+      -64.0,
+      -64.0,
+      -0.2558
+    ],
+    "max": [
+      64.0,
+      64.0,
+      2.6025
+    ]
+  },
+  "meshCount": 1,
+  "primitiveCount": 1,
+  "materialCount": 1,
+  "vertices": 16641,
+  "triangles": 32768,
+  "triangleBudget": 60000,
+  "texture": {
+    "count": 1,
+    "width": 2048,
+    "height": 2048,
+    "embedded": true
+  },
+  "maskTable": "assets/contracts/epoch-4-motor/mask-tables/e4-boneyard.json",
+  "maskTruth": {
+    "source": "assets/contracts/epoch-4-motor/contracts.json; lore/STORYBOOK.md \u2014 E4 \"New maps, specified for whoever builds them\"",
+    "tileId": "e4-boneyard",
+    "size": 128,
+    "dimensions": {
+      "width": 128,
+      "height": 128
+    },
+    "river": false,
+    "ford": false,
+    "buildZones": [
+      {
+        "id": "gate-camp",
+        "bank": "south",
+        "minX": -22,
+        "maxX": 22,
+        "minZ": -56,
+        "maxZ": -34
+      },
+      {
+        "id": "west-rows",
+        "bank": "north",
+        "minX": -56,
+        "maxX": -12,
+        "minZ": -20,
+        "maxZ": 24
+      },
+      {
+        "id": "east-rows",
+        "bank": "north",
+        "minX": 12,
+        "maxX": 56,
+        "minZ": -20,
+        "maxZ": 24
+      }
+    ],
+    "stakeMarkers": [
+      {
+        "id": "gate-camp",
+        "x": 0,
+        "z": -44,
+        "lossCondition": true
+      }
+    ],
+    "waterSources": [],
+    "harvestAnchors": [
+      {
+        "x": -48,
+        "z": -12
+      },
+      {
+        "x": -36,
+        "z": 4
+      },
+      {
+        "x": -24,
+        "z": 18
+      },
+      {
+        "x": -18,
+        "z": -8
+      },
+      {
+        "x": 18,
+        "z": -8
+      },
+      {
+        "x": 24,
+        "z": 18
+      },
+      {
+        "x": 36,
+        "z": 4
+      },
+      {
+        "x": 48,
+        "z": -12
+      },
+      {
+        "x": -8,
+        "z": 34
+      },
+      {
+        "x": 8,
+        "z": 34
+      }
+    ],
+    "roadCorridors": [
+      {
+        "id": "gate-to-west-rows",
+        "start": {
+          "x": -8,
+          "z": -38
+        },
+        "end": {
+          "x": -34,
+          "z": -4
+        }
+      },
+      {
+        "id": "gate-to-east-rows",
+        "start": {
+          "x": 8,
+          "z": -38
+        },
+        "end": {
+          "x": 34,
+          "z": -4
+        }
+      }
+    ],
+    "salvageHulks": [
+      {
+        "id": "flivver-row-west-a",
+        "kind": "flivver",
+        "x": -48,
+        "z": -12
+      },
+      {
+        "id": "flivver-row-west-b",
+        "kind": "flivver",
+        "x": -36,
+        "z": 4
+      },
+      {
+        "id": "flivver-row-west-c",
+        "kind": "flivver",
+        "x": -24,
+        "z": 18
+      },
+      {
+        "id": "spent-boiler-west",
+        "kind": "boiler",
+        "x": -18,
+        "z": -8
+      },
+      {
+        "id": "spent-boiler-east",
+        "kind": "boiler",
+        "x": 18,
+        "z": -8
+      },
+      {
+        "id": "flivver-row-east-a",
+        "kind": "flivver",
+        "x": 24,
+        "z": 18
+      },
+      {
+        "id": "flivver-row-east-b",
+        "kind": "flivver",
+        "x": 36,
+        "z": 4
+      },
+      {
+        "id": "flivver-row-east-c",
+        "kind": "flivver",
+        "x": 48,
+        "z": -12
+      },
+      {
+        "id": "hauler-bed-north-a",
+        "kind": "hauler",
+        "x": -8,
+        "z": 34
+      },
+      {
+        "id": "hauler-bed-north-b",
+        "kind": "hauler",
+        "x": 8,
+        "z": 34
+      }
+    ],
+    "sleeper": {
+      "id": "half-buried-sleeper",
+      "x": 34,
+      "z": 36,
+      "radius": 6,
+      "wakes": "only-if-disturbed"
+    },
+    "unmarkedWagon": {
+      "id": "unmarked-wagon",
+      "x": -38,
+      "z": 30
+    },
+    "weather": {
+      "cycleSeconds": 40,
+      "clearSeconds": 10,
+      "telegraphSeconds": 4,
+      "stormSeconds": 12,
+      "stormMovementMultiplier": 0.75,
+      "stormVisibilityMultiplier": 0.6,
+      "hazeColor": "#b9895a",
+      "hazeStrength": 0.16
+    },
+    "enemyRoster": [
+      {
+        "id": "pipeline_rustler",
+        "label": "Pipeline Rustler",
+        "waveMin": 1,
+        "hpScale": 0.9,
+        "speedMult": 1.25,
+        "visualScale": 0.9,
+        "tint": "#5c4a35",
+        "thief": true,
+        "contactDamageScale": 0.6,
+        "spawnEdges": [
+          "west",
+          "east"
+        ],
+        "spawnGates": [
+          {
+            "edge": "west",
+            "x": -62,
+            "z": 8
+          },
+          {
+            "edge": "east",
+            "x": 62,
+            "z": 8
+          }
+        ]
+      }
+    ],
+    "lanes": {
+      "spawnEdges": [
+        "west",
+        "east"
+      ],
+      "territoryRingBiasWaves": 0,
+      "territoryRingLaneBias": 0
+    },
+    "spawnGates": [
+      {
+        "edge": "west",
+        "x": -62,
+        "z": 8
+      },
+      {
+        "edge": "east",
+        "x": 62,
+        "z": 8
+      }
+    ]
+  },
+  "waterAgreement": {
+    "river": false,
+    "waterSources": []
+  },
+  "buildZoneFlatness": [
+    {
+      "id": "gate-camp",
+      "bounds": [
+        -22,
+        22,
+        -56,
+        -34
+      ],
+      "sampledSurfacePoints": 2145,
+      "maxDeviationMeters": 0.0
+    },
+    {
+      "id": "west-rows",
+      "bounds": [
+        -56,
+        -12,
+        -20,
+        24
+      ],
+      "sampledSurfacePoints": 2145,
+      "maxDeviationMeters": 0.0
+    },
+    {
+      "id": "east-rows",
+      "bounds": [
+        12,
+        56,
+        -20,
+        24
+      ],
+      "sampledSurfacePoints": 2145,
+      "maxDeviationMeters": 0.0
+    }
+  ],
+  "landmarkMounts": [
+    {
+      "id": "flivver-row-west-a",
+      "asset": "landmarks/boneyard/flivver-row-west-a.glb",
+      "position": [
+        -48.0,
+        0.48,
+        -12.0
+      ],
+      "rotation": [
+        0.0,
+        0.18,
+        0.0
+      ],
+      "scale": [
+        0.82,
+        0.82,
+        0.82
+      ]
+    },
+    {
+      "id": "flivver-row-west-b",
+      "asset": "landmarks/boneyard/flivver-row-west-b.glb",
+      "position": [
+        -36.0,
+        0.48,
+        4.0
+      ],
+      "rotation": [
+        0.0,
+        -0.1,
+        0.0
+      ],
+      "scale": [
+        0.86,
+        0.86,
+        0.86
+      ]
+    },
+    {
+      "id": "flivver-row-west-c",
+      "asset": "landmarks/boneyard/flivver-row-west-c.glb",
+      "position": [
+        -24.0,
+        0.48,
+        18.0
+      ],
+      "rotation": [
+        0.0,
+        0.08,
+        0.0
+      ],
+      "scale": [
+        0.8,
+        0.8,
+        0.8
+      ]
+    },
+    {
+      "id": "spent-boiler-west",
+      "asset": "landmarks/boneyard/spent-boiler-west.glb",
+      "position": [
+        -18.0,
+        0.48,
+        -8.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        0.9,
+        0.9,
+        0.9
+      ]
+    },
+    {
+      "id": "spent-boiler-east",
+      "asset": "landmarks/boneyard/spent-boiler-east.glb",
+      "position": [
+        18.0,
+        0.62,
+        -8.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        0.9,
+        0.9,
+        0.9
+      ]
+    },
+    {
+      "id": "flivver-row-east-a",
+      "asset": "landmarks/boneyard/flivver-row-east-a.glb",
+      "position": [
+        24.0,
+        0.62,
+        18.0
+      ],
+      "rotation": [
+        0.0,
+        -0.12,
+        0.0
+      ],
+      "scale": [
+        0.84,
+        0.84,
+        0.84
+      ]
+    },
+    {
+      "id": "flivver-row-east-b",
+      "asset": "landmarks/boneyard/flivver-row-east-b.glb",
+      "position": [
+        36.0,
+        0.62,
+        4.0
+      ],
+      "rotation": [
+        0.0,
+        0.14,
+        0.0
+      ],
+      "scale": [
+        0.88,
+        0.88,
+        0.88
+      ]
+    },
+    {
+      "id": "flivver-row-east-c",
+      "asset": "landmarks/boneyard/flivver-row-east-c.glb",
+      "position": [
+        48.0,
+        0.62,
+        -12.0
+      ],
+      "rotation": [
+        0.0,
+        -0.06,
+        0.0
+      ],
+      "scale": [
+        0.82,
+        0.82,
+        0.82
+      ]
+    },
+    {
+      "id": "hauler-bed-north-a",
+      "asset": "landmarks/boneyard/hauler-bed-north-a.glb",
+      "position": [
+        -8.0,
+        0.1996,
+        34.0
+      ],
+      "rotation": [
+        0.0,
+        0.04,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "id": "hauler-bed-north-b",
+      "asset": "landmarks/boneyard/hauler-bed-north-b.glb",
+      "position": [
+        8.0,
+        0.2219,
+        34.0
+      ],
+      "rotation": [
+        0.0,
+        -0.05,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "id": "half-buried-sleeper",
+      "asset": "landmarks/boneyard/half-buried-sleeper.glb",
+      "position": [
+        34.0,
+        -0.253,
+        36.0
+      ],
+      "rotation": [
+        0.0,
+        0.22,
+        0.0
+      ],
+      "scale": [
+        1.18,
+        1.18,
+        1.18
+      ]
+    },
+    {
+      "id": "unmarked-wagon",
+      "asset": "landmarks/boneyard/unmarked-wagon.glb",
+      "position": [
+        -38.0,
+        0.1649,
+        30.0
+      ],
+      "rotation": [
+        0.0,
+        -0.18,
+        0.0
+      ],
+      "scale": [
+        0.92,
+        0.92,
+        0.92
+      ]
+    }
+  ],
+  "landmarkMountSpace": {
+    "coordinates": "game X/Y/Z",
+    "positionY": "local offset added to Terrain.visualY at the mount X/Z",
+    "rotation": "XYZ Euler radians",
+    "scale": "XYZ multiplier",
+    "ownership": "landmark assets mount at runtime and are never baked into terrain"
+  },
+  "panoramaMount": {
+    "id": "boneyard-panorama",
+    "asset": "boneyard-panorama.glb",
+    "position": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "rotation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "renderOnly": true,
+    "ownership": "separate mounted scenery; never terrain or gameplay bounds"
+  },
+  "runtimeVisualsAbsent": [
+    "convoy movement",
+    "anchorage windows",
+    "wild-well eruptions",
+    "tar sprites",
+    "salvage race",
+    "sleeper wake",
+    "weather",
+    "spawn gates"
+  ],
+  "verdictPreviewOnly": {
+    "excludedFromBlendAndGlb": true,
+    "reason": "mount bodies, rubble, cacti, masks, panorama, and evidence lighting are review helpers only"
+  },
+  "sourceArt": [
+    "assets/processed/kit-era-4.png",
+    "assets/raw/plate-e4-boss-land-yacht.png",
+    "assets/processed/terrain-bank-tile.png",
+    "assets/processed/terrain-bank-tile-c.png"
+  ],
+  "atlas": "boneyard-terrain-atlas.png",
+  "files": {
+    "blend": {
+      "bytes": 8715900,
+      "sha256": "b50624456dd8981242d284ff4b3781490b66f57751e6ef631a4a0e52a5ddeb70"
+    },
+    "glb": {
+      "bytes": 8653832,
+      "sha256": "f294710cfca3ff4ba1a00ee0b179624678540ab8d798c0a502b436ab949ce88f"
+    },
+    "atlas": {
+      "bytes": 7922630,
+      "sha256": "42a20a2d7d889d3b8e2682e959bf8b6d7f85db3301938858c390fad0c5780168"
+    }
+  },
+  "landmarkPack": {
+    "contract": "landmarks/boneyard/boneyard-landmark-pack-contract.json",
+    "atlas": "landmarks/boneyard/boneyard-landmarks-atlas.png",
+    "era": 4,
+    "sourceLadder": "reuse > derive > build-new",
+    "ownership": "separate mounted render-only GLBs; no simulation authority"
+  }
+}

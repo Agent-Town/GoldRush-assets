@@ -1,0 +1,68 @@
+{
+  "generatedAt": "2026-07-10T00:00:00Z",
+  "method": "rembg-isolated-/tmp",
+  "sheet": "assets/raw/char-youngster-m-sheet-walk8.png",
+  "evidenceSheet": "assets/motion-pilot/production-youngster-m/char-youngster-m-sheet-walk8.png",
+  "ownerContact": "assets/motion-pilot/production-youngster-m/contact-sheets/youngster-m-reextract-owner-contact.png",
+  "cell": "280x340",
+  "grid": "8x4",
+  "selected": {
+    "down": 2,
+    "left": 2,
+    "right": 2,
+    "up": 2
+  },
+  "rows": [
+    {
+      "dir": "down",
+      "selectedTake": 2,
+      "scale": 0.3809,
+      "widthMin": 288,
+      "widthMax": 312,
+      "heightMin": 815,
+      "heightMax": 848,
+      "heightDriftPx": 33,
+      "heightDriftPct": 3.9
+    },
+    {
+      "dir": "left",
+      "selectedTake": 2,
+      "scale": 0.3809,
+      "widthMin": 214,
+      "widthMax": 448,
+      "heightMin": 785,
+      "heightMax": 800,
+      "heightDriftPx": 15,
+      "heightDriftPct": 1.9
+    },
+    {
+      "dir": "right",
+      "selectedTake": 2,
+      "scale": 0.3809,
+      "widthMin": 268,
+      "widthMax": 450,
+      "heightMin": 769,
+      "heightMax": 787,
+      "heightDriftPx": 18,
+      "heightDriftPct": 2.3
+    },
+    {
+      "dir": "up",
+      "selectedTake": 2,
+      "scale": 0.3809,
+      "widthMin": 284,
+      "widthMax": 296,
+      "heightMin": 824,
+      "heightMax": 840,
+      "heightDriftPx": 16,
+      "heightDriftPct": 1.9
+    }
+  ],
+  "gates": {
+    "alphaBad": 0,
+    "nearMagentaInterior": 0,
+    "enclosedTransparentRegions": 0,
+    "enclosedBackgroundBlobs": 0,
+    "cellGeometry": "2240x1360"
+  }
+}

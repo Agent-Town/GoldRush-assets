@@ -1,0 +1,99 @@
+{
+  "blender": "5.1.2",
+  "asset": "baron-props.glb",
+  "atlas": {
+    "asset": "baron-props-atlas.png",
+    "width": 512,
+    "height": 512,
+    "sha256": "fac23e02e7ae674c5e81e6a1660450e226a04f292332d6da8a1fac7ee13b9e84",
+    "sharedByEveryProp": true
+  },
+  "sourceLadder": "derive",
+  "sources": [
+    "artifacts/baron-presence/desktop-chrome-baron-carried-launcher.png",
+    "assets/pilots/map-rebuild-spike/landmarks/baron/rocket_cart.glb",
+    "src/entities/Enemy.ts:createClaimJumperAssets.sackGeometry"
+  ],
+  "props": {
+    "launcher": {
+      "triangles": 2020,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -0.505,
+          -0.64941,
+          -0.215
+        ],
+        "max": [
+          0.86,
+          0.65,
+          0.226
+        ],
+        "size": [
+          1.365,
+          1.29941,
+          0.441
+        ]
+      }
+    },
+    "rocket": {
+      "triangles": 876,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -0.135362,
+          -0.55,
+          -0.150918
+        ],
+        "max": [
+          0.1275,
+          0.5925,
+          0.160966
+        ],
+        "size": [
+          0.262862,
+          1.1425,
+          0.311884
+        ]
+      }
+    },
+    "powder_keg": {
+      "triangles": 704,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -0.337,
+          -0.337,
+          -0.3725
+        ],
+        "max": [
+          0.337,
+          0.337,
+          0.499848
+        ],
+        "size": [
+          0.674,
+          0.674,
+          0.872348
+        ]
+      }
+    }
+  },
+  "checked": {
+    "sha256": "88ae8e3e1c014337e4eca5ac19d331428c894b2a706c1a7df092afcf7b8843a7",
+    "bytes": 498316,
+    "triangles": {
+      "launcher": 2020,
+      "rocket": 876,
+      "powder_keg": 704
+    },
+    "meshCount": 3,
+    "materials": 1,
+    "images": 1,
+    "cameras": 0,
+    "animations": 0
+  },
+  "byteIdenticalReexport": true,
+  "reexportSha256": "88ae8e3e1c014337e4eca5ac19d331428c894b2a706c1a7df092afcf7b8843a7",
+  "simulation": "none; visual mounts and pooled presentation only"
+}

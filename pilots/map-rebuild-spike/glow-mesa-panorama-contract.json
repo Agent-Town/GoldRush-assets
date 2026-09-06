@@ -1,0 +1,101 @@
+{
+  "asset": "glow-mesa-panorama.glb",
+  "map": "glow-mesa",
+  "renderOnly": true,
+  "style": "engraved Epoch 6 atomic homestead kit-plate horizon; high convalescent mesa between inland-water gleam and dust-dark plains",
+  "signature": "high mesa distance opening toward a low inland-water gleam in one quadrant and dust-dark plains in the opposite quadrant",
+  "exposure": {
+    "mode": "bakedIntoAtlas",
+    "linearMultiplier": 1.08
+  },
+  "lawVersion": "PANORAMA LAW v2",
+  "namedCorrections": {
+    "paintedWall": "sunk sky ring behind an irregular closer ridge belt with a dusty haze transition",
+    "ceiling": "engraving density grades from dense horizon to near-plain parchment zenith",
+    "echo": "asymmetric cloud and dust edits plus one strongly broken ridge profile avoid both mirrored repetition and a doubled arena wall"
+  },
+  "projection": {
+    "skyRingRadiusMeters": 190.0,
+    "ridgeFootRadiusMeters": 161.5,
+    "ridgeOccluderRadiusMeters": 174.0,
+    "farRidgeRadiusMeters": null,
+    "ridgeFootRadiusRangeMeters": [
+      159.8,
+      163.2
+    ],
+    "ridgeOccluderRadiusRangeMeters": [
+      172.3,
+      175.7
+    ],
+    "skyBottomMeters": -10.0,
+    "skyTopMeters": 130.0,
+    "ridgeTopFormulaMeters": "2.6 + silhouetteFraction * 43.0",
+    "farRidgeTopFormulaMeters": null,
+    "groundSkirtInnerBoundaryMeters": {
+      "shape": "expanded-playfield-rectangle",
+      "halfExtents": [
+        64.0,
+        64.0
+      ],
+      "margin": 0.01
+    },
+    "groundSkirtOuterRadiusMeters": 161.5,
+    "groundSkirtRole": "county ground scenery"
+  },
+  "mount": {
+    "id": "glow-mesa-panorama",
+    "asset": "glow-mesa-panorama.glb",
+    "position": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "rotation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "renderOnly": true,
+    "ownership": "separate mounted scenery; never terrain or gameplay bounds"
+  },
+  "nonInterference": {
+    "playfieldBounds": "unchanged",
+    "spawnEdges": "unchanged",
+    "fogGating": "unchanged",
+    "waterBuildSpawnMasks": "unchanged"
+  },
+  "meshCount": 1,
+  "primitiveCount": 1,
+  "materialCount": 1,
+  "vertices": 1739,
+  "triangles": 2496,
+  "triangleBudget": 4000,
+  "texture": {
+    "count": 1,
+    "width": 2048,
+    "height": 2048,
+    "embedded": true
+  },
+  "sourceArt": [
+    "assets/processed/kit-era-6.png"
+  ],
+  "files": {
+    "blend": {
+      "bytes": 989936,
+      "sha256": "ca759a3e4ff55374b98f612b22b77572ee87f194ea24650e0c52cca9ba718c54"
+    },
+    "glb": {
+      "bytes": 982768,
+      "sha256": "fe0eab4fad143283bc99b0f848e8a3ce4c9eb358c0632ee471c46b967d65c286"
+    },
+    "atlas": {
+      "bytes": 889504,
+      "sha256": "5dcf23622721c71a972f2c3917d3af570443275669b8e68a30f2b17eeffa853a"
+    }
+  }
+}

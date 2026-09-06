@@ -1,0 +1,234 @@
+{
+  "asset": "dry-gulch-terrain.glb",
+  "tileId": "e1-dry-gulch",
+  "renderOnly": true,
+  "simulation": "planar and unchanged",
+  "heightSocket": "Terrain.visualY",
+  "boundsMeters": {
+    "min": [
+      -32.0,
+      -32.0,
+      -0.4102
+    ],
+    "max": [
+      32.0,
+      32.0,
+      2.3866
+    ]
+  },
+  "meshCount": 1,
+  "primitiveCount": 1,
+  "materialCount": 1,
+  "vertices": 16641,
+  "triangles": 32768,
+  "triangleBudget": 60000,
+  "texture": {
+    "count": 1,
+    "width": 2048,
+    "height": 2048,
+    "embedded": true
+  },
+  "waterTruth": {
+    "kind": "spring_pond",
+    "x": -18.0,
+    "z": -18.0,
+    "radius": 1.4
+  },
+  "heightfieldTruth": {
+    "springBasin": {
+      "x": -18.0,
+      "z": -18.0,
+      "radius": 7.5,
+      "depth": 0.68
+    },
+    "washes": [
+      "southwest-arroyo",
+      "east-mesa-wash"
+    ]
+  },
+  "landmarkMountSpace": {
+    "coordinates": "game X/Y/Z",
+    "positionY": "local offset added to Terrain.visualY at the mount X/Z",
+    "rotation": "XYZ Euler radians",
+    "scale": "XYZ multiplier",
+    "ownership": "landmark assets mount at runtime and are never baked into terrain"
+  },
+  "landmarkMounts": [
+    {
+      "id": "ruined_mining_operation",
+      "position": [
+        2.0,
+        0.0,
+        -5.8
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/dry-gulch/ruined_mining_operation.glb"
+    },
+    {
+      "id": "abandoned_farmhouse",
+      "position": [
+        10.5,
+        0.0,
+        14.5
+      ],
+      "rotation": [
+        0.0,
+        -0.12,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/dry-gulch/abandoned_farmhouse.glb"
+    },
+    {
+      "id": "cactus_thicket",
+      "position": [
+        18.3,
+        -0.170662,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/dry-gulch/cactus_thicket.glb",
+      "terrainConformOffsetY": -0.170662
+    },
+    {
+      "id": "bison_skeleton",
+      "position": [
+        -8.0,
+        0.0,
+        12.5
+      ],
+      "rotation": [
+        0.0,
+        0.18,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/dry-gulch/bison_skeleton.glb"
+    },
+    {
+      "id": "isolated_spring",
+      "position": [
+        -18.0,
+        0.0,
+        -18.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/dry-gulch/isolated_spring.glb"
+    }
+  ],
+  "panoramaMount": {
+    "id": "dry-gulch-panorama",
+    "asset": "dry-gulch-panorama.glb",
+    "position": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "rotation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "renderOnly": true,
+    "ownership": "separate mounted scenery; never terrain or gameplay bounds"
+  },
+  "ownerPreview": {
+    "exported": false,
+    "theme": "failed-desert-basin",
+    "landmarks": [
+      "ruined_mining_operation",
+      "abandoned_farmhouse",
+      "cactus_thicket",
+      "bison_skeleton",
+      "isolated_spring"
+    ],
+    "objects": 298,
+    "exteriorSurround": {
+      "exported": false,
+      "purpose": "owner exterior verdict only; runtime vista remains code-owned",
+      "radiusMeters": 160.0,
+      "objects": 60,
+      "approxTriangles": 38600,
+      "regionalGrammar": [
+        "ochre river county",
+        "faceted desert geology",
+        "cacti only",
+        "hard-used extraction scars"
+      ],
+      "contractSignature": [
+        "closed failed basin",
+        "two dry washes",
+        "collapsed outer stamp frame",
+        "no exterior water"
+      ]
+    }
+  },
+  "sourceArt": [
+    "assets/processed/terrain-bank-tile.png",
+    "assets/processed/terrain-bank-tile-b.png",
+    "assets/processed/terrain-bank-tile-c.png",
+    "assets/raw/kit-era-1.png",
+    "assets/raw/plate-contract-dry-gulch.png"
+  ],
+  "files": {
+    "blend": {
+      "bytes": 8540002,
+      "sha256": "ef9c4496268c7e9d4e4aabf46c463ad22eb48c4ea28f0f4443a9d413f6c7bdf0"
+    },
+    "glb": {
+      "bytes": 8457032,
+      "sha256": "1189f0caa89f8f2482d55830510c2c6e859cd08b50e1c3b7541edd060a3616eb"
+    },
+    "atlas": {
+      "bytes": 7726234,
+      "sha256": "73f24e3d534bd6f0b23a68e6bba29ce6fd89766c531ac7c2422bbd6f34812024"
+    }
+  },
+  "landmarkPack": {
+    "contract": "landmarks/dry-gulch/dry-gulch-landmark-pack-contract.json",
+    "atlas": "landmarks/dry-gulch/dry-gulch-landmarks-atlas.png",
+    "era": 1,
+    "sourceLadder": "reuse > derive > build-new",
+    "ownership": "separate mounted render-only GLBs; no simulation authority"
+  }
+}

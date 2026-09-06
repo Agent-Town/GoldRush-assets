@@ -1,0 +1,55 @@
+{
+  "created_at": "2026-07-09T19:38:27.994189Z",
+  "display_name": "Seedance 2.0",
+  "id": "027dfe2b-5835-450c-9cac-3c3409a4bc94",
+  "job_type": "seedance_2_0",
+  "min_result_url": null,
+  "params": {
+    "aspect_ratio": "1:1",
+    "bitrate_mode": "standard",
+    "duration": 4,
+    "generate_audio": false,
+    "genre": "auto",
+    "height": 720,
+    "medias": [
+      {
+        "data": {
+          "id": "e6d88ac2-cdf3-47bc-9688-c16a27562194",
+          "type": "media_input",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/e6d88ac2-cdf3-47bc-9688-c16a27562194.png"
+        },
+        "role": "start_image"
+      },
+      {
+        "data": {
+          "id": "01e2af3c-2359-4e25-b41b-0d15cff70585",
+          "type": "media_input",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/01e2af3c-2359-4e25-b41b-0d15cff70585.png"
+        },
+        "role": "image"
+      },
+      {
+        "data": {
+          "id": "e1794d3e-11de-4409-8016-cf5aad8b8dce",
+          "type": "media_input",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/e1794d3e-11de-4409-8016-cf5aad8b8dce.png"
+        },
+        "role": "image"
+      }
+    ],
+    "mode": "std",
+    "model": "seedance_2_0",
+    "multi_prompt": [],
+    "multi_shot_mode": "custom",
+    "multi_shots": false,
+    "prompt": "Frontier Ledger illustrated game sprite reference. Use the exact referenced youngster girl, fully clothed minor, broad frontier hat, twin braids, red scarf, tan jacket, denim overalls, sturdy boots, teal lantern hanging from her left hip. Lantern hangs from her LEFT hip; twin braids remain part of the silhouette; she is a fully clothed minor in every frame. DOWN/front view: lantern stays on her left hip on viewer-right; twin braids visible; fully clothed. Full body DOWN front view, walking steadily in place against a plain flat sand-colored background. lively short-stride child walk, bright and modest, fully clothed, no running and no exaggerated posing Constant centered framing, locked footline and fixed scale, feet on a fixed ground line, no vertical drift, no camera motion, no zoom, no turn, no mirroring, no extra characters, no text or letters, no realistic firearms, no gore. Seamless 4-second loop with one clean readable gait cycle; keep proportions, silhouette, clothing, colors, linework, and pinned side details consistent frame to frame.",
+    "prompt_language": "en",
+    "reference_elements": [],
+    "resolution": "720p",
+    "speedramp": "auto",
+    "width": 720
+  },
+  "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/hf_20260709_193827_027dfe2b-5835-450c-9cac-3c3409a4bc94.mp4",
+  "status": "completed",
+  "thumbnail_url": "https://cdn.higgsfield.ai/user_3GAXxSRY94iz6800xAb2RitN2C7/hf_20260709_193827_027dfe2b-5835-450c-9cac-3c3409a4bc94_thumbnail.webp"
+}

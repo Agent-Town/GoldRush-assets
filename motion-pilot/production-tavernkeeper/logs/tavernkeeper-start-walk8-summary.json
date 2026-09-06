@@ -1,0 +1,50 @@
+[
+  {
+    "dir": "down",
+    "selectedTake": 3,
+    "scale": 0.3744,
+    "widthMin": 396,
+    "widthMax": 421,
+    "heightMin": 832,
+    "heightMax": 876,
+    "heightDriftPx": 44,
+    "heightDriftPct": 5,
+    "qa": "Pass criteria: tavernkeeper face/body, towel left/viewer-right, grounded heavy front gait."
+  },
+  {
+    "dir": "left",
+    "selectedTake": 2,
+    "scale": 0.3744,
+    "widthMin": 255,
+    "widthMax": 436,
+    "heightMin": 787,
+    "heightMax": 804,
+    "heightDriftPx": 17,
+    "heightDriftPct": 2.1,
+    "qa": "Pass criteria: true left profile, towel/pocket hidden far-side, no swapped apron detail."
+  },
+  {
+    "dir": "right",
+    "selectedTake": 1,
+    "scale": 0.3744,
+    "widthMin": 269,
+    "widthMax": 423,
+    "heightMin": 847,
+    "heightMax": 862,
+    "heightDriftPx": 15,
+    "heightDriftPct": 1.7,
+    "qa": "Pass criteria: true right profile, left-side towel/pocket visible, no mirrored right-side towel."
+  },
+  {
+    "dir": "up",
+    "selectedTake": 3,
+    "scale": 0.3744,
+    "widthMin": 354,
+    "widthMax": 363,
+    "heightMin": 785,
+    "heightMax": 804,
+    "heightDriftPx": 19,
+    "heightDriftPct": 2.4,
+    "qa": "Pass criteria: true back view, rear apron and towel side hold, no face turn."
+  }
+]

@@ -1,0 +1,556 @@
+{
+  "asset": "dome-basin-terrain.glb",
+  "contractId": "e9-dome-basin",
+  "tileId": "e9-dome-basin",
+  "renderOnly": true,
+  "simulation": "planar masks, movement, collision, spawns, placement, and combat remain unchanged",
+  "heightSocket": "Terrain.visualY",
+  "theme": "a C3-complete dry canal descending from an exact h4 ice-quarry scarp into an exact h-2 basin, with flat rim domes, seed rows, weather footing, and Ark yards",
+  "regionalFamily": {
+    "epoch": "Epoch 9 Red Fields",
+    "shared": [
+      "rust-red engraved dunes",
+      "parchment crust",
+      "E1 riverbank green landing zones",
+      "warm-lit dome brass",
+      "dry canal shadow",
+      "hatch-spiral dust"
+    ],
+    "unique": [
+      "authored terrain silhouette",
+      "mask rhythm",
+      "C3-complete dry canal, quarry scarp, basin, and Ark-yard composition",
+      "panorama profile"
+    ]
+  },
+  "boundsMeters": {
+    "min": [
+      -64.0,
+      -64.0,
+      -2.0
+    ],
+    "max": [
+      64.0,
+      64.0,
+      4.0
+    ]
+  },
+  "meshCount": 1,
+  "primitiveCount": 1,
+  "materialCount": 1,
+  "vertices": 16641,
+  "triangles": 32768,
+  "triangleBudget": 60000,
+  "texture": {
+    "count": 1,
+    "width": 2048,
+    "height": 2048,
+    "embedded": true
+  },
+  "maskTable": "assets/contracts/epoch-9-redfields/mask-tables/e9-dome-basin.json",
+  "maskTruth": {
+    "source": "assets/contracts/epoch-9-redfields/contracts.json; specs/epoch-saga/e9-redfields-bundle.md \u00a7B",
+    "tileId": "e9-dome-basin",
+    "size": 128,
+    "dimensions": {
+      "width": 128,
+      "height": 128
+    },
+    "river": false,
+    "ford": false,
+    "buildZones": [
+      {
+        "id": "rim-dome-pad-west",
+        "bank": "north",
+        "minX": -42,
+        "maxX": -28,
+        "minZ": -8,
+        "maxZ": 6
+      },
+      {
+        "id": "rim-dome-pad-east",
+        "bank": "north",
+        "minX": 28,
+        "maxX": 42,
+        "minZ": -6,
+        "maxZ": 8
+      },
+      {
+        "id": "weather-spire-footing",
+        "bank": "south",
+        "minX": -42,
+        "maxX": -30,
+        "minZ": -30,
+        "maxZ": -18
+      },
+      {
+        "id": "seed-rows-footing",
+        "bank": "south",
+        "minX": 18,
+        "maxX": 44,
+        "minZ": -32,
+        "maxZ": -18
+      },
+      {
+        "id": "ark-yards",
+        "bank": "south",
+        "minX": -48,
+        "maxX": -20,
+        "minZ": -52,
+        "maxZ": -36
+      }
+    ],
+    "stakeMarkers": [
+      {
+        "id": "canal-stage-c1",
+        "x": -28,
+        "z": 34,
+        "lossCondition": false
+      },
+      {
+        "id": "canal-stage-c2",
+        "x": -12,
+        "z": 10,
+        "lossCondition": false
+      },
+      {
+        "id": "canal-stage-c3",
+        "x": 4,
+        "z": -24,
+        "lossCondition": false
+      }
+    ],
+    "rails": [
+      {
+        "style": "feeder-canal",
+        "points": [
+          {
+            "x": -38,
+            "z": 48
+          },
+          {
+            "x": -28,
+            "z": 34
+          },
+          {
+            "x": -18,
+            "z": 20
+          },
+          {
+            "x": -12,
+            "z": 10
+          },
+          {
+            "x": -4,
+            "z": -6
+          },
+          {
+            "x": 4,
+            "z": -24
+          }
+        ]
+      }
+    ],
+    "waterSources": [],
+    "harvestAnchors": [
+      {
+        "x": 22,
+        "z": -28
+      },
+      {
+        "x": 28,
+        "z": -22
+      },
+      {
+        "x": 34,
+        "z": -28
+      },
+      {
+        "x": 40,
+        "z": -22
+      }
+    ],
+    "heightfield": {
+      "id": "dome-basin-scarp-depression",
+      "mode": "visual"
+    },
+    "quarryScarpBands": [
+      {
+        "id": "ice-quarry-scarp-north-h4",
+        "height": 4,
+        "minX": -54,
+        "maxX": -18,
+        "minZ": 42,
+        "maxZ": 54
+      }
+    ],
+    "basinDepression": {
+      "id": "dome-basin-floor-h-2",
+      "height": -2,
+      "minX": -14,
+      "maxX": 18,
+      "minZ": -28,
+      "maxZ": 26
+    },
+    "canalRoute": {
+      "style": "feeder-canal",
+      "points": [
+        {
+          "x": -38,
+          "z": 48
+        },
+        {
+          "x": -28,
+          "z": 34
+        },
+        {
+          "x": -18,
+          "z": 20
+        },
+        {
+          "x": -12,
+          "z": 10
+        },
+        {
+          "x": -4,
+          "z": -6
+        },
+        {
+          "x": 4,
+          "z": -24
+        }
+      ]
+    },
+    "canalStageGates": [
+      {
+        "id": "canal-stage-c1",
+        "x": -28,
+        "z": 34
+      },
+      {
+        "id": "canal-stage-c2",
+        "x": -12,
+        "z": 10
+      },
+      {
+        "id": "canal-stage-c3",
+        "x": 4,
+        "z": -24
+      }
+    ],
+    "dustDevilLanes": [
+      {
+        "id": "dust-devil-wander",
+        "points": [
+          {
+            "x": -48,
+            "z": 18
+          },
+          {
+            "x": -30,
+            "z": 4
+          },
+          {
+            "x": -16,
+            "z": -16
+          },
+          {
+            "x": 8,
+            "z": -6
+          },
+          {
+            "x": 32,
+            "z": 14
+          },
+          {
+            "x": 48,
+            "z": 2
+          }
+        ]
+      }
+    ],
+    "lanes": {
+      "spawnEdges": [
+        "north",
+        "west",
+        "east"
+      ],
+      "territoryRingBiasWaves": 0,
+      "territoryRingLaneBias": 0,
+      "patrolRoutes": [
+        {
+          "id": "dust-devil-wander",
+          "points": [
+            {
+              "x": -48,
+              "z": 18
+            },
+            {
+              "x": -30,
+              "z": 4
+            },
+            {
+              "x": -16,
+              "z": -16
+            },
+            {
+              "x": 8,
+              "z": -6
+            },
+            {
+              "x": 32,
+              "z": 14
+            },
+            {
+              "x": 48,
+              "z": 2
+            }
+          ]
+        }
+      ]
+    },
+    "spawnGates": []
+  },
+  "waterAgreement": {
+    "river": false,
+    "waterSources": []
+  },
+  "pylonSiteFlatness": [],
+  "capacitorSiteFlatness": [],
+  "fixtureZoneFlatness": [],
+  "buildZoneFlatness": [
+    {
+      "id": "rim-dome-pad-west",
+      "bounds": [
+        -42,
+        -28,
+        -8,
+        6
+      ],
+      "sampledSurfacePoints": 1225,
+      "maxDeviationMeters": 0.0
+    },
+    {
+      "id": "rim-dome-pad-east",
+      "bounds": [
+        28,
+        42,
+        -6,
+        8
+      ],
+      "sampledSurfacePoints": 1225,
+      "maxDeviationMeters": 0.0
+    },
+    {
+      "id": "weather-spire-footing",
+      "bounds": [
+        -42,
+        -30,
+        -30,
+        -18
+      ],
+      "sampledSurfacePoints": 1225,
+      "maxDeviationMeters": 0.0
+    },
+    {
+      "id": "seed-rows-footing",
+      "bounds": [
+        18,
+        44,
+        -32,
+        -18
+      ],
+      "sampledSurfacePoints": 1225,
+      "maxDeviationMeters": 0.0
+    },
+    {
+      "id": "ark-yards",
+      "bounds": [
+        -48,
+        -20,
+        -52,
+        -36
+      ],
+      "sampledSurfacePoints": 1225,
+      "maxDeviationMeters": 0.0
+    }
+  ],
+  "pylonFlatnessLimitMeters": 0.02,
+  "fixtureFlatnessLimitMeters": 0.02,
+  "landmarkFreeze": "lifted; canonical mounted landmark pack records backfilled by the mounts sweep",
+  "landmarkMounts": [
+    {
+      "id": "canal-gate-works",
+      "position": [
+        -18.0,
+        0.0,
+        20.0
+      ],
+      "rotation": [
+        0.0,
+        0.24,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/dome-basin/canal-gate-works.glb"
+    },
+    {
+      "id": "ice-quarry-hoist",
+      "position": [
+        -56.0,
+        0.0,
+        48.0
+      ],
+      "rotation": [
+        0.0,
+        -0.12,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/dome-basin/ice-quarry-hoist.glb"
+    },
+    {
+      "id": "seed-row-weather-station",
+      "position": [
+        50.0,
+        0.0,
+        -25.0
+      ],
+      "rotation": [
+        0.0,
+        -0.18,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/dome-basin/seed-row-weather-station.glb"
+    },
+    {
+      "id": "ark-yard-scaffold",
+      "position": [
+        -56.0,
+        0.0,
+        -44.0
+      ],
+      "rotation": [
+        0.0,
+        0.1,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/dome-basin/ark-yard-scaffold.glb"
+    },
+    {
+      "id": "dust-devil-warning-mast",
+      "position": [
+        52.0,
+        0.0,
+        2.0
+      ],
+      "rotation": [
+        0.0,
+        -0.1,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/dome-basin/dust-devil-warning-mast.glb"
+    }
+  ],
+  "verdictPreviewOnly": {
+    "assets": [
+      "assets/pilots/dome-commons-3d/dome-commons-plate.glb",
+      "assets/pilots/ice-quarry-head-3d/ice-quarry-head.glb",
+      "assets/pilots/weather-warden-spire-3d/weather-warden-spire.glb",
+      "assets/pilots/greenkeeper-3d/greenkeeper.glb"
+    ],
+    "excludedFromBlendAndGlb": true,
+    "reason": "existing era-stamped E9 bodies and procedural dry gate/Ark cues establish scale without authoring mounts, water, collision, or placement authority"
+  },
+  "persistenceDesign": {
+    "terrain": "one byte-identical C3-complete dry mesh for C0 through C3",
+    "channels": "all feeder-canal earthworks are sculpted once as landform",
+    "water": "stage-owned runtime state; no water surface exists in terrain or panorama",
+    "green": "runtime spread; atlas contains only literal-E1-green landing zones"
+  },
+  "maskPrecedence": {
+    "quarryScarp": "h4 except where the authored C3 feeder-canal earthwork cuts through it",
+    "basinDepression": "h-2 except the authored dry C2/C3 gate berms and triangle-safe build-flat guard where seed-rows-footing shares the x=18 edge",
+    "authority": "load-bearing build flats and C3-complete dry channel earthworks take precedence only in those overlap footprints"
+  },
+  "panoramaMount": {
+    "id": "dome-basin-panorama",
+    "asset": "dome-basin-panorama.glb",
+    "position": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "rotation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "renderOnly": true,
+    "ownership": "separate mounted scenery; never terrain or gameplay bounds"
+  },
+  "evidenceRig": "rust-red late light with warm dome work lamps; all lights render-only",
+  "sourceArt": [
+    "assets/processed/terrain-bank-tile.png",
+    "assets/processed/terrain-bank-tile-c.png",
+    "assets/processed/kit-era-9.png",
+    "assets/raw/plate-e9-bld-canal-works.png"
+  ],
+  "atlas": "dome-basin-terrain-atlas.png",
+  "files": {
+    "blend": {
+      "bytes": 9334062,
+      "sha256": "1efd14bb7546a31159307dba395040612bd484fd1060f25e2367161c41beff11"
+    },
+    "glb": {
+      "bytes": 9264576,
+      "sha256": "73de020c9247de4e69fc045ee0aaba833ca86ff3bed1d19e122d60a33867f8b0"
+    },
+    "atlas": {
+      "bytes": 8533739,
+      "sha256": "4b53f0ae95cd24ece9931229454eddc3691e830c2e913bbb87543f2b8db48937"
+    }
+  },
+  "landmarkMountSpace": {
+    "coordinates": "game X/Y/Z",
+    "positionY": "local offset added to Terrain.visualY at the mount X/Z",
+    "rotation": "XYZ Euler radians",
+    "scale": "XYZ multiplier",
+    "ownership": "landmark assets mount at runtime and are never baked into terrain"
+  },
+  "landmarkPack": {
+    "contract": "landmarks/dome-basin/dome-basin-landmark-pack-contract.json",
+    "atlas": "landmarks/dome-basin/dome-basin-landmarks-atlas.png",
+    "era": 9,
+    "sourceLadder": "reuse > derive > build-new",
+    "ownership": "separate mounted render-only GLBs; no simulation authority"
+  }
+}

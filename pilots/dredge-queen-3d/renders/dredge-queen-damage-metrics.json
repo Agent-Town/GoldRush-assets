@@ -1,0 +1,12 @@
+{
+  "maeGray8": 4.3320417404174805,
+  "rmseGray8": 12.778029441833496,
+  "diffRatio16": 0.09440504807692307,
+  "diffRatio32": 0.04424879807692308,
+  "diffRatio64": 0.009014423076923076,
+  "avgLuminanceIntact8": 47.33932113647461,
+  "avgLuminanceAct3_8": 46.23674392700195,
+  "edgeEnergyIntact": 2.443894863128662,
+  "edgeEnergyAct3": 2.5881664752960205,
+  "target": "same-camera Act 3 keeps the barge identity while the claw hangs low, both paddles drop, the hold opens, cargo spills, and the sail strikes"
+}

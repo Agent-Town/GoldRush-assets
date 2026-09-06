@@ -1,0 +1,410 @@
+{
+  "asset": "archive-world-terrain.glb",
+  "contractId": "e10-archive-world",
+  "tileId": "e10-archive-world",
+  "renderOnly": true,
+  "simulation": "planar; movement, collision, placement, spawns, persistence, Static squalls, re-ink progression, and lore unlocks remain code-owned",
+  "heightSocket": "Terrain.visualY",
+  "theme": "a prior civilization's library un-inked mid-sentence, with three exact restoration wings around a broken central memory cut",
+  "regionalFamily": {
+    "epoch": "Epoch 10 Deep Sky archive world",
+    "shared": [
+      "deep-ink basalt",
+      "parchment-gold memory light",
+      "teal salvage glass",
+      "engraved star stipple",
+      "aged un-inked paper",
+      "preserve-contract warmth"
+    ],
+    "unique": "four integrated archive terraces divided by a broken central memory cut and an empty warning shelf"
+  },
+  "boundsMeters": {
+    "min": [
+      -64.0,
+      -64.0,
+      -0.9995
+    ],
+    "max": [
+      64.0,
+      64.0,
+      3.435
+    ]
+  },
+  "meshCount": 1,
+  "primitiveCount": 1,
+  "materialCount": 1,
+  "vertices": 16641,
+  "triangles": 32768,
+  "triangleBudget": 60000,
+  "texture": {
+    "count": 1,
+    "width": 2048,
+    "height": 2048,
+    "embedded": true
+  },
+  "maskTable": "assets/contracts/epoch-10-deepsky/mask-tables/e10-archive-world.json",
+  "maskTruth": {
+    "source": "assets/contracts/epoch-10-deepsky/contracts.json; lore/STORYBOOK.md:597-600",
+    "tileId": "e10-archive-world",
+    "size": 128,
+    "dimensions": {
+      "width": 128,
+      "height": 128
+    },
+    "river": false,
+    "ford": false,
+    "buildZones": [
+      {
+        "id": "archive-entry",
+        "bank": "south",
+        "minX": -42,
+        "maxX": 42,
+        "minZ": -54,
+        "maxZ": -38
+      },
+      {
+        "id": "west-stacks-wing",
+        "bank": "north",
+        "minX": -50,
+        "maxX": -6,
+        "minZ": -30,
+        "maxZ": 18
+      },
+      {
+        "id": "east-stacks-wing",
+        "bank": "north",
+        "minX": 6,
+        "maxX": 50,
+        "minZ": -30,
+        "maxZ": 18
+      },
+      {
+        "id": "warning-shelf-wing",
+        "bank": "north",
+        "minX": -26,
+        "maxX": 26,
+        "minZ": 26,
+        "maxZ": 54
+      }
+    ],
+    "stakeMarkers": [
+      {
+        "id": "west-wing-light",
+        "x": -28,
+        "z": -6,
+        "lossCondition": false
+      },
+      {
+        "id": "east-wing-light",
+        "x": 28,
+        "z": -6,
+        "lossCondition": false
+      },
+      {
+        "id": "warning-shelf-light",
+        "x": 0,
+        "z": 40,
+        "lossCondition": false
+      }
+    ],
+    "rails": [],
+    "waterSources": [],
+    "harvestAnchors": [],
+    "heightfield": {
+      "id": "archive-world-uninked-ruins",
+      "mode": "visual"
+    },
+    "archiveWingZones": [
+      {
+        "id": "west-stacks-wing",
+        "order": 1,
+        "minX": -50,
+        "maxX": -6,
+        "minZ": -30,
+        "maxZ": 18
+      },
+      {
+        "id": "east-stacks-wing",
+        "order": 2,
+        "minX": 6,
+        "maxX": 50,
+        "minZ": -30,
+        "maxZ": 18
+      },
+      {
+        "id": "warning-shelf-wing",
+        "order": 3,
+        "minX": -26,
+        "maxX": 26,
+        "minZ": 26,
+        "maxZ": 54
+      }
+    ],
+    "emptyShelfZone": {
+      "id": "ours-unless-shelf",
+      "description": "An empty deep-stack shelf bears the pictogram meaning ours, unless.",
+      "minX": -8,
+      "maxX": 8,
+      "minZ": 42,
+      "maxZ": 50
+    },
+    "lightHoldSites": [
+      {
+        "id": "west-wing-light",
+        "x": -28,
+        "z": -6,
+        "radius": 4
+      },
+      {
+        "id": "east-wing-light",
+        "x": 28,
+        "z": -6,
+        "radius": 4
+      },
+      {
+        "id": "warning-shelf-light",
+        "x": 0,
+        "z": 40,
+        "radius": 4
+      }
+    ],
+    "lanes": {
+      "spawnEdges": [
+        "north",
+        "west",
+        "east"
+      ],
+      "territoryRingBiasWaves": 0,
+      "territoryRingLaneBias": 0
+    },
+    "spawnGates": []
+  },
+  "waterAgreement": {
+    "river": false,
+    "waterSources": []
+  },
+  "buildZoneFlatness": [
+    {
+      "id": "archive-entry",
+      "bounds": [
+        -42,
+        42,
+        -54,
+        -38
+      ],
+      "sampledSurfacePoints": 2145,
+      "maxDeviationMeters": 0.0
+    },
+    {
+      "id": "west-stacks-wing",
+      "bounds": [
+        -50,
+        -6,
+        -30,
+        18
+      ],
+      "sampledSurfacePoints": 2145,
+      "maxDeviationMeters": 0.0
+    },
+    {
+      "id": "east-stacks-wing",
+      "bounds": [
+        6,
+        50,
+        -30,
+        18
+      ],
+      "sampledSurfacePoints": 2145,
+      "maxDeviationMeters": 0.0
+    },
+    {
+      "id": "warning-shelf-wing",
+      "bounds": [
+        -26,
+        26,
+        26,
+        54
+      ],
+      "sampledSurfacePoints": 2145,
+      "maxDeviationMeters": 0.0
+    }
+  ],
+  "landmarkMounts": [
+    {
+      "id": "archive-entry-gate",
+      "asset": "landmarks/archive-world/archive-entry-gate.glb",
+      "position": [
+        0.0,
+        0.18,
+        -46.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "id": "west-stack-ruin",
+      "asset": "landmarks/archive-world/west-stack-ruin.glb",
+      "position": [
+        -28.0,
+        0.56,
+        -6.0
+      ],
+      "rotation": [
+        0.0,
+        0.1,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "id": "east-stack-ruin",
+      "asset": "landmarks/archive-world/east-stack-ruin.glb",
+      "position": [
+        28.0,
+        0.78,
+        -6.0
+      ],
+      "rotation": [
+        0.0,
+        -0.1,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "id": "warning-shelf-ruin",
+      "asset": "landmarks/archive-world/warning-shelf-ruin.glb",
+      "position": [
+        -14.0,
+        1.08,
+        40.0
+      ],
+      "rotation": [
+        0.0,
+        0.08,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "id": "ours-unless-marker",
+      "asset": "landmarks/archive-world/ours-unless-marker.glb",
+      "position": [
+        0.0,
+        1.08,
+        46.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        0.74,
+        0.74,
+        0.74
+      ]
+    }
+  ],
+  "landmarkMountSpace": {
+    "coordinates": "game X/Y/Z",
+    "positionY": "local offset added to Terrain.visualY at the mount X/Z",
+    "rotation": "XYZ Euler radians",
+    "scale": "XYZ multiplier",
+    "ownership": "landmark assets mount at runtime and are never baked into terrain"
+  },
+  "panoramaMount": {
+    "id": "archive-world-panorama",
+    "asset": "archive-world-panorama.glb",
+    "position": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "rotation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "renderOnly": true,
+    "ownership": "separate mounted scenery; never terrain or gameplay bounds"
+  },
+  "runtimeVisualsAbsent": [
+    "Static squalls",
+    "staged re-ink state",
+    "lore-page unlocks",
+    "spawn gates",
+    "light-hold progression"
+  ],
+  "verdictPreviewOnly": {
+    "excludedFromBlendAndGlb": true,
+    "reason": "light posts, rubble, mount proxies, mask overlays, panorama, and evidence lighting are review helpers only"
+  },
+  "variantDecisions": [
+    {
+      "contractId": "e10-last-claim",
+      "tileId": "ark-plaza-e10",
+      "terrainMesh": "off",
+      "decision": "reuse Ark deck; no sculpt"
+    },
+    {
+      "contractId": "e10-river",
+      "tileId": "frontier-river-claim",
+      "terrainMesh": "off",
+      "decision": "reuse The Claim at dawn; no sculpt"
+    }
+  ],
+  "sourceArt": [
+    "assets/processed/kit-era-10.png",
+    "assets/raw/plate-e10-worlds.png",
+    "assets/processed/terrain-bank-tile.png",
+    "assets/processed/terrain-bank-tile-c.png"
+  ],
+  "atlas": "archive-world-terrain-atlas.png",
+  "files": {
+    "blend": {
+      "bytes": 8602698,
+      "sha256": "3a48f6b255c96660e2bdef0ea0efa73addec4d21df7ec03851b8ee89c304475f"
+    },
+    "glb": {
+      "bytes": 8546580,
+      "sha256": "08010d3cd8f689906c93d053c5b0d5ce3c360759c753862b17482aea868622b0"
+    },
+    "atlas": {
+      "bytes": 7815509,
+      "sha256": "cb5be7a0ce03c6adeb563db8ea0139e42b585ff80a147063d8dde0a7ff6ed092"
+    }
+  },
+  "landmarkPack": {
+    "contract": "landmarks/archive-world/archive-world-landmark-pack-contract.json",
+    "atlas": "landmarks/archive-world/archive-world-landmarks-atlas.png",
+    "era": 10,
+    "sourceLadder": "reuse > derive > build-new",
+    "ownership": "separate mounted render-only GLBs; no simulation authority"
+  }
+}
