@@ -1,13 +1,13 @@
 {
   "blender": "5.1.2",
-  "baseSha": "de21f043a8c3b4c69950afbca0c7a612c6826e88",
+  "baseSha": "d41ab98ce0d7fbc48bb01e8e87c92c61f148de2d",
   "sourcePlates": {
     "assets/raw/boss-land-yacht.png": "b3b4ecc4d3c2f829dbd54c982d47d0a6b1fadb07b330421fefe09ff530165e4e",
     "assets/raw/boss-land-yacht-damage.png": "a2ce82a34c12cc1932f7a326538ea827b0f6ef2836d8d99035c3035d6192ca54"
   },
   "runtimeSystem": {
     "path": "src/systems/LandYachtBossSystem.ts",
-    "sha256": "1b86b904a1fbb50ddb8f84e1abcd50d5105a936411db59b4b73c664e7660ce24",
+    "sha256": "e396c1b064cf3a62361d312d5fe955d1168c93f3047e7e16799e3487ebd15a2a",
     "componentIds": [
       "wheels",
       "crane",
@@ -27,8 +27,8 @@
     "actions": []
   },
   "checked": {
-    "sha256": "902191310b8cf604a1196902696ff14de78811f81bb30dd4bb5a3011f5ce7a01",
-    "bytes": 2401596,
+    "sha256": "1a7c743b7df30d18d5d8709fa2e9919cc681fec30dcc6a83630e03722fd7592f",
+    "bytes": 2803828,
     "nodes": [
       "wheels",
       "crane",
@@ -138,7 +138,7 @@
       0,
       0
     ],
-    "triangles": 10632,
+    "triangles": 9613,
     "morphTargets": {
       "wheelsMesh": [
         "Damage_BeachedWheels"
@@ -165,8 +165,8 @@
     ],
     "materialContract": [
       {
-        "metallicFactor": 0,
-        "roughnessFactor": 0.8999999761581421,
+        "metallicFactor": 0.3499999940395355,
+        "roughnessFactor": 0.6499999761581421,
         "doubleSided": true,
         "hasBaseColorTexture": true,
         "hasEmissiveTexture": false,
@@ -195,28 +195,28 @@
       "min": [
         -4.7,
         0,
-        -2.366207
+        -2.230223
       ],
       "max": [
         4.7,
-        6.76943,
-        2.366207
+        7.016546,
+        2.230223
       ],
       "size": [
         9.4,
-        6.76943,
-        4.732414
+        7.016546,
+        4.460446
       ],
       "center": [
         0.0,
-        3.384715,
+        3.508273,
         0.0
       ]
     }
   },
   "reexported": {
-    "sha256": "902191310b8cf604a1196902696ff14de78811f81bb30dd4bb5a3011f5ce7a01",
-    "bytes": 2401596,
+    "sha256": "1a7c743b7df30d18d5d8709fa2e9919cc681fec30dcc6a83630e03722fd7592f",
+    "bytes": 2803828,
     "nodes": [
       "wheels",
       "crane",
@@ -326,7 +326,7 @@
       0,
       0
     ],
-    "triangles": 10632,
+    "triangles": 9613,
     "morphTargets": {
       "wheelsMesh": [
         "Damage_BeachedWheels"
@@ -353,8 +353,8 @@
     ],
     "materialContract": [
       {
-        "metallicFactor": 0,
-        "roughnessFactor": 0.8999999761581421,
+        "metallicFactor": 0.3499999940395355,
+        "roughnessFactor": 0.6499999761581421,
         "doubleSided": true,
         "hasBaseColorTexture": true,
         "hasEmissiveTexture": false,
@@ -383,21 +383,21 @@
       "min": [
         -4.7,
         0,
-        -2.366207
+        -2.230223
       ],
       "max": [
         4.7,
-        6.76943,
-        2.366207
+        7.016546,
+        2.230223
       ],
       "size": [
         9.4,
-        6.76943,
-        4.732414
+        7.016546,
+        4.460446
       ],
       "center": [
         0.0,
-        3.384715,
+        3.508273,
         0.0
       ]
     }

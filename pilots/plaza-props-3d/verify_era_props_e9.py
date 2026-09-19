@@ -160,6 +160,12 @@ def main() -> None:
     green_pixels = exact_green_pixels()
     assert green_pixels >= 35_000
 
+    # The source atlas stays full resolution; verify the factory-sized derivative too.
+    recipe = load("e9_prop_atlas_recipe", HERE / "build_era_props_e9.py")
+    atlas = next(node.image for node in recipe.material().node_tree.nodes if node.type == "TEX_IMAGE")
+    assert list(atlas.size) == [512, 512] and atlas.packed_file
+    embedded_atlas_sha256 = hashlib.sha256(atlas.packed_file.data).hexdigest()
+
     stable_keys = (
         "nodes", "nodeCount", "bindings", "nodeTransforms", "meshes", "meshNames", "primitives",
         "primitiveMaterials", "triangles", "morphTargets", "targetCounts", "materials",
@@ -171,7 +177,8 @@ def main() -> None:
         "bundleRequirement": "dry/wet/flowing canal reaches + ice blocks + survey cairn + Ark scaffold stages 1/2/3",
         "siteReset": "E9 floodReset:true; no E8 orbital accessories survive into Basin Rim",
         "greenSwatch": {"hex": "#50674c", "exactPixels": green_pixels},
-        "sharedAtlas": {"path": str(ATLAS.relative_to(ROOT)), "sha256": sha256(ATLAS), "size": [1024, 1024]},
+        "sharedAtlas": {"path": str(ATLAS.relative_to(ROOT)), "sha256": sha256(ATLAS), "size": [1024, 1024],
+                        "embeddedSize": [512, 512], "embeddedSha256": embedded_atlas_sha256},
         "assets": {},
     }
     contracts = {}
@@ -194,7 +201,7 @@ def main() -> None:
         assert checked["primitiveMaterials"] == [0]
         assert checked["triangles"] <= 1_000
         assert checked["materials"] == checked["images"] == checked["embeddedImages"] == 1
-        assert checked["imageDimensions"] == [[1024, 1024]]
+        assert checked["imageDimensions"] == [[512, 512]]
         assert checked["materialTextureBindings"] == [{"material": 0, "baseColorTexture": 0, "image": 0}]
         assert checked["textureSources"] == [0]
         assert checked["cameras"] == checked["lights"] == checked["animations"] == 0
@@ -206,7 +213,7 @@ def main() -> None:
         reproduced_path.unlink(missing_ok=True)
 
     embedded_hashes = {item["embeddedAtlasSha256"] for item in evidence["assets"].values()}
-    assert embedded_hashes == {evidence["sharedAtlas"]["sha256"]}
+    assert embedded_hashes == {evidence["sharedAtlas"]["embeddedSha256"]}
     evidence["placementClearance"] = placement_evidence(manifest, contracts)
     evidence["manifest"] = manifest
     destination = OUT / "e9-redfields-props-contract.json"

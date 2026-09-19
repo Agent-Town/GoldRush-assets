@@ -331,6 +331,256 @@
         1.0
       ],
       "asset": "landmarks/showroom/catalog-sorting-gantry.glb"
+    },
+    {
+      "id": "west-display-home",
+      "position": [
+        -37.0,
+        0,
+        -7.650000095367432
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "asset": "landmarks/showroom/west-display-home.glb",
+      "role": "display-home",
+      "walkSurfaces": [
+        {
+          "minX": -6.4,
+          "maxX": 6.4,
+          "minZ": -6.5499999046325685,
+          "maxZ": 3.850000095367432,
+          "height": 0.62
+        },
+        {
+          "minX": -1.9,
+          "maxX": 1.9,
+          "minZ": 3.850000095367432,
+          "maxZ": 4.750000095367432,
+          "height": 0.6
+        },
+        {
+          "minX": -1.9,
+          "maxX": 1.9,
+          "minZ": 4.750000095367432,
+          "maxZ": 5.6500000953674325,
+          "height": 0.39999999999999997
+        },
+        {
+          "minX": -1.9,
+          "maxX": 1.9,
+          "minZ": 5.650000095367432,
+          "maxZ": 6.550000095367432,
+          "height": 0.19999999999999996
+        }
+      ]
+    },
+    {
+      "id": "northwest-display-home",
+      "position": [
+        -19.0,
+        0,
+        20.34999990463257
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "asset": "landmarks/showroom/northwest-display-home.glb",
+      "role": "display-home",
+      "walkSurfaces": [
+        {
+          "minX": -6.4,
+          "maxX": 6.4,
+          "minZ": -6.5499999046325685,
+          "maxZ": 3.850000095367432,
+          "height": 0.62
+        },
+        {
+          "minX": -1.9,
+          "maxX": 1.9,
+          "minZ": 3.850000095367432,
+          "maxZ": 4.750000095367432,
+          "height": 0.6
+        },
+        {
+          "minX": -1.9,
+          "maxX": 1.9,
+          "minZ": 4.750000095367432,
+          "maxZ": 5.6500000953674325,
+          "height": 0.39999999999999997
+        },
+        {
+          "minX": -1.9,
+          "maxX": 1.9,
+          "minZ": 5.650000095367432,
+          "maxZ": 6.550000095367432,
+          "height": 0.19999999999999996
+        }
+      ]
+    },
+    {
+      "id": "north-display-home",
+      "position": [
+        0.0,
+        0,
+        -7.650000095367432
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "asset": "landmarks/showroom/north-display-home.glb",
+      "role": "display-home",
+      "walkSurfaces": [
+        {
+          "minX": -6.4,
+          "maxX": 6.4,
+          "minZ": -6.5499999046325685,
+          "maxZ": 3.850000095367432,
+          "height": 0.62
+        },
+        {
+          "minX": -1.9,
+          "maxX": 1.9,
+          "minZ": 3.850000095367432,
+          "maxZ": 4.750000095367432,
+          "height": 0.6
+        },
+        {
+          "minX": -1.9,
+          "maxX": 1.9,
+          "minZ": 4.750000095367432,
+          "maxZ": 5.6500000953674325,
+          "height": 0.39999999999999997
+        },
+        {
+          "minX": -1.9,
+          "maxX": 1.9,
+          "minZ": 5.650000095367432,
+          "maxZ": 6.550000095367432,
+          "height": 0.19999999999999996
+        }
+      ]
+    },
+    {
+      "id": "northeast-display-home",
+      "position": [
+        19.0,
+        0,
+        20.34999990463257
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "asset": "landmarks/showroom/northeast-display-home.glb",
+      "role": "display-home",
+      "walkSurfaces": [
+        {
+          "minX": -6.4,
+          "maxX": 6.4,
+          "minZ": -6.5499999046325685,
+          "maxZ": 3.850000095367432,
+          "height": 0.62
+        },
+        {
+          "minX": -1.9,
+          "maxX": 1.9,
+          "minZ": 3.850000095367432,
+          "maxZ": 4.750000095367432,
+          "height": 0.6
+        },
+        {
+          "minX": -1.9,
+          "maxX": 1.9,
+          "minZ": 4.750000095367432,
+          "maxZ": 5.6500000953674325,
+          "height": 0.39999999999999997
+        },
+        {
+          "minX": -1.9,
+          "maxX": 1.9,
+          "minZ": 5.650000095367432,
+          "maxZ": 6.550000095367432,
+          "height": 0.19999999999999996
+        }
+      ]
+    },
+    {
+      "id": "east-display-home",
+      "position": [
+        37.0,
+        0,
+        -7.650000095367432
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "asset": "landmarks/showroom/east-display-home.glb",
+      "role": "display-home",
+      "walkSurfaces": [
+        {
+          "minX": -6.4,
+          "maxX": 6.4,
+          "minZ": -6.5499999046325685,
+          "maxZ": 3.850000095367432,
+          "height": 0.62
+        },
+        {
+          "minX": -1.9,
+          "maxX": 1.9,
+          "minZ": 3.850000095367432,
+          "maxZ": 4.750000095367432,
+          "height": 0.6
+        },
+        {
+          "minX": -1.9,
+          "maxX": 1.9,
+          "minZ": 4.750000095367432,
+          "maxZ": 5.6500000953674325,
+          "height": 0.39999999999999997
+        },
+        {
+          "minX": -1.9,
+          "maxX": 1.9,
+          "minZ": 5.650000095367432,
+          "maxZ": 6.550000095367432,
+          "height": 0.19999999999999996
+        }
+      ]
     }
   ],
   "landmarkMountSpace": {
@@ -387,5 +637,6 @@
     "era": 6,
     "sourceLadder": "reuse > derive > build-new",
     "ownership": "separate mounted render-only GLBs; no simulation authority"
-  }
+  },
+  "landmarkNotes": "Five furnished display homes with three entry steps. collisionParts feed the existing planar registry; walkSurfaces supply rendered floor and pointer heights."
 }

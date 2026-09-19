@@ -46,6 +46,7 @@ KIT_E8 = ROOT / "assets/processed/kit-era-8.png"
 KIT_E10 = ROOT / "assets/processed/kit-era-10.png"
 CANYON_ATLAS = ROOT / "assets/raw/ter-canyon-atlas.png"
 MOTH_PLATE = ROOT / "assets/raw/plate-e3-mothswarm.png"
+MOTH_GROUND_ATLAS = ROOT / "assets/raw/moth-season-terrain-atlas-v1.png"
 RELAY_PLATE = ROOT / "assets/raw/plate-e7-bld-relay-tower.png"
 ORBITAL_PLATE = ROOT / "assets/raw/plate-e8-bld-set.png"
 WORLDS_PLATE = ROOT / "assets/raw/plate-e10-worlds.png"
@@ -829,7 +830,11 @@ def height_function(key, factory, table):
                     (xx >= guarded["minX"]) & (xx <= guarded["maxX"])
                     & (zz >= guarded["minZ"]) & (zz <= guarded["maxZ"])
                 )
-                sculpted = np.where(exact, 5.0, sculpted)
+                # Ridge pads stay h5; ground in the gap stays on the valley floor.
+                pad_height = next((float(ridge["height"]) for ridge in ridges
+                    if zone["minX"] >= ridge["minX"] and zone["maxX"] <= ridge["maxX"]
+                    and zone["minZ"] >= ridge["minZ"] and zone["maxZ"] <= ridge["maxZ"]), 0.0)
+                sculpted = np.where(exact, pad_height, sculpted)
 
             perimeter = smoothstep(0.94, 1.0, np.maximum(np.abs(xx) / 64.0, np.abs(zz) / 64.0))
             return sculpted * (1.0 - perimeter) + 0.08 * perimeter
@@ -1024,6 +1029,14 @@ def height_function(key, factory, table):
 
 
 def make_atlas(key, profile, factory, table):
+    if key == "moth-season":
+        # Keep scenery out of the ground albedo; night illumination is runtime-owned.
+        path = OUT / f"{profile['stem']}-atlas.png"
+        path.write_bytes(MOTH_GROUND_ATLAS.read_bytes())
+        image = bpy.data.images.load(str(path), check_existing=False)
+        image.colorspace_settings.name = "sRGB"
+        image.pack()
+        return image, path
     source = claim.image_pixels(profile["sourcePlate"])
     if key == "ember-shore":
         # The E10 worlds plate contains three biome families; only its left
@@ -1067,23 +1080,6 @@ def make_atlas(key, profile, factory, table):
                 rail_mask = np.maximum(rail_mask, e2.segment_mask(x, z, a, b, 0.95))
         rail_ink = claim.tiled_sample(rail_plate, u, v, 7.0, 0.24, 0.63) * np.array((0.25, 0.20, 0.17), dtype=np.float32)
         atlas = atlas * (1.0 - rail_mask[..., None] * 0.30) + rail_ink * rail_mask[..., None] * 0.30
-    elif key == "moth-season":
-        atlas = land * np.array((0.39, 0.39, 0.46), dtype=np.float32)
-        dark_corridor = gaussian(x, z, 0.0, 0.0, 6.5, 35.0)
-        atlas *= 1.0 - dark_corridor[..., None] * 0.24
-        yard_glow = np.clip(gaussian(x, z, -20, 0, 13, 24) + gaussian(x, z, 20, 0, 13, 24), 0.0, 1.0)
-        warm = paper * np.array((0.55, 0.38, 0.18), dtype=np.float32)
-        atlas = atlas * (1.0 - yard_glow[..., None] * 0.18) + warm * yard_glow[..., None] * 0.18
-        migration = np.sin(z * 0.66 + np.sin(x * 0.31)) * 0.5 + 0.5
-        atlas *= 1.0 - (migration * dark_corridor)[..., None] * 0.12
-        wing_scars = np.zeros_like(x)
-        for index, mark_z in enumerate(np.linspace(-29.0, 29.0, 9)):
-            mark_x = math.sin(index * 1.7) * 2.2
-            left = gaussian(x, z, mark_x - 0.9, mark_z, 1.1, 0.42)
-            right = gaussian(x, z, mark_x + 0.9, mark_z, 1.1, 0.42)
-            wing_scars = np.maximum(wing_scars, np.maximum(left, right))
-        scar_tone = paper * np.array((0.48, 0.42, 0.34), dtype=np.float32)
-        atlas = atlas * (1.0 - wing_scars[..., None] * 0.52) + scar_tone * wing_scars[..., None] * 0.52
     elif key == "blackout-ridge":
         atlas = land * np.array((0.46, 0.47, 0.58), dtype=np.float32)
         climb_shadow = smoothstep(-32.0, 38.0, (x + z) * 0.5)
@@ -1356,7 +1352,7 @@ def make_atlas(key, profile, factory, table):
         strata = ridge_mask * smoothstep(0.58, 0.86, np.sin(x * 0.16 + z * 1.15) * 0.5 + 0.5)
         atlas *= 1.0 - strata[..., None] * 0.16
 
-        # The four legal pad rectangles are work-scuffed but remain ordinary
+        # The legal pad rectangles are work-scuffed but remain ordinary
         # ground; their exact placement authority belongs to the mask table.
         pad_centers = []
         for zone in truth["buildZones"]:
@@ -1785,7 +1781,8 @@ def make_terrain(profile, table, table_path, height_at, material):
     for polygon in mesh.polygons:
         # The E6 caprock must show chipped strata and hard planes. Smooth
         # shading turned its four-metre scarp into a rounded tabletop lip.
-        polygon.use_smooth = profile["contractId"] not in {"e6-glow-mesa", "e7-relay-valley", "e7-echo-canyon"}
+        # Runtime height grids require welded vertices; flat normals split the GLB grid.
+        polygon.use_smooth = True
         for loop_index in polygon.loop_indices:
             uv.data[loop_index].uv = uvs[mesh.loops[loop_index].vertex_index]
     terrain = bpy.data.objects.new(profile["object"], mesh)
@@ -2670,7 +2667,7 @@ def make_contract(key, profile, table, table_path, terrain, atlas_path, height_a
         "vertices": len(terrain.data.vertices),
         "triangles": triangles,
         "triangleBudget": 60000,
-        "texture": {"count": 1, "width": ATLAS_SIZE, "height": ATLAS_SIZE, "embedded": True},
+        "texture": {"count": 1, "width": 1254 if key == "moth-season" else ATLAS_SIZE, "height": 1254 if key == "moth-season" else ATLAS_SIZE, "embedded": True},
         "maskTable": str(table_path.relative_to(ROOT)),
         "maskTruth": table["maskTruth"],
         "waterAgreement": table["waterAgreement"],
@@ -2701,7 +2698,7 @@ def make_contract(key, profile, table, table_path, terrain, atlas_path, height_a
         } if key == "glow-mesa" else ({
             "assets": ["assets/pilots/relay-tower-3d/relay-tower.glb"],
             "excludedFromBlendAndGlb": True,
-            "reason": "existing relay tower bodies establish the exact four-pad LOS puzzle without authoring runtime mounts or placement authority",
+            "reason": "existing relay tower bodies establish the four ridge sites beside the surveyed central bridge ground; no runtime mounts or placement authority are baked",
         } if key == "relay-valley" else ({
             "assets": ["procedural verdict-only echo gates", "procedural verdict-only broadcast arrays", "procedural verdict-only observation post"],
             "excludedFromBlendAndGlb": True,
@@ -2724,7 +2721,7 @@ def make_contract(key, profile, table, table_path, terrain, atlas_path, height_a
         } if key == "ember-shore" else None,
         "panoramaMount": claim.panorama_mount(key),
         "evidenceRig": "sun-hazed motor daylight" if key == "dust-flats" else ("teal starstone dusk with one amber kitchen anchor; all lights render-only" if key == "glow-mesa" else ("blue-hour signal dusk with honey work lamps and agent-teal broadcast cues; all lights render-only" if key == "echo-canyon" else ("blue-hour signal dusk with honey work lamps and agent-teal relay cues; all lights render-only" if key == "relay-valley" else ("vacuum-black orbital raking light with honey habitat warmth and restrained agent teal; all lights render-only" if key == "mare-claim" else ("deep-ink first-world night with parchment-gold vent warmth and restrained agent teal; all lights render-only" if key == "ember-shore" else "dusk/deep shadow with code-owned lamp positions represented by render-only warm lights"))))),
-        "sourceArt": list(dict.fromkeys(str(path.relative_to(ROOT)) for path in ((claim.BANK_C, profile["kit"], profile["sourcePlate"]) if key in {"mare-claim", "ember-shore"} else ((claim.BANK_A, claim.BANK_C, profile["kit"], profile["sourcePlate"]) if key in {"glow-mesa", "relay-valley", "echo-canyon"} else (claim.BANK_A, claim.BANK_C, claim.RIVER, RAIL_PLATE, profile["kit"], profile["sourcePlate"]))))),
+        "sourceArt": [str(MOTH_GROUND_ATLAS.relative_to(ROOT))] if key == "moth-season" else list(dict.fromkeys(str(path.relative_to(ROOT)) for path in ((claim.BANK_C, profile["kit"], profile["sourcePlate"]) if key in {"mare-claim", "ember-shore"} else ((claim.BANK_A, claim.BANK_C, profile["kit"], profile["sourcePlate"]) if key in {"glow-mesa", "relay-valley", "echo-canyon"} else (claim.BANK_A, claim.BANK_C, claim.RIVER, RAIL_PLATE, profile["kit"], profile["sourcePlate"]))))),
         "atlas": atlas_path.name,
     }
 

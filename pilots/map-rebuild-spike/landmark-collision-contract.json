@@ -320,8 +320,8 @@
         ],
         "rotation": 0.16,
         "scale": [
-          1,
-          1
+          0.8,
+          0.8
         ],
         "footprint": {
           "kind": "rect",
@@ -2546,6 +2546,1128 @@
           "kind": "rect",
           "w": 6.286,
           "d": 3.582
+        }
+      },
+      {
+        "id": "west-display-home:part-0",
+        "position": [
+          -37.0,
+          -13.0
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "footprint": {
+          "kind": "rect",
+          "w": 12,
+          "d": 0.22
+        }
+      },
+      {
+        "id": "west-display-home:part-1",
+        "position": [
+          -42.9,
+          -11.55
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "footprint": {
+          "kind": "rect",
+          "w": 0.22,
+          "d": 2.7
+        }
+      },
+      {
+        "id": "west-display-home:part-2",
+        "position": [
+          -42.9,
+          -7.3
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "footprint": {
+          "kind": "rect",
+          "w": 0.22,
+          "d": 5.8
+        }
+      },
+      {
+        "id": "west-display-home:part-3",
+        "position": [
+          -31.1,
+          -11.55
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "footprint": {
+          "kind": "rect",
+          "w": 0.22,
+          "d": 2.7
+        }
+      },
+      {
+        "id": "west-display-home:part-4",
+        "position": [
+          -31.1,
+          -7.3
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "footprint": {
+          "kind": "rect",
+          "w": 0.22,
+          "d": 5.8
+        }
+      },
+      {
+        "id": "west-display-home:part-5",
+        "position": [
+          -32.35,
+          -11.25
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "footprint": {
+          "kind": "rect",
+          "w": 1.8,
+          "d": 1.72
+        }
+      },
+      {
+        "id": "west-display-home:part-6",
+        "position": [
+          -35.4,
+          -11.85
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "footprint": {
+          "kind": "rect",
+          "w": 2.3,
+          "d": 1.72
+        }
+      },
+      {
+        "id": "west-display-home:part-7",
+        "position": [
+          -38.45,
+          -11.85
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "footprint": {
+          "kind": "rect",
+          "w": 2.25,
+          "d": 1.7
+        }
+      },
+      {
+        "id": "west-display-home:part-8",
+        "position": [
+          -39.9,
+          -8.2
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "footprint": {
+          "kind": "rect",
+          "w": 2.45,
+          "d": 1.75
+        }
+      },
+      {
+        "id": "west-display-home:part-9",
+        "position": [
+          -40.8,
+          -7.02
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "footprint": {
+          "kind": "rect",
+          "w": 0.8,
+          "d": 0.8
+        }
+      },
+      {
+        "id": "west-display-home:part-10",
+        "position": [
+          -39.0,
+          -7.02
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "footprint": {
+          "kind": "rect",
+          "w": 0.8,
+          "d": 0.8
+        }
+      },
+      {
+        "id": "west-display-home:part-11",
+        "position": [
+          -32.55,
+          -8.45
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "footprint": {
+          "kind": "rect",
+          "w": 1.85,
+          "d": 2.15
+        }
+      },
+      {
+        "id": "west-display-home:part-12",
+        "position": [
+          -41.12,
+          -4.35
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "footprint": {
+          "kind": "rect",
+          "w": 3.56,
+          "d": 0.18
+        }
+      },
+      {
+        "id": "west-display-home:part-13",
+        "position": [
+          -32.88,
+          -4.35
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "footprint": {
+          "kind": "rect",
+          "w": 3.56,
+          "d": 0.18
+        }
+      },
+      {
+        "id": "northwest-display-home:part-0",
+        "position": [
+          -19.0,
+          15.0
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "footprint": {
+          "kind": "rect",
+          "w": 12,
+          "d": 0.22
+        }
+      },
+      {
+        "id": "northwest-display-home:part-1",
+        "position": [
+          -24.9,
+          16.45
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "footprint": {
+          "kind": "rect",
+          "w": 0.22,
+          "d": 2.7
+        }
+      },
+      {
+        "id": "northwest-display-home:part-2",
+        "position": [
+          -24.9,
+          20.7
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "footprint": {
+          "kind": "rect",
+          "w": 0.22,
+          "d": 5.8
+        }
+      },
+      {
+        "id": "northwest-display-home:part-3",
+        "position": [
+          -13.1,
+          16.45
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "footprint": {
+          "kind": "rect",
+          "w": 0.22,
+          "d": 2.7
+        }
+      },
+      {
+        "id": "northwest-display-home:part-4",
+        "position": [
+          -13.1,
+          20.7
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "footprint": {
+          "kind": "rect",
+          "w": 0.22,
+          "d": 5.8
+        }
+      },
+      {
+        "id": "northwest-display-home:part-5",
+        "position": [
+          -14.35,
+          16.75
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "footprint": {
+          "kind": "rect",
+          "w": 1.8,
+          "d": 1.72
+        }
+      },
+      {
+        "id": "northwest-display-home:part-6",
+        "position": [
+          -17.4,
+          16.15
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "footprint": {
+          "kind": "rect",
+          "w": 2.3,
+          "d": 1.72
+        }
+      },
+      {
+        "id": "northwest-display-home:part-7",
+        "position": [
+          -20.45,
+          16.15
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "footprint": {
+          "kind": "rect",
+          "w": 2.25,
+          "d": 1.7
+        }
+      },
+      {
+        "id": "northwest-display-home:part-8",
+        "position": [
+          -21.9,
+          19.8
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "footprint": {
+          "kind": "rect",
+          "w": 2.45,
+          "d": 1.75
+        }
+      },
+      {
+        "id": "northwest-display-home:part-9",
+        "position": [
+          -22.8,
+          20.98
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "footprint": {
+          "kind": "rect",
+          "w": 0.8,
+          "d": 0.8
+        }
+      },
+      {
+        "id": "northwest-display-home:part-10",
+        "position": [
+          -21.0,
+          20.98
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "footprint": {
+          "kind": "rect",
+          "w": 0.8,
+          "d": 0.8
+        }
+      },
+      {
+        "id": "northwest-display-home:part-11",
+        "position": [
+          -14.55,
+          19.55
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "footprint": {
+          "kind": "rect",
+          "w": 1.85,
+          "d": 2.15
+        }
+      },
+      {
+        "id": "northwest-display-home:part-12",
+        "position": [
+          -23.12,
+          23.65
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "footprint": {
+          "kind": "rect",
+          "w": 3.56,
+          "d": 0.18
+        }
+      },
+      {
+        "id": "northwest-display-home:part-13",
+        "position": [
+          -14.879999999999999,
+          23.65
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "footprint": {
+          "kind": "rect",
+          "w": 3.56,
+          "d": 0.18
+        }
+      },
+      {
+        "id": "north-display-home:part-0",
+        "position": [
+          0.0,
+          -13.0
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "footprint": {
+          "kind": "rect",
+          "w": 12,
+          "d": 0.22
+        }
+      },
+      {
+        "id": "north-display-home:part-1",
+        "position": [
+          -5.9,
+          -11.55
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "footprint": {
+          "kind": "rect",
+          "w": 0.22,
+          "d": 2.7
+        }
+      },
+      {
+        "id": "north-display-home:part-2",
+        "position": [
+          -5.9,
+          -7.3
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "footprint": {
+          "kind": "rect",
+          "w": 0.22,
+          "d": 5.8
+        }
+      },
+      {
+        "id": "north-display-home:part-3",
+        "position": [
+          5.9,
+          -11.55
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "footprint": {
+          "kind": "rect",
+          "w": 0.22,
+          "d": 2.7
+        }
+      },
+      {
+        "id": "north-display-home:part-4",
+        "position": [
+          5.9,
+          -7.3
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "footprint": {
+          "kind": "rect",
+          "w": 0.22,
+          "d": 5.8
+        }
+      },
+      {
+        "id": "north-display-home:part-5",
+        "position": [
+          -3.7,
+          -10.1
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "footprint": {
+          "kind": "rect",
+          "w": 3.4,
+          "d": 1.48
+        }
+      },
+      {
+        "id": "north-display-home:part-6",
+        "position": [
+          -3.7,
+          -7.3
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "footprint": {
+          "kind": "rect",
+          "w": 2.45,
+          "d": 1.75
+        }
+      },
+      {
+        "id": "north-display-home:part-7",
+        "position": [
+          -4.6000000000000005,
+          -6.12
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "footprint": {
+          "kind": "rect",
+          "w": 0.8,
+          "d": 0.8
+        }
+      },
+      {
+        "id": "north-display-home:part-8",
+        "position": [
+          -2.8000000000000003,
+          -6.12
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "footprint": {
+          "kind": "rect",
+          "w": 0.8,
+          "d": 0.8
+        }
+      },
+      {
+        "id": "north-display-home:part-9",
+        "position": [
+          1.6,
+          -11.85
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "footprint": {
+          "kind": "rect",
+          "w": 2.3,
+          "d": 1.72
+        }
+      },
+      {
+        "id": "north-display-home:part-10",
+        "position": [
+          4.65,
+          -11.25
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "footprint": {
+          "kind": "rect",
+          "w": 1.8,
+          "d": 1.72
+        }
+      },
+      {
+        "id": "north-display-home:part-11",
+        "position": [
+          -1.6,
+          -10.5
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "footprint": {
+          "kind": "rect",
+          "w": 0.72,
+          "d": 0.72
+        }
+      },
+      {
+        "id": "north-display-home:part-12",
+        "position": [
+          -4.12,
+          -4.35
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "footprint": {
+          "kind": "rect",
+          "w": 3.56,
+          "d": 0.18
+        }
+      },
+      {
+        "id": "north-display-home:part-13",
+        "position": [
+          4.12,
+          -4.35
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "footprint": {
+          "kind": "rect",
+          "w": 3.56,
+          "d": 0.18
+        }
+      },
+      {
+        "id": "northeast-display-home:part-0",
+        "position": [
+          19.0,
+          15.0
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "footprint": {
+          "kind": "rect",
+          "w": 12,
+          "d": 0.22
+        }
+      },
+      {
+        "id": "northeast-display-home:part-1",
+        "position": [
+          13.1,
+          16.45
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "footprint": {
+          "kind": "rect",
+          "w": 0.22,
+          "d": 2.7
+        }
+      },
+      {
+        "id": "northeast-display-home:part-2",
+        "position": [
+          13.1,
+          20.7
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "footprint": {
+          "kind": "rect",
+          "w": 0.22,
+          "d": 5.8
+        }
+      },
+      {
+        "id": "northeast-display-home:part-3",
+        "position": [
+          24.9,
+          16.45
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "footprint": {
+          "kind": "rect",
+          "w": 0.22,
+          "d": 2.7
+        }
+      },
+      {
+        "id": "northeast-display-home:part-4",
+        "position": [
+          24.9,
+          20.7
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "footprint": {
+          "kind": "rect",
+          "w": 0.22,
+          "d": 5.8
+        }
+      },
+      {
+        "id": "northeast-display-home:part-5",
+        "position": [
+          15.45,
+          17.88
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "footprint": {
+          "kind": "rect",
+          "w": 2.9,
+          "d": 4.0
+        }
+      },
+      {
+        "id": "northeast-display-home:part-6",
+        "position": [
+          17.45,
+          16.5
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "footprint": {
+          "kind": "rect",
+          "w": 0.9,
+          "d": 0.82
+        }
+      },
+      {
+        "id": "northeast-display-home:part-7",
+        "position": [
+          23.65,
+          16.75
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "footprint": {
+          "kind": "rect",
+          "w": 1.8,
+          "d": 1.72
+        }
+      },
+      {
+        "id": "northeast-display-home:part-8",
+        "position": [
+          23.3,
+          20.5
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "footprint": {
+          "kind": "rect",
+          "w": 2.0,
+          "d": 1.25
+        }
+      },
+      {
+        "id": "northeast-display-home:part-9",
+        "position": [
+          21.32,
+          16.05
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "footprint": {
+          "kind": "rect",
+          "w": 2.35,
+          "d": 1.5
+        }
+      },
+      {
+        "id": "northeast-display-home:part-10",
+        "position": [
+          14.879999999999999,
+          23.65
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "footprint": {
+          "kind": "rect",
+          "w": 3.56,
+          "d": 0.18
+        }
+      },
+      {
+        "id": "northeast-display-home:part-11",
+        "position": [
+          23.12,
+          23.65
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "footprint": {
+          "kind": "rect",
+          "w": 3.56,
+          "d": 0.18
+        }
+      },
+      {
+        "id": "east-display-home:part-0",
+        "position": [
+          37.0,
+          -13.0
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "footprint": {
+          "kind": "rect",
+          "w": 12,
+          "d": 0.22
+        }
+      },
+      {
+        "id": "east-display-home:part-1",
+        "position": [
+          31.1,
+          -11.55
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "footprint": {
+          "kind": "rect",
+          "w": 0.22,
+          "d": 2.7
+        }
+      },
+      {
+        "id": "east-display-home:part-2",
+        "position": [
+          31.1,
+          -7.3
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "footprint": {
+          "kind": "rect",
+          "w": 0.22,
+          "d": 5.8
+        }
+      },
+      {
+        "id": "east-display-home:part-3",
+        "position": [
+          42.9,
+          -11.55
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "footprint": {
+          "kind": "rect",
+          "w": 0.22,
+          "d": 2.7
+        }
+      },
+      {
+        "id": "east-display-home:part-4",
+        "position": [
+          42.9,
+          -7.3
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "footprint": {
+          "kind": "rect",
+          "w": 0.22,
+          "d": 5.8
+        }
+      },
+      {
+        "id": "east-display-home:part-5",
+        "position": [
+          33.45,
+          -10.120000000000001
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "footprint": {
+          "kind": "rect",
+          "w": 2.9,
+          "d": 4.0
+        }
+      },
+      {
+        "id": "east-display-home:part-6",
+        "position": [
+          35.45,
+          -11.5
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "footprint": {
+          "kind": "rect",
+          "w": 0.9,
+          "d": 0.82
+        }
+      },
+      {
+        "id": "east-display-home:part-7",
+        "position": [
+          41.65,
+          -11.25
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "footprint": {
+          "kind": "rect",
+          "w": 1.8,
+          "d": 1.72
+        }
+      },
+      {
+        "id": "east-display-home:part-8",
+        "position": [
+          41.3,
+          -7.5
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "footprint": {
+          "kind": "rect",
+          "w": 2.0,
+          "d": 1.25
+        }
+      },
+      {
+        "id": "east-display-home:part-9",
+        "position": [
+          39.32,
+          -11.95
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "footprint": {
+          "kind": "rect",
+          "w": 2.35,
+          "d": 1.5
+        }
+      },
+      {
+        "id": "east-display-home:part-10",
+        "position": [
+          32.88,
+          -4.35
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "footprint": {
+          "kind": "rect",
+          "w": 3.56,
+          "d": 0.18
+        }
+      },
+      {
+        "id": "east-display-home:part-11",
+        "position": [
+          41.12,
+          -4.35
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "footprint": {
+          "kind": "rect",
+          "w": 3.56,
+          "d": 0.18
         }
       }
     ],

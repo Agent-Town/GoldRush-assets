@@ -319,11 +319,17 @@ def verify_terrain(key, config):
         assert contract["waterAgreement"] == published_table["waterAgreement"]
     assert contract["maskTable"] == str(table_path.relative_to(ROOT))
     assert contract["simulation"].endswith("remain unchanged")
-    assert contract["landmarkMounts"] == []
-    if config.get("landmarkFreezeLifted"):
-        assert contract["landmarkFreeze"].startswith("lifted;")
+    if contract.get("landmarkPack"):
+        pack = json.loads((SOURCE / contract["landmarkPack"]["contract"]).read_text())
+        assert contract["landmarkMounts"] == pack["mounts"]
+        assert len({mount["id"] for mount in pack["mounts"]}) == len(pack["mounts"])
+        assert all(mount["id"] in pack["assets"] for mount in pack["mounts"])
     else:
-        assert contract["landmarkFreeze"].startswith("no landmark")
+        assert contract["landmarkMounts"] == []
+        if config.get("landmarkFreezeLifted"):
+            assert contract["landmarkFreeze"].startswith("lifted;")
+        else:
+            assert contract["landmarkFreeze"].startswith("no landmark")
     assert config["kit"] in contract["sourceArt"]
     assert not any("tree" in source.lower() for source in contract["regionalFamily"]["shared"])
     assert len(contract["pylonSiteFlatness"]) == len(table["maskTruth"].get("pylonSites", []))
@@ -348,7 +354,7 @@ def verify_terrain(key, config):
         assert len(truth["buildZones"]) == 2
         assert len(truth["lavaVeinBands"]) == 3
         assert len(truth["fixtureZones"]) == 1
-        assert truth["stakeMarkers"] == [{"id": "last-warm-vent", "x": 3, "z": -10, "lossCondition": True}]
+        assert truth["stakeMarkers"] == builder.factory_contract(config["id"])["tileParams"]["stakeMarkers"]
         assert truth["lanes"]["spawnEdges"] == ["north", "west", "east"]
         assert truth["river"] is False and truth["waterSources"] == []
         assert contract["preserveDesign"] == {

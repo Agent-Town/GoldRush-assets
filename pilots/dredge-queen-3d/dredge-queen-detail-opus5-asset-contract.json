@@ -66,8 +66,8 @@
         0.0
       ]
     },
-    "bytes": 8030760,
-    "sha256": "678e2e7a03733b3d1b3bdbf65557c6eea103ee8871a720c35a9e44201e38c39d",
+    "bytes": 8297784,
+    "sha256": "b79157255a2737a1f73ebd53f4d86428fecdf3209ce039f65fa76186c7ae12d3",
     "materials": 1,
     "images": 1,
     "primitives": 4,
@@ -79,7 +79,8 @@
     ],
     "morphTargets": {
       "clawMesh": [
-        "Damage_SlackClaw"
+        "Damage_SlackClaw",
+        "Cycle_OpenGrab"
       ],
       "paddle_portMesh": [
         "Damage_BrokenPortPaddle"
@@ -104,7 +105,7 @@
     "constant": "DREDGE_QUEEN_3D_TRIANGLES",
     "shipped": 11832,
     "required": 33124,
-    "note": "The runtime guard is an equality test, not a ceiling: it rejects any GLB whose triangle count differs from DREDGE_QUEEN_3D_TRIANGLES. Every other clause of that guard (mesh count, node names, morph-at-index-0, single material) is satisfied unchanged, so adopting this model is a one-integer edit: 11832 -> 33124."
+    "note": "Runtime requires exactly 33124 triangles, the declared nodes and material, and these ordered morph targets: {'clawMesh': ['Damage_SlackClaw', 'Cycle_OpenGrab'], 'paddle_portMesh': ['Damage_BrokenPortPaddle'], 'paddle_starboardMesh': ['Damage_BrokenStarboardPaddle'], 'holdMesh': ['Damage_CrackedLootHold']}."
   },
   "byteIdentical": true,
   "semanticIdentical": {
@@ -139,8 +140,8 @@
     "assets/pilots/dredge-queen-3d/renders-detail-opus5/dredge-queen-detail-opus5-vs-shipped.png": "7823a57865466cf056373d0f2d20aa9ad197a1150baa24cb310e99f57e23273e"
   },
   "checked": {
-    "sha256": "678e2e7a03733b3d1b3bdbf65557c6eea103ee8871a720c35a9e44201e38c39d",
-    "bytes": 8030760,
+    "sha256": "b79157255a2737a1f73ebd53f4d86428fecdf3209ce039f65fa76186c7ae12d3",
+    "bytes": 8297784,
     "nodes": [
       "claw",
       "paddle_port",
@@ -153,9 +154,11 @@
         "node": "claw",
         "mesh": "clawMesh",
         "targets": [
-          "Damage_SlackClaw"
+          "Damage_SlackClaw",
+          "Cycle_OpenGrab"
         ],
         "defaultWeights": [
+          0,
           0
         ]
       },
@@ -285,7 +288,8 @@
     "triangles": 33124,
     "morphTargets": {
       "clawMesh": [
-        "Damage_SlackClaw"
+        "Damage_SlackClaw",
+        "Cycle_OpenGrab"
       ],
       "paddle_portMesh": [
         "Damage_BrokenPortPaddle"
@@ -298,7 +302,7 @@
       ]
     },
     "targetCounts": {
-      "clawMesh": 1,
+      "clawMesh": 2,
       "paddle_portMesh": 1,
       "paddle_starboardMesh": 1,
       "holdMesh": 1
@@ -363,8 +367,8 @@
     }
   },
   "reexported": {
-    "sha256": "678e2e7a03733b3d1b3bdbf65557c6eea103ee8871a720c35a9e44201e38c39d",
-    "bytes": 8030760,
+    "sha256": "b79157255a2737a1f73ebd53f4d86428fecdf3209ce039f65fa76186c7ae12d3",
+    "bytes": 8297784,
     "nodes": [
       "claw",
       "paddle_port",
@@ -377,9 +381,11 @@
         "node": "claw",
         "mesh": "clawMesh",
         "targets": [
-          "Damage_SlackClaw"
+          "Damage_SlackClaw",
+          "Cycle_OpenGrab"
         ],
         "defaultWeights": [
+          0,
           0
         ]
       },
@@ -509,7 +515,8 @@
     "triangles": 33124,
     "morphTargets": {
       "clawMesh": [
-        "Damage_SlackClaw"
+        "Damage_SlackClaw",
+        "Cycle_OpenGrab"
       ],
       "paddle_portMesh": [
         "Damage_BrokenPortPaddle"
@@ -522,7 +529,7 @@
       ]
     },
     "targetCounts": {
-      "clawMesh": 1,
+      "clawMesh": 2,
       "paddle_portMesh": 1,
       "paddle_starboardMesh": 1,
       "holdMesh": 1
@@ -585,5 +592,6 @@
         0.0
       ]
     }
-  }
+  },
+  "boardsNote": "Historical static boards predate Cycle_OpenGrab; current runtime evidence is artifacts/sol/sprite-roster-fixes-20260908/dredge-queen-visual/cycle-production."
 }

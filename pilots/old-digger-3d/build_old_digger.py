@@ -249,6 +249,39 @@ def add_redemption_shapes(bucket_wheels: bpy.types.Object, gantry: bpy.types.Obj
             key.value = 0.0
 
 
+def split_wheels(source):
+    wheels = []
+    for label in ('Port', 'Starboard'):
+        obj = source.copy()
+        obj.data = source.data.copy()
+        bpy.context.collection.objects.link(obj)
+        obj.name = 'bucket_wheel_' + label.lower()
+        cap = obj.vertex_groups['Redemption' + label + 'HubCap'].index
+        points = [v.co.copy() for v in obj.data.vertices if any(g.group == cap and g.weight > .5 for g in v.groups)]
+        assert points
+        pivot = sum(points, Vector()) / len(points)
+        keep = {obj.vertex_groups['Redemption' + label + 'Wheel'].index, cap}
+        bpy.ops.object.select_all(action='DESELECT')
+        obj.select_set(True)
+        bpy.context.view_layer.objects.active = obj
+        bpy.ops.object.mode_set(mode='EDIT')
+        bpy.ops.mesh.select_all(action='DESELECT')
+        bpy.ops.object.mode_set(mode='OBJECT')
+        for vertex in obj.data.vertices:
+            vertex.select = not any(g.group in keep and g.weight > .5 for g in vertex.groups)
+        bpy.ops.object.mode_set(mode='EDIT')
+        bpy.ops.mesh.delete(type='VERT')
+        bpy.ops.object.mode_set(mode='OBJECT')
+        for key in obj.data.shape_keys.key_blocks:
+            for vertex in key.data:
+                vertex.co -= pivot
+        assert len(obj.data.vertices) > 600 and len(obj.data.polygons) > 600
+        obj.location = pivot
+        wheels.append(obj)
+    bpy.data.objects.remove(source, do_unlink=True)
+    return wheels
+
+
 def main() -> None:
     HERE.mkdir(parents=True, exist_ok=True)
     dq.reset_scene()
@@ -279,6 +312,7 @@ def main() -> None:
     assert abs((maximum.x + minimum.x) * 0.5) < 0.001
     assert abs((maximum.y + minimum.y) * 0.5) < 0.001
     dq.BLEND, dq.GLB = BLEND, GLB
+    objects = (*split_wheels(bucket_wheels), gantry, tape_deck)
     dq.export(objects)
     print(json.dumps({
         "blend": str(BLEND),

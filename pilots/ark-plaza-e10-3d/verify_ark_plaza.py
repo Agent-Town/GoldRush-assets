@@ -205,7 +205,7 @@ def main() -> None:
     assert checked["meshes"] == checked["primitives"] == 1
     assert checked["triangles"] <= builder.TRIANGLE_BUDGET
     assert checked["materials"] == checked["textures"] == checked["images"] == checked["embeddedImages"] == 1
-    assert checked["imageDimensions"] == [[builder.ATLAS_SIZE, builder.ATLAS_SIZE]]
+    assert checked["imageDimensions"] == [[builder.EXPORT_ATLAS_SIZE, builder.EXPORT_ATLAS_SIZE]]
     assert checked["cameras"] == checked["lights"] == checked["animations"] == 0
     assert checked["materialContract"][0]["hasBaseColorTexture"]
     assert realized["routeMaxAbs"] <= builder.WALK_RELIEF_LIMIT

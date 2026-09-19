@@ -11,7 +11,7 @@ import sys
 sys.dont_write_bytecode = True
 
 import bpy
-from mathutils import Vector
+from mathutils import Matrix, Vector
 
 
 ROOT = Path(__file__).resolve().parents[3]
@@ -22,7 +22,8 @@ GENTLE_REFERENCE = ROOT / "assets/raw/boss-old-digger-gentle.png"
 TERRAIN = ROOT / "assets/pilots/basin-rim-3d/basin-rim-plate.glb"
 OUT = HERE / "renders"
 COMPONENTS = {
-    "bucket_wheels": "Redemption_GentleBuckets",
+    "bucket_wheel_port": "Redemption_GentleBuckets",
+    "bucket_wheel_starboard": "Redemption_GentleBuckets",
     "gantry": "Redemption_SafeGantry",
     "tape_deck": "Redemption_TealTapeDeck",
 }
@@ -154,6 +155,8 @@ def render_state_board(base_sha: str) -> Path:
         camera.data.angle = math.radians(47)
         shared.aim(camera, Vector((0, -17.5, 9.2)), Vector((0, 0, 2.6)))
         enabled = set() if name == "working" else set(COMPONENTS) if name == "all" else {name}
+        if name == "bucket_wheels":
+            enabled = {"bucket_wheel_port", "bucket_wheel_starboard"}
         set_state(objects, enabled)
         path = OUT / f"state-{name}.png"
         shared.render(path)
@@ -169,9 +172,10 @@ def render_state_board(base_sha: str) -> Path:
 def render_run_camera(base_sha: str) -> Path:
     shared.reset_scene()
     objects = import_model()
+    bpy.context.view_layer.update()
     # Runtime can yaw the body; face the tape-deck heart into the exact camera rig.
     for obj in objects.values():
-        obj.rotation_euler[2] = math.pi
+        obj.matrix_world = Matrix.Rotation(math.pi, 4, 'Z') @ obj.matrix_world
     bpy.ops.import_scene.gltf(filepath=str(TERRAIN))
     for obj in bpy.context.scene.objects:
         if obj.type == "MESH" and obj.name not in COMPONENTS:

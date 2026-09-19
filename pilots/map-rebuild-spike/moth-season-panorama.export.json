@@ -1,0 +1,11 @@
+{
+  "profile": "static",
+  "why": "Panorama custom properties are validated by glb-contract-guard. Preserve render_only, panorama and panorama_law when the saved Blender source is re-exported through the factory helper.",
+  "extras": true,
+  "animations": false,
+  "applyTransforms": true,
+  "selection": "meshes+anchors",
+  "asset": "moth-season-panorama.glb",
+  "blend": "moth-season-panorama.blend",
+  "contract": "moth-season-panorama-contract.json"
+}

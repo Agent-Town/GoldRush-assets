@@ -33,7 +33,7 @@ ENTRIES = {
         "shipped": QUEEN / "dredge-queen.glb",
         "nodes": ["claw", "paddle_port", "paddle_starboard", "hold"],
         "morphs": {
-            "clawMesh": ["Damage_SlackClaw"],
+            "clawMesh": ["Damage_SlackClaw", "Cycle_OpenGrab"],
             "paddle_portMesh": ["Damage_BrokenPortPaddle"],
             "paddle_starboardMesh": ["Damage_BrokenStarboardPaddle"],
             "holdMesh": ["Damage_CrackedLootHold"],
@@ -135,8 +135,8 @@ def check(name: str, spec: dict) -> dict:
     assert checked["meshes"] == checked["primitives"] == count
     assert checked["primitiveMaterials"] == [0] * count
     assert checked["morphTargets"] == spec["morphs"], checked["morphTargets"]
-    assert all(value == 1 for value in checked["targetCounts"].values()), checked["targetCounts"]
-    assert all(binding["defaultWeights"] == [0.0] for binding in checked["bindings"])
+    assert checked["targetCounts"] == {mesh: len(morphs) for mesh, morphs in spec["morphs"].items()}, checked["targetCounts"]
+    assert all(binding["defaultWeights"] == [0.0] * len(spec["morphs"][binding["mesh"]]) for binding in checked["bindings"])
     assert all(transform == IDENTITY for transform in checked["nodeTransforms"].values())
     assert checked["materials"] == 1
     assert checked["materialTextureBindings"] == [{"material": 0, "baseColorTexture": 0, "image": 0}]
@@ -157,10 +157,8 @@ def check(name: str, spec: dict) -> dict:
     guard = dict(spec["runtimeGuard"])
     guard["required"] = checked["triangles"]
     guard["note"] = (
-        f"The runtime guard is an equality test, not a ceiling: it rejects any GLB whose triangle "
-        f"count differs from {guard['constant']}. Every other clause of that guard "
-        f"(mesh count, node names, morph-at-index-0, single material) is satisfied unchanged, so "
-        f"adopting this model is a one-integer edit: {guard['shipped']} -> {checked['triangles']}."
+        f"Runtime requires exactly {checked['triangles']} triangles, the declared nodes and material, "
+        f"and these ordered morph targets: {spec['morphs']}."
     )
 
     boards = sorted(spec["renders"].glob("*.png")) if spec["renders"].exists() else []

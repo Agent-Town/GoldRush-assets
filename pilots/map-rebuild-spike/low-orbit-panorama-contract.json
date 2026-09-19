@@ -56,12 +56,12 @@
   "atlas": "low-orbit-panorama-atlas.png",
   "files": {
     "blend": {
-      "bytes": 1200096,
-      "sha256": "7fd868126915c075e755cf7b5232d21dcc8999944c7d07233d2b7017581bda77"
+      "bytes": 1200169,
+      "sha256": "f96913fa02c93fff4811cbe16aa50cd1f9241344fd1165a2dfb8a3c117eaaa7c"
     },
     "glb": {
-      "bytes": 1153624,
-      "sha256": "3b6f952ce511a80797f87c3108208efd43cdbec0acbb15072d7544eafdd2401c"
+      "bytes": 1153640,
+      "sha256": "e5e61ccda67ca0579eb1f711a70ca4252d4c759addb6cb0ed394764f04e850ee"
     },
     "atlas": {
       "bytes": 1086515,

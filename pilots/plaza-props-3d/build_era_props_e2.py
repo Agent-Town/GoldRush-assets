@@ -66,6 +66,8 @@ def write_shared_atlas():
 def material_from_atlas():
     image = bpy.data.images.load(str(ATLAS), check_existing=False)
     image.colorspace_settings.name = "sRGB"
+    # Keep the authored master; tiny props embed the factory 512px tier.
+    image.scale(512, 512)
     image.pack()
     material = bpy.data.materials.new("E2EraPropsSharedMaterial")
     material.use_nodes = True

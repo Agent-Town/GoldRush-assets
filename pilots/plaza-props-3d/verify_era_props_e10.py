@@ -133,6 +133,12 @@ def main() -> None:
     assert len({item["id"] for item in manifest["props"]}) == len(manifest["props"])
     assert ATLAS.read_bytes()[:8] == b"\x89PNG\r\n\x1a\n"
 
+    # The source atlas stays full resolution; verify the factory-sized derivative too.
+    recipe = load("e10_prop_atlas_recipe", HERE / "build_era_props_e10.py")
+    atlas = next(node.image for node in recipe.material().node_tree.nodes if node.type == "TEX_IMAGE")
+    assert list(atlas.size) == [512, 512] and atlas.packed_file
+    embedded_atlas_sha256 = hashlib.sha256(atlas.packed_file.data).hexdigest()
+
     stable_keys = (
         "nodes", "nodeCount", "bindings", "nodeTransforms", "meshes", "meshNames", "primitives",
         "primitiveMaterials", "triangles", "morphTargets", "targetCounts", "materials",
@@ -144,7 +150,8 @@ def main() -> None:
         "bundleRequirement": "Bridge School + Charter Press with child lever + Ark persistence rack + idle/cruise/ward engine-glow states",
         "siteReset": "E10 floodReset:true; no Basin Rim accessories survive into the Ark deck",
         "stateBoundary": "engine glow siblings are banked; ordinary era-prop manifest has no engine-state selector",
-        "sharedAtlas": {"path": str(ATLAS.relative_to(ROOT)), "sha256": sha256(ATLAS), "size": [1024, 1024]},
+        "sharedAtlas": {"path": str(ATLAS.relative_to(ROOT)), "sha256": sha256(ATLAS), "size": [1024, 1024],
+                        "embeddedSize": [512, 512], "embeddedSha256": embedded_atlas_sha256},
         "assets": {},
     }
     contracts = {}
@@ -167,7 +174,7 @@ def main() -> None:
         assert checked["primitiveMaterials"] == [0]
         assert checked["triangles"] <= 1_000
         assert checked["materials"] == checked["images"] == checked["embeddedImages"] == 1
-        assert checked["imageDimensions"] == [[1024, 1024]]
+        assert checked["imageDimensions"] == [[512, 512]]
         assert checked["materialTextureBindings"] == [{"material": 0, "baseColorTexture": 0, "image": 0}]
         assert checked["textureSources"] == [0]
         assert checked["cameras"] == checked["lights"] == checked["animations"] == 0
@@ -176,7 +183,7 @@ def main() -> None:
         reproduced_path.unlink(missing_ok=True)
 
     embedded_hashes = {item["embeddedAtlasSha256"] for item in evidence["assets"].values()}
-    assert embedded_hashes == {evidence["sharedAtlas"]["sha256"]}
+    assert embedded_hashes == {evidence["sharedAtlas"]["embeddedSha256"]}
     evidence["placementClearance"] = placement_evidence(manifest, contracts)
     evidence["manifest"] = manifest
     destination = OUT / "e10-ark-props-contract.json"

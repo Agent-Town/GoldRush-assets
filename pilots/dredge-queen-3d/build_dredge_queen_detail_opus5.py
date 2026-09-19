@@ -6,7 +6,7 @@ The shipped pack is READ-ONLY; nothing here writes to it.
 Drop-in contract preserved from the shipped model (rubric: CRAFT LEGALITY):
   nodes, in order          claw, paddle_port, paddle_starboard, hold
   meshes                   <node>Mesh, one primitive each, all material 0
-  morphs                   exactly one per node, default weight 0, shipped names
+  morphs                   damage at index 0; claw also Cycle_OpenGrab at index 1
   node transforms          identity (vertex-level normalisation, never obj.scale)
   material                 one, metallic 0, roughness 0.9, double-sided, non-emissive
   images                   one embedded PNG
@@ -22,11 +22,12 @@ import hashlib
 import importlib.util
 import json
 import math
+import re
 import sys
 
 import bpy
 import numpy as np
-from mathutils import Vector
+from mathutils import Vector, Matrix
 
 sys.dont_write_bytecode = True
 
@@ -400,6 +401,11 @@ def build_claw(material: bpy.types.Material) -> list[bpy.types.Object]:
     # Damage-only scrap, hidden inside the intact housing until Act 3.
     for shard, at in enumerate(((-4.34, -0.10, 3.08), (-4.28, 0.08, 3.04), (-4.38, 0.0, 2.96))):
         parts.append(kit.box(f"Hidden claw chain scrap {shard}", (0.24, 0.07, 0.06), at, "damage", material, 0.002, damage_group=f"DamageClawShard{shard}"))
+    for part in parts:
+        match = re.match(r"Grab talon (?:band |ridge |ram )?(\d+)", part.name)
+        if match:
+            group = part.vertex_groups.new(name=f"CycleTalon{match[1]}")
+            group.add(list(range(len(part.data.vertices))), 1, "REPLACE")
     return parts
 
 
@@ -746,6 +752,19 @@ def add_damage_shapes(claw, paddle_port, paddle_starboard, hold) -> None:
             key.value = 0.0
 
 
+def add_claw_cycle(claw, pivots) -> None:
+    """Open each rigid talon around its ram-head attachment; retain damage independently."""
+    key = claw.shape_key_add(name="Cycle_OpenGrab")
+    for finger, degrees in enumerate((40, 140, 220, 320)):
+        angle = math.radians(degrees)
+        rotation = Matrix.Rotation(math.radians(-9), 3, Vector((-math.sin(angle), math.cos(angle), 0)))
+        indices = kit.group_vertex_indices(claw, f"CycleTalon{finger}")
+        assert indices, f"missing articulated talon {finger}"
+        for index in indices:
+            key.data[index].co = pivots[finger] + rotation @ (key.data[index].co - pivots[finger])
+    key.value = 0
+
+
 def strip_micro_bevels(parts: list[bpy.types.Object]) -> None:
     """Spend triangles on silhouette, not on edge loops the run camera cannot resolve."""
     detail_words = ("seam", "baluster", "rivet", "mullion", "strap", "stay", "rigging", "reef", "bracket", "bolt", "rib", "bracket")
@@ -778,8 +797,15 @@ def main() -> None:
     hold = kit.join_component("hold", groups["hold"], material, REGIONS)
     objects = (claw, paddle_port, paddle_starboard, hold)
 
+    minimum, maximum = kit.world_bounds(objects)
+    origin = Vector(((minimum.x + maximum.x) / 2, (minimum.y + maximum.y) / 2, minimum.z))
+    scale = MODEL_LENGTH / (maximum.x - minimum.x)
+    pivots = [(Vector((-4.46 + math.cos(math.radians(a)) * 0.30,
+                       math.sin(math.radians(a)) * 0.30, 3.02)) - origin) * scale
+              for a in (40, 140, 220, 320)]
     kit.normalize_base_center(objects, 0, MODEL_LENGTH)
     add_damage_shapes(*objects)
+    add_claw_cycle(claw, pivots)
 
     minimum, maximum = kit.world_bounds(objects)
     triangles = kit.triangle_count(objects)

@@ -30,13 +30,14 @@ E10_BUNDLE = ROOT / "specs/epoch-saga/e10-deepsky-bundle.md"
 
 BASE_SHA = "d944dc7ebd690141d52f363d38aa6dc1a83f4343"
 ATLAS_SIZE = 2048
+EXPORT_ATLAS_SIZE = 1024
 TRIANGLE_BUDGET = 20_000
 DECK_RADIUS = 23.0
 WALK_RELIEF_LIMIT = 0.05
 
 PINNED_SOURCE_HASHES = {
-    TOWN_BUILDER: "d46c3799bf395387ac62c22074fa9bc5b2cc2c0be9549c8382ca4395b4e286ce",
-    TOWN_LAYOUT: "6d000feac3c0e2e14051f287205e5450b3b701bec4c44e513613a34ea39017d0",
+    TOWN_BUILDER: "72e0e6dab3f87b828bc359237a0623013597935cde8a5ee9a39d283998ccca8f",
+    TOWN_LAYOUT: "4a37251dd571c9a72436b18e5105d27266957e3f1714bd05e5b97c6626319195",
     ARK_PLATE: "462ad2e6a2e687111bf137aff5811ea639661f16be320e09fcc60033196d3475",
     E10_PLATE: "19f79418c8e9aa8bbee493c8fc9c88d8d5364ce21576d8fd5f05304eee80614b",
     PAN_SHRINE: "fa388fd06fea386bd51d14d643aa881ffd1323c7feca61e231218bec015c3236",
@@ -151,6 +152,8 @@ def make_atlas() -> bpy.types.Image:
     image.pixels.foreach_set(pixels.ravel())
     image.filepath_raw = str(TEMP_ATLAS)
     image.file_format = "PNG"
+    # Preserve the authored 2048px atlas recipe; embed the family-cap derivative.
+    image.scale(EXPORT_ATLAS_SIZE, EXPORT_ATLAS_SIZE)
     image.save()
     image.pack()
     return image
@@ -643,6 +646,33 @@ def join_parts(material) -> bpy.types.Object:
     if not result.data.materials:
         result.data.materials.append(material)
     result.location = (0.0, 0.0, 0.0)
+    # Freeze Blender's existing tessellation in canonical loop order, as in Claim Boat.
+    old = result.data
+    old.calc_loop_triangles()
+    triangles = []
+    for triangle in old.loop_triangles:
+        loops = list(triangle.loops)
+        first = min(range(3), key=lambda i: old.loops[loops[i]].vertex_index)
+        loops = loops[first:] + loops[:first]
+        triangles.append((
+            [old.loops[i].vertex_index for i in loops],
+            [tuple(old.uv_layers.active.data[i].uv) for i in loops],
+            old.polygons[triangle.polygon_index].use_smooth,
+            [tuple(old.corner_normals[i].vector) for i in loops],
+        ))
+    triangles.sort(key=lambda row: tuple(row[0]))
+    mesh = bpy.data.meshes.new("ArkPlazaE10Canonical")
+    mesh.from_pydata([tuple(v.co) for v in old.vertices], [], [row[0] for row in triangles])
+    mesh.update()
+    uv = mesh.uv_layers.new(name=old.uv_layers.active.name)
+    for polygon, (_, coords, smooth, _) in zip(mesh.polygons, triangles):
+        polygon.use_smooth = smooth
+        for index, coord in zip(polygon.loop_indices, coords):
+            uv.data[index].uv = coord
+    mesh.normals_split_custom_set([normal for _, _, _, normals in triangles for normal in normals])
+    mesh.materials.append(material)
+    result.data = mesh
+    bpy.data.meshes.remove(old)
     return result
 
 
@@ -689,7 +719,7 @@ def write_contract(obj: bpy.types.Object, flat_walk: dict) -> None:
             "triangleBudget": TRIANGLE_BUDGET,
             "meshTree": [obj.name],
             "materials": 1,
-            "atlas": [ATLAS_SIZE, ATLAS_SIZE],
+            "atlas": [EXPORT_ATLAS_SIZE, EXPORT_ATLAS_SIZE],
             "lights": 0,
             "cameras": 0,
             "origin": "base-center; deck top y=0 after GLTF Y-up conversion",

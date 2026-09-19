@@ -88,16 +88,16 @@
   ],
   "files": {
     "blend": {
-      "bytes": 767730,
-      "sha256": "e2c5783c1f1f50cf348c818efd85d5baed9f36a5baf511d4e0f55c1074af02ac"
+      "bytes": 1696473,
+      "sha256": "f14a1fdd92ff2bbd4cdfcaca517fa8333f7c758408dd70bdb91fcdfbb3e08c72"
     },
     "glb": {
-      "bytes": 737052,
-      "sha256": "50f7c28128b87a7853d3dd20b1ddcb942f2b09374310e23592462f1a2f26c391"
+      "bytes": 1662328,
+      "sha256": "4f9ca8b5434986e5a7f723bc90096a52760ad2dfa78feec1b1f60ff03f04022f"
     },
     "atlas": {
-      "bytes": 636866,
-      "sha256": "93a262c9b636c5e18ed5a7414135055f5e0cbb3ce3ca70d58f23d67df2c143c8"
+      "bytes": 1562143,
+      "sha256": "0eb0d9804eab4d92d67adef3a94def430113135f6c0f5765ad6210ebba3f8e0e"
     }
   }
 }

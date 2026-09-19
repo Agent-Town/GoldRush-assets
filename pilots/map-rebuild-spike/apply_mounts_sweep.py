@@ -223,7 +223,10 @@ def canonical_mounts(key: str, terrain: dict, pack: dict) -> list[dict]:
         if not mounts:
             raise ValueError(f"{key} has no existing mount positions to backfill")
         return [{**entry, "asset": assets[entry["id"]]} for entry in mounts]
-    return [mount(identifier, x, y, z, yaw, scale, assets[identifier]) for identifier, x, y, z, yaw, scale in CANONICAL[key]]
+    mounts = [mount(identifier, x, y, z, yaw, scale, assets[identifier]) for identifier, x, y, z, yaw, scale in CANONICAL[key]]
+    if key == "mare-claim":
+        mounts.extend(read_json(OUT / "landmarks/mare-dome/mare-dome-landmark-pack-contract.json")["mounts"])
+    return mounts
 
 
 def update_contracts(key: str) -> list[dict]:

@@ -7,7 +7,7 @@
   "heightSocket": "Terrain.visualY",
   "maskTruth": {
     "source": "assets/contracts/epoch-1-frontier/manifest.json devTiles[id=gt-water-mask-braid]",
-    "status": "the true-braid sculpt has landed; this mesh is cut to twin-banks-true-braid-dev. Production Twin Banks still runs legacy band water, so the paired contract switch (tileParams.waterMask + a mask-driven water surface) must land with this sculpt.",
+    "status": "Production Twin Banks and this sculpt share twin-banks-true-braid-dev; gameplay water classification and visible braid ribbons use the authored mask.",
     "waterMask": {
       "id": "twin-banks-true-braid-dev",
       "regions": [
@@ -266,7 +266,7 @@
       "id": "floodplain_dressing_pack",
       "position": [
         0.0,
-        0.097163,
+        0.0,
         0.0
       ],
       "rotation": [
@@ -280,7 +280,7 @@
         1.0
       ],
       "asset": "landmarks/twin-banks/floodplain_dressing_pack.glb",
-      "terrainConformOffsetY": 0.097163
+      "terrainConformOffsetY": 0
     }
   ],
   "panoramaMount": {

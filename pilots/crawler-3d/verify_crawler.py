@@ -1,6 +1,7 @@
 from pathlib import Path
 import hashlib
 import json
+import math
 import struct
 
 import bpy
@@ -108,6 +109,7 @@ def contract(path: Path) -> dict:
         "nodeCount": len(nodes),
         "bindings": bindings,
         "nodeTransforms": transforms,
+        "collectorAnchor": next((node.get("extras", {}).get("collectorAnchor") for node in nodes if node.get("name") == "drain_mast"), None),
         "meshes": len(meshes),
         "meshNames": [mesh.get("name") for mesh in meshes],
         "primitives": len(primitives),
@@ -151,6 +153,17 @@ def main() -> None:
     assert not source_scene["cameras"]
     assert not source_scene["lights"]
     assert not source_scene["actions"]
+    mast = bpy.data.objects["drain_mast"]
+    group = mast.vertex_groups["CollectorAnchor"].index
+    indices = [v.index for v in mast.data.vertices if any(g.group == group for g in v.groups)]
+    assert indices and set(checked["collectorAnchor"]) == {"intact", "damaged"}
+    for state, key_name in (("intact", "Basis"), ("damaged", "Damage_ToppledDrainMast")):
+        points = mast.data.shape_keys.key_blocks[key_name].data
+        center = [sum(points[i].co[axis] for i in indices) / len(indices) for axis in range(3)]
+        expected = [center[0], center[2], -center[1]]
+        actual = checked["collectorAnchor"][state]
+        assert len(actual) == 3 and all(math.isfinite(value) for value in actual)
+        assert all(abs(a - b) < 1e-6 for a, b in zip(actual, expected)), (state, actual, expected)
     bpy.ops.object.select_all(action="DESELECT")
     for obj in mesh_objects:
         obj.select_set(True)
@@ -165,6 +178,7 @@ def main() -> None:
         export_animations=False,
         export_materials="EXPORT",
         export_morph=True,
+        export_extras=True,
     )
     reexported = contract(REEXPORT)
     stable_keys = (
@@ -172,6 +186,7 @@ def main() -> None:
         "nodeCount",
         "bindings",
         "nodeTransforms",
+        "collectorAnchor",
         "meshes",
         "meshNames",
         "primitives",

@@ -199,9 +199,17 @@ def verify(key: str) -> None:
     terrain = read_json(OUT / f"{key}-terrain-contract.json")
     pack = read_json(OUT / "landmarks" / key / f"{key}-landmark-pack-contract.json")
     mounts = terrain["landmarkMounts"]
+    if key == "mare-claim":
+        domes = read_json(OUT / "landmarks/mare-dome/mare-dome-landmark-pack-contract.json")["mounts"]
+        assert tuple(m["id"] for m in domes) == ("west-air-pad-dome", "central-air-pad-dome", "east-air-pad-dome")
+        assert [m["position"] for m in domes] == [[-18, .08, 0], [0, .08, 0], [18, .08, 0]]
+        assert all(m["contractIds"] == ["e8-mare-claim", "e8-eclipse"] for m in domes)
+        assert all((OUT / m["asset"]).is_file() for m in domes)
+        assert mounts[-3:] == domes
+        mounts = mounts[:-3]
     expected = EXPECTED[key]
     assert tuple(mount["id"] for mount in mounts) == expected
-    assert pack["mounts"] == mounts
+    assert pack["mounts"] == terrain["landmarkMounts"]
     assert pack["mountInterlock"] == "resolved-3d-d"
     assert "proposedIds" not in pack
     assert terrain["landmarkPack"]["contract"] == f"landmarks/{key}/{key}-landmark-pack-contract.json"

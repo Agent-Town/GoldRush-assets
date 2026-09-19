@@ -33,7 +33,8 @@ claim.mathutils = mathutils
 
 HALF = 32.0
 SEGMENTS = 128
-ATLAS_SIZE = 2048
+ATLAS_SIZE = 1254
+SOURCE_ATLAS = ROOT / "assets/raw/dry-gulch-terrain-atlas-v2.png"
 SPRING_X = -18.0
 SPRING_Z = -18.0
 SPRING_RADIUS = 1.4
@@ -87,78 +88,19 @@ def terrain_height(x, z):
 
     perimeter = smoothstep(29.0, 32.0, np.maximum(ax, az))
     height = height * (1.0 - perimeter) + np.minimum(height, 2.55) * perimeter
-    return np.clip(height, -0.58, 2.75)
+    height = np.clip(height, -0.58, 2.75)
+    dx, dz = x - SPRING_X, z - SPRING_Z
+    angle = np.arctan2(dz, dx)
+    radius = np.hypot(dx, dz) / (1 + 0.06 * np.sin(angle * 3) + 0.025 * np.sin(angle * 7))
+    return height - 0.28 * (1 - smoothstep(0.65, 1.65, radius))
 
 
 def make_atlas():
-    bank_a = claim.image_pixels(claim.BANK_A)
-    bank_b = claim.image_pixels(claim.BANK_B)
-    bank_c = claim.image_pixels(claim.BANK_C)
-    axis = np.linspace(0.0, 1.0, ATLAS_SIZE, dtype=np.float32)
-    u, v = np.meshgrid(axis, axis)
-    x = (u - 0.5) * HALF * 2.0
-    z = (v - 0.5) * HALF * 2.0
-
-    clean = claim.tiled_sample(bank_b, u, v, 3.15, 0.12, 0.35)
-    rock = claim.tiled_sample(bank_c, u, v, 3.65, 0.57, 0.08)
-    wash_texture = claim.tiled_sample(bank_a, u, v, 2.35, 0.27, 0.48)
-    macro = (np.sin(x * 0.13 + z * 0.09) * 0.5 + 0.5)[..., None]
-    atlas = wash_texture * (0.42 + macro * 0.06) + clean * 0.30 + rock * (0.28 - macro * 0.04)
-    atlas *= np.array((1.02, 0.82, 0.61), dtype=np.float32)
-
-    washes = np.clip(
-        wash_mask(x, z, -12.0, -14.0, 38.0, 4.2, -0.55)
-        + wash_mask(x, z, 14.0, 10.0, 42.0, 3.6, 0.34),
-        0.0,
-        1.0,
-    )
-    wash_bed = wash_texture * np.array((0.70, 0.58, 0.42), dtype=np.float32)
-    atlas = atlas * (1.0 - washes[..., None] * 0.42) + wash_bed * washes[..., None] * 0.42
-
-    # Failed extraction ground: tailings, wheel scars, and pale mineral crusts
-    # are concentrated around the old workings instead of evenly decorating it.
-    tailings = np.clip(
-        gaussian(x, z, 2.0, -5.8, 8.0, 5.2)
-        + gaussian(x, z, 10.5, 14.5, 7.0, 5.0) * 0.42,
-        0.0,
-        1.0,
-    )
-    wheel_scars = np.clip(
-        claim.rotated_gaussian(x, z, -3.0, -4.0, 15.0, 0.18, -0.15)
-        + claim.rotated_gaussian(x, z, -3.0, -3.2, 15.0, 0.18, -0.15),
-        0.0,
-        1.0,
-    )
-    crust = np.clip(
-        claim.ring_mask(x, z, 2.0, -5.8, 3.2, 0.48)
-        + claim.ring_mask(x, z, -18.0, -18.0, 3.7, 0.44),
-        0.0,
-        1.0,
-    )
-    scar = wash_texture * np.array((0.34, 0.24, 0.14), dtype=np.float32)
-    damage = np.clip(tailings * 0.35 + wheel_scars * 0.82, 0.0, 1.0)
-    atlas = atlas * (1.0 - damage[..., None] * 0.48) + scar * damage[..., None] * 0.48
-    mineral = rock * np.array((0.82, 0.74, 0.56), dtype=np.float32)
-    atlas = atlas * (1.0 - crust[..., None] * 0.24) + mineral * crust[..., None] * 0.24
-
-    spring_distance = np.hypot(x - SPRING_X, z - SPRING_Z)
-    damp = 1.0 - smoothstep(SPRING_RADIUS * 1.05, 4.6, spring_distance)
-    oasis = atlas * np.array((0.48, 0.58, 0.31), dtype=np.float32)
-    atlas = atlas * (1.0 - damp[..., None] * 0.44) + oasis * damp[..., None] * 0.44
-
-    edge = smoothstep(28.0, 31.8, np.maximum(np.abs(x), np.abs(z)))[..., None]
-    parchment = claim.tiled_sample(wash_texture, u, v, 1.40, 0.37, 0.16) * np.array((0.76, 0.61, 0.43), dtype=np.float32)
-    atlas = atlas * (1.0 - edge * 0.68) + parchment * edge * 0.68
-    atlas = claim.apply_grit_grade(atlas, bank_a, u, v, "dry-gulch")
-
-    rgba = np.ones((ATLAS_SIZE, ATLAS_SIZE, 4), dtype=np.float32)
-    rgba[:, :, :3] = atlas
-    image = bpy.data.images.new("DryGulchPaintedTerrainAtlas", ATLAS_SIZE, ATLAS_SIZE, alpha=True)
+    """Use the native-authored ledger albedo; geometry and masks remain code-owned."""
+    ATLAS.write_bytes(SOURCE_ATLAS.read_bytes())
+    image = bpy.data.images.load(str(ATLAS), check_existing=False)
+    assert tuple(image.size) == (ATLAS_SIZE, ATLAS_SIZE)
     image.colorspace_settings.name = "sRGB"
-    image.pixels.foreach_set(rgba.ravel())
-    image.filepath_raw = str(ATLAS)
-    image.file_format = "PNG"
-    image.save()
     image.pack()
     return image
 
@@ -203,7 +145,7 @@ def make_terrain(material):
 
 
 def make_pond(materials):
-    water_height = float(terrain_height(SPRING_X, SPRING_Z)) + 0.08
+    water_height = float(terrain_height(SPRING_X, SPRING_Z)) + 0.1875
     bpy.ops.mesh.primitive_cylinder_add(vertices=48, radius=SPRING_RADIUS, depth=0.045, location=(SPRING_X, -SPRING_Z, water_height))
     pond = bpy.context.object
     pond.name = "RenderHelperDryGulchSpring"
@@ -333,6 +275,7 @@ def make_contract(terrain, preview, county_stats):
         "waterTruth": {"kind": "spring_pond", "x": SPRING_X, "z": SPRING_Z, "radius": SPRING_RADIUS},
         "heightfieldTruth": {
             "springBasin": {"x": SPRING_X, "z": SPRING_Z, "radius": 7.5, "depth": 0.68},
+            "springBed": {"x": SPRING_X, "z": SPRING_Z, "depth": 0.28, "innerRadius": 0.65, "outerRadius": 1.65, "angularWarp": [0.06, 0.025]},
             "washes": ["southwest-arroyo", "east-mesa-wash"],
         },
         "landmarkMountSpace": claim.landmark_mount_space(),
@@ -341,7 +284,7 @@ def make_contract(terrain, preview, county_stats):
             claim.landmark_mount("abandoned_farmhouse", 10.5, 14.5, -0.12),
             claim.landmark_mount("cactus_thicket", 18.3, 0.0),
             claim.landmark_mount("bison_skeleton", -8.0, 12.5, 0.18),
-            claim.landmark_mount("isolated_spring", SPRING_X, SPRING_Z),
+            {**claim.landmark_mount("isolated_spring", SPRING_X, SPRING_Z), "position": [SPRING_X, 0.28, SPRING_Z]},
         ],
         "panoramaMount": claim.panorama_mount("dry-gulch"),
         "ownerPreview": {
@@ -351,7 +294,7 @@ def make_contract(terrain, preview, county_stats):
             "objects": len(preview),
             "exteriorSurround": county_stats,
         },
-        "sourceArt": [
+        "sourceArt": [str(SOURCE_ATLAS.relative_to(ROOT))] + [
             str(path.relative_to(ROOT))
             for path in (
                 claim.BANK_A,

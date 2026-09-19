@@ -81,12 +81,29 @@
         "id": "last-warm-vent",
         "x": 3,
         "z": -10,
-        "lossCondition": true
+        "heroStart": true
       }
     ],
     "rails": [],
     "waterSources": [],
-    "harvestAnchors": [],
+    "harvestAnchors": [
+      {
+        "x": -6,
+        "z": -24
+      },
+      {
+        "x": -20,
+        "z": -34
+      },
+      {
+        "x": -38,
+        "z": -22
+      },
+      {
+        "x": -54,
+        "z": -12
+      }
+    ],
     "heightfield": {
       "id": "ember-shore-cooling-veins",
       "mode": "visual"

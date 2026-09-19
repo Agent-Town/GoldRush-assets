@@ -164,13 +164,10 @@ def verify_terrain(key, config):
     assert extras["height_socket"] == "Terrain.visualY"
     assert extras["contract_id"] == config["id"] and extras["tile_id"] == config["id"]
     assert contract["maskTruth"] == mask_document["maskTruth"]
-    assert contract["simulation"].endswith("remain unchanged")
+    assert contract["renderOnly"] is True
+    assert contract["waterAgreement"] == mask_document["waterAgreement"]
     if (MASK_TABLES / f"e2-{key}.json").is_file():
-        assert contract["waterAgreement"] == mask_document["waterAgreement"]
         assert contract["waterVisualRuling"].startswith("render bank seam follows")
-    else:
-        assert contract["waterAgreement"]["deepBand"] == {"minZ": -5.0, "maxZ": 5.0}
-        assert contract["waterAgreement"]["shallowsEnd"] == {"minZ": -6.25, "maxZ": 6.25}
     assert len(contract["landmarkMounts"]) == config["mounts"]
     assert len({mount["id"] for mount in contract["landmarkMounts"]}) == config["mounts"]
     assert all(

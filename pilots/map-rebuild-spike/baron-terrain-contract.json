@@ -83,7 +83,7 @@
         1.0
       ],
       "asset": "landmarks/baron/fortified_far_bank.glb",
-      "terrainConformOffsetY": 0.0
+      "terrainConformOffsetY": 0
     },
     {
       "id": "seized_headframe",
@@ -127,7 +127,7 @@
       "id": "siege_line",
       "position": [
         0.0,
-        -0.005081,
+        0.0,
         -7.4
       ],
       "rotation": [
@@ -141,13 +141,13 @@
         1.0
       ],
       "asset": "landmarks/baron/siege_line.glb",
-      "terrainConformOffsetY": -0.005081
+      "terrainConformOffsetY": 0
     },
     {
       "id": "oxblood_banners",
       "position": [
         0.0,
-        0.563469,
+        0.0,
         0.0
       ],
       "rotation": [
@@ -161,7 +161,7 @@
         1.0
       ],
       "asset": "landmarks/baron/oxblood_banners.glb",
-      "terrainConformOffsetY": 0.563469
+      "terrainConformOffsetY": 0
     }
   ],
   "panoramaMount": {

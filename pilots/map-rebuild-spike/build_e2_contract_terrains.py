@@ -66,7 +66,7 @@ PROFILES = {
         "mounts": [
             claim.landmark_mount("mine-mouth-and-ruined-headframe", -6, 41, -0.08, 1.35),
             claim.landmark_mount("boiler-house-site", 0, 12, 0, 1.25),
-            claim.landmark_mount("flooded-gallery", 0, 0, 0, 1.15),
+            claim.landmark_mount("flooded-gallery", -18, -7, 0, 1.15),
             claim.landmark_mount("switchback-rail-kit", 0, 25, 0, 1.25),
             claim.landmark_mount("tailings-and-scree-pack", 35, 34, 0.15, 1.25),
         ],
@@ -192,6 +192,9 @@ def authored_contract(contract_id):
 
 
 def authored_mask(key, factory):
+    water = factory["tileParams"]["water"]
+    center = water.get("centerZ", 0)
+    half_width = water.get("halfWidth", SIM_RIVER_HALF_WIDTH)
     path = MASK_TABLES / f"e2-{key}.json"
     if path.is_file():
         document = json.loads(path.read_text(encoding="utf-8"))
@@ -201,9 +204,9 @@ def authored_mask(key, factory):
     return {
         "maskTruth": derived_mask_truth(factory),
         "waterAgreement": {
-            "deepBand": {"minZ": -SIM_RIVER_HALF_WIDTH, "maxZ": SIM_RIVER_HALF_WIDTH},
-            "shallowsEnd": {"minZ": -SIM_SHALLOWS_HALF_WIDTH, "maxZ": SIM_SHALLOWS_HALF_WIDTH},
-            "placeableBankStartsBeyondAbsZ": SIM_SHALLOWS_HALF_WIDTH,
+            "deepBand": {"minZ": center - half_width, "maxZ": center + half_width},
+            "shallowsEnd": {"minZ": center - half_width - 1.25, "maxZ": center + half_width + 1.25},
+            **({"placeableBankStartsBeyondAbsZ": half_width + 1.25} if center == 0 else {"placeableBankOutsideZ": {"minZ": center - half_width - 1.25, "maxZ": center + half_width + 1.25}}),
             "factoryVisualHalfWidth": factory["tileParams"]["water"]["visualHalfWidth"],
         },
     }
@@ -267,8 +270,8 @@ def height_function(key, factory):
                     * (1.0 - smoothstep(zone["maxZ"] - 0.8, zone["maxZ"] + 1.0, z_array))
                 )
                 calm = np.maximum(calm, zone_mask)
-            water = 1.0 - smoothstep(4.8, SIM_SHALLOWS_HALF_WIDTH, np.abs(z_array))
-            return base - water * 0.18 + grain * (1.0 - calm * 0.82) * (1.0 - water)
+            water = 1.0 - smoothstep(4.8, SIM_SHALLOWS_HALF_WIDTH, np.abs(z_array - factory["tileParams"]["water"].get("centerZ", 0)))
+            return base * (1.0 - water) - 0.68 * water + grain * (1.0 - calm * 0.82) * (1.0 - water)
 
         if key in {"pressure-garden", "incline"}:
             base = hill_sim_height(x_array, z_array, analytic)
@@ -431,9 +434,10 @@ def make_atlas(key, profile, factory, mask_document):
 
     water = claim.tiled_sample(river, u, v, 3.4, 0.43, 0.19) * np.array((0.33, 0.37, 0.28), dtype=np.float32)
     water *= 1.0 - claim.engraved_ink(river, u, v, 3.4, 0.43, 0.19)[..., None] * 0.31
-    water_mask = 1.0 - smoothstep(SIM_RIVER_HALF_WIDTH, SIM_SHALLOWS_HALF_WIDTH, az)
+    water_az = np.abs(z - factory["tileParams"]["water"].get("centerZ", 0))
+    water_mask = 1.0 - smoothstep(SIM_RIVER_HALF_WIDTH, SIM_SHALLOWS_HALF_WIDTH, water_az)
     atlas = land * (1.0 - water_mask[..., None]) + water * water_mask[..., None]
-    atlas *= 1.0 - np.exp(-((az - SIM_RIVER_HALF_WIDTH) / 0.48) ** 2)[..., None] * 0.22
+    atlas *= 1.0 - np.exp(-((water_az - SIM_RIVER_HALF_WIDTH) / 0.48) ** 2)[..., None] * 0.22
 
     rail_mask = np.zeros((ATLAS_SIZE, ATLAS_SIZE), dtype=np.float32)
     for rail in factory["tileParams"]["rails"]:
@@ -547,7 +551,7 @@ def make_atlas(key, profile, factory, mask_document):
 
         soot = np.clip(gaussian(x, z, -6, 41, 8, 5) + gaussian(x, z, 0, 12, 7, 5), 0.0, 1.0)
         atlas *= 1.0 - soot[..., None] * 0.22
-        flooded_gallery = (1.0 - smoothstep(2.0, 5.0, az)) * (1.0 - smoothstep(31.0, 44.0, ax))
+        flooded_gallery = (1.0 - smoothstep(2.0, 5.0, water_az)) * (1.0 - smoothstep(31.0, 44.0, ax))
         atlas *= 1.0 - flooded_gallery[..., None] * 0.13
     elif key == "trestle":
         damp = 1.0 - smoothstep(5.0, 14.0, az)
@@ -778,20 +782,34 @@ def make_terrain(key, profile, factory, height_at, material):
     terrain["height_socket"] = "Terrain.visualY"
     terrain["contract_id"] = profile["contractId"]
     terrain["tile_id"] = factory["tileParams"]["tileId"]
-    terrain["water_mask"] = "deep z=-5..5; shallows to +/-6.25; banks remain visible/placeable beyond"
+    terrain["water_mask"] = json.dumps(authored_mask(profile["contractId"].removeprefix("e2-"), factory)["waterAgreement"], sort_keys=True)
     terrain["landmark_ownership"] = "mounted separately; preview proxies excluded from GLB"
     return terrain
 
 
-def make_water_surface(material):
+def make_water_surface(material, factory, height_at):
+    water = factory["tileParams"]["water"]
+    center = water.get("centerZ", 0)
+    half_width = water.get("halfWidth", SIM_RIVER_HALF_WIDTH) + 1.25
+    surface_y = 0.035
+    if factory["id"] == "e2-hill-mine":
+        channel, ford = [], []
+        for x in range(-46, 47):
+            crossing = any(abs(x - f["x"]) <= f["halfWidth"] for f in factory["tileParams"]["fords"])
+            for dz in (-3.5, -2, -1, 0, 1, 2, 3.5):
+                (ford if crossing else channel).append(float(height_at(x, center + dz)))
+        median = lambda values: sorted(values)[len(values) // 2]
+        surface_y = min(median(channel) + 0.42, median(ford) + 0.11)
+        half_width = 5.9
+
     vertices = []
     uvs = []
     faces = []
     segments = 96
     for xi in range(segments + 1):
         x = -HALF + HALF * 2.0 * xi / segments
-        for game_z in (-SIM_SHALLOWS_HALF_WIDTH, SIM_SHALLOWS_HALF_WIDTH):
-            vertices.append((x, -game_z, 0.035))
+        for game_z in (center - half_width, center + half_width):
+            vertices.append((x, -game_z, surface_y))
             uvs.append(((x + HALF) / (HALF * 2.0), (game_z + HALF) / (HALF * 2.0)))
     for xi in range(segments):
         a = xi * 2
@@ -1000,7 +1018,7 @@ def add_frontier_clutter(key, factory, height_at, materials):
     objects = []
 
     def clear(x, z):
-        if abs(z) <= SIM_SHALLOWS_HALF_WIDTH + 1.0:
+        if abs(z - factory["tileParams"]["water"].get("centerZ", 0)) <= factory["tileParams"]["water"].get("halfWidth", SIM_RIVER_HALF_WIDTH) + 2.25:
             return False
         for rail in factory["tileParams"]["rails"]:
             for a, b in zip(rail["points"], rail["points"][1:]):
@@ -1326,7 +1344,7 @@ def build(key):
         coat = water_shader.inputs.get("Coat Weight")
         if coat:
             coat.default_value = 0.0
-    water = make_water_surface(water_material)
+    water = make_water_surface(water_material, factory, height_at)
     materials = preview_materials(key)
     preview = add_rails(key, factory, height_at, materials)
     if key == "hill-mine":

@@ -4,6 +4,12 @@ Existing GLBs supply reusable shape vocabulary. Exact shipped paintings supply
 derived silhouettes. New geometry is limited to source-less landmarks. Every
 asset is render-only, base-centred, under 3k triangles, and shares one atlas
 with the other landmarks in its map pack.
+
+Reproduce a current E3 atlas without altering reviewed geometry:
+  Blender --background --python-exit-code 1 --python <this-file> -- \
+    --atlas-only blackout-ridge --out <separate-output-root>
+The output is <root>/<pack>/<pack>-landmarks-atlas.png. Atlas-only writes
+never replace production files or update mount tables and pack hashes.
 """
 
 from __future__ import annotations
@@ -390,9 +396,9 @@ SPECS = {
     "east-wind-anchor": spec("wind-anchor", "derive", "assets/pilots/map-rebuild-spike/landmarks/dome-basin/dust-devil-warning-mast.glb", "assets/raw/plate-e9-enemy-dust-devil.png", variant="east"),
     "north-anchor-gate": spec("storm-anchor-gate", "derive", "assets/pilots/map-rebuild-spike/landmarks/dome-basin/canal-gate-works.glb", "assets/raw/plate-e9-enemy-dust-devil.png", variant="north"),
     "archive-entry-gate": spec("archive-entry-gate", "derive", "assets/pilots/map-rebuild-spike/landmarks/ember-shore/center-vein-bridge-school.glb", "assets/raw/plate-e10-worlds.png"),
-    "west-stack-ruin": spec("archive-stack-ruin", "reuse", "assets/pilots/map-rebuild-spike/landmarks/ember-shore/shore-preserve-rack.glb", "assets/raw/plate-e10-worlds.png", variant="west"),
-    "east-stack-ruin": spec("archive-stack-ruin", "derive", "assets/pilots/map-rebuild-spike/landmarks/ember-shore/shore-preserve-rack.glb", "assets/raw/plate-e10-worlds.png", variant="east"),
-    "warning-shelf-ruin": spec("archive-warning-shelf", "reuse", "assets/pilots/map-rebuild-spike/landmarks/ember-shore/cooled-titan-shelf.glb", "assets/raw/plate-e10-worlds.png"),
+    "west-stack-ruin": spec("archive-stack-ruin", "derive", "assets/raw/plate-contract-e10-archive-world.png", variant="west"),
+    "east-stack-ruin": spec("archive-stack-ruin", "derive", "assets/raw/plate-contract-e10-archive-world.png", variant="east"),
+    "warning-shelf-ruin": spec("archive-warning-shelf", "derive", "assets/raw/plate-contract-e10-archive-world.png"),
     "ours-unless-marker": spec("ours-unless-marker", "derive", "assets/raw/plate-e10-worlds.png", "assets/raw/plate-e10-charter-press-hall.png"),
 }
 
@@ -426,6 +432,64 @@ E2_ROLE_COLORS = {
     "brass": (0.60, 0.390, 0.105),
     "parchment": (0.69, 0.535, 0.300),
     "rust": (0.40, 0.120, 0.030),
+}
+
+# Current E3 atlas provenance: Fairground 7b930acc1; Canyon Works 07bcf8834.
+# Blackout uses the later grounded-stone/brass repair, not its original V1 palette.
+# Moth's shipped PNG and embedded GLB still match 75beb002c, despite its newer atlas metadata.
+E3_ROLE_COLORS = {
+    **ROLE_COLORS,
+    "timber": (0.36, 0.205, 0.080),
+    "iron": (0.155, 0.205, 0.225),
+    "stone": (0.260, 0.285, 0.300),
+    "earth": (0.37, 0.205, 0.080),
+    "water": (0.045, 0.50, 0.46),
+    "cactus": (0.070, 0.25, 0.18),
+    "bone": (0.69, 0.58, 0.37),
+    "cloth": (0.29, 0.050, 0.025),
+    "brass": (0.65, 0.405, 0.095),
+    "soot": (0.035, 0.050, 0.070),
+    "parchment": (0.75, 0.59, 0.32),
+    "rust": (0.42, 0.130, 0.040),
+}
+
+E3_CANYON_ROLE_COLORS = {
+    **ROLE_COLORS,
+    "timber": (0.36, 0.210, 0.090),
+    "iron": (0.180, 0.215, 0.225),
+    "stone": (0.280, 0.300, 0.310),
+    "earth": (0.38, 0.220, 0.095),
+    "water": (0.045, 0.48, 0.44),
+    "cactus": (0.075, 0.25, 0.18),
+    "bone": (0.59, 0.49, 0.30),
+    "cloth": (0.25, 0.050, 0.025),
+    "brass": (0.64, 0.405, 0.095),
+    "soot": (0.045, 0.060, 0.075),
+    "parchment": (0.69, 0.53, 0.275),
+    "rust": (0.43, 0.140, 0.045),
+}
+
+E3_ATLAS_RECIPES = {
+    "blackout-ridge": {
+        "era": 3,
+        "plate": ROOT / "assets/raw/plate-e3-bld-pylon-set.png",
+        "colors": {**E3_ROLE_COLORS, "stone": (0.115, 0.098, 0.078), "brass": (0.78, 0.500, 0.120)},
+    },
+    "canyon-works": {
+        "era": 3,
+        "plate": ROOT / "assets/raw/ter-canyon-atlas.png",
+        "colors": E3_CANYON_ROLE_COLORS,
+    },
+    "fairground": {
+        "era": 3,
+        "plate": ROOT / "assets/raw/plate-e3-bld-arc-lamp.png",
+        "colors": E3_ROLE_COLORS,
+    },
+    "moth-season": {
+        "era": 3,
+        "plate": ROOT / "assets/raw/plate-e3-mothswarm.png",
+        "colors": E3_ROLE_COLORS,
+    },
 }
 
 E4_ROLE_COLORS = {
@@ -511,7 +575,13 @@ def sha256(path):
     return hashlib.sha256(Path(path).read_bytes()).hexdigest()
 
 
-def make_atlas(key, profile):
+def make_atlas(key, profile, *, output_root=None):
+    directory = (LANDMARKS if output_root is None else Path(output_root)) / key
+    directory.mkdir(parents=True, exist_ok=True)
+    path = directory / f"{key}-landmarks-atlas.png"
+    if profile["era"] == 3:
+        # Unknown E3 packs must not silently fall through to the darker default palette.
+        profile = E3_ATLAS_RECIPES[key]
     kit = claim.image_pixels(ROOT / f"assets/processed/kit-era-{profile['era']}.png")
     plate = claim.image_pixels(profile["plate"])
     axis = np.linspace(0.0, 1.0, ATLAS_SIZE, dtype=np.float32)
@@ -525,7 +595,7 @@ def make_atlas(key, profile):
     ink = claim.engraved_ink(plate, u, v, 4.0, 0.29, 0.61)
     atlas = np.zeros((ATLAS_SIZE, ATLAS_SIZE, 3), dtype=np.float32)
     tile = ATLAS_SIZE // TILE_COUNT
-    colors = E2_ROLE_COLORS if profile["era"] == 2 else E4_ROLE_COLORS if profile["era"] == 4 else E5_ROLE_COLORS if profile["era"] == 5 else E7_ROLE_COLORS if profile["era"] == 7 else E8_ROLE_COLORS if profile["era"] == 8 else E9_ROLE_COLORS if profile["era"] == 9 else E10_ROLE_COLORS if profile["era"] == 10 else ROLE_COLORS
+    colors = profile["colors"] if profile["era"] == 3 else E2_ROLE_COLORS if profile["era"] == 2 else E4_ROLE_COLORS if profile["era"] == 4 else E5_ROLE_COLORS if profile["era"] == 5 else E7_ROLE_COLORS if profile["era"] == 7 else E8_ROLE_COLORS if profile["era"] == 8 else E9_ROLE_COLORS if profile["era"] == 9 else E10_ROLE_COLORS if profile["era"] == 10 else ROLE_COLORS
     for role, index in ROLE_INDEX.items():
         row, column = divmod(index, TILE_COUNT)
         y0, y1 = row * tile, (row + 1) * tile
@@ -545,9 +615,6 @@ def make_atlas(key, profile):
         atlas[y0:y1, x0:x1] = patch
     rgba = np.ones((ATLAS_SIZE, ATLAS_SIZE, 4), dtype=np.float32)
     rgba[:, :, :3] = np.clip(atlas, 0.008, 0.82)
-    directory = LANDMARKS / key
-    directory.mkdir(parents=True, exist_ok=True)
-    path = directory / f"{key}-landmarks-atlas.png"
     image = bpy.data.images.new(f"{key.title()}LandmarkAtlas", ATLAS_SIZE, ATLAS_SIZE, alpha=True)
     image.colorspace_settings.name = "sRGB"
     image.pixels.foreach_set(rgba.ravel())
@@ -789,7 +856,9 @@ def finish_asset(parts, identifier, material, pack, source_spec):
         asset.data.update()
         asset.update_tag(refresh={"DATA"})
         bpy.context.view_layer.update()
-    normalize_object(asset)
+    # The spring is authored around a fixed water centre and bank datum.
+    if identifier != "isolated_spring":
+        normalize_object(asset)
     for custom_key in list(asset.keys()):
         del asset[custom_key]
     asset["render_only"] = True
@@ -1559,39 +1628,53 @@ def archive_entry_gate_parts():
 
 def archive_stack_ruin_parts(variant):
     east = variant == "east"
-    tilt = -0.11 if east else 0.09
     parts = [
-        add_box(f"{variant}.StackFoot", (0, 0, 0.04), (7.4, 5.2, 0.24), "soot"),
-        place(import_source(SOURCE["e10_preserve_rack"], "iron", (5.6, 4.2, 5.8)), (0, 0, 0.20), tilt),
+        add_box(f"{variant}.Foundation", (0, 0, 0), (7.4, 5.2, .24), "stone"),
+        add_box(f"{variant}.UpperTerrace", (0, .4, .24), (6.4, 3.7, .35), "stone"),
+        add_box(f"{variant}.Recess", (0, 1.45, .59), (5.3, .3, 4.6), "soot"),
     ]
+    # The plate's books and layered masonry replace the former blank display panel.
     for level in range(3):
-        z = 1.45 + level * 1.55
-        parts.append(add_box(f"{variant}.BrokenShelf.{level}", (0.25 * (level - 1), 0.75, z), (6.0 - level * 0.55, 0.32, 0.18), "timber", tilt + (0.05 if level == 2 else 0.0)))
-    light_count = 2 if east else 1
-    for index in range(light_count):
-        x = (-1.25 if light_count == 2 else 0.0) + index * 2.5
+        base = .65 + level * 1.45
+        parts.append(add_box(f"{variant}.Shelf.{level}", (0, .65, base), (5.2, 1.35, .16), "timber"))
+        for book in range(11):
+            if (book + level + int(east)) % 7 == 0:
+                continue
+            x = -2.25 + book * .44
+            height = .78 + .10 * ((book + level) % 4)
+            role = ("cloth", "timber", "parchment", "rust")[(book + level) % 4]
+            parts.append(add_box(f"{variant}.Book.{level}.{book}", (x, .38, base + .16), (.28, .67, height), role, .035 * ((book % 3) - 1)))
+            parts.append(add_box(f"{variant}.SpineBand.{level}.{book}", (x, .03, base + .32), (.29, .035, .045), "brass"))
+    for side in (-1, 1):
+        height = 5.2 if (side == 1) == east else 5.96
         parts.extend([
-            add_torus(f"{variant}.MemoryHalo.{index}", (x, -2.15, 4.1 + index * 0.55), 0.62, 0.08, "brass", (math.pi * 0.5, 0.0, 0.0)),
-            add_rock(f"{variant}.MemoryGlass.{index}", (x, -2.25, 4.1 + index * 0.55), (0.35, 0.18, 0.42), "water"),
+            add_box(f"{variant}.ColumnBase.{side}", (side * 2.8, .45, .59), (.9, 1.15, .30), "stone"),
+            add_cylinder(f"{variant}.Column.{side}", (side * 2.8, .45, .89), (side * 2.8, .45, height - .3), .31, "stone", 8),
+            add_box(f"{variant}.Capital.{side}", (side * 2.8, .45, height - .3), (.85, .95, .3), "stone"),
         ])
-    parts.extend([
-        add_beam(f"{variant}.FallenFrameA", (-3.1, 2.3, 0.22), (2.0, 2.1, 1.05), 0.16, "iron"),
-        add_box(f"{variant}.UninkedLeaf", (2.35 if east else -2.35, -2.0, 1.0), (1.45, 0.10, 1.75), "parchment", -tilt),
-    ])
+    for course in range(3):
+        parts.append(add_box(f"{variant}.BrokenCornice.{course}", (-.65 + course * .25, 1.15, 5.12 + .2 * course), (4.0 - course * .7, 1.0, .18), "stone"))
+    for i in range(6):
+        parts.append(add_box(f"{variant}.FallenBlock.{i}", (-2.7 + i * 1.05, -1.75 + .15 * (i % 2), .24), (.65, .65, .24 + .1 * (i % 3)), "stone", .21 * (i - 2)))
+    parts.append(add_torus(f"{variant}.MemorySeal", (0, -.16, 4.8), .28, .055, "brass", (math.pi * .5, 0, 0)))
     return parts
 
 
 def archive_warning_shelf_parts():
     parts = [
-        add_box("WarningShelf.Foot", (0, 0, 0.04), (8.4, 5.4, 0.24), "soot"),
-        place(import_source(SOURCE["e10_titan_shelf"], "stone", (6.7, 4.6, 4.8)), (0, 0, 0.20), 0.08),
-        add_box("WarningShelf.EmptyFrame", (0, -2.20, 4.45), (5.2, 0.18, 3.15), "iron", -0.06),
-        add_box("WarningShelf.EmptyDark", (0, -2.32, 4.45), (4.3, 0.10, 2.35), "soot", -0.06),
-        add_beam("WarningShelf.CrackA", (-1.7, -2.40, 3.45), (1.2, -2.40, 5.65), 0.09, "rust"),
-        add_beam("WarningShelf.CrackB", (1.7, -2.40, 3.45), (-0.8, -2.40, 5.50), 0.09, "rust"),
+        add_box("WarningShelf.Foundation", (0, 0, 0), (8.4, 5.4, .24), "stone"),
+        add_box("WarningShelf.Terrace", (0, .35, .24), (7.1, 3.8, .35), "stone"),
+        add_box("WarningShelf.Recess", (0, 1.2, .59), (5.6, .25, 5.2), "soot"),
     ]
+    for level in range(4):
+        parts.append(add_box(f"WarningShelf.EmptyShelf.{level}", (0, .1, .65 + 1.45 * level), (5.6, .65, .14), "timber"))
+    for x in (-.95, .95):
+        parts.append(add_box(f"WarningShelf.Divider.{x}", (x, .35, .65), (.12, 1.0, 4.5), "timber"))
     for side in (-1, 1):
-        parts.append(add_cylinder(f"WarningShelf.HoldLight.{side}", (side * 3.2, 0, 0.25), (side * 3.2, 0, 6.6), 0.15, "water", 8))
+        for course in range(6):
+            parts.append(add_box(f"WarningShelf.Pier.{side}.{course}", (side * 3.05, .55, .59 + course * .9), (.8, 1.5, .85), "stone"))
+        parts.append(add_box(f"WarningShelf.Capital.{side}", (side * 3.05, .55, 5.99), (1.1, 1.7, .3), "stone"))
+    parts.append(add_box("WarningShelf.BrokenLintel", (-.55, .65, 6.29), (5.7, 1.5, .4), "stone"))
     return parts
 
 
@@ -1648,12 +1731,16 @@ def build_parts(identifier, source_spec):
         parts.extend([add_cylinder("Skeleton.HornL", (3.2, 0.25, 0.9), (3.8, 0.9, 1.15), 0.07, "bone", 6), add_cylinder("Skeleton.HornR", (3.2, -0.25, 0.9), (3.8, -0.9, 1.15), 0.07, "bone", 6)])
         return parts
     if kind == "spring":
-        parts = []
-        for index in range(18):
-            angle = math.tau * index / 18
-            parts.append(add_rock(f"Spring.Rock.{index}", (math.cos(angle) * 3.0, math.sin(angle) * 2.2, 0.28), (0.45, 0.34, 0.30), "stone"))
-        bpy.ops.mesh.primitive_cylinder_add(vertices=32, radius=2.7, depth=0.06, location=(0, 0, 0.08))
-        parts.append(role_object(bpy.context.object, "water"))
+        # Broken clusters around the authored pool, with open ground between them.
+        parts=[]
+        # Unequal, overlapping low stones at the bank, with smaller outer debris.
+        for index in range(31):
+            angle=index*2.399963229728653
+            radius=1.38+.15*math.sin(angle*3)+(.26 if index%4==0 else 0)
+            x,y=math.cos(angle)*radius,math.sin(angle)*radius
+            size=.17+(index%5)*.032
+            parts.append(add_rock(f"Spring.Rock.{index}", (x,y,.09+(index%3)*.02),
+                (size*1.25,size,.10+(index%4)*.025), "stone"))
         return parts
     if kind == "winch":
         parts = [add_cylinder("Winch.Drum", (-0.9, 0, 1.45), (0.9, 0, 1.45), 0.58, "timber", 12), add_box("Winch.Base", (0, 0, 0), (4.2, 2.4, 0.28), "timber"), add_beam("Winch.SupportL", (-1.4, 0, 0.2), (-1.0, 0, 2.6), 0.22), add_beam("Winch.SupportR", (1.4, 0, 0.2), (1.0, 0, 2.6), 0.22), add_torus("Winch.Wheel", (1.15, -0.02, 1.5), 0.95, 0.10, "iron")]
@@ -1736,7 +1823,6 @@ def build_parts(identifier, source_spec):
         parts.extend([
             add_beam("Gallery.BraceA", (-3.2, -1.2, 0.2), (3.0, -1.2, 2.8), 0.15),
             add_beam("Gallery.BraceB", (3.2, 1.2, 0.2), (-3.0, 1.2, 2.8), 0.15),
-            add_box("Gallery.MurkySump", (0, -1.65, 0.03), (7.8, 2.4, 0.06), "water"),
             add_beam("Gallery.FallenProp", (-3.8, -2.2, 0.08), (2.9, -2.0, 0.62), 0.17, "timber"),
         ])
         for x in (-0.55, 0.55):
@@ -2686,11 +2772,16 @@ def build_pack(key):
     mount_agnostic = not terrain_contract["landmarkMounts"] and bool(profile.get("bodies"))
     original_mounts = json.loads(json.dumps(terrain_contract["landmarkMounts"]))
     original_mounts_by_id = {mount["id"]: mount for mount in original_mounts}
-    mounts = {mount["id"]: mount for mount in terrain_contract["landmarkMounts"]}
+    owned_mounts = terrain_contract["landmarkMounts"]
+    if key == "mare-claim":
+        supplemental = json.loads((LANDMARKS / "mare-dome/mare-dome-landmark-pack-contract.json").read_text())["mounts"]
+        assert all(mount in owned_mounts for mount in supplemental)
+        owned_mounts = [mount for mount in owned_mounts if mount not in supplemental]
+    mounts = {mount["id"]: mount for mount in owned_mounts}
     for mount in mounts.values():
         previous_offset = float(mount.pop("terrainConformOffsetY", 0.0))
         mount["position"][1] = round(float(mount["position"][1]) - previous_offset, 6)
-    identifiers = profile["bodies"] if mount_agnostic else [mount["id"] for mount in terrain_contract["landmarkMounts"]]
+    identifiers = profile["bodies"] if mount_agnostic else list(mounts)
     missing_specs = sorted(set(identifiers) - set(SPECS))
     if missing_specs:
         raise ValueError(f"missing landmark source specs for {key}: {missing_specs}")
@@ -2740,7 +2831,7 @@ def build_pack(key):
         }
         if identifier == "seven_lantern_terraces":
             records[identifier]["authoredFixturePositions"] = NIGHT_LANTERN_FIXTURES
-    for mount in terrain_contract["landmarkMounts"]:
+    for mount in owned_mounts:
         mount["asset"] = records[mount["id"]]["asset"]
     if key in {"hill-mine", "trestle"}:
         # This quality pass is a file replacement only. The registry already
@@ -2795,21 +2886,41 @@ def build_pack(key):
 
 def main():
     args = sys.argv[sys.argv.index("--") + 1:] if "--" in sys.argv else []
+    if "--atlas-only" in args:
+        import argparse
+        parser = argparse.ArgumentParser(description="Reproduce current E3 atlases without rebuilding geometry or mount tables.")
+        parser.add_argument("--atlas-only", choices=sorted(E3_ATLAS_RECIPES), required=True)
+        parser.add_argument("--out", type=Path, required=True, help="Separate output root; each pack gets its own subdirectory.")
+        options = parser.parse_args(args)
+        destination = options.out.resolve()
+        if destination == LANDMARKS.resolve() or LANDMARKS.resolve() in destination.parents:
+            raise ValueError("Use a separate output root: replacing a shipped atlas also requires re-exporting its GLBs and updating hashes.")
+        _, path = make_atlas(options.atlas_only, E3_ATLAS_RECIPES[options.atlas_only], output_root=destination)
+        print(json.dumps({"pack": options.atlas_only, "atlas": str(path), "sha256": sha256(path)}, indent=2))
+        return
     keys = args or list(PACKS)
+    if any(key in E3_ATLAS_RECIPES for key in keys):
+        raise ValueError("Use --atlas-only <E3-pack> --out <destination> for current atlas recipes; retain the reviewed .blend geometry and pack-specific repair scripts.")
+    if "archive-world" in keys:
+        raise ValueError("Use build_archive_landmarks.py --out <destination> for the reviewed Archive geometry, native atlas and planar UVs.")
+    if "showroom" in keys:
+        raise ValueError("Use build_showroom_landmarks.py --out <destination> for the furnished Showroom geometry, native atlas and walk surfaces.")
+    if any(key in {"the-claim", "dry-gulch", "night-shift", "twin-banks", "baron"} for key in keys):
+        raise ValueError(
+            "This recipe predates the owner's E1 replacement verdict. Author from each body's "
+            ".blend, or reproduce the accepted sources with scripts/rebuild-accepted-e1-landmarks.py. "
+            "Select only later packs when using this builder."
+        )
     ledger_path = LANDMARKS / "landmark-source-ledger.json"
     ledger = json.loads(ledger_path.read_text(encoding="utf-8")) if ledger_path.exists() else {
         "law": "reuse > derive > build-new; era-stamped; grit-dressed",
         "packs": {},
     }
-    # A scoped rebuild must never erase the other maps from the shared source
-    # ledger. Recover any omitted entries from their already-shipped contracts.
-    for pack_key in PACKS:
-        if pack_key in ledger["packs"]:
-            continue
-        contract_path = LANDMARKS / pack_key / f"{pack_key}-landmark-pack-contract.json"
-        if not contract_path.exists():
-            continue
+    # Other builders also author packs. Refresh the shared ledger from every
+    # shipped contract, not just the recipes this builder happens to know.
+    for contract_path in sorted(LANDMARKS.glob("*/*-landmark-pack-contract.json")):
         contract = json.loads(contract_path.read_text(encoding="utf-8"))
+        pack_key = contract["map"]
         ledger["packs"][pack_key] = {
             identifier: {
                 "sourceTier": record["sourceTier"],

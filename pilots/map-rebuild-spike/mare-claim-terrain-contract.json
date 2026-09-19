@@ -478,6 +478,75 @@
         1.0
       ],
       "asset": "landmarks/mare-claim/east-rim-debris-catcher.glb"
+    },
+    {
+      "id": "west-air-pad-dome",
+      "position": [
+        -18,
+        0.08,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "asset": "landmarks/mare-dome/air-pad-dome.glb",
+      "contractIds": [
+        "e8-mare-claim",
+        "e8-eclipse"
+      ]
+    },
+    {
+      "id": "central-air-pad-dome",
+      "position": [
+        0,
+        0.08,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "asset": "landmarks/mare-dome/air-pad-dome.glb",
+      "contractIds": [
+        "e8-mare-claim",
+        "e8-eclipse"
+      ]
+    },
+    {
+      "id": "east-air-pad-dome",
+      "position": [
+        18,
+        0.08,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "asset": "landmarks/mare-dome/air-pad-dome.glb",
+      "contractIds": [
+        "e8-mare-claim",
+        "e8-eclipse"
+      ]
     }
   ],
   "verdictPreviewOnly": {

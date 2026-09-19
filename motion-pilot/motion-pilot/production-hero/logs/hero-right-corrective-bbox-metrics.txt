@@ -1,8 +1,0 @@
-frame-01.png 798x846+0+18
-frame-02.png 447x846+218+18
-frame-03.png 462x852+226+9
-frame-04.png 348x857+252+4
-frame-05.png 367x848+236+12
-frame-06.png 434x847+210+17
-frame-07.png 474x850+216+11
-frame-08.png 305x859+277+5

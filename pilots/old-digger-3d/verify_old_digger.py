@@ -20,7 +20,8 @@ REEXPORT = Path("/tmp/old-digger-reexport.glb")
 REFERENCE = ROOT / "assets/raw/boss-old-digger.png"
 GENTLE_REFERENCE = ROOT / "assets/raw/boss-old-digger-gentle.png"
 EXPECTED = {
-    "bucket_wheels": "Redemption_GentleBuckets",
+    "bucket_wheel_port": "Redemption_GentleBuckets",
+    "bucket_wheel_starboard": "Redemption_GentleBuckets",
     "gantry": "Redemption_SafeGantry",
     "tape_deck": "Redemption_TealTapeDeck",
 }
@@ -85,9 +86,9 @@ def main() -> None:
     (HERE / "old-digger-asset-contract.json").write_text(json.dumps(evidence, indent=2) + "\n")
 
     assert set(checked["nodes"]) == set(EXPECTED)
-    assert checked["nodeCount"] == checked["meshes"] == checked["primitives"] == 3
+    assert checked["nodeCount"] == checked["meshes"] == checked["primitives"] == 4
     assert checked["triangles"] <= 12_000
-    assert checked["primitiveMaterials"] == [0, 0, 0]
+    assert checked["primitiveMaterials"] == [0, 0, 0, 0]
     assert checked["materials"] == checked["images"] == checked["embeddedImages"] == 1
     assert checked["imageDimensions"] == [[1024, 1024]]
     assert checked["cameras"] == checked["lights"] == checked["animations"] == 0

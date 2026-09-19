@@ -155,8 +155,8 @@ def main() -> None:
         "sourcePlate": "assets/raw/plate-e2-boss-component.png",
         "railGauge": 0.78,
         "sleeperSpacing": 0.90,
-        "chosenLength": 2.40,
-        "lengthGaugeRatio": round(2.40 / 0.78, 4),
+        "chosenLength": 3.30,
+        "lengthGaugeRatio": round(3.30 / 0.78, 4),
         "damageImplementation": "one morph target on each of the three named component meshes",
         "sourceScene": source_scene,
         "checked": checked,
@@ -180,7 +180,7 @@ def main() -> None:
     assert checked["textureSources"] == [0]
     assert checked["imageDimensions"] == [[1024, 1024]]
     assert checked["cameras"] == checked["lights"] == checked["animations"] == 0
-    assert abs(checked["bounds"]["size"][0] - 2.40) < 0.001
+    assert abs(checked["bounds"]["size"][0] - 3.30) < 0.001
     assert abs(checked["bounds"]["min"][1]) < 0.001
     assert abs(checked["bounds"]["center"][0]) < 0.001
     assert abs(checked["bounds"]["center"][2]) < 0.001

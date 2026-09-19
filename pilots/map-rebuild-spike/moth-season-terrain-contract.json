@@ -43,8 +43,8 @@
   "triangleBudget": 60000,
   "texture": {
     "count": 1,
-    "width": 2048,
-    "height": 2048,
+    "width": 1254,
+    "height": 1254,
     "embedded": true
   },
   "maskTable": "assets/contracts/epoch-3-voltage/mask-tables/e3-moth-season.json",
@@ -233,26 +233,21 @@
   },
   "nightRig": "dusk/deep shadow with code-owned lamp positions represented by render-only warm lights",
   "sourceArt": [
-    "assets/processed/terrain-bank-tile.png",
-    "assets/processed/terrain-bank-tile-c.png",
-    "assets/processed/terrain-river-tile.png",
-    "assets/processed/ter-rail-elements-r0c2.png",
-    "assets/processed/kit-era-3.png",
-    "assets/raw/plate-e3-mothswarm.png"
+    "assets/raw/moth-season-terrain-atlas-v1.png"
   ],
   "atlas": "moth-season-terrain-atlas.png",
   "files": {
     "blend": {
-      "bytes": 8319307,
-      "sha256": "902bf33fe2003679e55ea2b23587cf01a1d22d28b4777a4b7a1edbd9c7beec0c"
+      "bytes": 4104759,
+      "sha256": "d81696f72087e8d4992a1a5c085f7e912d72244591c90748b58286859c8377a6"
     },
     "glb": {
-      "bytes": 8235400,
-      "sha256": "7861776cbfdf762e10508c9683c0d80eb63b7636b758b88cadb9ed92db3b721f"
+      "bytes": 4033436,
+      "sha256": "f612bc83124bf08728d974340494bf32e1339fb08ebb95369a1f3eb9c30ed101"
     },
     "atlas": {
-      "bytes": 7504529,
-      "sha256": "f06c5e9a42a0b213443481bb89dc64c0749ebbd39d304cc68f875b6f2d224533"
+      "bytes": 3302568,
+      "sha256": "b30231295feab21eb28401c92e55c9497f52e840cccbc879d7c99611d9152db9"
     }
   },
   "landmarkMountSpace": {

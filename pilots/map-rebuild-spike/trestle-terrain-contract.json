@@ -84,13 +84,19 @@
         "id": "south-boiler-site",
         "x": 12,
         "z": -12,
-        "heroStart": true
+        "heroStart": false
       },
       {
         "id": "north-boiler-site",
         "x": -12,
         "z": 12,
         "heroStart": false
+      },
+      {
+        "id": "trestle-entry",
+        "x": 12,
+        "z": -18,
+        "heroStart": true
       }
     ],
     "rails": [

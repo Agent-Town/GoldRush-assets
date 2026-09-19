@@ -1018,6 +1018,33 @@ def join_plate_and_decor(
     plate["plaza_center"] = "open stage; no Wave 2 decoration"
     bpy.context.scene.cursor.location = (0.0, 0.0, 0.0)
     bpy.ops.object.origin_set(type="ORIGIN_CURSOR")
+    # Freeze Blender's existing tessellation in canonical loop order, as in Claim Boat.
+    old = plate.data
+    old.calc_loop_triangles()
+    triangles = []
+    for triangle in old.loop_triangles:
+        loops = list(triangle.loops)
+        first = min(range(3), key=lambda i: old.loops[loops[i]].vertex_index)
+        loops = loops[first:] + loops[:first]
+        triangles.append((
+            [old.loops[i].vertex_index for i in loops],
+            [tuple(old.uv_layers.active.data[i].uv) for i in loops],
+            old.polygons[triangle.polygon_index].use_smooth,
+            [tuple(old.corner_normals[i].vector) for i in loops],
+        ))
+    triangles.sort(key=lambda row: tuple(row[0]))
+    mesh = bpy.data.meshes.new("TownPlateCanonical")
+    mesh.from_pydata([tuple(v.co) for v in old.vertices], [], [row[0] for row in triangles])
+    mesh.update()
+    uv = mesh.uv_layers.new(name=old.uv_layers.active.name)
+    for polygon, (_, coords, smooth, _) in zip(mesh.polygons, triangles):
+        polygon.use_smooth = smooth
+        for index, coord in zip(polygon.loop_indices, coords):
+            uv.data[index].uv = coord
+    mesh.normals_split_custom_set([normal for _, _, _, normals in triangles for normal in normals])
+    mesh.materials.append(material)
+    plate.data = mesh
+    bpy.data.meshes.remove(old)
     return plate
 
 

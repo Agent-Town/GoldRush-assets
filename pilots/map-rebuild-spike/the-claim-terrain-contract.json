@@ -94,7 +94,7 @@
       "id": "working_camp",
       "position": [
         -8.5,
-        -0.212883,
+        0.0,
         16.5
       ],
       "rotation": [
@@ -108,7 +108,7 @@
         1.0
       ],
       "asset": "landmarks/the-claim/working_camp.glb",
-      "terrainConformOffsetY": -0.212883
+      "terrainConformOffsetY": 0
     },
     {
       "id": "claim_stake",
@@ -133,7 +133,7 @@
       "id": "riparian_dressing_pack",
       "position": [
         0.0,
-        -0.045951,
+        0.0,
         0.0
       ],
       "rotation": [
@@ -147,7 +147,7 @@
         1.0
       ],
       "asset": "landmarks/the-claim/riparian_dressing_pack.glb",
-      "terrainConformOffsetY": -0.045951
+      "terrainConformOffsetY": 0
     }
   ],
   "landmarkPack": {

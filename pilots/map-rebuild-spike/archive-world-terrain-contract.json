@@ -92,24 +92,47 @@
         "id": "west-wing-light",
         "x": -28,
         "z": -6,
-        "lossCondition": false
+        "heroStart": false
       },
       {
         "id": "east-wing-light",
         "x": 28,
         "z": -6,
-        "lossCondition": false
+        "heroStart": false
       },
       {
         "id": "warning-shelf-light",
         "x": 0,
         "z": 40,
-        "lossCondition": false
+        "heroStart": false
+      },
+      {
+        "id": "archive-entry",
+        "x": 0,
+        "z": -52,
+        "heroStart": true
       }
     ],
     "rails": [],
     "waterSources": [],
-    "harvestAnchors": [],
+    "harvestAnchors": [
+      {
+        "x": -30,
+        "z": -50
+      },
+      {
+        "x": -18,
+        "z": -42
+      },
+      {
+        "x": 18,
+        "z": -42
+      },
+      {
+        "x": 30,
+        "z": -50
+      }
+    ],
     "heightfield": {
       "id": "archive-world-uninked-ruins",
       "mode": "visual"
@@ -380,24 +403,22 @@
     }
   ],
   "sourceArt": [
-    "assets/processed/kit-era-10.png",
-    "assets/raw/plate-e10-worlds.png",
-    "assets/processed/terrain-bank-tile.png",
-    "assets/processed/terrain-bank-tile-c.png"
+    "assets/raw/archive-world-floor-material-v1.png",
+    "assets/processed/terrain-bank-tile.png"
   ],
   "atlas": "archive-world-terrain-atlas.png",
   "files": {
     "blend": {
-      "bytes": 8602698,
-      "sha256": "3a48f6b255c96660e2bdef0ea0efa73addec4d21df7ec03851b8ee89c304475f"
+      "bytes": 10449195,
+      "sha256": "41fd0c9bef3cb73e8b9b0aa907f2a006f7587e65c83579b8351e54788551e825"
     },
     "glb": {
-      "bytes": 8546580,
-      "sha256": "08010d3cd8f689906c93d053c5b0d5ce3c360759c753862b17482aea868622b0"
+      "bytes": 10393180,
+      "sha256": "54a06a42e367d9fc7338af97a8463655279e8f18928a7abb1700ac6881fa04a6"
     },
     "atlas": {
-      "bytes": 7815509,
-      "sha256": "cb5be7a0ce03c6adeb563db8ea0139e42b585ff80a147063d8dde0a7ff6ed092"
+      "bytes": 9662110,
+      "sha256": "4435d87de73760f077b26d8357367159f46c77650619adaa045e08f4b4819604"
     }
   },
   "landmarkPack": {
@@ -406,5 +427,6 @@
     "era": 10,
     "sourceLadder": "reuse > derive > build-new",
     "ownership": "separate mounted render-only GLBs; no simulation authority"
-  }
+  },
+  "materialRecipe": "assets/pilots/map-rebuild-spike/retexture_archive_terrain.py"
 }

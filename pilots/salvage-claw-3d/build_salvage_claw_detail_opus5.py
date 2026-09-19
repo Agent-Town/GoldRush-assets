@@ -1,11 +1,10 @@
-"""THE BOSS DETAIL DUEL — Opus 5 entry: the Salvage King's Claw, high-detail sibling.
+"""Salvage King's Claw fidelity builder.
 
 Produces `salvage-claw-detail-opus5.glb` beside the shipped `salvage-claw.glb`.
 The shipped pack is READ-ONLY; nothing here writes to it.
 
-Follows the shipped dialect idiom: the Dredge Queen detail builder is imported as the
-shared library and its module globals are patched before the atlas call, exactly as
-`build_salvage_claw.py` does to `build_dredge_queen.py`.
+Uses the shared geometry kit directly and a native-generated E8 material atlas. The E5 boss
+builder is not a dependency: its texture layout can change independently.
 
 Drop-in contract preserved (rubric: CRAFT LEGALITY):
   nodes          winch, anchor_feet, crown
@@ -13,9 +12,9 @@ Drop-in contract preserved (rubric: CRAFT LEGALITY):
   morphs         Landing_SprungWinch / Landing_SettledAnchorFeet / Landing_DarkCrown,
                  exactly one per node, default weight 0
   transforms     identity · material one, metallic 0, roughness 0.9, double-sided
-  bounds         X span 11.4, base on z=0, centred in X and Y
+  bounds         crown X span 11.4; wider suspended claws; base on z=0
 
-Raised for the duel: <=45,000 triangles (shipped 10,164) and one 2048 atlas.
+Budget: <=45,000 triangles and one 1024 atlas.
 """
 
 from pathlib import Path
@@ -26,7 +25,6 @@ import math
 import sys
 
 import bpy
-import numpy as np
 from mathutils import Vector
 
 sys.dont_write_bytecode = True
@@ -39,7 +37,7 @@ LANDING_REFERENCE = ROOT / "assets/raw/boss-salvage-claw-damage.png"
 BLEND = HERE / "salvage-claw-detail-opus5.blend"
 GLB = HERE / "salvage-claw-detail-opus5.glb"
 
-ATLAS_SIZE = 2048
+ATLAS_SIZE = 1024
 MODEL_DIAMETER = 11.4
 TRIANGLE_CEILING = 45_000
 
@@ -52,39 +50,15 @@ def load(name: str, path: Path):
     return module
 
 
-queen = load("sc_detail_shared_builder", QUEEN / "build_dredge_queen_detail_opus5.py")
-kit = queen.kit
-REGIONS = queen.REGIONS
-
-
-def tune_plate_atlas(image: bpy.types.Image) -> None:
-    """Keep the source engraving but restore E8's cold silver-teal boss value range.
-
-    Palette law, `specs/epoch-saga/e8-orbital-bundle.md`: silver-and-teal over parchment,
-    warm-grey regolith, suit brass, honey habitat warmth — never the Queen's storm oxblood.
-    """
-    size = image.size[0]
-    pixels = np.array(image.pixels[:], dtype=np.float32).reshape(size, size, 4)
-    tuning = {
-        "soot": (0.68, np.array((0.008, 0.014, 0.015))),
-        "iron": (0.60, np.array((0.016, 0.032, 0.034))),
-        "plate": (0.58, np.array((0.018, 0.038, 0.040))),
-        "brass": (0.74, np.array((0.030, 0.014, 0.003))),
-        "deck": (0.67, np.array((0.018, 0.014, 0.008))),
-        "rope": (0.70, np.array((0.018, 0.010, 0.003))),
-        "damage": (0.76, np.array((0.014, 0.004, 0.002))),
-        "cargo": (0.72, np.array((0.026, 0.018, 0.006))),
-    }
-    for name, (factor, tint) in tuning.items():
-        u0, v0, u1, v1 = REGIONS[name]
-        x0, y0, x1, y1 = (int(value * size) for value in (u0, v0, u1, v1))
-        pixels[y0:y1, x0:x1, :3] = np.clip(pixels[y0:y1, x0:x1, :3] * factor + tint, 0.006, 0.62)
-    u0, v0, u1, v1 = REGIONS["teal"]
-    x0, y0, x1, y1 = (int(value * size) for value in (u0, v0, u1, v1))
-    pixels[y0:y1, x0:x1, :3] = np.clip(pixels[y0:y1, x0:x1, :3] * 1.18 + (0.0, 0.018, 0.020), 0.008, 0.72)
-    image.pixels.foreach_set(pixels.ravel())
-    image.update()
-    image.pack()
+kit = load("sc_detail_kit", QUEEN / "detail_opus5_kit.py")
+# E8 owns its material layout independently of the E5 builder.
+REGIONS = {
+    "iron": (0.02, 0.69, 0.31, 0.98), "brass": (0.35, 0.69, 0.64, 0.98),
+    "plate": (0.88, 0.87, 0.97, 0.96), "deck": (0.02, 0.35, 0.31, 0.64),
+    "teal": (0.35, 0.35, 0.64, 0.64), "sail": (0.69, 0.35, 0.98, 0.64),
+    "rope": (0.02, 0.02, 0.31, 0.31), "damage": (0.35, 0.02, 0.64, 0.31),
+    "soot": (0.69, 0.02, 0.98, 0.31), "cargo": (0.02, 0.35, 0.31, 0.64),
+}
 
 
 # --------------------------------------------------------------------------------------
@@ -169,12 +143,10 @@ def pictogram_pendant(
 # crown — the descending city-crown
 # --------------------------------------------------------------------------------------
 
-# The four legs sit at 45 degrees, so the crown — not the feet — sets the X extent
-# the normaliser scales by. The vertical stack is tuned against that so the exported
-# height lands on the shipped 10.031203 rather than towering over its own footprint.
+# Crown width sets scale; suspended claw reach is allowed beyond the promenade.
 PROMENADE_R = 4.42
-BELLY_Z = 3.10
-DECK_Z = 4.20
+BELLY_Z = 4.20
+DECK_Z = 5.30
 
 
 def build_crown(material: bpy.types.Material) -> list[bpy.types.Object]:
@@ -183,19 +155,19 @@ def build_crown(material: bpy.types.Material) -> list[bpy.types.Object]:
     upper = "LandingCrownUpper"
 
     # Saucer read first, palace second — the plate is a disc seen from below.
-    parts.append(kit.cone("Armoured crown belly", 3.36, 1.20, 1.34, (0, 0, BELLY_Z - 0.30), "plate", material, vertices=28))
+    parts.append(kit.cone("Armoured crown belly", 1.20, 3.36, 1.34, (0, 0, BELLY_Z - 0.30), "plate", material, vertices=28))
     parts.append(kit.cylinder("Crown hull drum", 4.06, 0.62, (0, 0, DECK_Z - 0.62), "iron", material, vertices=32))
     parts.append(kit.cone("Crown flare", PROMENADE_R, 4.06, 0.42, (0, 0, DECK_Z - 0.90), "plate", material, vertices=32))
     parts.append(kit.cylinder("Promenade deck", PROMENADE_R, 0.20, (0, 0, DECK_Z), "deck", material, vertices=32))
     parts.append(kit.torus("Promenade brass rim", PROMENADE_R, 0.11, (0, 0, DECK_Z + 0.04), "brass", material, major_segments=32))
     parts.append(kit.torus("Lower brass belt", 4.02, 0.13, (0, 0, DECK_Z - 0.70), "brass", material, major_segments=30))
-    parts.append(kit.torus("Belly brass belt", 3.06, 0.10, (0, 0, BELLY_Z - 0.62), "brass", material, major_segments=26))
+    parts.append(kit.torus("Belly brass belt", 1.70, 0.10, (0, 0, BELLY_Z - 0.62), "brass", material, major_segments=26))
 
     # Hull ribs and rivet courses: the plate's saucer is plated, not smooth.
     for rib in range(24):
         angle = math.tau * rib / 24
         x, y = math.cos(angle), math.sin(angle)
-        parts.append(kit.beam(f"Crown hull rib {rib}", (x * 3.30, y * 3.30, BELLY_Z - 0.86), (x * 4.04, y * 4.04, DECK_Z - 0.30), 0.070, "brass", material))
+        parts.append(kit.beam(f"Crown hull rib {rib}", (x * 1.34, y * 1.34, BELLY_Z - 0.86), (x * 4.04, y * 4.04, DECK_Z - 0.30), 0.070, "brass", material))
     for rivet in range(30):
         angle = math.tau * rivet / 30
         parts.append(kit.cylinder(f"Crown belt rivet {rivet}", 0.045, 0.10, (math.cos(angle) * 4.06, math.sin(angle) * 4.06, DECK_Z - 0.44), "brass", material, vertices=6, rotation=(math.pi / 2, 0, angle), bevel=0))
@@ -203,10 +175,16 @@ def build_crown(material: bpy.types.Material) -> list[bpy.types.Object]:
     # Promenade rail.
     rail = kit.arc_points((0, 0, 0), PROMENADE_R - 0.10, 0, math.tau, 32, plane="xy")
     rail = [(p[0], p[1], DECK_Z + 0.52) for p in rail]
-    kit.polyline(parts, "Promenade rail", rail, 0.055, "brass", material)
+    for segment, (start, end) in enumerate(zip(rail, rail[1:])):
+        mid_x, mid_y = (start[0] + end[0]) / 2, (start[1] + end[1]) / 2
+        if mid_y < -3 and abs(abs(mid_x) - 2.30) < 0.52:
+            continue  # Step-through openings above the two landing ladders.
+        parts.append(kit.beam(f"Promenade rail {segment}", start, end, 0.055, "brass", material))
     for post in range(24):
         angle = math.tau * post / 24
         x, y = math.cos(angle) * (PROMENADE_R - 0.10), math.sin(angle) * (PROMENADE_R - 0.10)
+        if y < -3 and abs(abs(x) - 2.30) < 0.42:
+            continue
         parts.append(kit.beam(f"Promenade post {post}", (x, y, DECK_Z + 0.10), (x, y, DECK_Z + 0.54), 0.042, "brass", material))
 
     # Palace: window drum, tracery, steep roof, lantern.
@@ -234,10 +212,10 @@ def build_crown(material: bpy.types.Material) -> list[bpy.types.Object]:
         )
     parts.append(kit.cylinder("Crown lantern", 0.46, 0.50, (0, 0, DECK_Z + 3.10), "teal", material, vertices=14, damage_group=glow))
     parts.append(kit.torus("Crown lantern cage", 0.50, 0.055, (0, 0, DECK_Z + 3.10), "brass", material, major_segments=14, damage_group=upper))
-    parts.append(kit.cone("Crown lantern cap", 0.52, 0.02, 0.46, (0, 0, DECK_Z + 3.45), "brass", material, vertices=14, damage_group=upper))
+    parts.append(kit.cone("Crown lantern cap", 0.36, 0.02, 1.10, (0, 0, DECK_Z + 3.75), "brass", material, vertices=14, damage_group=upper))
 
     # The front gable the plate centres its face on.
-    parts.append(kit.triangle_panel("Front crown gable", ((-0.98, -2.26, DECK_Z + 0.82), (0.98, -2.26, DECK_Z + 0.82), (0.0, -2.26, DECK_Z + 2.42)), 0.14, "iron", material, upper))
+    parts.append(kit.triangle_panel("Front crown gable", ((-0.98, -2.26, DECK_Z + 0.82), (0.98, -2.26, DECK_Z + 0.82), (0.0, -2.26, DECK_Z + 3.05)), 0.14, "iron", material, upper))
     parts.append(kit.cylinder("Front gable teal eye", 0.34, 0.10, (0, -2.36, DECK_Z + 1.52), "teal", material, vertices=12, rotation=(math.pi / 2, 0, 0), bevel=0, damage_group=glow))
     parts.append(kit.torus("Front gable eye rim", 0.38, 0.045, (0, -2.36, DECK_Z + 1.52), "brass", material, rotation=(math.pi / 2, 0, 0), major_segments=12, damage_group=upper))
 
@@ -283,27 +261,27 @@ def build_crown(material: bpy.types.Material) -> list[bpy.types.Object]:
     # the first pass lost it entirely behind the saucer's own silhouette.
     for pendant in range(8):
         angle = math.tau * pendant / 8 + math.radians(22.5)
-        pictogram_pendant(parts, f"Claim pendant {pendant}", angle, 4.16, BELLY_Z + 0.16, material, pendant)
+        pictogram_pendant(parts, f"Claim pendant {pendant}", angle, 4.16, BELLY_Z - 0.44, material, pendant)
 
     # Central keel eye and finial hanging under the belly.
-    parts.append(kit.ico_sphere("Central keel dome", 1.02, (0, 0, BELLY_Z - 1.06), "iron", material, scale=(1.0, 1.0, 0.74), subdivisions=2))
-    parts.append(kit.torus("Central keel ring", 1.00, 0.090, (0, 0, BELLY_Z - 0.94), "brass", material, major_segments=18))
-    parts.append(kit.cylinder("Central keel eye", 0.40, 0.30, (0, 0, BELLY_Z - 1.52), "teal", material, vertices=14, damage_group=glow))
-    parts.append(kit.cone("Keel brass finial", 0.34, 0.02, 0.86, (0, 0, BELLY_Z - 2.06), "brass", material, vertices=12))
+    parts.append(kit.ico_sphere("Central keel dome", 1.45, (0, 0, BELLY_Z - 1.50), "iron", material, scale=(1.0, 1.0, 0.85), subdivisions=2))
+    parts.append(kit.torus("Central keel ring", 1.42, 0.12, (0, 0, BELLY_Z - 1.50), "brass", material, major_segments=18))
+    parts.append(kit.cylinder("Central keel eye", 0.50, 0.30, (0, 0, BELLY_Z - 2.70), "teal", material, vertices=14, damage_group=glow))
+    parts.append(kit.cone("Keel brass finial", 0.34, 0.02, 0.86, (0, 0, BELLY_Z - 3.25), "brass", material, vertices=12))
 
     # Hidden: shutters inside the glass drum, and the two rope ladders the crew
     # descends in good order at the warm quit.
-    for shutter in range(8):
-        angle = math.tau * shutter / 8
+    for shutter in range(20):
+        angle = math.tau * shutter / 20
         x, y = math.cos(angle) * 1.72, math.sin(angle) * 1.72
-        parts.append(kit.box(f"Hidden crown shutter {shutter}", (0.52, 0.12, 0.74), (x, y, DECK_Z + 1.30), "soot", material, 0.004, rotation=(0, 0, angle + math.pi / 2), damage_group=f"LandingShutter{shutter}"))
+        parts.append(kit.box(f"Hidden crown shutter {shutter}", (0.72, 0.12, 0.96), (x, y, DECK_Z + 1.30), "soot", material, 0.004, rotation=(0, 0, angle + math.pi / 2), damage_group=f"LandingShutter{shutter}"))
     for ladder in range(2):
         side = -1 if ladder == 0 else 1
         x = side * 2.30
         for rail_index, offset in enumerate((-0.22, 0.22)):
-            parts.append(kit.beam(f"Hidden ladder rail {ladder} {rail_index}", (x + offset, 0.30, BELLY_Z - 0.20), (x + offset, 0.30, BELLY_Z - 2.10), 0.045, "rope", material, f"LandingLadder{ladder}"))
-        for rung in range(6):
-            z = BELLY_Z - 0.40 - rung * 0.32
+            parts.append(kit.beam(f"Hidden ladder rail {ladder} {rail_index}", (x + offset, 0.30, DECK_Z - 0.10), (x + offset, 0.30, DECK_Z - 2.00), 0.045, "rope", material, f"LandingLadder{ladder}"))
+        for rung in range(18):
+            z = DECK_Z - 0.18 - rung * 0.10
             parts.append(kit.beam(f"Hidden ladder rung {ladder} {rung}", (x - 0.22, 0.30, z), (x + 0.22, 0.30, z), 0.036, "rope", material, f"LandingLadder{ladder}"))
     return parts
 
@@ -317,25 +295,25 @@ def build_winch(material: bpy.types.Material) -> list[bpy.types.Object]:
     parts: list[bpy.types.Object] = []
     # Below the belly cone's skirt, so the drum band reads in open space the way the
     # plate stages it — flanking the central pendant, not swallowed by the hull.
-    drum_z = BELLY_Z - 0.90
+    drum_z = BELLY_Z - 0.50
 
     parts.append(kit.box("Winch armoured gantry", (5.40, 1.34, 0.44), (0, 0, drum_z + 0.86), "iron", material, 0.045))
     parts.append(kit.box("Winch lower brace", (5.00, 1.10, 0.26), (0, 0, drum_z - 0.74), "iron", material, 0.035))
     for side, label in ((-1, "Port"), (1, "Starboard")):
         group = f"LandingWinch{label}"
         centre_x = side * 1.66
-        parts.append(kit.cylinder(f"{label} rope drum", 0.62, 1.86, (centre_x, 0, drum_z), "plate", material, vertices=18, rotation=(0, math.pi / 2, 0), bevel=0, damage_group=group))
+        parts.append(kit.cylinder(f"{label} rope drum", 0.82, 1.86, (centre_x, 0, drum_z), "plate", material, vertices=18, rotation=(0, math.pi / 2, 0), bevel=0, damage_group=group))
         for collar in range(5):
             x = centre_x - 0.82 + collar * 0.41
-            parts.append(kit.torus(f"{label} drum collar {collar}", 0.66, 0.065, (x, 0, drum_z), "brass", material, rotation=(0, math.pi / 2, 0), major_segments=16, damage_group=group))
+            parts.append(kit.torus(f"{label} drum collar {collar}", 0.86, 0.065, (x, 0, drum_z), "brass", material, rotation=(0, math.pi / 2, 0), major_segments=16, damage_group=group))
         # Spooled cable, drawn as courses rather than a smooth cylinder.
         for course in range(7):
             x = centre_x - 0.72 + course * 0.24
-            parts.append(kit.torus(f"{label} drum cable {course}", 0.70, 0.048, (x, 0, drum_z), "rope", material, rotation=(0, math.pi / 2, 0), major_segments=14, damage_group=group))
+            parts.append(kit.torus(f"{label} drum cable {course}", 0.90, 0.048, (x, 0, drum_z), "rope", material, rotation=(0, math.pi / 2, 0), major_segments=14, damage_group=group))
         parts.append(kit.cylinder(f"{label} winch hub", 0.24, 2.06, (centre_x, 0, drum_z), "teal", material, vertices=12, rotation=(0, math.pi / 2, 0), bevel=0, damage_group=group))
         for leg in (-1, 1):
             parts.append(kit.beam(f"{label} A-frame {leg}", (centre_x + leg * 0.30, 0, drum_z + 0.82), (centre_x + leg * 0.96, 0, drum_z - 0.66), 0.13, "iron", material, group))
-        parts.append(kit.torus(f"{label} drum flange outer", 0.74, 0.085, (centre_x + side * 1.00, 0, drum_z), "brass", material, rotation=(0, math.pi / 2, 0), major_segments=16, damage_group=group))
+        parts.append(kit.torus(f"{label} drum flange outer", 0.94, 0.085, (centre_x + side * 1.00, 0, drum_z), "brass", material, rotation=(0, math.pi / 2, 0), major_segments=16, damage_group=group))
         parts.append(kit.cylinder(f"{label} brake wheel", 0.40, 0.14, (centre_x + side * 1.14, 0, drum_z), "brass", material, vertices=14, rotation=(0, math.pi / 2, 0), damage_group=group))
         for spoke in range(6):
             angle = math.tau * spoke / 6
@@ -348,6 +326,9 @@ def build_winch(material: bpy.types.Material) -> list[bpy.types.Object]:
         parts.append(kit.cylinder(f"Winch feed pipe {pipe}", 0.11, 1.28, (x, 0.46, drum_z - 0.10), "soot", material, vertices=8, rotation=(0, math.pi / 2, 0)))
     for shard, at in enumerate(((-0.34, 0.0, drum_z - 0.10), (0.30, 0.10, drum_z - 0.14), (0.02, -0.12, drum_z - 0.18))):
         parts.append(kit.box(f"Hidden sprung winch part {shard}", (0.34, 0.09, 0.12), at, "damage", material, 0.003, damage_group=f"LandingWinchShard{shard}"))
+    # Stage the cable drums below the front promenade, clear of the central keel.
+    for part in parts:
+        part.location.y -= 3.20
     return parts
 
 
@@ -363,8 +344,8 @@ def build_anchor_feet(material: bpy.types.Material) -> list[bpy.types.Object]:
         dx, dy = math.cos(angle), math.sin(angle)
         group = f"LandingFoot{foot}"
         attach = Vector((dx * 3.10, dy * 3.10, BELLY_Z - 0.42))
-        elbow = Vector((dx * 3.78, dy * 3.78, 1.86))
-        hub = Vector((dx * 4.12, dy * 4.12, 1.10))
+        elbow = Vector((dx * 4.70, dy * 4.70, 3.30))
+        hub = Vector((dx * 5.80, dy * 5.80, 2.30))
 
         parts.append(kit.ico_sphere(f"Anchor gearbox {foot}", 0.70, tuple(attach), "iron", material, group, subdivisions=2))
         parts.append(kit.torus(f"Anchor gearbox rim {foot}", 0.72, 0.085, tuple(attach), "brass", material, rotation=(math.pi / 2, 0, angle), damage_group=group, major_segments=14))
@@ -387,21 +368,20 @@ def build_anchor_feet(material: bpy.types.Material) -> list[bpy.types.Object]:
         # Three curved talons per foot. Swept tubes, so they read as grapples that
         # could actually close on regolith rather than as flippers.
         for toe in range(3):
-            spread = (toe - 1) * math.radians(34)
+            spread = (toe - 1) * math.radians(55)
             tdx, tdy = math.cos(angle + spread), math.sin(angle + spread)
             reach = 1.0 if toe == 1 else 0.94
+            # Broad shoulders curl back inward to a point; keep the crown's X envelope.
             talon = (
-                (0.30, 1.02, 0.185),
-                (0.72, 0.74, 0.170),
-                (1.10, 0.42, 0.148),
-                (1.36, 0.16, 0.118),
-                (1.50, 0.02, 0.074),
-                (1.58, 0.00, 0.024),
+                (0.10, 2.28, 0.23),
+                (0.76, 2.05, 0.25),
+                (1.32, 1.56, 0.24),
+                (1.50, 0.98, 0.20),
+                (1.21, 0.42, 0.12),
+                (0.56, 0.04, 0.012),
             )
-            points = [
-                (hub.x + tdx * out * reach, hub.y + tdy * out * reach, max(0.0, hub.z - (1.10 - z)))
-                for out, z, _ in talon
-            ]
+            points = [(hub.x + tdx * out * reach, hub.y + tdy * out * reach, z)
+                      for out, z, _ in talon]
             radii = [radius for _, _, radius in talon]
             parts.append(kit.swept_tube(f"Anchor talon {foot} {toe}", points, radii, "iron", material, sides=8, damage_group=group))
             for band, station in enumerate((1, 3)):
@@ -451,6 +431,10 @@ def add_landing_shapes(winch, anchor_feet, crown) -> None:
     for shard, movement in enumerate((Vector((-1.05, -0.52, -0.72)), Vector((1.12, -0.44, -0.58)), Vector((0.22, -0.78, -0.90)))):
         for index in kit.group_vertex_indices(winch, f"LandingWinchShard{shard}"):
             sprung.data[index].co += movement
+        indices = kit.group_vertex_indices(winch, f"LandingWinchShard{shard}")
+        floor = min(sprung.data[i].co.z for i in indices)
+        for index in indices:
+            sprung.data[index].co.z += 0.10 - floor
 
     anchor_feet.shape_key_add(name="Basis")
     settled = anchor_feet.shape_key_add(name="Landing_SettledAnchorFeet")
@@ -474,15 +458,21 @@ def add_landing_shapes(winch, anchor_feet, crown) -> None:
         co.z -= 0.10
     for index in kit.group_vertex_indices(crown, "LandingCrownUpper"):
         dark.data[index].co.z -= 0.12
-    for shutter in range(8):
+    for shutter in range(20):
         group_name = f"LandingShutter{shutter}"
         centre = group_center(crown, group_name)
         direction = Vector((centre.x, centre.y, 0)).normalized()
         for index in kit.group_vertex_indices(crown, group_name):
             dark.data[index].co += direction * 0.47
     for ladder in range(2):
-        for index in kit.group_vertex_indices(crown, f"LandingLadder{ladder}"):
-            dark.data[index].co += Vector((0, -0.32, -1.98))
+        indices = kit.group_vertex_indices(crown, f"LandingLadder{ladder}")
+        low = min(crown.data.vertices[i].co.z for i in indices)
+        high = max(crown.data.vertices[i].co.z for i in indices)
+        for index in indices:
+            co = dark.data[index].co
+            progress = (co.z - low) / (high - low)
+            co.z = 0.12 + progress * (high - 0.12)
+            co.y -= 5.12 + (1.0 - progress) * 3.00
 
     for obj in (winch, anchor_feet, crown):
         obj.active_shape_key_index = 0
@@ -504,13 +494,13 @@ def strip_micro_bevels(parts: list[bpy.types.Object]) -> None:
 def main() -> None:
     kit.reset_scene()
 
-    # Shipped dialect idiom: patch the shared builder's globals before the atlas call.
-    queen.REFERENCE = REFERENCE
-    queen.DAMAGE_REFERENCE = LANDING_REFERENCE
-    queen.ATLAS_SIZE = ATLAS_SIZE
-    atlas, source_hashes = queen.create_atlas()
+    atlas = bpy.data.images.load(str(ROOT / "assets/raw/salvage-claw-atlas-fidelity-e8.png"), check_existing=False)
     atlas.name = "SalvageClawDetailOpus5Atlas"
-    tune_plate_atlas(atlas)
+    atlas.colorspace_settings.name = "sRGB"
+    atlas.scale(ATLAS_SIZE, ATLAS_SIZE)
+    atlas.pack()
+    source_hashes = {"intact": hashlib.sha256(REFERENCE.read_bytes()).hexdigest(),
+                     "damage": hashlib.sha256(LANDING_REFERENCE.read_bytes()).hexdigest()}
     material = kit.create_material("SalvageClawDetailOpus5Material", atlas)
 
     groups = {
@@ -527,14 +517,23 @@ def main() -> None:
     crown = kit.join_component("crown", groups["crown"], material, REGIONS)
     objects = (winch, anchor_feet, crown)
 
-    kit.normalize_base_center(objects, 0, MODEL_DIAMETER)
+    # Keep crown size fixed when the suspended grapples extend beyond its rim.
+    crown_min, crown_max = kit.world_bounds((crown,))
+    minimum, _ = kit.world_bounds(objects)
+    scale = MODEL_DIAMETER / (crown_max.x - crown_min.x)
+    for obj in objects:
+        for vertex in obj.data.vertices:
+            vertex.co.x *= scale
+            vertex.co.y *= scale
+            vertex.co.z = (vertex.co.z - minimum.z) * scale
+        obj.data.update()
     add_landing_shapes(*objects)
 
     minimum, maximum = kit.world_bounds(objects)
     triangles = kit.triangle_count(objects)
     per_component = {obj.name: sum(len(p.vertices) - 2 for p in obj.data.polygons) for obj in objects}
     assert triangles <= TRIANGLE_CEILING, f"triangle budget exceeded: {triangles}"
-    assert abs((maximum.x - minimum.x) - MODEL_DIAMETER) < 0.01
+    assert abs((kit.world_bounds((crown,))[1].x - kit.world_bounds((crown,))[0].x) - MODEL_DIAMETER) < 0.01
     assert abs((maximum.x + minimum.x) * 0.5) < 0.001
     assert abs((maximum.y + minimum.y) * 0.5) < 0.001
     assert abs(minimum.z) < 0.001

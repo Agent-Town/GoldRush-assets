@@ -882,7 +882,7 @@ def make_atlas(key, profile):
         hit_z = half_z / np.maximum(np.abs(sin_angle), 1e-6)
         boundary_radius = np.minimum(hit_x, hit_z)
         boundary_x = cos_angle * boundary_radius
-        boundary_z = (-sin_angle if key in {"fairground", "glow-mesa", "relay-valley", "echo-canyon", "mare-claim", "ember-shore"} else sin_angle) * boundary_radius
+        boundary_z = (-sin_angle if key in OPEN_SEA_PANORAMAS or key in {"fairground", "glow-mesa", "relay-valley", "echo-canyon", "mare-claim", "ember-shore"} else sin_angle) * boundary_radius
         terrain_u = np.clip(boundary_x / (half_x * 2.0) + 0.5, 0.0, 1.0)
         terrain_v = np.clip(boundary_z / (half_z * 2.0) + 0.5, 0.0, 1.0)
         sample_x = np.clip((terrain_u * (terrain_source.shape[1] - 1)).astype(np.int32), 0, terrain_source.shape[1] - 1)
@@ -943,6 +943,8 @@ def make_atlas(key, profile):
             submerged_ground = np.clip(submerged_ground * np.asarray((0.48, 0.62, 0.62), dtype=np.float32), 0.006, 0.40)
             ground_band = smoothstep(0.80, 0.92, vv)
             atlas = atlas * (1.0 - ground_band[..., None]) + submerged_ground * ground_band[..., None]
+            # The sea treatment replaces the generic atlas above; retain its terrain-edge match.
+            atlas = atlas * (1.0 - seam_weight) + border_detail * seam_weight
 
     # Bake the map-specific panorama exposure into the pixels. Blender's glTF
     # exporter converts this material to KHR_materials_unlit, which deliberately

@@ -284,9 +284,9 @@
         0.0
       ],
       "scale": [
-        1.0,
-        1.0,
-        1.0
+        0.8,
+        0.8,
+        0.8
       ],
       "asset": "landmarks/blackout-ridge/off-map-current-receiver.glb"
     },

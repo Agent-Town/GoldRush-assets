@@ -12,11 +12,13 @@
     "width": 1024,
     "height": 1024,
     "sharedByEveryAsset": true,
-    "sha256": "1875cfcfacc69ea7ebc872225861f04a0ef754cfd412d94ee445d06b89e146c3"
+    "sha256": "1875cfcfacc69ea7ebc872225861f04a0ef754cfd412d94ee445d06b89e146c3",
+    "source": "assets/raw/moth-season-landmark-material-atlas-v1.png",
+    "recipe": "assets/pilots/map-rebuild-spike/retexture_moth_landmarks.py"
   },
   "blend": {
     "asset": "landmarks/moth-season/moth-season-landmarks.blend",
-    "sha256": "d67a9c95b9c6fcdf5aabc74ef03b1bcf02c35f8aa3f54845791112d45fee3a65"
+    "sha256": "14e8926aa63dd6024b11a85b0cfcc95d48e38e6588f58b0f1b97afc7984e42f3"
   },
   "assets": {
     "north-migration-watch-gate": {
@@ -41,7 +43,7 @@
           7.92
         ]
       },
-      "sha256": "53de51853da1bd772e8509c6ec28acdd9f908ebc49610299568bdab0cec4c023"
+      "sha256": "469982e660815ec7f95e045e0ae4522ef9b36e8ee04fd74d70c166b316e0bf33"
     },
     "south-quiet-road-gate": {
       "asset": "landmarks/moth-season/south-quiet-road-gate.glb",
@@ -90,7 +92,11 @@
         ]
       },
       "sha256": "ffeefafa5930e99120f65d5fb13b9f4573d9e67f9858905863d92042b2e44fa9",
-      "footprint": {"kind":"rect","w":4.896,"d":3.607}
+      "footprint": {
+        "kind": "rect",
+        "w": 4.896,
+        "d": 3.607
+      }
     },
     "east-tithe-bell-house": {
       "asset": "landmarks/moth-season/east-tithe-bell-house.glb",
@@ -115,7 +121,11 @@
         ]
       },
       "sha256": "40cfdf4ebe8deb819276a21b0880a9552fb8cd6eb51d98ce625a43344eedb37f",
-      "footprint": {"kind":"rect","w":4.032,"d":3.211}
+      "footprint": {
+        "kind": "rect",
+        "w": 4.032,
+        "d": 3.211
+      }
     },
     "mothglass-counting-cage": {
       "asset": "landmarks/moth-season/mothglass-counting-cage.glb",
@@ -140,7 +150,10 @@
         ]
       },
       "sha256": "179f474e711635aca9ce3f4eaa0da5653abdf07c8d7a4e2de95ee2f7f8ff73a4",
-      "footprint": {"kind":"radius","radius":1.98}
+      "footprint": {
+        "kind": "radius",
+        "radius": 1.98
+      }
     }
   },
   "mounts": [

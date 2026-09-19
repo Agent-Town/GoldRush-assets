@@ -20,7 +20,7 @@ SOURCE_DIR = Path(__file__).resolve().parent
 ARTIFACTS = ROOT / "artifacts/town-plate-3d"
 BLEND = SOURCE_DIR / "town-plate.blend"
 GLB = SOURCE_DIR / "town-plate.glb"
-CHECKED = ARTIFACTS / "town-plate-checked.glb"
+CHECKED = ARTIFACTS / "town-plate-reexport-current.glb"
 PAN_GLB = ROOT / "assets/pilots/plaza-props-3d/pan_monument.glb"
 PAN_CHECKED = ARTIFACTS / "pan-monument-checked.glb"
 
@@ -186,6 +186,15 @@ def realized_flat_walk() -> dict:
 
 def main() -> None:
     ARTIFACTS.mkdir(parents=True, exist_ok=True)
+    bpy.ops.wm.open_mainfile(filepath=str(BLEND))
+    bpy.ops.object.select_all(action="DESELECT")
+    plate = bpy.data.objects["TownPlate"]
+    plate.select_set(True)
+    bpy.context.view_layer.objects.active = plate
+    bpy.ops.export_scene.gltf(
+        filepath=str(CHECKED), export_format="GLB", use_selection=True, export_apply=True,
+        export_cameras=False, export_lights=False, export_animations=False, export_materials="EXPORT",
+    )
     checked = glb_contract(CHECKED)
     reexported = glb_contract(GLB)
     pan_checked = glb_contract(PAN_CHECKED)

@@ -123,7 +123,13 @@ def verify_asset(stem, expected_triangles, panorama=False, table=None):
     assert contract["waterAgreement"] == table["waterAgreement"]
     assert contract["maskTable"] == "assets/contracts/epoch-10-deepsky/mask-tables/e10-archive-world.json"
     assert contract["heightSocket"] == "Terrain.visualY"
-    assert len(contract["landmarkMounts"]) == 5 and all(mount["asset"] == "" for mount in contract["landmarkMounts"])
+    assert len(contract["landmarkMounts"]) == 5
+    for mount in contract["landmarkMounts"]:
+        # Terrain-only exports precede the landmark pack; selected mounts must resolve once wired.
+        if mount["asset"]:
+            asset = (SOURCE / mount["asset"]).resolve()
+            assert asset.is_relative_to((SOURCE / "landmarks").resolve()) and asset.is_file()
+            shared.verify.contract(asset)
     assert json.loads(extras["landmark_mount_ids"]) == [mount["id"] for mount in contract["landmarkMounts"]]
     assert contract["verdictPreviewOnly"]["excludedFromBlendAndGlb"] is True
     flatness = build_zone_surface_flatness(mesh, table)
@@ -170,7 +176,7 @@ def main():
         "- Re-export: byte-identical and semantic-identical for both GLBs.\n"
         "- Masks: four build rectangles independently surface-sampled at 2,145 points each with <=0.001 m deviation.\n"
         "- Simulation: movement, collision, placement, spawns, Static, re-ink progression, and lore unlocks remain planar/code-owned.\n"
-        "- Mounts: five empty-asset landmark mount records; no landmark bodies baked into terrain.\n"
+        "- Mounts: five separate landmark mount records; selected assets verified when present, with no landmark bodies baked into terrain.\n"
         "- Variants: Last Claim reuses the Ark deck and River reuses The Claim; both factory contracts set terrainMesh=off.\n",
         encoding="utf-8",
     )

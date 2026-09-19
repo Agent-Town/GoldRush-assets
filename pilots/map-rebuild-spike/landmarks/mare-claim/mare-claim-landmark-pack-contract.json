@@ -42,7 +42,11 @@
         ]
       },
       "sha256": "889fe36e0f899db4894561d96ceb7ac9ee668bc5a521980839fa7dee0230c75f",
-      "footprint": {"kind":"rect","w":5.904,"d":2.736}
+      "footprint": {
+        "kind": "rect",
+        "w": 5.904,
+        "d": 2.736
+      }
     },
     "lava-tube-survey-gantry": {
       "asset": "landmarks/mare-claim/lava-tube-survey-gantry.glb",
@@ -67,7 +71,11 @@
         ]
       },
       "sha256": "797f3dd903c4909953dd8ee88e73b51312175ad5d77102efdcc0b9fecd6a4915",
-      "footprint": {"kind":"rect","w":4.584,"d":3.384}
+      "footprint": {
+        "kind": "rect",
+        "w": 4.584,
+        "d": 3.384
+      }
     },
     "regolith-core-yard": {
       "asset": "landmarks/mare-claim/regolith-core-yard.glb",
@@ -92,7 +100,11 @@
         ]
       },
       "sha256": "652bc232b2e210924ee8cbc6f3fd8b9e73335b53da96c3918af7781f827521c2",
-      "footprint": {"kind":"rect","w":5.042,"d":3.456}
+      "footprint": {
+        "kind": "rect",
+        "w": 5.042,
+        "d": 3.456
+      }
     },
     "west-rim-debris-catcher": {
       "asset": "landmarks/mare-claim/west-rim-debris-catcher.glb",
@@ -117,7 +129,11 @@
         ]
       },
       "sha256": "f634d4908cca47d50956c7b789d29aa6435d1c663339cf146d73d64057d1e2ae",
-      "footprint": {"kind":"rect","w":3.672,"d":3.024}
+      "footprint": {
+        "kind": "rect",
+        "w": 3.672,
+        "d": 3.024
+      }
     },
     "east-rim-debris-catcher": {
       "asset": "landmarks/mare-claim/east-rim-debris-catcher.glb",
@@ -142,7 +158,11 @@
         ]
       },
       "sha256": "c37d9ff275eeb8c80ac912b6865b4f9c609259ed2c296d3df1c1f6ec4e234a0c",
-      "footprint": {"kind":"rect","w":3.672,"d":3.024}
+      "footprint": {
+        "kind": "rect",
+        "w": 3.672,
+        "d": 3.024
+      }
     }
   },
   "mounts": [
@@ -240,6 +260,75 @@
         1.0
       ],
       "asset": "landmarks/mare-claim/east-rim-debris-catcher.glb"
+    },
+    {
+      "id": "west-air-pad-dome",
+      "position": [
+        -18,
+        0.08,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "asset": "landmarks/mare-dome/air-pad-dome.glb",
+      "contractIds": [
+        "e8-mare-claim",
+        "e8-eclipse"
+      ]
+    },
+    {
+      "id": "central-air-pad-dome",
+      "position": [
+        0,
+        0.08,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "asset": "landmarks/mare-dome/air-pad-dome.glb",
+      "contractIds": [
+        "e8-mare-claim",
+        "e8-eclipse"
+      ]
+    },
+    {
+      "id": "east-air-pad-dome",
+      "position": [
+        18,
+        0.08,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "asset": "landmarks/mare-dome/air-pad-dome.glb",
+      "contractIds": [
+        "e8-mare-claim",
+        "e8-eclipse"
+      ]
     }
   ],
   "simulation": "none; terrain, collision, movement, placement, water, spawns, and fog remain unchanged",

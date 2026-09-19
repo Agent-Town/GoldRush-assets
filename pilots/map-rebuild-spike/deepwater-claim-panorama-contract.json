@@ -63,6 +63,7 @@
     "renderOnly": true,
     "ownership": "separate mounted scenery; never terrain or gameplay bounds"
   },
+  "earthSide": null,
   "nonInterference": {
     "playfieldBounds": "unchanged",
     "spawnEdges": "unchanged",
@@ -87,16 +88,16 @@
   ],
   "files": {
     "blend": {
-      "bytes": 1739738,
-      "sha256": "95279ba4f134540b70a9f162b7b20cb29c602ffb9b2f0f706a81cc2440ee0ab7"
+      "bytes": 1636378,
+      "sha256": "206d87ac5f60439a3e8400f0040a3fb19971d7e33c741afc104c02b9ee998e8c"
     },
     "glb": {
-      "bytes": 1705824,
-      "sha256": "5ab61c4f7480a0b6a65d77397b3cb2132896421d0dc32bae0184b7b5c80938e4"
+      "bytes": 1603912,
+      "sha256": "1d6bdee23e998ba54c95cef9b74e4e930def93581f37753c8389c4129a82e18d"
     },
     "atlas": {
-      "bytes": 1605608,
-      "sha256": "9bdf0dd7f95bb047a79001c7b083ef3ddd3bf761d48c4a4f26b3a2be1e3bdfea"
+      "bytes": 1503696,
+      "sha256": "813d3fb10dee10e51cddcd07abd53b6651631e2aac8210c14f779bdc5b635047"
     }
   }
 }

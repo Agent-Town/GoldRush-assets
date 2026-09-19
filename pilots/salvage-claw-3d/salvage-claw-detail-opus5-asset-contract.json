@@ -37,37 +37,37 @@
     "bytes": 2056584
   },
   "detail": {
-    "triangles": 30100,
+    "triangles": 30844,
     "atlas": [
       [
-        2048,
-        2048
+        1024,
+        1024
       ]
     ],
     "bounds": {
       "min": [
-        -5.7,
+        -7.246606,
         0,
-        -5.7
+        -7.246606
       ],
       "max": [
-        5.7,
-        9.965369,
-        5.7
+        7.246606,
+        12.042174,
+        7.246606
       ],
       "size": [
-        11.4,
-        9.965369,
-        11.4
+        14.493212,
+        12.042174,
+        14.493212
       ],
       "center": [
         0.0,
-        4.982685,
+        6.021087,
         0.0
       ]
     },
-    "bytes": 7131704,
-    "sha256": "9027a1451eee91ea943616c9dc1be84fcf0b571191ceaaeb4942913451b3ed98",
+    "bytes": 4323572,
+    "sha256": "3ae8420b44b79d4aa41d4c2305cc32da17e94cae397990671220d32f3a6b4826",
     "materials": 1,
     "images": 1,
     "primitives": 3,
@@ -86,9 +86,10 @@
       "crownMesh": [
         "Landing_DarkCrown"
       ]
-    }
+    },
+    "note": "F-BMB-2 (2026-09-18): re-measured from the GLB this repo actually ships. The block above described the 2026-09-10 duel candidate (7,131,704 B / 30,100 tri / 2048 atlas / sha 9027a145...), which the reviewed 2026-09-12 fidelity land replaced with the file now on disk; the sidecar was left behind, so the family carried two contracts and one rotted while `assets/layer-contracts/salvage-claw.v1.json` stayed accurate. Measured with `scripts/glb-contract-guard.mjs` parseGlb+inspect on `assets/pilots/salvage-claw-3d/salvage-claw-detail-opus5.glb`. Node names, mesh names, primitive count, material/image counts and the three morph targets are unchanged in value; triangles, bytes, atlas size, bounds and the hash are not. The `shipped` block above still describes `salvage-claw.glb`, which is on disk at 2,056,584 B / 10,164 tri and re-measured accurate. The GLB guard does not read this sidecar: `contractFor` looks for `<asset>-contract.json`, and this file is `<asset>-asset-contract.json`. The `checked` and `reexported` blocks below are the duel candidate's own build record and are kept as history, not as a claim about the shipped file."
   },
-  "triangleRatio": 2.961,
+  "triangleRatio": 3.0346,
   "duelCeilings": {
     "triangles": 45000,
     "atlas": 2048,
@@ -96,11 +97,11 @@
   },
   "runtimeGuard": {
     "file": "src/systems/SalvageClawBossSystem.ts",
-    "line": 16,
+    "line": 17,
     "constant": "MODEL_TRIANGLES",
     "shipped": 10164,
-    "required": 30100,
-    "note": "The runtime guard is an equality test, not a ceiling: it rejects any GLB whose triangle count differs from MODEL_TRIANGLES. Every other clause of that guard (mesh count, node names, morph-at-index-0, single material) is satisfied unchanged, so adopting this model is a one-integer edit: 10164 -> 30100."
+    "required": 30844,
+    "note": "ADOPTED. The runtime guard is an equality test, not a ceiling: it rejects any GLB whose triangle count differs from MODEL_TRIANGLES. The 2026-09-12 fidelity land made that constant 30_844 and pointed MODEL_URL at salvage-claw-detail-opus5.glb, so this is a record of a completed adoption rather than a proposed one; every other clause of the guard (mesh count, node names, morph-at-index-0, single material) holds unchanged."
   },
   "byteIdentical": true,
   "semanticIdentical": {

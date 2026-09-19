@@ -1,0 +1,9 @@
+{
+  "profile": "static",
+  "extras": false,
+  "animations": false,
+  "applyTransforms": true,
+  "selection": [
+    "kitchen-scow"
+  ]
+}

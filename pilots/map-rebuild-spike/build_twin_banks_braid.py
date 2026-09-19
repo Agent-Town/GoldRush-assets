@@ -100,6 +100,10 @@ def load_mask() -> dict:
     )
     if json.dumps(published, sort_keys=True) != json.dumps(mask, sort_keys=True):
         raise SystemExit("mask drift: the pilot contract's maskTruth no longer matches the shipped manifest mask")
+    contracts = json.loads((ROOT / "assets/contracts/epoch-1-frontier/contracts.json").read_text(encoding="utf-8"))
+    production = next(item for item in contracts["contracts"] if item["id"] == "e1-twin-banks")
+    if production["tileParams"].get("waterMask") != mask:
+        raise SystemExit("mask drift: production Twin Banks and its sculpt no longer share the authored mask")
     return mask
 
 
@@ -927,9 +931,8 @@ def write_contract(terrain, owner_preview, agreement):
     contract["materialCount"] = 1
     contract["texture"] = {"count": 1, "width": ATLAS_SIZE, "height": ATLAS_SIZE, "embedded": True}
     contract["maskTruth"]["status"] = (
-        "the true-braid sculpt has landed; this mesh is cut to twin-banks-true-braid-dev. "
-        "Production Twin Banks still runs legacy band water, so the paired contract switch "
-        "(tileParams.waterMask + a mask-driven water surface) must land with this sculpt."
+        f"Production Twin Banks and this sculpt share {BRAID.mask['id']}; "
+        "gameplay water classification and visible braid ribbons use the authored mask."
     )
     contract["waterTruth"] = {
         "kind": "true_two_channel_braid",

@@ -3,7 +3,7 @@
   "contractId": "e2-hill-mine",
   "tileId": "e2-hill-mine",
   "renderOnly": true,
-  "simulation": "factory masks, collision, movement, spawns, placement, and TileHeight remain unchanged",
+  "simulation": "Gameplay masks, movement, placement and objectives remain owned by the authored gameplay contract and simulation systems; this sculpt is render-only.",
   "heightSocket": "Terrain.visualY",
   "theme": "scarred terraced hillside above a flooded rail cut",
   "regionalFamily": {
@@ -28,7 +28,7 @@
     "min": [
       -48.0,
       -48.0,
-      -0.557
+      -0.68
     ],
     "max": [
       48.0,
@@ -250,7 +250,9 @@
         "ford": 0.8,
         "shallows": 0.72,
         "springPond": 0.8
-      }
+      },
+      "centerZ": -10,
+      "halfWidth": 5
     },
     "lanes": {
       "spawnEdges": [
@@ -286,14 +288,17 @@
   },
   "waterAgreement": {
     "deepBand": {
-      "minZ": -5.0,
-      "maxZ": 5.0
+      "minZ": -15,
+      "maxZ": -5
     },
     "shallowsEnd": {
-      "minZ": -6.25,
-      "maxZ": 6.25
+      "minZ": -16.25,
+      "maxZ": -3.75
     },
-    "placeableBankStartsBeyondAbsZ": 6.25,
+    "placeableBankOutsideZ": {
+      "minZ": -16.25,
+      "maxZ": -3.75
+    },
     "factoryVisualHalfWidth": 10
   },
   "waterVisualRuling": "render bank seam follows the gameplay mask so sluice-placeable banks do not look submerged",
@@ -346,9 +351,9 @@
     {
       "id": "flooded-gallery",
       "position": [
-        0.0,
-        0.0,
-        0.0
+        -18,
+        0,
+        -7
       ],
       "rotation": [
         0.0,
@@ -442,16 +447,16 @@
   },
   "files": {
     "blend": {
-      "bytes": 7861418,
-      "sha256": "6a0fd2b58646932e3ce77232b0732e45d6860828733f1b143292dd5f5e13a143"
+      "bytes": 7843001,
+      "sha256": "342774096d09b7e3377f0176f0365d73d919e2386ec7cae54ac67d43b109d892"
     },
     "glb": {
-      "bytes": 7783436,
-      "sha256": "9ca56d59759b8f121b453b02f6592d5707805c4925ff54c2912518b1d6d822a8"
+      "bytes": 7765912,
+      "sha256": "480582c961ed962832b5aa15d85c533570ad6f7061a74af4e7227a1b3ee23a05"
     },
     "atlas": {
-      "bytes": 7052545,
-      "sha256": "8904178b07393d5ed8f005a686616a07ab333b7b3e06ffae2c5b47217a3b479c"
+      "bytes": 7034902,
+      "sha256": "1d8ab2ce5b94509b1a7b6e2f7693d605807fe8151530962724086f7998717f88"
     }
   }
 }

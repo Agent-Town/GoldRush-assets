@@ -73,7 +73,7 @@ def main() -> None:
     system_text = SYSTEM.read_text()
     evidence = {
         "blender": bpy.app.version_string,
-        "baseSha": "de21f043a8c3b4c69950afbca0c7a612c6826e88",
+        "baseSha": "d41ab98ce0d7fbc48bb01e8e87c92c61f148de2d",
         "sourcePlates": {
             str(REFERENCE.relative_to(ROOT)): hashlib.sha256(REFERENCE.read_bytes()).hexdigest(),
             str(DAMAGE_REFERENCE.relative_to(ROOT)): hashlib.sha256(DAMAGE_REFERENCE.read_bytes()).hexdigest(),
@@ -109,7 +109,7 @@ def main() -> None:
     assert checked["materialTextureBindings"] == [{"material": 0, "baseColorTexture": 0, "image": 0}]
     assert checked["textureSources"] == [0] and checked["imageDimensions"] == [[1024, 1024]]
     assert checked["materialContract"] == [{
-        "metallicFactor": 0, "roughnessFactor": 0.8999999761581421, "doubleSided": True,
+        "metallicFactor": 0.3499999940395355, "roughnessFactor": 0.6499999761581421, "doubleSided": True,
         "hasBaseColorTexture": True, "hasEmissiveTexture": False, "emissiveFactor": [0.0, 0.0, 0.0],
     }]
     assert checked["cameras"] == checked["lights"] == checked["animations"] == 0

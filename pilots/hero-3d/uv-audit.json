@@ -1,0 +1,627 @@
+{
+  "source_vertices_blend": 1744,
+  "vertices_blend": 1728,
+  "weld_tolerance": 1e-07,
+  "polygons": 1568,
+  "triangles": 3256,
+  "components": [
+    {
+      "part": 0,
+      "slot": "trousers",
+      "polygons": 16,
+      "vertices": 28,
+      "uv_bounds": [
+        0.5078125,
+        0.2578125,
+        0.7421875,
+        0.4921875
+      ]
+    },
+    {
+      "part": 1,
+      "slot": "trousers",
+      "polygons": 16,
+      "vertices": 28,
+      "uv_bounds": [
+        0.5078125,
+        0.2578125,
+        0.7421875,
+        0.4921875
+      ]
+    },
+    {
+      "part": 2,
+      "slot": "boots",
+      "polygons": 26,
+      "vertices": 24,
+      "uv_bounds": [
+        0.7578125,
+        0.2578125,
+        0.9921875,
+        0.4921875
+      ]
+    },
+    {
+      "part": 3,
+      "slot": "leather",
+      "polygons": 26,
+      "vertices": 24,
+      "uv_bounds": [
+        0.5078125,
+        0.7578125,
+        0.9921875,
+        0.9921875
+      ]
+    },
+    {
+      "part": 4,
+      "slot": "trousers",
+      "polygons": 16,
+      "vertices": 28,
+      "uv_bounds": [
+        0.5078125,
+        0.2578125,
+        0.7421875,
+        0.4921875
+      ]
+    },
+    {
+      "part": 5,
+      "slot": "trousers",
+      "polygons": 16,
+      "vertices": 28,
+      "uv_bounds": [
+        0.5078125,
+        0.2578125,
+        0.7421875,
+        0.4921875
+      ]
+    },
+    {
+      "part": 6,
+      "slot": "boots",
+      "polygons": 26,
+      "vertices": 24,
+      "uv_bounds": [
+        0.7578125,
+        0.2578125,
+        0.9921875,
+        0.4921875
+      ]
+    },
+    {
+      "part": 7,
+      "slot": "leather",
+      "polygons": 26,
+      "vertices": 24,
+      "uv_bounds": [
+        0.5078125,
+        0.7578125,
+        0.9921875,
+        0.9921875
+      ]
+    },
+    {
+      "part": 8,
+      "slot": "trousers",
+      "polygons": 34,
+      "vertices": 48,
+      "uv_bounds": [
+        0.5078125,
+        0.2578125,
+        0.7421875,
+        0.4921875
+      ]
+    },
+    {
+      "part": 9,
+      "slot": "coat",
+      "polygons": 56,
+      "vertices": 72,
+      "uv_bounds": [
+        0.2578125,
+        0.2578125,
+        0.4921875,
+        0.4921875
+      ]
+    },
+    {
+      "part": 10,
+      "slot": "linen",
+      "polygons": 18,
+      "vertices": 16,
+      "uv_bounds": [
+        0.5078125,
+        0.5078125,
+        0.9921875,
+        0.7421875
+      ]
+    },
+    {
+      "part": 11,
+      "slot": "coat",
+      "polygons": 26,
+      "vertices": 24,
+      "uv_bounds": [
+        0.2578125,
+        0.2578125,
+        0.4921875,
+        0.4921875
+      ]
+    },
+    {
+      "part": 12,
+      "slot": "coat",
+      "polygons": 26,
+      "vertices": 24,
+      "uv_bounds": [
+        0.2578125,
+        0.2578125,
+        0.4921875,
+        0.4921875
+      ]
+    },
+    {
+      "part": 13,
+      "slot": "leather",
+      "polygons": 26,
+      "vertices": 24,
+      "uv_bounds": [
+        0.5078125,
+        0.7578125,
+        0.9921875,
+        0.9921875
+      ]
+    },
+    {
+      "part": 14,
+      "slot": "leather",
+      "polygons": 26,
+      "vertices": 24,
+      "uv_bounds": [
+        0.5078125,
+        0.7578125,
+        0.9921875,
+        0.9921875
+      ]
+    },
+    {
+      "part": 15,
+      "slot": "leather",
+      "polygons": 18,
+      "vertices": 32,
+      "uv_bounds": [
+        0.5078125,
+        0.7578125,
+        0.9921875,
+        0.9921875
+      ]
+    },
+    {
+      "part": 16,
+      "slot": "brass",
+      "polygons": 26,
+      "vertices": 24,
+      "uv_bounds": [
+        0.2578125,
+        0.0078125,
+        0.4921875,
+        0.2421875
+      ]
+    },
+    {
+      "part": 17,
+      "slot": "coat",
+      "polygons": 16,
+      "vertices": 28,
+      "uv_bounds": [
+        0.2578125,
+        0.2578125,
+        0.4921875,
+        0.4921875
+      ]
+    },
+    {
+      "part": 18,
+      "slot": "linen",
+      "polygons": 16,
+      "vertices": 28,
+      "uv_bounds": [
+        0.5078125,
+        0.5078125,
+        0.9921875,
+        0.7421875
+      ]
+    },
+    {
+      "part": 19,
+      "slot": "leather",
+      "polygons": 14,
+      "vertices": 24,
+      "uv_bounds": [
+        0.5078125,
+        0.7578125,
+        0.9921875,
+        0.9921875
+      ]
+    },
+    {
+      "part": 20,
+      "slot": "skin",
+      "polygons": 72,
+      "vertices": 62,
+      "uv_bounds": [
+        0.0078125,
+        0.0078125,
+        0.2421875,
+        0.2421875
+      ]
+    },
+    {
+      "part": 21,
+      "slot": "coat",
+      "polygons": 16,
+      "vertices": 28,
+      "uv_bounds": [
+        0.2578125,
+        0.2578125,
+        0.4921875,
+        0.4921875
+      ]
+    },
+    {
+      "part": 22,
+      "slot": "linen",
+      "polygons": 16,
+      "vertices": 28,
+      "uv_bounds": [
+        0.5078125,
+        0.5078125,
+        0.9921875,
+        0.7421875
+      ]
+    },
+    {
+      "part": 23,
+      "slot": "leather",
+      "polygons": 14,
+      "vertices": 24,
+      "uv_bounds": [
+        0.5078125,
+        0.7578125,
+        0.9921875,
+        0.9921875
+      ]
+    },
+    {
+      "part": 24,
+      "slot": "skin",
+      "polygons": 72,
+      "vertices": 62,
+      "uv_bounds": [
+        0.0078125,
+        0.0078125,
+        0.2421875,
+        0.2421875
+      ]
+    },
+    {
+      "part": 25,
+      "slot": "skin",
+      "polygons": 14,
+      "vertices": 24,
+      "uv_bounds": [
+        0.0078125,
+        0.0078125,
+        0.2421875,
+        0.2421875
+      ]
+    },
+    {
+      "part": 26,
+      "slot": "hair",
+      "polygons": 162,
+      "vertices": 146,
+      "uv_bounds": [
+        0.0078125,
+        0.2578125,
+        0.2421875,
+        0.4921875
+      ]
+    },
+    {
+      "part": 27,
+      "slot": "skin",
+      "polygons": 162,
+      "vertices": 146,
+      "uv_bounds": [
+        0.0078125,
+        0.0078125,
+        0.2421875,
+        0.2421875
+      ]
+    },
+    {
+      "part": 28,
+      "slot": "skin",
+      "polygons": 50,
+      "vertices": 42,
+      "uv_bounds": [
+        0.0078125,
+        0.0078125,
+        0.2421874850988388,
+        0.2421875
+      ]
+    },
+    {
+      "part": 29,
+      "slot": "iron",
+      "polygons": 32,
+      "vertices": 26,
+      "uv_bounds": [
+        0.7578125,
+        0.0078125,
+        0.9921875,
+        0.2421875
+      ]
+    },
+    {
+      "part": 30,
+      "slot": "iron",
+      "polygons": 32,
+      "vertices": 26,
+      "uv_bounds": [
+        0.7578125,
+        0.0078125,
+        0.9921875,
+        0.2421875
+      ]
+    },
+    {
+      "part": 31,
+      "slot": "leather",
+      "polygons": 8,
+      "vertices": 12,
+      "uv_bounds": [
+        0.5078125,
+        0.7578125,
+        0.9921875,
+        0.9921875
+      ]
+    },
+    {
+      "part": 32,
+      "slot": "hair",
+      "polygons": 32,
+      "vertices": 26,
+      "uv_bounds": [
+        0.0078125,
+        0.2578125,
+        0.2421875,
+        0.4921875
+      ]
+    },
+    {
+      "part": 33,
+      "slot": "hair",
+      "polygons": 32,
+      "vertices": 26,
+      "uv_bounds": [
+        0.0078125,
+        0.2578125,
+        0.2421875,
+        0.4921875
+      ]
+    },
+    {
+      "part": 34,
+      "slot": "hair",
+      "polygons": 32,
+      "vertices": 26,
+      "uv_bounds": [
+        0.0078125,
+        0.2578125,
+        0.2421874850988388,
+        0.4921875
+      ]
+    },
+    {
+      "part": 35,
+      "slot": "hair",
+      "polygons": 32,
+      "vertices": 26,
+      "uv_bounds": [
+        0.0078125,
+        0.2578125,
+        0.2421875,
+        0.4921875
+      ]
+    },
+    {
+      "part": 36,
+      "slot": "hair",
+      "polygons": 32,
+      "vertices": 26,
+      "uv_bounds": [
+        0.0078125,
+        0.2578125,
+        0.2421875,
+        0.4921875
+      ]
+    },
+    {
+      "part": 37,
+      "slot": "hair",
+      "polygons": 32,
+      "vertices": 26,
+      "uv_bounds": [
+        0.0078125,
+        0.2578125,
+        0.2421875,
+        0.4921875
+      ]
+    },
+    {
+      "part": 38,
+      "slot": "leather",
+      "polygons": 30,
+      "vertices": 56,
+      "uv_bounds": [
+        0.5078125,
+        0.7578125,
+        0.9921875,
+        0.9921875
+      ]
+    },
+    {
+      "part": 39,
+      "slot": "leather",
+      "polygons": 26,
+      "vertices": 48,
+      "uv_bounds": [
+        0.5078125,
+        0.7578125,
+        0.9921875,
+        0.9921875
+      ]
+    },
+    {
+      "part": 40,
+      "slot": "boots",
+      "polygons": 26,
+      "vertices": 48,
+      "uv_bounds": [
+        0.7578125,
+        0.2578125,
+        0.9921875,
+        0.4921875
+      ]
+    },
+    {
+      "part": 41,
+      "slot": "leather",
+      "polygons": 26,
+      "vertices": 24,
+      "uv_bounds": [
+        0.5078125,
+        0.7578125,
+        0.9921875,
+        0.9921875
+      ]
+    },
+    {
+      "part": 42,
+      "slot": "leather",
+      "polygons": 18,
+      "vertices": 16,
+      "uv_bounds": [
+        0.5078125,
+        0.7578125,
+        0.9921875,
+        0.9921875
+      ]
+    },
+    {
+      "part": 43,
+      "slot": "leather",
+      "polygons": 8,
+      "vertices": 12,
+      "uv_bounds": [
+        0.5078125,
+        0.7578125,
+        0.9921875,
+        0.9921875
+      ]
+    },
+    {
+      "part": 44,
+      "slot": "iron",
+      "polygons": 20,
+      "vertices": 36,
+      "uv_bounds": [
+        0.7578125,
+        0.0078125,
+        0.9921875,
+        0.2421874850988388
+      ]
+    },
+    {
+      "part": 45,
+      "slot": "brass",
+      "polygons": 20,
+      "vertices": 36,
+      "uv_bounds": [
+        0.2578125,
+        0.0078125,
+        0.4921875,
+        0.2421875
+      ]
+    },
+    {
+      "part": 46,
+      "slot": "iron",
+      "polygons": 10,
+      "vertices": 16,
+      "uv_bounds": [
+        0.7578125,
+        0.0078125,
+        0.9921875,
+        0.2421875
+      ]
+    },
+    {
+      "part": 47,
+      "slot": "brass",
+      "polygons": 10,
+      "vertices": 16,
+      "uv_bounds": [
+        0.2578125,
+        0.0078125,
+        0.4921875,
+        0.2421875
+      ]
+    },
+    {
+      "part": 48,
+      "slot": "teal",
+      "polygons": 50,
+      "vertices": 42,
+      "uv_bounds": [
+        0.5078125,
+        0.0078125,
+        0.7421875,
+        0.2421875
+      ]
+    },
+    {
+      "part": 49,
+      "slot": "brass",
+      "polygons": 12,
+      "vertices": 20,
+      "uv_bounds": [
+        0.2578125,
+        0.0078125,
+        0.4921875,
+        0.2421875
+      ]
+    }
+  ],
+  "collapsed_uv_triangles": [],
+  "minimum_uv_triangle_area": 1.733475255605299e-05,
+  "atlas": [
+    1024,
+    1024
+  ],
+  "rgba8_mip_MiB": 5.333333333333333,
+  "material": "Principled baseColor, roughness .83, metalness 0, emission 0",
+  "animation_frames": [
+    0,
+    64
+  ],
+  "animation_fps": 128,
+  "ground_correction_range": [
+    -0.07970611514097237,
+    0.0414010384535215
+  ],
+  "runtime": "pilot only"
+}

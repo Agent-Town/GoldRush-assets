@@ -1,0 +1,296 @@
+{
+  "passed": true,
+  "assetSha256": "f66ba8b7e03fd8997d4c94c18abc6630c9848c0a6d857c38c5ef0f6a594d7c42",
+  "checked": {
+    "sha256": "f66ba8b7e03fd8997d4c94c18abc6630c9848c0a6d857c38c5ef0f6a594d7c42",
+    "bytes": 6588168,
+    "nodes": [
+      "claw",
+      "paddle_port",
+      "paddle_starboard",
+      "hold"
+    ],
+    "nodeCount": 4,
+    "bindings": [
+      {
+        "node": "claw",
+        "mesh": "clawMesh",
+        "targets": [
+          "Damage_SlackClaw"
+        ],
+        "defaultWeights": [
+          0
+        ]
+      },
+      {
+        "node": "paddle_port",
+        "mesh": "paddle_portMesh",
+        "targets": [
+          "Damage_BrokenPortPaddle"
+        ],
+        "defaultWeights": [
+          0
+        ]
+      },
+      {
+        "node": "paddle_starboard",
+        "mesh": "paddle_starboardMesh",
+        "targets": [
+          "Damage_BrokenStarboardPaddle"
+        ],
+        "defaultWeights": [
+          0
+        ]
+      },
+      {
+        "node": "hold",
+        "mesh": "holdMesh",
+        "targets": [
+          "Damage_CrackedLootHold"
+        ],
+        "defaultWeights": [
+          0
+        ]
+      }
+    ],
+    "nodeTransforms": {
+      "claw": {
+        "translation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "matrix": null
+      },
+      "paddle_port": {
+        "translation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "matrix": null
+      },
+      "paddle_starboard": {
+        "translation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "matrix": null
+      },
+      "hold": {
+        "translation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "matrix": null
+      }
+    },
+    "meshes": 4,
+    "meshNames": [
+      "clawMesh",
+      "paddle_portMesh",
+      "paddle_starboardMesh",
+      "holdMesh"
+    ],
+    "primitives": 4,
+    "primitiveMaterials": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "triangles": 44920,
+    "morphTargets": {
+      "clawMesh": [
+        "Damage_SlackClaw"
+      ],
+      "paddle_portMesh": [
+        "Damage_BrokenPortPaddle"
+      ],
+      "paddle_starboardMesh": [
+        "Damage_BrokenStarboardPaddle"
+      ],
+      "holdMesh": [
+        "Damage_CrackedLootHold"
+      ]
+    },
+    "targetCounts": {
+      "clawMesh": 1,
+      "paddle_portMesh": 1,
+      "paddle_starboardMesh": 1,
+      "holdMesh": 1
+    },
+    "materials": 1,
+    "materialTextureBindings": [
+      {
+        "material": 0,
+        "baseColorTexture": 0,
+        "image": 0
+      }
+    ],
+    "materialContract": [
+      {
+        "metallicFactor": 0,
+        "roughnessFactor": 0.8999999761581421,
+        "doubleSided": true,
+        "hasBaseColorTexture": true,
+        "hasEmissiveTexture": false,
+        "emissiveFactor": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "textureSources": [
+      0
+    ],
+    "images": 1,
+    "embeddedImages": 1,
+    "imageDimensions": [
+      [
+        1024,
+        1024
+      ]
+    ],
+    "cameras": 0,
+    "lights": 0,
+    "animations": 0,
+    "bounds": {
+      "min": [
+        -4,
+        0,
+        -2.205294
+      ],
+      "max": [
+        4,
+        5.043662,
+        2.205294
+      ],
+      "size": [
+        8,
+        5.043662,
+        4.410588
+      ],
+      "center": [
+        0.0,
+        2.521831,
+        0.0
+      ]
+    }
+  },
+  "byteIdenticalReexport": true,
+  "wheelGroups": {
+    "paddle_port": {
+      "gap": 1.1956089437007904,
+      "verticesPerStation": [
+        1816,
+        1816
+      ]
+    },
+    "paddle_starboard": {
+      "gap": 1.1956089437007904,
+      "verticesPerStation": [
+        1816,
+        1816
+      ]
+    }
+  },
+  "flagLidClearance": [
+    {
+      "shape": "Basis",
+      "flag": "DamageMainFlag",
+      "lid": "DamageHoldPortLid",
+      "triangleIntersections": 0
+    },
+    {
+      "shape": "Basis",
+      "flag": "DamageMainFlag",
+      "lid": "DamageHoldStarboardLid",
+      "triangleIntersections": 0
+    },
+    {
+      "shape": "Basis",
+      "flag": "DamageAftFlag",
+      "lid": "DamageHoldPortLid",
+      "triangleIntersections": 0
+    },
+    {
+      "shape": "Basis",
+      "flag": "DamageAftFlag",
+      "lid": "DamageHoldStarboardLid",
+      "triangleIntersections": 0
+    },
+    {
+      "shape": "Damage_CrackedLootHold",
+      "flag": "DamageMainFlag",
+      "lid": "DamageHoldPortLid",
+      "triangleIntersections": 0
+    },
+    {
+      "shape": "Damage_CrackedLootHold",
+      "flag": "DamageMainFlag",
+      "lid": "DamageHoldStarboardLid",
+      "triangleIntersections": 0
+    },
+    {
+      "shape": "Damage_CrackedLootHold",
+      "flag": "DamageAftFlag",
+      "lid": "DamageHoldPortLid",
+      "triangleIntersections": 0
+    },
+    {
+      "shape": "Damage_CrackedLootHold",
+      "flag": "DamageAftFlag",
+      "lid": "DamageHoldStarboardLid",
+      "triangleIntersections": 0
+    }
+  ],
+  "scope": "Asset structure and normalized shape keys only; actual visual, gameplay and browser checks remain required."
+}

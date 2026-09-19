@@ -542,6 +542,7 @@ def make_panorama(height_at, material):
     bpy.context.collection.objects.link(ring)
     mesh.materials.append(material)
     ring["render_only"] = True
+    ring["panorama"] = True
     ring["panorama_law"] = "PANORAMA LAW v2"
     ring["sim_authority"] = "none; mounted scenery only"
     ring["tile_id"] = "e8-low-orbit"

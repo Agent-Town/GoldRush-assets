@@ -90,11 +90,36 @@
         "maxX": 50,
         "minZ": 36,
         "maxZ": 46
+      },
+      {
+        "id": "ridge-bridge-ground",
+        "bank": "north",
+        "minX": -2,
+        "maxX": 2,
+        "minZ": 39,
+        "maxZ": 43
       }
     ],
     "stakeMarkers": [],
     "waterSources": [],
-    "harvestAnchors": [],
+    "harvestAnchors": [
+      {
+        "x": -36,
+        "z": -20
+      },
+      {
+        "x": -12,
+        "z": 18
+      },
+      {
+        "x": 12,
+        "z": 18
+      },
+      {
+        "x": 36,
+        "z": -20
+      }
+    ],
     "heightfield": {
       "id": "relay-valley-ridgelines",
       "mode": "visual"
@@ -237,6 +262,17 @@
       ],
       "sampledSurfacePoints": 1225,
       "maxDeviationMeters": 0.0
+    },
+    {
+      "id": "ridge-bridge-ground",
+      "bounds": [
+        -2,
+        2,
+        39,
+        43
+      ],
+      "sampledSurfacePoints": 1225,
+      "maxDeviationMeters": 0.0
     }
   ],
   "pylonFlatnessLimitMeters": 0.02,
@@ -339,13 +375,21 @@
       "asset": "landmarks/relay-valley/drone-recovery-beacon.glb"
     }
   ],
+  "landmarkMountSpace": {
+    "coordinates": "game X/Y/Z",
+    "positionY": "local offset added to Terrain.visualY at the mount X/Z",
+    "rotation": "XYZ Euler radians",
+    "scale": "XYZ multiplier",
+    "ownership": "landmark assets mount at runtime and are never baked into terrain"
+  },
   "verdictPreviewOnly": {
     "assets": [
       "assets/pilots/relay-tower-3d/relay-tower.glb"
     ],
     "excludedFromBlendAndGlb": true,
-    "reason": "existing relay tower bodies establish the exact four-pad LOS puzzle without authoring runtime mounts or placement authority"
+    "reason": "existing relay tower bodies establish the four ridge sites beside the surveyed central bridge ground; no runtime mounts or placement authority are baked"
   },
+  "preserveDesign": null,
   "panoramaMount": {
     "id": "relay-valley-panorama",
     "asset": "relay-valley-panorama.glb",
@@ -377,24 +421,17 @@
   "atlas": "relay-valley-terrain-atlas.png",
   "files": {
     "blend": {
-      "bytes": 8705953,
-      "sha256": "81cb6e1446d23581b1748ea3db7bb1aa4b93506f8343cad045f206b355f3d98e"
+      "bytes": 8705505,
+      "sha256": "15f7962d5cceea10021fce9d327d141770ef983bb17fecce29954d2ddcd821bb"
     },
     "glb": {
-      "bytes": 8628600,
-      "sha256": "e94977dd157ee59c4251c32ecd44f0ce57a25a1a17d77b014ce5ea0d99a1e59c"
+      "bytes": 8628344,
+      "sha256": "071b3fad61bafef04be5a120abf69951ba9be9118e8d4dc3587eb733af27e741"
     },
     "atlas": {
-      "bytes": 7897717,
-      "sha256": "e29f9f62e04f7edf1cad34a8f40fb2524cd6ed8bd3863435c50154b6806803aa"
+      "bytes": 7897462,
+      "sha256": "48cc9ba75a5111f5bb9efe1a5f342f252d0ce3a15a38042b17cc4ed768155469"
     }
-  },
-  "landmarkMountSpace": {
-    "coordinates": "game X/Y/Z",
-    "positionY": "local offset added to Terrain.visualY at the mount X/Z",
-    "rotation": "XYZ Euler radians",
-    "scale": "XYZ multiplier",
-    "ownership": "landmark assets mount at runtime and are never baked into terrain"
   },
   "landmarkPack": {
     "contract": "landmarks/relay-valley/relay-valley-landmark-pack-contract.json",

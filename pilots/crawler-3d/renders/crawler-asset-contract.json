@@ -22,8 +22,8 @@
     "actions": []
   },
   "checked": {
-    "sha256": "a336f7574d42ae6e1d69d13310fd549411c442e93073fec6a64ea0128f4f75f9",
-    "bytes": 2391052,
+    "sha256": "26112eaa095aa891d57c209e224e81a3a9fc89bc6f56614eb98ee6d5d5016eb6",
+    "bytes": 3205932,
     "nodes": [
       "drain_mast",
       "tracks",
@@ -121,6 +121,18 @@
         "matrix": null
       }
     },
+    "collectorAnchor": {
+      "intact": [
+        -1.0899760723114014,
+        2.442500591278076,
+        1.2417634698280722e-09
+      ],
+      "damaged": [
+        -2.5215542316436768,
+        1.3219366073608398,
+        -0.17737501859664917
+      ]
+    },
     "meshes": 3,
     "meshNames": [
       "drain_mastMesh",
@@ -133,7 +145,7 @@
       0,
       0
     ],
-    "triangles": 11980,
+    "triangles": 11760,
     "morphTargets": {
       "drain_mastMesh": [
         "Damage_ToppledDrainMast"
@@ -176,17 +188,17 @@
       "min": [
         -1.6,
         0,
-        -0.6945
+        -0.67
       ],
       "max": [
         1.6,
         2.6775,
-        0.6945
+        0.67
       ],
       "size": [
         3.2,
         2.6775,
-        1.389
+        1.34
       ],
       "center": [
         0.0,
@@ -196,8 +208,8 @@
     }
   },
   "reexported": {
-    "sha256": "a336f7574d42ae6e1d69d13310fd549411c442e93073fec6a64ea0128f4f75f9",
-    "bytes": 2391052,
+    "sha256": "26112eaa095aa891d57c209e224e81a3a9fc89bc6f56614eb98ee6d5d5016eb6",
+    "bytes": 3205932,
     "nodes": [
       "drain_mast",
       "tracks",
@@ -295,6 +307,18 @@
         "matrix": null
       }
     },
+    "collectorAnchor": {
+      "intact": [
+        -1.0899760723114014,
+        2.442500591278076,
+        1.2417634698280722e-09
+      ],
+      "damaged": [
+        -2.5215542316436768,
+        1.3219366073608398,
+        -0.17737501859664917
+      ]
+    },
     "meshes": 3,
     "meshNames": [
       "drain_mastMesh",
@@ -307,7 +331,7 @@
       0,
       0
     ],
-    "triangles": 11980,
+    "triangles": 11760,
     "morphTargets": {
       "drain_mastMesh": [
         "Damage_ToppledDrainMast"
@@ -350,17 +374,17 @@
       "min": [
         -1.6,
         0,
-        -0.6945
+        -0.67
       ],
       "max": [
         1.6,
         2.6775,
-        0.6945
+        0.67
       ],
       "size": [
         3.2,
         2.6775,
-        1.389
+        1.34
       ],
       "center": [
         0.0,
@@ -375,6 +399,7 @@
     "nodeCount": true,
     "bindings": true,
     "nodeTransforms": true,
+    "collectorAnchor": true,
     "meshes": true,
     "meshNames": true,
     "primitives": true,

@@ -32,3 +32,7 @@ The verifier checks both GLBs' budgets and material contracts, ray-casts the sav
 The saved Town plate `.blend` and `.glb` contain the plate and joined Wave 2 decoration only. The corrected Pan Monument remains in its existing plaza-prop asset because Town already mounts it independently. Buildings and all other shipped props are imported temporarily for evidence after the plate is saved and exported.
 
 `render_current_references.py` always renders E1, the E4 Motor town, its motor-caravan detail, and the submerged E5 town directly from the current GLBs and manifests. No prior PNG is an input. The F-3DC-04 verifier compares the rebuilt plate with its ratified main base and requires identical route coordinates, mesh payload, triangle count, and flat-walk values while proving that only the embedded atlas changed.
+
+## Reproducible export (2026-09-09)
+
+The final joined mesh freezes oriented triangle/UV order and explicit corner normals so recipe and saved-scene exports agree. The verifier now creates `town-plate-reexport-current.glb` before comparing production; historical checked evidence is preserved. The packed 2048 atlas remains unchanged: a 1024 derivative visibly blurred runtime road detail and was rejected. Evidence and reproduction commands: `artifacts/map-art-repairs-20260908/town-plate-factory-01/README.md`. Ark imports this builder, so changes require updating its pinned input and reproducing its unchanged output.

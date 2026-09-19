@@ -1,6 +1,6 @@
 """Build the Baron's three render-only prop meshes.
 
-One GLB, one material, one 512 atlas. Each named mesh stays below the 3,000
+One GLB, one material, one 512 colour atlas with surface and emission maps. Each named mesh stays below the 3,000
 triangle prop ceiling and exports byte-identically from the saved blend.
 """
 
@@ -22,6 +22,7 @@ HERE = Path(__file__).resolve().parent
 BLEND = HERE / "baron-props.blend"
 GLB = HERE / "baron-props.glb"
 ATLAS = HERE / "baron-props-atlas.png"
+ATLAS_SOURCE = ROOT / "assets/raw/baron-props-atlas-fidelity-e1.png"
 CONTRACT = HERE / "baron-props-asset-contract.json"
 REEXPORT = Path("/tmp/baron-props-reexport.glb")
 ATLAS_SIZE = 512
@@ -42,52 +43,75 @@ def load_kit():
 kit = load_kit()
 
 REGIONS = {
-    "timber": (0.02, 0.02, 0.30, 0.98),
-    "brass": (0.33, 0.02, 0.56, 0.98),
-    "iron": (0.59, 0.02, 0.76, 0.98),
-    "teal": (0.79, 0.02, 0.88, 0.98),
-    "ember": (0.91, 0.02, 0.98, 0.98),
+    "timber": (0.022, 0.022, 0.250, 0.978),
+    "brass": (0.279, 0.022, 0.499, 0.978),
+    "iron": (0.526, 0.022, 0.723, 0.978),
+    "teal": (0.751, 0.022, 0.858, 0.978),
+    "ember": (0.885, 0.022, 0.980, 0.978),
 }
 
 
 def create_atlas() -> bpy.types.Image:
-    palette = {
-        "timber": np.array((0.23, 0.095, 0.035), dtype=np.float32),
-        "brass": np.array((0.48, 0.27, 0.075), dtype=np.float32),
-        "iron": np.array((0.075, 0.067, 0.056), dtype=np.float32),
-        "teal": np.array((0.045, 0.39, 0.39), dtype=np.float32),
-        "ember": np.array((0.75, 0.19, 0.035), dtype=np.float32),
-    }
-    atlas = np.ones((ATLAS_SIZE, ATLAS_SIZE, 4), dtype=np.float32)
-    atlas[:, :, :3] = palette["iron"]
-    rng = np.random.default_rng(1803)
-    for name, (u0, v0, u1, v1) in REGIONS.items():
-        x0, y0, x1, y1 = (int(value * ATLAS_SIZE) for value in (u0, v0, u1, v1))
-        base = palette[name]
-        noise = rng.normal(0, 0.008 if name != "teal" else 0.004, (y1 - y0, x1 - x0, 1))
-        atlas[y0:y1, x0:x1, :3] = np.clip(base + noise, 0.008, 0.82)
-        spacing = 28 if name in {"timber", "brass", "iron"} else 40
-        for offset in range(-y1, x1 - x0, spacing):
-            for yy in range(y0, y1):
-                xx = x0 + offset + (yy - y0)
-                if x0 <= xx < x1:
-                    atlas[yy, xx:min(xx + 2, x1), :3] *= 0.52
-        if name in {"brass", "iron"}:
-            for yy in range(y0 + 18, y1, 42):
-                for xx in range(x0 + 14, x1, 34):
-                    atlas[yy - 2:yy + 3, xx - 2:xx + 3, :3] *= 0.40
-        if name == "timber":
-            for xx in range(x0 + 20, x1, 38):
-                atlas[y0:y1, xx:xx + 2, :3] *= 0.62
-
-    image = bpy.data.images.new("BaronPropsAtlas", ATLAS_SIZE, ATLAS_SIZE, alpha=True)
+    image = bpy.data.images.load(str(ATLAS_SOURCE), check_existing=False)
+    image.name = "BaronPropsAtlas"
     image.colorspace_settings.name = "sRGB"
-    image.pixels.foreach_set(atlas.ravel())
+    image.scale(ATLAS_SIZE, ATLAS_SIZE)
     image.filepath_raw = str(ATLAS)
     image.file_format = "PNG"
     image.save()
     image.pack()
     return image
+
+
+def create_material(atlas: bpy.types.Image) -> bpy.types.Material:
+    material = kit.create_material("BaronPropsMaterial", atlas)
+    nodes, links = material.node_tree.nodes, material.node_tree.links
+    shader = next(node for node in nodes if node.type == "BSDF_PRINCIPLED")
+    # Data maps follow the same padded UV bands as the native colour artwork.
+    surface = np.ones((ATLAS_SIZE, ATLAS_SIZE, 4), dtype=np.float32)
+    surface[:, :, 1:3] = (0.8, 0)
+    emission = np.zeros_like(surface)
+    emission[:, :, 3] = 1
+    colours = np.array(atlas.pixels[:], dtype=np.float32).reshape(surface.shape)
+    # A small illustrated fill keeps props legible beside the unlit body sprite in shadow.
+    emission[:, :, :3] = colours[:, :, :3] * 0.12
+    properties = {"timber": (0.78, 0), "brass": (0.42, 0.65), "iron": (0.70, 0.45), "teal": (0.3, 0), "ember": (0.7, 0)}
+    for name, (u0, v0, u1, v1) in REGIONS.items():
+        x0, y0 = (max(0, math.floor(value * ATLAS_SIZE) - 4) for value in (u0, v0))
+        x1, y1 = (min(ATLAS_SIZE, math.ceil(value * ATLAS_SIZE) + 4) for value in (u1, v1))
+        surface[y0:y1, x0:x1, 1:3] = properties[name]
+        if name in {"teal", "ember"}:
+            xs = np.clip(np.arange(x0, x1), math.ceil(u0 * ATLAS_SIZE), math.floor(u1 * ATLAS_SIZE) - 1)
+            ys = np.clip(np.arange(y0, y1), math.ceil(v0 * ATLAS_SIZE), math.floor(v1 * ATLAS_SIZE) - 1)
+            emission[y0:y1, x0:x1, :3] = colours[ys[:, None], xs[None, :], :3]
+        cx, cy = (x0 + x1) // 2, (y0 + y1) // 2
+        assert np.allclose(surface[cy, cx, 1:3], properties[name])
+        fill = 1 if name in {"teal", "ember"} else 0.12
+        assert np.allclose(emission[cy, cx, :3], colours[cy, cx, :3] * fill)
+        # Cover both bilinear neighbours at every UV corner, including exclusive upper edges.
+        for u in (u0, u1):
+            for v in (v0, v1):
+                x, y = math.floor(u * ATLAS_SIZE - 0.5), math.floor(v * ATLAS_SIZE - 0.5)
+                assert np.allclose(surface[y:y + 2, x:x + 2, 1:3], properties[name])
+    for name, pixels, colour_space in (("surface", surface, "Non-Color"), ("emission", emission, "sRGB")):
+        image = bpy.data.images.new(f"BaronProps-{name}", ATLAS_SIZE, ATLAS_SIZE, alpha=True)
+        image.colorspace_settings.name = colour_space
+        image.pixels.foreach_set(pixels.ravel())
+        image.filepath_raw = str(HERE / f"baron-props-{name}.png")
+        image.file_format = "PNG"
+        image.save()
+        image.pack()
+        texture = nodes.new("ShaderNodeTexImage")
+        texture.image = image
+        if name == "surface":
+            channels = nodes.new("ShaderNodeSeparateColor")
+            links.new(texture.outputs["Color"], channels.inputs["Color"])
+            links.new(channels.outputs["Green"], shader.inputs["Roughness"])
+            links.new(channels.outputs["Blue"], shader.inputs["Metallic"])
+        else:
+            links.new(texture.outputs["Color"], shader.inputs["Emission Color"])
+            shader.inputs["Emission Strength"].default_value = 1
+    return material
 
 
 def rocket_parts(prefix: str, material: bpy.types.Material, rack: bool = False) -> list[bpy.types.Object]:
@@ -97,7 +121,8 @@ def rocket_parts(prefix: str, material: bpy.types.Material, rack: bool = False) 
     parts.append(kit.cone(f"{prefix} engraved nose", 0.105, 0.012, 0.24, (0, -0.43, 0), "brass", material, vertices=sides, rotation=(math.pi / 2, 0, 0)))
     parts.append(kit.cone(f"{prefix} iron nozzle", 0.12, 0.075, 0.18, (0, 0.48, 0), "iron", material, vertices=sides, rotation=(math.pi / 2, 0, 0)))
     for y in (-0.20, 0.24):
-        parts.append(kit.torus(f"{prefix} worked band {y}", 0.108, 0.018, (0, y, 0), "brass", material, rotation=(math.pi / 2, 0, 0), major_segments=sides, minor_segments=4))
+        region = "teal" if rack and y < 0 else "brass"
+        parts.append(kit.torus(f"{prefix} worked band {y}", 0.108, 0.018, (0, y, 0), region, material, rotation=(math.pi / 2, 0, 0), major_segments=sides, minor_segments=4))
     parts.append(kit.cylinder(f"{prefix} fuse eye", 0.052, 0.035, (0, 0.575, 0), "teal", material, vertices=10, rotation=(math.pi / 2, 0, 0), bevel=0))
     if not rack:
         for index, angle in enumerate((0, math.tau / 3, math.tau * 2 / 3)):
@@ -192,8 +217,9 @@ def bounds(obj: bpy.types.Object) -> dict[str, list[float]]:
 def main() -> None:
     HERE.mkdir(parents=True, exist_ok=True)
     kit.reset_scene()
+    bpy.context.preferences.filepaths.save_version = 0
     atlas = create_atlas()
-    material = kit.create_material("BaronPropsMaterial", atlas)
+    material = create_material(atlas)
     groups = {
         "launcher": build_launcher(material),
         "rocket": rocket_parts("Flight rocket", material),
@@ -227,7 +253,7 @@ def main() -> None:
     reexported = glb_contract(REEXPORT)
     assert checked["triangles"] == per_prop
     assert checked["meshCount"] == len(NODES)
-    assert checked["materials"] == checked["images"] == 1
+    assert checked["materials"] == 1 and checked["images"] == 3
     assert checked["cameras"] == checked["animations"] == 0
     assert checked["sha256"] == reexported["sha256"]
     contract = {
@@ -242,9 +268,20 @@ def main() -> None:
         },
         "sourceLadder": "derive",
         "sources": [
+            str(ATLAS_SOURCE.relative_to(ROOT)),
             "artifacts/baron-presence/desktop-chrome-baron-carried-launcher.png",
             "assets/pilots/map-rebuild-spike/landmarks/baron/rocket_cart.glb",
             "src/entities/Enemy.ts:createClaimJumperAssets.sackGeometry",
+        ],
+        "surfaceMaps": [
+            {"asset": path.name, "role": role, "colorSpace": colour_space,
+             "width": ATLAS_SIZE, "height": ATLAS_SIZE,
+             "sha256": hashlib.sha256(path.read_bytes()).hexdigest()}
+            for path, role, colour_space in (
+                (ATLAS, "base color from native generated artwork", "sRGB"),
+                (HERE / "baron-props-surface.png", "G roughness, B metalness; deterministic UV-region data", "linear"),
+                (HERE / "baron-props-emission.png", "teal/ember emission plus 12% illustrated shadow fill; derived from base color", "sRGB"),
+            )
         ],
         "props": {
             name: {"triangles": per_prop[name], "triangleBudget": TRIANGLE_CEILING, "bounds": per_bounds[name]}

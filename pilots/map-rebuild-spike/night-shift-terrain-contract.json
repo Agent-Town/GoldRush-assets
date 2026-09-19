@@ -69,7 +69,7 @@
       "id": "seven_lantern_terraces",
       "position": [
         0.0,
-        0.63533,
+        0.0,
         0.0
       ],
       "rotation": [
@@ -83,7 +83,7 @@
         1.0
       ],
       "asset": "landmarks/night-shift/seven_lantern_terraces.glb",
-      "terrainConformOffsetY": 0.63533
+      "terrainConformOffsetY": 0
     },
     {
       "id": "lampworks_yard",
@@ -108,7 +108,7 @@
       "id": "dark_rock_shoulders",
       "position": [
         0.0,
-        -1.394998,
+        0.0,
         0.0
       ],
       "rotation": [
@@ -122,7 +122,7 @@
         1.0
       ],
       "asset": "landmarks/night-shift/dark_rock_shoulders.glb",
-      "terrainConformOffsetY": -1.394998
+      "terrainConformOffsetY": 0
     },
     {
       "id": "central_ford",
@@ -147,7 +147,7 @@
       "id": "night_work_road",
       "position": [
         0.0,
-        -0.001221,
+        0.0,
         0.0
       ],
       "rotation": [
@@ -161,7 +161,7 @@
         1.0
       ],
       "asset": "landmarks/night-shift/night_work_road.glb",
-      "terrainConformOffsetY": -0.001221
+      "terrainConformOffsetY": 0
     }
   ],
   "panoramaMount": {

@@ -22,6 +22,7 @@ ARTIFACTS = ROOT / "artifacts/map-rebuild-spike"
 TABLE_PATH = ROOT / "assets/contracts/epoch-10-deepsky/mask-tables/e10-archive-world.json"
 KIT = ROOT / "assets/processed/kit-era-10.png"
 WORLDS = ROOT / "assets/raw/plate-e10-worlds.png"
+FLOOR = ROOT / "assets/raw/archive-world-floor-material-v1.png"
 SEGMENTS = 128
 ATLAS_SIZE = 2048
 
@@ -145,38 +146,29 @@ def height_function(table):
 
 
 def make_atlas(table):
-    kit = claim.image_pixels(KIT)
-    worlds = claim.image_pixels(WORLDS)
-    stone = claim.image_pixels(claim.BANK_C)
+    floor_source = claim.image_pixels(FLOOR)
     dirt = claim.image_pixels(claim.BANK_A)
     axis = np.linspace(0.0, 1.0, ATLAS_SIZE, dtype=np.float32)
     u, v = np.meshgrid(axis, axis)
     x, z = (u - 0.5) * 128.0, (v - 0.5) * 128.0
-    ink = claim.tiled_sample(kit, u, v, 4.2, 0.19, 0.43)
-    plate = claim.tiled_sample(worlds, u, v, 4.8, 0.57, 0.17)
-    shale = claim.tiled_sample(stone, u, v, 8.4, 0.11, 0.37)
+    floor = claim.tiled_sample(floor_source, u, v, 12.0)
     soil = claim.tiled_sample(dirt, u, v, 7.0, 0.34, 0.62)
     macro = (np.sin(x * 0.071 + z * 0.053) * 0.5 + 0.5)[..., None]
-    atlas = (
-        ink * (0.31 + macro * 0.04)
-        + plate * 0.18
-        + shale * (0.31 - macro * 0.04)
-        + soil * 0.16
-    ) * np.asarray((0.52, 0.37, 0.25), dtype=np.float32)
+    atlas = floor * (0.78 + macro * 0.12)
 
     truth = table["maskTruth"]
     # Each restoration wing carries a different surviving ink density. The
     # warning shelf is intentionally quieter, aged parchment—not clean white.
     wing_tints = (
-        np.asarray((0.22, 0.16, 0.10), dtype=np.float32),
-        np.asarray((0.28, 0.20, 0.11), dtype=np.float32),
-        np.asarray((0.36, 0.27, 0.15), dtype=np.float32),
+        np.asarray((0.70, 0.70, 0.70), dtype=np.float32),
+        np.asarray((0.80, 0.80, 0.80), dtype=np.float32),
+        np.asarray((0.90, 0.90, 0.86), dtype=np.float32),
     )
     for zone, tint in zip(truth["archiveWingZones"], wing_tints):
         weight = rectangle_mask(x, z, zone, 2.0)
         hatch = np.clip(0.63 + np.sin(x * 0.63 + z * 0.31 + zone["order"]) * 0.20, 0.28, 0.92)
         weight *= hatch
-        archive_tone = ink * tint[None, None, :] + plate * 0.10
+        archive_tone = floor * tint[None, None, :]
         atlas = atlas * (1.0 - weight[..., None] * 0.54) + archive_tone * weight[..., None] * 0.54
 
     cut = np.exp(-((x / 4.0) ** 4)) * smoothstep(-34.0, -28.0, z) * (1.0 - smoothstep(19.0, 25.0, z))
@@ -193,11 +185,10 @@ def make_atlas(table):
         scars = np.maximum(scars, gaussian(x, z, cx, cz, 0.7 + index % 3, 0.5 + (index + 1) % 3))
     atlas *= 1.0 - scars[..., None] * 0.24
     edge = smoothstep(0.90, 1.0, np.maximum(np.abs(x), np.abs(z)) / 64.0)[..., None]
-    atlas = atlas * (1.0 - edge * 0.70) + shale * np.asarray((0.20, 0.16, 0.13), dtype=np.float32) * edge * 0.70
-    atlas = claim.apply_grit_grade(atlas, worlds, u, v, "archive-world")
+    atlas = atlas * (1.0 - edge * 0.70) + floor * 0.32 * edge * 0.70
 
     rgba = np.ones((ATLAS_SIZE, ATLAS_SIZE, 4), dtype=np.float32)
-    rgba[:, :, :3] = np.clip(atlas, 0.003, 0.66)
+    rgba[:, :, :3] = np.clip(atlas * 0.78, 0.003, 0.66)
     path = OUT / "archive-world-terrain-atlas.png"
     image = bpy.data.images.new(PROFILE["atlas"], ATLAS_SIZE, ATLAS_SIZE, alpha=True)
     image.colorspace_settings.name = "sRGB"
@@ -448,7 +439,7 @@ def export_asset(table, terrain, atlas_path, height_at):
             {"contractId": "e10-last-claim", "tileId": "ark-plaza-e10", "terrainMesh": "off", "decision": "reuse Ark deck; no sculpt"},
             {"contractId": "e10-river", "tileId": "frontier-river-claim", "terrainMesh": "off", "decision": "reuse The Claim at dawn; no sculpt"},
         ],
-        "sourceArt": [str(path.relative_to(ROOT)) for path in (KIT, WORLDS, claim.BANK_A, claim.BANK_C)],
+        "sourceArt": [str(path.relative_to(ROOT)) for path in (FLOOR, claim.BANK_A)],
         "atlas": atlas_path.name,
     }
     if triangles != 32768 or any(zone["maxDeviationMeters"] > 0.001 for zone in flatness):
