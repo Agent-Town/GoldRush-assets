@@ -1,0 +1,214 @@
+{
+  "contractId": "far-side-reuse-verdict",
+  "tileId": "e8-mare-claim",
+  "renderOnly": true,
+  "sculptVerdict": {
+    "verdict": "reuse",
+    "baseTile": "mare-claim",
+    "baseTerrainContract": "mare-claim-terrain-contract.json",
+    "reason": "maskTruth.tileId is e8-mare-claim; the far-side contract changes atmosphere/comms state, not terrain ownership",
+    "terrainGlb": "mare-claim-terrain.glb",
+    "panoramaGlb": "mare-claim-panorama.glb",
+    "duplicateSculpt": "forbidden; gameplay contract rides the existing tileId"
+  },
+  "maskTable": "assets/contracts/epoch-8-orbital/mask-tables/e8-far-side.json",
+  "maskTruth": {
+    "source": "assets/contracts/epoch-8-orbital/contracts.json; lore/STORYBOOK.md E8 contracts",
+    "tileId": "e8-mare-claim",
+    "size": 128,
+    "dimensions": {
+      "width": 128,
+      "height": 128
+    },
+    "river": false,
+    "ford": false,
+    "buildZones": [
+      {
+        "id": "far-side-landing-yard",
+        "bank": "south",
+        "minX": -24,
+        "maxX": 24,
+        "minZ": -48,
+        "maxZ": -30
+      },
+      {
+        "id": "listening-probe-recovery",
+        "bank": "north",
+        "minX": -14,
+        "maxX": 14,
+        "minZ": 38,
+        "maxZ": 52
+      }
+    ],
+    "stakeMarkers": [],
+    "rails": [],
+    "waterSources": [],
+    "harvestAnchors": [],
+    "heightfield": {
+      "id": "mare-claim-rim-ring",
+      "mode": "visual"
+    },
+    "gravity": {
+      "feelG": 0.6,
+      "lobArcDistanceMultiplier": 2.4,
+      "movement": "floaty"
+    },
+    "atmosphere": {
+      "airIsWall": false,
+      "outsideDomes": "suit-only"
+    },
+    "probeRecoveryZones": [
+      {
+        "id": "listening-probe-crater",
+        "description": "A half-buried, unmarked old-world probe waits at the far end of the crossing.",
+        "minX": -14,
+        "maxX": 14,
+        "minZ": 38,
+        "maxZ": 52
+      }
+    ],
+    "signalNullZones": [
+      {
+        "id": "far-side-comms-shadow",
+        "description": "No playbooks or drones operate anywhere in the Far Side comms shadow.",
+        "minX": -54,
+        "maxX": 54,
+        "minZ": -54,
+        "maxZ": 54
+      }
+    ],
+    "suitOnlyZones": [
+      {
+        "id": "far-side-vacuum",
+        "description": "The whole crossing is suit-only.",
+        "minX": -54,
+        "maxX": 54,
+        "minZ": -54,
+        "maxZ": 54
+      }
+    ],
+    "lanes": {
+      "spawnEdges": [
+        "north",
+        "west",
+        "east"
+      ],
+      "territoryRingBiasWaves": 0,
+      "territoryRingLaneBias": 0,
+      "patrolRoutes": []
+    },
+    "spawnGates": []
+  },
+  "landmarkMountSpace": {
+    "coordinates": "game X/Y/Z",
+    "positionY": "local offset added to Terrain.visualY at the mount X/Z",
+    "rotation": "XYZ Euler radians",
+    "scale": "XYZ multiplier",
+    "ownership": "landmark assets mount at runtime and are never baked into terrain"
+  },
+  "landmarkMounts": [
+    {
+      "id": "far-side-landing-frame",
+      "position": [
+        0.0,
+        0.0,
+        -40.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/far-side/far-side-landing-frame.glb"
+    },
+    {
+      "id": "probe-recovery-cradle",
+      "position": [
+        0.0,
+        0.0,
+        45.0
+      ],
+      "rotation": [
+        0.0,
+        3.1416,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/far-side/probe-recovery-cradle.glb"
+    },
+    {
+      "id": "west-comms-shadow-marker",
+      "position": [
+        -42.0,
+        0.0,
+        24.0
+      ],
+      "rotation": [
+        0.0,
+        0.18,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/far-side/west-comms-shadow-marker.glb"
+    },
+    {
+      "id": "east-suit-cache-rack",
+      "position": [
+        42.0,
+        0.0,
+        -24.0
+      ],
+      "rotation": [
+        0.0,
+        -0.18,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/far-side/east-suit-cache-rack.glb"
+    },
+    {
+      "id": "far-horizon-listening-post",
+      "position": [
+        0.0,
+        0.0,
+        56.0
+      ],
+      "rotation": [
+        0.0,
+        3.1416,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/far-side/far-horizon-listening-post.glb"
+    }
+  ],
+  "landmarkPack": {
+    "contract": "landmarks/far-side/far-side-landmark-pack-contract.json",
+    "atlas": "landmarks/far-side/far-side-landmarks-atlas.png",
+    "era": 8,
+    "sourceLadder": "reuse > derive > build-new",
+    "ownership": "separate mounted render-only GLBs; no simulation authority"
+  },
+  "simulation": "reuse verdict only; terrain, collision, movement, placement, water, spawns, fog, and variant mechanics remain unchanged"
+}

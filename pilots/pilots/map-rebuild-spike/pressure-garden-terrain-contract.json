@@ -1,0 +1,421 @@
+{
+  "asset": "pressure-garden-terrain.glb",
+  "contractId": "e2-pressure-garden",
+  "tileId": "e2-pressure-garden",
+  "renderOnly": true,
+  "simulation": "factory masks, collision, movement, spawns, placement, and TileHeight remain unchanged",
+  "heightSocket": "Terrain.visualY",
+  "theme": "four hard-worked geothermal terraces rising from three boiler beds to a coal seam",
+  "regionalFamily": {
+    "epoch": "Epoch 2 steamworks county",
+    "shared": [
+      "ochre-rust earth",
+      "soot iron",
+      "tarred timber",
+      "murky working water",
+      "sparse cacti",
+      "engraved frontier grit"
+    ],
+    "unique": [
+      "authored height silhouette",
+      "rail geometry",
+      "build-zone rhythm",
+      "landmark mounts",
+      "panorama quadrant composition"
+    ]
+  },
+  "boundsMeters": {
+    "min": [
+      -48.0,
+      -48.0,
+      -0.291
+    ],
+    "max": [
+      48.0,
+      48.0,
+      2.5124
+    ]
+  },
+  "meshCount": 1,
+  "primitiveCount": 1,
+  "materialCount": 1,
+  "vertices": 16641,
+  "triangles": 32768,
+  "triangleBudget": 60000,
+  "texture": {
+    "count": 1,
+    "width": 2048,
+    "height": 2048,
+    "embedded": true
+  },
+  "maskTruth": {
+    "source": "assets/contracts/epoch-2-steamworks/contracts.json",
+    "coalSeamSource": "src/systems/PressureSystem.ts",
+    "tileId": "e2-pressure-garden",
+    "size": 96,
+    "river": true,
+    "ford": true,
+    "fords": [
+      {
+        "id": "garden-crossing",
+        "x": 0,
+        "halfWidth": 6
+      }
+    ],
+    "buildZones": [
+      {
+        "id": "boiler-terrace",
+        "bank": "north",
+        "minX": -36,
+        "maxX": 36,
+        "minZ": 7,
+        "maxZ": 16
+      },
+      {
+        "id": "west-growing-terrace",
+        "bank": "north",
+        "minX": -38,
+        "maxX": -12,
+        "minZ": 20,
+        "maxZ": 29
+      },
+      {
+        "id": "east-growing-terrace",
+        "bank": "north",
+        "minX": 12,
+        "maxX": 38,
+        "minZ": 20,
+        "maxZ": 29
+      },
+      {
+        "id": "coal-bed-terrace",
+        "bank": "north",
+        "minX": -28,
+        "maxX": 28,
+        "minZ": 36,
+        "maxZ": 44
+      }
+    ],
+    "stakeMarkers": [
+      {
+        "id": "west-boiler-bed",
+        "x": -12,
+        "z": 12,
+        "heroStart": true
+      },
+      {
+        "id": "center-boiler-bed",
+        "x": 0,
+        "z": 12,
+        "heroStart": false
+      },
+      {
+        "id": "east-boiler-bed",
+        "x": 12,
+        "z": 12,
+        "heroStart": false
+      }
+    ],
+    "rails": [],
+    "waterSources": [],
+    "harvestAnchors": [
+      {
+        "x": -30,
+        "z": 24
+      },
+      {
+        "x": -18,
+        "z": 27
+      },
+      {
+        "x": 18,
+        "z": 27
+      },
+      {
+        "x": 30,
+        "z": 24
+      },
+      {
+        "x": -24,
+        "z": 40
+      },
+      {
+        "x": 24,
+        "z": 40
+      }
+    ],
+    "elevation": {
+      "cellSize": 2,
+      "analytic": {
+        "hillMine": 1,
+        "creekHeight": -0.25,
+        "railHeight": 0,
+        "t1Height": 0.8,
+        "t2Height": 1.6,
+        "t3Height": 2.4,
+        "creekBlendStart": -10,
+        "creekBlendEnd": -5,
+        "t1RampStart": 6,
+        "t1RampEnd": 10,
+        "t2RampStart": 17,
+        "t2RampEnd": 22,
+        "t3RampStart": 30,
+        "t3RampEnd": 35
+      }
+    },
+    "heightfield": {
+      "id": "pressure-garden-terraces",
+      "mode": "visual",
+      "bankRelief": {
+        "amount": 0.3,
+        "width": 8
+      }
+    },
+    "water": {
+      "id": "pressure-garden-water-band",
+      "visualHalfWidth": 8,
+      "depths": {
+        "river": 1.1,
+        "ford": 0.3,
+        "shallows": 0.22
+      },
+      "speedMul": {
+        "river": 0.5,
+        "ford": 0.82,
+        "shallows": 0.75
+      }
+    },
+    "lanes": {
+      "spawnEdges": [
+        "south",
+        "east",
+        "west",
+        "north"
+      ],
+      "territoryRingBiasWaves": 0,
+      "territoryRingLaneBias": 0
+    },
+    "spawnGates": [
+      {
+        "edge": "south",
+        "x": 0,
+        "z": -46
+      },
+      {
+        "edge": "east",
+        "x": 46,
+        "z": 20
+      },
+      {
+        "edge": "west",
+        "x": -46,
+        "z": 20
+      },
+      {
+        "edge": "north",
+        "x": 0,
+        "z": 46
+      }
+    ],
+    "coalSeams": [
+      {
+        "x": -12,
+        "z": 39
+      },
+      {
+        "x": -5,
+        "z": 43
+      },
+      {
+        "x": 3,
+        "z": 39
+      }
+    ]
+  },
+  "waterAgreement": {
+    "deepBand": {
+      "minZ": -5,
+      "maxZ": 5
+    },
+    "shallowsEnd": {
+      "minZ": -6.25,
+      "maxZ": 6.25
+    },
+    "placeableBankStartsBeyondAbsZ": 6.25,
+    "factoryVisualHalfWidth": 8,
+    "sluiceSamples": [
+      {
+        "x": -30,
+        "z": 7
+      },
+      {
+        "x": -12,
+        "z": 7
+      },
+      {
+        "x": 12,
+        "z": 7
+      },
+      {
+        "x": 30,
+        "z": 7
+      }
+    ]
+  },
+  "waterVisualRuling": "render bank seam follows the gameplay mask so sluice-placeable banks do not look submerged",
+  "landmarkMountSpace": {
+    "coordinates": "game X/Y/Z",
+    "positionY": "local offset added to Terrain.visualY at the mount X/Z",
+    "rotation": "XYZ Euler radians",
+    "scale": "XYZ multiplier",
+    "ownership": "landmark assets mount at runtime and are never baked into terrain"
+  },
+  "landmarkMounts": [
+    {
+      "id": "garden-pressure-manifold",
+      "position": [
+        0.0,
+        0.0,
+        4.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/pressure-garden/garden-pressure-manifold.glb"
+    },
+    {
+      "id": "west-terrace-pipe-header",
+      "position": [
+        -50.0,
+        0.0,
+        24.0
+      ],
+      "rotation": [
+        0.0,
+        0.18,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/pressure-garden/west-terrace-pipe-header.glb"
+    },
+    {
+      "id": "east-terrace-pipe-header",
+      "position": [
+        50.0,
+        0.0,
+        24.0
+      ],
+      "rotation": [
+        0.0,
+        -0.18,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/pressure-garden/east-terrace-pipe-header.glb"
+    },
+    {
+      "id": "coal-seam-service-winch",
+      "position": [
+        -42.0,
+        0.0,
+        40.0
+      ],
+      "rotation": [
+        0.0,
+        0.12,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/pressure-garden/coal-seam-service-winch.glb"
+    },
+    {
+      "id": "water-band-pump-station",
+      "position": [
+        42.0,
+        0.0,
+        -6.0
+      ],
+      "rotation": [
+        0.0,
+        -0.12,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/pressure-garden/water-band-pump-station.glb"
+    }
+  ],
+  "panoramaMount": {
+    "id": "pressure-garden-panorama",
+    "asset": "pressure-garden-panorama.glb",
+    "position": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "rotation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "renderOnly": true,
+    "ownership": "separate mounted scenery; never terrain or gameplay bounds"
+  },
+  "sourceArt": [
+    "assets/processed/terrain-bank-tile.png",
+    "assets/processed/terrain-bank-tile-b.png",
+    "assets/processed/terrain-bank-tile-c.png",
+    "assets/processed/terrain-river-tile.png",
+    "assets/processed/ter-rail-elements-r0c2.png",
+    "assets/processed/kit-era-2.png"
+  ],
+  "atlas": "pressure-garden-terrain-atlas.png",
+  "files": {
+    "blend": {
+      "bytes": 7916074,
+      "sha256": "73ab24a5d5f6b2b0f4c4333955dcac7a66c68e48bac43b16801fea96982ce002"
+    },
+    "glb": {
+      "bytes": 7839344,
+      "sha256": "da54c5ceb70e07778e91ae26ace6b562a217fa039af6dfa9493e8f482f424f0b"
+    },
+    "atlas": {
+      "bytes": 7108421,
+      "sha256": "38b5da07037ea6fbbfce2607fac5c418c99e14f2b29f4841ad9fb8d23cf37f58"
+    }
+  },
+  "landmarkPack": {
+    "contract": "landmarks/pressure-garden/pressure-garden-landmark-pack-contract.json",
+    "atlas": "landmarks/pressure-garden/pressure-garden-landmarks-atlas.png",
+    "era": 2,
+    "sourceLadder": "reuse > derive > build-new",
+    "ownership": "separate mounted render-only GLBs; no simulation authority"
+  }
+}

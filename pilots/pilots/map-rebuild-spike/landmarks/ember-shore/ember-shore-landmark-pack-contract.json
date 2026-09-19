@@ -1,0 +1,265 @@
+{
+  "map": "ember-shore",
+  "era": 10,
+  "referenceBase": "60da054aceb48ce28cc20d507ccdc029b80ccc60",
+  "sourceLadder": [
+    "reuse",
+    "derive",
+    "build-new"
+  ],
+  "atlas": {
+    "asset": "landmarks/ember-shore/ember-shore-landmarks-atlas.png",
+    "width": 1024,
+    "height": 1024,
+    "sharedByEveryAsset": true,
+    "sha256": "f810d60954703fe33f871cbcffa9c31b9554764e50c1be2bb455e9544fde214f",
+    "source": "assets/raw/ember-shore-landmark-material-atlas-v1.png",
+    "recipe": "assets/pilots/map-rebuild-spike/build_ember_landmarks.py"
+  },
+  "blend": {
+    "asset": "landmarks/ember-shore/ember-shore-landmarks.blend",
+    "sha256": "373f02269ffbc2aaf277c5bbff6d1f0310ed81eaa31737dc3fcb01f68ea2799e"
+  },
+  "assets": {
+    "last-warm-vent-altar": {
+      "asset": "landmarks/ember-shore/last-warm-vent-altar.glb",
+      "sourceTier": "derive",
+      "sources": [
+        "assets/raw/plate-contract-e10-ember-shore.png"
+      ],
+      "terrainConformed": false,
+      "triangles": 812,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -1.4,
+          -1.4,
+          0.0
+        ],
+        "max": [
+          1.4,
+          1.4,
+          2.91
+        ]
+      },
+      "sha256": "b8923206fd38d348a359029196e5931bdf0c7889356c0e31d6260f970872dc91",
+      "footprint": {
+        "kind": "rect",
+        "w": 3.312,
+        "d": 2.736
+      }
+    },
+    "cooled-titan-shelf": {
+      "asset": "landmarks/ember-shore/cooled-titan-shelf.glb",
+      "sourceTier": "reuse",
+      "sources": [
+        "assets/pilots/plaza-props-3d/engine-glow-idle.e10.glb",
+        "assets/raw/plate-e10-worlds.png"
+      ],
+      "terrainConformed": false,
+      "triangles": 908,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -3.2,
+          -2.2,
+          0.0
+        ],
+        "max": [
+          3.2,
+          2.2,
+          2.5
+        ]
+      },
+      "sha256": "c042ace708d89ac129287f989d5e31d069d09d1b686a01fafaa092cde3199a2b",
+      "footprint": {
+        "kind": "rect",
+        "w": 4.608,
+        "d": 3.168
+      }
+    },
+    "west-vein-cooling-marker": {
+      "asset": "landmarks/ember-shore/west-vein-cooling-marker.glb",
+      "sourceTier": "derive",
+      "sources": [
+        "assets/raw/plate-contract-e10-ember-shore.png"
+      ],
+      "terrainConformed": false,
+      "triangles": 340,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -1.45,
+          -1.05,
+          0.0
+        ],
+        "max": [
+          1.45,
+          1.05,
+          1.8
+        ]
+      },
+      "sha256": "4a40debb6af92acb6ea0048060668aaebb99795feb80e85913b4cb2fdde7cd27",
+      "footprint": {
+        "kind": "radius",
+        "radius": 0.947
+      }
+    },
+    "center-vein-bridge-school": {
+      "asset": "landmarks/ember-shore/center-vein-bridge-school.glb",
+      "sourceTier": "derive",
+      "sources": [
+        "assets/raw/plate-contract-e10-ember-shore.png"
+      ],
+      "terrainConformed": false,
+      "triangles": 384,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -1.75,
+          -1.25,
+          0.0
+        ],
+        "max": [
+          1.75,
+          1.25,
+          2.245
+        ]
+      },
+      "sha256": "4ee09b4cb93a183768631601415188e19bdc61dad205869690dd6ef44f3bf6fc",
+      "footprint": {
+        "kind": "rect",
+        "w": 4.013,
+        "d": 3.078
+      }
+    },
+    "shore-preserve-rack": {
+      "asset": "landmarks/ember-shore/shore-preserve-rack.glb",
+      "sourceTier": "derive",
+      "sources": [
+        "assets/raw/plate-contract-e10-ember-shore.png"
+      ],
+      "terrainConformed": false,
+      "triangles": 1484,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -2.7,
+          -1.35,
+          0.0
+        ],
+        "max": [
+          2.7,
+          1.35,
+          2.87
+        ]
+      },
+      "sha256": "f7685433e7cb1046206f885cc73d3638afe99e8862b75bdc6466e8e3b51802bd",
+      "footprint": {
+        "kind": "rect",
+        "w": 4.021,
+        "d": 2.737
+      }
+    }
+  },
+  "mounts": [
+    {
+      "id": "last-warm-vent-altar",
+      "position": [
+        3.0,
+        0.0,
+        -10.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.28,
+        1.28,
+        1.28
+      ],
+      "asset": "landmarks/ember-shore/last-warm-vent-altar.glb"
+    },
+    {
+      "id": "cooled-titan-shelf",
+      "position": [
+        26.0,
+        0.0,
+        34.0
+      ],
+      "rotation": [
+        0.0,
+        -0.18,
+        0.0
+      ],
+      "scale": [
+        1.16,
+        1.16,
+        1.16
+      ],
+      "asset": "landmarks/ember-shore/cooled-titan-shelf.glb"
+    },
+    {
+      "id": "west-vein-cooling-marker",
+      "position": [
+        -36.0,
+        0.0,
+        18.0
+      ],
+      "rotation": [
+        0.0,
+        0.1,
+        0.0
+      ],
+      "scale": [
+        1.18,
+        1.18,
+        1.18
+      ],
+      "asset": "landmarks/ember-shore/west-vein-cooling-marker.glb"
+    },
+    {
+      "id": "center-vein-bridge-school",
+      "position": [
+        -12.0,
+        0.0,
+        24.0
+      ],
+      "rotation": [
+        0.0,
+        -0.12,
+        0.0
+      ],
+      "scale": [
+        1.18,
+        1.18,
+        1.18
+      ],
+      "asset": "landmarks/ember-shore/center-vein-bridge-school.glb"
+    },
+    {
+      "id": "shore-preserve-rack",
+      "position": [
+        48.0,
+        0.0,
+        -28.0
+      ],
+      "rotation": [
+        0.0,
+        -0.18,
+        0.0
+      ],
+      "scale": [
+        1.2,
+        1.2,
+        1.2
+      ],
+      "asset": "landmarks/ember-shore/shore-preserve-rack.glb"
+    }
+  ],
+  "simulation": "none; terrain, collision, movement, placement, water, spawns, and fog remain unchanged",
+  "mountInterlock": "resolved-3d-d",
+  "recipe": "assets/pilots/map-rebuild-spike/build_ember_landmarks.py"
+}

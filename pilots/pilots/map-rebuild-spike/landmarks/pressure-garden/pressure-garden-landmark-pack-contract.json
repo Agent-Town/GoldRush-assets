@@ -1,0 +1,249 @@
+{
+  "map": "pressure-garden",
+  "era": 2,
+  "referenceBase": "44741af1e44f5becfa1f09665a88b3b33d4ce092",
+  "sourceLadder": [
+    "reuse",
+    "derive",
+    "build-new"
+  ],
+  "atlas": {
+    "asset": "landmarks/pressure-garden/pressure-garden-landmarks-atlas.png",
+    "width": 1024,
+    "height": 1024,
+    "sharedByEveryAsset": true,
+    "sha256": "9e38e72df3833391b0886204c86e1c7423a71e14cc772b68fda0b80f4cb36b18"
+  },
+  "blend": {
+    "asset": "landmarks/pressure-garden/pressure-garden-landmarks.blend",
+    "sha256": "d542810d3989b8d42d88fe7338897402956e27dbb7ebab5689c4e4f8b453ca6d"
+  },
+  "assets": {
+    "garden-pressure-manifold": {
+      "asset": "landmarks/pressure-garden/garden-pressure-manifold.glb",
+      "sourceTier": "reuse",
+      "sources": [
+        "assets/pilots/plaza-props-3d/pressure-manifold.e2.glb",
+        "assets/pilots/plaza-props-3d/pipe-run.e2.glb",
+        "assets/pilots/plaza-props-3d/gauge-post.e2.glb"
+      ],
+      "terrainConformed": false,
+      "triangles": 2564,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -4.475,
+          -0.97,
+          0.0
+        ],
+        "max": [
+          4.475,
+          0.97,
+          5.0
+        ]
+      },
+      "sha256": "879ebc6a32c59269ebd5621b09f9ec3030bc704bbb457d3eeaab272a2f83b81c",
+      "footprint": {"kind":"rect","w":6.444,"d":1.397}
+    },
+    "west-terrace-pipe-header": {
+      "asset": "landmarks/pressure-garden/west-terrace-pipe-header.glb",
+      "sourceTier": "reuse",
+      "sources": [
+        "assets/pilots/plaza-props-3d/pipe-run.e2.glb",
+        "assets/pilots/plaza-props-3d/gauge-post.e2.glb"
+      ],
+      "terrainConformed": false,
+      "triangles": 1672,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -2.7875,
+          -0.775,
+          0.0
+        ],
+        "max": [
+          2.7875,
+          0.775,
+          4.75
+        ]
+      },
+      "sha256": "9399290248b8bef740436b349b33098e4c767a075f42c23e41409d9d051b23c1",
+      "footprint": {"kind":"rect","w":4.014,"d":1.116}
+    },
+    "east-terrace-pipe-header": {
+      "asset": "landmarks/pressure-garden/east-terrace-pipe-header.glb",
+      "sourceTier": "reuse",
+      "sources": [
+        "assets/pilots/plaza-props-3d/pipe-run.e2.glb",
+        "assets/pilots/plaza-props-3d/gauge-post.e2.glb"
+      ],
+      "terrainConformed": false,
+      "triangles": 1616,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -3.1575,
+          -0.775,
+          0.0
+        ],
+        "max": [
+          3.1575,
+          0.775,
+          4.82
+        ]
+      },
+      "sha256": "dcf13b45962743b9a31b6328794f28b16b4a6290b1b53d355981794f4f351c78",
+      "footprint": {"kind":"rect","w":4.547,"d":1.116}
+    },
+    "coal-seam-service-winch": {
+      "asset": "landmarks/pressure-garden/coal-seam-service-winch.glb",
+      "sourceTier": "reuse",
+      "sources": [
+        "assets/pilots/map-rebuild-spike/landmarks/twin-banks/north_bank_winch.glb",
+        "assets/pilots/plaza-props-3d/coal-bin.e2.glb"
+      ],
+      "terrainConformed": false,
+      "triangles": 1480,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -4.35,
+          -3.456,
+          0.0
+        ],
+        "max": [
+          4.35,
+          3.456,
+          3.0
+        ]
+      },
+      "sha256": "013460e0ea735d60da0a3670c9e9f385326f89e553b2b01cd1f1ac26caf2fd3a",
+      "footprint": {"kind":"rect","w":6.264,"d":4.977}
+    },
+    "water-band-pump-station": {
+      "asset": "landmarks/pressure-garden/water-band-pump-station.glb",
+      "sourceTier": "reuse",
+      "sources": [
+        "assets/pilots/run3d/sluice.glb",
+        "assets/pilots/plaza-props-3d/pipe-run.e2.glb",
+        "assets/pilots/plaza-props-3d/gauge-post.e2.glb"
+      ],
+      "terrainConformed": false,
+      "triangles": 2432,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -4.175,
+          -2.484,
+          0.0
+        ],
+        "max": [
+          4.175,
+          2.484,
+          4.9
+        ]
+      },
+      "sha256": "59f769a9aa726923013403467b9cf71087e165651f1c59f6c37729876099be98",
+      "footprint": {"kind":"rect","w":6.012,"d":3.577}
+    }
+  },
+  "mounts": [
+    {
+      "id": "garden-pressure-manifold",
+      "position": [
+        0.0,
+        0.0,
+        4.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/pressure-garden/garden-pressure-manifold.glb"
+    },
+    {
+      "id": "west-terrace-pipe-header",
+      "position": [
+        -50.0,
+        0.0,
+        24.0
+      ],
+      "rotation": [
+        0.0,
+        0.18,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/pressure-garden/west-terrace-pipe-header.glb"
+    },
+    {
+      "id": "east-terrace-pipe-header",
+      "position": [
+        50.0,
+        0.0,
+        24.0
+      ],
+      "rotation": [
+        0.0,
+        -0.18,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/pressure-garden/east-terrace-pipe-header.glb"
+    },
+    {
+      "id": "coal-seam-service-winch",
+      "position": [
+        -42.0,
+        0.0,
+        40.0
+      ],
+      "rotation": [
+        0.0,
+        0.12,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/pressure-garden/coal-seam-service-winch.glb"
+    },
+    {
+      "id": "water-band-pump-station",
+      "position": [
+        42.0,
+        0.0,
+        -6.0
+      ],
+      "rotation": [
+        0.0,
+        -0.12,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/pressure-garden/water-band-pump-station.glb"
+    }
+  ],
+  "simulation": "none; terrain, collision, movement, placement, water, spawns, and fog remain unchanged",
+  "mountInterlock": "resolved-3d-d"
+}

@@ -1,0 +1,243 @@
+{
+  "map": "glow-mesa",
+  "era": 6,
+  "referenceBase": "9e324ce111d27550fddf63ce1401b4262a1b30e3",
+  "sourceLadder": [
+    "reuse",
+    "derive",
+    "build-new"
+  ],
+  "atlas": {
+    "asset": "landmarks/glow-mesa/glow-mesa-landmarks-atlas.png",
+    "width": 1024,
+    "height": 1024,
+    "sharedByEveryAsset": true,
+    "sha256": "e46b938d727e159ea7821fdeecac04d384a8576bbecdad7d20932497e9bfa80f"
+  },
+  "blend": {
+    "asset": "landmarks/glow-mesa/glow-mesa-landmarks.blend",
+    "sha256": "995a66d5786ebde6125cfa5db4063733c90c1a9cf04e50287e1a4468b879a131"
+  },
+  "assets": {
+    "mesa-starstone-derrick": {
+      "asset": "landmarks/glow-mesa/mesa-starstone-derrick.glb",
+      "sourceTier": "derive",
+      "sources": [
+        "assets/raw/kit-era-6.png",
+        "assets/processed/kit-era-6.png"
+      ],
+      "terrainConformed": false,
+      "triangles": 600,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -2.8,
+          -1.9522,
+          0.0
+        ],
+        "max": [
+          2.8,
+          1.9522,
+          9.2
+        ]
+      },
+      "sha256": "496db05f64cef228e9058ba5180122e74ba0b438989887059e5e243c3e195e5e",
+      "footprint": {"kind":"rect","w":4.032,"d":2.811}
+    },
+    "six-vein-control-pylon": {
+      "asset": "landmarks/glow-mesa/six-vein-control-pylon.glb",
+      "sourceTier": "derive",
+      "sources": [
+        "assets/raw/kit-era-6.png",
+        "assets/raw/plate-e6-bld-reactor-dome.png"
+      ],
+      "terrainConformed": false,
+      "triangles": 704,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -2.1,
+          -1.7,
+          0.0
+        ],
+        "max": [
+          2.1,
+          1.7,
+          7.9651
+        ]
+      },
+      "sha256": "83ce7cf256e60f2c8d5b5cd8e11e9638f7f83ea1bb8a41d42c8dd749f2a7c215",
+      "footprint": {"kind":"rect","w":3.024,"d":2.448}
+    },
+    "isotope-cooling-rack": {
+      "asset": "landmarks/glow-mesa/isotope-cooling-rack.glb",
+      "sourceTier": "derive",
+      "sources": [
+        "assets/pilots/plaza-props-3d/pipe-run.e2.glb",
+        "assets/raw/plate-e6-bld-isotope-kitchen.png"
+      ],
+      "terrainConformed": false,
+      "triangles": 1364,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -3.4,
+          -1.9,
+          0.0
+        ],
+        "max": [
+          3.4,
+          1.9,
+          4.8
+        ]
+      },
+      "sha256": "2b86f02d589b8dd3868621d5e0b66cc2eeb3a05536bf561b8afbf8647590256a",
+      "footprint": {"kind":"rect","w":4.896,"d":2.736}
+    },
+    "west-herd-glow-gate": {
+      "asset": "landmarks/glow-mesa/west-herd-glow-gate.glb",
+      "sourceTier": "reuse",
+      "sources": [
+        "assets/pilots/run3d/palisade.e6.glb"
+      ],
+      "terrainConformed": false,
+      "triangles": 2424,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -3.385,
+          -0.875,
+          0.0
+        ],
+        "max": [
+          3.385,
+          0.875,
+          5.25
+        ]
+      },
+      "sha256": "9aed0eb68561230bf6a14cfd23054fa3e4bcc13fca4aaca1df20e1f135d78d0d"
+    },
+    "east-herd-glow-gate": {
+      "asset": "landmarks/glow-mesa/east-herd-glow-gate.glb",
+      "sourceTier": "reuse",
+      "sources": [
+        "assets/pilots/run3d/palisade.e6.glb"
+      ],
+      "terrainConformed": false,
+      "triangles": 2424,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -3.385,
+          -0.875,
+          0.0
+        ],
+        "max": [
+          3.385,
+          0.875,
+          5.25
+        ]
+      },
+      "sha256": "b4ecdb1fd8e318e1644acce01a914d584e7d595385a2405640795e8ca4dff2ec"
+    }
+  },
+  "mounts": [
+    {
+      "id": "mesa-starstone-derrick",
+      "position": [
+        -56.0,
+        0.0,
+        50.0
+      ],
+      "rotation": [
+        0.0,
+        0.08,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/glow-mesa/mesa-starstone-derrick.glb"
+    },
+    {
+      "id": "six-vein-control-pylon",
+      "position": [
+        0.0,
+        0.0,
+        -7.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/glow-mesa/six-vein-control-pylon.glb"
+    },
+    {
+      "id": "isotope-cooling-rack",
+      "position": [
+        28.0,
+        0.0,
+        -59.0
+      ],
+      "rotation": [
+        0.0,
+        -0.16,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/glow-mesa/isotope-cooling-rack.glb"
+    },
+    {
+      "id": "west-herd-glow-gate",
+      "position": [
+        -56.0,
+        0.0,
+        16.0
+      ],
+      "rotation": [
+        0.0,
+        0.34,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/glow-mesa/west-herd-glow-gate.glb"
+    },
+    {
+      "id": "east-herd-glow-gate",
+      "position": [
+        56.0,
+        0.0,
+        16.0
+      ],
+      "rotation": [
+        0.0,
+        -0.32,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/glow-mesa/east-herd-glow-gate.glb"
+    }
+  ],
+  "simulation": "none; terrain, collision, movement, placement, water, spawns, and fog remain unchanged",
+  "mountInterlock": "resolved-3d-d"
+}

@@ -1,0 +1,35 @@
+{
+  "epoch": 10,
+  "floodReset": true,
+  "atlas": "era-props-e10-atlas.png",
+  "progressionVariants": {
+    "engineGlow": [
+      "engine-glow-idle.e10.glb",
+      "engine-glow-cruise.e10.glb",
+      "engine-glow-ward.e10.glb"
+    ]
+  },
+  "props": [
+    {
+      "id": "e10-bridge-school-southeast",
+      "glb": "bridge-school.e10.glb",
+      "position": { "x": 13, "z": -6.5 },
+      "rotation": -0.52,
+      "scale": 1
+    },
+    {
+      "id": "e10-charter-press-northeast",
+      "glb": "charter-press.e10.glb",
+      "position": { "x": 15.2, "z": 5.3 },
+      "rotation": 1.23,
+      "scale": 1
+    },
+    {
+      "id": "e10-preserve-rack-west",
+      "glb": "preserve-rack.e10.glb",
+      "position": { "x": -14.6, "z": 0 },
+      "rotation": -1.57,
+      "scale": 1
+    }
+  ]
+}

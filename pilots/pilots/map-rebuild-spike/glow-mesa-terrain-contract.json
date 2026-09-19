@@ -1,0 +1,479 @@
+{
+  "asset": "glow-mesa-terrain.glb",
+  "contractId": "e6-glow-mesa",
+  "tileId": "e6-glow-mesa",
+  "renderOnly": true,
+  "simulation": "planar masks, movement, collision, spawns, placement, and combat remain unchanged",
+  "heightSocket": "Terrain.visualY",
+  "theme": "a true two-level caprock mesa with three legal herd paths, six teal night veins, and timed decay fields on the polished base",
+  "regionalFamily": {
+    "epoch": "Epoch 6 atomic homestead",
+    "shared": [
+      "parchment warmth",
+      "chrome-pastel enamel",
+      "soft starstone teal",
+      "amber Combine light",
+      "engraved caprock",
+      "fading hatch-step decay"
+    ],
+    "unique": [
+      "authored terrain silhouette",
+      "mask rhythm",
+      "two-level caprock and herd-path composition",
+      "panorama profile"
+    ]
+  },
+  "boundsMeters": {
+    "min": [
+      -64.0,
+      -64.0,
+      0.58
+    ],
+    "max": [
+      64.0,
+      64.0,
+      5.0169
+    ]
+  },
+  "meshCount": 1,
+  "primitiveCount": 1,
+  "materialCount": 1,
+  "vertices": 16641,
+  "triangles": 32768,
+  "triangleBudget": 60000,
+  "texture": {
+    "count": 1,
+    "width": 2048,
+    "height": 2048,
+    "embedded": true
+  },
+  "maskTable": "assets/contracts/epoch-6-atomic/mask-tables/e6-glow-mesa.json",
+  "maskTruth": {
+    "source": "assets/contracts/epoch-6-atomic/contracts.json; specs/epoch-saga/e6-atomic-bundle.md \u00a7B",
+    "tileId": "e6-glow-mesa",
+    "size": 128,
+    "dimensions": {
+      "width": 128,
+      "height": 128
+    },
+    "river": false,
+    "ford": false,
+    "buildZones": [
+      {
+        "id": "base-flat",
+        "bank": "south",
+        "minX": -52,
+        "maxX": 52,
+        "minZ": -54,
+        "maxZ": -10
+      },
+      {
+        "id": "decay-clock-site",
+        "bank": "south",
+        "minX": -46,
+        "maxX": -34,
+        "minZ": -48,
+        "maxZ": -38
+      },
+      {
+        "id": "warehouse-approach",
+        "bank": "north",
+        "minX": -50,
+        "maxX": -18,
+        "minZ": 40,
+        "maxZ": 54
+      },
+      {
+        "id": "calculating-house-site",
+        "bank": "north",
+        "minX": -16,
+        "maxX": -4,
+        "minZ": 12,
+        "maxZ": 22
+      },
+      {
+        "id": "reactor-dome-site",
+        "bank": "north",
+        "minX": 4,
+        "maxX": 16,
+        "minZ": 12,
+        "maxZ": 22
+      }
+    ],
+    "fixtureZones": [
+      {
+        "id": "calculating-house-site",
+        "minX": -16,
+        "maxX": -4,
+        "minZ": 12,
+        "maxZ": 22
+      },
+      {
+        "id": "reactor-dome-site",
+        "minX": 4,
+        "maxX": 16,
+        "minZ": 12,
+        "maxZ": 22
+      }
+    ],
+    "stakeMarkers": [
+      {
+        "id": "isotope-kitchen",
+        "x": 0,
+        "z": -32,
+        "lossCondition": true
+      }
+    ],
+    "waterSources": [],
+    "harvestAnchors": [
+      {
+        "x": -24,
+        "z": 18
+      },
+      {
+        "x": -14,
+        "z": 34
+      },
+      {
+        "x": 4,
+        "z": 38
+      },
+      {
+        "x": 24,
+        "z": 30
+      },
+      {
+        "x": 26,
+        "z": 10
+      },
+      {
+        "x": 4,
+        "z": 2
+      }
+    ],
+    "heightfield": {
+      "id": "glow-mesa-two-level",
+      "mode": "visual"
+    },
+    "elevationZones": [
+      {
+        "id": "base-flat-h1",
+        "height": 1,
+        "minX": -52,
+        "maxX": 52,
+        "minZ": -54,
+        "maxZ": -10
+      },
+      {
+        "id": "mesa-top-h5",
+        "height": 5,
+        "minX": -30,
+        "maxX": 30,
+        "minZ": 0,
+        "maxZ": 40
+      }
+    ],
+    "decayFields": [
+      {
+        "id": "decay-field-east",
+        "minX": 18,
+        "maxX": 34,
+        "minZ": -46,
+        "maxZ": -30
+      },
+      {
+        "id": "decay-field-southeast",
+        "minX": 32,
+        "maxX": 50,
+        "minZ": -28,
+        "maxZ": -12
+      }
+    ],
+    "herdPaths": [
+      {
+        "id": "warehouse-herd-path",
+        "minX": -46,
+        "maxX": -28,
+        "minZ": 28,
+        "maxZ": 52
+      },
+      {
+        "id": "west-scarp-herd-path",
+        "minX": -52,
+        "maxX": -30,
+        "minZ": 4,
+        "maxZ": 28
+      },
+      {
+        "id": "east-scarp-herd-path",
+        "minX": 30,
+        "maxX": 52,
+        "minZ": 4,
+        "maxZ": 28
+      }
+    ],
+    "lanes": {
+      "spawnEdges": [
+        "north",
+        "west",
+        "east"
+      ],
+      "territoryRingBiasWaves": 0,
+      "territoryRingLaneBias": 0
+    },
+    "spawnGates": []
+  },
+  "waterAgreement": {
+    "river": false,
+    "waterSources": []
+  },
+  "pylonSiteFlatness": [],
+  "capacitorSiteFlatness": [],
+  "fixtureZoneFlatness": [
+    {
+      "id": "calculating-house-site",
+      "bounds": [
+        -16,
+        -4,
+        12,
+        22
+      ],
+      "sampledSurfacePoints": 561,
+      "maxDeviationMeters": 0.0
+    },
+    {
+      "id": "reactor-dome-site",
+      "bounds": [
+        4,
+        16,
+        12,
+        22
+      ],
+      "sampledSurfacePoints": 561,
+      "maxDeviationMeters": 0.0
+    }
+  ],
+  "buildZoneFlatness": [
+    {
+      "id": "base-flat",
+      "bounds": [
+        -52,
+        52,
+        -54,
+        -10
+      ],
+      "sampledSurfacePoints": 1225,
+      "maxDeviationMeters": 0.0
+    },
+    {
+      "id": "decay-clock-site",
+      "bounds": [
+        -46,
+        -34,
+        -48,
+        -38
+      ],
+      "sampledSurfacePoints": 1225,
+      "maxDeviationMeters": 0.0
+    },
+    {
+      "id": "warehouse-approach",
+      "bounds": [
+        -50,
+        -18,
+        40,
+        54
+      ],
+      "sampledSurfacePoints": 1225,
+      "maxDeviationMeters": 0.0
+    },
+    {
+      "id": "calculating-house-site",
+      "bounds": [
+        -16,
+        -4,
+        12,
+        22
+      ],
+      "sampledSurfacePoints": 1225,
+      "maxDeviationMeters": 0.0
+    },
+    {
+      "id": "reactor-dome-site",
+      "bounds": [
+        4,
+        16,
+        12,
+        22
+      ],
+      "sampledSurfacePoints": 1225,
+      "maxDeviationMeters": 0.0
+    }
+  ],
+  "pylonFlatnessLimitMeters": 0.02,
+  "fixtureFlatnessLimitMeters": 0.02,
+  "landmarkFreeze": "lifted; canonical mounted landmark pack records backfilled by the mounts sweep",
+  "landmarkMounts": [
+    {
+      "id": "mesa-starstone-derrick",
+      "position": [
+        -56.0,
+        0.0,
+        50.0
+      ],
+      "rotation": [
+        0.0,
+        0.08,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/glow-mesa/mesa-starstone-derrick.glb"
+    },
+    {
+      "id": "six-vein-control-pylon",
+      "position": [
+        0.0,
+        0.0,
+        -7.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/glow-mesa/six-vein-control-pylon.glb"
+    },
+    {
+      "id": "isotope-cooling-rack",
+      "position": [
+        28.0,
+        0.0,
+        -59.0
+      ],
+      "rotation": [
+        0.0,
+        -0.16,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/glow-mesa/isotope-cooling-rack.glb"
+    },
+    {
+      "id": "west-herd-glow-gate",
+      "position": [
+        -56.0,
+        0.0,
+        16.0
+      ],
+      "rotation": [
+        0.0,
+        0.34,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/glow-mesa/west-herd-glow-gate.glb"
+    },
+    {
+      "id": "east-herd-glow-gate",
+      "position": [
+        56.0,
+        0.0,
+        16.0
+      ],
+      "rotation": [
+        0.0,
+        -0.32,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/glow-mesa/east-herd-glow-gate.glb"
+    }
+  ],
+  "verdictPreviewOnly": {
+    "assets": [
+      "assets/pilots/isotope-kitchen-3d/isotope-kitchen.glb",
+      "assets/pilots/decay-clock-3d/decay-clock.glb",
+      "assets/pilots/catalog-warehouse-3d/catalog-warehouse.glb",
+      "assets/pilots/run3d/turret.e6.glb"
+    ],
+    "excludedFromBlendAndGlb": true,
+    "reason": "existing E6 fixture and gameplay bodies establish scale and combat pressure without inventing landmark mounts or spawn authority"
+  },
+  "panoramaMount": {
+    "id": "glow-mesa-panorama",
+    "asset": "glow-mesa-panorama.glb",
+    "position": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "rotation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "renderOnly": true,
+    "ownership": "separate mounted scenery; never terrain or gameplay bounds"
+  },
+  "evidenceRig": "teal starstone dusk with one amber kitchen anchor; all lights render-only",
+  "sourceArt": [
+    "assets/processed/terrain-bank-tile.png",
+    "assets/processed/terrain-bank-tile-c.png",
+    "assets/processed/kit-era-6.png"
+  ],
+  "atlas": "glow-mesa-terrain-atlas.png",
+  "files": {
+    "blend": {
+      "bytes": 9636354,
+      "sha256": "c22631d0b1e09ef0c308728b391fc42016767827d7321389b0c6b1b507fb8f9d"
+    },
+    "glb": {
+      "bytes": 9582292,
+      "sha256": "8ff0c890ea61741a7652e8521da3db525305ddf436714e607a1829d55af20447"
+    },
+    "atlas": {
+      "bytes": 8851433,
+      "sha256": "0e2af985412fa50cc9e2c479cbc7313e2dff790ef06b57702d1345f0d548bbb5"
+    }
+  },
+  "landmarkMountSpace": {
+    "coordinates": "game X/Y/Z",
+    "positionY": "local offset added to Terrain.visualY at the mount X/Z",
+    "rotation": "XYZ Euler radians",
+    "scale": "XYZ multiplier",
+    "ownership": "landmark assets mount at runtime and are never baked into terrain"
+  },
+  "landmarkPack": {
+    "contract": "landmarks/glow-mesa/glow-mesa-landmark-pack-contract.json",
+    "atlas": "landmarks/glow-mesa/glow-mesa-landmarks-atlas.png",
+    "era": 6,
+    "sourceLadder": "reuse > derive > build-new",
+    "ownership": "separate mounted render-only GLBs; no simulation authority"
+  }
+}

@@ -1,0 +1,258 @@
+{
+  "contractId": "picnic-reuse-verdict",
+  "tileId": "e6-glow-mesa",
+  "renderOnly": true,
+  "sculptVerdict": {
+    "verdict": "reuse",
+    "baseTile": "glow-mesa",
+    "baseTerrainContract": "glow-mesa-terrain-contract.json",
+    "reason": "maskTruth.tileId is e6-glow-mesa; duplicate terrain would violate the campaign reuse law",
+    "terrainGlb": "glow-mesa-terrain.glb",
+    "panoramaGlb": "glow-mesa-panorama.glb",
+    "duplicateSculpt": "forbidden; gameplay contract rides the existing tileId"
+  },
+  "maskTable": "assets/contracts/epoch-6-atomic/mask-tables/e6-picnic.json",
+  "maskTruth": {
+    "source": "assets/contracts/epoch-6-atomic/contracts.json; lore/STORYBOOK.md \u2014 E6 \"New maps, specified for whoever builds them\"",
+    "tileId": "e6-glow-mesa",
+    "size": 128,
+    "dimensions": {
+      "width": 128,
+      "height": 128
+    },
+    "river": false,
+    "ford": false,
+    "buildZones": [
+      {
+        "id": "base-staging",
+        "bank": "south",
+        "minX": -40,
+        "maxX": 40,
+        "minZ": -52,
+        "maxZ": -14
+      },
+      {
+        "id": "mesa-meadow",
+        "bank": "north",
+        "minX": -28,
+        "maxX": 28,
+        "minZ": 2,
+        "maxZ": 38
+      }
+    ],
+    "picnicBlankets": [
+      {
+        "id": "west-picnic-blanket",
+        "minX": -24,
+        "maxX": -8,
+        "minZ": 12,
+        "maxZ": 24
+      },
+      {
+        "id": "center-picnic-blanket",
+        "minX": -8,
+        "maxX": 8,
+        "minZ": 22,
+        "maxZ": 34
+      },
+      {
+        "id": "east-picnic-blanket",
+        "minX": 8,
+        "maxX": 24,
+        "minZ": 12,
+        "maxZ": 24
+      }
+    ],
+    "stakeMarkers": [
+      {
+        "id": "sandwich-west",
+        "x": -16,
+        "z": 18,
+        "lossCondition": true
+      },
+      {
+        "id": "sandwich-center",
+        "x": 0,
+        "z": 26,
+        "lossCondition": true
+      },
+      {
+        "id": "sandwich-east",
+        "x": 16,
+        "z": 18,
+        "lossCondition": true
+      }
+    ],
+    "waterSources": [],
+    "harvestAnchors": [],
+    "heightfield": {
+      "id": "glow-mesa-two-level",
+      "mode": "visual"
+    },
+    "civilianSites": [
+      {
+        "x": -20,
+        "z": 18
+      },
+      {
+        "x": -12,
+        "z": 18
+      },
+      {
+        "x": -4,
+        "z": 28
+      },
+      {
+        "x": 4,
+        "z": 28
+      },
+      {
+        "x": 12,
+        "z": 18
+      },
+      {
+        "x": 20,
+        "z": 18
+      }
+    ],
+    "sandwichSites": [
+      {
+        "id": "sandwich-west",
+        "x": -16,
+        "z": 18
+      },
+      {
+        "id": "sandwich-center",
+        "x": 0,
+        "z": 26
+      },
+      {
+        "id": "sandwich-east",
+        "x": 16,
+        "z": 18
+      }
+    ],
+    "lanes": {
+      "spawnEdges": [
+        "north",
+        "west",
+        "east"
+      ],
+      "territoryRingBiasWaves": 0,
+      "territoryRingLaneBias": 0
+    },
+    "spawnGates": []
+  },
+  "landmarkMountSpace": {
+    "coordinates": "game X/Y/Z",
+    "positionY": "local offset added to Terrain.visualY at the mount X/Z",
+    "rotation": "XYZ Euler radians",
+    "scale": "XYZ multiplier",
+    "ownership": "landmark assets mount at runtime and are never baked into terrain"
+  },
+  "landmarkMounts": [
+    {
+      "id": "picnic-staging-gate",
+      "position": [
+        0.0,
+        0.0,
+        -54.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/picnic/picnic-staging-gate.glb"
+    },
+    {
+      "id": "west-picnic-blanket",
+      "position": [
+        -16.0,
+        0.0,
+        18.0
+      ],
+      "rotation": [
+        0.0,
+        0.08,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/picnic/west-picnic-blanket.glb"
+    },
+    {
+      "id": "center-picnic-blanket",
+      "position": [
+        0.0,
+        0.0,
+        26.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/picnic/center-picnic-blanket.glb"
+    },
+    {
+      "id": "east-picnic-blanket",
+      "position": [
+        16.0,
+        0.0,
+        18.0
+      ],
+      "rotation": [
+        0.0,
+        -0.08,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/picnic/east-picnic-blanket.glb"
+    },
+    {
+      "id": "mesa-civilian-shade",
+      "position": [
+        0.0,
+        0.0,
+        40.0
+      ],
+      "rotation": [
+        0.0,
+        3.1416,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/picnic/mesa-civilian-shade.glb"
+    }
+  ],
+  "landmarkPack": {
+    "contract": "landmarks/picnic/picnic-landmark-pack-contract.json",
+    "atlas": "landmarks/picnic/picnic-landmarks-atlas.png",
+    "era": 6,
+    "sourceLadder": "reuse > derive > build-new",
+    "ownership": "separate mounted render-only GLBs; no simulation authority"
+  },
+  "simulation": "reuse verdict only; terrain, collision, movement, placement, water, spawns, fog, and variant mechanics remain unchanged"
+}

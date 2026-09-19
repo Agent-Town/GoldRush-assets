@@ -1,0 +1,90 @@
+{
+  "asset": "the-claim-panorama.glb",
+  "map": "the-claim",
+  "renderOnly": true,
+  "style": "engraved Epoch 1 kit-plate horizon; warm valley against a darker fevered rim",
+  "signature": "open wind-scoured valley holding against a bruised outer rim",
+  "exposure": {
+    "mode": "bakedIntoAtlas",
+    "linearMultiplier": 0.48
+  },
+  "lawVersion": "PANORAMA LAW v2",
+  "namedCorrections": {
+    "paintedWall": "sunk sky ring behind an irregular closer ridge belt with a dusty haze transition",
+    "ceiling": "engraving density grades from dense horizon to near-plain parchment zenith",
+    "echo": "asymmetric cloud and dust edits plus independent near/far ridge profiles break mirrored repetition"
+  },
+  "projection": {
+    "skyRingRadiusMeters": 190.0,
+    "ridgeFootRadiusMeters": 161.5,
+    "ridgeOccluderRadiusMeters": 174.0,
+    "ridgeFootRadiusRangeMeters": [
+      159.8,
+      163.2
+    ],
+    "ridgeOccluderRadiusRangeMeters": [
+      172.3,
+      175.7
+    ],
+    "skyBottomMeters": -10.0,
+    "skyTopMeters": 130.0,
+    "ridgeTopFormulaMeters": "5.0 + silhouetteFraction * 55.0"
+  },
+  "mount": {
+    "id": "the-claim-panorama",
+    "asset": "the-claim-panorama.glb",
+    "position": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "rotation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "renderOnly": true,
+    "ownership": "separate mounted scenery; never terrain or gameplay bounds"
+  },
+  "nonInterference": {
+    "playfieldBounds": "unchanged",
+    "spawnEdges": "unchanged",
+    "fogGating": "unchanged",
+    "waterBuildSpawnMasks": "unchanged"
+  },
+  "meshCount": 1,
+  "primitiveCount": 1,
+  "materialCount": 1,
+  "vertices": 1351,
+  "triangles": 1920,
+  "triangleBudget": 4000,
+  "texture": {
+    "count": 1,
+    "width": 2048,
+    "height": 2048,
+    "embedded": true
+  },
+  "sourceArt": [
+    "assets/processed/kit-era-1.png",
+    "assets/raw/plate-contract-the-claim.png"
+  ],
+  "files": {
+    "blend": {
+      "bytes": 461164,
+      "sha256": "6b93a5f99b57aba50466da4358b51a4a564af4d4ee3699a0fc07cd23924adb59"
+    },
+    "glb": {
+      "bytes": 517820,
+      "sha256": "9ecaa2f4055e59bcce3750f13583ffb3c6103c6ab8df013e47e57a31d853068c"
+    },
+    "atlas": {
+      "bytes": 367684,
+      "sha256": "f65db0b1cd58518423bb7fefcd916519f557ec3a8af110e787d27751ffbf60e6"
+    }
+  }
+}

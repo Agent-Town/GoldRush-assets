@@ -1,0 +1,499 @@
+{
+  "baseSha": "d41ab98ce0d7fbc48bb01e8e87c92c61f148de2d",
+  "blender": "5.1.2",
+  "sourcePlates": {
+    "assets/raw/boss-old-digger.png": "a6f9ffadd3280fe97daab2a419bfabe163a6b5dbfe76e6891dc1cdd2d197156a",
+    "assets/raw/boss-old-digger-gentle.png": "09e1f06185a46dfaf28a55421250acad0e2331eeec11ad9409ce62879430bb77"
+  },
+  "componentContract": {
+    "bucket_wheel_port": "Redemption_GentleBuckets",
+    "bucket_wheel_starboard": "Redemption_GentleBuckets",
+    "gantry": "Redemption_SafeGantry",
+    "tape_deck": "Redemption_TealTapeDeck"
+  },
+  "stateLaw": "working machine to intact gentle reprogramming; no damage or kill morph exists",
+  "sourceScene": {
+    "meshObjects": [
+      "bucket_wheel_port",
+      "bucket_wheel_starboard",
+      "gantry",
+      "tape_deck"
+    ],
+    "cameras": [],
+    "lights": [],
+    "actions": []
+  },
+  "checked": {
+    "sha256": "f5efdc4e8871c3f99f5eae440f7663b498cac6d214a06dc4a1f71abec75405ec",
+    "bytes": 1959340,
+    "nodes": [
+      "gantry",
+      "tape_deck",
+      "bucket_wheel_port",
+      "bucket_wheel_starboard"
+    ],
+    "nodeCount": 4,
+    "bindings": [
+      {
+        "node": "gantry",
+        "mesh": "gantryMesh",
+        "targets": [
+          "Redemption_SafeGantry"
+        ],
+        "defaultWeights": [
+          0
+        ]
+      },
+      {
+        "node": "tape_deck",
+        "mesh": "tape_deckMesh",
+        "targets": [
+          "Redemption_TealTapeDeck"
+        ],
+        "defaultWeights": [
+          0
+        ]
+      },
+      {
+        "node": "bucket_wheel_port",
+        "mesh": "bucket_wheelsMesh.001",
+        "targets": [
+          "Redemption_GentleBuckets"
+        ],
+        "defaultWeights": [
+          0
+        ]
+      },
+      {
+        "node": "bucket_wheel_starboard",
+        "mesh": "bucket_wheelsMesh.002",
+        "targets": [
+          "Redemption_GentleBuckets"
+        ],
+        "defaultWeights": [
+          0
+        ]
+      }
+    ],
+    "nodeTransforms": {
+      "gantry": {
+        "translation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "matrix": null
+      },
+      "tape_deck": {
+        "translation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "matrix": null
+      },
+      "bucket_wheel_port": {
+        "translation": [
+          -3.9727559089660645,
+          2.205871105194092,
+          -0.0186068844050169
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "matrix": null
+      },
+      "bucket_wheel_starboard": {
+        "translation": [
+          4.6515350341796875,
+          1.6290574073791504,
+          -0.0186068844050169
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "matrix": null
+      }
+    },
+    "meshes": 4,
+    "meshNames": [
+      "gantryMesh",
+      "tape_deckMesh",
+      "bucket_wheelsMesh.001",
+      "bucket_wheelsMesh.002"
+    ],
+    "primitives": 4,
+    "primitiveMaterials": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "triangles": 7192,
+    "morphTargets": {
+      "gantryMesh": [
+        "Redemption_SafeGantry"
+      ],
+      "tape_deckMesh": [
+        "Redemption_TealTapeDeck"
+      ],
+      "bucket_wheelsMesh.001": [
+        "Redemption_GentleBuckets"
+      ],
+      "bucket_wheelsMesh.002": [
+        "Redemption_GentleBuckets"
+      ]
+    },
+    "targetCounts": {
+      "gantryMesh": 1,
+      "tape_deckMesh": 1,
+      "bucket_wheelsMesh.001": 1,
+      "bucket_wheelsMesh.002": 1
+    },
+    "materials": 1,
+    "materialTextureBindings": [
+      {
+        "material": 0,
+        "baseColorTexture": 0,
+        "image": 0
+      }
+    ],
+    "materialContract": [
+      {
+        "metallicFactor": 0,
+        "roughnessFactor": 0.8999999761581421,
+        "doubleSided": true,
+        "hasBaseColorTexture": true,
+        "hasEmissiveTexture": false,
+        "emissiveFactor": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "textureSources": [
+      0
+    ],
+    "images": 1,
+    "embeddedImages": 1,
+    "imageDimensions": [
+      [
+        1024,
+        1024
+      ]
+    ],
+    "cameras": 0,
+    "lights": 0,
+    "animations": 0,
+    "bounds": {
+      "min": [
+        -6.2,
+        0.0,
+        -1.581585
+      ],
+      "max": [
+        6.2,
+        6.603573,
+        1.581585
+      ],
+      "size": [
+        12.4,
+        6.603573,
+        3.16317
+      ],
+      "center": [
+        0.0,
+        3.301787,
+        0.0
+      ]
+    }
+  },
+  "reexported": {
+    "sha256": "f5efdc4e8871c3f99f5eae440f7663b498cac6d214a06dc4a1f71abec75405ec",
+    "bytes": 1959340,
+    "nodes": [
+      "gantry",
+      "tape_deck",
+      "bucket_wheel_port",
+      "bucket_wheel_starboard"
+    ],
+    "nodeCount": 4,
+    "bindings": [
+      {
+        "node": "gantry",
+        "mesh": "gantryMesh",
+        "targets": [
+          "Redemption_SafeGantry"
+        ],
+        "defaultWeights": [
+          0
+        ]
+      },
+      {
+        "node": "tape_deck",
+        "mesh": "tape_deckMesh",
+        "targets": [
+          "Redemption_TealTapeDeck"
+        ],
+        "defaultWeights": [
+          0
+        ]
+      },
+      {
+        "node": "bucket_wheel_port",
+        "mesh": "bucket_wheelsMesh.001",
+        "targets": [
+          "Redemption_GentleBuckets"
+        ],
+        "defaultWeights": [
+          0
+        ]
+      },
+      {
+        "node": "bucket_wheel_starboard",
+        "mesh": "bucket_wheelsMesh.002",
+        "targets": [
+          "Redemption_GentleBuckets"
+        ],
+        "defaultWeights": [
+          0
+        ]
+      }
+    ],
+    "nodeTransforms": {
+      "gantry": {
+        "translation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "matrix": null
+      },
+      "tape_deck": {
+        "translation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "matrix": null
+      },
+      "bucket_wheel_port": {
+        "translation": [
+          -3.9727559089660645,
+          2.205871105194092,
+          -0.0186068844050169
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "matrix": null
+      },
+      "bucket_wheel_starboard": {
+        "translation": [
+          4.6515350341796875,
+          1.6290574073791504,
+          -0.0186068844050169
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "matrix": null
+      }
+    },
+    "meshes": 4,
+    "meshNames": [
+      "gantryMesh",
+      "tape_deckMesh",
+      "bucket_wheelsMesh.001",
+      "bucket_wheelsMesh.002"
+    ],
+    "primitives": 4,
+    "primitiveMaterials": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "triangles": 7192,
+    "morphTargets": {
+      "gantryMesh": [
+        "Redemption_SafeGantry"
+      ],
+      "tape_deckMesh": [
+        "Redemption_TealTapeDeck"
+      ],
+      "bucket_wheelsMesh.001": [
+        "Redemption_GentleBuckets"
+      ],
+      "bucket_wheelsMesh.002": [
+        "Redemption_GentleBuckets"
+      ]
+    },
+    "targetCounts": {
+      "gantryMesh": 1,
+      "tape_deckMesh": 1,
+      "bucket_wheelsMesh.001": 1,
+      "bucket_wheelsMesh.002": 1
+    },
+    "materials": 1,
+    "materialTextureBindings": [
+      {
+        "material": 0,
+        "baseColorTexture": 0,
+        "image": 0
+      }
+    ],
+    "materialContract": [
+      {
+        "metallicFactor": 0,
+        "roughnessFactor": 0.8999999761581421,
+        "doubleSided": true,
+        "hasBaseColorTexture": true,
+        "hasEmissiveTexture": false,
+        "emissiveFactor": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "textureSources": [
+      0
+    ],
+    "images": 1,
+    "embeddedImages": 1,
+    "imageDimensions": [
+      [
+        1024,
+        1024
+      ]
+    ],
+    "cameras": 0,
+    "lights": 0,
+    "animations": 0,
+    "bounds": {
+      "min": [
+        -6.2,
+        0.0,
+        -1.581585
+      ],
+      "max": [
+        6.2,
+        6.603573,
+        1.581585
+      ],
+      "size": [
+        12.4,
+        6.603573,
+        3.16317
+      ],
+      "center": [
+        0.0,
+        3.301787,
+        0.0
+      ]
+    }
+  },
+  "byteIdentical": true,
+  "semanticIdentical": {
+    "nodes": true,
+    "nodeCount": true,
+    "bindings": true,
+    "nodeTransforms": true,
+    "meshes": true,
+    "meshNames": true,
+    "primitives": true,
+    "primitiveMaterials": true,
+    "triangles": true,
+    "morphTargets": true,
+    "targetCounts": true,
+    "materials": true,
+    "materialTextureBindings": true,
+    "materialContract": true,
+    "textureSources": true,
+    "images": true,
+    "embeddedImages": true,
+    "imageDimensions": true,
+    "cameras": true,
+    "lights": true,
+    "animations": true,
+    "bounds": true
+  }
+}

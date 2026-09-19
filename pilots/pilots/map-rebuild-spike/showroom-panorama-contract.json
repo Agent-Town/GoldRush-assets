@@ -1,0 +1,103 @@
+{
+  "asset": "showroom-panorama.glb",
+  "map": "showroom",
+  "renderOnly": true,
+  "style": "engraved Epoch 6 atomic homestead kit-plate horizon; polished atomic homestead horizon with unequal display berms and a dust-dark desert rim",
+  "signature": "empty catalog village beyond unequal exhibition berms, with a broad goods-yard notch and no holiday suburbia",
+  "exposure": {
+    "mode": "bakedIntoAtlas",
+    "linearMultiplier": 0.94
+  },
+  "lawVersion": "PANORAMA LAW v2",
+  "namedCorrections": {
+    "paintedWall": "sunk sky ring behind an irregular closer ridge belt with a dusty haze transition",
+    "ceiling": "engraving density grades from dense horizon to near-plain parchment zenith",
+    "echo": "one asymmetric contract-specific ridge profile plus unequal cloud and dust edits break repetition without building a doubled arena wall"
+  },
+  "projection": {
+    "skyRingRadiusMeters": 190.0,
+    "ridgeFootRadiusMeters": 161.5,
+    "ridgeOccluderRadiusMeters": 174.0,
+    "farRidgeRadiusMeters": null,
+    "ridgeFootRadiusRangeMeters": [
+      159.8,
+      163.2
+    ],
+    "ridgeOccluderRadiusRangeMeters": [
+      172.3,
+      175.7
+    ],
+    "skyBottomMeters": -10.0,
+    "skyTopMeters": 130.0,
+    "ridgeTopFormulaMeters": "5.0 + silhouetteFraction * 55.0",
+    "farRidgeTopFormulaMeters": null,
+    "groundSkirtInnerBoundaryMeters": {
+      "shape": "expanded-playfield-rectangle",
+      "halfExtents": [
+        64.0,
+        64.0
+      ],
+      "margin": 0.01
+    },
+    "groundSkirtOuterRadiusMeters": 161.5,
+    "groundSkirtRole": "county ground scenery"
+  },
+  "mount": {
+    "id": "showroom-panorama",
+    "asset": "showroom-panorama.glb",
+    "position": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "rotation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "renderOnly": true,
+    "ownership": "separate mounted scenery; never terrain or gameplay bounds"
+  },
+  "earthSide": null,
+  "nonInterference": {
+    "playfieldBounds": "unchanged",
+    "spawnEdges": "unchanged",
+    "fogGating": "unchanged",
+    "waterBuildSpawnMasks": "unchanged"
+  },
+  "meshCount": 1,
+  "primitiveCount": 1,
+  "materialCount": 1,
+  "vertices": 1836,
+  "triangles": 2688,
+  "triangleBudget": 4000,
+  "texture": {
+    "count": 1,
+    "width": 2048,
+    "height": 2048,
+    "embedded": true
+  },
+  "sourceArt": [
+    "assets/processed/kit-era-6.png",
+    "assets/pilots/map-rebuild-spike/glow-mesa-terrain-atlas.png"
+  ],
+  "files": {
+    "blend": {
+      "bytes": 1231837,
+      "sha256": "16cc40c8889301c799143f677bf0955583656d47423eb27186817dbc4b6dd9f5"
+    },
+    "glb": {
+      "bytes": 1219784,
+      "sha256": "52f33280cf51e798ee99f9605613feea33f4be3cb5141380041368deb529eb59"
+    },
+    "atlas": {
+      "bytes": 1121099,
+      "sha256": "8de5e018443d8f0d866293148bbf0f7beb1f5a131dbfbf3fe339cc5b96d526bd"
+    }
+  }
+}

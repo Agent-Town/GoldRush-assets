@@ -1,0 +1,275 @@
+sculpt               relief      min      max      p05      p50      p95    stdev    flat%    holes
+glow-mesa             4.437     0.58    5.017    0.654        1        5    1.701     61.8       no
+showroom               3.49   -0.305    3.185    0.173     0.82    2.483      0.7     46.9       no
+half-life-hollow      5.363    -2.41    2.953   -1.983    0.645    2.701    1.346     17.9       no
+relay-valley          5.872   -0.552     5.32   -0.341    0.042        5    2.097     61.1       no
+echo-canyon           5.167        0    5.167        0     2.31        5    2.337      1.1       no
+mare-claim            9.107   -3.107        6        0    0.136        6    2.709     51.3       no
+low-orbit              6.95    -5.87     1.08   -5.634   -4.881     0.72    2.096     19.4       no
+dome-basin                6       -2        4       -2    0.427    2.782    1.131     56.7       no
+seed-run              3.855    -0.14    3.715    0.128      1.2    2.865    0.861     23.8       no
+devils-alley          4.707    -0.14    4.567   -0.039    0.465    3.125    1.023     42.9       no
+old-canal             4.326    -1.42    2.906    -1.18     0.58    2.194    0.948     34.7       no
+ember-shore           4.255   -2.173    2.082   -1.961    0.433    1.394    0.898     40.4       no
+archive-world         4.435       -1    3.435      0.1     0.78    2.395    0.708     39.0       no
+the-claim             2.748    -0.51    2.238   -0.463    1.001    1.674    0.648     37.9       no
+twin-banks            2.422    -0.46    1.961   -0.075    0.779    1.409     0.45     42.3       no
+dry-gulch             2.797    -0.41    2.387    0.233    0.974     2.05    0.667     15.3       no
+canyon-works          7.128   -1.064    6.064   -1.003    0.506    5.976    2.274     48.7       no
+[
+  {
+    "sculpt": "glow-mesa",
+    "vertices": 16641,
+    "relief_m": 4.437,
+    "min_m": 0.58,
+    "max_m": 5.017,
+    "p05_m": 0.654,
+    "p50_m": 1,
+    "p95_m": 5,
+    "stdev_m": 1.701,
+    "flat_fraction": 0.618,
+    "boundary_edges": 512,
+    "expected_perimeter": 512,
+    "interior_holes": false
+  },
+  {
+    "sculpt": "showroom",
+    "vertices": 16641,
+    "relief_m": 3.49,
+    "min_m": -0.305,
+    "max_m": 3.185,
+    "p05_m": 0.173,
+    "p50_m": 0.82,
+    "p95_m": 2.483,
+    "stdev_m": 0.7,
+    "flat_fraction": 0.469,
+    "boundary_edges": 512,
+    "expected_perimeter": 512,
+    "interior_holes": false
+  },
+  {
+    "sculpt": "half-life-hollow",
+    "vertices": 16641,
+    "relief_m": 5.363,
+    "min_m": -2.41,
+    "max_m": 2.953,
+    "p05_m": -1.983,
+    "p50_m": 0.645,
+    "p95_m": 2.701,
+    "stdev_m": 1.346,
+    "flat_fraction": 0.179,
+    "boundary_edges": 512,
+    "expected_perimeter": 512,
+    "interior_holes": false
+  },
+  {
+    "sculpt": "relay-valley",
+    "vertices": 16641,
+    "relief_m": 5.872,
+    "min_m": -0.552,
+    "max_m": 5.32,
+    "p05_m": -0.341,
+    "p50_m": 0.042,
+    "p95_m": 5,
+    "stdev_m": 2.097,
+    "flat_fraction": 0.611,
+    "boundary_edges": 512,
+    "expected_perimeter": 512,
+    "interior_holes": false
+  },
+  {
+    "sculpt": "echo-canyon",
+    "vertices": 16641,
+    "relief_m": 5.167,
+    "min_m": 0,
+    "max_m": 5.167,
+    "p05_m": 0,
+    "p50_m": 2.31,
+    "p95_m": 5,
+    "stdev_m": 2.337,
+    "flat_fraction": 0.011,
+    "boundary_edges": 512,
+    "expected_perimeter": 512,
+    "interior_holes": false
+  },
+  {
+    "sculpt": "mare-claim",
+    "vertices": 16641,
+    "relief_m": 9.107,
+    "min_m": -3.107,
+    "max_m": 6,
+    "p05_m": 0,
+    "p50_m": 0.136,
+    "p95_m": 6,
+    "stdev_m": 2.709,
+    "flat_fraction": 0.513,
+    "boundary_edges": 512,
+    "expected_perimeter": 512,
+    "interior_holes": false
+  },
+  {
+    "sculpt": "low-orbit",
+    "vertices": 16641,
+    "relief_m": 6.95,
+    "min_m": -5.87,
+    "max_m": 1.08,
+    "p05_m": -5.634,
+    "p50_m": -4.881,
+    "p95_m": 0.72,
+    "stdev_m": 2.096,
+    "flat_fraction": 0.194,
+    "boundary_edges": 512,
+    "expected_perimeter": 512,
+    "interior_holes": false
+  },
+  {
+    "sculpt": "dome-basin",
+    "vertices": 16641,
+    "relief_m": 6,
+    "min_m": -2,
+    "max_m": 4,
+    "p05_m": -2,
+    "p50_m": 0.427,
+    "p95_m": 2.782,
+    "stdev_m": 1.131,
+    "flat_fraction": 0.567,
+    "boundary_edges": 512,
+    "expected_perimeter": 512,
+    "interior_holes": false
+  },
+  {
+    "sculpt": "seed-run",
+    "vertices": 16641,
+    "relief_m": 3.855,
+    "min_m": -0.14,
+    "max_m": 3.715,
+    "p05_m": 0.128,
+    "p50_m": 1.2,
+    "p95_m": 2.865,
+    "stdev_m": 0.861,
+    "flat_fraction": 0.238,
+    "boundary_edges": 512,
+    "expected_perimeter": 512,
+    "interior_holes": false
+  },
+  {
+    "sculpt": "devils-alley",
+    "vertices": 16641,
+    "relief_m": 4.707,
+    "min_m": -0.14,
+    "max_m": 4.567,
+    "p05_m": -0.039,
+    "p50_m": 0.465,
+    "p95_m": 3.125,
+    "stdev_m": 1.023,
+    "flat_fraction": 0.429,
+    "boundary_edges": 512,
+    "expected_perimeter": 512,
+    "interior_holes": false
+  },
+  {
+    "sculpt": "old-canal",
+    "vertices": 16641,
+    "relief_m": 4.326,
+    "min_m": -1.42,
+    "max_m": 2.906,
+    "p05_m": -1.18,
+    "p50_m": 0.58,
+    "p95_m": 2.194,
+    "stdev_m": 0.948,
+    "flat_fraction": 0.347,
+    "boundary_edges": 512,
+    "expected_perimeter": 512,
+    "interior_holes": false
+  },
+  {
+    "sculpt": "ember-shore",
+    "vertices": 16641,
+    "relief_m": 4.255,
+    "min_m": -2.173,
+    "max_m": 2.082,
+    "p05_m": -1.961,
+    "p50_m": 0.433,
+    "p95_m": 1.394,
+    "stdev_m": 0.898,
+    "flat_fraction": 0.404,
+    "boundary_edges": 512,
+    "expected_perimeter": 512,
+    "interior_holes": false
+  },
+  {
+    "sculpt": "archive-world",
+    "vertices": 16641,
+    "relief_m": 4.435,
+    "min_m": -1,
+    "max_m": 3.435,
+    "p05_m": 0.1,
+    "p50_m": 0.78,
+    "p95_m": 2.395,
+    "stdev_m": 0.708,
+    "flat_fraction": 0.39,
+    "boundary_edges": 512,
+    "expected_perimeter": 512,
+    "interior_holes": false
+  },
+  {
+    "sculpt": "the-claim",
+    "vertices": 16641,
+    "relief_m": 2.748,
+    "min_m": -0.51,
+    "max_m": 2.238,
+    "p05_m": -0.463,
+    "p50_m": 1.001,
+    "p95_m": 1.674,
+    "stdev_m": 0.648,
+    "flat_fraction": 0.379,
+    "boundary_edges": 512,
+    "expected_perimeter": 512,
+    "interior_holes": false
+  },
+  {
+    "sculpt": "twin-banks",
+    "vertices": 25921,
+    "relief_m": 2.422,
+    "min_m": -0.46,
+    "max_m": 1.961,
+    "p05_m": -0.075,
+    "p50_m": 0.779,
+    "p95_m": 1.409,
+    "stdev_m": 0.45,
+    "flat_fraction": 0.423,
+    "boundary_edges": 640,
+    "expected_perimeter": 640,
+    "interior_holes": false
+  },
+  {
+    "sculpt": "dry-gulch",
+    "vertices": 16641,
+    "relief_m": 2.797,
+    "min_m": -0.41,
+    "max_m": 2.387,
+    "p05_m": 0.233,
+    "p50_m": 0.974,
+    "p95_m": 2.05,
+    "stdev_m": 0.667,
+    "flat_fraction": 0.153,
+    "boundary_edges": 512,
+    "expected_perimeter": 512,
+    "interior_holes": false
+  },
+  {
+    "sculpt": "canyon-works",
+    "vertices": 16641,
+    "relief_m": 7.128,
+    "min_m": -1.064,
+    "max_m": 6.064,
+    "p05_m": -1.003,
+    "p50_m": 0.506,
+    "p95_m": 5.976,
+    "stdev_m": 2.274,
+    "flat_fraction": 0.487,
+    "boundary_edges": 512,
+    "expected_perimeter": 512,
+    "interior_holes": false
+  }
+]

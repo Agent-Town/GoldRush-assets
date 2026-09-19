@@ -1,0 +1,42 @@
+{
+  "epoch": 5,
+  "floodReset": true,
+  "atlas": "era-props-e5-atlas.png",
+  "props": [
+    {
+      "id": "e5-harbor-lantern-west",
+      "glb": "harbor-lantern.e5.glb",
+      "position": { "x": -11, "z": 0 },
+      "rotation": 3.22,
+      "scale": 1.15
+    },
+    {
+      "id": "e5-harbor-lantern-east",
+      "glb": "harbor-lantern.e5.glb",
+      "position": { "x": 11, "z": 0 },
+      "rotation": 3.34,
+      "scale": 1.15
+    },
+    {
+      "id": "e5-net-frame-southeast",
+      "glb": "net-frame.e5.glb",
+      "position": { "x": 9, "z": -14 },
+      "rotation": 2.94,
+      "scale": 1.25
+    },
+    {
+      "id": "e5-tide-board-southwest",
+      "glb": "tide-board.e5.glb",
+      "position": { "x": -9, "z": -14 },
+      "rotation": 3.24,
+      "scale": 1.25
+    },
+    {
+      "id": "e5-rope-buoy-rack-south",
+      "glb": "rope-buoy-rack.e5.glb",
+      "position": { "x": 0, "z": -16 },
+      "rotation": 3.14,
+      "scale": 1.2
+    }
+  ]
+}

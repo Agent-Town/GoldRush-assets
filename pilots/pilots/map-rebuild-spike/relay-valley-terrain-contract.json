@@ -1,0 +1,443 @@
+{
+  "asset": "relay-valley-terrain.glb",
+  "contractId": "e7-relay-valley",
+  "tileId": "e7-relay-valley",
+  "renderOnly": true,
+  "simulation": "planar masks, movement, collision, spawns, placement, and combat remain unchanged",
+  "heightSocket": "Terrain.visualY",
+  "theme": "two exposed h5 shale relay ridges split by a dead gap above a thick h0 teaching valley and three named fog pockets",
+  "regionalFamily": {
+    "epoch": "Epoch 7 signal frontier",
+    "shared": [
+      "walnut loam",
+      "honey-glass warmth",
+      "agent-teal signal",
+      "engraved shale",
+      "punch-tape scars",
+      "dead-zone fog hatch"
+    ],
+    "unique": [
+      "authored terrain silhouette",
+      "mask rhythm",
+      "split relay ridges, exact LOS pairs, and named dead-zone composition",
+      "panorama profile"
+    ]
+  },
+  "boundsMeters": {
+    "min": [
+      -64.0,
+      -64.0,
+      -0.5525
+    ],
+    "max": [
+      64.0,
+      64.0,
+      5.3196
+    ]
+  },
+  "meshCount": 1,
+  "primitiveCount": 1,
+  "materialCount": 1,
+  "vertices": 16641,
+  "triangles": 32768,
+  "triangleBudget": 60000,
+  "texture": {
+    "count": 1,
+    "width": 2048,
+    "height": 2048,
+    "embedded": true
+  },
+  "maskTable": "assets/contracts/epoch-7-signal/mask-tables/e7-relay-valley.json",
+  "maskTruth": {
+    "source": "assets/contracts/epoch-7-signal/contracts.json; specs/epoch-saga/e7-signal-bundle.md \u00a7B",
+    "tileId": "e7-relay-valley",
+    "size": 128,
+    "dimensions": {
+      "width": 128,
+      "height": 128
+    },
+    "river": false,
+    "ford": false,
+    "buildZones": [
+      {
+        "id": "relay-site-r1",
+        "bank": "north",
+        "minX": -50,
+        "maxX": -40,
+        "minZ": 36,
+        "maxZ": 46
+      },
+      {
+        "id": "relay-site-r2",
+        "bank": "north",
+        "minX": -30,
+        "maxX": -20,
+        "minZ": 36,
+        "maxZ": 46
+      },
+      {
+        "id": "relay-site-r3",
+        "bank": "north",
+        "minX": 20,
+        "maxX": 30,
+        "minZ": 36,
+        "maxZ": 46
+      },
+      {
+        "id": "relay-site-r4",
+        "bank": "north",
+        "minX": 40,
+        "maxX": 50,
+        "minZ": 36,
+        "maxZ": 46
+      },
+      {
+        "id": "ridge-bridge-ground",
+        "bank": "north",
+        "minX": -2,
+        "maxX": 2,
+        "minZ": 39,
+        "maxZ": 43
+      }
+    ],
+    "stakeMarkers": [],
+    "waterSources": [],
+    "harvestAnchors": [
+      {
+        "x": -36,
+        "z": -20
+      },
+      {
+        "x": -12,
+        "z": 18
+      },
+      {
+        "x": 12,
+        "z": 18
+      },
+      {
+        "x": 36,
+        "z": -20
+      }
+    ],
+    "heightfield": {
+      "id": "relay-valley-ridgelines",
+      "mode": "visual"
+    },
+    "ridgeBands": [
+      {
+        "id": "ridge-west-h5",
+        "height": 5,
+        "minX": -54,
+        "maxX": -8,
+        "minZ": 24,
+        "maxZ": 54
+      },
+      {
+        "id": "ridge-east-h5",
+        "height": 5,
+        "minX": 8,
+        "maxX": 54,
+        "minZ": 24,
+        "maxZ": 54
+      },
+      {
+        "id": "valley-floor-h0",
+        "height": 0,
+        "minX": -54,
+        "maxX": 54,
+        "minZ": -54,
+        "maxZ": 18
+      }
+    ],
+    "fogPockets": [
+      {
+        "id": "ridge-dead-gap",
+        "minX": -8,
+        "maxX": 8,
+        "minZ": 24,
+        "maxZ": 54
+      },
+      {
+        "id": "west-fog-pocket",
+        "minX": -42,
+        "maxX": -18,
+        "minZ": -4,
+        "maxZ": 18
+      },
+      {
+        "id": "east-fog-pocket",
+        "minX": 18,
+        "maxX": 42,
+        "minZ": -12,
+        "maxZ": 12
+      }
+    ],
+    "lanes": {
+      "spawnEdges": [
+        "north",
+        "west",
+        "east"
+      ],
+      "territoryRingBiasWaves": 0,
+      "territoryRingLaneBias": 0,
+      "patrolRoutes": [
+        {
+          "id": "teaching-patrol",
+          "points": [
+            {
+              "x": -24,
+              "z": -20
+            },
+            {
+              "x": 24,
+              "z": -20
+            },
+            {
+              "x": 24,
+              "z": 8
+            },
+            {
+              "x": -24,
+              "z": 8
+            },
+            {
+              "x": -24,
+              "z": -20
+            }
+          ]
+        }
+      ]
+    },
+    "spawnGates": []
+  },
+  "waterAgreement": {
+    "river": false,
+    "waterSources": []
+  },
+  "pylonSiteFlatness": [],
+  "capacitorSiteFlatness": [],
+  "fixtureZoneFlatness": [],
+  "buildZoneFlatness": [
+    {
+      "id": "relay-site-r1",
+      "bounds": [
+        -50,
+        -40,
+        36,
+        46
+      ],
+      "sampledSurfacePoints": 1225,
+      "maxDeviationMeters": 0.0
+    },
+    {
+      "id": "relay-site-r2",
+      "bounds": [
+        -30,
+        -20,
+        36,
+        46
+      ],
+      "sampledSurfacePoints": 1225,
+      "maxDeviationMeters": 0.0
+    },
+    {
+      "id": "relay-site-r3",
+      "bounds": [
+        20,
+        30,
+        36,
+        46
+      ],
+      "sampledSurfacePoints": 1225,
+      "maxDeviationMeters": 0.0
+    },
+    {
+      "id": "relay-site-r4",
+      "bounds": [
+        40,
+        50,
+        36,
+        46
+      ],
+      "sampledSurfacePoints": 1225,
+      "maxDeviationMeters": 0.0
+    },
+    {
+      "id": "ridge-bridge-ground",
+      "bounds": [
+        -2,
+        2,
+        39,
+        43
+      ],
+      "sampledSurfacePoints": 1225,
+      "maxDeviationMeters": 0.0
+    }
+  ],
+  "pylonFlatnessLimitMeters": 0.02,
+  "fixtureFlatnessLimitMeters": 0.02,
+  "landmarkFreeze": "lifted; canonical mounted landmark pack records backfilled by the mounts sweep",
+  "landmarkMounts": [
+    {
+      "id": "west-ridge-dish-cluster",
+      "position": [
+        -56.0,
+        0.0,
+        30.0
+      ],
+      "rotation": [
+        0.0,
+        0.16,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/relay-valley/west-ridge-dish-cluster.glb"
+    },
+    {
+      "id": "east-ridge-dish-cluster",
+      "position": [
+        56.0,
+        0.0,
+        30.0
+      ],
+      "rotation": [
+        0.0,
+        -0.14,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/relay-valley/east-ridge-dish-cluster.glb"
+    },
+    {
+      "id": "dead-gap-charting-station",
+      "position": [
+        0.0,
+        0.0,
+        18.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.08,
+        1.08,
+        1.08
+      ],
+      "asset": "landmarks/relay-valley/dead-gap-charting-station.glb"
+    },
+    {
+      "id": "valley-cable-drum-yard",
+      "position": [
+        -44.0,
+        0.0,
+        -26.0
+      ],
+      "rotation": [
+        0.0,
+        0.22,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/relay-valley/valley-cable-drum-yard.glb"
+    },
+    {
+      "id": "drone-recovery-beacon",
+      "position": [
+        44.0,
+        0.0,
+        -26.0
+      ],
+      "rotation": [
+        0.0,
+        -0.2,
+        0.0
+      ],
+      "scale": [
+        1.08,
+        1.08,
+        1.08
+      ],
+      "asset": "landmarks/relay-valley/drone-recovery-beacon.glb"
+    }
+  ],
+  "landmarkMountSpace": {
+    "coordinates": "game X/Y/Z",
+    "positionY": "local offset added to Terrain.visualY at the mount X/Z",
+    "rotation": "XYZ Euler radians",
+    "scale": "XYZ multiplier",
+    "ownership": "landmark assets mount at runtime and are never baked into terrain"
+  },
+  "verdictPreviewOnly": {
+    "assets": [
+      "assets/pilots/relay-tower-3d/relay-tower.glb"
+    ],
+    "excludedFromBlendAndGlb": true,
+    "reason": "existing relay tower bodies establish the four ridge sites beside the surveyed central bridge ground; no runtime mounts or placement authority are baked"
+  },
+  "preserveDesign": null,
+  "panoramaMount": {
+    "id": "relay-valley-panorama",
+    "asset": "relay-valley-panorama.glb",
+    "position": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "rotation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "renderOnly": true,
+    "ownership": "separate mounted scenery; never terrain or gameplay bounds"
+  },
+  "evidenceRig": "blue-hour signal dusk with honey work lamps and agent-teal relay cues; all lights render-only",
+  "sourceArt": [
+    "assets/processed/terrain-bank-tile.png",
+    "assets/processed/terrain-bank-tile-c.png",
+    "assets/processed/kit-era-7.png",
+    "assets/raw/plate-e7-bld-relay-tower.png"
+  ],
+  "atlas": "relay-valley-terrain-atlas.png",
+  "files": {
+    "blend": {
+      "bytes": 8705505,
+      "sha256": "15f7962d5cceea10021fce9d327d141770ef983bb17fecce29954d2ddcd821bb"
+    },
+    "glb": {
+      "bytes": 8628344,
+      "sha256": "071b3fad61bafef04be5a120abf69951ba9be9118e8d4dc3587eb733af27e741"
+    },
+    "atlas": {
+      "bytes": 7897462,
+      "sha256": "48cc9ba75a5111f5bb9efe1a5f342f252d0ce3a15a38042b17cc4ed768155469"
+    }
+  },
+  "landmarkPack": {
+    "contract": "landmarks/relay-valley/relay-valley-landmark-pack-contract.json",
+    "atlas": "landmarks/relay-valley/relay-valley-landmarks-atlas.png",
+    "era": 7,
+    "sourceLadder": "reuse > derive > build-new",
+    "ownership": "separate mounted render-only GLBs; no simulation authority"
+  }
+}

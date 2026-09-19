@@ -1,0 +1,414 @@
+{
+  "blender": "5.1.2",
+  "sourceScene": {
+    "meshObjects": [
+      "anchor_feet",
+      "crown",
+      "winch"
+    ],
+    "cameras": [],
+    "lights": [],
+    "actions": []
+  },
+  "checked": {
+    "sha256": "4c438e6ec76df8c8a8d43eef5451502b7ccffbd63b02edb8da6944a607ced6b2",
+    "bytes": 7436504,
+    "nodes": [
+      "winch",
+      "anchor_feet",
+      "crown"
+    ],
+    "nodeCount": 3,
+    "bindings": [
+      {
+        "node": "winch",
+        "mesh": "winchMesh",
+        "targets": [
+          "Landing_SprungWinch"
+        ],
+        "defaultWeights": [
+          0
+        ]
+      },
+      {
+        "node": "anchor_feet",
+        "mesh": "anchor_feetMesh",
+        "targets": [
+          "Landing_SettledAnchorFeet"
+        ],
+        "defaultWeights": [
+          0
+        ]
+      },
+      {
+        "node": "crown",
+        "mesh": "crownMesh",
+        "targets": [
+          "Landing_DarkCrown"
+        ],
+        "defaultWeights": [
+          0
+        ]
+      }
+    ],
+    "nodeTransforms": {
+      "winch": {
+        "translation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "matrix": null
+      },
+      "anchor_feet": {
+        "translation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "matrix": null
+      },
+      "crown": {
+        "translation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "matrix": null
+      }
+    },
+    "meshes": 3,
+    "meshNames": [
+      "winchMesh",
+      "anchor_feetMesh",
+      "crownMesh"
+    ],
+    "primitives": 3,
+    "primitiveMaterials": [
+      0,
+      0,
+      0
+    ],
+    "triangles": 34540,
+    "morphTargets": {
+      "winchMesh": [
+        "Landing_SprungWinch"
+      ],
+      "anchor_feetMesh": [
+        "Landing_SettledAnchorFeet"
+      ],
+      "crownMesh": [
+        "Landing_DarkCrown"
+      ]
+    },
+    "targetCounts": {
+      "winchMesh": 1,
+      "anchor_feetMesh": 1,
+      "crownMesh": 1
+    },
+    "materials": 1,
+    "materialTextureBindings": [
+      {
+        "material": 0,
+        "baseColorTexture": 0,
+        "image": 0
+      }
+    ],
+    "materialContract": [
+      {
+        "metallicFactor": 0,
+        "roughnessFactor": 0.8999999761581421,
+        "doubleSided": true,
+        "hasBaseColorTexture": true,
+        "hasEmissiveTexture": false,
+        "emissiveFactor": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "textureSources": [
+      0
+    ],
+    "images": 1,
+    "embeddedImages": 1,
+    "imageDimensions": [
+      [
+        2048,
+        2048
+      ]
+    ],
+    "cameras": 0,
+    "lights": 0,
+    "animations": 0,
+    "bounds": {
+      "min": [
+        -5.7,
+        0,
+        -5.7
+      ],
+      "max": [
+        5.7,
+        10.031203,
+        5.7
+      ],
+      "size": [
+        11.4,
+        10.031203,
+        11.4
+      ],
+      "center": [
+        0.0,
+        5.015602,
+        0.0
+      ]
+    }
+  },
+  "reexported": {
+    "sha256": "4c438e6ec76df8c8a8d43eef5451502b7ccffbd63b02edb8da6944a607ced6b2",
+    "bytes": 7436504,
+    "nodes": [
+      "winch",
+      "anchor_feet",
+      "crown"
+    ],
+    "nodeCount": 3,
+    "bindings": [
+      {
+        "node": "winch",
+        "mesh": "winchMesh",
+        "targets": [
+          "Landing_SprungWinch"
+        ],
+        "defaultWeights": [
+          0
+        ]
+      },
+      {
+        "node": "anchor_feet",
+        "mesh": "anchor_feetMesh",
+        "targets": [
+          "Landing_SettledAnchorFeet"
+        ],
+        "defaultWeights": [
+          0
+        ]
+      },
+      {
+        "node": "crown",
+        "mesh": "crownMesh",
+        "targets": [
+          "Landing_DarkCrown"
+        ],
+        "defaultWeights": [
+          0
+        ]
+      }
+    ],
+    "nodeTransforms": {
+      "winch": {
+        "translation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "matrix": null
+      },
+      "anchor_feet": {
+        "translation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "matrix": null
+      },
+      "crown": {
+        "translation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "matrix": null
+      }
+    },
+    "meshes": 3,
+    "meshNames": [
+      "winchMesh",
+      "anchor_feetMesh",
+      "crownMesh"
+    ],
+    "primitives": 3,
+    "primitiveMaterials": [
+      0,
+      0,
+      0
+    ],
+    "triangles": 34540,
+    "morphTargets": {
+      "winchMesh": [
+        "Landing_SprungWinch"
+      ],
+      "anchor_feetMesh": [
+        "Landing_SettledAnchorFeet"
+      ],
+      "crownMesh": [
+        "Landing_DarkCrown"
+      ]
+    },
+    "targetCounts": {
+      "winchMesh": 1,
+      "anchor_feetMesh": 1,
+      "crownMesh": 1
+    },
+    "materials": 1,
+    "materialTextureBindings": [
+      {
+        "material": 0,
+        "baseColorTexture": 0,
+        "image": 0
+      }
+    ],
+    "materialContract": [
+      {
+        "metallicFactor": 0,
+        "roughnessFactor": 0.8999999761581421,
+        "doubleSided": true,
+        "hasBaseColorTexture": true,
+        "hasEmissiveTexture": false,
+        "emissiveFactor": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "textureSources": [
+      0
+    ],
+    "images": 1,
+    "embeddedImages": 1,
+    "imageDimensions": [
+      [
+        2048,
+        2048
+      ]
+    ],
+    "cameras": 0,
+    "lights": 0,
+    "animations": 0,
+    "bounds": {
+      "min": [
+        -5.7,
+        0,
+        -5.7
+      ],
+      "max": [
+        5.7,
+        10.031203,
+        5.7
+      ],
+      "size": [
+        11.4,
+        10.031203,
+        11.4
+      ],
+      "center": [
+        0.0,
+        5.015602,
+        0.0
+      ]
+    }
+  },
+  "byteIdentical": true,
+  "semanticIdentical": {
+    "nodes": true,
+    "nodeCount": true,
+    "bindings": true,
+    "nodeTransforms": true,
+    "meshes": true,
+    "meshNames": true,
+    "primitives": true,
+    "primitiveMaterials": true,
+    "triangles": true,
+    "morphTargets": true,
+    "targetCounts": true,
+    "materials": true,
+    "materialTextureBindings": true,
+    "materialContract": true,
+    "textureSources": true,
+    "images": true,
+    "embeddedImages": true,
+    "imageDimensions": true,
+    "cameras": true,
+    "lights": true,
+    "animations": true,
+    "bounds": true
+  }
+}

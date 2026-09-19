@@ -1,0 +1,247 @@
+{
+  "map": "long-road",
+  "era": 4,
+  "referenceBase": "e5f67d08cf94ff7dce0caf4f06a969cb782d8cee",
+  "sourceLadder": [
+    "reuse",
+    "derive",
+    "build-new"
+  ],
+  "atlas": {
+    "asset": "landmarks/long-road/long-road-landmarks-atlas.png",
+    "width": 1024,
+    "height": 1024,
+    "sharedByEveryAsset": true,
+    "sha256": "4d61cf9ad1ecec9e3791eedd25d6ca968da2b4d4e1e903c6e4bfae0b272e694c"
+  },
+  "blend": {
+    "asset": "landmarks/long-road/long-road-landmarks.blend",
+    "sha256": "03fafcd06dc54a4d71d97e3435900373057bb822f712c8c49479f00b0aef1d1d"
+  },
+  "assets": {
+    "west-way-station": {
+      "asset": "landmarks/long-road/west-way-station.glb",
+      "sourceTier": "reuse",
+      "sources": [
+        "assets/pilots/map-rebuild-spike/landmarks/dust-flats/west-road-wrecker-shed.glb",
+        "assets/pilots/plaza-props-3d/fuel-rack.e4.glb"
+      ],
+      "terrainConformed": false,
+      "triangles": 2248,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -4.3,
+          -2.9864,
+          0.0
+        ],
+        "max": [
+          4.3,
+          2.9864,
+          6.32
+        ]
+      },
+      "sha256": "7d5df54632a942687237ff8f7cfdaf30c88039ac59f6667139b5aca6e9964e38",
+      "footprint": {"kind":"rect","w":6.192,"d":4.3}
+    },
+    "middle-way-station": {
+      "asset": "landmarks/long-road/middle-way-station.glb",
+      "sourceTier": "reuse",
+      "sources": [
+        "assets/pilots/plaza-props-3d/filling-shed.e4.glb",
+        "assets/pilots/plaza-props-3d/fuel-rack.e4.glb"
+      ],
+      "terrainConformed": false,
+      "triangles": 860,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -5.023,
+          -2.45,
+          0.0
+        ],
+        "max": [
+          5.023,
+          2.45,
+          6.71
+        ]
+      },
+      "sha256": "49485ad49d66b1e5a23fcacdbc34cd8c61635ef3aed6b21152512a7539b7545c",
+      "footprint": {"kind":"rect","w":7.233,"d":3.528}
+    },
+    "east-way-station": {
+      "asset": "landmarks/long-road/east-way-station.glb",
+      "sourceTier": "reuse",
+      "sources": [
+        "assets/pilots/map-rebuild-spike/landmarks/dust-flats/north-railhead-storm-tower.glb",
+        "assets/pilots/plaza-props-3d/road-marker.e4.glb"
+      ],
+      "terrainConformed": false,
+      "triangles": 796,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -5.09,
+          -2.614,
+          0.0
+        ],
+        "max": [
+          5.09,
+          2.614,
+          9.8
+        ]
+      },
+      "sha256": "ed8fd83c98b6b567640f9e8e0a0bb912ad3ad4fae2b1ad87f9ff550164b79ca2",
+      "footprint": {"kind":"rect","w":7.33,"d":3.764}
+    },
+    "convoy-lead-hauler-start": {
+      "asset": "landmarks/long-road/convoy-lead-hauler-start.glb",
+      "sourceTier": "derive",
+      "sources": [
+        "assets/pilots/plaza-props-3d/covered_wagon.e4.glb",
+        "assets/raw/plate-e4-enemy-motorgang.png",
+        "assets/raw/boss-land-yacht.png"
+      ],
+      "terrainConformed": false,
+      "triangles": 2504,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -4.3078,
+          -1.965,
+          0.0
+        ],
+        "max": [
+          4.3078,
+          1.965,
+          6.4
+        ]
+      },
+      "sha256": "8731d8e982d701fcf27cf8e9491f369cc25c12f9156c476fa7b5c02c7faa93ec",
+      "footprint": {"kind":"rect","w":6.203,"d":2.83}
+    },
+    "east-railhead": {
+      "asset": "landmarks/long-road/east-railhead.glb",
+      "sourceTier": "reuse",
+      "sources": [
+        "assets/pilots/map-rebuild-spike/landmarks/dust-flats/dry-wash-recovery-gantry.glb",
+        "assets/pilots/plaza-props-3d/motor-roadway.e4.glb"
+      ],
+      "terrainConformed": false,
+      "triangles": 2592,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -5.3,
+          -2.63,
+          0.0
+        ],
+        "max": [
+          5.3,
+          2.63,
+          7.55
+        ]
+      },
+      "sha256": "c632f5a6372185d2a91a81c63af48134d26fc477a46621b794f6241d4a6398bc",
+      "footprint": {"kind":"rect","w":7.632,"d":3.787}
+    }
+  },
+  "mounts": [
+    {
+      "id": "west-way-station",
+      "asset": "landmarks/long-road/west-way-station.glb",
+      "position": [
+        -136.0,
+        0.18,
+        -14.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "id": "middle-way-station",
+      "asset": "landmarks/long-road/middle-way-station.glb",
+      "position": [
+        0.0,
+        0.34,
+        14.0
+      ],
+      "rotation": [
+        0.0,
+        3.1416,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "id": "east-way-station",
+      "asset": "landmarks/long-road/east-way-station.glb",
+      "position": [
+        136.0,
+        0.52,
+        -14.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "id": "convoy-lead-hauler-start",
+      "asset": "landmarks/long-road/convoy-lead-hauler-start.glb",
+      "position": [
+        -180.0,
+        0.0928,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -1.5708,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "id": "east-railhead",
+      "asset": "landmarks/long-road/east-railhead.glb",
+      "position": [
+        188.0,
+        0.1207,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        1.5708,
+        0.0
+      ],
+      "scale": [
+        1.1,
+        1.1,
+        1.1
+      ]
+    }
+  ],
+  "simulation": "none; terrain, collision, movement, placement, water, spawns, and fog remain unchanged"
+}

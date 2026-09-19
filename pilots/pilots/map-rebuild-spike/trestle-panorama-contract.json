@@ -1,0 +1,89 @@
+{
+  "asset": "trestle-panorama.glb",
+  "map": "trestle",
+  "renderOnly": true,
+  "style": "engraved Epoch 2 steamworks county kit-plate horizon; warm valley against a darker fevered rim",
+  "signature": "a low river corridor vanishing between mismatched gorge shoulders and rail-cut distance",
+  "exposure": {
+    "mode": "bakedIntoAtlas",
+    "linearMultiplier": 0.43
+  },
+  "lawVersion": "PANORAMA LAW v2",
+  "namedCorrections": {
+    "paintedWall": "sunk sky ring behind an irregular closer ridge belt with a dusty haze transition",
+    "ceiling": "engraving density grades from dense horizon to near-plain parchment zenith",
+    "echo": "asymmetric cloud and dust edits plus independent near/far ridge profiles break mirrored repetition"
+  },
+  "projection": {
+    "skyRingRadiusMeters": 190.0,
+    "ridgeFootRadiusMeters": 161.5,
+    "ridgeOccluderRadiusMeters": 174.0,
+    "ridgeFootRadiusRangeMeters": [
+      159.8,
+      163.2
+    ],
+    "ridgeOccluderRadiusRangeMeters": [
+      172.3,
+      175.7
+    ],
+    "skyBottomMeters": -10.0,
+    "skyTopMeters": 130.0,
+    "ridgeTopFormulaMeters": "5.0 + silhouetteFraction * 55.0"
+  },
+  "mount": {
+    "id": "trestle-panorama",
+    "asset": "trestle-panorama.glb",
+    "position": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "rotation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "renderOnly": true,
+    "ownership": "separate mounted scenery; never terrain or gameplay bounds"
+  },
+  "nonInterference": {
+    "playfieldBounds": "unchanged",
+    "spawnEdges": "unchanged",
+    "fogGating": "unchanged",
+    "waterBuildSpawnMasks": "unchanged"
+  },
+  "meshCount": 1,
+  "primitiveCount": 1,
+  "materialCount": 1,
+  "vertices": 1351,
+  "triangles": 1920,
+  "triangleBudget": 4000,
+  "texture": {
+    "count": 1,
+    "width": 2048,
+    "height": 2048,
+    "embedded": true
+  },
+  "sourceArt": [
+    "assets/processed/kit-era-2.png"
+  ],
+  "files": {
+    "blend": {
+      "bytes": 427556,
+      "sha256": "fa356d095fc4d25abf73eb2629b357e60ca4c7a1daed83a626c364a68e4a2222"
+    },
+    "glb": {
+      "bytes": 484676,
+      "sha256": "d481fdce9a897df3aa8d54d99c69bf9e2812c0a9c07c6c55e5e324ec3276b74b"
+    },
+    "atlas": {
+      "bytes": 334545,
+      "sha256": "4e433fb181349eb7ab3472a39170cb989758e5dd29642d12d8877fc64fa32d79"
+    }
+  }
+}

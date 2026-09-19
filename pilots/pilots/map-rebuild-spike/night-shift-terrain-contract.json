@@ -1,0 +1,251 @@
+{
+  "asset": "night-shift-terrain.glb",
+  "contractId": "e1-night-shift",
+  "tileId": "frontier-river-claim",
+  "renderOnly": true,
+  "simulation": "planar and unchanged",
+  "heightSocket": "Terrain.visualY",
+  "regionalFamily": {
+    "epoch": "Epoch 1 frontier river county",
+    "shared": [
+      "painted ochre-rust palette",
+      "river stone",
+      "weathered timber",
+      "sparse dusty vegetation",
+      "warm frontier light"
+    ],
+    "unique": [
+      "terrain mesh",
+      "atlas treatment",
+      "macro silhouette",
+      "spatial rhythm",
+      "landmark composition"
+    ]
+  },
+  "boundsMeters": {
+    "min": [
+      -32.0,
+      -32.0,
+      -0.47
+    ],
+    "max": [
+      32.0,
+      32.0,
+      3.18
+    ]
+  },
+  "meshCount": 1,
+  "primitiveCount": 1,
+  "materialCount": 1,
+  "vertices": 16641,
+  "triangles": 32768,
+  "triangleBudget": 60000,
+  "texture": {
+    "count": 1,
+    "width": 2048,
+    "height": 2048,
+    "embedded": true
+  },
+  "waterTruth": {
+    "river": {
+      "minZ": -5.0,
+      "maxZ": 5.0
+    },
+    "shallowsWidth": 1.25,
+    "ford": {
+      "minX": -3.0,
+      "maxX": 3.0
+    }
+  },
+  "landmarkMountSpace": {
+    "coordinates": "game X/Y/Z",
+    "positionY": "local offset added to Terrain.visualY at the mount X/Z",
+    "rotation": "XYZ Euler radians",
+    "scale": "XYZ multiplier",
+    "ownership": "landmark assets mount at runtime and are never baked into terrain"
+  },
+  "landmarkMounts": [
+    {
+      "id": "seven_lantern_terraces",
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/night-shift/seven_lantern_terraces.glb",
+      "terrainConformOffsetY": 0
+    },
+    {
+      "id": "lampworks_yard",
+      "position": [
+        8.0,
+        0.0,
+        18.0
+      ],
+      "rotation": [
+        0.0,
+        -0.12,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/night-shift/lampworks_yard.glb"
+    },
+    {
+      "id": "dark_rock_shoulders",
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/night-shift/dark_rock_shoulders.glb",
+      "terrainConformOffsetY": 0
+    },
+    {
+      "id": "central_ford",
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/night-shift/central_ford.glb"
+    },
+    {
+      "id": "night_work_road",
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/night-shift/night_work_road.glb",
+      "terrainConformOffsetY": 0
+    }
+  ],
+  "panoramaMount": {
+    "id": "night-shift-panorama",
+    "asset": "night-shift-panorama.glb",
+    "position": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "rotation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "renderOnly": true,
+    "ownership": "separate mounted scenery; never terrain or gameplay bounds"
+  },
+  "ownerPreview": {
+    "exported": false,
+    "purpose": "owner composition verdict only; simulation and production fixtures remain code-owned",
+    "theme": "dark-rock-lantern-work-corridor",
+    "landmarks": [
+      "seven_lantern_terraces",
+      "lampworks_yard",
+      "dark_rock_shoulders",
+      "central_ford",
+      "night_work_road"
+    ],
+    "objects": 110,
+    "meshObjects": 102,
+    "curveObjects": 0,
+    "approxTrianglesBeforeCurveTessellation": 2380,
+    "exteriorSurround": {
+      "exported": false,
+      "purpose": "owner exterior verdict only; runtime vista remains code-owned",
+      "radiusMeters": 160.0,
+      "objects": 40,
+      "approxTriangles": 38824,
+      "regionalGrammar": [
+        "ochre river county",
+        "faceted desert geology",
+        "cacti only",
+        "hard-used extraction scars"
+      ],
+      "contractSignature": [
+        "dark rock corridor",
+        "outer lantern road",
+        "distant lampworks stack"
+      ]
+    }
+  },
+  "sourceArt": [
+    "assets/processed/terrain-bank-tile.png",
+    "assets/processed/terrain-bank-tile-b.png",
+    "assets/processed/terrain-bank-tile-c.png",
+    "assets/processed/terrain-river-tile.png",
+    "assets/raw/kit-era-1.png",
+    "assets/raw/plate-contract-night-shift.png"
+  ],
+  "landmarkPack": {
+    "contract": "landmarks/night-shift/night-shift-landmark-pack-contract.json",
+    "atlas": "landmarks/night-shift/night-shift-landmarks-atlas.png",
+    "era": 1,
+    "sourceLadder": "reuse > derive > build-new",
+    "ownership": "separate mounted render-only GLBs; no simulation authority"
+  },
+  "files": {
+    "blend": {
+      "bytes": 7115191,
+      "sha256": "e06af61f4d154becdeef37daaee001cbc4e67257c511f7775a01fc7a0e2a0dac"
+    },
+    "glb": {
+      "bytes": 7041724,
+      "sha256": "1e99e3b662a0137cc8e494309f7d7cd6b40a00ac4c79b2d9fdb429cd6e48f1fc"
+    },
+    "atlas": {
+      "bytes": 6310814,
+      "sha256": "cc5ed018e869403d2f33845eec134ba282d233acc3ebaba157baddf1f6471b21"
+    }
+  }
+}

@@ -1,0 +1,246 @@
+{
+  "map": "half-life-hollow",
+  "era": 6,
+  "referenceBase": "44741af1e44f5becfa1f09665a88b3b33d4ce092",
+  "sourceLadder": [
+    "reuse",
+    "derive",
+    "build-new"
+  ],
+  "atlas": {
+    "asset": "landmarks/half-life-hollow/half-life-hollow-landmarks-atlas.png",
+    "width": 1024,
+    "height": 1024,
+    "sharedByEveryAsset": true,
+    "sha256": "7f0fb0f378f5f9148369c462c71461f752199291062ab52302cb16f6e1dc9df6"
+  },
+  "blend": {
+    "asset": "landmarks/half-life-hollow/half-life-hollow-landmarks.blend",
+    "sha256": "c4e459e7cd545b7681e9ad54d4b064263b6c1cff5bb1b9764d5f23b4e526e523"
+  },
+  "assets": {
+    "south-countdown-gate": {
+      "asset": "landmarks/half-life-hollow/south-countdown-gate.glb",
+      "sourceTier": "derive",
+      "sources": [
+        "assets/raw/plate-e6-bld-reactor-dome.png",
+        "assets/processed/kit-era-6.png"
+      ],
+      "terrainConformed": false,
+      "triangles": 508,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -4.8557,
+          -1.248,
+          0.0
+        ],
+        "max": [
+          4.8557,
+          1.248,
+          9.11
+        ]
+      },
+      "sha256": "6e4037fcbd2a55e7d0dccaefccbdcb00f36dc08aac1f37b5b3a1d1ab0edaa12f"
+    },
+    "west-hollow-warning-pylon": {
+      "asset": "landmarks/half-life-hollow/west-hollow-warning-pylon.glb",
+      "sourceTier": "derive",
+      "sources": [
+        "assets/raw/plate-e6-bld-reactor-dome.png",
+        "assets/raw/plate-e6-boss-homemaker-9000.png"
+      ],
+      "terrainConformed": false,
+      "triangles": 596,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -2.17,
+          -1.78,
+          0.0
+        ],
+        "max": [
+          2.17,
+          1.78,
+          9.225
+        ]
+      },
+      "sha256": "aa11a885b7bedc2468dd3e1502abe2c960771690b23d662664eeac431df1bdf9",
+      "footprint": {"kind":"rect","w":3.125,"d":2.563}
+    },
+    "east-hollow-warning-pylon": {
+      "asset": "landmarks/half-life-hollow/east-hollow-warning-pylon.glb",
+      "sourceTier": "derive",
+      "sources": [
+        "assets/raw/plate-e6-bld-reactor-dome.png",
+        "assets/raw/plate-e6-boss-homemaker-9000.png"
+      ],
+      "terrainConformed": false,
+      "triangles": 596,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -2.17,
+          -1.78,
+          0.0
+        ],
+        "max": [
+          2.17,
+          1.78,
+          9.225
+        ]
+      },
+      "sha256": "15a7000e57b64cbea2b7d9b1fadda77ccbae5e661d0985ae69e9e1b2a0ab7b87",
+      "footprint": {"kind":"rect","w":3.125,"d":2.563}
+    },
+    "expired-appliance-convoy": {
+      "asset": "landmarks/half-life-hollow/expired-appliance-convoy.glb",
+      "sourceTier": "derive",
+      "sources": [
+        "assets/raw/plate-e6-enemy-feral-toaster.png",
+        "assets/raw/plate-e6-boss-homemaker-9000.png"
+      ],
+      "terrainConformed": false,
+      "triangles": 972,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -4.9864,
+          -2.66,
+          0.0
+        ],
+        "max": [
+          4.9864,
+          2.66,
+          4.61
+        ]
+      },
+      "sha256": "ac0b0aa1d8bbccbe3a923fc904ef66bbe72aa82007ece8be472572b1c26231e0",
+      "footprint": {"kind":"rect","w":7.18,"d":3.83}
+    },
+    "north-extraction-gantry": {
+      "asset": "landmarks/half-life-hollow/north-extraction-gantry.glb",
+      "sourceTier": "reuse",
+      "sources": [
+        "assets/pilots/run3d/stockpile.glb",
+        "assets/raw/plate-e6-boss-homemaker-9000.png"
+      ],
+      "terrainConformed": false,
+      "triangles": 1148,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -5.2935,
+          -1.8563,
+          0.0
+        ],
+        "max": [
+          5.2935,
+          1.8563,
+          8.09
+        ]
+      },
+      "sha256": "60596861547f2959a943ccce9fe7e68607b45fa561d18fc57d888183d750a9b8",
+      "footprint": {"kind":"rect","w":7.623,"d":2.673}
+    }
+  },
+  "mounts": [
+    {
+      "id": "south-countdown-gate",
+      "position": [
+        0.0,
+        0.0,
+        -59.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/half-life-hollow/south-countdown-gate.glb"
+    },
+    {
+      "id": "west-hollow-warning-pylon",
+      "position": [
+        -52.0,
+        0.0,
+        -17.0
+      ],
+      "rotation": [
+        0.0,
+        0.12,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/half-life-hollow/west-hollow-warning-pylon.glb"
+    },
+    {
+      "id": "east-hollow-warning-pylon",
+      "position": [
+        52.0,
+        0.0,
+        20.0
+      ],
+      "rotation": [
+        0.0,
+        -0.14,
+        0.0
+      ],
+      "scale": [
+        0.96,
+        0.96,
+        0.96
+      ],
+      "asset": "landmarks/half-life-hollow/east-hollow-warning-pylon.glb"
+    },
+    {
+      "id": "expired-appliance-convoy",
+      "position": [
+        -48.0,
+        0.0,
+        43.0
+      ],
+      "rotation": [
+        0.0,
+        0.22,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/half-life-hollow/expired-appliance-convoy.glb"
+    },
+    {
+      "id": "north-extraction-gantry",
+      "position": [
+        36.0,
+        0.0,
+        50.0
+      ],
+      "rotation": [
+        0.0,
+        -0.08,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/half-life-hollow/north-extraction-gantry.glb"
+    }
+  ],
+  "simulation": "none; terrain, collision, movement, placement, water, spawns, and fog remain unchanged",
+  "mountInterlock": "resolved-3d-d"
+}

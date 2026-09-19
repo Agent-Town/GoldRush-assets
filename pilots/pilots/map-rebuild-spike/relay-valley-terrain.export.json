@@ -1,0 +1,13 @@
+{
+  "profile": "terrain",
+  "why": "Astra F-ASTRA-8: the generic helper omits export_extras, and this family's GLB extras are read as a contract — render_only, height_socket, tile_id on every terrain, plus water_mask/ford_mask where the sibling *-terrain-contract.json declares waterTruth. The builder (assets/pilots/map-rebuild-spike/build_*_terrain*.py) already exports with export_extras=True; this sidecar makes a hand re-export match it.",
+  "extras": true,
+  "animations": false,
+  "applyTransforms": true,
+  "selection": "meshes+anchors",
+  "topology": "A regular (segments+1)^2 lattice, one vertex per cell. Terrain3dClaimPilot.ts bakeHeightGrid infers segments from sqrt(POSITION.count) and throws on a gap or a double, so decimation and general LOD are forbidden here (F-ASTRA-10). scripts/glb-contract-guard.mjs asserts the lattice.",
+  "guard": "scripts/glb-contract-guard.mjs",
+  "asset": "relay-valley-terrain.glb",
+  "blend": "relay-valley-terrain.blend",
+  "contract": "relay-valley-terrain-contract.json"
+}

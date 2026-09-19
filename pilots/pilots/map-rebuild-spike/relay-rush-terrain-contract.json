@@ -1,0 +1,200 @@
+{
+  "contractId": "relay-rush-reuse-verdict",
+  "tileId": "e7-relay-valley",
+  "renderOnly": true,
+  "sculptVerdict": {
+    "verdict": "reuse",
+    "baseTile": "relay-valley",
+    "baseTerrainContract": "relay-valley-terrain-contract.json",
+    "reason": "maskTruth.tileId is e7-relay-valley; rush timing rides the existing relay placement puzzle",
+    "terrainGlb": "relay-valley-terrain.glb",
+    "panoramaGlb": "relay-valley-panorama.glb",
+    "duplicateSculpt": "forbidden; gameplay contract rides the existing tileId"
+  },
+  "maskTable": "assets/contracts/epoch-7-signal/mask-tables/e7-relay-rush.json",
+  "maskTruth": {
+    "source": "assets/contracts/epoch-7-signal/contracts.json; lore/STORYBOOK.md E7 contracts",
+    "tileId": "e7-relay-valley",
+    "size": 128,
+    "dimensions": {
+      "width": 128,
+      "height": 128
+    },
+    "river": false,
+    "ford": false,
+    "buildZones": [
+      {
+        "id": "relay-site-r1",
+        "bank": "north",
+        "minX": -50,
+        "maxX": -40,
+        "minZ": 36,
+        "maxZ": 46
+      },
+      {
+        "id": "relay-site-r2",
+        "bank": "north",
+        "minX": -30,
+        "maxX": -20,
+        "minZ": 36,
+        "maxZ": 46
+      },
+      {
+        "id": "relay-site-r3",
+        "bank": "north",
+        "minX": 20,
+        "maxX": 30,
+        "minZ": 36,
+        "maxZ": 46
+      },
+      {
+        "id": "relay-site-r4",
+        "bank": "north",
+        "minX": 40,
+        "maxX": 50,
+        "minZ": 36,
+        "maxZ": 46
+      }
+    ],
+    "stakeMarkers": [],
+    "waterSources": [],
+    "harvestAnchors": [],
+    "heightfield": {
+      "id": "relay-valley-ridgelines",
+      "mode": "visual"
+    },
+    "interferenceFrontZones": [
+      {
+        "id": "scheduled-static-corridor",
+        "description": "A wall of static crosses this corridor on a schedule and mutes everything it swallows.",
+        "minX": -54,
+        "maxX": 54,
+        "minZ": -54,
+        "maxZ": 54
+      }
+    ],
+    "lanes": {
+      "spawnEdges": [
+        "north",
+        "west",
+        "east"
+      ],
+      "territoryRingBiasWaves": 0,
+      "territoryRingLaneBias": 0,
+      "patrolRoutes": []
+    },
+    "spawnGates": []
+  },
+  "landmarkMountSpace": {
+    "coordinates": "game X/Y/Z",
+    "positionY": "local offset added to Terrain.visualY at the mount X/Z",
+    "rotation": "XYZ Euler radians",
+    "scale": "XYZ multiplier",
+    "ownership": "landmark assets mount at runtime and are never baked into terrain"
+  },
+  "landmarkMounts": [
+    {
+      "id": "rush-start-horn",
+      "position": [
+        0.0,
+        0.0,
+        -50.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/relay-rush/rush-start-horn.glb"
+    },
+    {
+      "id": "rush-relay-r1-frame",
+      "position": [
+        -45.0,
+        0.0,
+        41.0
+      ],
+      "rotation": [
+        0.0,
+        0.1,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/relay-rush/rush-relay-r1-frame.glb"
+    },
+    {
+      "id": "rush-relay-r2-frame",
+      "position": [
+        -25.0,
+        0.0,
+        41.0
+      ],
+      "rotation": [
+        0.0,
+        0.04,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/relay-rush/rush-relay-r2-frame.glb"
+    },
+    {
+      "id": "rush-relay-r3-frame",
+      "position": [
+        25.0,
+        0.0,
+        41.0
+      ],
+      "rotation": [
+        0.0,
+        -0.04,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/relay-rush/rush-relay-r3-frame.glb"
+    },
+    {
+      "id": "rush-relay-r4-frame",
+      "position": [
+        45.0,
+        0.0,
+        41.0
+      ],
+      "rotation": [
+        0.0,
+        -0.1,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/relay-rush/rush-relay-r4-frame.glb"
+    }
+  ],
+  "landmarkPack": {
+    "contract": "landmarks/relay-rush/relay-rush-landmark-pack-contract.json",
+    "atlas": "landmarks/relay-rush/relay-rush-landmarks-atlas.png",
+    "era": 7,
+    "sourceLadder": "reuse > derive > build-new",
+    "ownership": "separate mounted render-only GLBs; no simulation authority"
+  },
+  "simulation": "reuse verdict only; terrain, collision, movement, placement, water, spawns, fog, and variant mechanics remain unchanged"
+}

@@ -1,0 +1,393 @@
+{
+  "asset": "seed-run-terrain.glb",
+  "contractId": "e9-seed-run",
+  "tileId": "e9-seed-run",
+  "renderOnly": true,
+  "simulation": "planar; movement, collision, placement, spawns, persistence, water, and event mechanics remain code-owned and unchanged",
+  "heightSocket": "Terrain.visualY",
+  "theme": "a rising caravan road crossing three permanent green waypoints between dead red dune shelves",
+  "regionalFamily": {
+    "epoch": "Epoch 9 redfields heart-era",
+    "shared": [
+      "rust-red engraved dunes",
+      "parchment abrasion",
+      "deep survey shadow",
+      "warm dome-work light",
+      "literal E1 green only where authored"
+    ],
+    "unique": "five-level seed-road composition with three sheltered waypoint bays"
+  },
+  "meshCount": 1,
+  "primitiveCount": 1,
+  "materialCount": 1,
+  "vertices": 16641,
+  "triangles": 32768,
+  "triangleBudget": 60000,
+  "texture": {
+    "count": 1,
+    "width": 2048,
+    "height": 2048,
+    "embedded": true
+  },
+  "maskTable": "assets/contracts/epoch-9-redfields/mask-tables/e9-seed-run.json",
+  "maskTruth": {
+    "source": "assets/contracts/epoch-9-redfields/contracts.json; lore/STORYBOOK.md E9 contracts",
+    "tileId": "e9-seed-run",
+    "size": 128,
+    "dimensions": {
+      "width": 128,
+      "height": 128
+    },
+    "river": false,
+    "ford": false,
+    "buildZones": [
+      {
+        "id": "south-caravan-yard",
+        "bank": "south",
+        "minX": -36,
+        "maxX": 36,
+        "minZ": -54,
+        "maxZ": -42
+      },
+      {
+        "id": "west-green-waypoint",
+        "bank": "south",
+        "minX": -44,
+        "maxX": -24,
+        "minZ": -30,
+        "maxZ": -12
+      },
+      {
+        "id": "center-green-waypoint",
+        "bank": "north",
+        "minX": -10,
+        "maxX": 10,
+        "minZ": -6,
+        "maxZ": 12
+      },
+      {
+        "id": "east-green-waypoint",
+        "bank": "north",
+        "minX": 24,
+        "maxX": 44,
+        "minZ": 18,
+        "maxZ": 36
+      },
+      {
+        "id": "north-basin-approach",
+        "bank": "north",
+        "minX": -30,
+        "maxX": 30,
+        "minZ": 42,
+        "maxZ": 54
+      }
+    ],
+    "permanentGreenWaypointZones": [
+      {
+        "id": "west-green-waypoint",
+        "minX": -44,
+        "maxX": -24,
+        "minZ": -30,
+        "maxZ": -12
+      },
+      {
+        "id": "center-green-waypoint",
+        "minX": -10,
+        "maxX": 10,
+        "minZ": -6,
+        "maxZ": 12
+      },
+      {
+        "id": "east-green-waypoint",
+        "minX": 24,
+        "maxX": 44,
+        "minZ": 18,
+        "maxZ": 36
+      }
+    ],
+    "stakeMarkers": [
+      {
+        "id": "plant-west-waypoint",
+        "x": -34,
+        "z": -21,
+        "lossCondition": false
+      },
+      {
+        "id": "plant-center-waypoint",
+        "x": 0,
+        "z": 3,
+        "lossCondition": false
+      },
+      {
+        "id": "plant-east-waypoint",
+        "x": 34,
+        "z": 27,
+        "lossCondition": false
+      }
+    ],
+    "waterSources": [],
+    "harvestAnchors": [],
+    "heightfield": {
+      "id": "seed-run-dead-fields",
+      "mode": "visual"
+    },
+    "caravanRoute": [
+      {
+        "x": 0,
+        "z": -48
+      },
+      {
+        "x": -34,
+        "z": -21
+      },
+      {
+        "x": 0,
+        "z": 3
+      },
+      {
+        "x": 34,
+        "z": 27
+      },
+      {
+        "x": 0,
+        "z": 48
+      }
+    ],
+    "lanes": {
+      "spawnEdges": [
+        "west",
+        "east"
+      ],
+      "territoryRingBiasWaves": 0,
+      "territoryRingLaneBias": 0,
+      "patrolRoutes": []
+    },
+    "spawnGates": []
+  },
+  "waterAgreement": {
+    "river": false,
+    "waterSources": []
+  },
+  "buildZoneFlatness": [
+    {
+      "id": "south-caravan-yard",
+      "bounds": [
+        -36,
+        36,
+        -54,
+        -42
+      ],
+      "sampledSurfacePoints": 2145,
+      "maxDeviationMeters": 0.0
+    },
+    {
+      "id": "west-green-waypoint",
+      "bounds": [
+        -44,
+        -24,
+        -30,
+        -12
+      ],
+      "sampledSurfacePoints": 2145,
+      "maxDeviationMeters": 0.0
+    },
+    {
+      "id": "center-green-waypoint",
+      "bounds": [
+        -10,
+        10,
+        -6,
+        12
+      ],
+      "sampledSurfacePoints": 2145,
+      "maxDeviationMeters": 0.0
+    },
+    {
+      "id": "east-green-waypoint",
+      "bounds": [
+        24,
+        44,
+        18,
+        36
+      ],
+      "sampledSurfacePoints": 2145,
+      "maxDeviationMeters": 0.0
+    },
+    {
+      "id": "north-basin-approach",
+      "bounds": [
+        -30,
+        30,
+        42,
+        54
+      ],
+      "sampledSurfacePoints": 2145,
+      "maxDeviationMeters": 0.0
+    }
+  ],
+  "landmarkMounts": [
+    {
+      "id": "south-seed-caravan-gate",
+      "asset": "landmarks/seed-run/south-seed-caravan-gate.glb",
+      "position": [
+        0.0,
+        0.25,
+        -48.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "id": "west-seed-vault",
+      "asset": "landmarks/seed-run/west-seed-vault.glb",
+      "position": [
+        -34.0,
+        0.45,
+        -21.0
+      ],
+      "rotation": [
+        0.0,
+        0.18,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "id": "center-seed-vault",
+      "asset": "landmarks/seed-run/center-seed-vault.glb",
+      "position": [
+        0.0,
+        0.7,
+        3.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "id": "east-seed-vault",
+      "asset": "landmarks/seed-run/east-seed-vault.glb",
+      "position": [
+        34.0,
+        0.95,
+        27.0
+      ],
+      "rotation": [
+        0.0,
+        -0.2,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "id": "north-basin-waygate",
+      "asset": "landmarks/seed-run/north-basin-waygate.glb",
+      "position": [
+        0.0,
+        1.2,
+        48.0
+      ],
+      "rotation": [
+        0.0,
+        3.1416,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  ],
+  "landmarkMountSpace": {
+    "coordinates": "game X/Y/Z",
+    "positionY": "local offset added to Terrain.visualY at the mount X/Z",
+    "rotation": "XYZ Euler radians",
+    "scale": "XYZ multiplier",
+    "ownership": "landmark assets mount at runtime and are never baked into terrain"
+  },
+  "panoramaMount": {
+    "id": "seed-run-panorama",
+    "asset": "seed-run-panorama.glb",
+    "position": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "rotation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "renderOnly": true,
+    "ownership": "separate mounted scenery; never terrain or gameplay bounds"
+  },
+  "runtimeVisualsAbsent": [
+    "persistent green state",
+    "moving dust devils",
+    "building relocation",
+    "canal choices",
+    "future water flow",
+    "spawn gates"
+  ],
+  "verdictPreviewOnly": {
+    "excludedFromBlendAndGlb": true,
+    "reason": "route lines, dust columns, rubble, mount proxies, mask overlays, and lights are evidence helpers only"
+  },
+  "sourceArt": [
+    "assets/processed/kit-era-9.png",
+    "assets/raw/plate-e9-bld-canal-works.png",
+    "assets/processed/terrain-bank-tile.png",
+    "assets/processed/terrain-bank-tile-c.png"
+  ],
+  "atlas": "seed-run-terrain-atlas.png",
+  "files": {
+    "blend": {
+      "bytes": 9221440,
+      "sha256": "d011de7d8198be7092ee3aaba4cac19d42fcd3cf781745eb8c982fa005e42b2e"
+    },
+    "glb": {
+      "bytes": 9149268,
+      "sha256": "e277084451d0bf819098d6c4e942d041276594189aa25064b443f4bbb180f3ec"
+    },
+    "atlas": {
+      "bytes": 8418230,
+      "sha256": "e3c5d84c0029b7ecf5e2c1c76fc7f393095dd1df8eed56d30358bc024c8dc63b"
+    }
+  },
+  "landmarkPack": {
+    "contract": "landmarks/seed-run/seed-run-landmark-pack-contract.json",
+    "atlas": "landmarks/seed-run/seed-run-landmarks-atlas.png",
+    "era": 9,
+    "sourceLadder": "reuse > derive > build-new",
+    "ownership": "separate mounted render-only GLBs; no simulation authority"
+  }
+}

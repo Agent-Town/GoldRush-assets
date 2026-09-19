@@ -1,0 +1,30 @@
+{
+  "baseSha": "32715b4d2f54a84bffd8d42925a3c0c0c531cb07",
+  "sourcePlates": {
+    "assets/raw/boss-old-digger.png": "a6f9ffadd3280fe97daab2a419bfabe163a6b5dbfe76e6891dc1cdd2d197156a",
+    "assets/raw/boss-old-digger-gentle.png": "09e1f06185a46dfaf28a55421250acad0e2331eeec11ad9409ce62879430bb77"
+  },
+  "model": "assets/pilots/old-digger-3d/old-digger.glb",
+  "terrain": "assets/pilots/basin-rim-3d/basin-rim-plate.glb",
+  "camera": {
+    "fovDegrees": 42,
+    "offsetBlenderZUp": [
+      0.0,
+      26.2,
+      18.3
+    ],
+    "target": [
+      0.0,
+      -3.35,
+      0.45
+    ],
+    "bossYawDegrees": 180
+  },
+  "stateLaw": "working to gentle-redemption; no damage state",
+  "boards": {
+    "assets/pilots/old-digger-3d/renders/old-digger-turntable.png": "d230e143876a1d7372414ccd076db5d617922860fbcc99376024ee29ec85a548",
+    "assets/pilots/old-digger-3d/renders/old-digger-reference-ab.png": "13830a3a11731c2136a449b186ab684ea6c64ac2896081164ad8b3de3f577e62",
+    "assets/pilots/old-digger-3d/renders/old-digger-redemption-states.png": "19d5fda7f7f2fff88f40daf241b57be23aa5f1e7a63435f6f0033326d80e4a8b",
+    "assets/pilots/old-digger-3d/renders/old-digger-basin-run-camera.png": "fbbddb10f7471de77ee8fb6a644b42aff51659bce36002019c8925229ba3f24f"
+  }
+}
