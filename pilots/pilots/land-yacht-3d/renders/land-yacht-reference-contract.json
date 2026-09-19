@@ -1,0 +1,36 @@
+{
+  "baseSha": "de21f043a8c3b4c69950afbca0c7a612c6826e88",
+  "rule": "fresh direct render from current source plates and production GLB; no prior render is an input",
+  "sourceSha256": {
+    "assets/raw/boss-land-yacht.png": "b3b4ecc4d3c2f829dbd54c982d47d0a6b1fadb07b330421fefe09ff530165e4e",
+    "assets/raw/boss-land-yacht-damage.png": "a2ce82a34c12cc1932f7a326538ea827b0f6ef2836d8d99035c3035d6192ca54",
+    "assets/raw/plate-e4-boss-land-yacht.png": "b3b4ecc4d3c2f829dbd54c982d47d0a6b1fadb07b330421fefe09ff530165e4e"
+  },
+  "productionGlb": "assets/pilots/land-yacht-3d/land-yacht.glb",
+  "runtimeIds": [
+    "wheels",
+    "crane",
+    "wheelhouse"
+  ],
+  "runCamera": {
+    "fovDegrees": 42,
+    "offsetThreeJs": [
+      0.0,
+      26.2,
+      18.3
+    ],
+    "lookTargetThreeJs": [
+      0.0,
+      0.45,
+      -3.35
+    ]
+  },
+  "renders": [
+    "assets/pilots/land-yacht-3d/renders/land-yacht-turntable.png",
+    "assets/pilots/land-yacht-3d/renders/land-yacht-reference-ab.png",
+    "assets/pilots/land-yacht-3d/renders/land-yacht-damage-reference-ab.png",
+    "assets/pilots/land-yacht-3d/renders/land-yacht-intact-wreck.png",
+    "assets/pilots/land-yacht-3d/renders/land-yacht-damage-states.png",
+    "assets/pilots/land-yacht-3d/renders/land-yacht-dust-flats-run-camera.png"
+  ]
+}

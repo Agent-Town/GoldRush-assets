@@ -1,0 +1,100 @@
+{
+  "asset": "dust-flats-panorama.glb",
+  "map": "dust-flats",
+  "renderOnly": true,
+  "style": "engraved Epoch 4 motor frontier kit-plate horizon; warm valley against a darker fevered rim",
+  "signature": "a vast wheel-scoured motor plain fading through unequal storm banks and a low railhead notch",
+  "exposure": {
+    "mode": "bakedIntoAtlas",
+    "linearMultiplier": 0.76
+  },
+  "lawVersion": "PANORAMA LAW v2",
+  "namedCorrections": {
+    "paintedWall": "sunk sky ring behind an irregular closer ridge belt with a dusty haze transition",
+    "ceiling": "engraving density grades from dense horizon to near-plain parchment zenith",
+    "echo": "asymmetric cloud and dust edits plus independent near/far ridge profiles break mirrored repetition"
+  },
+  "projection": {
+    "skyRingRadiusMeters": 190.0,
+    "ridgeFootRadiusMeters": 161.5,
+    "ridgeOccluderRadiusMeters": 174.0,
+    "farRidgeRadiusMeters": null,
+    "ridgeFootRadiusRangeMeters": [
+      159.8,
+      163.2
+    ],
+    "ridgeOccluderRadiusRangeMeters": [
+      172.3,
+      175.7
+    ],
+    "skyBottomMeters": -10.0,
+    "skyTopMeters": 130.0,
+    "ridgeTopFormulaMeters": "5.0 + silhouetteFraction * 55.0",
+    "farRidgeTopFormulaMeters": null,
+    "groundSkirtInnerBoundaryMeters": {
+      "shape": "expanded-playfield-rectangle",
+      "halfExtents": [
+        80.0,
+        80.0
+      ],
+      "margin": 0.01
+    },
+    "groundSkirtOuterRadiusMeters": 161.5
+  },
+  "mount": {
+    "id": "dust-flats-panorama",
+    "asset": "dust-flats-panorama.glb",
+    "position": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "rotation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "renderOnly": true,
+    "ownership": "separate mounted scenery; never terrain or gameplay bounds"
+  },
+  "nonInterference": {
+    "playfieldBounds": "unchanged",
+    "spawnEdges": "unchanged",
+    "fogGating": "unchanged",
+    "waterBuildSpawnMasks": "unchanged"
+  },
+  "meshCount": 1,
+  "primitiveCount": 1,
+  "materialCount": 1,
+  "vertices": 1836,
+  "triangles": 2688,
+  "triangleBudget": 4000,
+  "texture": {
+    "count": 1,
+    "width": 2048,
+    "height": 2048,
+    "embedded": true
+  },
+  "sourceArt": [
+    "assets/processed/kit-era-4.png"
+  ],
+  "files": {
+    "blend": {
+      "bytes": 1116380,
+      "sha256": "af6be4da8eff09ab07f460801c809e7fa7c47aee0cd469a942caf79480109d09"
+    },
+    "glb": {
+      "bytes": 1105796,
+      "sha256": "36ee8fd4743d78fe9f26af13c7f2611a4542afe4a555057fff057843b65d43c0"
+    },
+    "atlas": {
+      "bytes": 1007105,
+      "sha256": "7133b325ca3b15a53341c3aa2b5d5961b88019dfb4dddaac9a95281564862332"
+    }
+  }
+}

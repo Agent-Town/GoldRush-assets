@@ -1,0 +1,307 @@
+{
+  "contractId": "eclipse-reuse-verdict",
+  "tileId": "e8-mare-claim",
+  "renderOnly": true,
+  "sculptVerdict": {
+    "verdict": "reuse",
+    "baseTile": "mare-claim",
+    "baseTerrainContract": "mare-claim-terrain-contract.json",
+    "reason": "maskTruth.tileId is e8-mare-claim; eclipse timing rides the accepted rim-ring claim",
+    "terrainGlb": "mare-claim-terrain.glb",
+    "panoramaGlb": "mare-claim-panorama.glb",
+    "duplicateSculpt": "forbidden; gameplay contract rides the existing tileId"
+  },
+  "maskTable": "assets/contracts/epoch-8-orbital/mask-tables/e8-eclipse.json",
+  "maskTruth": {
+    "source": "assets/contracts/epoch-8-orbital/contracts.json; lore/STORYBOOK.md E8 contracts",
+    "tileId": "e8-mare-claim",
+    "size": 128,
+    "dimensions": {
+      "width": 128,
+      "height": 128
+    },
+    "river": false,
+    "ford": false,
+    "buildZones": [
+      {
+        "id": "rim-premium-pad-west",
+        "bank": "north",
+        "minX": -50,
+        "maxX": -38,
+        "minZ": 42,
+        "maxZ": 52
+      },
+      {
+        "id": "rim-premium-pad-east",
+        "bank": "north",
+        "minX": 38,
+        "maxX": 50,
+        "minZ": 42,
+        "maxZ": 52
+      },
+      {
+        "id": "dome-cluster-pad-west",
+        "bank": "north",
+        "minX": -24,
+        "maxX": -12,
+        "minZ": -6,
+        "maxZ": 6
+      },
+      {
+        "id": "dome-cluster-pad-center",
+        "bank": "north",
+        "minX": -6,
+        "maxX": 6,
+        "minZ": -6,
+        "maxZ": 6
+      },
+      {
+        "id": "dome-cluster-pad-east",
+        "bank": "north",
+        "minX": 12,
+        "maxX": 24,
+        "minZ": -6,
+        "maxZ": 6
+      },
+      {
+        "id": "launch-pad",
+        "bank": "south",
+        "minX": -40,
+        "maxX": -20,
+        "minZ": -40,
+        "maxZ": -22
+      },
+      {
+        "id": "mass-driver-rail-footing",
+        "bank": "south",
+        "minX": -8,
+        "maxX": 54,
+        "minZ": -40,
+        "maxZ": -28
+      }
+    ],
+    "stakeMarkers": [],
+    "rails": [
+      {
+        "style": "mass-driver",
+        "points": [
+          {
+            "x": -4,
+            "z": -34
+          },
+          {
+            "x": 16,
+            "z": -34
+          },
+          {
+            "x": 36,
+            "z": -34
+          },
+          {
+            "x": 54,
+            "z": -34
+          }
+        ]
+      }
+    ],
+    "waterSources": [],
+    "harvestAnchors": [
+      {
+        "x": -34,
+        "z": 12
+      },
+      {
+        "x": -22,
+        "z": 26
+      },
+      {
+        "x": -8,
+        "z": 20
+      },
+      {
+        "x": 16,
+        "z": 22
+      },
+      {
+        "x": 30,
+        "z": 30
+      },
+      {
+        "x": 34,
+        "z": 12
+      }
+    ],
+    "heightfield": {
+      "id": "mare-claim-rim-ring",
+      "mode": "visual"
+    },
+    "gravity": {
+      "feelG": 0.6,
+      "lobArcDistanceMultiplier": 2.4,
+      "movement": "floaty"
+    },
+    "atmosphere": {
+      "airIsWall": true,
+      "outsideDomes": "suit-timer"
+    },
+    "eclipseShadowZones": [
+      {
+        "id": "compressed-lunar-eclipse",
+        "description": "The eclipse shadow crosses the whole claim and ends solar production mid-run.",
+        "minX": -54,
+        "maxX": 54,
+        "minZ": -54,
+        "maxZ": 54
+      }
+    ],
+    "lanes": {
+      "spawnEdges": [
+        "north",
+        "west",
+        "east"
+      ],
+      "territoryRingBiasWaves": 0,
+      "territoryRingLaneBias": 0,
+      "patrolRoutes": [
+        {
+          "id": "debris-arc-rim",
+          "points": [
+            {
+              "x": -50,
+              "z": 46
+            },
+            {
+              "x": -26,
+              "z": 54
+            },
+            {
+              "x": 0,
+              "z": 48
+            },
+            {
+              "x": 26,
+              "z": 54
+            },
+            {
+              "x": 50,
+              "z": 46
+            }
+          ]
+        }
+      ]
+    },
+    "spawnGates": []
+  },
+  "landmarkMountSpace": {
+    "coordinates": "game X/Y/Z",
+    "positionY": "local offset added to Terrain.visualY at the mount X/Z",
+    "rotation": "XYZ Euler radians",
+    "scale": "XYZ multiplier",
+    "ownership": "landmark assets mount at runtime and are never baked into terrain"
+  },
+  "landmarkMounts": [
+    {
+      "id": "eclipse-shadow-dial",
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/eclipse/eclipse-shadow-dial.glb"
+    },
+    {
+      "id": "west-rim-solar-witness",
+      "position": [
+        -44.0,
+        0.0,
+        47.0
+      ],
+      "rotation": [
+        0.0,
+        0.12,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/eclipse/west-rim-solar-witness.glb"
+    },
+    {
+      "id": "east-rim-solar-witness",
+      "position": [
+        44.0,
+        0.0,
+        47.0
+      ],
+      "rotation": [
+        0.0,
+        -0.12,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/eclipse/east-rim-solar-witness.glb"
+    },
+    {
+      "id": "launch-shadow-gate",
+      "position": [
+        -30.0,
+        0.0,
+        -31.0
+      ],
+      "rotation": [
+        0.0,
+        0.18,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/eclipse/launch-shadow-gate.glb"
+    },
+    {
+      "id": "mass-driver-eclipse-marker",
+      "position": [
+        34.0,
+        0.0,
+        -34.0
+      ],
+      "rotation": [
+        0.0,
+        -0.1,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/eclipse/mass-driver-eclipse-marker.glb"
+    }
+  ],
+  "landmarkPack": {
+    "contract": "landmarks/eclipse/eclipse-landmark-pack-contract.json",
+    "atlas": "landmarks/eclipse/eclipse-landmarks-atlas.png",
+    "era": 8,
+    "sourceLadder": "reuse > derive > build-new",
+    "ownership": "separate mounted render-only GLBs; no simulation authority"
+  },
+  "simulation": "reuse verdict only; terrain, collision, movement, placement, water, spawns, fog, and variant mechanics remain unchanged"
+}

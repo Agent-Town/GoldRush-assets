@@ -1,0 +1,36 @@
+{
+  "profile": "rigged",
+  "asset": "hero-3d.glb",
+  "blend": "hero-3d.blend",
+  "why": "Astra F-ASTRA-8: \"Applying it to the hero would also remove its animation.\" hero-3d.glb ships 1 skin and 1 animation (the walk cycle); the pre-sidecar helper exported meshes only, with export_animations=False, so a hand re-export silently produced a static, unskinned hero. applyTransforms is false because export_apply would bake the armature modifier and freeze the rest pose into the mesh.",
+  "extras": true,
+  "animations": true,
+  "applyTransforms": false,
+  "selection": [
+    "HeroMesh",
+    "HeroRig"
+  ],
+  "expects": {
+    "skins": 1,
+    "animations": 1
+  },
+  "guard": "scripts/glb-contract-guard.mjs",
+  "selectionWhy": "hero-3d.blend also holds RenderGround (a 40-unit turntable floor) and REF_V4_{FRONT,BACK,LEFT,RIGHT} reference planes plus a camera and three lights. \"all\" swept the floor and the reference planes into the export (measured: 2 meshes, bounds \u00b140 instead of \u00b10.57), so the rigged profile names its two objects: the skinned mesh and its armature.",
+  "pilotReview": {
+    "finding": "F-ASTRA-2",
+    "runtime": "unreferenced; Hero.ts retains sprite",
+    "atlas": [
+      1024,
+      1024
+    ],
+    "material": "baseColor diffuse; emission zero",
+    "walkSeconds": 0.5,
+    "walkFrames": [
+      0,
+      64
+    ],
+    "fps": 128,
+    "groundClearanceAtComparisonScale": 0.003,
+    "evidence": "../../../artifacts/sol/open-findings/hero-eight-heading-board.png"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "created_at": "2026-07-09T18:48:56.911437Z",
+  "display_name": "GPT Image 2",
+  "id": "4b4304cd-969b-4b8f-929a-6cc79402e2ec",
+  "job_type": "gpt_image_2",
+  "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/hf_20260709_184856_4b4304cd-969b-4b8f-929a-6cc79402e2ec_min.webp",
+  "params": {
+    "aspect_ratio": "1:1",
+    "height": 2048,
+    "medias": [
+      {
+        "data": {
+          "id": "2c1c0126-9575-4684-949d-188aa7e06ce8",
+          "type": "media_input",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/2c1c0126-9575-4684-949d-188aa7e06ce8.png"
+        },
+        "role": "image"
+      },
+      {
+        "data": {
+          "id": "e81e4c61-3de7-471e-a5ec-4206a8fb2efb",
+          "type": "media_input",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/e81e4c61-3de7-471e-a5ec-4206a8fb2efb.png"
+        },
+        "role": "image"
+      },
+      {
+        "data": {
+          "id": "d235988c-3028-475b-8588-a7f538e08cd7",
+          "type": "media_input",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/d235988c-3028-475b-8588-a7f538e08cd7.png"
+        },
+        "role": "image"
+      }
+    ],
+    "model": "videotape-alpha",
+    "prompt": "Frontier Ledger illustrated game sprite reference. Use the exact referenced youngster boy, fully clothed minor, newsboy cap, curly hair, freckles, cream shirt, rust vest, suspenders, belted trousers, rolled cuffs, boots, teal lantern hanging from his left hip. Lantern hangs from his LEFT hip; suspenders and vest stay fixed; he is a fully clothed minor in every frame. LEFT profile facing screen-left: left-hip lantern is far-side/mostly hidden; do not move it to the near side; fully clothed. Full body LEFT profile view, mid-stride walk pose, centered single figure, full body visible head to boots, plain flat sand-colored background, fixed ground line, readable silhouette. Keep the same clothing, colors, linework, proportions, and side-specific details as the reference images. No mirroring, no letters, no numbers, no text, no logo, no watermark, no extra characters, no realistic firearms, no gore.",
+    "quality": "high",
+    "reference_elements": [],
+    "resolution": "2k",
+    "width": 2048
+  },
+  "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/hf_20260709_184856_4b4304cd-969b-4b8f-929a-6cc79402e2ec.png",
+  "status": "completed"
+}

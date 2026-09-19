@@ -1,0 +1,55 @@
+{
+  "created_at": "2026-07-09T17:51:03.101044Z",
+  "display_name": "Seedance 2.0",
+  "id": "c1755a5c-c833-41fb-bcf4-ede92beb1121",
+  "job_type": "seedance_2_0",
+  "min_result_url": null,
+  "params": {
+    "aspect_ratio": "1:1",
+    "bitrate_mode": "standard",
+    "duration": 4,
+    "generate_audio": false,
+    "genre": "auto",
+    "height": 720,
+    "medias": [
+      {
+        "data": {
+          "id": "20169ae1-bde4-4070-990b-c42ca11dc572",
+          "type": "media_input",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/20169ae1-bde4-4070-990b-c42ca11dc572.png"
+        },
+        "role": "start_image"
+      },
+      {
+        "data": {
+          "id": "0830b5ee-975b-42d9-a3ea-e7e337e3d1c5",
+          "type": "media_input",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/0830b5ee-975b-42d9-a3ea-e7e337e3d1c5_resize.jpg"
+        },
+        "role": "image"
+      },
+      {
+        "data": {
+          "id": "78b101f2-f908-4e7a-839a-8bda8e945221",
+          "type": "media_input",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/78b101f2-f908-4e7a-839a-8bda8e945221.png"
+        },
+        "role": "image"
+      }
+    ],
+    "mode": "std",
+    "model": "seedance_2_0",
+    "multi_prompt": [],
+    "multi_shot_mode": "custom",
+    "multi_shots": false,
+    "prompt": "Frontier Ledger illustrated game sprite reference. Use the exact referenced storekeeper: tidy middle-aged shopkeeper, round spectacles, small curled mustache, side-parted dark hair, pencil tucked behind his left ear, cream rolled-sleeve shirt, rust-brown vest, brown work apron, notebook slips and small vial in apron pocket. Pencil is tucked behind his LEFT ear; notebook slips and small vial sit in the LEFT apron pocket; screen-right profiles show these details, screen-left profiles hide them far-side. RIGHT profile facing screen-right: the pencil and left apron-pocket tools are visible on the near side. Full body RIGHT profile view, walking steadily in place against a plain flat sand-colored background. careful shopkeeper walk with modest measured steps, neat posture, hands relaxed and never holding a weapon Constant centered framing, locked footline and fixed scale, feet on a fixed ground line, no vertical drift, no camera motion, no zoom, no turn, no mirroring, no extra characters, no text or letters, no realistic firearms, no gore. Seamless 4-second loop with one clean readable gait cycle; keep proportions, silhouette, clothing, colors, linework, and pinned side details consistent frame to frame.",
+    "prompt_language": "en",
+    "reference_elements": [],
+    "resolution": "720p",
+    "speedramp": "auto",
+    "width": 720
+  },
+  "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/hf_20260709_175103_c1755a5c-c833-41fb-bcf4-ede92beb1121.mp4",
+  "status": "completed",
+  "thumbnail_url": "https://cdn.higgsfield.ai/user_3GAXxSRY94iz6800xAb2RitN2C7/hf_20260709_175103_c1755a5c-c833-41fb-bcf4-ede92beb1121_thumbnail.webp"
+}

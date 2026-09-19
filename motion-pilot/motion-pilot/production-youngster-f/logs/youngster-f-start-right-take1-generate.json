@@ -1,0 +1,45 @@
+{
+  "created_at": "2026-07-09T19:29:20.756868Z",
+  "display_name": "GPT Image 2",
+  "id": "9dda9b42-9eaa-49f0-b213-8e77e0f49a5c",
+  "job_type": "gpt_image_2",
+  "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/hf_20260709_192920_9dda9b42-9eaa-49f0-b213-8e77e0f49a5c_min.webp",
+  "params": {
+    "aspect_ratio": "1:1",
+    "height": 2048,
+    "medias": [
+      {
+        "data": {
+          "id": "d1d497dc-e889-4c5f-9a6e-dbe2bfb90335",
+          "type": "media_input",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/d1d497dc-e889-4c5f-9a6e-dbe2bfb90335.png"
+        },
+        "role": "image"
+      },
+      {
+        "data": {
+          "id": "6fcae375-cc76-4a36-b720-13e646c99226",
+          "type": "media_input",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/6fcae375-cc76-4a36-b720-13e646c99226.png"
+        },
+        "role": "image"
+      },
+      {
+        "data": {
+          "id": "e78e3694-6221-46d5-8a6e-eb74af2ec66e",
+          "type": "media_input",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/e78e3694-6221-46d5-8a6e-eb74af2ec66e.png"
+        },
+        "role": "image"
+      }
+    ],
+    "model": "videotape-alpha",
+    "prompt": "Frontier Ledger illustrated game sprite reference. Use the exact referenced youngster girl, fully clothed minor, broad frontier hat, twin braids, red scarf, tan jacket, denim overalls, sturdy boots, teal lantern hanging from her left hip. Lantern hangs from her LEFT hip; twin braids remain part of the silhouette; she is a fully clothed minor in every frame. RIGHT profile facing screen-right: left-hip lantern is near/visible; braids remain; fully clothed. Full body RIGHT profile view, mid-stride walk pose, centered single figure, full body visible head to boots, plain flat sand-colored background, fixed ground line, readable silhouette. Keep the same clothing, colors, linework, proportions, and side-specific details as the reference images. No mirroring, no letters, no numbers, no text, no logo, no watermark, no extra characters, no realistic firearms, no gore.",
+    "quality": "high",
+    "reference_elements": [],
+    "resolution": "2k",
+    "width": 2048
+  },
+  "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/hf_20260709_192920_9dda9b42-9eaa-49f0-b213-8e77e0f49a5c.png",
+  "status": "completed"
+}

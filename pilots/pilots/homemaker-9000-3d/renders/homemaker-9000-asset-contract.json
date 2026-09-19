@@ -1,0 +1,477 @@
+{
+  "blender": "5.1.2",
+  "baseSha": "f50cc240618ddc23b88efee1f27d4cf2035a04ab",
+  "sourcePlate": {
+    "assets/raw/plate-e6-boss-homemaker-9000.png": "7d308cb43e4d0c6a869363b89e28f4e63c1db5df4205b8b2b8c682d36c88b7ec"
+  },
+  "storybook": {
+    "path": "lore/STORYBOOK.md",
+    "sha256": "2a612e188c40b0715820428d86f34a95e54d96c59bcfc7aa74633fc08bade930"
+  },
+  "damageImplementation": "one morph on each exact future component mesh; all three at weight 1 form the Act-3 chair state",
+  "finalMorphBounds": {
+    "core": {
+      "min": [
+        -1.938215,
+        -2.123651,
+        0.022427
+      ],
+      "max": [
+        2.704809,
+        2.269928,
+        5.130781
+      ]
+    },
+    "rack": {
+      "min": [
+        -2.55703,
+        -1.450293,
+        0.009565
+      ],
+      "max": [
+        4.14631,
+        1.870281,
+        2.597554
+      ]
+    },
+    "vac": {
+      "min": [
+        -4.28,
+        -1.986274,
+        0.02
+      ],
+      "max": [
+        -1.304,
+        0.109625,
+        4.276968
+      ]
+    }
+  },
+  "chairReveal": {
+    "basisSpanX": 0.023816,
+    "finalSpanX": 3.969292
+  },
+  "damageMetrics": {
+    "maeGray8": 5.6881208419799805,
+    "rmseGray8": 17.759347915649414,
+    "diffRatio16": 0.10273148148148148,
+    "diffRatio32": 0.07070891203703704,
+    "diffRatio64": 0.02388888888888889,
+    "avgLuminanceIntact8": 66.15106964111328,
+    "avgLuminanceAct3_8": 64.10877990722656,
+    "edgeEnergyIntact": 2.3460795879364014,
+    "edgeEnergyAct3": 2.107618570327759,
+    "target": "VAC dropped, RACK spent, CORE seated in its self-built debris chair; one warm powered-down machine"
+  },
+  "sourceScene": {
+    "meshObjects": [
+      "core",
+      "rack",
+      "vac"
+    ],
+    "cameras": [],
+    "lights": [],
+    "actions": []
+  },
+  "checked": {
+    "sha256": "3dc03cfafaab0645dc44350843ade2ede19e5ddf4f1a55519afbabeebc649ba9",
+    "bytes": 2028924,
+    "nodes": [
+      "vac",
+      "rack",
+      "core"
+    ],
+    "nodeCount": 3,
+    "bindings": [
+      {
+        "node": "vac",
+        "mesh": "vacMesh",
+        "targets": [
+          "Damage_DroppedVac"
+        ],
+        "defaultWeights": [
+          0
+        ]
+      },
+      {
+        "node": "rack",
+        "mesh": "rackMesh",
+        "targets": [
+          "Damage_SpentRack"
+        ],
+        "defaultWeights": [
+          0
+        ]
+      },
+      {
+        "node": "core",
+        "mesh": "coreMesh",
+        "targets": [
+          "Damage_ChairPose"
+        ],
+        "defaultWeights": [
+          0
+        ]
+      }
+    ],
+    "nodeTransforms": {
+      "vac": {
+        "translation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "matrix": null
+      },
+      "rack": {
+        "translation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "matrix": null
+      },
+      "core": {
+        "translation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "matrix": null
+      }
+    },
+    "meshes": 3,
+    "meshNames": [
+      "vacMesh",
+      "rackMesh",
+      "coreMesh"
+    ],
+    "primitives": 3,
+    "primitiveMaterials": [
+      0,
+      0,
+      0
+    ],
+    "triangles": 7644,
+    "morphTargets": {
+      "vacMesh": [
+        "Damage_DroppedVac"
+      ],
+      "rackMesh": [
+        "Damage_SpentRack"
+      ],
+      "coreMesh": [
+        "Damage_ChairPose"
+      ]
+    },
+    "targetCounts": {
+      "vacMesh": 1,
+      "rackMesh": 1,
+      "coreMesh": 1
+    },
+    "materials": 1,
+    "materialTextureBindings": [
+      {
+        "material": 0,
+        "baseColorTexture": 0,
+        "image": 0
+      }
+    ],
+    "materialContract": [
+      {
+        "metallicFactor": 0,
+        "roughnessFactor": 0.8999999761581421,
+        "doubleSided": true,
+        "hasBaseColorTexture": true,
+        "hasEmissiveTexture": false,
+        "emissiveFactor": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "textureSources": [
+      0
+    ],
+    "images": 1,
+    "embeddedImages": 1,
+    "imageDimensions": [
+      [
+        1024,
+        1024
+      ]
+    ],
+    "cameras": 0,
+    "lights": 0,
+    "animations": 0,
+    "bounds": {
+      "min": [
+        -3.6,
+        0,
+        -1.495607
+      ],
+      "max": [
+        3.6,
+        6.514197,
+        1.495607
+      ],
+      "size": [
+        7.2,
+        6.514197,
+        2.991213
+      ],
+      "center": [
+        0.0,
+        3.257098,
+        0.0
+      ]
+    }
+  },
+  "reexported": {
+    "sha256": "3dc03cfafaab0645dc44350843ade2ede19e5ddf4f1a55519afbabeebc649ba9",
+    "bytes": 2028924,
+    "nodes": [
+      "vac",
+      "rack",
+      "core"
+    ],
+    "nodeCount": 3,
+    "bindings": [
+      {
+        "node": "vac",
+        "mesh": "vacMesh",
+        "targets": [
+          "Damage_DroppedVac"
+        ],
+        "defaultWeights": [
+          0
+        ]
+      },
+      {
+        "node": "rack",
+        "mesh": "rackMesh",
+        "targets": [
+          "Damage_SpentRack"
+        ],
+        "defaultWeights": [
+          0
+        ]
+      },
+      {
+        "node": "core",
+        "mesh": "coreMesh",
+        "targets": [
+          "Damage_ChairPose"
+        ],
+        "defaultWeights": [
+          0
+        ]
+      }
+    ],
+    "nodeTransforms": {
+      "vac": {
+        "translation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "matrix": null
+      },
+      "rack": {
+        "translation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "matrix": null
+      },
+      "core": {
+        "translation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "matrix": null
+      }
+    },
+    "meshes": 3,
+    "meshNames": [
+      "vacMesh",
+      "rackMesh",
+      "coreMesh"
+    ],
+    "primitives": 3,
+    "primitiveMaterials": [
+      0,
+      0,
+      0
+    ],
+    "triangles": 7644,
+    "morphTargets": {
+      "vacMesh": [
+        "Damage_DroppedVac"
+      ],
+      "rackMesh": [
+        "Damage_SpentRack"
+      ],
+      "coreMesh": [
+        "Damage_ChairPose"
+      ]
+    },
+    "targetCounts": {
+      "vacMesh": 1,
+      "rackMesh": 1,
+      "coreMesh": 1
+    },
+    "materials": 1,
+    "materialTextureBindings": [
+      {
+        "material": 0,
+        "baseColorTexture": 0,
+        "image": 0
+      }
+    ],
+    "materialContract": [
+      {
+        "metallicFactor": 0,
+        "roughnessFactor": 0.8999999761581421,
+        "doubleSided": true,
+        "hasBaseColorTexture": true,
+        "hasEmissiveTexture": false,
+        "emissiveFactor": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "textureSources": [
+      0
+    ],
+    "images": 1,
+    "embeddedImages": 1,
+    "imageDimensions": [
+      [
+        1024,
+        1024
+      ]
+    ],
+    "cameras": 0,
+    "lights": 0,
+    "animations": 0,
+    "bounds": {
+      "min": [
+        -3.6,
+        0,
+        -1.495607
+      ],
+      "max": [
+        3.6,
+        6.514197,
+        1.495607
+      ],
+      "size": [
+        7.2,
+        6.514197,
+        2.991213
+      ],
+      "center": [
+        0.0,
+        3.257098,
+        0.0
+      ]
+    }
+  },
+  "byteIdentical": true,
+  "semanticIdentical": {
+    "nodes": true,
+    "nodeCount": true,
+    "bindings": true,
+    "nodeTransforms": true,
+    "meshes": true,
+    "meshNames": true,
+    "primitives": true,
+    "primitiveMaterials": true,
+    "triangles": true,
+    "morphTargets": true,
+    "targetCounts": true,
+    "materials": true,
+    "materialTextureBindings": true,
+    "materialContract": true,
+    "textureSources": true,
+    "images": true,
+    "embeddedImages": true,
+    "imageDimensions": true,
+    "cameras": true,
+    "lights": true,
+    "animations": true,
+    "bounds": true
+  }
+}

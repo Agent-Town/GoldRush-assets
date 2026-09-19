@@ -1,0 +1,106 @@
+{
+  "asset": "devils-alley-panorama.glb",
+  "map": "devils-alley",
+  "renderOnly": true,
+  "style": "engraved Epoch 9 redfields heart-era kit-plate horizon; warm valley against a darker fevered rim",
+  "signature": "three wind corridors disappearing between asymmetric red dune walls and distant drawn devil columns",
+  "exposure": {
+    "mode": "bakedIntoAtlas",
+    "linearMultiplier": 0.88
+  },
+  "lawVersion": "PANORAMA LAW v2",
+  "namedCorrections": {
+    "paintedWall": "sunk sky ring behind an irregular closer ridge belt with a dusty haze transition",
+    "ceiling": "engraving density grades from dense horizon to near-plain parchment zenith",
+    "echo": "asymmetric cloud and dust edits plus independent near/far ridge profiles break mirrored repetition"
+  },
+  "projection": {
+    "skyRingRadiusMeters": 190.0,
+    "ridgeFootRadiusMeters": 161.5,
+    "ridgeOccluderRadiusMeters": 174.0,
+    "farRidgeRadiusMeters": [
+      177.0,
+      184.0
+    ],
+    "ridgeFootRadiusRangeMeters": [
+      159.8,
+      163.2
+    ],
+    "ridgeOccluderRadiusRangeMeters": [
+      172.3,
+      175.7
+    ],
+    "skyBottomMeters": -10.0,
+    "skyTopMeters": 130.0,
+    "ridgeTopFormulaMeters": "5.0 + silhouetteFraction * 55.0",
+    "farRidgeTopFormulaMeters": "8.0 + silhouetteFraction * 55.0",
+    "groundSkirtInnerBoundaryMeters": {
+      "shape": "expanded-playfield-rectangle",
+      "halfExtents": [
+        64.0,
+        64.0
+      ],
+      "margin": 0.01
+    },
+    "groundSkirtOuterRadiusMeters": 161.5,
+    "groundSkirtRole": "county ground scenery"
+  },
+  "mount": {
+    "id": "devils-alley-panorama",
+    "asset": "devils-alley-panorama.glb",
+    "position": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "rotation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "renderOnly": true,
+    "ownership": "separate mounted scenery; never terrain or gameplay bounds"
+  },
+  "earthSide": null,
+  "nonInterference": {
+    "playfieldBounds": "unchanged",
+    "spawnEdges": "unchanged",
+    "fogGating": "unchanged",
+    "waterBuildSpawnMasks": "unchanged"
+  },
+  "meshCount": 1,
+  "primitiveCount": 1,
+  "materialCount": 1,
+  "vertices": 2222,
+  "triangles": 3072,
+  "triangleBudget": 4000,
+  "texture": {
+    "count": 1,
+    "width": 2048,
+    "height": 2048,
+    "embedded": true
+  },
+  "sourceArt": [
+    "assets/processed/kit-era-9.png",
+    "assets/raw/plate-e9-enemy-dust-devil.png"
+  ],
+  "files": {
+    "blend": {
+      "bytes": 706558,
+      "sha256": "def99caf960f8af691b49748f9139b8e9412c1cbadef27d71498c5c9a3da1d5f"
+    },
+    "glb": {
+      "bytes": 704364,
+      "sha256": "bf1ae3f382d2faa0bba1858307de007ae7b443bba2f84f588796d3c1c8b08b64"
+    },
+    "atlas": {
+      "bytes": 586378,
+      "sha256": "f1369ebf13e883c553c279291bf68dea5dfcbea6fa7fcd1e9330e8df9b7561d8"
+    }
+  }
+}

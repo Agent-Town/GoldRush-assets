@@ -1,0 +1,536 @@
+{
+  "asset": "canyon-works-terrain.glb",
+  "contractId": "e3-canyon-works",
+  "tileId": "e3-canyon-works",
+  "renderOnly": true,
+  "simulation": "planar masks, movement, collision, spawns, placement, and combat remain unchanged",
+  "heightSocket": "Terrain.visualY",
+  "theme": "night-falling terraced dam gorge with paired flat pylon switchbacks",
+  "regionalFamily": {
+    "epoch": "Epoch 3 voltage canyon",
+    "shared": [
+      "ink-blue canyon dusk",
+      "stained copper earth",
+      "deep engraved shadow",
+      "restrained voltage teal",
+      "sparse cacti",
+      "lantern warmth"
+    ],
+    "unique": [
+      "authored terrain silhouette",
+      "mask rhythm",
+      "night-light composition",
+      "panorama profile"
+    ]
+  },
+  "boundsMeters": {
+    "min": [
+      -48.0,
+      -56.0,
+      -1.064
+    ],
+    "max": [
+      48.0,
+      56.0,
+      6.064
+    ]
+  },
+  "meshCount": 1,
+  "primitiveCount": 1,
+  "materialCount": 1,
+  "vertices": 16641,
+  "triangles": 32768,
+  "triangleBudget": 60000,
+  "texture": {
+    "count": 1,
+    "width": 2048,
+    "height": 2048,
+    "embedded": true
+  },
+  "maskTable": "assets/contracts/epoch-3-voltage/mask-tables/e3-canyon-works.json",
+  "maskTruth": {
+    "source": "assets/contracts/epoch-3-voltage/contracts.json",
+    "tileId": "e3-canyon-works",
+    "size": 112,
+    "dimensions": {
+      "width": 96,
+      "height": 112
+    },
+    "river": true,
+    "ford": true,
+    "fords": [
+      {
+        "id": "works-bridge",
+        "x": 0,
+        "halfWidth": 4
+      }
+    ],
+    "buildZones": [
+      {
+        "id": "sub-hall-yard",
+        "bank": "south",
+        "minX": -36,
+        "maxX": 36,
+        "minZ": -52,
+        "maxZ": -28
+      },
+      {
+        "id": "west-switchback",
+        "bank": "south",
+        "minX": -30,
+        "maxX": -8,
+        "minZ": -26,
+        "maxZ": -12
+      },
+      {
+        "id": "east-switchback",
+        "bank": "south",
+        "minX": 8,
+        "maxX": 30,
+        "minZ": -26,
+        "maxZ": -12
+      },
+      {
+        "id": "west-gallery",
+        "bank": "north",
+        "minX": -42,
+        "maxX": -16,
+        "minZ": 7,
+        "maxZ": 40
+      },
+      {
+        "id": "east-gallery",
+        "bank": "north",
+        "minX": 16,
+        "maxX": 42,
+        "minZ": 7,
+        "maxZ": 40
+      }
+    ],
+    "stakeMarkers": [
+      {
+        "id": "dynamo-sub-hall",
+        "x": 0,
+        "z": -44,
+        "lossCondition": true
+      }
+    ],
+    "pylonSites": [
+      {
+        "id": "pylon-west-base",
+        "nodeId": "pylon-west-base",
+        "wireFrom": "sub-hall",
+        "x": -12,
+        "z": -36,
+        "radius": 2.5
+      },
+      {
+        "id": "pylon-west-switch",
+        "nodeId": "pylon-west-switch",
+        "wireFrom": "pylon-west-base",
+        "x": -24,
+        "z": -20,
+        "radius": 2.5
+      },
+      {
+        "id": "pylon-west-rim",
+        "nodeId": "pylon-west-rim",
+        "wireFrom": "pylon-west-switch",
+        "x": -28,
+        "z": 8,
+        "radius": 2.5
+      },
+      {
+        "id": "pylon-east-base",
+        "nodeId": "pylon-east-base",
+        "wireFrom": "sub-hall",
+        "x": 12,
+        "z": -36,
+        "radius": 2.5
+      },
+      {
+        "id": "pylon-east-switch",
+        "nodeId": "pylon-east-switch",
+        "wireFrom": "pylon-east-base",
+        "x": 24,
+        "z": -20,
+        "radius": 2.5
+      },
+      {
+        "id": "pylon-east-rim",
+        "nodeId": "pylon-east-rim",
+        "wireFrom": "pylon-east-switch",
+        "x": 28,
+        "z": 8,
+        "radius": 2.5
+      }
+    ],
+    "rails": [
+      {
+        "style": "steamworks",
+        "points": [
+          {
+            "x": -42,
+            "z": -30
+          },
+          {
+            "x": -18,
+            "z": -34
+          },
+          {
+            "x": 18,
+            "z": -34
+          },
+          {
+            "x": 42,
+            "z": -30
+          },
+          {
+            "x": 18,
+            "z": -34
+          },
+          {
+            "x": -18,
+            "z": -34
+          }
+        ]
+      }
+    ],
+    "waterSources": [],
+    "harvestAnchors": [
+      {
+        "x": -34,
+        "z": 30
+      },
+      {
+        "x": -22,
+        "z": 34
+      },
+      {
+        "x": 22,
+        "z": 34
+      },
+      {
+        "x": 34,
+        "z": 30
+      }
+    ],
+    "prePlacedBuildables": [
+      {
+        "id": "lantern_post",
+        "x": -32,
+        "z": 32
+      },
+      {
+        "id": "lantern_post",
+        "x": 32,
+        "z": 32
+      },
+      {
+        "id": "turret",
+        "x": -18,
+        "z": 22
+      },
+      {
+        "id": "turret",
+        "x": 18,
+        "z": 22
+      }
+    ],
+    "elevation": {
+      "cellSize": 2,
+      "analytic": {
+        "hillMine": 1,
+        "creekHeight": 0.5,
+        "railHeight": -1,
+        "t1Height": 0.5,
+        "t2Height": 4.5,
+        "t3Height": 6,
+        "creekBlendStart": -8,
+        "creekBlendEnd": -6,
+        "t1RampStart": 6,
+        "t1RampEnd": 14,
+        "t2RampStart": 18,
+        "t2RampEnd": 28,
+        "t3RampStart": 40,
+        "t3RampEnd": 50,
+        "cliffMinX": -12,
+        "cliffMaxX": 12,
+        "cliffMinZ": 18,
+        "cliffMaxZ": 26,
+        "cliffAmp": 2.2,
+        "cliffFeather": 1,
+        "mineMouthX": 0,
+        "mineMouthZ": 50,
+        "mineMouthRadius": 1,
+        "mineMouthCrown": 0
+      }
+    },
+    "heightfield": {
+      "id": "canyon-switchback-terraces",
+      "mode": "visual"
+    },
+    "water": {
+      "id": "canyon-dam-channel",
+      "visualHalfWidth": 6.25,
+      "depths": {
+        "river": 1.5,
+        "ford": 0.3,
+        "shallows": 0.25
+      },
+      "speedMul": {
+        "river": 0.4,
+        "ford": 0.82,
+        "shallows": 0.7
+      }
+    },
+    "lanes": {
+      "spawnEdges": [
+        "west",
+        "east",
+        "south"
+      ],
+      "territoryRingBiasWaves": 0,
+      "territoryRingLaneBias": 0
+    },
+    "spawnGates": [
+      {
+        "edge": "west",
+        "x": -46,
+        "z": 38
+      },
+      {
+        "edge": "east",
+        "x": 46,
+        "z": 38
+      }
+    ]
+  },
+  "waterAgreement": {
+    "deepBand": {
+      "minZ": -5,
+      "maxZ": 5
+    },
+    "shallowsEnd": {
+      "minZ": -6.25,
+      "maxZ": 6.25
+    },
+    "placeableBankStartsBeyondAbsZ": 6.25,
+    "factoryVisualHalfWidth": 6.25,
+    "ruling": "render bank seam follows the gameplay mask so placeable banks do not look submerged"
+  },
+  "pylonSiteFlatness": [
+    {
+      "id": "pylon-west-base",
+      "position": [
+        -12,
+        -36
+      ],
+      "radius": 2.5,
+      "maxDeviationMeters": 0.0
+    },
+    {
+      "id": "pylon-west-switch",
+      "position": [
+        -24,
+        -20
+      ],
+      "radius": 2.5,
+      "maxDeviationMeters": 0.0
+    },
+    {
+      "id": "pylon-west-rim",
+      "position": [
+        -28,
+        8
+      ],
+      "radius": 2.5,
+      "maxDeviationMeters": 0.0
+    },
+    {
+      "id": "pylon-east-base",
+      "position": [
+        12,
+        -36
+      ],
+      "radius": 2.5,
+      "maxDeviationMeters": 0.0
+    },
+    {
+      "id": "pylon-east-switch",
+      "position": [
+        24,
+        -20
+      ],
+      "radius": 2.5,
+      "maxDeviationMeters": 0.0
+    },
+    {
+      "id": "pylon-east-rim",
+      "position": [
+        28,
+        8
+      ],
+      "radius": 2.5,
+      "maxDeviationMeters": 0.0
+    }
+  ],
+  "pylonFlatnessLimitMeters": 0.02,
+  "landmarkFreeze": "lifted; canonical mounted landmark pack records backfilled by the mounts sweep",
+  "landmarkMounts": [
+    {
+      "id": "sub-hall-dynamo-house",
+      "position": [
+        0.0,
+        0.0,
+        -54.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/canyon-works/sub-hall-dynamo-house.glb"
+    },
+    {
+      "id": "west-switchback-line-house",
+      "position": [
+        -38.0,
+        0.0,
+        -18.0
+      ],
+      "rotation": [
+        0.0,
+        0.18,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/canyon-works/west-switchback-line-house.glb"
+    },
+    {
+      "id": "east-switchback-line-house",
+      "position": [
+        38.0,
+        0.0,
+        -18.0
+      ],
+      "rotation": [
+        0.0,
+        -0.18,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/canyon-works/east-switchback-line-house.glb"
+    },
+    {
+      "id": "dam-crest-gate-house",
+      "position": [
+        0.0,
+        0.0,
+        8.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/canyon-works/dam-crest-gate-house.glb"
+    },
+    {
+      "id": "downriver-tram-lamp",
+      "position": [
+        44.0,
+        0.0,
+        42.0
+      ],
+      "rotation": [
+        0.0,
+        -0.24,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/canyon-works/downriver-tram-lamp.glb"
+    }
+  ],
+  "panoramaMount": {
+    "id": "canyon-works-panorama",
+    "asset": "canyon-works-panorama.glb",
+    "position": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "rotation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "renderOnly": true,
+    "ownership": "separate mounted scenery; never terrain or gameplay bounds"
+  },
+  "nightRig": "dusk/deep shadow with code-owned lamp positions represented by render-only warm lights",
+  "sourceArt": [
+    "assets/processed/terrain-bank-tile.png",
+    "assets/processed/terrain-bank-tile-c.png",
+    "assets/processed/terrain-river-tile.png",
+    "assets/processed/ter-rail-elements-r0c2.png",
+    "assets/processed/kit-era-3.png",
+    "assets/raw/ter-canyon-atlas.png"
+  ],
+  "atlas": "canyon-works-terrain-atlas.png",
+  "files": {
+    "blend": {
+      "bytes": 8321522,
+      "sha256": "bf8ee79603c4aab593b514b3f0b5ced41f0c1613b16bea717bd7bbf538fca79d"
+    },
+    "glb": {
+      "bytes": 8238136,
+      "sha256": "e230248caf31a133ad80fa449991bb16c8d787de8fa60c90dee667cea9cc2ac3"
+    },
+    "atlas": {
+      "bytes": 7507264,
+      "sha256": "d6f9245cf23af0f337c9d822a4829e6ee81e75ce94cfd8a3dfb80e0a9a3bf5c5"
+    }
+  },
+  "landmarkMountSpace": {
+    "coordinates": "game X/Y/Z",
+    "positionY": "local offset added to Terrain.visualY at the mount X/Z",
+    "rotation": "XYZ Euler radians",
+    "scale": "XYZ multiplier",
+    "ownership": "landmark assets mount at runtime and are never baked into terrain"
+  },
+  "landmarkPack": {
+    "contract": "landmarks/canyon-works/canyon-works-landmark-pack-contract.json",
+    "atlas": "landmarks/canyon-works/canyon-works-landmarks-atlas.png",
+    "era": 3,
+    "sourceLadder": "reuse > derive > build-new",
+    "ownership": "separate mounted render-only GLBs; no simulation authority"
+  }
+}

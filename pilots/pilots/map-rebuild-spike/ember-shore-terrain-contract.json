@@ -1,0 +1,368 @@
+{
+  "asset": "ember-shore-terrain.glb",
+  "contractId": "e10-ember-shore",
+  "tileId": "e10-ember-shore",
+  "renderOnly": true,
+  "simulation": "planar masks, movement, collision, spawns, placement, and combat remain unchanged",
+  "heightSocket": "Terrain.visualY",
+  "theme": "a preserve-contract shore divided by three exact cooling lava-vein bands, with one flat last-warm-vent footing and one flat cooled-titan machine mount",
+  "regionalFamily": {
+    "epoch": "Epoch 10 Deep Sky first world",
+    "shared": [
+      "deep-ink basalt",
+      "parchment-gold ember",
+      "teal salvage glass",
+      "engraved star stipple",
+      "cooled machine shadow",
+      "preserve-contract warmth"
+    ],
+    "unique": [
+      "authored terrain silhouette",
+      "mask rhythm",
+      "three cooled hazard rifts, last-warm-vent preserve footing, and archaeological titan shelf composition",
+      "panorama profile"
+    ]
+  },
+  "boundsMeters": {
+    "min": [
+      -64.0,
+      -64.0,
+      -2.1732
+    ],
+    "max": [
+      64.0,
+      64.0,
+      2.0822
+    ]
+  },
+  "meshCount": 1,
+  "primitiveCount": 1,
+  "materialCount": 1,
+  "vertices": 16641,
+  "triangles": 32768,
+  "triangleBudget": 60000,
+  "texture": {
+    "count": 1,
+    "width": 2048,
+    "height": 2048,
+    "embedded": true
+  },
+  "maskTable": "assets/contracts/epoch-10-deepsky/mask-tables/e10-ember-shore.json",
+  "maskTruth": {
+    "source": "assets/contracts/epoch-10-deepsky/contracts.json; specs/epoch-saga/e10-deepsky-bundle.md \u00a7B2",
+    "tileId": "e10-ember-shore",
+    "size": 128,
+    "dimensions": {
+      "width": 128,
+      "height": 128
+    },
+    "river": false,
+    "ford": false,
+    "buildZones": [
+      {
+        "id": "last-warm-vent-site",
+        "bank": "south",
+        "minX": -2,
+        "maxX": 8,
+        "minZ": -16,
+        "maxZ": -4
+      },
+      {
+        "id": "cooled-titan-machine-mount",
+        "bank": "north",
+        "minX": 14,
+        "maxX": 38,
+        "minZ": 22,
+        "maxZ": 46
+      }
+    ],
+    "stakeMarkers": [
+      {
+        "id": "last-warm-vent",
+        "x": 3,
+        "z": -10,
+        "heroStart": true
+      }
+    ],
+    "rails": [],
+    "waterSources": [],
+    "harvestAnchors": [
+      {
+        "x": -6,
+        "z": -24
+      },
+      {
+        "x": -20,
+        "z": -34
+      },
+      {
+        "x": -38,
+        "z": -22
+      },
+      {
+        "x": -54,
+        "z": -12
+      }
+    ],
+    "heightfield": {
+      "id": "ember-shore-cooling-veins",
+      "mode": "visual"
+    },
+    "lavaVeinBands": [
+      {
+        "id": "cooling-lava-vein-west",
+        "minX": -52,
+        "maxX": -40,
+        "minZ": -52,
+        "maxZ": 40
+      },
+      {
+        "id": "cooling-lava-vein-center",
+        "minX": -18,
+        "maxX": -8,
+        "minZ": -54,
+        "maxZ": 10
+      },
+      {
+        "id": "cooling-lava-vein-east",
+        "minX": 44,
+        "maxX": 54,
+        "minZ": -12,
+        "maxZ": 54
+      }
+    ],
+    "fixtureZones": [
+      {
+        "id": "last-warm-vent-site",
+        "minX": -2,
+        "maxX": 8,
+        "minZ": -16,
+        "maxZ": -4
+      }
+    ],
+    "lanes": {
+      "spawnEdges": [
+        "north",
+        "west",
+        "east"
+      ],
+      "territoryRingBiasWaves": 0,
+      "territoryRingLaneBias": 0
+    },
+    "spawnGates": []
+  },
+  "waterAgreement": {
+    "river": false,
+    "waterSources": []
+  },
+  "pylonSiteFlatness": [],
+  "capacitorSiteFlatness": [],
+  "fixtureZoneFlatness": [
+    {
+      "id": "last-warm-vent-site",
+      "bounds": [
+        -2,
+        8,
+        -16,
+        -4
+      ],
+      "sampledSurfacePoints": 561,
+      "maxDeviationMeters": 0.0
+    }
+  ],
+  "buildZoneFlatness": [
+    {
+      "id": "last-warm-vent-site",
+      "bounds": [
+        -2,
+        8,
+        -16,
+        -4
+      ],
+      "sampledSurfacePoints": 1225,
+      "maxDeviationMeters": 0.0
+    },
+    {
+      "id": "cooled-titan-machine-mount",
+      "bounds": [
+        14,
+        38,
+        22,
+        46
+      ],
+      "sampledSurfacePoints": 1225,
+      "maxDeviationMeters": 0.0
+    }
+  ],
+  "pylonFlatnessLimitMeters": 0.02,
+  "fixtureFlatnessLimitMeters": 0.02,
+  "landmarkFreeze": "lifted; canonical mounted landmark pack records backfilled by the mounts sweep",
+  "landmarkMounts": [
+    {
+      "id": "last-warm-vent-altar",
+      "position": [
+        3.0,
+        0.0,
+        -10.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.28,
+        1.28,
+        1.28
+      ],
+      "asset": "landmarks/ember-shore/last-warm-vent-altar.glb"
+    },
+    {
+      "id": "cooled-titan-shelf",
+      "position": [
+        26.0,
+        0.0,
+        34.0
+      ],
+      "rotation": [
+        0.0,
+        -0.18,
+        0.0
+      ],
+      "scale": [
+        1.16,
+        1.16,
+        1.16
+      ],
+      "asset": "landmarks/ember-shore/cooled-titan-shelf.glb"
+    },
+    {
+      "id": "west-vein-cooling-marker",
+      "position": [
+        -36.0,
+        0.0,
+        18.0
+      ],
+      "rotation": [
+        0.0,
+        0.1,
+        0.0
+      ],
+      "scale": [
+        1.18,
+        1.18,
+        1.18
+      ],
+      "asset": "landmarks/ember-shore/west-vein-cooling-marker.glb"
+    },
+    {
+      "id": "center-vein-bridge-school",
+      "position": [
+        -12.0,
+        0.0,
+        24.0
+      ],
+      "rotation": [
+        0.0,
+        -0.12,
+        0.0
+      ],
+      "scale": [
+        1.18,
+        1.18,
+        1.18
+      ],
+      "asset": "landmarks/ember-shore/center-vein-bridge-school.glb"
+    },
+    {
+      "id": "shore-preserve-rack",
+      "position": [
+        48.0,
+        0.0,
+        -28.0
+      ],
+      "rotation": [
+        0.0,
+        -0.18,
+        0.0
+      ],
+      "scale": [
+        1.2,
+        1.2,
+        1.2
+      ],
+      "asset": "landmarks/ember-shore/shore-preserve-rack.glb"
+    }
+  ],
+  "verdictPreviewOnly": {
+    "assets": [
+      "procedural verdict-only cooled titan machine",
+      "procedural verdict-only last-warm-vent fixture"
+    ],
+    "excludedFromBlendAndGlb": true,
+    "reason": "procedural scale cues demonstrate the two authored preserve sites without inventing a shipped landmark body, mount, collision, or placement authority"
+  },
+  "preserveDesign": {
+    "terrain": "one dry authored terrain mesh; planar simulation and mask authority remain code-owned",
+    "coolingBands": "three mask-exact lava-vein rectangles sculpted as cooled landform rifts",
+    "water": "none authored, rendered, or implied",
+    "static": "code-owned staged desaturation/muting remains a runtime state and is not baked into the terrain",
+    "sites": "last-warm-vent and cooled-titan machine footprints are triangle-safe and buildable-flat"
+  },
+  "panoramaMount": {
+    "id": "ember-shore-panorama",
+    "asset": "ember-shore-panorama.glb",
+    "position": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "rotation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "renderOnly": true,
+    "ownership": "separate mounted scenery; never terrain or gameplay bounds"
+  },
+  "evidenceRig": "deep-ink first-world night with parchment-gold vent warmth and restrained agent teal; all lights render-only",
+  "sourceArt": [
+    "assets/processed/terrain-bank-tile-c.png",
+    "assets/processed/kit-era-10.png",
+    "assets/raw/plate-e10-worlds.png"
+  ],
+  "atlas": "ember-shore-terrain-atlas.png",
+  "files": {
+    "blend": {
+      "bytes": 6211858,
+      "sha256": "b75dc49376fbf639a8f198dcdf88c15b06953497149d7bb7e91d78184c501628"
+    },
+    "glb": {
+      "bytes": 6136000,
+      "sha256": "1b688f841923409756218449950401bf59d8b66d65cf4d5c7979ee7cdfc4dcac"
+    },
+    "atlas": {
+      "bytes": 5405119,
+      "sha256": "2afd2cd7861ae29263f2ea66d4d6845ad9bc0c7921f00cbba1d61308d0945c38"
+    }
+  },
+  "landmarkMountSpace": {
+    "coordinates": "game X/Y/Z",
+    "positionY": "local offset added to Terrain.visualY at the mount X/Z",
+    "rotation": "XYZ Euler radians",
+    "scale": "XYZ multiplier",
+    "ownership": "landmark assets mount at runtime and are never baked into terrain"
+  },
+  "landmarkPack": {
+    "contract": "landmarks/ember-shore/ember-shore-landmark-pack-contract.json",
+    "atlas": "landmarks/ember-shore/ember-shore-landmarks-atlas.png",
+    "era": 10,
+    "sourceLadder": "reuse > derive > build-new",
+    "ownership": "separate mounted render-only GLBs; no simulation authority"
+  }
+}

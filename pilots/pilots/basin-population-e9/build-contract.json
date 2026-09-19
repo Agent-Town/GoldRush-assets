@@ -1,0 +1,129 @@
+{
+  "baseSha": "b9df7e2127dadc1ea74859026459e32a2405af34",
+  "basinPlateDependencyTip": "440bb19e4058eded9be82b1faf4292e73808cb0a",
+  "sourcePlate": {
+    "assets/raw/plate-e9-bld-canal-works.png": "65f3acbd24244af4bcf0f73bcd1ffb1b37e74dd12110659415f65e1dd969c0f5"
+  },
+  "assets": {
+    "water-ledger-office": {
+      "asset": "assets/pilots/water-ledger-office-3d/water-ledger-office.glb",
+      "sha256": "b48a558d61565e94aaa9e351b8ee8ec42a178b3842b5ec89955b227fd8f51a27",
+      "triangles": 1224,
+      "placement": {
+        "assigned": "claim_office",
+        "limit": [
+          4.4,
+          3.2
+        ]
+      },
+      "boundsBlender": {
+        "min": [
+          -2.09,
+          -1.575086,
+          0.0
+        ],
+        "max": [
+          2.09,
+          1.575086,
+          3.4
+        ]
+      }
+    },
+    "greenkeeper": {
+      "asset": "assets/pilots/greenkeeper-3d/greenkeeper.glb",
+      "sha256": "0960984123806992e2c11889ce4b4c864bf1ff599438b32b36a69e79c75c28f2",
+      "triangles": 1208,
+      "placement": {
+        "assigned": "tavern",
+        "limit": [
+          5.2,
+          3.4
+        ]
+      },
+      "boundsBlender": {
+        "min": [
+          -2.5,
+          -1.67,
+          0.0
+        ],
+        "max": [
+          2.5,
+          1.67,
+          2.963
+        ]
+      }
+    },
+    "ice-quarry-head": {
+      "asset": "assets/pilots/ice-quarry-head-3d/ice-quarry-head.glb",
+      "sha256": "cadd77d7873ed1466054162427795e0a2bdfab16bf094921f46d6e608b269b4b",
+      "triangles": 968,
+      "placement": {
+        "assigned": "ice-quarry-pad",
+        "limit": [
+          5.6,
+          3.8
+        ]
+      },
+      "boundsBlender": {
+        "min": [
+          -2.69,
+          -1.79,
+          0.0
+        ],
+        "max": [
+          2.69,
+          1.79,
+          4.485
+        ]
+      }
+    },
+    "weather-warden-spire": {
+      "asset": "assets/pilots/weather-warden-spire-3d/weather-warden-spire.glb",
+      "sha256": "65554c98d3afa2dc354d6e39b02e7361f678dd3485b3b4d71954ae7957075fc6",
+      "triangles": 1340,
+      "placement": {
+        "assigned": "chapel",
+        "limit": [
+          4.2,
+          3.2
+        ]
+      },
+      "boundsBlender": {
+        "min": [
+          -1.89,
+          -1.539,
+          0.0
+        ],
+        "max": [
+          1.89,
+          1.539,
+          6.75
+        ]
+      }
+    },
+    "canal-packet-boat": {
+      "asset": "assets/pilots/canal-packet-boat-3d/canal-packet-boat.glb",
+      "sha256": "0ed40957e0943f4b1e4dcfbf1466531c4ce3f8aa037dca8a0a925d9323cf401b",
+      "triangles": 1140,
+      "placement": {
+        "assigned": "canal-water mount",
+        "limit": [
+          5.2,
+          2.0
+        ]
+      },
+      "boundsBlender": {
+        "min": [
+          -2.465,
+          -0.99,
+          0.0
+        ],
+        "max": [
+          2.465,
+          0.99,
+          3.66686
+        ]
+      }
+    }
+  }
+}

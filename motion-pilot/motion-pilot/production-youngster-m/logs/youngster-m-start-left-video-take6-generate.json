@@ -1,0 +1,47 @@
+{
+  "created_at": "2026-07-10T21:47:39.68472Z",
+  "display_name": "Seedance 2.0",
+  "id": "457372d7-7d5c-425f-88d4-3f81b0ccc3f8",
+  "job_type": "seedance_2_0",
+  "min_result_url": null,
+  "params": {
+    "aspect_ratio": "16:9",
+    "bitrate_mode": "standard",
+    "duration": 5,
+    "generate_audio": true,
+    "genre": "auto",
+    "height": 720,
+    "medias": [
+      {
+        "data": {
+          "id": "b5b40f68-58c5-41ed-bc92-abb8067095e6",
+          "type": "media_input",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/b5b40f68-58c5-41ed-bc92-abb8067095e6.png"
+        },
+        "role": "start_image"
+      },
+      {
+        "data": {
+          "id": "acdba70c-2045-4f94-90f1-0500458c5d29",
+          "type": "media_input",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/acdba70c-2045-4f94-90f1-0500458c5d29.png"
+        },
+        "role": "image"
+      }
+    ],
+    "mode": "std",
+    "model": "seedance_2_0",
+    "multi_prompt": [],
+    "multi_shot_mode": "custom",
+    "multi_shots": false,
+    "prompt": "Frontier Ledger illustrated game sprite reference. Use the exact referenced youngster boy, fully clothed minor, newsboy cap, curly hair, freckles, cream shirt, rust vest, suspenders, belted trousers, rolled cuffs, boots, teal lantern hanging from his LEFT hip. LEFT profile facing screen-left: the boy's nose, chest, feet, and walking direction point screen-left; the left-hip lantern is on the far side and mostly hidden behind his body, never on the visible near hip, never in a hand. Full body LEFT profile view, walking steadily in place against a plain flat sand-colored background. Lively short-stride child walk, playful but modest, fully clothed, no running and no exaggerated posing. Constant centered framing, locked footline and fixed scale, feet on a fixed ground line, no vertical drift, no camera motion, no zoom, no turn, no mirroring, no extra characters, no text or letters, no realistic firearms, no gore. Seamless 4-second loop with one clean readable gait cycle; keep proportions, silhouette, clothing, colors, linework, and pinned side details consistent frame to frame.",
+    "prompt_language": "en",
+    "reference_elements": [],
+    "resolution": "720p",
+    "speedramp": "auto",
+    "width": 1280
+  },
+  "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/hf_20260710_214739_457372d7-7d5c-425f-88d4-3f81b0ccc3f8.mp4",
+  "status": "completed",
+  "thumbnail_url": "https://cdn.higgsfield.ai/user_3GAXxSRY94iz6800xAb2RitN2C7/hf_20260710_214739_457372d7-7d5c-425f-88d4-3f81b0ccc3f8_thumbnail.webp"
+}

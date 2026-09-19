@@ -1,0 +1,50 @@
+[
+  {
+    "dir": "down",
+    "selectedTake": 2,
+    "scale": 0.4029,
+    "widthMin": 278,
+    "widthMax": 289,
+    "heightMin": 783,
+    "heightMax": 798,
+    "heightDriftPx": 15,
+    "heightDriftPct": 1.9,
+    "qa": "Pass criteria: girl identity, fully clothed, lantern left/viewer-right, lively short stride."
+  },
+  {
+    "dir": "left",
+    "selectedTake": 2,
+    "scale": 0.4029,
+    "widthMin": 212,
+    "widthMax": 395,
+    "heightMin": 782,
+    "heightMax": 798,
+    "heightDriftPx": 16,
+    "heightDriftPct": 2,
+    "qa": "Pass criteria: true left profile, lantern hidden far-side, fully clothed."
+  },
+  {
+    "dir": "right",
+    "selectedTake": 2,
+    "scale": 0.4029,
+    "widthMin": 234,
+    "widthMax": 417,
+    "heightMin": 798,
+    "heightMax": 814,
+    "heightDriftPx": 16,
+    "heightDriftPct": 2,
+    "qa": "Pass criteria: true right profile, lantern visible near-side, fully clothed."
+  },
+  {
+    "dir": "up",
+    "selectedTake": 2,
+    "scale": 0.4029,
+    "widthMin": 252,
+    "widthMax": 286,
+    "heightMin": 721,
+    "heightMax": 778,
+    "heightDriftPx": 57,
+    "heightDriftPct": 7.3,
+    "qa": "Pass criteria: true back view, straps/braids/lantern side hold, fully clothed."
+  }
+]

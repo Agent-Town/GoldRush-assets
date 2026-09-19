@@ -1,0 +1,48 @@
+{
+  "harness": "Gold Rush game boot rig, production contract scene and gameplay camera, renderer.info sampled after the boss model mounted",
+  "route": "/?debug&profile&epoch=epoch-5-deepwater&contract=e5-deepwater-claim&nolevel&nopause&seed=detail-duel-boot",
+  "samples": 180,
+  "viewport": [
+    1280,
+    800
+  ],
+  "assetTriangles": {
+    "original": 11832,
+    "detailSol": 42976
+  },
+  "original": {
+    "frameMsP95": 84.9,
+    "callsP95": 76,
+    "trianglesP95": 108124,
+    "geometriesMax": 82,
+    "texturesMax": 22,
+    "camera": {
+      "scene": "run",
+      "distanceScale": 1,
+      "targetDistanceScale": 1,
+      "minDistanceScale": 0.7,
+      "maxDistanceScale": 1.6,
+      "baseDistance": 31.958254019892887,
+      "targetDistance": 31.958254019892887,
+      "actualDistance": 31.95825401989289
+    }
+  },
+  "detailSol": {
+    "frameMsP95": 84.6,
+    "callsP95": 76,
+    "trianglesP95": 139268,
+    "geometriesMax": 82,
+    "texturesMax": 22,
+    "camera": {
+      "scene": "run",
+      "distanceScale": 1,
+      "targetDistanceScale": 1,
+      "minDistanceScale": 0.7,
+      "maxDistanceScale": 1.6,
+      "baseDistance": 31.958254019892887,
+      "targetDistance": 31.958254019892887,
+      "actualDistance": 31.95825401989289
+    }
+  },
+  "interpretation": "Calls and GPU resource counts are the stable comparison. Headless frame p95 is backend- and scheduler-sensitive and is not a desktop or mobile guarantee."
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "dir": "down",
+    "id": "3b45a57f-75a2-48af-94c4-7787eede062b",
+    "output": "assets/motion-pilot/production-tavernkeeper/stills/tavernkeeper-start-down-take1.png"
+  },
+  {
+    "dir": "left",
+    "id": "ade587f6-4019-46c4-aed8-2232ab881ea0",
+    "output": "assets/motion-pilot/production-tavernkeeper/stills/tavernkeeper-start-left-take1.png"
+  },
+  {
+    "dir": "right",
+    "id": "1eea3f32-8fe5-4f3f-b901-5e11f036b7fe",
+    "output": "assets/motion-pilot/production-tavernkeeper/stills/tavernkeeper-start-right-take1.png"
+  },
+  {
+    "dir": "up",
+    "id": "85196264-5b11-41ee-8dc6-f7a4f14a20ba",
+    "output": "assets/motion-pilot/production-tavernkeeper/stills/tavernkeeper-start-up-take1.png"
+  }
+]

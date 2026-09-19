@@ -1,0 +1,45 @@
+{
+  "created_at": "2026-07-09T19:26:31.65421Z",
+  "display_name": "GPT Image 2",
+  "id": "da9dc1dd-a799-4654-ac53-69cf087dad20",
+  "job_type": "gpt_image_2",
+  "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/hf_20260709_192631_da9dc1dd-a799-4654-ac53-69cf087dad20_min.webp",
+  "params": {
+    "aspect_ratio": "1:1",
+    "height": 2048,
+    "medias": [
+      {
+        "data": {
+          "id": "79937c1d-5c7e-4b00-b3f7-9342a436be1e",
+          "type": "media_input",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/79937c1d-5c7e-4b00-b3f7-9342a436be1e.png"
+        },
+        "role": "image"
+      },
+      {
+        "data": {
+          "id": "fd4b3b2d-07c8-4960-b748-3f989dd0b7eb",
+          "type": "media_input",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/fd4b3b2d-07c8-4960-b748-3f989dd0b7eb.png"
+        },
+        "role": "image"
+      },
+      {
+        "data": {
+          "id": "8a5e30f5-5518-4235-a9f2-6668f8565eca",
+          "type": "media_input",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/8a5e30f5-5518-4235-a9f2-6668f8565eca.png"
+        },
+        "role": "image"
+      }
+    ],
+    "model": "videotape-alpha",
+    "prompt": "Frontier Ledger illustrated game sprite reference. Use the exact referenced youngster girl, fully clothed minor, broad frontier hat, twin braids, red scarf, tan jacket, denim overalls, sturdy boots, teal lantern hanging from her left hip. Lantern hangs from her LEFT hip; twin braids remain part of the silhouette; she is a fully clothed minor in every frame. LEFT profile facing screen-left: left-hip lantern is far-side/mostly hidden; do not move it to the near side; braids remain; fully clothed. Full body LEFT profile view, mid-stride walk pose, centered single figure, full body visible head to boots, plain flat sand-colored background, fixed ground line, readable silhouette. Keep the same clothing, colors, linework, proportions, and side-specific details as the reference images. No mirroring, no letters, no numbers, no text, no logo, no watermark, no extra characters, no realistic firearms, no gore.",
+    "quality": "high",
+    "reference_elements": [],
+    "resolution": "2k",
+    "width": 2048
+  },
+  "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/hf_20260709_192631_da9dc1dd-a799-4654-ac53-69cf087dad20.png",
+  "status": "completed"
+}

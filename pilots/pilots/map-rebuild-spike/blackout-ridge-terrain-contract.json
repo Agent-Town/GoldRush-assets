@@ -1,0 +1,428 @@
+{
+  "asset": "blackout-ridge-terrain.glb",
+  "contractId": "e3-blackout-ridge",
+  "tileId": "e3-blackout-ridge",
+  "renderOnly": true,
+  "simulation": "planar masks, movement, collision, spawns, placement, and combat remain unchanged",
+  "heightSocket": "Terrain.visualY",
+  "theme": "a failing diagonal trunk climb into a cold switch-house ridge with five exact load-bearing sites",
+  "regionalFamily": {
+    "epoch": "Epoch 3 voltage canyon",
+    "shared": [
+      "ink-blue locked night",
+      "stained copper earth",
+      "deep engraved shadow",
+      "restrained voltage teal",
+      "sparse cacti",
+      "lantern warmth"
+    ],
+    "unique": [
+      "authored terrain silhouette",
+      "mask rhythm",
+      "night-light composition",
+      "panorama profile"
+    ]
+  },
+  "boundsMeters": {
+    "min": [
+      -40.0,
+      -48.0,
+      -0.094
+    ],
+    "max": [
+      40.0,
+      48.0,
+      8.2625
+    ]
+  },
+  "meshCount": 1,
+  "primitiveCount": 1,
+  "materialCount": 1,
+  "vertices": 16641,
+  "triangles": 32768,
+  "triangleBudget": 60000,
+  "texture": {
+    "count": 1,
+    "width": 2048,
+    "height": 2048,
+    "embedded": true
+  },
+  "maskTable": "assets/contracts/epoch-3-voltage/mask-tables/e3-blackout-ridge.json",
+  "maskTruth": {
+    "source": "assets/contracts/epoch-3-voltage/contracts.json",
+    "tileId": "e3-blackout-ridge",
+    "size": 96,
+    "dimensions": {
+      "width": 80,
+      "height": 96
+    },
+    "river": false,
+    "ford": false,
+    "buildZones": [
+      {
+        "id": "trunk-yard",
+        "bank": "south",
+        "minX": -32,
+        "maxX": 8,
+        "minZ": -38,
+        "maxZ": -8
+      },
+      {
+        "id": "breath-yard",
+        "bank": "north",
+        "minX": -8,
+        "maxX": 24,
+        "minZ": -6,
+        "maxZ": 18
+      },
+      {
+        "id": "ridge-line",
+        "bank": "north",
+        "minX": 8,
+        "maxX": 34,
+        "minZ": 20,
+        "maxZ": 40
+      }
+    ],
+    "stakeMarkers": [
+      {
+        "id": "ridge-switch-house",
+        "x": 24,
+        "z": 30,
+        "lossCondition": true
+      }
+    ],
+    "pylonSites": [
+      {
+        "id": "trunk-west",
+        "nodeId": "trunk-west",
+        "wireFrom": "off-map-current",
+        "x": -30,
+        "z": -30,
+        "radius": 2.5
+      },
+      {
+        "id": "trunk-middle",
+        "nodeId": "trunk-middle",
+        "wireFrom": "trunk-west",
+        "x": -18,
+        "z": -18,
+        "radius": 2.5
+      },
+      {
+        "id": "trunk-ridge",
+        "nodeId": "trunk-ridge",
+        "wireFrom": "trunk-middle",
+        "x": -6,
+        "z": -6,
+        "radius": 2.5
+      }
+    ],
+    "capacitorSites": [
+      {
+        "id": "breath-bank-west",
+        "nodeId": "capacitor-west",
+        "x": 6,
+        "z": 4,
+        "radius": 2.5
+      },
+      {
+        "id": "breath-bank-east",
+        "nodeId": "capacitor-east",
+        "x": 16,
+        "z": 4,
+        "radius": 2.5
+      }
+    ],
+    "prePlacedBuildables": [
+      {
+        "id": "sentry_beacon",
+        "x": -30,
+        "z": -30
+      },
+      {
+        "id": "sentry_beacon",
+        "x": -18,
+        "z": -18
+      },
+      {
+        "id": "sentry_beacon",
+        "x": -6,
+        "z": -6
+      },
+      {
+        "id": "lantern_post",
+        "x": 12,
+        "z": 20
+      },
+      {
+        "id": "lantern_post",
+        "x": 24,
+        "z": 30
+      }
+    ],
+    "ridgeGlow": {
+      "x": -38,
+      "z": -44,
+      "color": "#79c8bd",
+      "intensity": 1.35
+    },
+    "waterSources": [],
+    "harvestAnchors": [
+      {
+        "x": 8,
+        "z": 30
+      },
+      {
+        "x": 18,
+        "z": 34
+      },
+      {
+        "x": 30,
+        "z": 26
+      }
+    ],
+    "heightfield": {
+      "id": "blackout-ridge-shelf",
+      "mode": "visual"
+    },
+    "lanes": {
+      "spawnEdges": [
+        "west",
+        "east",
+        "north"
+      ],
+      "territoryRingBiasWaves": 0,
+      "territoryRingLaneBias": 0
+    },
+    "spawnGates": [
+      {
+        "edge": "west",
+        "x": -39,
+        "z": -18
+      },
+      {
+        "edge": "east",
+        "x": 39,
+        "z": -18
+      }
+    ],
+    "dayNightCycle": {
+      "periodSeconds": 24,
+      "duskRampSeconds": 2,
+      "dawnRampSeconds": 2,
+      "nightDepth": 0.86,
+      "nightLocked": true
+    }
+  },
+  "waterAgreement": {
+    "river": false,
+    "waterSources": []
+  },
+  "pylonSiteFlatness": [
+    {
+      "id": "trunk-west",
+      "position": [
+        -30,
+        -30
+      ],
+      "radius": 2.5,
+      "maxDeviationMeters": 0.0
+    },
+    {
+      "id": "trunk-middle",
+      "position": [
+        -18,
+        -18
+      ],
+      "radius": 2.5,
+      "maxDeviationMeters": 0.0
+    },
+    {
+      "id": "trunk-ridge",
+      "position": [
+        -6,
+        -6
+      ],
+      "radius": 2.5,
+      "maxDeviationMeters": 0.0
+    }
+  ],
+  "capacitorSiteFlatness": [
+    {
+      "id": "breath-bank-west",
+      "position": [
+        6,
+        4
+      ],
+      "radius": 2.5,
+      "maxDeviationMeters": 0.0
+    },
+    {
+      "id": "breath-bank-east",
+      "position": [
+        16,
+        4
+      ],
+      "radius": 2.5,
+      "maxDeviationMeters": 0.0
+    }
+  ],
+  "pylonFlatnessLimitMeters": 0.02,
+  "landmarkFreeze": "lifted; canonical mounted landmark pack records backfilled by the mounts sweep",
+  "landmarkMounts": [
+    {
+      "id": "off-map-current-receiver",
+      "position": [
+        -36.0,
+        0.0,
+        -44.0
+      ],
+      "rotation": [
+        0.0,
+        0.16,
+        0.0
+      ],
+      "scale": [
+        0.8,
+        0.8,
+        0.8
+      ],
+      "asset": "landmarks/blackout-ridge/off-map-current-receiver.glb"
+    },
+    {
+      "id": "trunk-line-breaker-shelter",
+      "position": [
+        -36.0,
+        0.0,
+        -18.0
+      ],
+      "rotation": [
+        0.0,
+        0.22,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/blackout-ridge/trunk-line-breaker-shelter.glb"
+    },
+    {
+      "id": "breath-bank-service-rack",
+      "position": [
+        32.0,
+        0.0,
+        4.0
+      ],
+      "rotation": [
+        0.0,
+        -0.16,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/blackout-ridge/breath-bank-service-rack.glb"
+    },
+    {
+      "id": "ridge-switch-house",
+      "position": [
+        36.0,
+        0.0,
+        28.0
+      ],
+      "rotation": [
+        0.0,
+        -0.18,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/blackout-ridge/ridge-switch-house.glb"
+    },
+    {
+      "id": "blackout-watch-lamp",
+      "position": [
+        0.0,
+        0.0,
+        44.0
+      ],
+      "rotation": [
+        0.0,
+        3.1416,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "asset": "landmarks/blackout-ridge/blackout-watch-lamp.glb"
+    }
+  ],
+  "panoramaMount": {
+    "id": "blackout-ridge-panorama",
+    "asset": "blackout-ridge-panorama.glb",
+    "position": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "rotation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "renderOnly": true,
+    "ownership": "separate mounted scenery; never terrain or gameplay bounds"
+  },
+  "evidenceRig": "dusk/deep shadow with code-owned lamp positions represented by render-only warm lights",
+  "sourceArt": [
+    "assets/processed/terrain-bank-tile.png",
+    "assets/processed/terrain-bank-tile-c.png",
+    "assets/processed/terrain-river-tile.png",
+    "assets/processed/ter-rail-elements-r0c2.png",
+    "assets/processed/kit-era-3.png"
+  ],
+  "atlas": "blackout-ridge-terrain-atlas.png",
+  "files": {
+    "blend": {
+      "bytes": 8765017,
+      "sha256": "e9a8ea266b1d3a6721049ca7d3cd12cbe5e831e392f59b9b56931e2abbb4ec1c"
+    },
+    "glb": {
+      "bytes": 8683576,
+      "sha256": "9cb8fdb55d962d880486aac963461c49ad4eabf921ef93eae56452ef280ea2c3"
+    },
+    "atlas": {
+      "bytes": 7952681,
+      "sha256": "8580b98dfa6c74d644c0a9a183d1abdb737a9c307f8eb259c24bd951d8565298"
+    }
+  },
+  "landmarkMountSpace": {
+    "coordinates": "game X/Y/Z",
+    "positionY": "local offset added to Terrain.visualY at the mount X/Z",
+    "rotation": "XYZ Euler radians",
+    "scale": "XYZ multiplier",
+    "ownership": "landmark assets mount at runtime and are never baked into terrain"
+  },
+  "landmarkPack": {
+    "contract": "landmarks/blackout-ridge/blackout-ridge-landmark-pack-contract.json",
+    "atlas": "landmarks/blackout-ridge/blackout-ridge-landmarks-atlas.png",
+    "era": 3,
+    "sourceLadder": "reuse > derive > build-new",
+    "ownership": "separate mounted render-only GLBs; no simulation authority"
+  }
+}

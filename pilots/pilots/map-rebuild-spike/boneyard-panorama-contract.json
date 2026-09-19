@@ -1,0 +1,106 @@
+{
+  "asset": "boneyard-panorama.glb",
+  "map": "boneyard",
+  "renderOnly": true,
+  "style": "engraved Epoch 4 motor frontier kit-plate horizon; warm valley against a darker fevered rim",
+  "signature": "a quiet rust valley beneath mismatched scrap ridges, one half-buried silhouette, and a dust-muted outer plain",
+  "exposure": {
+    "mode": "bakedIntoAtlas",
+    "linearMultiplier": 0.74
+  },
+  "lawVersion": "PANORAMA LAW v2",
+  "namedCorrections": {
+    "paintedWall": "sunk sky ring behind an irregular closer ridge belt with a dusty haze transition",
+    "ceiling": "engraving density grades from dense horizon to near-plain parchment zenith",
+    "echo": "asymmetric cloud and dust edits plus independent near/far ridge profiles break mirrored repetition"
+  },
+  "projection": {
+    "skyRingRadiusMeters": 190.0,
+    "ridgeFootRadiusMeters": 161.5,
+    "ridgeOccluderRadiusMeters": 174.0,
+    "farRidgeRadiusMeters": [
+      177.0,
+      184.0
+    ],
+    "ridgeFootRadiusRangeMeters": [
+      159.8,
+      163.2
+    ],
+    "ridgeOccluderRadiusRangeMeters": [
+      172.3,
+      175.7
+    ],
+    "skyBottomMeters": -10.0,
+    "skyTopMeters": 130.0,
+    "ridgeTopFormulaMeters": "5.0 + silhouetteFraction * 55.0",
+    "farRidgeTopFormulaMeters": "8.0 + silhouetteFraction * 55.0",
+    "groundSkirtInnerBoundaryMeters": {
+      "shape": "expanded-playfield-rectangle",
+      "halfExtents": [
+        64.0,
+        64.0
+      ],
+      "margin": 0.01
+    },
+    "groundSkirtOuterRadiusMeters": 161.5,
+    "groundSkirtRole": "county ground scenery"
+  },
+  "mount": {
+    "id": "boneyard-panorama",
+    "asset": "boneyard-panorama.glb",
+    "position": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "rotation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "renderOnly": true,
+    "ownership": "separate mounted scenery; never terrain or gameplay bounds"
+  },
+  "earthSide": null,
+  "nonInterference": {
+    "playfieldBounds": "unchanged",
+    "spawnEdges": "unchanged",
+    "fogGating": "unchanged",
+    "waterBuildSpawnMasks": "unchanged"
+  },
+  "meshCount": 1,
+  "primitiveCount": 1,
+  "materialCount": 1,
+  "vertices": 2222,
+  "triangles": 3072,
+  "triangleBudget": 4000,
+  "texture": {
+    "count": 1,
+    "width": 2048,
+    "height": 2048,
+    "embedded": true
+  },
+  "sourceArt": [
+    "assets/processed/kit-era-4.png",
+    "assets/raw/plate-e4-boss-land-yacht.png"
+  ],
+  "files": {
+    "blend": {
+      "bytes": 1495556,
+      "sha256": "77cdcf4e8ffaf9e5fbc77eec3340b37c3208fe378a691596811dbcd03558c26d"
+    },
+    "glb": {
+      "bytes": 1491076,
+      "sha256": "507f9b72db212d76b2d3688912f541bf88aa095aa336850c95da90ec6911a278"
+    },
+    "atlas": {
+      "bytes": 1373104,
+      "sha256": "440702b57a57edce1f863692d6ad2bf82c5ddeb43e72c3bfc03504bd71009ff0"
+    }
+  }
+}

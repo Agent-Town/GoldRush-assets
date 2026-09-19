@@ -1,0 +1,597 @@
+{
+  "blender": "5.1.2",
+  "sourcePlates": {
+    "assets/raw/boss-dredge-queen.png": "e246745b4a4fb6e7f8262eed3464975574565ee8e0ab2c59d55708774f9b6954",
+    "assets/raw/boss-dredge-queen-damage.png": "f87c156f51f09460318f5eae324bda4469dfc144335f6992fa322e99e2675933"
+  },
+  "shipped": {
+    "triangles": 11832,
+    "atlas": [
+      [
+        1024,
+        1024
+      ]
+    ],
+    "bounds": {
+      "min": [
+        -4,
+        0,
+        -2.491563
+      ],
+      "max": [
+        4,
+        5.33333,
+        2.491563
+      ],
+      "size": [
+        8,
+        5.33333,
+        4.983127
+      ],
+      "center": [
+        0.0,
+        2.666665,
+        0.0
+      ]
+    },
+    "bytes": 2529208
+  },
+  "detail": {
+    "triangles": 33124,
+    "atlas": [
+      [
+        2048,
+        2048
+      ]
+    ],
+    "bounds": {
+      "min": [
+        -4.0,
+        0,
+        -2.262421
+      ],
+      "max": [
+        4.0,
+        5.330477,
+        2.262421
+      ],
+      "size": [
+        8.0,
+        5.330477,
+        4.524841
+      ],
+      "center": [
+        0.0,
+        2.665238,
+        0.0
+      ]
+    },
+    "bytes": 8297784,
+    "sha256": "b79157255a2737a1f73ebd53f4d86428fecdf3209ce039f65fa76186c7ae12d3",
+    "materials": 1,
+    "images": 1,
+    "primitives": 4,
+    "nodes": [
+      "claw",
+      "paddle_port",
+      "paddle_starboard",
+      "hold"
+    ],
+    "morphTargets": {
+      "clawMesh": [
+        "Damage_SlackClaw",
+        "Cycle_OpenGrab"
+      ],
+      "paddle_portMesh": [
+        "Damage_BrokenPortPaddle"
+      ],
+      "paddle_starboardMesh": [
+        "Damage_BrokenStarboardPaddle"
+      ],
+      "holdMesh": [
+        "Damage_CrackedLootHold"
+      ]
+    }
+  },
+  "triangleRatio": 2.8,
+  "duelCeilings": {
+    "triangles": 45000,
+    "atlas": 2048,
+    "withinBudget": true
+  },
+  "runtimeGuard": {
+    "file": "src/systems/DredgeQueenBossSystem.ts",
+    "line": 18,
+    "constant": "DREDGE_QUEEN_3D_TRIANGLES",
+    "shipped": 11832,
+    "required": 33124,
+    "note": "Runtime requires exactly 33124 triangles, the declared nodes and material, and these ordered morph targets: {'clawMesh': ['Damage_SlackClaw', 'Cycle_OpenGrab'], 'paddle_portMesh': ['Damage_BrokenPortPaddle'], 'paddle_starboardMesh': ['Damage_BrokenStarboardPaddle'], 'holdMesh': ['Damage_CrackedLootHold']}."
+  },
+  "byteIdentical": true,
+  "semanticIdentical": {
+    "nodes": true,
+    "nodeCount": true,
+    "bindings": true,
+    "nodeTransforms": true,
+    "meshes": true,
+    "meshNames": true,
+    "primitives": true,
+    "primitiveMaterials": true,
+    "triangles": true,
+    "morphTargets": true,
+    "targetCounts": true,
+    "materials": true,
+    "materialTextureBindings": true,
+    "materialContract": true,
+    "textureSources": true,
+    "images": true,
+    "embeddedImages": true,
+    "imageDimensions": true,
+    "cameras": true,
+    "lights": true,
+    "animations": true,
+    "bounds": true
+  },
+  "boards": {
+    "assets/pilots/dredge-queen-3d/renders-detail-opus5/dredge-queen-detail-opus5-act3-reference-ab.png": "d34f7e7b060b8ebc7ae25649269fe18806edbcf993f8b2f09d3afd818f5a4c98",
+    "assets/pilots/dredge-queen-3d/renders-detail-opus5/dredge-queen-detail-opus5-damage-states.png": "5cc9d5b9d9c677e023c9fd450e557811aa395dffb9f862ede812dd3aa1170328",
+    "assets/pilots/dredge-queen-3d/renders-detail-opus5/dredge-queen-detail-opus5-reference-ab.png": "e4ccad13a8b1e5c951fbdce798d6123796c95d49cabc2fda94419643695ed8ed",
+    "assets/pilots/dredge-queen-3d/renders-detail-opus5/dredge-queen-detail-opus5-turntable.png": "89e0c9fce3d86d1ffd960d2dd789b4e334c6a6dae075e3a85a928436ea881dbd",
+    "assets/pilots/dredge-queen-3d/renders-detail-opus5/dredge-queen-detail-opus5-vs-shipped.png": "7823a57865466cf056373d0f2d20aa9ad197a1150baa24cb310e99f57e23273e"
+  },
+  "checked": {
+    "sha256": "b79157255a2737a1f73ebd53f4d86428fecdf3209ce039f65fa76186c7ae12d3",
+    "bytes": 8297784,
+    "nodes": [
+      "claw",
+      "paddle_port",
+      "paddle_starboard",
+      "hold"
+    ],
+    "nodeCount": 4,
+    "bindings": [
+      {
+        "node": "claw",
+        "mesh": "clawMesh",
+        "targets": [
+          "Damage_SlackClaw",
+          "Cycle_OpenGrab"
+        ],
+        "defaultWeights": [
+          0,
+          0
+        ]
+      },
+      {
+        "node": "paddle_port",
+        "mesh": "paddle_portMesh",
+        "targets": [
+          "Damage_BrokenPortPaddle"
+        ],
+        "defaultWeights": [
+          0
+        ]
+      },
+      {
+        "node": "paddle_starboard",
+        "mesh": "paddle_starboardMesh",
+        "targets": [
+          "Damage_BrokenStarboardPaddle"
+        ],
+        "defaultWeights": [
+          0
+        ]
+      },
+      {
+        "node": "hold",
+        "mesh": "holdMesh",
+        "targets": [
+          "Damage_CrackedLootHold"
+        ],
+        "defaultWeights": [
+          0
+        ]
+      }
+    ],
+    "nodeTransforms": {
+      "claw": {
+        "translation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "matrix": null
+      },
+      "paddle_port": {
+        "translation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "matrix": null
+      },
+      "paddle_starboard": {
+        "translation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "matrix": null
+      },
+      "hold": {
+        "translation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "matrix": null
+      }
+    },
+    "meshes": 4,
+    "meshNames": [
+      "clawMesh",
+      "paddle_portMesh",
+      "paddle_starboardMesh",
+      "holdMesh"
+    ],
+    "primitives": 4,
+    "primitiveMaterials": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "triangles": 33124,
+    "morphTargets": {
+      "clawMesh": [
+        "Damage_SlackClaw",
+        "Cycle_OpenGrab"
+      ],
+      "paddle_portMesh": [
+        "Damage_BrokenPortPaddle"
+      ],
+      "paddle_starboardMesh": [
+        "Damage_BrokenStarboardPaddle"
+      ],
+      "holdMesh": [
+        "Damage_CrackedLootHold"
+      ]
+    },
+    "targetCounts": {
+      "clawMesh": 2,
+      "paddle_portMesh": 1,
+      "paddle_starboardMesh": 1,
+      "holdMesh": 1
+    },
+    "materials": 1,
+    "materialTextureBindings": [
+      {
+        "material": 0,
+        "baseColorTexture": 0,
+        "image": 0
+      }
+    ],
+    "materialContract": [
+      {
+        "metallicFactor": 0,
+        "roughnessFactor": 0.8999999761581421,
+        "doubleSided": true,
+        "hasBaseColorTexture": true,
+        "hasEmissiveTexture": false,
+        "emissiveFactor": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "textureSources": [
+      0
+    ],
+    "images": 1,
+    "embeddedImages": 1,
+    "imageDimensions": [
+      [
+        2048,
+        2048
+      ]
+    ],
+    "cameras": 0,
+    "lights": 0,
+    "animations": 0,
+    "bounds": {
+      "min": [
+        -4.0,
+        0,
+        -2.262421
+      ],
+      "max": [
+        4.0,
+        5.330477,
+        2.262421
+      ],
+      "size": [
+        8.0,
+        5.330477,
+        4.524841
+      ],
+      "center": [
+        0.0,
+        2.665238,
+        0.0
+      ]
+    }
+  },
+  "reexported": {
+    "sha256": "b79157255a2737a1f73ebd53f4d86428fecdf3209ce039f65fa76186c7ae12d3",
+    "bytes": 8297784,
+    "nodes": [
+      "claw",
+      "paddle_port",
+      "paddle_starboard",
+      "hold"
+    ],
+    "nodeCount": 4,
+    "bindings": [
+      {
+        "node": "claw",
+        "mesh": "clawMesh",
+        "targets": [
+          "Damage_SlackClaw",
+          "Cycle_OpenGrab"
+        ],
+        "defaultWeights": [
+          0,
+          0
+        ]
+      },
+      {
+        "node": "paddle_port",
+        "mesh": "paddle_portMesh",
+        "targets": [
+          "Damage_BrokenPortPaddle"
+        ],
+        "defaultWeights": [
+          0
+        ]
+      },
+      {
+        "node": "paddle_starboard",
+        "mesh": "paddle_starboardMesh",
+        "targets": [
+          "Damage_BrokenStarboardPaddle"
+        ],
+        "defaultWeights": [
+          0
+        ]
+      },
+      {
+        "node": "hold",
+        "mesh": "holdMesh",
+        "targets": [
+          "Damage_CrackedLootHold"
+        ],
+        "defaultWeights": [
+          0
+        ]
+      }
+    ],
+    "nodeTransforms": {
+      "claw": {
+        "translation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "matrix": null
+      },
+      "paddle_port": {
+        "translation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "matrix": null
+      },
+      "paddle_starboard": {
+        "translation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "matrix": null
+      },
+      "hold": {
+        "translation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "matrix": null
+      }
+    },
+    "meshes": 4,
+    "meshNames": [
+      "clawMesh",
+      "paddle_portMesh",
+      "paddle_starboardMesh",
+      "holdMesh"
+    ],
+    "primitives": 4,
+    "primitiveMaterials": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "triangles": 33124,
+    "morphTargets": {
+      "clawMesh": [
+        "Damage_SlackClaw",
+        "Cycle_OpenGrab"
+      ],
+      "paddle_portMesh": [
+        "Damage_BrokenPortPaddle"
+      ],
+      "paddle_starboardMesh": [
+        "Damage_BrokenStarboardPaddle"
+      ],
+      "holdMesh": [
+        "Damage_CrackedLootHold"
+      ]
+    },
+    "targetCounts": {
+      "clawMesh": 2,
+      "paddle_portMesh": 1,
+      "paddle_starboardMesh": 1,
+      "holdMesh": 1
+    },
+    "materials": 1,
+    "materialTextureBindings": [
+      {
+        "material": 0,
+        "baseColorTexture": 0,
+        "image": 0
+      }
+    ],
+    "materialContract": [
+      {
+        "metallicFactor": 0,
+        "roughnessFactor": 0.8999999761581421,
+        "doubleSided": true,
+        "hasBaseColorTexture": true,
+        "hasEmissiveTexture": false,
+        "emissiveFactor": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "textureSources": [
+      0
+    ],
+    "images": 1,
+    "embeddedImages": 1,
+    "imageDimensions": [
+      [
+        2048,
+        2048
+      ]
+    ],
+    "cameras": 0,
+    "lights": 0,
+    "animations": 0,
+    "bounds": {
+      "min": [
+        -4.0,
+        0,
+        -2.262421
+      ],
+      "max": [
+        4.0,
+        5.330477,
+        2.262421
+      ],
+      "size": [
+        8.0,
+        5.330477,
+        4.524841
+      ],
+      "center": [
+        0.0,
+        2.665238,
+        0.0
+      ]
+    }
+  },
+  "boardsNote": "Historical static boards predate Cycle_OpenGrab; current runtime evidence is artifacts/sol/sprite-roster-fixes-20260908/dredge-queen-visual/cycle-production."
+}
