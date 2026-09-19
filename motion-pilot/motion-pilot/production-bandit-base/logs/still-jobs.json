@@ -1,0 +1,22 @@
+[
+  {
+    "dir": "down",
+    "id": "06268d11-cddc-4912-aa82-3b251674a112",
+    "output": "assets/motion-pilot/production-bandit-base/stills/bandit-base-start-down-take1.png"
+  },
+  {
+    "dir": "left",
+    "id": "e47087aa-679e-42d3-9942-0e669c17b312",
+    "output": "assets/motion-pilot/production-bandit-base/stills/bandit-base-start-left-take1.png"
+  },
+  {
+    "dir": "right",
+    "id": "154fbe27-5462-4527-a260-45bda3102eb1",
+    "output": "assets/motion-pilot/production-bandit-base/stills/bandit-base-start-right-take1.png"
+  },
+  {
+    "dir": "up",
+    "id": "55d6592d-de24-41fa-9773-13eb497c66ea",
+    "output": "assets/motion-pilot/production-bandit-base/stills/bandit-base-start-up-take1.png"
+  }
+]

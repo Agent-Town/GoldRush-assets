@@ -1,0 +1,605 @@
+{
+  "cursor": "100",
+  "items": [
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T07:51:43.976249Z",
+      "credits": -18,
+      "display_name": "Seedance 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T07:51:42.230451Z",
+      "credits": -18,
+      "display_name": "Seedance 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T07:51:40.560327Z",
+      "credits": -18,
+      "display_name": "Seedance 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T07:46:59.061626Z",
+      "credits": -18,
+      "display_name": "Seedance 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T07:46:57.438852Z",
+      "credits": -18,
+      "display_name": "Seedance 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T07:46:55.455262Z",
+      "credits": -18,
+      "display_name": "Seedance 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T07:41:54.283994Z",
+      "credits": -18,
+      "display_name": "Seedance 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T07:41:52.539144Z",
+      "credits": -18,
+      "display_name": "Seedance 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T07:41:50.732226Z",
+      "credits": -18,
+      "display_name": "Seedance 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T07:36:27.489048Z",
+      "credits": -18,
+      "display_name": "Seedance 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T07:36:25.747323Z",
+      "credits": -18,
+      "display_name": "Seedance 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T07:36:23.326188Z",
+      "credits": -18,
+      "display_name": "Seedance 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T07:31:51.468122Z",
+      "credits": -6.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T07:29:02.062902Z",
+      "credits": -6.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T07:26:10.116803Z",
+      "credits": -6.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T07:22:54.823699Z",
+      "credits": -6.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T07:21:32.219113Z",
+      "credits": -6.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T07:18:13.744584Z",
+      "credits": -6.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T06:16:31.447311Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T06:13:48.475476Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T06:11:06.267164Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T02:52:59.277894Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T02:50:29.383086Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T02:47:44.682827Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T02:45:55.957707Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T02:43:21.515523Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T02:40:42.742579Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T02:37:54.976838Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T02:36:48.157223Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T02:34:18.416805Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T02:32:53.476919Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T02:30:14.566739Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T02:27:42.353718Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T02:25:43.196243Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T02:23:02.974027Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T02:21:52.748245Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T02:20:30.466267Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T02:18:06.271413Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T02:15:42.035199Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T02:13:04.108747Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T02:10:36.765099Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T02:08:06.657375Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T02:07:14.664994Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T02:04:44.226985Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T02:03:01.098783Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T02:00:30.757042Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T01:58:23.827877Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T01:55:59.133035Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T01:53:32.338459Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T01:51:05.528059Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T01:48:29.901307Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T01:46:10.341964Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T01:43:49.654212Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T01:41:19.771237Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T01:38:58.848884Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T01:36:38.045207Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T01:34:21.740545Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T01:32:09.740196Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T01:29:48.149035Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T01:28:14.126231Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T01:25:52.639946Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T01:23:33.415689Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T01:21:19.897742Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T01:18:57.409648Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T01:17:05.06881Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T01:14:50.057932Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T01:12:35.109687Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T01:10:17.050077Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T01:07:48.712696Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T01:05:30.340162Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T01:02:53.5915Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T01:00:31.931656Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T00:58:19.748599Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T00:55:58.058959Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T00:53:38.78148Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T00:51:21.801125Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T00:48:59.470454Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T00:46:37.14718Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T00:44:15.479511Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T00:41:59.858458Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T00:39:47.852531Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T00:37:15.245625Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T00:34:58.927499Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T00:32:33.526067Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T00:30:11.987036Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T00:27:53.937136Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T00:25:40.684219Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T00:23:51.71616Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T00:21:38.52151Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T00:20:46.492016Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T00:18:34.36505Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T00:16:23.957994Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T00:14:04.608312Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T00:11:44.069153Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T00:09:21.276047Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T00:06:59.373736Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T00:04:25.579463Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-07T00:01:57.27944Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-06T23:59:29.027087Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    },
+    {
+      "action": "spend",
+      "created_at": "2026-09-06T23:58:12.807321Z",
+      "credits": -3.5,
+      "display_name": "GPT Image 2.0"
+    }
+  ]
+}

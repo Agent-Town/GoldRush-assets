@@ -1,0 +1,37 @@
+{
+  "created_at": "2026-07-09T15:34:54.284466Z",
+  "display_name": "GPT Image 2",
+  "id": "bf769b80-7e77-49be-b4df-b49990d2a81f",
+  "job_type": "gpt_image_2",
+  "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/hf_20260709_153454_bf769b80-7e77-49be-b4df-b49990d2a81f_min.webp",
+  "params": {
+    "aspect_ratio": "1:1",
+    "height": 2048,
+    "medias": [
+      {
+        "data": {
+          "id": "d8832dfa-85da-4988-9fc7-5ab6f25a4e31",
+          "type": "media_input",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/d8832dfa-85da-4988-9fc7-5ab6f25a4e31.png"
+        },
+        "role": "image"
+      },
+      {
+        "data": {
+          "id": "1981701f-45ae-41bb-9c24-2ba05238f7dc",
+          "type": "media_input",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/1981701f-45ae-41bb-9c24-2ba05238f7dc.png"
+        },
+        "role": "image"
+      }
+    ],
+    "model": "videotape-alpha",
+    "prompt": "Frontier Ledger illustrated game sprite reference. Use the exact referenced hero from both turnaround sheets: one young WOMAN miner, female, slight build, braided hair under her brimmed hat, tan frontier coat, satchel on her LEFT hip, small teal chest lantern. PAN HAND = RIGHT: the brass pan hangs from her RIGHT hand, opposite the left-hip satchel; in this DOWN/front view the right-hand pan is on viewer-left and the left-hip satchel is on viewer-right. Full body DOWN/front view, mid-stride walk pose, centered single figure, full body visible head to boots, plain flat sand-colored background, fixed ground line, readable silhouette, same clothing, colors, linework, and proportions as the references. Do not mirror the character. No letters, no numbers, no text, no logo, no watermark, no extra characters, no realistic firearms, no gore.",
+    "quality": "high",
+    "reference_elements": [],
+    "resolution": "2k",
+    "width": 2048
+  },
+  "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/hf_20260709_153454_bf769b80-7e77-49be-b4df-b49990d2a81f.png",
+  "status": "completed"
+}

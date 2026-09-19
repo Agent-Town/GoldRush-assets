@@ -1,0 +1,47 @@
+{
+  "created_at": "2026-07-10T21:54:30.342391Z",
+  "display_name": "Seedance 2.0",
+  "id": "2859dbe9-2013-434f-9199-8042fb3c1e03",
+  "job_type": "seedance_2_0",
+  "min_result_url": null,
+  "params": {
+    "aspect_ratio": "1:1",
+    "bitrate_mode": "standard",
+    "duration": 4,
+    "generate_audio": false,
+    "genre": "auto",
+    "height": 720,
+    "medias": [
+      {
+        "data": {
+          "id": "51a682f5-0cf8-4a69-b8f8-1d2676331c32",
+          "type": "media_input",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/51a682f5-0cf8-4a69-b8f8-1d2676331c32.png"
+        },
+        "role": "start_image"
+      },
+      {
+        "data": {
+          "id": "90763425-e533-4ba6-8760-35a2a101768c",
+          "type": "media_input",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/90763425-e533-4ba6-8760-35a2a101768c.png"
+        },
+        "role": "image"
+      }
+    ],
+    "mode": "std",
+    "model": "seedance_2_0",
+    "multi_prompt": [],
+    "multi_shot_mode": "custom",
+    "multi_shots": false,
+    "prompt": "Frontier Ledger illustrated game sprite reference. Use the exact referenced HERO: a young WOMAN miner, braid under brimmed hat, tan frontier work coat, boots, small teal chest lantern, left-hip satchel with right-shoulder strap. THE BELT-PAN CLAUSE: the brass pan HANGS AT HER RIGHT BELT/HIP in every frame; BOTH HANDS FREE; the pan is never held in either hand. Full body down view, walking steadily in place against a plain flat sand-colored background. Constant centered framing, locked footline and fixed scale, feet on a fixed ground line, no vertical drift, no camera motion, no zoom, no turn, no mirroring, no extra characters, no text or letters, no realistic firearms, no gore. Seamless 4-second loop with one clean readable gait cycle; keep proportions, silhouette, clothing, colors, linework, and pinned belt-pan side consistent frame to frame.",
+    "prompt_language": "en",
+    "reference_elements": [],
+    "resolution": "720p",
+    "speedramp": "auto",
+    "width": 720
+  },
+  "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/hf_20260710_215430_2859dbe9-2013-434f-9199-8042fb3c1e03.mp4",
+  "status": "completed",
+  "thumbnail_url": "https://cdn.higgsfield.ai/user_3GAXxSRY94iz6800xAb2RitN2C7/hf_20260710_215430_2859dbe9-2013-434f-9199-8042fb3c1e03_thumbnail.webp"
+}

@@ -1,0 +1,57 @@
+[
+  {
+    "created_at": "2026-07-09T09:56:11.76242Z",
+    "display_name": "Seedance 2.0",
+    "id": "c3d7a492-6036-432a-93b7-726e410060a0",
+    "job_type": "seedance_2_0",
+    "min_result_url": null,
+    "params": {
+      "aspect_ratio": "1:1",
+      "bitrate_mode": "standard",
+      "duration": 4,
+      "generate_audio": false,
+      "genre": "auto",
+      "height": 720,
+      "medias": [
+        {
+          "data": {
+            "id": "7c50f5b9-1856-4102-8c0d-f3278379b696",
+            "type": "media_input",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/7c50f5b9-1856-4102-8c0d-f3278379b696.png"
+          },
+          "role": "start_image"
+        },
+        {
+          "data": {
+            "id": "c5089447-a80b-4ea6-9f16-e2b084803a33",
+            "type": "media_input",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/c5089447-a80b-4ea6-9f16-e2b084803a33.png"
+          },
+          "role": "image"
+        },
+        {
+          "data": {
+            "id": "8f55f5c8-35ed-469c-8ac4-a0d00b0b28c1",
+            "type": "media_input",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/8f55f5c8-35ed-469c-8ac4-a0d00b0b28c1.png"
+          },
+          "role": "image"
+        }
+      ],
+      "mode": "std",
+      "model": "seedance_2_0",
+      "multi_prompt": [],
+      "multi_shot_mode": "custom",
+      "multi_shots": false,
+      "prompt": "Frontier Ledger illustrated game sprite reference. Use the exact referenced hero: a young WOMAN miner - female, slight build, braided hair under her hat - tan frontier coat, brimmed hat, satchel, brass pan, small teal chest lantern. Full body true back view, facing directly away from the camera, walking steadily in place against a plain flat sand-colored background. Back-facing only: both shoulders square to the viewer, no face visible, no side profile, no three-quarter turn. Braid visible down her back under the brimmed hat. Satchel stays on her left body side (screen-left in back view); chest lantern mostly hidden from the back. Constant centered framing, locked footline and fixed scale, feet on a fixed ground line, no vertical drift, no camera motion, no zoom, no turn, no extra characters, no text or letters, no realistic firearms, no gore. Seamless 4-second loop with one clean readable gait cycle; keep proportions, feminine silhouette, clothing, colors, and linework consistent frame to frame.",
+      "prompt_language": "en",
+      "reference_elements": [],
+      "resolution": "720p",
+      "speedramp": "auto",
+      "width": 720
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/hf_20260709_095611_c3d7a492-6036-432a-93b7-726e410060a0.mp4",
+    "status": "completed",
+    "thumbnail_url": "https://cdn.higgsfield.ai/user_3GAXxSRY94iz6800xAb2RitN2C7/hf_20260709_095611_c3d7a492-6036-432a-93b7-726e410060a0_thumbnail.webp"
+  }
+]

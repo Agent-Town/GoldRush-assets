@@ -1,0 +1,55 @@
+{
+  "created_at": "2026-09-07T07:46:59.007744Z",
+  "display_name": "Seedance 2.0",
+  "id": "386dbd75-c1e9-40a3-81ec-33345a294067",
+  "job_type": "seedance_2_0",
+  "min_result_url": null,
+  "params": {
+    "aspect_ratio": "1:1",
+    "bitrate_mode": "standard",
+    "duration": 4,
+    "generate_audio": false,
+    "genre": "auto",
+    "height": 720,
+    "medias": [
+      {
+        "data": {
+          "id": "f30c103f-1fdf-4234-a8cb-750990082c32",
+          "type": "media_input",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/f30c103f-1fdf-4234-a8cb-750990082c32.png"
+        },
+        "role": "start_image"
+      },
+      {
+        "data": {
+          "id": "d2a0b639-f0b8-4fb4-9326-9f76cf462000",
+          "type": "media_input",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/d2a0b639-f0b8-4fb4-9326-9f76cf462000.png"
+        },
+        "role": "image"
+      },
+      {
+        "data": {
+          "id": "2eb7d680-651f-42fc-bedd-969d1add0ddc",
+          "type": "media_input",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/2eb7d680-651f-42fc-bedd-969d1add0ddc.png"
+        },
+        "role": "image"
+      }
+    ],
+    "mode": "std",
+    "model": "seedance_2_0",
+    "multi_prompt": [],
+    "multi_shot_mode": "custom",
+    "multi_shots": false,
+    "prompt": "Frontier Ledger illustrated game sprite reference. Use the exact referenced elder WOMAN from the plates: a kind, frail old frontier schoolmistress-scientist, clean-shaven female face lined with deep laugh-lines, silver-grey hair drawn back off her forehead into a coiled braid pinned low at the nape, a heavy knitted dark-brown cabled shawl worn over BOTH shoulders and closed at the front, a plain warm-brown high-collared buttoned dress with a small ruffled collar, a long skirt over sturdy boots, and a short white chalk stub held in her RIGHT hand. She is a WOMAN in every frame: no beard, no moustache, no hat, no pipe. The white chalk stub belongs in her RIGHT hand when visible; the coiled silver braid stays pinned low at the BACK of her head; the knitted shawl covers BOTH shoulders and never becomes a one-sided fringed blanket. RIGHT profile facing screen-right: her right arm and the white chalk stub are on the NEAR side and clearly visible; the coiled braid at the nape reads against the shawl collar; no side swap, no hat, no beard. Full body RIGHT profile view, walking steadily in place against a plain flat sand-colored background. aged but readable small-step walk, frail and kind, not slow-motion, stable footline, long skirt swinging with the step Constant centered framing, locked footline and fixed scale, feet on a fixed ground line, no vertical drift, no camera motion, no zoom, no turn, no mirroring, no extra characters, no text or letters, no realistic firearms, no gore. Seamless 4-second loop with one clean readable gait cycle; keep proportions, silhouette, clothing, colors, linework, and pinned side details consistent frame to frame.",
+    "prompt_language": "en",
+    "reference_elements": [],
+    "resolution": "720p",
+    "speedramp": "auto",
+    "width": 720
+  },
+  "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GAXxSRY94iz6800xAb2RitN2C7/hf_20260907_074659_386dbd75-c1e9-40a3-81ec-33345a294067.mp4",
+  "status": "completed",
+  "thumbnail_url": "https://cdn.higgsfield.ai/user_3GAXxSRY94iz6800xAb2RitN2C7/hf_20260907_074659_386dbd75-c1e9-40a3-81ec-33345a294067_thumbnail.webp"
+}

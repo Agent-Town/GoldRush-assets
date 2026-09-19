@@ -1,0 +1,50 @@
+[
+  {
+    "dir": "down",
+    "selectedTake": 3,
+    "scale": 0.3938,
+    "widthMin": 335,
+    "widthMax": 348,
+    "heightMin": 815,
+    "heightMax": 833,
+    "heightDriftPx": 18,
+    "heightDriftPct": 2.2,
+    "qa": "Pass criteria: elderly/frail/kind read, centered pendant, right-hand pipe viewer-left."
+  },
+  {
+    "dir": "left",
+    "selectedTake": 2,
+    "scale": 0.3938,
+    "widthMin": 317,
+    "widthMax": 424,
+    "heightMin": 779,
+    "heightMax": 799,
+    "heightDriftPx": 20,
+    "heightDriftPct": 2.5,
+    "qa": "Pass criteria: true left profile, small aged steps, pipe visible near-side."
+  },
+  {
+    "dir": "right",
+    "selectedTake": 1,
+    "scale": 0.3938,
+    "widthMin": 258,
+    "widthMax": 386,
+    "heightMin": 767,
+    "heightMax": 787,
+    "heightDriftPx": 20,
+    "heightDriftPct": 2.5,
+    "qa": "Pass criteria: true right profile, pipe hidden far-side, no pendant drift."
+  },
+  {
+    "dir": "up",
+    "selectedTake": 3,
+    "scale": 0.3938,
+    "widthMin": 324,
+    "widthMax": 338,
+    "heightMin": 781,
+    "heightMax": 808,
+    "heightDriftPx": 27,
+    "heightDriftPct": 3.3,
+    "qa": "Pass criteria: true back view, shawl back/fringe hold, no face turn."
+  }
+]

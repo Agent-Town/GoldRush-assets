@@ -1,0 +1,22 @@
+[
+  {
+    "dir": "down",
+    "id": "1c44d861-49f7-47be-8ff9-7988123bafcf",
+    "output": "assets/motion-pilot/production-elder/stills/elder-start-down-take1.png"
+  },
+  {
+    "dir": "left",
+    "id": "83cf82ce-7760-43bd-b826-ac5f8d4792f5",
+    "output": "assets/motion-pilot/production-elder/stills/elder-start-left-take1.png"
+  },
+  {
+    "dir": "right",
+    "id": "b85fddf6-d3c6-4a7c-b167-6427ce69c845",
+    "output": "assets/motion-pilot/production-elder/stills/elder-start-right-take1.png"
+  },
+  {
+    "dir": "up",
+    "id": "3404b9b4-73cb-4f97-a88d-2f6736ff7203",
+    "output": "assets/motion-pilot/production-elder/stills/elder-start-up-take1.png"
+  }
+]
