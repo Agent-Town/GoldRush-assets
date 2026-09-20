@@ -12,11 +12,12 @@
     "width": 1024,
     "height": 1024,
     "sharedByEveryAsset": true,
-    "sha256": "5819f8eec12371756a0b2b36342bdbf8560ee3c4e99c16f35fe2cae28c1bbd5b"
+    "sha256": "9fe8575082cc082ed29452f563650d9d29fe93e8bf10581c5cd44bd4c4de4587",
+    "recipe": "build_landmark_packs.py:E3_CANYON_ROLE_COLORS"
   },
   "blend": {
     "asset": "landmarks/canyon-works/canyon-works-landmarks.blend",
-    "sha256": "9b2ae77e097dff6244bacc41fdd9451e4fa6f35d835fc21e1e8323a1633f2d8c"
+    "sha256": "ed03453445e07431a5442e8774b8ab519a518b95b2850450f6c41ef96faea42d"
   },
   "assets": {
     "sub-hall-dynamo-house": {
@@ -42,8 +43,12 @@
           6.55
         ]
       },
-      "sha256": "7b8bdf46b93e23dbb44e29564ee94eb24e40f764db9052c260814361d137e92a",
-      "footprint": {"kind":"rect","w":5.616,"d":3.6}
+      "sha256": "fa1022631542ba25f4610601296c017ebbcc9ca2db7d41a4d75ce2a6f903c7ff",
+      "footprint": {
+        "kind": "rect",
+        "w": 5.616,
+        "d": 3.6
+      }
     },
     "west-switchback-line-house": {
       "asset": "landmarks/canyon-works/west-switchback-line-house.glb",
@@ -68,8 +73,12 @@
           5.4796
         ]
       },
-      "sha256": "357caf27edb7b5378b00f50ea3c53ccea250733bd5a216e2a6b048f56e220b1b",
-      "footprint": {"kind":"rect","w":4.176,"d":3.312}
+      "sha256": "11d0ab07cd941a8c7e6e6d53dcbdc4c0ba9c414914e2927b67dec5a2c08d4cec",
+      "footprint": {
+        "kind": "rect",
+        "w": 4.176,
+        "d": 3.312
+      }
     },
     "east-switchback-line-house": {
       "asset": "landmarks/canyon-works/east-switchback-line-house.glb",
@@ -94,8 +103,12 @@
           5.4796
         ]
       },
-      "sha256": "7e682de1033858ab8dbc42dbd0e7623c7e4cfa7aefd1229531a8f2fee64efeb8",
-      "footprint": {"kind":"rect","w":4.176,"d":3.312}
+      "sha256": "f03f5f301732d68ee5129e8057ffea155cef028b19e103e65e44546f30147670",
+      "footprint": {
+        "kind": "rect",
+        "w": 4.176,
+        "d": 3.312
+      }
     },
     "dam-crest-gate-house": {
       "asset": "landmarks/canyon-works/dam-crest-gate-house.glb",
@@ -120,7 +133,7 @@
           4.3
         ]
       },
-      "sha256": "e6d65c2c3c64fc5424873300a3e83773fdc87602cd553cb4294e25926cbc55e1"
+      "sha256": "c0e563857d1e259e12995d29429e9e4e2a6784158616bc77d99da7273f98fe69"
     },
     "downriver-tram-lamp": {
       "asset": "landmarks/canyon-works/downriver-tram-lamp.glb",
@@ -144,8 +157,12 @@
           4.69
         ]
       },
-      "sha256": "7a62f392dea9531eb6a5e3f27eef7003b8f801f1edf3c84340847fea7b3823c1",
-      "footprint": {"kind":"rect","w":3.024,"d":2.304}
+      "sha256": "e7b3f5515bd4ceb1ac22611e89d9745d1f715e17e62d39d0e127cf86deab9152",
+      "footprint": {
+        "kind": "rect",
+        "w": 3.024,
+        "d": 2.304
+      }
     }
   },
   "mounts": [
@@ -246,5 +263,72 @@
     }
   ],
   "simulation": "none; terrain, collision, movement, placement, water, spawns, and fog remain unchanged",
-  "mountInterlock": "resolved-3d-d"
+  "mountInterlock": "resolved-3d-d",
+  "landmarkAcceptanceStations": [
+    {
+      "id": "sub-hall-dynamo-house",
+      "heroPositionXZ": [
+        0,
+        -51
+      ],
+      "offsetFromMountXZ": [
+        0,
+        3
+      ],
+      "backMeters": 3,
+      "purpose": "Render-only inspection station; entry and HUD measured separately in map-art-campaign-2/run-4/e3-canyon-works. Mount and gameplay footprint unchanged."
+    },
+    {
+      "id": "west-switchback-line-house",
+      "heroPositionXZ": [
+        -38,
+        -14
+      ],
+      "offsetFromMountXZ": [
+        0,
+        4
+      ],
+      "backMeters": 4,
+      "purpose": "Render-only inspection station; entry and HUD measured separately in map-art-campaign-2/run-4/e3-canyon-works. Mount and gameplay footprint unchanged."
+    },
+    {
+      "id": "east-switchback-line-house",
+      "heroPositionXZ": [
+        38,
+        -14
+      ],
+      "offsetFromMountXZ": [
+        0,
+        4
+      ],
+      "backMeters": 4,
+      "purpose": "Render-only inspection station; entry and HUD measured separately in map-art-campaign-2/run-4/e3-canyon-works. Mount and gameplay footprint unchanged."
+    },
+    {
+      "id": "dam-crest-gate-house",
+      "heroPositionXZ": [
+        0,
+        13
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Render-only inspection station; entry and HUD measured separately in map-art-campaign-2/run-4/e3-canyon-works. Mount and gameplay footprint unchanged."
+    },
+    {
+      "id": "downriver-tram-lamp",
+      "heroPositionXZ": [
+        44,
+        47
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Render-only inspection station; entry and HUD measured separately in map-art-campaign-2/run-4/e3-canyon-works. Mount and gameplay footprint unchanged."
+    }
+  ]
 }

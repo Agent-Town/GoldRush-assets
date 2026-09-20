@@ -5,7 +5,7 @@ derived silhouettes. New geometry is limited to source-less landmarks. Every
 asset is render-only, base-centred, under 3k triangles, and shares one atlas
 with the other landmarks in its map pack.
 
-Reproduce a current E3 atlas without altering reviewed geometry:
+Reproduce a current E3 atlas from the game checkout without altering reviewed geometry:
   Blender --background --python-exit-code 1 --python <this-file> -- \
     --atlas-only blackout-ridge --out <separate-output-root>
 The output is <root>/<pack>/<pack>-landmarks-atlas.png. Atlas-only writes
@@ -27,7 +27,8 @@ import mathutils
 import numpy as np
 
 
-ROOT = Path(__file__).resolve().parents[3]
+# Atlas-only runs from the game checkout; source art now lives in the sibling store.
+ROOT = Path.cwd() if "--atlas-only" in sys.argv else Path(__file__).resolve().parents[3]
 OUT = Path(__file__).resolve().parent
 LANDMARKS = OUT / "landmarks"
 ARTIFACTS = ROOT / "artifacts/map-rebuild-spike"
@@ -434,7 +435,8 @@ E2_ROLE_COLORS = {
     "rust": (0.40, 0.120, 0.030),
 }
 
-# Current E3 atlas provenance: Fairground 7b930acc1; Canyon Works 07bcf8834.
+# E3 recipe provenance: Fairground 7b930acc1; Canyon Works 07bcf8834 plus run-4
+# timber/iron/stone separation (2026-09-21, regrade_canyon_landmarks.py).
 # Blackout uses the later grounded-stone/brass repair, not its original V1 palette.
 # Moth's shipped PNG and embedded GLB still match 75beb002c, despite its newer atlas metadata.
 E3_ROLE_COLORS = {
@@ -455,9 +457,9 @@ E3_ROLE_COLORS = {
 
 E3_CANYON_ROLE_COLORS = {
     **ROLE_COLORS,
-    "timber": (0.36, 0.210, 0.090),
-    "iron": (0.180, 0.215, 0.225),
-    "stone": (0.280, 0.300, 0.310),
+    "timber": (0.44, 0.285, 0.145),
+    "iron": (0.265, 0.300, 0.310),
+    "stone": (0.355, 0.365, 0.360),
     "earth": (0.38, 0.220, 0.095),
     "water": (0.045, 0.48, 0.44),
     "cactus": (0.075, 0.25, 0.18),

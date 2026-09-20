@@ -532,5 +532,72 @@
     "era": 3,
     "sourceLadder": "reuse > derive > build-new",
     "ownership": "separate mounted render-only GLBs; no simulation authority"
-  }
+  },
+  "landmarkAcceptanceStations": [
+    {
+      "id": "sub-hall-dynamo-house",
+      "heroPositionXZ": [
+        0,
+        -51
+      ],
+      "offsetFromMountXZ": [
+        0,
+        3
+      ],
+      "backMeters": 3,
+      "purpose": "Render-only inspection station; entry and HUD measured separately in map-art-campaign-2/run-4/e3-canyon-works. Mount and gameplay footprint unchanged."
+    },
+    {
+      "id": "west-switchback-line-house",
+      "heroPositionXZ": [
+        -38,
+        -14
+      ],
+      "offsetFromMountXZ": [
+        0,
+        4
+      ],
+      "backMeters": 4,
+      "purpose": "Render-only inspection station; entry and HUD measured separately in map-art-campaign-2/run-4/e3-canyon-works. Mount and gameplay footprint unchanged."
+    },
+    {
+      "id": "east-switchback-line-house",
+      "heroPositionXZ": [
+        38,
+        -14
+      ],
+      "offsetFromMountXZ": [
+        0,
+        4
+      ],
+      "backMeters": 4,
+      "purpose": "Render-only inspection station; entry and HUD measured separately in map-art-campaign-2/run-4/e3-canyon-works. Mount and gameplay footprint unchanged."
+    },
+    {
+      "id": "dam-crest-gate-house",
+      "heroPositionXZ": [
+        0,
+        13
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Render-only inspection station; entry and HUD measured separately in map-art-campaign-2/run-4/e3-canyon-works. Mount and gameplay footprint unchanged."
+    },
+    {
+      "id": "downriver-tram-lamp",
+      "heroPositionXZ": [
+        44,
+        47
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Render-only inspection station; entry and HUD measured separately in map-art-campaign-2/run-4/e3-canyon-works. Mount and gameplay footprint unchanged."
+    }
+  ]
 }

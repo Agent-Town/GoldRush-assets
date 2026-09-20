@@ -12,7 +12,8 @@
   "namedCorrections": {
     "paintedWall": "sunk sky ring behind an irregular closer ridge belt with a dusty haze transition",
     "ceiling": "engraving density grades from dense horizon to near-plain parchment zenith",
-    "echo": "asymmetric cloud and dust edits plus independent near/far ridge profiles break mirrored repetition"
+    "echo": "asymmetric cloud and dust edits plus independent near/far ridge profiles break mirrored repetition",
+    "terrainSeam": "close_canyon_panorama_seam.py; 97 inner-ring vertices (96 segments plus UV seam) close the one-metre gap"
   },
   "projection": {
     "skyRingRadiusMeters": 190.0,
@@ -34,12 +35,13 @@
     "skyTopMeters": 130.0,
     "ridgeTopFormulaMeters": "5.0 + silhouetteFraction * 55.0",
     "groundSkirtInnerBoundaryMeters": {
-      "shape": "expanded-playfield-rectangle",
+      "shape": "overlapping-playfield-rectangle",
       "halfExtents": [
         48.0,
         56.0
       ],
-      "margin": 1.0
+      "margin": -0.08,
+      "height": "existing terrain grid minus 0.025 m; render-only, no height-source change"
     },
     "groundSkirtOuterRadiusMeters": 161.5
   },
@@ -88,12 +90,12 @@
   ],
   "files": {
     "blend": {
-      "bytes": 675728,
-      "sha256": "b5258a94836ad20c037b91a5c4ae6d5157b82a353c7f27e15ce97c96bffc04e5"
+      "bytes": 676275,
+      "sha256": "aaa7b4e37c2a41b820cd285e84e873e6b035ee5ecbb3b4f95b2279a69d92f9fe"
     },
     "glb": {
-      "bytes": 827688,
-      "sha256": "f0187b59853977f0ba06bf6d038f8143736a3c225a99f0f6f2fb17f2c481b6f9"
+      "bytes": 836136,
+      "sha256": "0ede694c463988536a48d07dbe3d1ffb09b8b8f9d9edd256122f4ccf220f92d4"
     },
     "atlas": {
       "bytes": 555017,
