@@ -42,7 +42,10 @@
         ]
       },
       "sha256": "65e905b780d209cfe97d9ea45c9ade7bca145dda6929da5ddbb648350a86ef14",
-      "footprint": {"kind":"radius","radius":1.44}
+      "footprint": {
+        "kind": "radius",
+        "radius": 1.44
+      }
     },
     "west-road-wrecker-shed": {
       "asset": "landmarks/dust-flats/west-road-wrecker-shed.glb",
@@ -67,7 +70,11 @@
         ]
       },
       "sha256": "7d2870c0474d959efe7ad2f1d2ad64ad01ffb9bbf3502acf17c5cb60b2cbc918",
-      "footprint": {"kind":"rect","w":6.318,"d":3.672}
+      "footprint": {
+        "kind": "rect",
+        "w": 6.318,
+        "d": 3.672
+      }
     },
     "east-horizon-fuel-reserve": {
       "asset": "landmarks/dust-flats/east-horizon-fuel-reserve.glb",
@@ -92,7 +99,11 @@
         ]
       },
       "sha256": "e5efcee5a9a27d883b18712810b9b7a8472984765f0c171d094b0d41ffc68770",
-      "footprint": {"kind":"rect","w":5.328,"d":3.456}
+      "footprint": {
+        "kind": "rect",
+        "w": 5.328,
+        "d": 3.456
+      }
     },
     "south-grade-charting-post": {
       "asset": "landmarks/dust-flats/south-grade-charting-post.glb",
@@ -117,7 +128,11 @@
         ]
       },
       "sha256": "fba0d59191ccceded3847b889af77ed59691d87418a175feed7d1d6730a3e30c",
-      "footprint": {"kind":"rect","w":5.904,"d":3.6}
+      "footprint": {
+        "kind": "rect",
+        "w": 5.904,
+        "d": 3.6
+      }
     },
     "dry-wash-recovery-gantry": {
       "asset": "landmarks/dust-flats/dry-wash-recovery-gantry.glb",
@@ -143,7 +158,11 @@
         ]
       },
       "sha256": "f106ab7f82b02f0c0a2a2fb71fea936636bc48d78e19fb81de7a64173a6fd01b",
-      "footprint": {"kind":"rect","w":6.48,"d":3.6}
+      "footprint": {
+        "kind": "rect",
+        "w": 6.48,
+        "d": 3.6
+      }
     }
   },
   "mounts": [
@@ -244,5 +263,20 @@
     }
   ],
   "simulation": "none; terrain, collision, movement, placement, water, spawns, and fog remain unchanged",
-  "mountInterlock": "resolved-3d-d"
+  "mountInterlock": "resolved-3d-d",
+  "landmarkAcceptanceStations": [
+    {
+      "id": "south-grade-charting-post",
+      "heroPositionXZ": [
+        0,
+        -69
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Render-only inspection station: phone persistent HUD coverage 31.49% at 14 m to 0.006% at 5 m. Entry remains offscreen. Mount and collision unchanged; map-art-campaign-2/run-5/e4-dust-flats."
+    }
+  ]
 }
