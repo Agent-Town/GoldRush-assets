@@ -37,7 +37,7 @@
           -3.492
         ],
         [
-          0.0,
+          0,
           -4.219499999999999
         ],
         [
@@ -210,7 +210,7 @@
           -3.492
         ],
         [
-          0.0,
+          0,
           -4.219499999999999
         ],
         [
@@ -383,7 +383,7 @@
           -3.492
         ],
         [
-          0.0,
+          0,
           -4.219499999999999
         ],
         [
@@ -535,7 +535,7 @@
     "assets/pilots/plaza-props-3d/build_era_props_e5.py": "d2eca39964e0290ebafb6a66611dcddeaf9dfd4a4a1b75fc9b74a705fa160cfb",
     "assets/pilots/plaza-props-3d/build_era_props_e2.py": "a4e4e3770579aef9b5cfadf42e7ffe5251692c0b972a61f15a23f35af83195ce",
     "assets/raw/flotilla-material-atlas.png": "afd2ab9388d8877a81d3128e5dd5633b2982cbf40c8bf28dbd7ef309a747d5e1",
-    "assets/contracts/epoch-5-deepwater/contracts.json": "7a9a5f4b84ed53ad89af7166d95b06c4c680957df555143cc371bec100b6cf26",
+    "assets/contracts/epoch-5-deepwater/contracts.json": "6b394081336842b9035e32d7045dba7029b80a69d460a90b4afb97c7b3008c51",
     "assets/raw/plate-contract-e5-flotilla.png": "155c6554f6d10ec25bace3de77bd168dd1ae4bfad2ee6783eb64bbc8be96d3be"
   }
 }

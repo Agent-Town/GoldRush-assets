@@ -151,19 +151,20 @@
     },
     "floodplain_dressing_pack": {
       "asset": "landmarks/twin-banks/floodplain_dressing_pack.glb",
-      "sourceTier": "reuse",
+      "sourceTier": "derive",
       "sources": [
         "assets/pilots/run3d/sluice.glb",
-        "assets/pilots/run3d/stockpile.glb"
+        "assets/pilots/run3d/stockpile.glb",
+        "assets/raw/plate-contract-twin-banks.png"
       ],
       "terrainConformed": true,
-      "triangles": 944,
+      "triangles": 2384,
       "triangleBudget": 3000,
       "bounds": {
         "min": [
           -28.0333,
           -8.535,
-          0.0618
+          0.0186
         ],
         "max": [
           28.3133,
@@ -171,10 +172,262 @@
           2.1626
         ]
       },
-      "sha256": "99d712d2586e7ce60b4db1e459166dfe99b3c19f013dbc0e18428ec6803e7f72",
+      "sha256": "545093bd6532d451ddec7899a4d642f1963316d3f2ea854e7a0c659052309805",
       "blend": {
         "asset": "landmarks/twin-banks/floodplain_dressing_pack.blend",
-        "sha256": "3ffee78e821441835f219456072dfc487b920b83b73dc1316dc7a6787339372e"
+        "sha256": "1351959df25930e7ecc80f38d10fe6591f258d0b1c9c3226d283406f32179f60"
+      },
+      "riparianCorrection": {
+        "date": "2026-09-20",
+        "inputCommit": "6b7f2e49a2cf37379525825f4b605482ee825562",
+        "inputBlendSha256": "3ffee78e821441835f219456072dfc487b920b83b73dc1316dc7a6787339372e",
+        "recipe": "assets/pilots/map-rebuild-spike/dress_twin_banks_reeds.py",
+        "clumps": 48,
+        "addedTriangles": 1440,
+        "atlas": "unchanged; existing green pigment cell",
+        "terrain": "unchanged; bases ray-cast onto delivered triangles",
+        "sites": [
+          {
+            "x": -25.4,
+            "z": 3.567142857142857,
+            "groundY": 0.6802825927734375
+          },
+          {
+            "x": -24.6,
+            "z": 3.567142857142857,
+            "groundY": 0.6548309326171875
+          },
+          {
+            "x": -22.4,
+            "z": 4.424285714285714,
+            "groundY": 0.6695632934570312
+          },
+          {
+            "x": -21.6,
+            "z": 4.424285714285714,
+            "groundY": 0.6105422973632812
+          },
+          {
+            "x": -11.4,
+            "z": 6.281428571428572,
+            "groundY": 0.31659698486328125
+          },
+          {
+            "x": -10.6,
+            "z": 6.281428571428572,
+            "groundY": 0.328948974609375
+          },
+          {
+            "x": -8.4,
+            "z": 5.852857142857143,
+            "groundY": 0.32021331787109375
+          },
+          {
+            "x": -7.6,
+            "z": 5.852857142857143,
+            "groundY": 0.331939697265625
+          },
+          {
+            "x": -5.4,
+            "z": 5.424285714285714,
+            "groundY": 0.31821441650390625
+          },
+          {
+            "x": -4.6,
+            "z": 5.424285714285714,
+            "groundY": 0.33031463623046875
+          },
+          {
+            "x": -2.4,
+            "z": 4.9957142857142856,
+            "groundY": 0.32048797607421875
+          },
+          {
+            "x": -1.6,
+            "z": 4.9957142857142856,
+            "groundY": 0.3323974609375
+          },
+          {
+            "x": 1.6,
+            "z": 4.9957142857142856,
+            "groundY": 0.33252716064453125
+          },
+          {
+            "x": 2.4,
+            "z": 4.9957142857142856,
+            "groundY": 0.32054901123046875
+          },
+          {
+            "x": 4.6,
+            "z": 5.424285714285714,
+            "groundY": 0.333953857421875
+          },
+          {
+            "x": 5.4,
+            "z": 5.424285714285714,
+            "groundY": 0.32224273681640625
+          },
+          {
+            "x": 7.6,
+            "z": 5.852857142857143,
+            "groundY": 0.33251953125
+          },
+          {
+            "x": 8.4,
+            "z": 5.852857142857143,
+            "groundY": 0.320526123046875
+          },
+          {
+            "x": 10.6,
+            "z": 6.281428571428571,
+            "groundY": 0.33197021484375
+          },
+          {
+            "x": 11.4,
+            "z": 6.281428571428571,
+            "groundY": 0.31914520263671875
+          },
+          {
+            "x": 21.6,
+            "z": 4.424285714285714,
+            "groundY": 0.5459442138671875
+          },
+          {
+            "x": 22.4,
+            "z": 4.424285714285714,
+            "groundY": 0.60064697265625
+          },
+          {
+            "x": 24.6,
+            "z": 3.567142857142857,
+            "groundY": 0.5903396606445312
+          },
+          {
+            "x": 25.4,
+            "z": 3.567142857142857,
+            "groundY": 0.6169586181640625
+          },
+          {
+            "x": -25.4,
+            "z": -3.567142857142857,
+            "groundY": 0.6535568237304688
+          },
+          {
+            "x": -24.6,
+            "z": -3.567142857142857,
+            "groundY": 0.6217269897460938
+          },
+          {
+            "x": -22.4,
+            "z": -4.424285714285714,
+            "groundY": 0.6253738403320312
+          },
+          {
+            "x": -21.6,
+            "z": -4.424285714285714,
+            "groundY": 0.5653839111328125
+          },
+          {
+            "x": -11.4,
+            "z": -6.281428571428572,
+            "groundY": 0.31279754638671875
+          },
+          {
+            "x": -10.6,
+            "z": -6.281428571428572,
+            "groundY": 0.3260650634765625
+          },
+          {
+            "x": -8.4,
+            "z": -5.852857142857143,
+            "groundY": 0.31900787353515625
+          },
+          {
+            "x": -7.6,
+            "z": -5.852857142857143,
+            "groundY": 0.3310546875
+          },
+          {
+            "x": -5.4,
+            "z": -5.424285714285714,
+            "groundY": 0.322021484375
+          },
+          {
+            "x": -4.6,
+            "z": -5.424285714285714,
+            "groundY": 0.33349609375
+          },
+          {
+            "x": -2.4,
+            "z": -4.9957142857142856,
+            "groundY": 0.32042694091796875
+          },
+          {
+            "x": -1.6,
+            "z": -4.9957142857142856,
+            "groundY": 0.332183837890625
+          },
+          {
+            "x": 1.6,
+            "z": -4.9957142857142856,
+            "groundY": 0.332244873046875
+          },
+          {
+            "x": 2.4,
+            "z": -4.9957142857142856,
+            "groundY": 0.320465087890625
+          },
+          {
+            "x": 4.6,
+            "z": -5.424285714285714,
+            "groundY": 0.33034515380859375
+          },
+          {
+            "x": 5.4,
+            "z": -5.424285714285714,
+            "groundY": 0.31826019287109375
+          },
+          {
+            "x": 7.6,
+            "z": -5.852857142857143,
+            "groundY": 0.33232879638671875
+          },
+          {
+            "x": 8.4,
+            "z": -5.852857142857143,
+            "groundY": 0.3206329345703125
+          },
+          {
+            "x": 10.6,
+            "z": -6.281428571428571,
+            "groundY": 0.331451416015625
+          },
+          {
+            "x": 11.4,
+            "z": -6.281428571428571,
+            "groundY": 0.31970977783203125
+          },
+          {
+            "x": 21.6,
+            "z": -4.424285714285714,
+            "groundY": 0.6094589233398438
+          },
+          {
+            "x": 22.4,
+            "z": -4.424285714285714,
+            "groundY": 0.6490325927734375
+          },
+          {
+            "x": 24.6,
+            "z": -3.567142857142857,
+            "groundY": 0.5896377563476562
+          },
+          {
+            "x": 25.4,
+            "z": -3.567142857142857,
+            "groundY": 0.6053085327148438
+          }
+        ]
       }
     }
   },
@@ -310,5 +563,33 @@
       "reproduce": "scripts/rebuild-accepted-e1-landmarks.py applies the explicit metadata/export patch to the archived recipe; original inputHashes remain authoritative for art generation.",
       "evidence": "artifacts/map-art-repairs-20260908/e1-landmark-extras-01/checks.json"
     }
-  }
+  },
+  "acceptanceStations": [
+    {
+      "id": "south_bank_homestead",
+      "heroPositionXZ": [
+        -13,
+        -9
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Declared diagnostic viewing station at normal HUD and 1280x800 / 390x844; mount, collision and entry camera unchanged."
+    },
+    {
+      "id": "south_bank_winch",
+      "heroPositionXZ": [
+        16,
+        -5.7
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Declared diagnostic viewing station at normal HUD and 1280x800 / 390x844; mount, collision and entry camera unchanged."
+    }
+  ]
 }

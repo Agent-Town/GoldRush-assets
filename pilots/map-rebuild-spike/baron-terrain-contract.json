@@ -247,5 +247,46 @@
       "bytes": 7014773,
       "sha256": "86a7365e937aca0cf8d168314426772e99f8441b4a9e5063768d6e018863fca5"
     }
-  }
+  },
+  "landmarkAcceptanceStations": [
+    {
+      "id": "fortified_far_bank",
+      "heroPositionXZ": [
+        0,
+        -5.8
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Normal-HUD diagnostic station at 1280x800 and 390x844; recovers vertical extent only. Whole 55.21 m wall cannot fit either viewport horizontally; camera/entry-composition owner holds that limit."
+    },
+    {
+      "id": "seized_headframe",
+      "heroPositionXZ": [
+        -13,
+        16
+      ],
+      "offsetFromMountXZ": [
+        0,
+        3
+      ],
+      "backMeters": 3,
+      "purpose": "Normal-HUD diagnostic viewing station at 1280x800 and 390x844; original mount, collision and entry camera unchanged."
+    },
+    {
+      "id": "rocket_cart",
+      "heroPositionXZ": [
+        12.5,
+        19
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Normal-HUD diagnostic viewing station at 1280x800 and 390x844; full cart bounds fit both views with zero persistent HUD coverage. Original mount, collision and entry camera unchanged."
+    }
+  ]
 }

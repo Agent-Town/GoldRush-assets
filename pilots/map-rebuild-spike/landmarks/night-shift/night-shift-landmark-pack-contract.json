@@ -359,5 +359,21 @@
       "reproduce": "scripts/rebuild-accepted-e1-landmarks.py applies the explicit metadata/export patch to the archived recipe; original inputHashes remain authoritative for art generation.",
       "evidence": "artifacts/map-art-repairs-20260908/e1-landmark-extras-01/checks.json"
     }
-  }
+  },
+  "acceptanceStations": [
+    {
+      "id": "lampworks_yard",
+      "heroPositionXZ": [
+        8,
+        23
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Declared diagnostic viewing station with normal HUD at 1280x800 and 390x844; not a boot camera or a gameplay/mount change.",
+      "plainEntry": "Original spawn and footprint retained. Entry cropping and HUD coverage remain held by camera/UI ownership."
+    }
+  ]
 }

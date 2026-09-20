@@ -427,5 +427,33 @@
       }
     }
   },
-  "sculptRecipe": "build_twin_banks_braid.py"
+  "sculptRecipe": "build_twin_banks_braid.py",
+  "landmarkAcceptanceStations": [
+    {
+      "id": "south_bank_homestead",
+      "heroPositionXZ": [
+        -13,
+        -9
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Declared diagnostic viewing station at normal HUD and 1280x800 / 390x844; mount, collision and entry camera unchanged."
+    },
+    {
+      "id": "south_bank_winch",
+      "heroPositionXZ": [
+        16,
+        -5.7
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Declared diagnostic viewing station at normal HUD and 1280x800 / 390x844; mount, collision and entry camera unchanged."
+    }
+  ]
 }

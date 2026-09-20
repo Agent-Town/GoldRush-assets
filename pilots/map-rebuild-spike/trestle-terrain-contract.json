@@ -432,5 +432,59 @@
     "era": 2,
     "sourceLadder": "reuse > derive > build-new",
     "ownership": "separate mounted render-only GLBs; no simulation authority"
-  }
+  },
+  "landmarkAcceptanceStations": [
+    {
+      "id": "trestle-crossing",
+      "heroPositionXZ": [
+        0,
+        7
+      ],
+      "offsetFromMountXZ": [
+        0,
+        7
+      ],
+      "backMeters": 7,
+      "purpose": "Normal-HUD diagnostic station at 1280x800 and 390x844. Full span bounds fit; persistent phone HUD still covers about 11.55%. Entry vista remains camera-owned."
+    },
+    {
+      "id": "south-boiler-site",
+      "heroPositionXZ": [
+        12,
+        -9
+      ],
+      "offsetFromMountXZ": [
+        0,
+        3
+      ],
+      "backMeters": 3,
+      "purpose": "Normal-HUD diagnostic station at both widths. Full boiler bounds fit with persistent HUD below 0.03%; original collision and entry camera unchanged."
+    },
+    {
+      "id": "mine-spur-kit",
+      "heroPositionXZ": [
+        -14,
+        -10
+      ],
+      "offsetFromMountXZ": [
+        0,
+        8
+      ],
+      "backMeters": 8,
+      "purpose": "Full-body diagnostic station at both widths. Phone bounds fit but persistent HUD covers about 23%; a 5 m detail view has less HUD coverage but clips the sides. Entry framing remains held."
+    },
+    {
+      "id": "south-approach-kit",
+      "heroPositionXZ": [
+        0,
+        -13
+      ],
+      "offsetFromMountXZ": [
+        0,
+        9
+      ],
+      "backMeters": 9,
+      "purpose": "Partial-yard diagnostic station: desktop full bounds fit; phone bounds exceed the horizontal frame with about 13% persistent HUD coverage. More distant 14/20 m views raise phone HUD coverage to 81/92%; camera/UI owner holds the full-yard view."
+    }
+  ]
 }

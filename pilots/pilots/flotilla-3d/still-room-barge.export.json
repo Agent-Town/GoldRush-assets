@@ -1,9 +1,0 @@
-{
-  "profile": "static",
-  "extras": false,
-  "animations": false,
-  "applyTransforms": true,
-  "selection": [
-    "still-room-barge"
-  ]
-}

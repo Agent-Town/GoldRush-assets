@@ -247,5 +247,21 @@
       "bytes": 6310814,
       "sha256": "cc5ed018e869403d2f33845eec134ba282d233acc3ebaba157baddf1f6471b21"
     }
-  }
+  },
+  "landmarkAcceptanceStations": [
+    {
+      "id": "lampworks_yard",
+      "heroPositionXZ": [
+        8,
+        23
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Declared diagnostic viewing station with normal HUD at 1280x800 and 390x844; not a boot camera or a gameplay/mount change.",
+      "plainEntry": "Original spawn and footprint retained. Entry cropping and HUD coverage remain held by camera/UI ownership."
+    }
+  ]
 }

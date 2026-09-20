@@ -136,18 +136,18 @@
     },
     "oxblood_banners": {
       "asset": "landmarks/baron/oxblood_banners.glb",
-      "sourceTier": "build-new",
+      "sourceTier": "derive",
       "sources": [
         "assets/raw/plate-contract-baron.png"
       ],
       "terrainConformed": true,
-      "triangles": 1500,
+      "triangles": 2400,
       "triangleBudget": 3000,
       "bounds": {
         "min": [
           -23.3155,
           -17.3155,
-          0.655
+          0.4439
         ],
         "max": [
           25.1569,
@@ -155,10 +155,40 @@
           7.5152
         ]
       },
-      "sha256": "fc576d712c67812c8cd2d794fa2c1f22041c8cf797679526aebd2f00e008b1a6",
+      "sha256": "f298e6b77761b1d8b43197e047549ef1d9d2ec93f1d75c96d6f7a5f345669453",
       "blend": {
         "asset": "landmarks/baron/oxblood_banners.blend",
-        "sha256": "441eb64cb310e9c395783dd134d58e02862f0dca101f91da7340f929ff206ae6"
+        "sha256": "adb48814af2363b8ce0a7687f42246a364dbc329bb38b24a1bd8c05c87c618f1"
+      },
+      "approachCorrection": {
+        "date": "2026-09-20",
+        "inputCommit": "6b7f2e49a2cf37379525825f4b605482ee825562",
+        "inputBlendSha256": "441eb64cb310e9c395783dd134d58e02862f0dca101f91da7340f929ff206ae6",
+        "recipe": "assets/pilots/map-rebuild-spike/dress_baron_standards.py",
+        "standards": 3,
+        "addedTriangles": 900,
+        "atlas": "unchanged; exact embroidered-cloth and pole UVs reused",
+        "terrain": "unchanged; bases ray-cast onto delivered triangles",
+        "sites": [
+          {
+            "x": -3.6,
+            "z": 10.0,
+            "scale": 0.8,
+            "groundY": 0.499755859375
+          },
+          {
+            "x": 2.7,
+            "z": 7.8,
+            "scale": 0.6,
+            "groundY": 0.46435546875
+          },
+          {
+            "x": -8.0,
+            "z": 7.2,
+            "scale": 0.65,
+            "groundY": 0.37267303466796875
+          }
+        ]
       }
     }
   },
@@ -304,5 +334,46 @@
       "uv": "104 headframe leg faces to medium wood; seven cloth components to full emblem; four roof and three rocket components to plain oxblood margin",
       "evidence": "artifacts/map-art-repairs-20260908/baron-banner-integration-42"
     }
-  }
+  },
+  "acceptanceStations": [
+    {
+      "id": "fortified_far_bank",
+      "heroPositionXZ": [
+        0,
+        -5.8
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Normal-HUD diagnostic station at 1280x800 and 390x844; recovers vertical extent only. Whole 55.21 m wall cannot fit either viewport horizontally; camera/entry-composition owner holds that limit."
+    },
+    {
+      "id": "seized_headframe",
+      "heroPositionXZ": [
+        -13,
+        16
+      ],
+      "offsetFromMountXZ": [
+        0,
+        3
+      ],
+      "backMeters": 3,
+      "purpose": "Normal-HUD diagnostic viewing station at 1280x800 and 390x844; original mount, collision and entry camera unchanged."
+    },
+    {
+      "id": "rocket_cart",
+      "heroPositionXZ": [
+        12.5,
+        19
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Normal-HUD diagnostic viewing station at 1280x800 and 390x844; full cart bounds fit both views with zero persistent HUD coverage. Original mount, collision and entry camera unchanged."
+    }
+  ]
 }

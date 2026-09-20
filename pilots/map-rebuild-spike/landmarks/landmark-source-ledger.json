@@ -70,7 +70,7 @@
         "asset": "landmarks/baron/siege_line.glb"
       },
       "oxblood_banners": {
-        "sourceTier": "build-new",
+        "sourceTier": "derive",
         "sources": [
           "assets/raw/plate-contract-baron.png"
         ],
@@ -1665,10 +1665,11 @@
         "asset": "landmarks/twin-banks/south_bank_winch.glb"
       },
       "floodplain_dressing_pack": {
-        "sourceTier": "reuse",
+        "sourceTier": "derive",
         "sources": [
           "assets/pilots/run3d/sluice.glb",
-          "assets/pilots/run3d/stockpile.glb"
+          "assets/pilots/run3d/stockpile.glb",
+          "assets/raw/plate-contract-twin-banks.png"
         ],
         "asset": "landmarks/twin-banks/floodplain_dressing_pack.glb"
       }
