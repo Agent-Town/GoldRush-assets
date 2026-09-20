@@ -245,5 +245,72 @@
     }
   ],
   "simulation": "none; terrain, collision, movement, placement, water, spawns, and fog remain unchanged",
-  "mountInterlock": "resolved-3d-d"
+  "mountInterlock": "resolved-3d-d",
+  "landmarkAcceptanceStations": [
+    {
+      "id": "garden-pressure-manifold",
+      "heroPositionXZ": [
+        0,
+        9
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Declared render-only inspection station; original mount and gameplay geometry unchanged. Entry and persistent-HUD coverage are separately measured in map-art-campaign-2/run-4/e2-pressure-garden."
+    },
+    {
+      "id": "water-band-pump-station",
+      "heroPositionXZ": [
+        42,
+        7
+      ],
+      "offsetFromMountXZ": [
+        0,
+        13
+      ],
+      "backMeters": 13,
+      "purpose": "Declared render-only inspection station; original mount and gameplay geometry unchanged. Entry and persistent-HUD coverage are separately measured in map-art-campaign-2/run-4/e2-pressure-garden."
+    },
+    {
+      "id": "coal-seam-service-winch",
+      "heroPositionXZ": [
+        -42,
+        45
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Declared render-only inspection station; original mount and gameplay geometry unchanged. Entry and persistent-HUD coverage are separately measured in map-art-campaign-2/run-4/e2-pressure-garden."
+    },
+    {
+      "id": "west-terrace-pipe-header",
+      "heroPositionXZ": [
+        -47,
+        33
+      ],
+      "offsetFromMountXZ": [
+        3,
+        9
+      ],
+      "backMeters": 9,
+      "purpose": "Declared render-only inspection station; original mount and gameplay geometry unchanged. Entry and persistent-HUD coverage are separately measured in map-art-campaign-2/run-4/e2-pressure-garden."
+    },
+    {
+      "id": "east-terrace-pipe-header",
+      "heroPositionXZ": [
+        47.5,
+        33
+      ],
+      "offsetFromMountXZ": [
+        -2.5,
+        9
+      ],
+      "backMeters": 9,
+      "purpose": "Declared render-only inspection station; original mount and gameplay geometry unchanged. Entry and persistent-HUD coverage are separately measured in map-art-campaign-2/run-4/e2-pressure-garden."
+    }
+  ]
 }
