@@ -42,7 +42,11 @@
         ]
       },
       "sha256": "7d5df54632a942687237ff8f7cfdaf30c88039ac59f6667139b5aca6e9964e38",
-      "footprint": {"kind":"rect","w":6.192,"d":4.3}
+      "footprint": {
+        "kind": "rect",
+        "w": 6.192,
+        "d": 4.3
+      }
     },
     "middle-way-station": {
       "asset": "landmarks/long-road/middle-way-station.glb",
@@ -67,7 +71,11 @@
         ]
       },
       "sha256": "49485ad49d66b1e5a23fcacdbc34cd8c61635ef3aed6b21152512a7539b7545c",
-      "footprint": {"kind":"rect","w":7.233,"d":3.528}
+      "footprint": {
+        "kind": "rect",
+        "w": 7.233,
+        "d": 3.528
+      }
     },
     "east-way-station": {
       "asset": "landmarks/long-road/east-way-station.glb",
@@ -92,7 +100,11 @@
         ]
       },
       "sha256": "ed8fd83c98b6b567640f9e8e0a0bb912ad3ad4fae2b1ad87f9ff550164b79ca2",
-      "footprint": {"kind":"rect","w":7.33,"d":3.764}
+      "footprint": {
+        "kind": "rect",
+        "w": 7.33,
+        "d": 3.764
+      }
     },
     "convoy-lead-hauler-start": {
       "asset": "landmarks/long-road/convoy-lead-hauler-start.glb",
@@ -118,7 +130,11 @@
         ]
       },
       "sha256": "8731d8e982d701fcf27cf8e9491f369cc25c12f9156c476fa7b5c02c7faa93ec",
-      "footprint": {"kind":"rect","w":6.203,"d":2.83}
+      "footprint": {
+        "kind": "rect",
+        "w": 6.203,
+        "d": 2.83
+      }
     },
     "east-railhead": {
       "asset": "landmarks/long-road/east-railhead.glb",
@@ -143,7 +159,11 @@
         ]
       },
       "sha256": "c632f5a6372185d2a91a81c63af48134d26fc477a46621b794f6241d4a6398bc",
-      "footprint": {"kind":"rect","w":7.632,"d":3.787}
+      "footprint": {
+        "kind": "rect",
+        "w": 7.632,
+        "d": 3.787
+      }
     }
   },
   "mounts": [
@@ -243,5 +263,33 @@
       ]
     }
   ],
-  "simulation": "none; terrain, collision, movement, placement, water, spawns, and fog remain unchanged"
+  "simulation": "none; terrain, collision, movement, placement, water, spawns, and fog remain unchanged",
+  "landmarkAcceptanceStations": [
+    {
+      "id": "convoy-lead-hauler-start",
+      "heroPositionXZ": [
+        -180,
+        5
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Render-only inspection: phone persistent HUD 27.355% at 14 m to 0.007% at 5 m; entry remains 12.369%. Mount and collision unchanged. map-art-campaign-2/run-5/e4-long-road."
+    },
+    {
+      "id": "west-way-station",
+      "heroPositionXZ": [
+        -136,
+        -9
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Render-only inspection: full phone bounds fit, persistent HUD below 0.1%. Mount and collision unchanged."
+    }
+  ]
 }

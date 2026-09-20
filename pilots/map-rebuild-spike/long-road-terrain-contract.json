@@ -472,5 +472,33 @@
     "era": 4,
     "sourceLadder": "reuse > derive > build-new",
     "ownership": "separate mounted render-only GLBs; no simulation authority"
-  }
+  },
+  "landmarkAcceptanceStations": [
+    {
+      "id": "convoy-lead-hauler-start",
+      "heroPositionXZ": [
+        -180,
+        5
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Render-only inspection: phone persistent HUD 27.355% at 14 m to 0.007% at 5 m; entry remains 12.369%. Mount and collision unchanged. map-art-campaign-2/run-5/e4-long-road."
+    },
+    {
+      "id": "west-way-station",
+      "heroPositionXZ": [
+        -136,
+        -9
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Render-only inspection: full phone bounds fit, persistent HUD below 0.1%. Mount and collision unchanged."
+    }
+  ]
 }

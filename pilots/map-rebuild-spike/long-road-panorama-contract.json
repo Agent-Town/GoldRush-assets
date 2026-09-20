@@ -40,7 +40,18 @@
       "margin": 0.01
     },
     "groundSkirtOuterRadiusMeters": 220.0,
-    "groundSkirtRole": "county ground scenery"
+    "groundSkirtRole": "county ground scenery",
+    "apronJoinUnderlap": {
+      "innerHalfExtentsBeforeMeters": [
+        200.01,
+        48.01
+      ],
+      "innerHalfExtentsAfterMeters": [
+        199.5,
+        47.5
+      ],
+      "preserves": "all heights, faces, UVs, atlas, outer scenery, terrain and collision"
+    }
   },
   "mount": {
     "id": "long-road-panorama",
@@ -88,12 +99,12 @@
   ],
   "files": {
     "blend": {
-      "bytes": 1568478,
-      "sha256": "6d1a58a850a293437ff30efd47ced1918bc1ee99f02fdd30c3131a15ff50918a"
+      "bytes": 1568486,
+      "sha256": "48438c96dc1126a51105bda6b9dae8398450f69c2e03ebd0ccb9d71752aa410f"
     },
     "glb": {
       "bytes": 1551280,
-      "sha256": "e183aa5a2f0d829a03b34aa9a222201ec690e749e5bfbb164d2df39080fc79a7"
+      "sha256": "51f62b7b8c4b6a7d8c561a55b1a5e8b066b1222ef9d4ea962db7210a238fb540"
     },
     "atlas": {
       "bytes": 1452595,
