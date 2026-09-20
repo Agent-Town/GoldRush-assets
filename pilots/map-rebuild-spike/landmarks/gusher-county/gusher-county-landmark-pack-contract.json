@@ -16,7 +16,7 @@
   },
   "blend": {
     "asset": "landmarks/gusher-county/gusher-county-landmarks.blend",
-    "sha256": "1ff30919eb62a4c8e51cd12b5ea456c266c6f0231b8d35f55ec932ad8b354899"
+    "sha256": "e2808a578f926fd1ba3b588dbdf01cc383996078e8c5b38da9d28f409295192f"
   },
   "assets": {
     "derrick-01": {
@@ -41,8 +41,11 @@
           7.245
         ]
       },
-      "sha256": "d2851e2169608b4d5022d4c10095764117704887a42a6748103ed4313b7bab75",
-      "footprint": {"kind":"radius","radius":1.661}
+      "sha256": "916cfb5af0041472c448245507995e44f2ed71966fd18a63b2cce452188ac286",
+      "footprint": {
+        "kind": "radius",
+        "radius": 1.661
+      }
     },
     "derrick-02": {
       "asset": "landmarks/gusher-county/derrick-02.glb",
@@ -66,8 +69,12 @@
           4.92
         ]
       },
-      "sha256": "932e5d908c67a97d3cd0869b96d914de310496d3a0b83f3ec9bdb59d433fd686",
-      "footprint": {"kind":"rect","w":3.888,"d":3.024}
+      "sha256": "dd40856dc193de08160d34c2eb8f50ad982f84b2da4c015974858296949442d6",
+      "footprint": {
+        "kind": "rect",
+        "w": 3.888,
+        "d": 3.024
+      }
     },
     "derrick-03": {
       "asset": "landmarks/gusher-county/derrick-03.glb",
@@ -91,8 +98,12 @@
           7.3
         ]
       },
-      "sha256": "353fb6c8a3c10f235526b7f006fc929b1b724f9ea2f2d030aa2519216a42c403",
-      "footprint": {"kind":"rect","w":3.87,"d":3.168}
+      "sha256": "6f5030bfa92a5f30c42b0a804fd5b046db3f35084097029c6f328766b0be5262",
+      "footprint": {
+        "kind": "rect",
+        "w": 3.87,
+        "d": 3.168
+      }
     },
     "derrick-04": {
       "asset": "landmarks/gusher-county/derrick-04.glb",
@@ -116,8 +127,12 @@
           6.75
         ]
       },
-      "sha256": "11ebb82fcf6200143181fef8ac444d0096bc0d0df4ca952e0bddd155bf82ed1d",
-      "footprint": {"kind":"rect","w":3.888,"d":3.096}
+      "sha256": "c864fda9761c3e930a6fac2db4170b0f44a1532eaf4425658fee2fb28bd71d43",
+      "footprint": {
+        "kind": "rect",
+        "w": 3.888,
+        "d": 3.096
+      }
     },
     "derrick-05": {
       "asset": "landmarks/gusher-county/derrick-05.glb",
@@ -141,8 +156,11 @@
           7.245
         ]
       },
-      "sha256": "e6c26bf73f26c47553bbd951a0a8ae809451b05ee3677fb9f8461a5852f1c413",
-      "footprint": {"kind":"radius","radius":1.595}
+      "sha256": "61e966ec242f1fa7416e68b06651333cc815b46dc066e751dcff47616e9a5952",
+      "footprint": {
+        "kind": "radius",
+        "radius": 1.595
+      }
     },
     "derrick-06": {
       "asset": "landmarks/gusher-county/derrick-06.glb",
@@ -166,8 +184,12 @@
           4.92
         ]
       },
-      "sha256": "866d540dd21b0ce0ee48f8775615e09d1d8937b9d327bc5f7b448c75749e3758",
-      "footprint": {"kind":"rect","w":3.888,"d":3.024}
+      "sha256": "cc775c09277376d5bbb022d0d839816ff35d130888da8aab5235cbf9316112a8",
+      "footprint": {
+        "kind": "rect",
+        "w": 3.888,
+        "d": 3.024
+      }
     },
     "derrick-07": {
       "asset": "landmarks/gusher-county/derrick-07.glb",
@@ -191,8 +213,12 @@
           7.3
         ]
       },
-      "sha256": "2a4777446179cb704f3ff7e79e734a1b43488e2803268b91b4af717193c9c57e",
-      "footprint": {"kind":"rect","w":3.87,"d":3.168}
+      "sha256": "914eb5fdf38f4e81aa9bde2ba8ff110305e666ef797ba56389537bf6007ed191",
+      "footprint": {
+        "kind": "rect",
+        "w": 3.87,
+        "d": 3.168
+      }
     },
     "derrick-08": {
       "asset": "landmarks/gusher-county/derrick-08.glb",
@@ -216,8 +242,12 @@
           7.35
         ]
       },
-      "sha256": "571142d5722904672457a5e4ef8ae1a0e819161c91fdd76181f1c9c1e1d344fb",
-      "footprint": {"kind":"rect","w":3.888,"d":3.096}
+      "sha256": "4131b96844c84efa4b5d8ff6f2b844c602bedff0c20bcf413bdb9ec20d60cd85",
+      "footprint": {
+        "kind": "rect",
+        "w": 3.888,
+        "d": 3.096
+      }
     },
     "outhouse-geyser": {
       "asset": "landmarks/gusher-county/outhouse-geyser.glb",
@@ -241,8 +271,12 @@
           7.5
         ]
       },
-      "sha256": "fee4a3d08b58b56ce6f0eb89a2fe39d3e56ed87733c3d2aef24f8c331d347a5b",
-      "footprint": {"kind":"rect","w":2.498,"d":2.009}
+      "sha256": "b4478cc3703f13d0b3ba1d7bd389372b23216d0e0e1079733ae9abfad7030af1",
+      "footprint": {
+        "kind": "rect",
+        "w": 2.498,
+        "d": 2.009
+      }
     },
     "county-camp-rig": {
       "asset": "landmarks/gusher-county/county-camp-rig.glb",
@@ -267,8 +301,12 @@
           6.25
         ]
       },
-      "sha256": "998410b6380e4a002e1007737dc94f885bf6a89d743ea546a796959522137482",
-      "footprint": {"kind":"rect","w":6.608,"d":4.032}
+      "sha256": "2f8da9045adf7f0698656004de29f3ab60a9bf7e45a75d4d236616a383744245",
+      "footprint": {
+        "kind": "rect",
+        "w": 6.608,
+        "d": 4.032
+      }
     }
   },
   "mounts": [
@@ -463,5 +501,46 @@
       ]
     }
   ],
-  "simulation": "none; terrain, collision, movement, placement, water, spawns, and fog remain unchanged"
+  "simulation": "none; terrain, collision, movement, placement, water, spawns, and fog remain unchanged",
+  "landmarkAcceptanceStations": [
+    {
+      "id": "county-camp-rig",
+      "heroPositionXZ": [
+        0,
+        1
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Render-only inspection: full phone body bounds fit and persistent HUD below 0.2%; camp at the 14 m comparison is about 60% covered. Entry remains held for camera/UI. Mount/collision unchanged; map-art-campaign-2/run-5/e4-gusher-county."
+    },
+    {
+      "id": "outhouse-geyser",
+      "heroPositionXZ": [
+        14,
+        -5
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Render-only inspection: full phone body bounds fit and persistent HUD below 0.2%; camp at the 14 m comparison is about 60% covered. Entry remains held for camera/UI. Mount/collision unchanged; map-art-campaign-2/run-5/e4-gusher-county."
+    },
+    {
+      "id": "derrick-01",
+      "heroPositionXZ": [
+        -56,
+        -31
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Render-only inspection: full phone body bounds fit and persistent HUD below 0.2%; camp at the 14 m comparison is about 60% covered. Entry remains held for camera/UI. Mount/collision unchanged; map-art-campaign-2/run-5/e4-gusher-county."
+    }
+  ]
 }
