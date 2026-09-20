@@ -461,5 +461,72 @@
       "bytes": 7047693,
       "sha256": "0c79ece2e2dca5d6f6490d5c17534d4878b7728a0b9c80e9d31268af89249c54"
     }
-  }
+  },
+  "landmarkAcceptanceStations": [
+    {
+      "id": "upper-ore-cable-house",
+      "heroPositionXZ": [
+        22,
+        34
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Render-only inspection station. Mount, bounds and gameplay collision unchanged; plain entry and persistent HUD measured separately in map-art-campaign-2/run-4/e2-incline."
+    },
+    {
+      "id": "lower-yard-engine-crane",
+      "heroPositionXZ": [
+        2,
+        26.8
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Render-only inspection station. Mount, bounds and gameplay collision unchanged; plain entry and persistent HUD measured separately in map-art-campaign-2/run-4/e2-incline."
+    },
+    {
+      "id": "west-line-brake-tower",
+      "heroPositionXZ": [
+        -34,
+        41.5
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Render-only inspection station. Mount, bounds and gameplay collision unchanged; plain entry and persistent HUD measured separately in map-art-campaign-2/run-4/e2-incline."
+    },
+    {
+      "id": "east-line-brake-tower",
+      "heroPositionXZ": [
+        34,
+        40
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Render-only inspection station. Mount, bounds and gameplay collision unchanged; plain entry and persistent HUD measured separately in map-art-campaign-2/run-4/e2-incline."
+    },
+    {
+      "id": "ford-service-pump",
+      "heroPositionXZ": [
+        25,
+        26.5
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Render-only inspection station. Mount, bounds and gameplay collision unchanged; plain entry and persistent HUD measured separately in map-art-campaign-2/run-4/e2-incline."
+    }
+  ]
 }

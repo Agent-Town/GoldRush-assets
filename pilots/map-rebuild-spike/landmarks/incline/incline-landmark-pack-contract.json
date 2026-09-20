@@ -16,7 +16,7 @@
   },
   "blend": {
     "asset": "landmarks/incline/incline-landmarks.blend",
-    "sha256": "c3bc43bc950a2ec45f87a3222a78602e5e00692db62fb41ecda30ab54eba999d"
+    "sha256": "5c2c55d4376649e54bb68ec5a868f6f8d4f6607b03f132ecb9bae56aff0d65e2"
   },
   "assets": {
     "lower-yard-engine-crane": {
@@ -41,7 +41,11 @@
         ]
       },
       "sha256": "0de1b5381a817da9402d0dece2c0ac14ea845ac0825468676526e8f22742f013",
-      "footprint": {"kind":"rect","w":5.04,"d":3.06}
+      "footprint": {
+        "kind": "rect",
+        "w": 5.04,
+        "d": 3.06
+      }
     },
     "west-line-brake-tower": {
       "asset": "landmarks/incline/west-line-brake-tower.glb",
@@ -65,7 +69,11 @@
         ]
       },
       "sha256": "f5c5c604c852c41db9aa929f2bc8537ec1c49c64adc3b3d85546218e5d60510f",
-      "footprint": {"kind":"rect","w":3.888,"d":2.88}
+      "footprint": {
+        "kind": "rect",
+        "w": 3.888,
+        "d": 2.88
+      }
     },
     "east-line-brake-tower": {
       "asset": "landmarks/incline/east-line-brake-tower.glb",
@@ -89,7 +97,11 @@
         ]
       },
       "sha256": "2dbb7711db8d2997e44f439ae6f0edfd08a5f3c307ac4c7dccd6ae595120946c",
-      "footprint": {"kind":"rect","w":3.888,"d":2.88}
+      "footprint": {
+        "kind": "rect",
+        "w": 3.888,
+        "d": 2.88
+      }
     },
     "upper-ore-cable-house": {
       "asset": "landmarks/incline/upper-ore-cable-house.glb",
@@ -99,7 +111,7 @@
         "assets/pilots/plaza-props-3d/coal-bin.e2.glb"
       ],
       "terrainConformed": false,
-      "triangles": 1636,
+      "triangles": 2028,
       "triangleBudget": 3000,
       "bounds": {
         "min": [
@@ -113,8 +125,21 @@
           5.51
         ]
       },
-      "sha256": "974111f2c0508fc323145276105a63398047e8ab3709408b1b81d442bf10f1fd",
-      "footprint": {"kind":"rect","w":6.48,"d":4.047}
+      "sha256": "0aae8d0429910833a2efb8c7843357fe6e8bc8f9955e05be08682440dc133da9",
+      "footprint": {
+        "kind": "rect",
+        "w": 6.48,
+        "d": 4.047
+      },
+      "detailCorrection": {
+        "recipe": "dress_incline_cable_house.py",
+        "storeInput": "9fa06cc",
+        "addedTriangles": 392,
+        "cableReturns": 2,
+        "serviceBinWheels": 8,
+        "bounds": "unchanged",
+        "atlas": "existing iron tile; pixels unchanged"
+      }
     },
     "ford-service-pump": {
       "asset": "landmarks/incline/ford-service-pump.glb",
@@ -238,5 +263,72 @@
     }
   ],
   "simulation": "none; terrain, collision, movement, placement, water, spawns, and fog remain unchanged",
-  "mountInterlock": "resolved-3d-d"
+  "mountInterlock": "resolved-3d-d",
+  "landmarkAcceptanceStations": [
+    {
+      "id": "upper-ore-cable-house",
+      "heroPositionXZ": [
+        22,
+        34
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Render-only inspection station. Mount, bounds and gameplay collision unchanged; plain entry and persistent HUD measured separately in map-art-campaign-2/run-4/e2-incline."
+    },
+    {
+      "id": "lower-yard-engine-crane",
+      "heroPositionXZ": [
+        2,
+        26.8
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Render-only inspection station. Mount, bounds and gameplay collision unchanged; plain entry and persistent HUD measured separately in map-art-campaign-2/run-4/e2-incline."
+    },
+    {
+      "id": "west-line-brake-tower",
+      "heroPositionXZ": [
+        -34,
+        41.5
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Render-only inspection station. Mount, bounds and gameplay collision unchanged; plain entry and persistent HUD measured separately in map-art-campaign-2/run-4/e2-incline."
+    },
+    {
+      "id": "east-line-brake-tower",
+      "heroPositionXZ": [
+        34,
+        40
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Render-only inspection station. Mount, bounds and gameplay collision unchanged; plain entry and persistent HUD measured separately in map-art-campaign-2/run-4/e2-incline."
+    },
+    {
+      "id": "ford-service-pump",
+      "heroPositionXZ": [
+        25,
+        26.5
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Render-only inspection station. Mount, bounds and gameplay collision unchanged; plain entry and persistent HUD measured separately in map-art-campaign-2/run-4/e2-incline."
+    }
+  ]
 }
