@@ -1,0 +1,82 @@
+{
+  "asset": "last-claim-panorama.glb",
+  "map": "last-claim",
+  "renderOnly": true,
+  "style": "Separate star wall beyond a lowered stone apron, within Panorama Law v2 budget.",
+  "meshCount": 1,
+  "primitiveCount": 1,
+  "materialCount": 1,
+  "vertices": 640,
+  "triangles": 1024,
+  "triangleBudget": 4000,
+  "boundsMeters": {
+    "min": [
+      -190.0,
+      -190.0,
+      -5.0
+    ],
+    "max": [
+      190.0,
+      190.0,
+      115.0
+    ]
+  },
+  "sha256": "08021d6fb8d08dfe51b44ad07459ccd12f659dd6b838252e4d56783439bff247",
+  "texture": {
+    "count": 1,
+    "width": 2048,
+    "height": 2048,
+    "embedded": true
+  },
+  "mount": {
+    "id": "last-claim-panorama",
+    "asset": "last-claim-panorama.glb",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ],
+    "renderOnly": true,
+    "ownership": "separate star horizon outside the full rectangular gameplay bounds"
+  },
+  "projection": {
+    "skyRingRadiusMeters": 190,
+    "skyBottomMeters": -5,
+    "skyTopMeters": 115,
+    "groundSkirtInnerBoundaryMeters": {
+      "shape": "expanded-playfield-rectangle",
+      "halfExtents": [
+        64,
+        64
+      ],
+      "margin": 0.05
+    }
+  },
+  "sourceArt": [
+    "assets/pilots/map-rebuild-spike/archive-world-panorama-atlas.png"
+  ],
+  "files": {
+    "blend": {
+      "bytes": 4234993,
+      "sha256": "19f6d9974d8b1695f6204cf6d6bfdb858c6051bc91ede6f8b44e7d679f40e1db"
+    },
+    "glb": {
+      "bytes": 742660,
+      "sha256": "08021d6fb8d08dfe51b44ad07459ccd12f659dd6b838252e4d56783439bff247"
+    },
+    "atlas": {
+      "bytes": 714418,
+      "sha256": "e6902a845b8324062b92ab7744521c5c5a4b579cc5547943552c278d3979fd65"
+    }
+  }
+}

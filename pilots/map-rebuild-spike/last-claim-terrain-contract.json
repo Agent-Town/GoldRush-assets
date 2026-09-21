@@ -1,0 +1,427 @@
+{
+  "asset": "last-claim-terrain.glb",
+  "contractId": "e10-last-claim",
+  "tileId": "ark-plaza-e10",
+  "renderOnly": true,
+  "simulation": "Planar and unchanged; no collision, deck-loss, preserve, spawn or build rule is altered.",
+  "heightSocket": "Terrain.visualY",
+  "theme": "Circular brass-inlaid memorial deck across the full original square floor; no walkable corner is removed.",
+  "meshCount": 1,
+  "primitiveCount": 1,
+  "materialCount": 1,
+  "vertices": 16641,
+  "triangles": 32768,
+  "triangleBudget": 60000,
+  "boundsMeters": {
+    "min": [
+      -64.0,
+      -64.0,
+      -0.24656644463539124
+    ],
+    "max": [
+      64.0,
+      64.0,
+      1.096054196357727
+    ]
+  },
+  "sha256": "a9b6c50c8cef5542b564c8ba36278cbd5f11e6838fedf00fb502ad659326b8af",
+  "texture": {
+    "count": 1,
+    "width": 1254,
+    "height": 1254,
+    "embedded": true
+  },
+  "maskTable": "assets/contracts/epoch-10-deepsky/mask-tables/e10-last-claim.json",
+  "maskTruth": {
+    "source": "assets/contracts/epoch-10-deepsky/contracts.json; lore/STORYBOOK.md:597-600",
+    "tileId": "ark-plaza-e10",
+    "size": 128,
+    "dimensions": {
+      "width": 128,
+      "height": 128
+    },
+    "river": false,
+    "ford": false,
+    "buildZones": [
+      {
+        "id": "stern-to-bow-run",
+        "bank": "north",
+        "minX": -20,
+        "maxX": 20,
+        "minZ": -54,
+        "maxZ": 54
+      }
+    ],
+    "stakeMarkers": [
+      {
+        "id": "last-lantern",
+        "x": -10,
+        "z": 50,
+        "heroStart": true
+      },
+      {
+        "id": "pan-theme-song",
+        "x": 0,
+        "z": 50,
+        "heroStart": true
+      },
+      {
+        "id": "last-portrait",
+        "x": 10,
+        "z": 50,
+        "heroStart": true
+      }
+    ],
+    "rails": [],
+    "waterSources": [],
+    "harvestAnchors": [
+      {
+        "x": -12,
+        "z": -36
+      },
+      {
+        "x": 12,
+        "z": -12
+      },
+      {
+        "x": -12,
+        "z": 12
+      },
+      {
+        "x": 12,
+        "z": 36
+      }
+    ],
+    "heightfield": {
+      "id": "ark-plaza-e10",
+      "mode": "visual"
+    },
+    "eraDeckZones": [
+      {
+        "id": "e1-memory-deck",
+        "era": 1,
+        "minX": -20,
+        "maxX": 20,
+        "minZ": -54,
+        "maxZ": -44
+      },
+      {
+        "id": "e2-memory-deck",
+        "era": 2,
+        "minX": -20,
+        "maxX": 20,
+        "minZ": -44,
+        "maxZ": -34
+      },
+      {
+        "id": "e3-memory-deck",
+        "era": 3,
+        "minX": -20,
+        "maxX": 20,
+        "minZ": -34,
+        "maxZ": -24
+      },
+      {
+        "id": "e4-memory-deck",
+        "era": 4,
+        "minX": -20,
+        "maxX": 20,
+        "minZ": -24,
+        "maxZ": -14
+      },
+      {
+        "id": "e5-memory-deck",
+        "era": 5,
+        "minX": -20,
+        "maxX": 20,
+        "minZ": -14,
+        "maxZ": -4
+      },
+      {
+        "id": "e6-memory-deck",
+        "era": 6,
+        "minX": -20,
+        "maxX": 20,
+        "minZ": -4,
+        "maxZ": 6
+      },
+      {
+        "id": "e7-memory-deck",
+        "era": 7,
+        "minX": -20,
+        "maxX": 20,
+        "minZ": 6,
+        "maxZ": 16
+      },
+      {
+        "id": "e8-memory-deck",
+        "era": 8,
+        "minX": -20,
+        "maxX": 20,
+        "minZ": 16,
+        "maxZ": 26
+      },
+      {
+        "id": "e9-memory-deck",
+        "era": 9,
+        "minX": -20,
+        "maxX": 20,
+        "minZ": 26,
+        "maxZ": 36
+      },
+      {
+        "id": "e10-memory-deck",
+        "era": 10,
+        "minX": -20,
+        "maxX": 20,
+        "minZ": 36,
+        "maxZ": 46
+      }
+    ],
+    "preserveSites": [
+      {
+        "id": "last-lantern",
+        "kind": "light",
+        "x": -10,
+        "z": 50,
+        "radius": 3
+      },
+      {
+        "id": "pan-theme-song",
+        "kind": "song",
+        "x": 0,
+        "z": 50,
+        "radius": 3
+      },
+      {
+        "id": "last-portrait",
+        "kind": "memory",
+        "x": 10,
+        "z": 50,
+        "radius": 3
+      }
+    ],
+    "lanes": {
+      "spawnEdges": [
+        "south",
+        "west",
+        "east"
+      ],
+      "territoryRingBiasWaves": 0,
+      "territoryRingLaneBias": 0
+    },
+    "spawnGates": []
+  },
+  "waterAgreement": {
+    "river": false,
+    "waterSources": []
+  },
+  "panoramaMount": {
+    "id": "last-claim-panorama",
+    "asset": "last-claim-panorama.glb",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ],
+    "renderOnly": true,
+    "ownership": "separate star horizon outside the full rectangular gameplay bounds"
+  },
+  "landmarkMounts": [
+    {
+      "id": "preserve-last-lantern",
+      "asset": "landmarks/last-claim/preserve-last-lantern.glb",
+      "position": [
+        -10,
+        0,
+        47
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "preserve-pan-theme-song",
+      "asset": "landmarks/last-claim/preserve-pan-theme-song.glb",
+      "position": [
+        0,
+        0,
+        47
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "preserve-last-portrait",
+      "asset": "landmarks/last-claim/preserve-last-portrait.glb",
+      "position": [
+        10,
+        0,
+        47
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "central-orrery",
+      "asset": "landmarks/last-claim/central-orrery.glb",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "stern-memory-arch",
+      "asset": "landmarks/last-claim/stern-memory-arch.glb",
+      "position": [
+        0,
+        0,
+        -51
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    }
+  ],
+  "landmarkAcceptanceStations": [
+    {
+      "id": "preserve-last-lantern",
+      "heroPositionXZ": [
+        -10,
+        52
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Render-only monument inspection; ordinary entry measured separately."
+    },
+    {
+      "id": "preserve-pan-theme-song",
+      "heroPositionXZ": [
+        0,
+        52
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Render-only monument inspection; ordinary entry measured separately."
+    },
+    {
+      "id": "preserve-last-portrait",
+      "heroPositionXZ": [
+        10,
+        52
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Render-only monument inspection; ordinary entry measured separately."
+    },
+    {
+      "id": "central-orrery",
+      "heroPositionXZ": [
+        0,
+        5
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Render-only monument inspection; ordinary entry measured separately."
+    },
+    {
+      "id": "stern-memory-arch",
+      "heroPositionXZ": [
+        0,
+        -46
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Render-only monument inspection; ordinary entry measured separately."
+    }
+  ],
+  "sourceArt": [
+    "assets/raw/plate-contract-e10-last-claim.png",
+    "assets/raw/archive-world-floor-material-v1.png"
+  ],
+  "heightDerivation": {
+    "grid": "last-claim-fallback-height-grid.json",
+    "sha256": "845cbb06b7d586d636f442b3e6321ba894ec56aec2d651b968085c8549147501",
+    "method": "16641 fallback visual samples; unchanged sampler code and planar gameplay."
+  },
+  "files": {
+    "blend": {
+      "bytes": 4292338,
+      "sha256": "2699f37b05c0a2060b4574fc66d8b7be240d15ddffa6620cf572d01d5ad63d7e"
+    },
+    "glb": {
+      "bytes": 4181628,
+      "sha256": "a9b6c50c8cef5542b564c8ba36278cbd5f11e6838fedf00fb502ad659326b8af"
+    },
+    "atlas": {
+      "bytes": 3450988,
+      "sha256": "621a457ee276de08c7563686a0d9e76371413fe1dd03ffa174a9747a8a07d101"
+    }
+  }
+}

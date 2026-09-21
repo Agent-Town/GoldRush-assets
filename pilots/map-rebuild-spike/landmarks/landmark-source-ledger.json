@@ -1673,6 +1673,48 @@
         ],
         "asset": "landmarks/twin-banks/floodplain_dressing_pack.glb"
       }
+    },
+    "last-claim": {
+      "preserve-last-lantern": {
+        "sourceTier": "build-new",
+        "sources": [
+          "assets/raw/plate-contract-e10-last-claim.png",
+          "assets/pilots/map-rebuild-spike/landmarks/archive-world/archive-world-landmarks-atlas.png"
+        ],
+        "asset": "landmarks/last-claim/preserve-last-lantern.glb"
+      },
+      "preserve-pan-theme-song": {
+        "sourceTier": "build-new",
+        "sources": [
+          "assets/raw/plate-contract-e10-last-claim.png",
+          "assets/pilots/map-rebuild-spike/landmarks/archive-world/archive-world-landmarks-atlas.png"
+        ],
+        "asset": "landmarks/last-claim/preserve-pan-theme-song.glb"
+      },
+      "preserve-last-portrait": {
+        "sourceTier": "build-new",
+        "sources": [
+          "assets/raw/plate-contract-e10-last-claim.png",
+          "assets/pilots/map-rebuild-spike/landmarks/archive-world/archive-world-landmarks-atlas.png"
+        ],
+        "asset": "landmarks/last-claim/preserve-last-portrait.glb"
+      },
+      "central-orrery": {
+        "sourceTier": "build-new",
+        "sources": [
+          "assets/raw/plate-contract-e10-last-claim.png",
+          "assets/pilots/map-rebuild-spike/landmarks/archive-world/archive-world-landmarks-atlas.png"
+        ],
+        "asset": "landmarks/last-claim/central-orrery.glb"
+      },
+      "stern-memory-arch": {
+        "sourceTier": "build-new",
+        "sources": [
+          "assets/raw/plate-contract-e10-last-claim.png",
+          "assets/pilots/map-rebuild-spike/landmarks/archive-world/archive-world-landmarks-atlas.png"
+        ],
+        "asset": "landmarks/last-claim/stern-memory-arch.glb"
+      }
     }
   }
 }

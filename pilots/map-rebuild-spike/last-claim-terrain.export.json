@@ -1,0 +1,11 @@
+{
+  "profile": "terrain",
+  "why": "Dedicated regular terrain grid retains render-only and height socket metadata when re-exported; no decimation or animation is permitted.",
+  "extras": true,
+  "animations": false,
+  "applyTransforms": true,
+  "selection": "meshes+anchors",
+  "asset": "last-claim-terrain.glb",
+  "blend": "last-claim-terrain.blend",
+  "contract": "last-claim-terrain-contract.json"
+}

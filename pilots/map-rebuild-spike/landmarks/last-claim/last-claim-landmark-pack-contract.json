@@ -1,0 +1,313 @@
+{
+  "map": "last-claim",
+  "era": 10,
+  "sourceLadder": [
+    "reuse-existing-raster",
+    "build-new-geometry"
+  ],
+  "recipe": "build_last_claim_pack.py",
+  "atlas": {
+    "asset": "landmarks/last-claim/last-claim-landmarks-atlas.png",
+    "width": 1024,
+    "height": 1024,
+    "sharedByEveryAsset": true,
+    "sha256": "3ebb2607b09b3af5e8b64ecb803616b172bec8866ac4b0fbd8250731cc94b8ad"
+  },
+  "blend": {
+    "asset": "landmarks/last-claim/last-claim-landmarks.blend",
+    "sha256": "8481246c2103a5ac57a0d261a9311f5fb1cc363e9ed5041e8fbb8016d760813c"
+  },
+  "assets": {
+    "preserve-last-lantern": {
+      "asset": "landmarks/last-claim/preserve-last-lantern.glb",
+      "sourceTier": "build-new",
+      "sources": [
+        "assets/raw/plate-contract-e10-last-claim.png",
+        "assets/pilots/map-rebuild-spike/landmarks/archive-world/archive-world-landmarks-atlas.png"
+      ],
+      "terrainConformed": false,
+      "triangles": 916,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -1.4500000476837158,
+          -1.4500000476837158,
+          0.0
+        ],
+        "max": [
+          1.4500000476837158,
+          1.4500000476837158,
+          5.144999980926514
+        ]
+      },
+      "sha256": "01c4e40b5142bd12e3011a3955be33bdc536afec19855fcfcf980bbf9118942f",
+      "blocking": "none; decorative monument, no new collision footprint"
+    },
+    "preserve-pan-theme-song": {
+      "asset": "landmarks/last-claim/preserve-pan-theme-song.glb",
+      "sourceTier": "build-new",
+      "sources": [
+        "assets/raw/plate-contract-e10-last-claim.png",
+        "assets/pilots/map-rebuild-spike/landmarks/archive-world/archive-world-landmarks-atlas.png"
+      ],
+      "terrainConformed": false,
+      "triangles": 1216,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -1.4700000286102295,
+          -1.4500000476837158,
+          0.0
+        ],
+        "max": [
+          1.4700000286102295,
+          1.4500000476837158,
+          4.960000038146973
+        ]
+      },
+      "sha256": "43c0a4e90c4912c55020c1b02463b0cc8cb347143bded38b959979cfec2c8c1b",
+      "blocking": "none; decorative monument, no new collision footprint"
+    },
+    "preserve-last-portrait": {
+      "asset": "landmarks/last-claim/preserve-last-portrait.glb",
+      "sourceTier": "build-new",
+      "sources": [
+        "assets/raw/plate-contract-e10-last-claim.png",
+        "assets/pilots/map-rebuild-spike/landmarks/archive-world/archive-world-landmarks-atlas.png"
+      ],
+      "terrainConformed": false,
+      "triangles": 528,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -1.4500000476837158,
+          -1.4500000476837158,
+          0.0
+        ],
+        "max": [
+          1.4500000476837158,
+          1.4500000476837158,
+          5.259999752044678
+        ]
+      },
+      "sha256": "f5dba69909941adc4e8bb6f76ba4811ae4941ea9c667d8a3976457546ae3a560",
+      "blocking": "none; decorative monument, no new collision footprint"
+    },
+    "central-orrery": {
+      "asset": "landmarks/last-claim/central-orrery.glb",
+      "sourceTier": "build-new",
+      "sources": [
+        "assets/raw/plate-contract-e10-last-claim.png",
+        "assets/pilots/map-rebuild-spike/landmarks/archive-world/archive-world-landmarks-atlas.png"
+      ],
+      "terrainConformed": false,
+      "triangles": 1328,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -2.000153064727783,
+          -1.7095065116882324,
+          0.0
+        ],
+        "max": [
+          2.000153064727783,
+          1.7095065116882324,
+          4.839999675750732
+        ]
+      },
+      "sha256": "53761411e710c2e427321ef52a4555aad9c6d98aa0007392b9fc465f9a433504",
+      "blocking": "none; decorative monument, no new collision footprint"
+    },
+    "stern-memory-arch": {
+      "asset": "landmarks/last-claim/stern-memory-arch.glb",
+      "sourceTier": "build-new",
+      "sources": [
+        "assets/raw/plate-contract-e10-last-claim.png",
+        "assets/pilots/map-rebuild-spike/landmarks/archive-world/archive-world-landmarks-atlas.png"
+      ],
+      "terrainConformed": false,
+      "triangles": 1092,
+      "triangleBudget": 3000,
+      "bounds": {
+        "min": [
+          -3.8299999237060547,
+          -0.6299999952316284,
+          0.0
+        ],
+        "max": [
+          3.8299999237060547,
+          0.6299999952316284,
+          5.900000095367432
+        ]
+      },
+      "sha256": "5fa8b3b7e1b45305819463189a8172c94c2de8f91c81848ce849b9ed61801a08",
+      "blocking": "none; decorative monument, no new collision footprint"
+    }
+  },
+  "mounts": [
+    {
+      "id": "preserve-last-lantern",
+      "asset": "landmarks/last-claim/preserve-last-lantern.glb",
+      "position": [
+        -10,
+        0,
+        47
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "preserve-pan-theme-song",
+      "asset": "landmarks/last-claim/preserve-pan-theme-song.glb",
+      "position": [
+        0,
+        0,
+        47
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "preserve-last-portrait",
+      "asset": "landmarks/last-claim/preserve-last-portrait.glb",
+      "position": [
+        10,
+        0,
+        47
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "central-orrery",
+      "asset": "landmarks/last-claim/central-orrery.glb",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "stern-memory-arch",
+      "asset": "landmarks/last-claim/stern-memory-arch.glb",
+      "position": [
+        0,
+        0,
+        -51
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    }
+  ],
+  "landmarkAcceptanceStations": [
+    {
+      "id": "preserve-last-lantern",
+      "heroPositionXZ": [
+        -10,
+        52
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Render-only monument inspection; ordinary entry measured separately."
+    },
+    {
+      "id": "preserve-pan-theme-song",
+      "heroPositionXZ": [
+        0,
+        52
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Render-only monument inspection; ordinary entry measured separately."
+    },
+    {
+      "id": "preserve-last-portrait",
+      "heroPositionXZ": [
+        10,
+        52
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Render-only monument inspection; ordinary entry measured separately."
+    },
+    {
+      "id": "central-orrery",
+      "heroPositionXZ": [
+        0,
+        5
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Render-only monument inspection; ordinary entry measured separately."
+    },
+    {
+      "id": "stern-memory-arch",
+      "heroPositionXZ": [
+        0,
+        -46
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Render-only monument inspection; ordinary entry measured separately."
+    }
+  ],
+  "simulation": "none; no new footprint, blocker, walk surface or gameplay owner",
+  "preservePlacement": "Monuments stand 3 m behind their published preserve sites, at the edge of the existing radius; all sites and markers remain unchanged."
+}
