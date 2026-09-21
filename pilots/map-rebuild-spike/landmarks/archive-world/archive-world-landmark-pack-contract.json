@@ -18,7 +18,7 @@
   },
   "blend": {
     "asset": "landmarks/archive-world/archive-world-landmarks.blend",
-    "sha256": "3fbd071138fa8355bc50d33c2003deac77c5f62ad75509c86c94f93c9876ff38"
+    "sha256": "028176571d99eb809424fba0799752601ccab7c34f30063afb5e5c3dc66c974e"
   },
   "assets": {
     "archive-entry-gate": {
@@ -26,10 +26,11 @@
       "sourceTier": "derive",
       "sources": [
         "assets/pilots/map-rebuild-spike/landmarks/ember-shore/center-vein-bridge-school.glb",
-        "assets/raw/plate-e10-worlds.png"
+        "assets/raw/plate-e10-worlds.png",
+        "assets/raw/plate-contract-e10-archive-world.png"
       ],
       "terrainConformed": false,
-      "triangles": 1128,
+      "triangles": 888,
       "triangleBudget": 3000,
       "bounds": {
         "min": [
@@ -43,7 +44,12 @@
           8.69
         ]
       },
-      "sha256": "081193ccb1781665bd73b42186c33f160f50b4231529643b23efc706c93823fe"
+      "sha256": "636d14185dec37a44ac737a259253fed7093560e1403b0d50096a870d53dab25",
+      "artRevision": {
+        "recipe": "rebuild_archive_gate.py",
+        "baseBlendSha256": "3fbd071138fa8355bc50d33c2003deac77c5f62ad75509c86c94f93c9876ff38",
+        "change": "Open two-pier library portal replaces the filled bridge-school body inside the exact old envelope; no collision changes."
+      }
     },
     "west-stack-ruin": {
       "asset": "landmarks/archive-world/west-stack-ruin.glb",
@@ -258,5 +264,72 @@
   ],
   "simulation": "none; terrain, collision, movement, placement, water, spawns, and fog remain unchanged",
   "mountInterlock": "resolved-3d-d",
-  "recipe": "assets/pilots/map-rebuild-spike/build_archive_landmarks.py"
+  "recipe": "assets/pilots/map-rebuild-spike/build_archive_landmarks.py",
+  "landmarkAcceptanceStations": [
+    {
+      "id": "archive-entry-gate",
+      "heroPositionXZ": [
+        0.0,
+        -36.0
+      ],
+      "offsetFromMountXZ": [
+        0,
+        10
+      ],
+      "backMeters": 10,
+      "purpose": "Declared inspection; full bbox fits both viewports. Gate phone HUD remains held at 68.719% coverage; ordinary entry measured separately."
+    },
+    {
+      "id": "west-stack-ruin",
+      "heroPositionXZ": [
+        -28.0,
+        -3.0
+      ],
+      "offsetFromMountXZ": [
+        0,
+        3
+      ],
+      "backMeters": 3,
+      "purpose": "Declared inspection with normal HUD; ordinary entry measured separately."
+    },
+    {
+      "id": "east-stack-ruin",
+      "heroPositionXZ": [
+        28.0,
+        -3.0
+      ],
+      "offsetFromMountXZ": [
+        0,
+        3
+      ],
+      "backMeters": 3,
+      "purpose": "Declared inspection with normal HUD; ordinary entry measured separately."
+    },
+    {
+      "id": "warning-shelf-ruin",
+      "heroPositionXZ": [
+        -14.0,
+        43.0
+      ],
+      "offsetFromMountXZ": [
+        0,
+        3
+      ],
+      "backMeters": 3,
+      "purpose": "Declared inspection with normal HUD; ordinary entry measured separately."
+    },
+    {
+      "id": "ours-unless-marker",
+      "heroPositionXZ": [
+        0.0,
+        49.0
+      ],
+      "offsetFromMountXZ": [
+        0,
+        3
+      ],
+      "backMeters": 3,
+      "purpose": "Declared inspection with normal HUD; ordinary entry measured separately."
+    }
+  ]
 }

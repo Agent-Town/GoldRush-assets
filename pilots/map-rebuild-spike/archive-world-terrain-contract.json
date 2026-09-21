@@ -428,5 +428,72 @@
     "sourceLadder": "reuse > derive > build-new",
     "ownership": "separate mounted render-only GLBs; no simulation authority"
   },
-  "materialRecipe": "assets/pilots/map-rebuild-spike/retexture_archive_terrain.py"
+  "materialRecipe": "assets/pilots/map-rebuild-spike/retexture_archive_terrain.py",
+  "landmarkAcceptanceStations": [
+    {
+      "id": "archive-entry-gate",
+      "heroPositionXZ": [
+        0.0,
+        -36.0
+      ],
+      "offsetFromMountXZ": [
+        0,
+        10
+      ],
+      "backMeters": 10,
+      "purpose": "Declared inspection; full bbox fits both viewports. Gate phone HUD remains held at 68.719% coverage; ordinary entry measured separately."
+    },
+    {
+      "id": "west-stack-ruin",
+      "heroPositionXZ": [
+        -28.0,
+        -3.0
+      ],
+      "offsetFromMountXZ": [
+        0,
+        3
+      ],
+      "backMeters": 3,
+      "purpose": "Declared inspection with normal HUD; ordinary entry measured separately."
+    },
+    {
+      "id": "east-stack-ruin",
+      "heroPositionXZ": [
+        28.0,
+        -3.0
+      ],
+      "offsetFromMountXZ": [
+        0,
+        3
+      ],
+      "backMeters": 3,
+      "purpose": "Declared inspection with normal HUD; ordinary entry measured separately."
+    },
+    {
+      "id": "warning-shelf-ruin",
+      "heroPositionXZ": [
+        -14.0,
+        43.0
+      ],
+      "offsetFromMountXZ": [
+        0,
+        3
+      ],
+      "backMeters": 3,
+      "purpose": "Declared inspection with normal HUD; ordinary entry measured separately."
+    },
+    {
+      "id": "ours-unless-marker",
+      "heroPositionXZ": [
+        0.0,
+        49.0
+      ],
+      "offsetFromMountXZ": [
+        0,
+        3
+      ],
+      "backMeters": 3,
+      "purpose": "Declared inspection with normal HUD; ordinary entry measured separately."
+    }
+  ]
 }

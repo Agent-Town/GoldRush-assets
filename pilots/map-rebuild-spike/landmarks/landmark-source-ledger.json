@@ -6,7 +6,8 @@
         "sourceTier": "derive",
         "sources": [
           "assets/pilots/map-rebuild-spike/landmarks/ember-shore/center-vein-bridge-school.glb",
-          "assets/raw/plate-e10-worlds.png"
+          "assets/raw/plate-e10-worlds.png",
+          "assets/raw/plate-contract-e10-archive-world.png"
         ],
         "asset": "landmarks/archive-world/archive-entry-gate.glb"
       },
