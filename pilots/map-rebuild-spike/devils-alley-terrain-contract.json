@@ -433,5 +433,20 @@
     "era": 9,
     "sourceLadder": "reuse > derive > build-new",
     "ownership": "separate mounted render-only GLBs; no simulation authority"
-  }
+  },
+  "landmarkAcceptanceStations": [
+    {
+      "id": "center-wind-anchor",
+      "heroPositionXZ": [
+        0,
+        3
+      ],
+      "offsetFromMountXZ": [
+        0,
+        3
+      ],
+      "backMeters": 3,
+      "purpose": "Render-only coil-anchor inspection; ordinary 12 m entry is separately measured. Existing footprint and hold radius unchanged."
+    }
+  ]
 }

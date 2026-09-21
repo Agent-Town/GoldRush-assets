@@ -16,7 +16,7 @@
   },
   "blend": {
     "asset": "landmarks/devils-alley/devils-alley-landmarks.blend",
-    "sha256": "219484f55babbbd74d5c6bd3cf6bae79b0584680ed73fd9a46f813393b6f12f6"
+    "sha256": "ecf1a39f1fe5af2a4b1f742609bb545ffa2b1def401141f279226ba3898dc7fd"
   },
   "assets": {
     "south-anchor-gate": {
@@ -51,7 +51,7 @@
         "assets/raw/plate-e9-enemy-dust-devil.png"
       ],
       "terrainConformed": false,
-      "triangles": 752,
+      "triangles": 1848,
       "triangleBudget": 3000,
       "bounds": {
         "min": [
@@ -65,8 +65,17 @@
           6.3
         ]
       },
-      "sha256": "bae4c77b7f2af8495a075f539f4c9f748b5d22320787423dbd2d6b0a22579899",
-      "footprint": {"kind":"rect","w":4.27,"d":3.312}
+      "sha256": "c91b61a21036e7ffd64ef62f141c55766e11e4bb43de8a7071b0ed25668a1275",
+      "footprint": {
+        "kind": "rect",
+        "w": 4.27,
+        "d": 3.312
+      },
+      "artRevision": {
+        "recipe": "dress_wind_anchors.py",
+        "sourceBlendSha256": "219484f55babbbd74d5c6bd3cf6bae79b0584680ed73fd9a46f813393b6f12f6",
+        "change": "Braced coil housing and chamfered footing within original bounds and collision footprint."
+      }
     },
     "center-wind-anchor": {
       "asset": "landmarks/devils-alley/center-wind-anchor.glb",
@@ -76,7 +85,7 @@
         "assets/raw/plate-e9-enemy-dust-devil.png"
       ],
       "terrainConformed": false,
-      "triangles": 848,
+      "triangles": 2192,
       "triangleBudget": 3000,
       "bounds": {
         "min": [
@@ -90,8 +99,17 @@
           7.13
         ]
       },
-      "sha256": "bb713de3de3dc113123db50214a917763b18f9438b01b03cf4af72b2ba8dcd2f",
-      "footprint": {"kind":"rect","w":4.558,"d":3.312}
+      "sha256": "597d8f87f16497275be81229d4b023d2940e504154176fb98f697443486aa28d",
+      "footprint": {
+        "kind": "rect",
+        "w": 4.558,
+        "d": 3.312
+      },
+      "artRevision": {
+        "recipe": "dress_wind_anchors.py",
+        "sourceBlendSha256": "219484f55babbbd74d5c6bd3cf6bae79b0584680ed73fd9a46f813393b6f12f6",
+        "change": "Braced coil housing and chamfered footing within original bounds and collision footprint."
+      }
     },
     "east-wind-anchor": {
       "asset": "landmarks/devils-alley/east-wind-anchor.glb",
@@ -101,7 +119,7 @@
         "assets/raw/plate-e9-enemy-dust-devil.png"
       ],
       "terrainConformed": false,
-      "triangles": 944,
+      "triangles": 2536,
       "triangleBudget": 3000,
       "bounds": {
         "min": [
@@ -115,8 +133,17 @@
           8.01
         ]
       },
-      "sha256": "2a45d1690ed5efde68217a489165f6bbdf3a478057d8761749df51513198091d",
-      "footprint": {"kind":"rect","w":4.846,"d":3.312}
+      "sha256": "c388e4f7cfc855cbf74d19331e81e00633df70c7fa020a866647543aa73dc1eb",
+      "footprint": {
+        "kind": "rect",
+        "w": 4.846,
+        "d": 3.312
+      },
+      "artRevision": {
+        "recipe": "dress_wind_anchors.py",
+        "sourceBlendSha256": "219484f55babbbd74d5c6bd3cf6bae79b0584680ed73fd9a46f813393b6f12f6",
+        "change": "Braced coil housing and chamfered footing within original bounds and collision footprint."
+      }
     },
     "north-anchor-gate": {
       "asset": "landmarks/devils-alley/north-anchor-gate.glb",
@@ -241,5 +268,20 @@
     }
   ],
   "simulation": "none; terrain, collision, movement, placement, water, spawns, and fog remain unchanged",
-  "mountInterlock": "resolved-3d-d"
+  "mountInterlock": "resolved-3d-d",
+  "landmarkAcceptanceStations": [
+    {
+      "id": "center-wind-anchor",
+      "heroPositionXZ": [
+        0,
+        3
+      ],
+      "offsetFromMountXZ": [
+        0,
+        3
+      ],
+      "backMeters": 3,
+      "purpose": "Render-only coil-anchor inspection; ordinary 12 m entry is separately measured. Existing footprint and hold radius unchanged."
+    }
+  ]
 }
