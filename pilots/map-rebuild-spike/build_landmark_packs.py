@@ -776,10 +776,22 @@ def map_uv(obj, role):
     row, column = divmod(index, TILE_COUNT)
     for polygon in obj.data.polygons:
         polygon.material_index = 0
+        barrel_v = []
+        if obj.name == "Sleeper.Barrel":
+            for loop_index in polygon.loop_indices:
+                co = obj.data.vertices[obj.data.loops[loop_index].vertex_index].co
+                barrel_v.append(math.atan2(co.z - 1.70, co.y) / math.tau + 0.5)
         for loop_index in polygon.loop_indices:
             co = obj.data.vertices[obj.data.loops[loop_index].vertex_index].co
             local_u = (co.x * 0.13 + co.z * 0.07) % 1.0
             local_v = (co.y * 0.13 + co.z * 0.11) % 1.0
+            if barrel_v:
+                # Cylindrical metal grain; the generic modulo projection made
+                # the long boiler faces read as stretched wooden planks.
+                local_u = (co.x + 3.50) / 6.15
+                local_v = math.atan2(co.z - 1.70, co.y) / math.tau + 0.5
+                if max(barrel_v) - min(barrel_v) > 0.5 and local_v < 0.5:
+                    local_v = 1.0
             layer.data[loop_index].uv = ((column + 0.08 + local_u * 0.84) / TILE_COUNT, (row + 0.08 + local_v * 0.84) / TILE_COUNT)
 
 
@@ -1091,16 +1103,52 @@ def boneyard_hauler_bed_parts(variant):
 
 
 def boneyard_sleeper_parts():
+    """A buried pressure engine: barrel, exposed driving wheels and broken ribs.
+
+    The mount and collision footprint remain the authored sleeper's. The old
+    rectangular cabin read as another shed; these parts reuse its atlas roles.
+    """
     parts = [
-        add_box("Sleeper.BurialBed", (0.0, 0.0, 0.04), (8.8, 4.8, 0.58), "earth", 0.08),
-        add_box("Sleeper.Cabin", (0.0, 0.0, 0.42), (7.6, 3.55, 2.95), "iron", 0.10),
-        add_box("Sleeper.Roof", (0.0, 0.0, 3.18), (8.0, 3.85, 0.24), "rust", 0.10),
-        add_box("Sleeper.DarkEnd", (3.72, -0.30, 0.82), (0.18, 2.45, 2.05), "soot", 0.10),
-        add_cylinder("Sleeper.ColdFlue", (-2.45, 0.72, 3.24), (-2.45, 0.72, 5.10), 0.20, "soot", 9),
-        add_beam("Sleeper.BrokenCoupler", (-4.05, 0.0, 0.92), (-5.20, 0.0, 0.55), 0.16, "brass"),
+        add_cylinder("Sleeper.Barrel", (-3.50, 0.0, 1.70), (2.65, 0.0, 1.70), 1.62, "stone", 20),
+        add_cylinder("Sleeper.FrontPlate", (-3.61, 0.0, 1.70), (-3.49, 0.0, 1.70), 1.47, "iron", 20),
+        add_cylinder("Sleeper.FireDoor", (-3.74, 0.0, 1.70), (-3.60, 0.0, 1.70), 0.58, "soot", 16),
+        add_cylinder("Sleeper.DoorBoss", (-3.80, 0.0, 1.70), (-3.73, 0.0, 1.70), 0.23, "brass", 12),
+        add_cylinder("Sleeper.ColdFlue", (-2.18, 0.0, 2.8), (-2.32, 0.0, 5.08), 0.32, "soot", 12),
+        add_cylinder("Sleeper.FlueLip", (-2.31, 0.0, 4.86), (-2.32, 0.0, 5.10), 0.44, "iron", 12),
+        add_box("Sleeper.Frame", (0.0, 0.0, 0.34), (8.1, 2.6, 0.34), "soot"),
+        add_beam("Sleeper.BrokenCoupler", (-4.05, 0.0, 0.92), (-4.80, 0.0, 0.55), 0.16, "brass"),
+        add_beam("Sleeper.BrokenCabPost", (3.45, 1.4, 0.65), (3.62, 1.36, 3.9), 0.18, "iron"),
+        add_beam("Sleeper.BrokenCabRib", (3.62, 1.36, 3.9), (4.2, -0.72, 3.60), 0.18, "iron"),
     ]
-    for index, x in enumerate((-2.35, -0.25, 1.85)):
-        parts.append(add_box(f"Sleeper.Window.{index}", (x, -1.82, 1.78), (1.20, 0.10, 0.82), "water", 0.10))
+    for index, x in enumerate((-2.75, -0.55, 1.8)):
+        parts.append(add_torus(f"Sleeper.BarrelBand.{index}", (x, 0.0, 1.70), 1.64, 0.07, "brass", (0.0, math.pi * 0.5, 0.0)))
+        for side in (-1, 1):
+            y = side * 1.86
+            parts.append(add_torus(f"Sleeper.Wheel.{index}.{side}", (x, y, 0.80), 0.81, 0.16, "iron"))
+            parts.append(add_cylinder(f"Sleeper.Hub.{index}.{side}", (x,y-0.18,0.80), (x,y+0.18,0.80),0.22,"brass",8))
+            for spoke in range(3):
+                a = spoke * math.pi / 3
+                dx, dz = math.cos(a)*0.69, math.sin(a)*0.69
+                parts.append(add_beam(f"Sleeper.Spoke.{index}.{side}.{spoke}",(x-dx,y,0.8-dz),(x+dx,y,0.8+dz),0.09,"iron"))
+    for side in (-1,1):
+        parts.append(add_beam(f"Sleeper.DriveRod.{side}",(-2.8,side*2.05,0.65),(1.95,side*2.05,0.89),0.14,"brass"))
+    # A continuous tapered deposit avoids separate rubble pieces reading as
+    # rectangular support blocks beneath the wheels.
+    vertices, faces = [], []
+    for ring, (radius, height) in enumerate(((1.0, 0.0), (.78, .42), (.4, .54))):
+        for step in range(20):
+            angle = math.tau * step / 20
+            edge = 1.0 + .055 * math.sin(angle * 5) + .035 * math.cos(angle * 7)
+            vertices.append((4.38 * radius * edge * math.cos(angle), 2.35 * radius * edge * math.sin(angle), height * (1 + .22 * math.sin(angle * 3))))
+            if ring:
+                a, b = (ring-1)*20+step, (ring-1)*20+(step+1)%20
+                faces.append((a,b,b+20,a+20))
+    faces.append(tuple(range(40,60)))
+    mesh = bpy.data.meshes.new("Sleeper.AccumulatedEarth.mesh")
+    mesh.from_pydata(vertices, [], faces); mesh.update()
+    deposit = bpy.data.objects.new("Sleeper.AccumulatedEarth", mesh)
+    bpy.context.collection.objects.link(deposit)
+    parts.append(role_object(deposit, "earth"))
     for index, (x, y, size) in enumerate(((-3.7, 2.0, 0.75), (-1.9, -2.0, 0.62), (1.8, 2.1, 0.82), (3.8, -1.8, 0.70))):
         parts.append(add_rock(f"Sleeper.BurialRock.{index}", (x, y, 0.34), (size, size * 0.72, size * 0.46), "earth"))
     return parts

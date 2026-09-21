@@ -16,7 +16,7 @@
   },
   "blend": {
     "asset": "landmarks/boneyard/boneyard-landmarks.blend",
-    "sha256": "f2e69aa860938dc30b2a2b9bb1d5594ba41bfe50ba24384cea2451dc1a8803ca"
+    "sha256": "c47cc6dc3617dfe3667943ee1da2b0a9bfbe1ed71aaffe32be7115450577ebde"
   },
   "assets": {
     "flivver-row-west-a": {
@@ -42,7 +42,11 @@
         ]
       },
       "sha256": "b923e9372f8e43119c3f4023c838880c16620e6988951ee73b61bd325a0ec71f",
-      "footprint": {"kind":"rect","w":4.211,"d":2.46}
+      "footprint": {
+        "kind": "rect",
+        "w": 4.211,
+        "d": 2.46
+      }
     },
     "flivver-row-west-b": {
       "asset": "landmarks/boneyard/flivver-row-west-b.glb",
@@ -67,7 +71,11 @@
         ]
       },
       "sha256": "6c7b8c7aff703dc375f0ff8292e1fe40032e2aaeb2fb67ca1ed0606d3889e99e",
-      "footprint": {"kind":"rect","w":4.249,"d":2.485}
+      "footprint": {
+        "kind": "rect",
+        "w": 4.249,
+        "d": 2.485
+      }
     },
     "flivver-row-west-c": {
       "asset": "landmarks/boneyard/flivver-row-west-c.glb",
@@ -92,7 +100,11 @@
         ]
       },
       "sha256": "27d53c9e7c107f5be8fd8006bd22c9378b9c422f610dae47cd037b5e86c8a4be",
-      "footprint": {"kind":"rect","w":4.643,"d":2.468}
+      "footprint": {
+        "kind": "rect",
+        "w": 4.643,
+        "d": 2.468
+      }
     },
     "spent-boiler-west": {
       "asset": "landmarks/boneyard/spent-boiler-west.glb",
@@ -117,7 +129,11 @@
         ]
       },
       "sha256": "85c59d60ba6586ce8f2095bb05dea164bd89292f204f25627b826a7438cef8ba",
-      "footprint": {"kind":"rect","w":3.895,"d":2.621}
+      "footprint": {
+        "kind": "rect",
+        "w": 3.895,
+        "d": 2.621
+      }
     },
     "spent-boiler-east": {
       "asset": "landmarks/boneyard/spent-boiler-east.glb",
@@ -142,7 +158,11 @@
         ]
       },
       "sha256": "50cbe6751bb02d63b0aa3695c01dc4ea7ae9365944ae66f2eeffd701fb7c5458",
-      "footprint": {"kind":"rect","w":3.85,"d":2.612}
+      "footprint": {
+        "kind": "rect",
+        "w": 3.85,
+        "d": 2.612
+      }
     },
     "flivver-row-east-a": {
       "asset": "landmarks/boneyard/flivver-row-east-a.glb",
@@ -167,7 +187,11 @@
         ]
       },
       "sha256": "c776d87611b8d7e1821c783351bba5988b514ae73c965cf34910b93e09c89436",
-      "footprint": {"kind":"rect","w":4.215,"d":2.385}
+      "footprint": {
+        "kind": "rect",
+        "w": 4.215,
+        "d": 2.385
+      }
     },
     "flivver-row-east-b": {
       "asset": "landmarks/boneyard/flivver-row-east-b.glb",
@@ -192,7 +216,11 @@
         ]
       },
       "sha256": "e3ecd0451c10d11d7be2617428c4a73dc6017d1db3ebf851686ff35f74e57cce",
-      "footprint": {"kind":"rect","w":4.191,"d":2.41}
+      "footprint": {
+        "kind": "rect",
+        "w": 4.191,
+        "d": 2.41
+      }
     },
     "flivver-row-east-c": {
       "asset": "landmarks/boneyard/flivver-row-east-c.glb",
@@ -217,7 +245,11 @@
         ]
       },
       "sha256": "68dd42d99282058cbd8be662dd6f281f5f1dfdb4033cb0f53d75b02ef17e9619",
-      "footprint": {"kind":"rect","w":4.643,"d":2.468}
+      "footprint": {
+        "kind": "rect",
+        "w": 4.643,
+        "d": 2.468
+      }
     },
     "hauler-bed-north-a": {
       "asset": "landmarks/boneyard/hauler-bed-north-a.glb",
@@ -242,7 +274,11 @@
         ]
       },
       "sha256": "b42cb173bb292c5d7df1c618195ff9cc6ef27b39b90da17a05a3e6acc54342be",
-      "footprint": {"kind":"rect","w":5.26,"d":2.952}
+      "footprint": {
+        "kind": "rect",
+        "w": 5.26,
+        "d": 2.952
+      }
     },
     "hauler-bed-north-b": {
       "asset": "landmarks/boneyard/hauler-bed-north-b.glb",
@@ -267,7 +303,11 @@
         ]
       },
       "sha256": "a09cb9b8431ec4baef0cb134009fa19a4603dba05bad2a4b74b34d7fa3170687",
-      "footprint": {"kind":"rect","w":5.26,"d":2.952}
+      "footprint": {
+        "kind": "rect",
+        "w": 5.26,
+        "d": 2.952
+      }
     },
     "half-buried-sleeper": {
       "asset": "landmarks/boneyard/half-buried-sleeper.glb",
@@ -277,7 +317,7 @@
         "assets/raw/plate-e4-bld-set.png"
       ],
       "terrainConformed": false,
-      "triangles": 208,
+      "triangles": 1842,
       "triangleBudget": 3000,
       "bounds": {
         "min": [
@@ -291,8 +331,12 @@
           5.1372
         ]
       },
-      "sha256": "cdb9f5f55b43f3c3636b8bea644e49788e7d0bb1f53a2df04396134c570d4c1b",
-      "footprint": {"kind":"rect","w":7.058,"d":3.951}
+      "sha256": "954655fdb1fafa558a2195d89cbfe386c03e1e9463e88768d36afaa1d00d1149",
+      "footprint": {
+        "kind": "rect",
+        "w": 7.058,
+        "d": 3.951
+      }
     },
     "unmarked-wagon": {
       "asset": "landmarks/boneyard/unmarked-wagon.glb",
@@ -317,7 +361,11 @@
         ]
       },
       "sha256": "ca7d3d7a02cbf65caef2146acea8e1f2905795578488856ec7aa1f4203ea1b81",
-      "footprint": {"kind":"rect","w":6.169,"d":2.679}
+      "footprint": {
+        "kind": "rect",
+        "w": 6.169,
+        "d": 2.679
+      }
     }
   },
   "mounts": [
@@ -551,5 +599,163 @@
     }
   ],
   "simulation": "none; terrain, collision, movement, placement, water, spawns, and fog remain unchanged",
-  "mountInterlock": "resolved-3d-d"
+  "mountInterlock": "resolved-3d-d",
+  "landmarkAcceptanceStations": [
+    {
+      "id": "flivver-row-west-a",
+      "heroPositionXZ": [
+        -48.0,
+        -7.0
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Render-only inspection station, measured in map-art-campaign-2/run-6/e4-boneyard. Preserves mount and gameplay footprint; entry context is separate."
+    },
+    {
+      "id": "flivver-row-west-b",
+      "heroPositionXZ": [
+        -36.0,
+        9.0
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Render-only inspection station, measured in map-art-campaign-2/run-6/e4-boneyard. Preserves mount and gameplay footprint; entry context is separate."
+    },
+    {
+      "id": "flivver-row-west-c",
+      "heroPositionXZ": [
+        -24.0,
+        23.0
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Render-only inspection station, measured in map-art-campaign-2/run-6/e4-boneyard. Preserves mount and gameplay footprint; entry context is separate."
+    },
+    {
+      "id": "spent-boiler-west",
+      "heroPositionXZ": [
+        -18.0,
+        -3.0
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Render-only inspection station, measured in map-art-campaign-2/run-6/e4-boneyard. Preserves mount and gameplay footprint; entry context is separate."
+    },
+    {
+      "id": "spent-boiler-east",
+      "heroPositionXZ": [
+        18.0,
+        -3.0
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Render-only inspection station, measured in map-art-campaign-2/run-6/e4-boneyard. Preserves mount and gameplay footprint; entry context is separate."
+    },
+    {
+      "id": "flivver-row-east-a",
+      "heroPositionXZ": [
+        24.0,
+        23.0
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Render-only inspection station, measured in map-art-campaign-2/run-6/e4-boneyard. Preserves mount and gameplay footprint; entry context is separate."
+    },
+    {
+      "id": "flivver-row-east-b",
+      "heroPositionXZ": [
+        36.0,
+        9.0
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Render-only inspection station, measured in map-art-campaign-2/run-6/e4-boneyard. Preserves mount and gameplay footprint; entry context is separate."
+    },
+    {
+      "id": "flivver-row-east-c",
+      "heroPositionXZ": [
+        48.0,
+        -7.0
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Render-only inspection station, measured in map-art-campaign-2/run-6/e4-boneyard. Preserves mount and gameplay footprint; entry context is separate."
+    },
+    {
+      "id": "hauler-bed-north-a",
+      "heroPositionXZ": [
+        -8.0,
+        39.0
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Render-only inspection station, measured in map-art-campaign-2/run-6/e4-boneyard. Preserves mount and gameplay footprint; entry context is separate."
+    },
+    {
+      "id": "hauler-bed-north-b",
+      "heroPositionXZ": [
+        8.0,
+        39.0
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Render-only inspection station, measured in map-art-campaign-2/run-6/e4-boneyard. Preserves mount and gameplay footprint; entry context is separate."
+    },
+    {
+      "id": "half-buried-sleeper",
+      "heroPositionXZ": [
+        34.0,
+        44.0
+      ],
+      "offsetFromMountXZ": [
+        0,
+        8
+      ],
+      "backMeters": 8,
+      "purpose": "Render-only inspection station, measured in map-art-campaign-2/run-6/e4-boneyard. Preserves mount and gameplay footprint; entry context is separate."
+    },
+    {
+      "id": "unmarked-wagon",
+      "heroPositionXZ": [
+        -38.0,
+        35.0
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Render-only inspection station, measured in map-art-campaign-2/run-6/e4-boneyard. Preserves mount and gameplay footprint; entry context is separate."
+    }
+  ]
 }

@@ -626,5 +626,163 @@
     "era": 4,
     "sourceLadder": "reuse > derive > build-new",
     "ownership": "separate mounted render-only GLBs; no simulation authority"
-  }
+  },
+  "landmarkAcceptanceStations": [
+    {
+      "id": "flivver-row-west-a",
+      "heroPositionXZ": [
+        -48.0,
+        -7.0
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Render-only inspection station, measured in map-art-campaign-2/run-6/e4-boneyard. Preserves mount and gameplay footprint; entry context is separate."
+    },
+    {
+      "id": "flivver-row-west-b",
+      "heroPositionXZ": [
+        -36.0,
+        9.0
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Render-only inspection station, measured in map-art-campaign-2/run-6/e4-boneyard. Preserves mount and gameplay footprint; entry context is separate."
+    },
+    {
+      "id": "flivver-row-west-c",
+      "heroPositionXZ": [
+        -24.0,
+        23.0
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Render-only inspection station, measured in map-art-campaign-2/run-6/e4-boneyard. Preserves mount and gameplay footprint; entry context is separate."
+    },
+    {
+      "id": "spent-boiler-west",
+      "heroPositionXZ": [
+        -18.0,
+        -3.0
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Render-only inspection station, measured in map-art-campaign-2/run-6/e4-boneyard. Preserves mount and gameplay footprint; entry context is separate."
+    },
+    {
+      "id": "spent-boiler-east",
+      "heroPositionXZ": [
+        18.0,
+        -3.0
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Render-only inspection station, measured in map-art-campaign-2/run-6/e4-boneyard. Preserves mount and gameplay footprint; entry context is separate."
+    },
+    {
+      "id": "flivver-row-east-a",
+      "heroPositionXZ": [
+        24.0,
+        23.0
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Render-only inspection station, measured in map-art-campaign-2/run-6/e4-boneyard. Preserves mount and gameplay footprint; entry context is separate."
+    },
+    {
+      "id": "flivver-row-east-b",
+      "heroPositionXZ": [
+        36.0,
+        9.0
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Render-only inspection station, measured in map-art-campaign-2/run-6/e4-boneyard. Preserves mount and gameplay footprint; entry context is separate."
+    },
+    {
+      "id": "flivver-row-east-c",
+      "heroPositionXZ": [
+        48.0,
+        -7.0
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Render-only inspection station, measured in map-art-campaign-2/run-6/e4-boneyard. Preserves mount and gameplay footprint; entry context is separate."
+    },
+    {
+      "id": "hauler-bed-north-a",
+      "heroPositionXZ": [
+        -8.0,
+        39.0
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Render-only inspection station, measured in map-art-campaign-2/run-6/e4-boneyard. Preserves mount and gameplay footprint; entry context is separate."
+    },
+    {
+      "id": "hauler-bed-north-b",
+      "heroPositionXZ": [
+        8.0,
+        39.0
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Render-only inspection station, measured in map-art-campaign-2/run-6/e4-boneyard. Preserves mount and gameplay footprint; entry context is separate."
+    },
+    {
+      "id": "half-buried-sleeper",
+      "heroPositionXZ": [
+        34.0,
+        44.0
+      ],
+      "offsetFromMountXZ": [
+        0,
+        8
+      ],
+      "backMeters": 8,
+      "purpose": "Render-only inspection station, measured in map-art-campaign-2/run-6/e4-boneyard. Preserves mount and gameplay footprint; entry context is separate."
+    },
+    {
+      "id": "unmarked-wagon",
+      "heroPositionXZ": [
+        -38.0,
+        35.0
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Render-only inspection station, measured in map-art-campaign-2/run-6/e4-boneyard. Preserves mount and gameplay footprint; entry context is separate."
+    }
+  ]
 }
