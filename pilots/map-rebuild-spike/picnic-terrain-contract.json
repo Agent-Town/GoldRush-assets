@@ -168,7 +168,10 @@
         1.0,
         1.0
       ],
-      "asset": "landmarks/picnic/picnic-staging-gate.glb"
+      "asset": "landmarks/picnic/picnic-staging-gate.glb",
+      "contractIds": [
+        "e6-picnic"
+      ]
     },
     {
       "id": "west-picnic-blanket",
@@ -187,7 +190,10 @@
         1.0,
         1.0
       ],
-      "asset": "landmarks/picnic/west-picnic-blanket.glb"
+      "asset": "landmarks/picnic/west-picnic-blanket.glb",
+      "contractIds": [
+        "e6-picnic"
+      ]
     },
     {
       "id": "center-picnic-blanket",
@@ -206,7 +212,10 @@
         1.0,
         1.0
       ],
-      "asset": "landmarks/picnic/center-picnic-blanket.glb"
+      "asset": "landmarks/picnic/center-picnic-blanket.glb",
+      "contractIds": [
+        "e6-picnic"
+      ]
     },
     {
       "id": "east-picnic-blanket",
@@ -225,7 +234,10 @@
         1.0,
         1.0
       ],
-      "asset": "landmarks/picnic/east-picnic-blanket.glb"
+      "asset": "landmarks/picnic/east-picnic-blanket.glb",
+      "contractIds": [
+        "e6-picnic"
+      ]
     },
     {
       "id": "mesa-civilian-shade",
@@ -244,7 +256,8 @@
         1.0,
         1.0
       ],
-      "asset": "landmarks/picnic/mesa-civilian-shade.glb"
+      "asset": "landmarks/picnic/mesa-civilian-shade.glb",
+      "contractIds": []
     }
   ],
   "landmarkPack": {
@@ -254,5 +267,66 @@
     "sourceLadder": "reuse > derive > build-new",
     "ownership": "separate mounted render-only GLBs; no simulation authority"
   },
-  "simulation": "reuse verdict only; terrain, collision, movement, placement, water, spawns, fog, and variant mechanics remain unchanged"
+  "simulation": "reuse verdict only; terrain, collision, movement, placement, water, spawns, fog, and variant mechanics remain unchanged",
+  "landmarkAcceptanceStations": [
+    {
+      "id": "picnic-staging-gate",
+      "heroPositionXZ": [
+        0.0,
+        -49.0
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Render-only inspection at full default zoom; measured in map-art-campaign-2/run-6/e6-picnic. Plain entry remains a separate acceptance surface."
+    },
+    {
+      "id": "west-picnic-blanket",
+      "heroPositionXZ": [
+        -16.0,
+        26.0
+      ],
+      "offsetFromMountXZ": [
+        0,
+        8
+      ],
+      "backMeters": 8,
+      "purpose": "Render-only inspection at full default zoom; measured in map-art-campaign-2/run-6/e6-picnic. Plain entry remains a separate acceptance surface."
+    },
+    {
+      "id": "center-picnic-blanket",
+      "heroPositionXZ": [
+        0.0,
+        34.0
+      ],
+      "offsetFromMountXZ": [
+        0,
+        8
+      ],
+      "backMeters": 8,
+      "purpose": "Render-only inspection at full default zoom; measured in map-art-campaign-2/run-6/e6-picnic. Plain entry remains a separate acceptance surface."
+    },
+    {
+      "id": "east-picnic-blanket",
+      "heroPositionXZ": [
+        16.0,
+        26.0
+      ],
+      "offsetFromMountXZ": [
+        0,
+        8
+      ],
+      "backMeters": 8,
+      "purpose": "Render-only inspection at full default zoom; measured in map-art-campaign-2/run-6/e6-picnic. Plain entry remains a separate acceptance surface."
+    }
+  ],
+  "mountInterlock": {
+    "activeBase": "Glow Mesa terrain, panorama, five original landmark bodies and all collision footprints are retained unchanged.",
+    "additionalDressing": "Three authored nonblocking blankets and the passable staging gate mount through the existing contractIds filter.",
+    "heldMounts": {
+      "mesa-civilian-shade": "Not mounted: the active e6-picnic collision alias selects Glow Mesa footprints, not this solid shade. Contract/collision owner must reconcile before this body is shown."
+    }
+  }
 }
