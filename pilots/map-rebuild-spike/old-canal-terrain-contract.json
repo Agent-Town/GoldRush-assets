@@ -404,5 +404,20 @@
     "era": 9,
     "sourceLadder": "reuse > derive > build-new",
     "ownership": "separate mounted render-only GLBs; no simulation authority"
-  }
+  },
+  "landmarkAcceptanceStations": [
+    {
+      "id": "canal-segment-b-marker",
+      "heroPositionXZ": [
+        2,
+        5
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Render-only marker inspection outside the 3.2 m decision prompt reach; ordinary entry at x0,z12 and rejected 3 m view are separately measured. No footprint or choice-state change."
+    }
+  ]
 }
