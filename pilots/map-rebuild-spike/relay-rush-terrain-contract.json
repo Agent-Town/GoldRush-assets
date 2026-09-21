@@ -110,7 +110,8 @@
         1.0,
         1.0
       ],
-      "asset": "landmarks/relay-rush/rush-start-horn.glb"
+      "asset": "landmarks/relay-rush/rush-start-horn.glb",
+      "contractIds": []
     },
     {
       "id": "rush-relay-r1-frame",
@@ -129,7 +130,10 @@
         1.0,
         1.0
       ],
-      "asset": "landmarks/relay-rush/rush-relay-r1-frame.glb"
+      "asset": "landmarks/relay-rush/rush-relay-r1-frame.glb",
+      "contractIds": [
+        "e7-relay-rush"
+      ]
     },
     {
       "id": "rush-relay-r2-frame",
@@ -148,7 +152,10 @@
         1.0,
         1.0
       ],
-      "asset": "landmarks/relay-rush/rush-relay-r2-frame.glb"
+      "asset": "landmarks/relay-rush/rush-relay-r2-frame.glb",
+      "contractIds": [
+        "e7-relay-rush"
+      ]
     },
     {
       "id": "rush-relay-r3-frame",
@@ -167,7 +174,10 @@
         1.0,
         1.0
       ],
-      "asset": "landmarks/relay-rush/rush-relay-r3-frame.glb"
+      "asset": "landmarks/relay-rush/rush-relay-r3-frame.glb",
+      "contractIds": [
+        "e7-relay-rush"
+      ]
     },
     {
       "id": "rush-relay-r4-frame",
@@ -186,7 +196,10 @@
         1.0,
         1.0
       ],
-      "asset": "landmarks/relay-rush/rush-relay-r4-frame.glb"
+      "asset": "landmarks/relay-rush/rush-relay-r4-frame.glb",
+      "contractIds": [
+        "e7-relay-rush"
+      ]
     }
   ],
   "landmarkPack": {
@@ -196,5 +209,92 @@
     "sourceLadder": "reuse > derive > build-new",
     "ownership": "separate mounted render-only GLBs; no simulation authority"
   },
-  "simulation": "reuse verdict only; terrain, collision, movement, placement, water, spawns, fog, and variant mechanics remain unchanged"
+  "simulation": "reuse verdict only; terrain, collision, movement, placement, water, spawns, fog, and variant mechanics remain unchanged",
+  "landmarkAcceptanceStations": [
+    {
+      "id": "rush-relay-r1-frame",
+      "heroPositionXZ": [
+        -45.0,
+        44.0
+      ],
+      "offsetFromMountXZ": [
+        0,
+        3
+      ],
+      "backMeters": 3,
+      "purpose": "Render-only inspection at full default zoom; measured in map-art-campaign-2/run-6/e7-relay-rush. Plain entry remains a separate acceptance surface."
+    },
+    {
+      "id": "rush-relay-r2-frame",
+      "heroPositionXZ": [
+        -25.0,
+        44.0
+      ],
+      "offsetFromMountXZ": [
+        0,
+        3
+      ],
+      "backMeters": 3,
+      "purpose": "Render-only inspection at full default zoom; measured in map-art-campaign-2/run-6/e7-relay-rush. Plain entry remains a separate acceptance surface."
+    },
+    {
+      "id": "rush-relay-r3-frame",
+      "heroPositionXZ": [
+        25.0,
+        44.0
+      ],
+      "offsetFromMountXZ": [
+        0,
+        3
+      ],
+      "backMeters": 3,
+      "purpose": "Render-only inspection at full default zoom; measured in map-art-campaign-2/run-6/e7-relay-rush. Plain entry remains a separate acceptance surface."
+    },
+    {
+      "id": "rush-relay-r4-frame",
+      "heroPositionXZ": [
+        45.0,
+        44.0
+      ],
+      "offsetFromMountXZ": [
+        0,
+        3
+      ],
+      "backMeters": 3,
+      "purpose": "Render-only inspection at full default zoom; measured in map-art-campaign-2/run-6/e7-relay-rush. Plain entry remains a separate acceptance surface."
+    },
+    {
+      "id": "west-ridge-dish-cluster",
+      "heroPositionXZ": [
+        -56,
+        33
+      ],
+      "offsetFromMountXZ": [
+        0,
+        3
+      ],
+      "backMeters": 3,
+      "purpose": "Retained Relay Valley body; Relay Rush inspection only, without a mount or footprint change."
+    },
+    {
+      "id": "dead-gap-charting-station",
+      "heroPositionXZ": [
+        0,
+        20
+      ],
+      "offsetFromMountXZ": [
+        0,
+        2
+      ],
+      "backMeters": 2,
+      "purpose": "Retained Relay Valley body; Relay Rush inspection only, without a mount or footprint change."
+    }
+  ],
+  "mountInterlock": {
+    "activeBase": "Relay Valley terrain, panorama, five original bodies and all active collision footprints are retained unchanged.",
+    "additionalDressing": "Four authored nonblocking relay frames mount through the existing contractIds filter. These frames do not write or imply a lit relay state.",
+    "heldMounts": {
+      "rush-start-horn": "Not mounted: the active Relay Rush collision alias selects Relay Valley footprints. Contract/collision owner must reconcile before this solid body is shown."
+    }
+  }
 }
