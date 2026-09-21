@@ -42,7 +42,10 @@
         ]
       },
       "sha256": "e377ee9d40ad9dfbe16d205a04ba8f5d47d4b041c7d993a5d89c14e7777d5ffc",
-      "footprint": {"kind":"radius","radius":0.864}
+      "footprint": {
+        "kind": "radius",
+        "radius": 0.864
+      }
     },
     "west-old-tool-cache": {
       "asset": "landmarks/dead-band/west-old-tool-cache.glb",
@@ -67,7 +70,11 @@
         ]
       },
       "sha256": "5642bc576e02c43f4d9e9030bc1279e99b450d7351f700f7dc699a306fa907dc",
-      "footprint": {"kind":"rect","w":4.862,"d":2.95}
+      "footprint": {
+        "kind": "rect",
+        "w": 4.862,
+        "d": 2.95
+      }
     },
     "east-old-tool-cache": {
       "asset": "landmarks/dead-band/east-old-tool-cache.glb",
@@ -92,7 +99,11 @@
         ]
       },
       "sha256": "498dd6bb66b612c164ec50c4354b7947a4ad817b734d466c780506d6db2f6ad8",
-      "footprint": {"kind":"rect","w":4.862,"d":2.95}
+      "footprint": {
+        "kind": "rect",
+        "w": 4.862,
+        "d": 2.95
+      }
     },
     "iron-shadow-warning-frame": {
       "asset": "landmarks/dead-band/iron-shadow-warning-frame.glb",
@@ -161,7 +172,8 @@
         1.0,
         1.0
       ],
-      "asset": "landmarks/dead-band/dead-band-yard-null-post.glb"
+      "asset": "landmarks/dead-band/dead-band-yard-null-post.glb",
+      "contractIds": []
     },
     {
       "id": "west-old-tool-cache",
@@ -180,7 +192,8 @@
         1.0,
         1.0
       ],
-      "asset": "landmarks/dead-band/west-old-tool-cache.glb"
+      "asset": "landmarks/dead-band/west-old-tool-cache.glb",
+      "contractIds": []
     },
     {
       "id": "east-old-tool-cache",
@@ -199,7 +212,8 @@
         1.0,
         1.0
       ],
-      "asset": "landmarks/dead-band/east-old-tool-cache.glb"
+      "asset": "landmarks/dead-band/east-old-tool-cache.glb",
+      "contractIds": []
     },
     {
       "id": "iron-shadow-warning-frame",
@@ -218,7 +232,10 @@
         1.0,
         1.0
       ],
-      "asset": "landmarks/dead-band/iron-shadow-warning-frame.glb"
+      "asset": "landmarks/dead-band/iron-shadow-warning-frame.glb",
+      "contractIds": [
+        "e7-dead-band"
+      ]
     },
     {
       "id": "north-silence-gate",
@@ -237,8 +254,61 @@
         1.0,
         1.0
       ],
-      "asset": "landmarks/dead-band/north-silence-gate.glb"
+      "asset": "landmarks/dead-band/north-silence-gate.glb",
+      "contractIds": [
+        "e7-dead-band"
+      ]
     }
   ],
-  "simulation": "none; terrain, collision, movement, placement, water, spawns, and fog remain unchanged"
+  "simulation": "none; terrain, collision, movement, placement, water, spawns, and fog remain unchanged",
+  "landmarkAcceptanceStations": [
+    {
+      "id": "iron-shadow-warning-frame",
+      "heroPositionXZ": [
+        0.0,
+        9.0
+      ],
+      "offsetFromMountXZ": [
+        0,
+        3
+      ],
+      "backMeters": 3,
+      "purpose": "Render-only inspection at full default zoom; measured in map-art-campaign-2/run-6/e7-dead-band. Plain entry remains a separate acceptance surface."
+    },
+    {
+      "id": "north-silence-gate",
+      "heroPositionXZ": [
+        0.0,
+        57.0
+      ],
+      "offsetFromMountXZ": [
+        0,
+        3
+      ],
+      "backMeters": 3,
+      "purpose": "Render-only inspection at full default zoom; measured in map-art-campaign-2/run-6/e7-dead-band. Plain entry remains a separate acceptance surface."
+    },
+    {
+      "id": "dead-gap-charting-station",
+      "heroPositionXZ": [
+        0,
+        20
+      ],
+      "offsetFromMountXZ": [
+        0,
+        2
+      ],
+      "backMeters": 2,
+      "purpose": "Retained Relay Valley body, measured at the Dead Band inspection station; no mount or footprint change."
+    }
+  ],
+  "mountInterlock": {
+    "activeBase": "Relay Valley terrain, panorama, five original landmark bodies and all active collision footprints are retained unchanged.",
+    "additionalDressing": "Two authored nonblocking frames mount through the existing contractIds filter.",
+    "heldMounts": {
+      "dead-band-yard-null-post": "Not mounted: the active Dead Band collision alias selects Relay Valley footprints. Contract/collision owner must reconcile before this solid body is shown.",
+      "west-old-tool-cache": "Not mounted: the active Dead Band collision alias selects Relay Valley footprints. Contract/collision owner must reconcile before this solid body is shown.",
+      "east-old-tool-cache": "Not mounted: the active Dead Band collision alias selects Relay Valley footprints. Contract/collision owner must reconcile before this solid body is shown."
+    }
+  }
 }
