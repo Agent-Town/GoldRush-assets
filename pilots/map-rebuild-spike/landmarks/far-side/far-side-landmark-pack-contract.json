@@ -66,7 +66,11 @@
         ]
       },
       "sha256": "13848b6e6b4ea80e2b00f92c2ae427b855384ac80a5bc0282855b3459864e2b0",
-      "footprint": {"kind":"rect","w":5.04,"d":3.6}
+      "footprint": {
+        "kind": "rect",
+        "w": 5.04,
+        "d": 3.6
+      }
     },
     "west-comms-shadow-marker": {
       "asset": "landmarks/far-side/west-comms-shadow-marker.glb",
@@ -91,7 +95,10 @@
         ]
       },
       "sha256": "1239d01afbe096faf0755e8f18c77ac20cf37337bec378fd34099a5ea362da5a",
-      "footprint": {"kind":"radius","radius":1.08}
+      "footprint": {
+        "kind": "radius",
+        "radius": 1.08
+      }
     },
     "east-suit-cache-rack": {
       "asset": "landmarks/far-side/east-suit-cache-rack.glb",
@@ -116,7 +123,11 @@
         ]
       },
       "sha256": "e57e1d8b6e9a77ed139289b1533248f6a846f5421f6cb9bd743bac8714f8bbfd",
-      "footprint": {"kind":"rect","w":5.04,"d":2.52}
+      "footprint": {
+        "kind": "rect",
+        "w": 5.04,
+        "d": 2.52
+      }
     },
     "far-horizon-listening-post": {
       "asset": "landmarks/far-side/far-horizon-listening-post.glb",
@@ -141,7 +152,10 @@
         ]
       },
       "sha256": "e6a1934ae2c2dc5515c4d165ddd2d04026d9f835e3024c82c452264369d80710",
-      "footprint": {"kind":"radius","radius":1.512}
+      "footprint": {
+        "kind": "radius",
+        "radius": 1.512
+      }
     }
   },
   "mounts": [
@@ -162,7 +176,10 @@
         1.0,
         1.0
       ],
-      "asset": "landmarks/far-side/far-side-landing-frame.glb"
+      "asset": "landmarks/far-side/far-side-landing-frame.glb",
+      "contractIds": [
+        "e8-far-side"
+      ]
     },
     {
       "id": "probe-recovery-cradle",
@@ -181,7 +198,8 @@
         1.0,
         1.0
       ],
-      "asset": "landmarks/far-side/probe-recovery-cradle.glb"
+      "asset": "landmarks/far-side/probe-recovery-cradle.glb",
+      "contractIds": []
     },
     {
       "id": "west-comms-shadow-marker",
@@ -200,7 +218,8 @@
         1.0,
         1.0
       ],
-      "asset": "landmarks/far-side/west-comms-shadow-marker.glb"
+      "asset": "landmarks/far-side/west-comms-shadow-marker.glb",
+      "contractIds": []
     },
     {
       "id": "east-suit-cache-rack",
@@ -219,7 +238,8 @@
         1.0,
         1.0
       ],
-      "asset": "landmarks/far-side/east-suit-cache-rack.glb"
+      "asset": "landmarks/far-side/east-suit-cache-rack.glb",
+      "contractIds": []
     },
     {
       "id": "far-horizon-listening-post",
@@ -238,8 +258,47 @@
         1.0,
         1.0
       ],
-      "asset": "landmarks/far-side/far-horizon-listening-post.glb"
+      "asset": "landmarks/far-side/far-horizon-listening-post.glb",
+      "contractIds": []
     }
   ],
-  "simulation": "none; terrain, collision, movement, placement, water, spawns, and fog remain unchanged"
+  "simulation": "none; terrain, collision, movement, placement, water, spawns, and fog remain unchanged",
+  "landmarkAcceptanceStations": [
+    {
+      "id": "far-side-landing-frame",
+      "heroPositionXZ": [
+        0,
+        -37
+      ],
+      "offsetFromMountXZ": [
+        0,
+        3
+      ],
+      "backMeters": 3,
+      "purpose": "Render-only inspection at full default zoom; ordinary entry remains separately measured."
+    },
+    {
+      "id": "earthrise-listening-array",
+      "heroPositionXZ": [
+        0,
+        59
+      ],
+      "offsetFromMountXZ": [
+        0,
+        3
+      ],
+      "backMeters": 3,
+      "purpose": "Retained Mare Claim body; Far Side-only inspection station without moving its mount or footprint."
+    }
+  ],
+  "mountInterlock": {
+    "activeBase": "Mare Claim sculpt, panorama, five selected original bodies and active collision footprints are retained unchanged.",
+    "additionalDressing": "Only the authored nonblocking landing frame is selected.",
+    "heldMounts": {
+      "probe-recovery-cradle": "Not mounted: Far Side collision aliases Mare Claim. Contract/collision owner must reconcile this solid footprint before showing the body.",
+      "west-comms-shadow-marker": "Not mounted: Far Side collision aliases Mare Claim. Contract/collision owner must reconcile this solid footprint before showing the body.",
+      "east-suit-cache-rack": "Not mounted: Far Side collision aliases Mare Claim. Contract/collision owner must reconcile this solid footprint before showing the body.",
+      "far-horizon-listening-post": "Not mounted: Far Side collision aliases Mare Claim. Contract/collision owner must reconcile this solid footprint before showing the body."
+    }
+  }
 }
