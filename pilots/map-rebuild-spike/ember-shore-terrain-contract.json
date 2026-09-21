@@ -364,5 +364,72 @@
     "era": 10,
     "sourceLadder": "reuse > derive > build-new",
     "ownership": "separate mounted render-only GLBs; no simulation authority"
-  }
+  },
+  "landmarkAcceptanceStations": [
+    {
+      "id": "last-warm-vent-altar",
+      "heroPositionXZ": [
+        3.0,
+        -5.0
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Declared inspection with normal HUD; ordinary entry is measured separately."
+    },
+    {
+      "id": "cooled-titan-shelf",
+      "heroPositionXZ": [
+        26.0,
+        39.0
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Declared inspection with normal HUD; ordinary entry is measured separately."
+    },
+    {
+      "id": "west-vein-cooling-marker",
+      "heroPositionXZ": [
+        -36.0,
+        23.0
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Declared inspection with normal HUD; ordinary entry is measured separately."
+    },
+    {
+      "id": "center-vein-bridge-school",
+      "heroPositionXZ": [
+        -12.0,
+        29.0
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Declared inspection with normal HUD; ordinary entry is measured separately."
+    },
+    {
+      "id": "shore-preserve-rack",
+      "heroPositionXZ": [
+        48.0,
+        -23.0
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Declared inspection with normal HUD; ordinary entry is measured separately."
+    }
+  ]
 }

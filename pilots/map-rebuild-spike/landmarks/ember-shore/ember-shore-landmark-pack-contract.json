@@ -18,7 +18,7 @@
   },
   "blend": {
     "asset": "landmarks/ember-shore/ember-shore-landmarks.blend",
-    "sha256": "373f02269ffbc2aaf277c5bbff6d1f0310ed81eaa31737dc3fcb01f68ea2799e"
+    "sha256": "acf041facb734f4fd61a17f574ba1bdcb150f23f182414a0c229c7e0547de0f4"
   },
   "assets": {
     "last-warm-vent-altar": {
@@ -51,13 +51,14 @@
     },
     "cooled-titan-shelf": {
       "asset": "landmarks/ember-shore/cooled-titan-shelf.glb",
-      "sourceTier": "reuse",
+      "sourceTier": "derive",
       "sources": [
         "assets/pilots/plaza-props-3d/engine-glow-idle.e10.glb",
-        "assets/raw/plate-e10-worlds.png"
+        "assets/raw/plate-e10-worlds.png",
+        "assets/raw/plate-contract-e10-ember-shore.png"
       ],
       "terrainConformed": false,
-      "triangles": 908,
+      "triangles": 2356,
       "triangleBudget": 3000,
       "bounds": {
         "min": [
@@ -71,11 +72,16 @@
           2.5
         ]
       },
-      "sha256": "c042ace708d89ac129287f989d5e31d069d09d1b686a01fafaa092cde3199a2b",
+      "sha256": "8fb07dfc4f414e4f1f1e684a5d91e66060ee15a088a482258820e80cffb1a6ba",
       "footprint": {
         "kind": "rect",
         "w": 4.608,
         "d": 3.168
+      },
+      "artRevision": {
+        "recipe": "rebuild_ember_titan.py",
+        "baseBlendSha256": "373f02269ffbc2aaf277c5bbff6d1f0310ed81eaa31737dc3fcb01f68ea2799e",
+        "change": "Cooled mechanical hull and articulated recovery arms within the exact prior envelope. Octagonal footing area reduced 29.29%; no new collision."
       }
     },
     "west-vein-cooling-marker": {
@@ -261,5 +267,72 @@
   ],
   "simulation": "none; terrain, collision, movement, placement, water, spawns, and fog remain unchanged",
   "mountInterlock": "resolved-3d-d",
-  "recipe": "assets/pilots/map-rebuild-spike/build_ember_landmarks.py"
+  "recipe": "assets/pilots/map-rebuild-spike/build_ember_landmarks.py",
+  "landmarkAcceptanceStations": [
+    {
+      "id": "last-warm-vent-altar",
+      "heroPositionXZ": [
+        3.0,
+        -5.0
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Declared inspection with normal HUD; ordinary entry is measured separately."
+    },
+    {
+      "id": "cooled-titan-shelf",
+      "heroPositionXZ": [
+        26.0,
+        39.0
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Declared inspection with normal HUD; ordinary entry is measured separately."
+    },
+    {
+      "id": "west-vein-cooling-marker",
+      "heroPositionXZ": [
+        -36.0,
+        23.0
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Declared inspection with normal HUD; ordinary entry is measured separately."
+    },
+    {
+      "id": "center-vein-bridge-school",
+      "heroPositionXZ": [
+        -12.0,
+        29.0
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Declared inspection with normal HUD; ordinary entry is measured separately."
+    },
+    {
+      "id": "shore-preserve-rack",
+      "heroPositionXZ": [
+        48.0,
+        -23.0
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Declared inspection with normal HUD; ordinary entry is measured separately."
+    }
+  ]
 }

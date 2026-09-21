@@ -565,10 +565,11 @@
         "asset": "landmarks/ember-shore/last-warm-vent-altar.glb"
       },
       "cooled-titan-shelf": {
-        "sourceTier": "reuse",
+        "sourceTier": "derive",
         "sources": [
           "assets/pilots/plaza-props-3d/engine-glow-idle.e10.glb",
-          "assets/raw/plate-e10-worlds.png"
+          "assets/raw/plate-e10-worlds.png",
+          "assets/raw/plate-contract-e10-ember-shore.png"
         ],
         "asset": "landmarks/ember-shore/cooled-titan-shelf.glb"
       },
