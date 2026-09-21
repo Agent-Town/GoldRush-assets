@@ -66,7 +66,11 @@
         ]
       },
       "sha256": "aa11a885b7bedc2468dd3e1502abe2c960771690b23d662664eeac431df1bdf9",
-      "footprint": {"kind":"rect","w":3.125,"d":2.563}
+      "footprint": {
+        "kind": "rect",
+        "w": 3.125,
+        "d": 2.563
+      }
     },
     "east-hollow-warning-pylon": {
       "asset": "landmarks/half-life-hollow/east-hollow-warning-pylon.glb",
@@ -91,7 +95,11 @@
         ]
       },
       "sha256": "15a7000e57b64cbea2b7d9b1fadda77ccbae5e661d0985ae69e9e1b2a0ab7b87",
-      "footprint": {"kind":"rect","w":3.125,"d":2.563}
+      "footprint": {
+        "kind": "rect",
+        "w": 3.125,
+        "d": 2.563
+      }
     },
     "expired-appliance-convoy": {
       "asset": "landmarks/half-life-hollow/expired-appliance-convoy.glb",
@@ -116,7 +124,11 @@
         ]
       },
       "sha256": "ac0b0aa1d8bbccbe3a923fc904ef66bbe72aa82007ece8be472572b1c26231e0",
-      "footprint": {"kind":"rect","w":7.18,"d":3.83}
+      "footprint": {
+        "kind": "rect",
+        "w": 7.18,
+        "d": 3.83
+      }
     },
     "north-extraction-gantry": {
       "asset": "landmarks/half-life-hollow/north-extraction-gantry.glb",
@@ -141,7 +153,11 @@
         ]
       },
       "sha256": "60596861547f2959a943ccce9fe7e68607b45fa561d18fc57d888183d750a9b8",
-      "footprint": {"kind":"rect","w":7.623,"d":2.673}
+      "footprint": {
+        "kind": "rect",
+        "w": 7.623,
+        "d": 2.673
+      }
     }
   },
   "mounts": [
@@ -242,5 +258,72 @@
     }
   ],
   "simulation": "none; terrain, collision, movement, placement, water, spawns, and fog remain unchanged",
-  "mountInterlock": "resolved-3d-d"
+  "mountInterlock": "resolved-3d-d",
+  "landmarkAcceptanceStations": [
+    {
+      "id": "south-countdown-gate",
+      "heroPositionXZ": [
+        0.0,
+        -54.0
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Render-only inspection at full default zoom; HUD and projected bounds measured in map-art-campaign-2/run-6/e6-half-life-hollow. Plain entry remains a separate acceptance surface."
+    },
+    {
+      "id": "west-hollow-warning-pylon",
+      "heroPositionXZ": [
+        -52.0,
+        -12.0
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Render-only inspection at full default zoom; HUD and projected bounds measured in map-art-campaign-2/run-6/e6-half-life-hollow. Plain entry remains a separate acceptance surface."
+    },
+    {
+      "id": "east-hollow-warning-pylon",
+      "heroPositionXZ": [
+        52.0,
+        25.0
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Render-only inspection at full default zoom; HUD and projected bounds measured in map-art-campaign-2/run-6/e6-half-life-hollow. Plain entry remains a separate acceptance surface."
+    },
+    {
+      "id": "expired-appliance-convoy",
+      "heroPositionXZ": [
+        -48.0,
+        48.0
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Render-only inspection at full default zoom; HUD and projected bounds measured in map-art-campaign-2/run-6/e6-half-life-hollow. Plain entry remains a separate acceptance surface."
+    },
+    {
+      "id": "north-extraction-gantry",
+      "heroPositionXZ": [
+        36.0,
+        55.0
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Render-only inspection at full default zoom; HUD and projected bounds measured in map-art-campaign-2/run-6/e6-half-life-hollow. Plain entry remains a separate acceptance surface."
+    }
+  ]
 }
