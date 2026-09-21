@@ -370,5 +370,20 @@
     "era": 8,
     "sourceLadder": "reuse > derive > build-new",
     "ownership": "separate mounted render-only GLBs; no simulation authority"
-  }
+  },
+  "landmarkAcceptanceStations": [
+    {
+      "id": "claw-carcass-rig",
+      "heroPositionXZ": [
+        0,
+        3
+      ],
+      "offsetFromMountXZ": [
+        0,
+        3
+      ],
+      "backMeters": 3,
+      "purpose": "Render-only inspection at full default zoom, outside the existing 4.608 m deep footprint; ordinary 12 m entry remains separately measured."
+    }
+  ]
 }

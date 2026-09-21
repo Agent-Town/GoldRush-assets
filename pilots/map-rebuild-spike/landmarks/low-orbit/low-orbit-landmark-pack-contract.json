@@ -16,7 +16,7 @@
   },
   "blend": {
     "asset": "landmarks/low-orbit/low-orbit-landmarks.blend",
-    "sha256": "9fc9c17e6577a832898129fe22ac2e5c8d847d9b49397cb6b8948d5e37939496"
+    "sha256": "ba3425a1bbe1ce389102b1a2c0094ecafe0008c042a6bdb7fefd31b011c789e3"
   },
   "assets": {
     "west-scaffold-handhold-frame": {
@@ -51,7 +51,7 @@
         "assets/raw/plate-e8-boss-salvage-kings-claw.png"
       ],
       "terrainConformed": false,
-      "triangles": 2360,
+      "triangles": 2972,
       "triangleBudget": 3000,
       "bounds": {
         "min": [
@@ -65,8 +65,22 @@
           6.63
         ]
       },
-      "sha256": "505afe0564731da2317b0f0ec5c2f61821d6cc8a72cd1dc5a0cadb8228f3d118",
-      "footprint": {"kind":"rect","w":6.117,"d":4.608}
+      "sha256": "8d6dbf8259826812b01e01cc135ce42cda78554db52cab79d3cd7716edd198ae",
+      "footprint": {
+        "kind": "rect",
+        "w": 6.117,
+        "d": 4.608
+      },
+      "artRevision": {
+        "date": "2026-09-21",
+        "source": "dress_low_orbit_station.py",
+        "baseBlendSha256": "9fc9c17e6577a832898129fe22ac2e5c8d847d9b49397cb6b8948d5e37939496",
+        "change": "Retain crane/claws; replace rectangular stage with chamfered base; add annular recovery housing with dark recess and cylindrical UVs, ribs, pressure cells, open service ring, couplings and suspension braces within original bounds.",
+        "trianglesBefore": 2360,
+        "trianglesAfter": 2972,
+        "oneSharedAtlasAndMaterial": true,
+        "collisionFootprintUnchanged": true
+      }
     },
     "east-scaffold-handhold-frame": {
       "asset": "landmarks/low-orbit/east-scaffold-handhold-frame.glb",
@@ -115,7 +129,11 @@
         ]
       },
       "sha256": "b28f13a149e1a4783738893c2f4d989626de69619968efd315528f519bc5b3d2",
-      "footprint": {"kind":"rect","w":3.744,"d":3.024}
+      "footprint": {
+        "kind": "rect",
+        "w": 3.744,
+        "d": 3.024
+      }
     },
     "south-return-beacon": {
       "asset": "landmarks/low-orbit/south-return-beacon.glb",
@@ -140,7 +158,11 @@
         ]
       },
       "sha256": "06d02201ad02e7825e2d94a8735be3488ae155bb5cf62330f0fe16efe8e717e2",
-      "footprint": {"kind":"rect","w":3.312,"d":2.592}
+      "footprint": {
+        "kind": "rect",
+        "w": 3.312,
+        "d": 2.592
+      }
     }
   },
   "mounts": [
@@ -241,5 +263,20 @@
     }
   ],
   "simulation": "none; terrain, collision, movement, placement, water, spawns, and fog remain unchanged",
-  "mountInterlock": "resolved-3d-d"
+  "mountInterlock": "resolved-3d-d",
+  "landmarkAcceptanceStations": [
+    {
+      "id": "claw-carcass-rig",
+      "heroPositionXZ": [
+        0,
+        3
+      ],
+      "offsetFromMountXZ": [
+        0,
+        3
+      ],
+      "backMeters": 3,
+      "purpose": "Render-only inspection at full default zoom, outside the existing 4.608 m deep footprint; ordinary 12 m entry remains separately measured."
+    }
+  ]
 }
