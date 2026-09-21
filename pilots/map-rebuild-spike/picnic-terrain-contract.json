@@ -257,7 +257,9 @@
         1.0
       ],
       "asset": "landmarks/picnic/mesa-civilian-shade.glb",
-      "contractIds": []
+      "contractIds": [
+        "e6-picnic"
+      ]
     }
   ],
   "landmarkPack": {
@@ -325,8 +327,7 @@
   "mountInterlock": {
     "activeBase": "Glow Mesa terrain, panorama, five original landmark bodies and all collision footprints are retained unchanged.",
     "additionalDressing": "Three authored nonblocking blankets and the passable staging gate mount through the existing contractIds filter.",
-    "heldMounts": {
-      "mesa-civilian-shade": "Not mounted: the active e6-picnic collision alias selects Glow Mesa footprints, not this solid shade. Contract/collision owner must reconcile before this body is shown."
-    }
+    "heldMounts": {},
+    "additionalSolids": "Owner ruling F-CORR4-2, 2026-09-22: mesa-civilian-shade. Mounted at the registered transforms; variant footprints supplement the unchanged parent blockers."
   }
 }
