@@ -552,5 +552,20 @@
     "era": 9,
     "sourceLadder": "reuse > derive > build-new",
     "ownership": "separate mounted render-only GLBs; no simulation authority"
-  }
+  },
+  "landmarkAcceptanceStations": [
+    {
+      "id": "canal-gate-works",
+      "heroPositionXZ": [
+        -18,
+        25
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Render-only lock-wheel inspection at full default zoom; ordinary entry measured separately, no station moves a mount."
+    }
+  ]
 }
