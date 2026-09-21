@@ -389,5 +389,20 @@
     "era": 9,
     "sourceLadder": "reuse > derive > build-new",
     "ownership": "separate mounted render-only GLBs; no simulation authority"
-  }
+  },
+  "landmarkAcceptanceStations": [
+    {
+      "id": "center-seed-vault",
+      "heroPositionXZ": [
+        0,
+        6
+      ],
+      "offsetFromMountXZ": [
+        0,
+        3
+      ],
+      "backMeters": 3,
+      "purpose": "Render-only seed-vault inspection at full default zoom, outside the unchanged 3.103 m deep footprint; ordinary 9 m entry is separately measured."
+    }
+  ]
 }
