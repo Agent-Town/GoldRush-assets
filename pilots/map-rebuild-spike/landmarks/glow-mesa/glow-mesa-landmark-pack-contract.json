@@ -42,7 +42,11 @@
         ]
       },
       "sha256": "496db05f64cef228e9058ba5180122e74ba0b438989887059e5e243c3e195e5e",
-      "footprint": {"kind":"rect","w":4.032,"d":2.811}
+      "footprint": {
+        "kind": "rect",
+        "w": 4.032,
+        "d": 2.811
+      }
     },
     "six-vein-control-pylon": {
       "asset": "landmarks/glow-mesa/six-vein-control-pylon.glb",
@@ -67,7 +71,11 @@
         ]
       },
       "sha256": "83ce7cf256e60f2c8d5b5cd8e11e9638f7f83ea1bb8a41d42c8dd749f2a7c215",
-      "footprint": {"kind":"rect","w":3.024,"d":2.448}
+      "footprint": {
+        "kind": "rect",
+        "w": 3.024,
+        "d": 2.448
+      }
     },
     "isotope-cooling-rack": {
       "asset": "landmarks/glow-mesa/isotope-cooling-rack.glb",
@@ -92,7 +100,11 @@
         ]
       },
       "sha256": "2b86f02d589b8dd3868621d5e0b66cc2eeb3a05536bf561b8afbf8647590256a",
-      "footprint": {"kind":"rect","w":4.896,"d":2.736}
+      "footprint": {
+        "kind": "rect",
+        "w": 4.896,
+        "d": 2.736
+      }
     },
     "west-herd-glow-gate": {
       "asset": "landmarks/glow-mesa/west-herd-glow-gate.glb",
@@ -239,5 +251,72 @@
     }
   ],
   "simulation": "none; terrain, collision, movement, placement, water, spawns, and fog remain unchanged",
-  "mountInterlock": "resolved-3d-d"
+  "mountInterlock": "resolved-3d-d",
+  "landmarkAcceptanceStations": [
+    {
+      "id": "mesa-starstone-derrick",
+      "heroPositionXZ": [
+        -56.0,
+        53.0
+      ],
+      "offsetFromMountXZ": [
+        0,
+        3
+      ],
+      "backMeters": 3,
+      "purpose": "Render-only inspection at full default zoom; HUD and projected bounds measured in map-art-campaign-2/run-6/e6-glow-mesa. Plain entry remains a separate acceptance surface."
+    },
+    {
+      "id": "six-vein-control-pylon",
+      "heroPositionXZ": [
+        0.0,
+        -2.0
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Render-only inspection at full default zoom; HUD and projected bounds measured in map-art-campaign-2/run-6/e6-glow-mesa. Plain entry remains a separate acceptance surface."
+    },
+    {
+      "id": "isotope-cooling-rack",
+      "heroPositionXZ": [
+        28.0,
+        -54.0
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Render-only inspection at full default zoom; HUD and projected bounds measured in map-art-campaign-2/run-6/e6-glow-mesa. Plain entry remains a separate acceptance surface."
+    },
+    {
+      "id": "west-herd-glow-gate",
+      "heroPositionXZ": [
+        -56.0,
+        21.0
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Render-only inspection at full default zoom; HUD and projected bounds measured in map-art-campaign-2/run-6/e6-glow-mesa. Plain entry remains a separate acceptance surface."
+    },
+    {
+      "id": "east-herd-glow-gate",
+      "heroPositionXZ": [
+        56.0,
+        21.0
+      ],
+      "offsetFromMountXZ": [
+        0,
+        5
+      ],
+      "backMeters": 5,
+      "purpose": "Render-only inspection at full default zoom; HUD and projected bounds measured in map-art-campaign-2/run-6/e6-glow-mesa. Plain entry remains a separate acceptance surface."
+    }
+  ]
 }
