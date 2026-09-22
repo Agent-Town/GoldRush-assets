@@ -1,0 +1,79 @@
+{
+  "asset": "river-panorama.glb",
+  "map": "river",
+  "renderOnly": true,
+  "style": "Low irregular distant ridges and warm dawn sky, sampled from the existing River plate.",
+  "meshCount": 1,
+  "primitiveCount": 1,
+  "materialCount": 1,
+  "vertices": 640,
+  "triangles": 1024,
+  "triangleBudget": 4000,
+  "boundsMeters": {
+    "min": [
+      -190.0,
+      -190.0,
+      -8.0
+    ],
+    "max": [
+      190.0,
+      190.0,
+      115.0
+    ]
+  },
+  "sha256": "62b24dadfa8072de564fda9b562ff27ae20209aa9818ac0ce471d9840a8239c5",
+  "texture": {
+    "count": 1,
+    "width": 1672,
+    "height": 941,
+    "embedded": true
+  },
+  "mount": {
+    "id": "river-panorama",
+    "asset": "river-panorama.glb",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ],
+    "renderOnly": true,
+    "ownership": "Separate dawn panorama beyond the original 128 m square; no playable extension."
+  },
+  "projection": {
+    "skyRingRadiusMeters": 190,
+    "skyBottomMeters": -8,
+    "skyTopMeters": 115,
+    "groundSkirtInnerBoundaryMeters": {
+      "shape": "circle",
+      "radius": 120
+    },
+    "continuation": "Existing renderer edge continuation, with the River bank pigment."
+  },
+  "sourceArt": [
+    "assets/raw/plate-contract-e10-river.png"
+  ],
+  "files": {
+    "blend": {
+      "bytes": 4109694,
+      "sha256": "448d9b54ac6b69d566874652fe165b6476421166e76f5da9cc4628f59c62a1e4"
+    },
+    "glb": {
+      "bytes": 3620024,
+      "sha256": "62b24dadfa8072de564fda9b562ff27ae20209aa9818ac0ce471d9840a8239c5"
+    },
+    "atlas": {
+      "bytes": 3591800,
+      "sha256": "8e87399729c5aaca4ae52d016d0eb99f5b42c5bc0aed461dc8e6623d48914706"
+    }
+  }
+}

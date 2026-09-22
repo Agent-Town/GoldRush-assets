@@ -1717,6 +1717,48 @@
         ],
         "asset": "landmarks/last-claim/stern-memory-arch.glb"
       }
+    },
+    "river": {
+      "south-west-shore": {
+        "sourceTier": "build-new",
+        "sources": [
+          "assets/raw/plate-contract-e10-river.png",
+          "assets/pilots/map-rebuild-spike/landmarks/twin-banks/twin-banks-landmarks-atlas.png"
+        ],
+        "asset": "landmarks/river/south-west-shore.glb"
+      },
+      "south-east-shore": {
+        "sourceTier": "build-new",
+        "sources": [
+          "assets/raw/plate-contract-e10-river.png",
+          "assets/pilots/map-rebuild-spike/landmarks/twin-banks/twin-banks-landmarks-atlas.png"
+        ],
+        "asset": "landmarks/river/south-east-shore.glb"
+      },
+      "north-west-shore": {
+        "sourceTier": "build-new",
+        "sources": [
+          "assets/raw/plate-contract-e10-river.png",
+          "assets/pilots/map-rebuild-spike/landmarks/twin-banks/twin-banks-landmarks-atlas.png"
+        ],
+        "asset": "landmarks/river/north-west-shore.glb"
+      },
+      "north-east-shore": {
+        "sourceTier": "build-new",
+        "sources": [
+          "assets/raw/plate-contract-e10-river.png",
+          "assets/pilots/map-rebuild-spike/landmarks/twin-banks/twin-banks-landmarks-atlas.png"
+        ],
+        "asset": "landmarks/river/north-east-shore.glb"
+      },
+      "ford-wet-stones": {
+        "sourceTier": "build-new",
+        "sources": [
+          "assets/raw/plate-contract-e10-river.png",
+          "assets/pilots/map-rebuild-spike/landmarks/twin-banks/twin-banks-landmarks-atlas.png"
+        ],
+        "asset": "landmarks/river/ford-wet-stones.glb"
+      }
     }
   }
 }

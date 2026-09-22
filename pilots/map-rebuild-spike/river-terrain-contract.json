@@ -1,0 +1,337 @@
+{
+  "asset": "river-terrain.glb",
+  "contractId": "e10-river",
+  "tileId": "frontier-river-claim",
+  "renderOnly": true,
+  "simulation": "Planar and unchanged. Zero collision mounts; river, ford, water, credits zone, spawn and build rules preserved.",
+  "heightSocket": "Terrain.visualY",
+  "theme": "Quiet dawn river, irregular low wet-stone shores, open center ford.",
+  "meshCount": 1,
+  "primitiveCount": 1,
+  "materialCount": 1,
+  "vertices": 16641,
+  "triangles": 32768,
+  "triangleBudget": 60000,
+  "boundsMeters": {
+    "min": [
+      -64.0,
+      -64.0,
+      -0.24656644463539124
+    ],
+    "max": [
+      64.0,
+      64.0,
+      1.096054196357727
+    ]
+  },
+  "sha256": "6eb8b636cb9dc5cd972d09b353899f162e052d9417c861c8dc38986cd6410b0f",
+  "texture": {
+    "count": 1,
+    "width": 448,
+    "height": 448,
+    "embedded": true
+  },
+  "maskTable": "assets/contracts/epoch-10-deepsky/mask-tables/e10-river.json",
+  "maskTruth": {
+    "source": "assets/contracts/epoch-10-deepsky/contracts.json; lore/STORYBOOK.md:597-600",
+    "tileId": "frontier-river-claim",
+    "size": 128,
+    "dimensions": {
+      "width": 128,
+      "height": 128
+    },
+    "river": true,
+    "ford": true,
+    "fords": [
+      {
+        "id": "center-ford",
+        "x": 0,
+        "halfWidth": 3
+      }
+    ],
+    "buildZones": [],
+    "stakeMarkers": [],
+    "rails": [],
+    "waterSources": [],
+    "harvestAnchors": [],
+    "heightfield": {
+      "id": "frontier-river-claim",
+      "mode": "visual"
+    },
+    "water": {
+      "id": "frontier-river-depth",
+      "visualHalfWidth": 6.25,
+      "depths": {
+        "river": 1.25,
+        "ford": 0.35,
+        "shallows": 0.2,
+        "springPond": 0.2
+      },
+      "speedMul": {
+        "river": 0.55,
+        "ford": 0.85,
+        "shallows": 0.8,
+        "springPond": 0.8
+      },
+      "heroCanWadeDeep": true
+    },
+    "riverBand": {
+      "id": "credits-river",
+      "minX": -64,
+      "maxX": 64,
+      "minZ": -5,
+      "maxZ": 5
+    },
+    "creditsRiverZone": {
+      "id": "credits-gold-flecks",
+      "description": "Credits names surface here as gold flecks, one by one.",
+      "minX": -54,
+      "maxX": 54,
+      "minZ": -5,
+      "maxZ": 5
+    },
+    "lanes": {
+      "spawnEdges": [],
+      "territoryRingBiasWaves": 0,
+      "territoryRingLaneBias": 0
+    },
+    "spawnGates": []
+  },
+  "waterAgreement": {
+    "river": true,
+    "ford": true,
+    "riverBand": {
+      "id": "credits-river",
+      "minX": -64,
+      "maxX": 64,
+      "minZ": -5,
+      "maxZ": 5
+    },
+    "waterSources": [],
+    "water": {
+      "id": "frontier-river-depth",
+      "visualHalfWidth": 6.25,
+      "depths": {
+        "river": 1.25,
+        "ford": 0.35,
+        "shallows": 0.2,
+        "springPond": 0.2
+      },
+      "speedMul": {
+        "river": 0.55,
+        "ford": 0.85,
+        "shallows": 0.8,
+        "springPond": 0.8
+      },
+      "heroCanWadeDeep": true
+    }
+  },
+  "panoramaMount": {
+    "id": "river-panorama",
+    "asset": "river-panorama.glb",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ],
+    "renderOnly": true,
+    "ownership": "Separate dawn panorama beyond the original 128 m square; no playable extension."
+  },
+  "landmarkMounts": [
+    {
+      "id": "south-west-shore",
+      "asset": "landmarks/river/south-west-shore.glb",
+      "position": [
+        -18,
+        0,
+        7.3
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "south-east-shore",
+      "asset": "landmarks/river/south-east-shore.glb",
+      "position": [
+        18,
+        0,
+        7.3
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "north-west-shore",
+      "asset": "landmarks/river/north-west-shore.glb",
+      "position": [
+        -18,
+        0,
+        -7.3
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "north-east-shore",
+      "asset": "landmarks/river/north-east-shore.glb",
+      "position": [
+        18,
+        0,
+        -7.3
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "ford-wet-stones",
+      "asset": "landmarks/river/ford-wet-stones.glb",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    }
+  ],
+  "landmarkAcceptanceStations": [
+    {
+      "id": "south-west-shore",
+      "heroPositionXZ": [
+        -18,
+        15.3
+      ],
+      "offsetFromMountXZ": [
+        0,
+        8
+      ],
+      "backMeters": 8,
+      "purpose": "Labelled shoreline inspection, separate from ordinary entry."
+    },
+    {
+      "id": "south-east-shore",
+      "heroPositionXZ": [
+        18,
+        15.3
+      ],
+      "offsetFromMountXZ": [
+        0,
+        8
+      ],
+      "backMeters": 8,
+      "purpose": "Labelled shoreline inspection, separate from ordinary entry."
+    },
+    {
+      "id": "north-west-shore",
+      "heroPositionXZ": [
+        -18,
+        0.7000000000000002
+      ],
+      "offsetFromMountXZ": [
+        0,
+        8
+      ],
+      "backMeters": 8,
+      "purpose": "Labelled shoreline inspection, separate from ordinary entry."
+    },
+    {
+      "id": "north-east-shore",
+      "heroPositionXZ": [
+        18,
+        0.7000000000000002
+      ],
+      "offsetFromMountXZ": [
+        0,
+        8
+      ],
+      "backMeters": 8,
+      "purpose": "Labelled shoreline inspection, separate from ordinary entry."
+    },
+    {
+      "id": "ford-wet-stones",
+      "heroPositionXZ": [
+        0,
+        8
+      ],
+      "offsetFromMountXZ": [
+        0,
+        8
+      ],
+      "backMeters": 8,
+      "purpose": "Labelled shoreline inspection, separate from ordinary entry."
+    }
+  ],
+  "sourceArt": [
+    "assets/raw/plate-contract-e10-river.png",
+    "assets/processed/terrain-bank-tile.png"
+  ],
+  "heightDerivation": {
+    "grid": "river-fallback-height-grid.json",
+    "sha256": "b76677ff2210ee98a434a24b3d425e405dfe0aaa9a15148a420cf2d3170b52d2",
+    "method": "16641 captured fallback visual samples; original planar simulation and sampler source unchanged."
+  },
+  "files": {
+    "blend": {
+      "bytes": 1272513,
+      "sha256": "435d2c807069c78ff1e6068bdb8eb83390ec8e1302a623a289bc664e5088c6b1"
+    },
+    "glb": {
+      "bytes": 1149220,
+      "sha256": "6eb8b636cb9dc5cd972d09b353899f162e052d9417c861c8dc38986cd6410b0f"
+    },
+    "atlas": {
+      "bytes": 418589,
+      "sha256": "430cfa931f506a02611e997a23669976e103e56371c3563aff55f3dd121e38f8"
+    }
+  }
+}

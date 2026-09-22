@@ -1,0 +1,24 @@
+{
+  "recipe": "build_river_pack.py",
+  "rasterGenerated": false,
+  "copies": [
+    {
+      "target": "river-terrain-atlas.png",
+      "source": "assets/processed/terrain-bank-tile.png",
+      "sha256": "430cfa931f506a02611e997a23669976e103e56371c3563aff55f3dd121e38f8",
+      "bytes": 418589
+    },
+    {
+      "target": "river-panorama-atlas.png",
+      "source": "assets/raw/plate-contract-e10-river.png",
+      "sha256": "8e87399729c5aaca4ae52d016d0eb99f5b42c5bc0aed461dc8e6623d48914706",
+      "bytes": 3591800
+    },
+    {
+      "target": "landmarks/river/river-landmarks-atlas.png",
+      "source": "assets/pilots/map-rebuild-spike/landmarks/twin-banks/twin-banks-landmarks-atlas.png",
+      "sha256": "bb1cf6fb8d1d1f5606421ce937f2dc048f55859ae7caf2dd602b78cb2246e301",
+      "bytes": 1997891
+    }
+  ]
+}

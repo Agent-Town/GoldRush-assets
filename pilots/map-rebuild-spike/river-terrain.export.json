@@ -1,0 +1,11 @@
+{
+  "profile": "terrain",
+  "why": "Preserve the sampled regular grid and render-only metadata; never decimate.",
+  "extras": true,
+  "animations": false,
+  "applyTransforms": true,
+  "selection": "meshes+anchors",
+  "asset": "river-terrain.glb",
+  "blend": "river-terrain.blend",
+  "contract": "river-terrain-contract.json"
+}
