@@ -147,7 +147,9 @@
         1.0
       ],
       "asset": "landmarks/far-side/probe-recovery-cradle.glb",
-      "contractIds": []
+      "contractIds": [
+        "e8-far-side"
+      ]
     },
     {
       "id": "west-comms-shadow-marker",
@@ -167,7 +169,9 @@
         1.0
       ],
       "asset": "landmarks/far-side/west-comms-shadow-marker.glb",
-      "contractIds": []
+      "contractIds": [
+        "e8-far-side"
+      ]
     },
     {
       "id": "east-suit-cache-rack",
@@ -187,7 +191,9 @@
         1.0
       ],
       "asset": "landmarks/far-side/east-suit-cache-rack.glb",
-      "contractIds": []
+      "contractIds": [
+        "e8-far-side"
+      ]
     },
     {
       "id": "far-horizon-listening-post",
@@ -207,7 +213,9 @@
         1.0
       ],
       "asset": "landmarks/far-side/far-horizon-listening-post.glb",
-      "contractIds": []
+      "contractIds": [
+        "e8-far-side"
+      ]
     }
   ],
   "landmarkPack": {
@@ -248,12 +256,8 @@
   ],
   "mountInterlock": {
     "activeBase": "Mare Claim sculpt, panorama, five selected original bodies and active collision footprints are retained unchanged.",
-    "additionalDressing": "Only the authored nonblocking landing frame is selected.",
-    "heldMounts": {
-      "probe-recovery-cradle": "Not mounted: Far Side collision aliases Mare Claim. Contract/collision owner must reconcile this solid footprint before showing the body.",
-      "west-comms-shadow-marker": "Not mounted: Far Side collision aliases Mare Claim. Contract/collision owner must reconcile this solid footprint before showing the body.",
-      "east-suit-cache-rack": "Not mounted: Far Side collision aliases Mare Claim. Contract/collision owner must reconcile this solid footprint before showing the body.",
-      "far-horizon-listening-post": "Not mounted: Far Side collision aliases Mare Claim. Contract/collision owner must reconcile this solid footprint before showing the body."
-    }
+    "additionalDressing": "The authored nonblocking landing frame remains selected alongside the registered variant solids.",
+    "heldMounts": {},
+    "additionalSolids": "Owner ruling F-CORR4-2, 2026-09-22: probe-recovery-cradle, west-comms-shadow-marker, east-suit-cache-rack, far-horizon-listening-post. Mounted at the registered transforms; variant footprints supplement the unchanged parent blockers."
   }
 }
