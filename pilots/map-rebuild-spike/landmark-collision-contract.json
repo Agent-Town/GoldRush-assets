@@ -1300,6 +1300,23 @@
     ],
     "far-side": [
       {
+        "id": "probe-recovery-cradle",
+        "position": [
+          0,
+          50.5
+        ],
+        "rotation": 3.1416,
+        "scale": [
+          1,
+          1
+        ],
+        "footprint": {
+          "kind": "rect",
+          "w": 5.04,
+          "d": 3.6
+        }
+      },
+      {
         "id": "west-comms-shadow-marker",
         "position": [
           -42,
