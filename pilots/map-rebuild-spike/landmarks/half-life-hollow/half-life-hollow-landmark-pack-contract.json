@@ -325,5 +325,9 @@
       "backMeters": 5,
       "purpose": "Render-only inspection at full default zoom; HUD and projected bounds measured in map-art-campaign-2/run-6/e6-half-life-hollow. Plain entry remains a separate acceptance surface."
     }
-  ]
+  ],
+  "entryLandmark": {
+    "mountId": "south-countdown-gate",
+    "reason": "The large clockwork gate fills the plate foreground and marks the timed crossing into the hollow; the south countdown gate is that entrance landmark."
+  }
 }
