@@ -304,5 +304,9 @@
     "additionalDressing": "The authored nonblocking landing frame remains selected alongside the registered variant solids.",
     "heldMounts": {},
     "additionalSolids": "Owner ruling F-CORR4-2, 2026-09-22: probe-recovery-cradle, west-comms-shadow-marker, east-suit-cache-rack, far-horizon-listening-post. Mounted at the registered transforms; variant footprints supplement the unchanged parent blockers. — the probe-recovery-cradle moved from (0,45) to (0,50.5) and became solid again by owner ruling F-FC2-5, 2026-09-22 (verbatim: \"lets move it\"). At the crater centre its 5.04 x 3.6 m footprint made Terrain.sample(0,45).walkable false, so the ride's MOVE_HERO to the recovery point was refused outright (UNREACHABLE_TERRAIN) and the hero never left its stake. At (0,50.5) the footprint spans z 48.7..52.3, straddling the zone's north rim at z 52, 2.2 m clear of far-horizon-listening-post (z >= 54.5); the recovery zone, the E8 air crossing it doubles as, and every other gameplay number are untouched."
+  },
+  "entryLandmark": {
+    "mountId": "earthrise-listening-array",
+    "reason": "The isolated horizon dish establishes the far side of the empty basin opposite the landing compound; the retained Earthrise array is that mounted horizon landmark."
   }
 }
