@@ -1300,23 +1300,6 @@
     ],
     "far-side": [
       {
-        "id": "probe-recovery-cradle",
-        "position": [
-          0,
-          45
-        ],
-        "rotation": 3.1416,
-        "scale": [
-          1,
-          1
-        ],
-        "footprint": {
-          "kind": "rect",
-          "w": 5.04,
-          "d": 3.6
-        }
-      },
-      {
         "id": "west-comms-shadow-marker",
         "position": [
           -42,
@@ -2551,8 +2534,8 @@
       {
         "id": "west-display-home:part-0",
         "position": [
-          -37.0,
-          -13.0
+          -37,
+          -13
         ],
         "rotation": 0,
         "scale": [
@@ -2721,7 +2704,7 @@
       {
         "id": "west-display-home:part-10",
         "position": [
-          -39.0,
+          -39,
           -7.02
         ],
         "rotation": 0,
@@ -2789,8 +2772,8 @@
       {
         "id": "northwest-display-home:part-0",
         "position": [
-          -19.0,
-          15.0
+          -19,
+          15
         ],
         "rotation": 0,
         "scale": [
@@ -2959,7 +2942,7 @@
       {
         "id": "northwest-display-home:part-10",
         "position": [
-          -21.0,
+          -21,
           20.98
         ],
         "rotation": 0,
@@ -3027,8 +3010,8 @@
       {
         "id": "north-display-home:part-0",
         "position": [
-          0.0,
-          -13.0
+          0,
+          -13
         ],
         "rotation": 0,
         "scale": [
@@ -3265,8 +3248,8 @@
       {
         "id": "northeast-display-home:part-0",
         "position": [
-          19.0,
-          15.0
+          19,
+          15
         ],
         "rotation": 0,
         "scale": [
@@ -3361,7 +3344,7 @@
         "footprint": {
           "kind": "rect",
           "w": 2.9,
-          "d": 4.0
+          "d": 4
         }
       },
       {
@@ -3411,7 +3394,7 @@
         ],
         "footprint": {
           "kind": "rect",
-          "w": 2.0,
+          "w": 2,
           "d": 1.25
         }
       },
@@ -3469,8 +3452,8 @@
       {
         "id": "east-display-home:part-0",
         "position": [
-          37.0,
-          -13.0
+          37,
+          -13
         ],
         "rotation": 0,
         "scale": [
@@ -3565,7 +3548,7 @@
         "footprint": {
           "kind": "rect",
           "w": 2.9,
-          "d": 4.0
+          "d": 4
         }
       },
       {
@@ -3615,7 +3598,7 @@
         ],
         "footprint": {
           "kind": "rect",
-          "w": 2.0,
+          "w": 2,
           "d": 1.25
         }
       },

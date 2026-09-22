@@ -33,7 +33,7 @@
         "min": [
           -3.1831,
           -2.35,
-          0.0
+          0
         ],
         "max": [
           3.1831,
@@ -57,7 +57,7 @@
         "min": [
           -3.5,
           -2.5,
-          0.0
+          0
         ],
         "max": [
           3.5,
@@ -86,7 +86,7 @@
         "min": [
           -1.6,
           -1.5,
-          0.0
+          0
         ],
         "max": [
           1.6,
@@ -114,7 +114,7 @@
         "min": [
           -3.5,
           -1.75,
-          0.0
+          0
         ],
         "max": [
           3.5,
@@ -143,7 +143,7 @@
         "min": [
           -2.4,
           -2.1,
-          0.0
+          0
         ],
         "max": [
           2.4,
@@ -162,19 +162,19 @@
     {
       "id": "far-side-landing-frame",
       "position": [
-        0.0,
-        0.0,
-        -40.0
+        0,
+        0,
+        -40
       ],
       "rotation": [
-        0.0,
-        0.0,
-        0.0
+        0,
+        0,
+        0
       ],
       "scale": [
-        1.0,
-        1.0,
-        1.0
+        1,
+        1,
+        1
       ],
       "asset": "landmarks/far-side/far-side-landing-frame.glb",
       "contractIds": [
@@ -184,41 +184,39 @@
     {
       "id": "probe-recovery-cradle",
       "position": [
-        0.0,
-        0.0,
-        45.0
+        0,
+        0,
+        45
       ],
       "rotation": [
-        0.0,
+        0,
         3.1416,
-        0.0
+        0
       ],
       "scale": [
-        1.0,
-        1.0,
-        1.0
+        1,
+        1,
+        1
       ],
       "asset": "landmarks/far-side/probe-recovery-cradle.glb",
-      "contractIds": [
-        "e8-far-side"
-      ]
+      "contractIds": []
     },
     {
       "id": "west-comms-shadow-marker",
       "position": [
-        -42.0,
-        0.0,
-        24.0
+        -42,
+        0,
+        24
       ],
       "rotation": [
-        0.0,
+        0,
         0.18,
-        0.0
+        0
       ],
       "scale": [
-        1.0,
-        1.0,
-        1.0
+        1,
+        1,
+        1
       ],
       "asset": "landmarks/far-side/west-comms-shadow-marker.glb",
       "contractIds": [
@@ -228,19 +226,19 @@
     {
       "id": "east-suit-cache-rack",
       "position": [
-        42.0,
-        0.0,
-        -24.0
+        42,
+        0,
+        -24
       ],
       "rotation": [
-        0.0,
+        0,
         -0.18,
-        0.0
+        0
       ],
       "scale": [
-        1.0,
-        1.0,
-        1.0
+        1,
+        1,
+        1
       ],
       "asset": "landmarks/far-side/east-suit-cache-rack.glb",
       "contractIds": [
@@ -250,19 +248,19 @@
     {
       "id": "far-horizon-listening-post",
       "position": [
-        0.0,
-        0.0,
-        56.0
+        0,
+        0,
+        56
       ],
       "rotation": [
-        0.0,
+        0,
         3.1416,
-        0.0
+        0
       ],
       "scale": [
-        1.0,
-        1.0,
-        1.0
+        1,
+        1,
+        1
       ],
       "asset": "landmarks/far-side/far-horizon-listening-post.glb",
       "contractIds": [
@@ -302,7 +300,9 @@
   "mountInterlock": {
     "activeBase": "Mare Claim sculpt, panorama, five selected original bodies and active collision footprints are retained unchanged.",
     "additionalDressing": "The authored nonblocking landing frame remains selected alongside the registered variant solids.",
-    "heldMounts": {},
-    "additionalSolids": "Owner ruling F-CORR4-2, 2026-09-22: probe-recovery-cradle, west-comms-shadow-marker, east-suit-cache-rack, far-horizon-listening-post. Mounted at the registered transforms; variant footprints supplement the unchanged parent blockers."
+    "heldMounts": {
+      "probe-recovery-cradle": "Not mounted (F-FC2-5, attended drain 2026-09-22): the cradle stands at (0,45), the centre of the probe recovery zone (-14..14 x 38..52), and its 5.04 x 3.6 m footprint keeps the hero off the point a rider walks to for CONTEXT_ACTION recover — solid, it leaves the Far Side's A6 latch unclosable and no secure is offered (scripts/e8-remaining-maps.test.mjs:512 red on the merged tree, green without this footprint). Held for the contract/collision owner: move the probe/zone off the cradle, shrink the footprint, or keep the cradle decorative."
+    },
+    "additionalSolids": "Owner ruling F-CORR4-2, 2026-09-22: probe-recovery-cradle, west-comms-shadow-marker, east-suit-cache-rack, far-horizon-listening-post. Mounted at the registered transforms; variant footprints supplement the unchanged parent blockers. — the probe-recovery-cradle returned to unselected by the attended drain (F-FC2-5, 2026-09-22): its footprint sits on the probe recovery point."
   }
 }
