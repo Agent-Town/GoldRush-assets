@@ -1,0 +1,12 @@
+{
+  "sourceStore": "75bdd35936c531da53094eaee94503b71ea1ea7f",
+  "recipe": "fidelity_archive_panorama.py",
+  "reference": "assets/raw/plate-contract-e10-archive-world.png",
+  "nativeImage": {
+    "tool": "native image_gen",
+    "prompt": "Create one square, seamless repeating albedo texture for an illustrated engraved frontier-tech library's ancient stone terrace floor. Production game texture, direct orthographic top-down, no perspective, no scene or border. Low-contrast warm grey limestone with large irregular fitted rectangular and polygonal masonry slabs, each slab roughly one eighth of the image width, broad calm stone interiors, hairline dark joints and sparse delicate hand-engraved linear geometric border inlays on a few stones, small shallow chips and weathered bookish tool marks. Fine crosshatched copperplate-engraving character, quiet and elegant, not gritty photographic noise. Stone tones very close to each other with soft diffuse even lighting, no cast shadows, no baked directional lighting, no glowing areas. Avoid checkerboard repetition, decorative compass emblems, floral patterns, text, readable letters, symbols, objects or characters. All four edges tile seamlessly. Image must be square and no larger than 2048 pixels on either dimension, ideally 1024x1024.",
+    "path": "/Users/robin/.codex/generated_images/01a0c870-f941-73e2-afed-30cf3b0788d5/exec-d17cf241-25fc-4f2c-a9f2-0977c38153e3.png",
+    "sha256": "b56c4ff5120ef7b50f11094f7eb47dfcff60c7ba4b285b75acfd2935c8a4f5eb"
+  },
+  "scope": "Native floor and scenery masonry, earned facade wash, and four decorative colonnaded library ruins outside the immutable height/collision square. Eight arched facade openings, 24 piers, 864 added triangles."
+}

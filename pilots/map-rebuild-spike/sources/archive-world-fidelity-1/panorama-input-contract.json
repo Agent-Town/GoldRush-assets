@@ -2,7 +2,7 @@
   "asset": "archive-world-panorama.glb",
   "map": "archive-world",
   "renderOnly": true,
-  "style": "Existing sky and ridges with four authored colonnaded library ruins outside the playable square",
+  "style": "engraved Epoch 10 Deep Sky archive world kit-plate horizon; warm valley against a darker fevered rim",
   "signature": "broken archive silhouettes beneath deep ink, quiet star stipple, and unequal parchment-gold memory veils",
   "exposure": {
     "mode": "bakedIntoAtlas",
@@ -12,8 +12,7 @@
   "namedCorrections": {
     "paintedWall": "sunk sky ring behind an irregular closer ridge belt with a dusty haze transition",
     "ceiling": "engraving density grades from dense horizon to near-plain parchment zenith",
-    "echo": "asymmetric cloud and dust edits plus independent near/far ridge profiles break mirrored repetition",
-    "libraryHalls": "Four library ruins, eight arched openings and 24 columns; 864 added triangles; near scenery uses ordinary depth"
+    "echo": "asymmetric cloud and dust edits plus independent near/far ridge profiles break mirrored repetition"
   },
   "projection": {
     "skyRingRadiusMeters": 190.0,
@@ -74,43 +73,34 @@
     "fogGating": "unchanged",
     "waterBuildSpawnMasks": "unchanged"
   },
-  "meshCount": 3,
-  "primitiveCount": 3,
-  "materialCount": 3,
-  "vertices": 2766,
-  "triangles": 3936,
+  "meshCount": 1,
+  "primitiveCount": 1,
+  "materialCount": 1,
+  "vertices": 2222,
+  "triangles": 3072,
   "triangleBudget": 4000,
   "texture": {
-    "count": 2,
+    "count": 1,
     "width": 2048,
     "height": 2048,
-    "embedded": true,
-    "secondAtlas": "archive-world-terrain-atlas.png"
+    "embedded": true
   },
   "sourceArt": [
     "assets/raw/plate-e10-worlds.png",
-    "assets/processed/kit-era-10.png",
-    "assets/raw/plate-contract-e10-archive-world.png",
-    "assets/pilots/map-rebuild-spike/sources/archive-world-fidelity-1/engraved-masonry.png"
+    "assets/processed/kit-era-10.png"
   ],
   "files": {
     "blend": {
-      "bytes": 10536412,
-      "sha256": "d5f7d7b0f7b213a971bd3e0ab34837799777d50c2a9d9290f4afd303e9bcf3d7"
+      "bytes": 851052,
+      "sha256": "14cd1b9e966b93f79b4a71f32287e361ed187c163d3f727c3bf08dbc75d50dfe"
     },
     "glb": {
-      "bytes": 10573816,
-      "sha256": "7919346bac0385e6e1f7fc07f7d8b8a60c54e6507179de71748ab05ca715ad8d"
+      "bytes": 832408,
+      "sha256": "904174f07352da63ce1012b331c8ba8d67d0601a86c6f864efcd13f532a69dd0"
     },
     "atlas": {
       "bytes": 714418,
       "sha256": "e6902a845b8324062b92ab7744521c5c5a4b579cc5547943552c278d3979fd65"
     }
-  },
-  "runtimeDetailTexture": {
-    "asset": "sources/archive-world-fidelity-1/engraved-masonry.png",
-    "width": 1254,
-    "height": 1254,
-    "scope": "floor and scenery material only, no sampled height or restoration authority"
   }
 }
