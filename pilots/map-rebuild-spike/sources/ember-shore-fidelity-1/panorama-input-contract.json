@@ -2,7 +2,7 @@
   "asset": "ember-shore-panorama.glb",
   "map": "ember-shore",
   "renderOnly": true,
-  "style": "Existing engraved sky; separate continuous basalt apron/ridges with continuous native basalt pigment",
+  "style": "engraved Epoch 10 Deep Sky first world kit-plate horizon; deep-ink star stipple over low cooled shelves and unequal parchment-gold nebula veils",
   "signature": "low cooled volcanic shelves beneath deep-ink star stipple and unequal parchment-gold nebula veils",
   "exposure": {
     "mode": "bakedIntoAtlas",
@@ -12,9 +12,7 @@
   "namedCorrections": {
     "paintedWall": "sunk star-stipple ring behind low independent cooled shelves; terrain-matched basalt skirt and restrained ember haze carry the join",
     "ceiling": "engraving density grades from dense horizon to near-plain parchment zenith",
-    "echo": "four unequal gold nebula edits and independent cooled-shelf profiles break repetition while preserving drawn emptiness",
-    "ground": "World-space basalt shares the terrain treatment; sky retains its original atlas and material",
-    "shelves": "Existing ridge geometry preserved; larger fractured shelf silhouettes remain held for art"
+    "echo": "four unequal gold nebula edits and independent cooled-shelf profiles break repetition while preserving drawn emptiness"
   },
   "projection": {
     "skyRingRadiusMeters": 190.0,
@@ -75,43 +73,34 @@
     "fogGating": "unchanged",
     "waterBuildSpawnMasks": "unchanged"
   },
-  "meshCount": 2,
-  "primitiveCount": 2,
-  "materialCount": 2,
+  "meshCount": 1,
+  "primitiveCount": 1,
+  "materialCount": 1,
   "vertices": 2222,
   "triangles": 3072,
   "triangleBudget": 4000,
   "texture": {
-    "count": 2,
+    "count": 1,
     "width": 2048,
     "height": 2048,
-    "embedded": true,
-    "secondAtlas": "ember-shore-terrain-atlas.png"
+    "embedded": true
   },
   "sourceArt": [
     "assets/processed/kit-era-10.png",
-    "assets/raw/plate-e10-worlds.png",
-    "assets/pilots/map-rebuild-spike/sources/ember-shore-fidelity-1/engraved-basalt.png",
-    "assets/raw/plate-contract-e10-ember-shore.png"
+    "assets/raw/plate-e10-worlds.png"
   ],
   "files": {
     "blend": {
-      "bytes": 6305117,
-      "sha256": "3984ad10dccfd9abcb563d521a34257831de51b0de9eddc5fd3e842a3e2116e1"
+      "bytes": 892636,
+      "sha256": "ed1a198c64c051091dd03137b5b5d5d83c2d31e9eea562f099e8bf17b3a1ab12"
     },
     "glb": {
-      "bytes": 6278760,
-      "sha256": "f3c5183095cf35c071c331f22bf6898cc933f2095d4dffc403d8bc689fe214e2"
+      "bytes": 872468,
+      "sha256": "20e9b61acfdc33045350b5db40e450132e2692b4dfa313ddbbb5ab30bf7c62fa"
     },
     "atlas": {
       "bytes": 754485,
       "sha256": "1d46b44785153a19e2614e3165ed9c269cb5ee5585252f1f2cc9a15a6ad6b8d9"
     }
-  },
-  "runtimeDetailTexture": {
-    "asset": "sources/ember-shore-fidelity-1/engraved-basalt.png",
-    "width": 1254,
-    "height": 1254,
-    "scope": "render-side continuous pigment; no height or heat authority"
   }
 }

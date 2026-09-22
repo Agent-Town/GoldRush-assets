@@ -1,0 +1,20 @@
+{
+  "sourceTier": "native-runtime-detail-with-original-glb-atlases",
+  "sourceStore": "f3078c4001d86b8f177a1f1727464c32bdc166bb",
+  "inputBlendSha256": "ed1a198c64c051091dd03137b5b5d5d83c2d31e9eea562f099e8bf17b3a1ab12",
+  "rasterSources": [
+    "ember-shore-panorama-atlas.png",
+    "ember-shore-terrain-atlas.png"
+  ],
+  "reference": "assets/raw/plate-contract-e10-ember-shore.png",
+  "recipe": "fidelity_ember_panorama.py",
+  "scope": "Native basalt sampled by the render material; original GLB terrain and heat atlas remain byte-identical. Scenery material split preserves all original panorama geometry. New rock geometry was rejected and is not shipped.",
+  "nativeImage": {
+    "tool": "native image_gen",
+    "source": "/Users/robin/.codex/generated_images/01a0c870-f941-73e2-afed-30cf3b0788d5/exec-e2485c39-54e2-4717-90fd-6c6f7392645f.png",
+    "sha256": "1853936504d98b5c48f9b412301f0934225a02711bd645caf1610ad7c81261b5",
+    "width": 1254,
+    "height": 1254,
+    "prompt": "Generate one square seamless game terrain texture, 1024 x 1024 requested, maximum dimension 2048. It is a TOP-DOWN ORTHOGRAPHIC ALBEDO material swatch of dense fine fractured basalt and volcanic shale, in the style of a finely engraved nineteenth-century adventure book etching. Fine irregular layered chipped flakes, natural interlocking rough stone, discontinuous crooked hairline fractures, subtle slaty charcoal gray and warm ash gray variation, restrained fine stippled grain and short hand-cut hatch marks. Physical patch represents about twelve metres of ground: many small flakes, some larger broken surfaces, no dominant shapes. Even diffuse illumination, no shadows, no vignette, no perspective, no horizon, no text, no borders, no objects or landmarks, no lava, no orange or glowing cracks, no red. Important: NOT cobblestone, NOT regular polygon paving, NOT checkerboard, NOT uniform Voronoi cells. Moderate contrast, medium gray overall so details survive an in-game sepia grade without becoming black noise. The texture must tile naturally in both axes with consistent tone at opposite edges."
+  }
+}
