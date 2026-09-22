@@ -542,5 +542,9 @@
       "backMeters": 5,
       "purpose": "Render-only inspection at full default zoom; HUD and projected bounds measured in map-art-campaign-2/run-6/e6-glow-mesa. Plain entry remains a separate acceptance surface."
     }
-  ]
+  ],
+  "entryLandmark": {
+    "mountId": "mesa-starstone-derrick",
+    "reason": "The plate anchors its raised cap with the tall starstone derrick and its working compound; the derrick is the mounted silhouette that identifies that cap."
+  }
 }
