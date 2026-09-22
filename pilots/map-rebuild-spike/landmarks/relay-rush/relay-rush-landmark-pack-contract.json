@@ -164,7 +164,9 @@
         1.0
       ],
       "asset": "landmarks/relay-rush/rush-start-horn.glb",
-      "contractIds": []
+      "contractIds": [
+        "e7-relay-rush"
+      ]
     },
     {
       "id": "rush-relay-r1-frame",
@@ -339,8 +341,7 @@
   "mountInterlock": {
     "activeBase": "Relay Valley terrain, panorama, five original bodies and all active collision footprints are retained unchanged.",
     "additionalDressing": "Four authored nonblocking relay frames mount through the existing contractIds filter. These frames do not write or imply a lit relay state.",
-    "heldMounts": {
-      "rush-start-horn": "Not mounted: the active Relay Rush collision alias selects Relay Valley footprints. Contract/collision owner must reconcile before this solid body is shown."
-    }
+    "heldMounts": {},
+    "additionalSolids": "Owner ruling F-CORR4-2, 2026-09-22: rush-start-horn. Mounted at the registered transforms; variant footprints supplement the unchanged parent blockers."
   }
 }
