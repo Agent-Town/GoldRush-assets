@@ -1723,7 +1723,8 @@
         "sourceTier": "build-new",
         "sources": [
           "assets/raw/plate-contract-e10-river.png",
-          "assets/pilots/map-rebuild-spike/landmarks/twin-banks/twin-banks-landmarks-atlas.png"
+          "assets/pilots/map-rebuild-spike/landmarks/twin-banks/twin-banks-landmarks-atlas.png",
+          "assets/pilots/map-rebuild-spike/sources/river-fidelity-1/landmarks-input.blend"
         ],
         "asset": "landmarks/river/south-west-shore.glb"
       },
@@ -1731,7 +1732,8 @@
         "sourceTier": "build-new",
         "sources": [
           "assets/raw/plate-contract-e10-river.png",
-          "assets/pilots/map-rebuild-spike/landmarks/twin-banks/twin-banks-landmarks-atlas.png"
+          "assets/pilots/map-rebuild-spike/landmarks/twin-banks/twin-banks-landmarks-atlas.png",
+          "assets/pilots/map-rebuild-spike/sources/river-fidelity-1/landmarks-input.blend"
         ],
         "asset": "landmarks/river/south-east-shore.glb"
       },
@@ -1739,7 +1741,8 @@
         "sourceTier": "build-new",
         "sources": [
           "assets/raw/plate-contract-e10-river.png",
-          "assets/pilots/map-rebuild-spike/landmarks/twin-banks/twin-banks-landmarks-atlas.png"
+          "assets/pilots/map-rebuild-spike/landmarks/twin-banks/twin-banks-landmarks-atlas.png",
+          "assets/pilots/map-rebuild-spike/sources/river-fidelity-1/landmarks-input.blend"
         ],
         "asset": "landmarks/river/north-west-shore.glb"
       },
@@ -1747,7 +1750,8 @@
         "sourceTier": "build-new",
         "sources": [
           "assets/raw/plate-contract-e10-river.png",
-          "assets/pilots/map-rebuild-spike/landmarks/twin-banks/twin-banks-landmarks-atlas.png"
+          "assets/pilots/map-rebuild-spike/landmarks/twin-banks/twin-banks-landmarks-atlas.png",
+          "assets/pilots/map-rebuild-spike/sources/river-fidelity-1/landmarks-input.blend"
         ],
         "asset": "landmarks/river/north-east-shore.glb"
       },
@@ -1755,7 +1759,8 @@
         "sourceTier": "build-new",
         "sources": [
           "assets/raw/plate-contract-e10-river.png",
-          "assets/pilots/map-rebuild-spike/landmarks/twin-banks/twin-banks-landmarks-atlas.png"
+          "assets/pilots/map-rebuild-spike/landmarks/twin-banks/twin-banks-landmarks-atlas.png",
+          "assets/pilots/map-rebuild-spike/sources/river-fidelity-1/landmarks-input.blend"
         ],
         "asset": "landmarks/river/ford-wet-stones.glb"
       }

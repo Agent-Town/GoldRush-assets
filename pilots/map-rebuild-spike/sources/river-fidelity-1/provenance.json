@@ -1,0 +1,10 @@
+{
+  "sourceStore": "f5f617c48f33ee6f4577c4a60fade8faf7b08e8d",
+  "recipe": "fidelity_river_shores.py",
+  "sourceTier": "derive authored nonblocking stones and reuse existing raster",
+  "sourceBlendSha256": "bc20e7f1e8f39e67443c70cd4029ae384880f5f28965ab2eb9be3a04167bb7a4",
+  "frozenHeightGridSha256": "b76677ff2210ee98a434a24b3d425e405dfe0aaa9a15148a420cf2d3170b52d2",
+  "rasterGenerated": false,
+  "reference": "assets/raw/plate-contract-e10-river.png",
+  "scope": "Additional low gravel and wet stone material only; terrain, masks, water widths/depth/speed, center ford, mounts and collision stay fixed."
+}

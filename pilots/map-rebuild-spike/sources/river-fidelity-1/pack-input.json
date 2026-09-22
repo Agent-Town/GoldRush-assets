@@ -5,7 +5,7 @@
     "reuse-existing-raster",
     "build-new-geometry"
   ],
-  "recipe": "fidelity_river_shores.py",
+  "recipe": "build_river_pack.py",
   "atlas": {
     "asset": "landmarks/river/river-landmarks-atlas.png",
     "width": 1024,
@@ -15,7 +15,7 @@
   },
   "blend": {
     "asset": "landmarks/river/river-landmarks.blend",
-    "sha256": "e0f0c260c3dd6241ad75276043d61c72b8c710d7ca6aa32ff3f966d6a7d68766"
+    "sha256": "bc20e7f1e8f39e67443c70cd4029ae384880f5f28965ab2eb9be3a04167bb7a4"
   },
   "assets": {
     "south-west-shore": {
@@ -23,25 +23,24 @@
       "sourceTier": "build-new",
       "sources": [
         "assets/raw/plate-contract-e10-river.png",
-        "assets/pilots/map-rebuild-spike/landmarks/twin-banks/twin-banks-landmarks-atlas.png",
-        "assets/pilots/map-rebuild-spike/sources/river-fidelity-1/landmarks-input.blend"
+        "assets/pilots/map-rebuild-spike/landmarks/twin-banks/twin-banks-landmarks-atlas.png"
       ],
       "terrainConformed": true,
-      "triangles": 3000,
+      "triangles": 2240,
       "triangleBudget": 3000,
       "bounds": {
         "min": [
-          -43.571712493896484,
+          -12.79524040222168,
           -2.229785442352295,
           -0.370239794254303
         ],
         "max": [
-          14.334060668945312,
+          13.23846435546875,
           1.875935673713684,
           0.7418357729911804
         ]
       },
-      "sha256": "7e84f3b2ecfe75f55c210e077ccfbc6d1d7775115f2d00a37846c7b54e346d55",
+      "sha256": "05cf99bfbbb01817baef8dc33a77f5e33f78c135b2a71572f0fa337bdf363755",
       "blocking": "none; low decorative stones, no collision or walk surface"
     },
     "south-east-shore": {
@@ -49,25 +48,24 @@
       "sourceTier": "build-new",
       "sources": [
         "assets/raw/plate-contract-e10-river.png",
-        "assets/pilots/map-rebuild-spike/landmarks/twin-banks/twin-banks-landmarks-atlas.png",
-        "assets/pilots/map-rebuild-spike/sources/river-fidelity-1/landmarks-input.blend"
+        "assets/pilots/map-rebuild-spike/landmarks/twin-banks/twin-banks-landmarks-atlas.png"
       ],
       "terrainConformed": true,
-      "triangles": 3000,
+      "triangles": 2240,
       "triangleBudget": 3000,
       "bounds": {
         "min": [
-          -14.36038875579834,
+          -12.472393989562988,
           -2.306565284729004,
           -0.4200504720211029
         ],
         "max": [
-          43.713863372802734,
+          13.048173904418945,
           1.9505703449249268,
           0.7753717303276062
         ]
       },
-      "sha256": "f0392400ad3459aca6a9ddd5263bee1b98d96fac8ce2487c463666f71731ce14",
+      "sha256": "5cb03291d75de0b1a224d91e2dd62e4ed7e05b431c665e4b4bf4dda9fd005880",
       "blocking": "none; low decorative stones, no collision or walk surface"
     },
     "north-west-shore": {
@@ -75,25 +73,24 @@
       "sourceTier": "build-new",
       "sources": [
         "assets/raw/plate-contract-e10-river.png",
-        "assets/pilots/map-rebuild-spike/landmarks/twin-banks/twin-banks-landmarks-atlas.png",
-        "assets/pilots/map-rebuild-spike/sources/river-fidelity-1/landmarks-input.blend"
+        "assets/pilots/map-rebuild-spike/landmarks/twin-banks/twin-banks-landmarks-atlas.png"
       ],
       "terrainConformed": true,
-      "triangles": 3000,
+      "triangles": 2240,
       "triangleBudget": 3000,
       "bounds": {
         "min": [
-          -43.60262680053711,
+          -12.312002182006836,
           -2.2818429470062256,
           -0.3565380275249481
         ],
         "max": [
-          14.215161323547363,
+          13.815840721130371,
           2.1322999000549316,
           0.7111524939537048
         ]
       },
-      "sha256": "6b3ab5f04766febeab857f55f3e349d7777f16966fce45e2e7a4abf9fb4edbcb",
+      "sha256": "860f66bccf260b49254a1cebe82dc03312797cf2b97f8c83bcd02a25130529d9",
       "blocking": "none; low decorative stones, no collision or walk surface"
     },
     "north-east-shore": {
@@ -101,25 +98,24 @@
       "sourceTier": "build-new",
       "sources": [
         "assets/raw/plate-contract-e10-river.png",
-        "assets/pilots/map-rebuild-spike/landmarks/twin-banks/twin-banks-landmarks-atlas.png",
-        "assets/pilots/map-rebuild-spike/sources/river-fidelity-1/landmarks-input.blend"
+        "assets/pilots/map-rebuild-spike/landmarks/twin-banks/twin-banks-landmarks-atlas.png"
       ],
       "terrainConformed": true,
-      "triangles": 3000,
+      "triangles": 2240,
       "triangleBudget": 3000,
       "bounds": {
         "min": [
-          -14.361083030700684,
+          -12.297419548034668,
           -2.08701491355896,
           -0.3839689791202545
         ],
         "max": [
-          43.411346435546875,
+          12.268263816833496,
           2.0774178504943848,
           0.8045085072517395
         ]
       },
-      "sha256": "75709b578a74034f087dad326db33096204bc9e4f8e1c1ed7735b80d0cd0e677",
+      "sha256": "7a027a053e901854fc7b07a556c8805f9206bbf55abbf2eb567b025f7f4e0ca9",
       "blocking": "none; low decorative stones, no collision or walk surface"
     },
     "ford-wet-stones": {
@@ -127,25 +123,24 @@
       "sourceTier": "build-new",
       "sources": [
         "assets/raw/plate-contract-e10-river.png",
-        "assets/pilots/map-rebuild-spike/landmarks/twin-banks/twin-banks-landmarks-atlas.png",
-        "assets/pilots/map-rebuild-spike/sources/river-fidelity-1/landmarks-input.blend"
+        "assets/pilots/map-rebuild-spike/landmarks/twin-banks/twin-banks-landmarks-atlas.png"
       ],
       "terrainConformed": true,
-      "triangles": 2000,
+      "triangles": 1600,
       "triangleBudget": 2000,
       "bounds": {
         "min": [
           -2.6834726333618164,
           -5.62906551361084,
-          -0.19519346952438354
+          -0.15581828355789185
         ],
         "max": [
           2.7035930156707764,
-          4.3033976554870605,
-          0.2737005352973938
+          3.9726898670196533,
+          0.26848429441452026
         ]
       },
-      "sha256": "e6aae3700e2c649da5a811cf81e963edd432518b928b24bbd9a94dd67e5040c7",
+      "sha256": "acc04f3ec1ddce283c01f8dc21093f7a2080105d7cde5e20cd2ee2edc977005d",
       "blocking": "none; low decorative stones, no collision or walk surface"
     }
   },
@@ -314,6 +309,5 @@
     }
   ],
   "simulation": "none; every body NONBLOCKING, no collider or walk-surface registration",
-  "fordClearance": "Central strip |x| <= 1.1 m remains free of stones across the complete ford; bank groups begin outside |x|=3 m.",
-  "fidelity": "Low gravel follows the immutable height grid; existing stones retained; no sampled heights or collision added."
+  "fordClearance": "Central strip |x| <= 1.1 m remains free of stones across the complete ford; bank groups begin outside |x|=3 m."
 }

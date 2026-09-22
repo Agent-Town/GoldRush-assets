@@ -20,5 +20,7 @@
       "sha256": "bb1cf6fb8d1d1f5606421ce937f2dc048f55859ae7caf2dd602b78cb2246e301",
       "bytes": 1997891
     }
-  ]
+  ],
+  "fidelityRecipe": "fidelity_river_shores.py",
+  "fidelityInputs": "sources/river-fidelity-1/provenance.json"
 }

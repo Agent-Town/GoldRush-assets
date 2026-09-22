@@ -1,0 +1,52 @@
+[
+  {
+    "id": "south-west-shore",
+    "triangles": 3000,
+    "mountUnchanged": [
+      -18,
+      0,
+      7.3
+    ],
+    "gravelOnly": true
+  },
+  {
+    "id": "south-east-shore",
+    "triangles": 3000,
+    "mountUnchanged": [
+      18,
+      0,
+      7.3
+    ],
+    "gravelOnly": true
+  },
+  {
+    "id": "north-west-shore",
+    "triangles": 3000,
+    "mountUnchanged": [
+      -18,
+      0,
+      -7.3
+    ],
+    "gravelOnly": true
+  },
+  {
+    "id": "north-east-shore",
+    "triangles": 3000,
+    "mountUnchanged": [
+      18,
+      0,
+      -7.3
+    ],
+    "gravelOnly": true
+  },
+  {
+    "id": "ford-wet-stones",
+    "triangles": 2000,
+    "mountUnchanged": [
+      0,
+      0,
+      0
+    ],
+    "gravelOnly": true
+  }
+]
