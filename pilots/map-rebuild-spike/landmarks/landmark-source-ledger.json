@@ -1764,6 +1764,17 @@
         ],
         "asset": "landmarks/river/ford-wet-stones.glb"
       }
+    },
+    "motor-hauler": {
+      "motor-hauler": {
+        "sourceTier": "build-new",
+        "sources": [
+          "assets/pilots/map-rebuild-spike/fidelity_motor_hauler.py",
+          "assets/pilots/map-rebuild-spike/landmarks/motor-hauler/motor-hauler.blend",
+          "assets/raw/plate-contract-e4-boneyard.png"
+        ],
+        "asset": "landmarks/motor-hauler/motor-hauler.glb"
+      }
     }
   }
 }

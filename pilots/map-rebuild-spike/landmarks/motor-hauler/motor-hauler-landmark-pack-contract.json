@@ -1,0 +1,39 @@
+{
+  "map": "motor-hauler",
+  "era": 4,
+  "renderOnly": true,
+  "dynamicOwner": "src/entities/Vehicle.ts; no terrain landmark mount or collision registration",
+  "recipe": "fidelity_motor_hauler.py",
+  "simulation": "Existing Vehicle movement/fuel/path/reset behavior is the sole authority. Authored body only.",
+  "cargoBed": "Empty per specs/epoch-saga/e4-motor-bundle.md A3; no gameplay cargo invented.",
+  "rasterGenerated": false,
+  "assets": {
+    "motor-hauler": {
+      "asset": "landmarks/motor-hauler/motor-hauler.glb",
+      "sourceTier": "build-new",
+      "sources": [
+        "assets/pilots/map-rebuild-spike/fidelity_motor_hauler.py",
+        "assets/pilots/map-rebuild-spike/landmarks/motor-hauler/motor-hauler.blend",
+        "assets/raw/plate-contract-e4-boneyard.png"
+      ],
+      "triangleBudget": 2400,
+      "triangles": 1520,
+      "meshCount": 5,
+      "materialCount": 5,
+      "bounds": {
+        "min": [
+          -1.1390000581741333,
+          -1.5499999523162842,
+          0.029999971389770508
+        ],
+        "max": [
+          1.1390000581741333,
+          1.5499999523162842,
+          1.5799999237060547
+        ]
+      },
+      "sha256": "4b17d0ee069fb13d9b967e0c9bc8ef2990a0501d411f495819225ae84e05a14b",
+      "blendSha256": "e578099d9cf304a7849808c2720eecec4ddd9971f05bdc79d54ce396be7e9082"
+    }
+  }
+}
