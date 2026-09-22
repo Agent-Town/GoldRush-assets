@@ -1,0 +1,30 @@
+{
+  "generator": "native image_gen",
+  "date": "2026-09-22",
+  "reference": "assets/raw/plate-contract-e10-last-claim.png, visually inspected; generation was from text",
+  "processing": "None. Native PNG copied byte-for-byte; UVs and shaders perform runtime mapping.",
+  "assets": [
+    {
+      "file": "engraved-bronze-deck.png",
+      "sha256": "822f685b83d8d3a8384f9253d426fa469f6b6aaeedbe5ad17a9589a1c5914e3c",
+      "prompt": "Use case: stylized-concept. Production game texture asset: one seamless square material tile of aged dark bronze deck plates with extremely fine hand-engraved frontier celestial-survey scrollwork. True orthographic overhead flat material, evenly lit albedo, no perspective. A few large irregular rectangular fitted panels with thin recessed seams and small brass rivets; delicate incised arcs, instrument divisions, floral filigree, hand-hatched patina. Quiet large planes, fine engraving subordinate; no circles as large focal motifs, no giant gears. Muted warm gray-brown bronze with restrained antique brass cut edges, near-uniform midtone, low contrast so it can cover a wide game floor without visual noise. 2048x2048 square seamless repeating texture, no gradients at edges. Style anchor: Antique frontier expedition ledger map \u2026 Style of a Wild-West survey map: fine sepia engraved linework and hatching, subtle aged-paper texture underneath, muted warm colors, illustrated \u2014 not photorealistic, not saturated. Full bleed. No text, no letters, no numbers, no watermarks, no objects, no scenery. This is a texture atlas tile to replace cobblestone on the Last Claim memorial deck."
+    },
+    {
+      "file": "engraved-star-vista.png",
+      "sha256": "87bded5b0a2a86c608ffcb19ac9ca2201181d2705e6a6a2810e998bea94cd4ca",
+      "prompt": "Use case: stylized-concept. Production wraparound game sky panorama texture, wide landscape 3:1 aspect ratio. An immense antique celestial night sky, dense fine engraved stars and flowing smoky nebula filaments, seen from a frontier brass memorial platform in deep space; ONLY sky, no platform, no horizon, no ground, no buildings or objects. Left third has dark charcoal curling dust clouds with fine crosshatching; middle and right have vast near-black star fields with warm subdued gold stars, a few teal-gray gas wisps and a faint warm glow low on the right. Quiet enough to frame gameplay, cosmic depth, no obvious repeated bands. Seamless left/right edge continuity. Style anchor: Antique frontier expedition ledger map \u2026 Style of a Wild-West survey map: fine sepia engraved linework and hatching, subtle aged-paper texture underneath, muted warm colors, illustrated \u2014 not photorealistic, not saturated. No text, no letters, no watermark, no planets, no people. Full bleed.",
+      "status": "superseded, original native output exceeded the 2048 texture edge cap"
+    },
+    {
+      "file": "engraved-star-vista-square.png",
+      "sha256": "0b6ecaf3c7f4ded7adf4ba5db6544b615a7eeb089f35dae2baa74912e163ed05",
+      "mode": "native image_gen edit",
+      "reference": "engraved-star-vista.png",
+      "prompt": "Recompose this same engraved star panorama into a SQUARE 1024x1024 production texture. Keep the antique gold pinprick stars, dark charcoal cloudy left area, teal-gray nebula wisps, subdued warm glow and all material/style qualities. Fill the square with celestial space only. No border, no text, no planets, no structures. It will wrap around a game panorama, so make left and right edges join naturally. Maintain the reference's understated contrast. Style anchor: Antique frontier expedition ledger map \u2026 Style of a Wild-West survey map: fine sepia engraved linework and hatching, subtle aged-paper texture underneath, muted warm colors, illustrated \u2014 not photorealistic, not saturated.",
+      "actualDimensions": [
+        1254,
+        1254
+      ]
+    }
+  ]
+}

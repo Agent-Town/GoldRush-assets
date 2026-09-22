@@ -2,12 +2,12 @@
   "asset": "last-claim-panorama.glb",
   "map": "last-claim",
   "renderOnly": true,
-  "style": "Separate star wall beyond a lowered stone apron, within Panorama Law v2 budget.",
-  "meshCount": 1,
-  "primitiveCount": 1,
-  "materialCount": 1,
-  "vertices": 640,
-  "triangles": 1024,
+  "style": "Native engraved star vista and 32-bay brass perimeter outside the unchanged square; Panorama Law v2 budget.",
+  "meshCount": 2,
+  "primitiveCount": 2,
+  "materialCount": 2,
+  "vertices": 2304,
+  "triangles": 3584,
   "triangleBudget": 4000,
   "boundsMeters": {
     "min": [
@@ -21,12 +21,13 @@
       115.0
     ]
   },
-  "sha256": "08021d6fb8d08dfe51b44ad07459ccd12f659dd6b838252e4d56783439bff247",
+  "sha256": "3ccf3ce9a0ed7854fca950cf7f59420142b2220c80e105f9767f6e3770a7d6df",
   "texture": {
-    "count": 1,
-    "width": 2048,
-    "height": 2048,
-    "embedded": true
+    "count": 2,
+    "width": 1254,
+    "height": 1254,
+    "embedded": true,
+    "secondAtlas": "last-claim-terrain-atlas.png"
   },
   "mount": {
     "id": "last-claim-panorama",
@@ -63,20 +64,21 @@
     }
   },
   "sourceArt": [
-    "assets/pilots/map-rebuild-spike/archive-world-panorama-atlas.png"
+    "assets/pilots/map-rebuild-spike/sources/last-claim-fidelity-1/engraved-star-vista-square.png",
+    "assets/pilots/map-rebuild-spike/sources/last-claim-fidelity-1/engraved-bronze-deck.png"
   ],
   "files": {
     "blend": {
-      "bytes": 4234993,
-      "sha256": "19f6d9974d8b1695f6204cf6d6bfdb858c6051bc91ede6f8b44e7d679f40e1db"
+      "bytes": 6621308,
+      "sha256": "a49a4f214b27bf77a18dc7799b95a9ffa8f4475f2338bc86740e6f0ba02524bc"
     },
     "glb": {
-      "bytes": 742660,
-      "sha256": "08021d6fb8d08dfe51b44ad07459ccd12f659dd6b838252e4d56783439bff247"
+      "bytes": 6747864,
+      "sha256": "3ccf3ce9a0ed7854fca950cf7f59420142b2220c80e105f9767f6e3770a7d6df"
     },
     "atlas": {
-      "bytes": 714418,
-      "sha256": "e6902a845b8324062b92ab7744521c5c5a4b579cc5547943552c278d3979fd65"
+      "bytes": 3198530,
+      "sha256": "0b6ecaf3c7f4ded7adf4ba5db6544b615a7eeb089f35dae2baa74912e163ed05"
     }
   }
 }

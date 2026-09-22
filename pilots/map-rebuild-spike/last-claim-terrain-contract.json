@@ -24,7 +24,7 @@
       1.096054196357727
     ]
   },
-  "sha256": "a9b6c50c8cef5542b564c8ba36278cbd5f11e6838fedf00fb502ad659326b8af",
+  "sha256": "cd15bfcfb513e126fae8682568f3d29b00500fb0225d5c4154ec4ddd30d2b094",
   "texture": {
     "count": 1,
     "width": 1254,
@@ -403,7 +403,7 @@
   ],
   "sourceArt": [
     "assets/raw/plate-contract-e10-last-claim.png",
-    "assets/raw/archive-world-floor-material-v1.png"
+    "assets/pilots/map-rebuild-spike/sources/last-claim-fidelity-1/engraved-bronze-deck.png"
   ],
   "heightDerivation": {
     "grid": "last-claim-fallback-height-grid.json",
@@ -412,16 +412,16 @@
   },
   "files": {
     "blend": {
-      "bytes": 4292338,
-      "sha256": "2699f37b05c0a2060b4574fc66d8b7be240d15ddffa6620cf572d01d5ad63d7e"
+      "bytes": 4147263,
+      "sha256": "7f0648384b80db5a0b2e920a8f8423ba28bc9c9583e34bc9c5ead39ab1bab0aa"
     },
     "glb": {
-      "bytes": 4181628,
-      "sha256": "a9b6c50c8cef5542b564c8ba36278cbd5f11e6838fedf00fb502ad659326b8af"
+      "bytes": 4030216,
+      "sha256": "cd15bfcfb513e126fae8682568f3d29b00500fb0225d5c4154ec4ddd30d2b094"
     },
     "atlas": {
-      "bytes": 3450988,
-      "sha256": "621a457ee276de08c7563686a0d9e76371413fe1dd03ffa174a9747a8a07d101"
+      "bytes": 3299573,
+      "sha256": "822f685b83d8d3a8384f9253d426fa469f6b6aaeedbe5ad17a9589a1c5914e3c"
     }
   }
 }

@@ -15,7 +15,7 @@
   },
   "blend": {
     "asset": "landmarks/last-claim/last-claim-landmarks.blend",
-    "sha256": "8481246c2103a5ac57a0d261a9311f5fb1cc363e9ed5041e8fbb8016d760813c"
+    "sha256": "cae2af712a3eea41830ca6bb63410e3507a5b3506b7589cfb4cf396bdbc90b79"
   },
   "assets": {
     "preserve-last-lantern": {
@@ -140,7 +140,7 @@
           5.900000095367432
         ]
       },
-      "sha256": "5fa8b3b7e1b45305819463189a8172c94c2de8f91c81848ce849b9ed61801a08",
+      "sha256": "11305377bbcc239df4de040500d83548f28425a81345682881b7a5e8f30fa4b7",
       "blocking": "none; decorative monument, no new collision footprint"
     }
   },
