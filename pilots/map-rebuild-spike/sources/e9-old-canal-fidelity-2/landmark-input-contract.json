@@ -12,12 +12,11 @@
     "width": 1024,
     "height": 1024,
     "sharedByEveryAsset": true,
-    "sha256": "3b23219ef04870fa71a73f3006a8f80225c95d1f3be56f66a8b4e0975e3b721b",
-    "provenance": "Native image_gen; sources/e9-old-canal-fidelity-2/native-material-swatches-v2.png; sips resize 1024 square."
+    "sha256": "2522b65a4aa152f0c4f9278204ebb46e035c2d95d221f5ed49da372bc146a1b7"
   },
   "blend": {
     "asset": "landmarks/old-canal/old-canal-landmarks.blend",
-    "sha256": "49b9e3050a9a2e954d55760161211047a6ce89d9fa1cb4b42310f8b2643d5460"
+    "sha256": "61addf49a9620a2d4c2c74fa16fa1decaada1d3a32f8d18d346761f58f39e465"
   },
   "assets": {
     "south-survey-rig": {
@@ -42,7 +41,7 @@
           6.36
         ]
       },
-      "sha256": "812b019d728e547bd7be4bab34b36092259fa9b1bee84113d7f3b14b3034f7a2",
+      "sha256": "5a3db26c48191a4d2d55be181786e6c2f9118c3fe75d3471af93b9860ea5e412",
       "footprint": {
         "kind": "rect",
         "w": 5.621,
@@ -57,7 +56,7 @@
         "assets/raw/plate-e9-bld-canal-works.png"
       ],
       "terrainConformed": false,
-      "triangles": 2156,
+      "triangles": 1444,
       "triangleBudget": 3000,
       "bounds": {
         "min": [
@@ -71,21 +70,11 @@
           5.26
         ]
       },
-      "sha256": "493934a9bd0871b0dc11a13340fdd9347d5b8579908e7c28c2b164831f27fcdd",
+      "sha256": "7f196d63a45a2850ad57514b0df41a024c79fcaae28c2818f64bcdf0266aad21",
       "artRevision": {
-        "date": "2026-09-24",
-        "recipe": "sources/e9-old-canal-fidelity-2/refine-canal-drives.py",
-        "trianglesBefore": 1444,
-        "trianglesAfter": 2156,
-        "preserved": "source envelope, wheel centers, mounts, collision footprint and all original geometry",
-        "features": [
-          "physical UV proportions",
-          "native metal and masonry surfaces",
-          "grounded central drive and bearing seat",
-          "upper wheel spokes and bearing housings",
-          "return brackets join the handwinches",
-          "stepped pedestal feet and shaft collars"
-        ]
+        "recipe": "dress_old_canal_winches.py",
+        "sourceBlendSha256": "39fec832d71e70879a0b8587bc0819205604c72a4d242b954ca1bb82b6ce7982",
+        "change": "Two hand winches on supported axles at each retained open marker, within original bounds."
       }
     },
     "canal-segment-b-marker": {
@@ -96,7 +85,7 @@
         "assets/raw/plate-e9-bld-canal-works.png"
       ],
       "terrainConformed": false,
-      "triangles": 2168,
+      "triangles": 1456,
       "triangleBudget": 3000,
       "bounds": {
         "min": [
@@ -110,21 +99,11 @@
           5.56
         ]
       },
-      "sha256": "d2c41aec915437ac487d7a13e1d6f3f2bb8ee80fddf647c1566dfcac48e27035",
+      "sha256": "5fd0c138d216499e66ce26b1acfaf19fd7ad570dac3b14989e9c860928dce256",
       "artRevision": {
-        "date": "2026-09-24",
-        "recipe": "sources/e9-old-canal-fidelity-2/refine-canal-drives.py",
-        "trianglesBefore": 1456,
-        "trianglesAfter": 2168,
-        "preserved": "source envelope, wheel centers, mounts, collision footprint and all original geometry",
-        "features": [
-          "physical UV proportions",
-          "native metal and masonry surfaces",
-          "grounded central drive and bearing seat",
-          "upper wheel spokes and bearing housings",
-          "return brackets join the handwinches",
-          "stepped pedestal feet and shaft collars"
-        ]
+        "recipe": "dress_old_canal_winches.py",
+        "sourceBlendSha256": "39fec832d71e70879a0b8587bc0819205604c72a4d242b954ca1bb82b6ce7982",
+        "change": "Two hand winches on supported axles at each retained open marker, within original bounds."
       }
     },
     "canal-segment-c-marker": {
@@ -135,7 +114,7 @@
         "assets/raw/plate-e9-bld-canal-works.png"
       ],
       "terrainConformed": false,
-      "triangles": 2180,
+      "triangles": 1468,
       "triangleBudget": 3000,
       "bounds": {
         "min": [
@@ -149,21 +128,11 @@
           5.86
         ]
       },
-      "sha256": "9dcc77afc1dfb36f875f898c290e11ef07094d3484cfc3d963cf72f9680b4e9f",
+      "sha256": "334fd4e355fb9a29ecf79f2ba9aac3a81008aafbdc5d892d01dc5dbdd7b58e9b",
       "artRevision": {
-        "date": "2026-09-24",
-        "recipe": "sources/e9-old-canal-fidelity-2/refine-canal-drives.py",
-        "trianglesBefore": 1468,
-        "trianglesAfter": 2180,
-        "preserved": "source envelope, wheel centers, mounts, collision footprint and all original geometry",
-        "features": [
-          "physical UV proportions",
-          "native metal and masonry surfaces",
-          "grounded central drive and bearing seat",
-          "upper wheel spokes and bearing housings",
-          "return brackets join the handwinches",
-          "stepped pedestal feet and shaft collars"
-        ]
+        "recipe": "dress_old_canal_winches.py",
+        "sourceBlendSha256": "39fec832d71e70879a0b8587bc0819205604c72a4d242b954ca1bb82b6ce7982",
+        "change": "Two hand winches on supported axles at each retained open marker, within original bounds."
       }
     },
     "north-outflow-gate": {
@@ -188,7 +157,7 @@
           6.96
         ]
       },
-      "sha256": "94302e96562835f90ed3ae11d9a63e0a4592aff7e2ff372092d80ba97706812f"
+      "sha256": "33afcbfbb1800998bc1d709d8af361b3f128984f117854772ccded1fc7d4dfda"
     }
   },
   "mounts": [
