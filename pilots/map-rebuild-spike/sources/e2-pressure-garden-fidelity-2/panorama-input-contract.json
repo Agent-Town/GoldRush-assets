@@ -70,48 +70,33 @@
     "fogGating": "unchanged",
     "waterBuildSpawnMasks": "unchanged"
   },
-  "meshCount": 2,
-  "primitiveCount": 2,
-  "materialCount": 2,
-  "vertices": 2481,
-  "triangles": 3672,
+  "meshCount": 1,
+  "primitiveCount": 1,
+  "materialCount": 1,
+  "vertices": 1545,
+  "triangles": 2112,
   "triangleBudget": 4000,
   "texture": {
-    "count": 2,
+    "count": 1,
     "width": 2048,
     "height": 2048,
-    "embedded": true,
-    "secondAtlas": "sources/e2-pressure-garden-fidelity-2/engraved-river-gravel.png",
-    "secondAtlasSourceSize": [
-      1254,
-      1254
-    ],
-    "secondAtlasEncoding": "Blender resamples the native source to the shared 2048-square panorama contract; original PNG remains unchanged"
+    "embedded": true
   },
   "sourceArt": [
-    "assets/processed/kit-era-2.png",
-    "assets/pilots/map-rebuild-spike/sources/e2-pressure-garden-fidelity-2/engraved-river-gravel.png"
+    "assets/processed/kit-era-2.png"
   ],
   "files": {
     "blend": {
-      "bytes": 15166007,
-      "sha256": "b720d0782b24ba16cc6b56916df8431968f7c0088461de467345299dc664a23a"
+      "bytes": 540990,
+      "sha256": "ea7e1e130228c1d3ae01a08d039b9edb276bd92a61264f52ece72f372607bf0c"
     },
     "glb": {
-      "bytes": 8318852,
-      "sha256": "d80f2979401a5fe7eb842bdff79a3263a1042914d561b240ef47f58b2e6d205e"
+      "bytes": 659532,
+      "sha256": "424fad6a426387ccded6a8819251b362c8340b53bd0e6762704e0a18d6b691ca"
     },
     "atlas": {
       "bytes": 439842,
       "sha256": "fa2f5c58b8ab77ddcc6f92c9c241060a4b2b760dbec4f2f8be23043f37ffcf30"
     }
-  },
-  "bankScenery": {
-    "recipe": "sources/e2-pressure-garden-fidelity-2/dress-bank-scenery.py",
-    "count": 78,
-    "triangles": 1560,
-    "renderOnly": true,
-    "fordClearHalfWidth": 6,
-    "heightSource": "raycast unchanged delivered terrain; scenery never enters height sampler"
   }
 }
