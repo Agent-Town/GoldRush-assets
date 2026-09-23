@@ -12,12 +12,11 @@
     "width": 1024,
     "height": 1024,
     "sharedByEveryAsset": true,
-    "sha256": "13761f2d577be9ce03cdd44029ba3f6ad1ba465d3747bbe5b4511724feafde53",
-    "provenance": "Native image_gen swatches reused from the completed Far Side material pass; local original in sources/e8-low-orbit-fidelity-2/native-metal-swatches.png."
+    "sha256": "3925bfe4b272c41d114e03247ea08a8a88c8b43bb819000466d46701837157cd"
   },
   "blend": {
     "asset": "landmarks/low-orbit/low-orbit-landmarks.blend",
-    "sha256": "051ca68bb06022a90cc1f490b2ad81f8ed944107a018ce67d61a6174928b08f7"
+    "sha256": "ba3425a1bbe1ce389102b1a2c0094ecafe0008c042a6bdb7fefd31b011c789e3"
   },
   "assets": {
     "west-scaffold-handhold-frame": {
@@ -42,7 +41,7 @@
           5.91
         ]
       },
-      "sha256": "98013efb3f2e7b737047cba5a019ade2e0b234e3b7ea222dfca4419a92b9860f"
+      "sha256": "696bfbfaf62982ad83c05823b3ddf79075fba4f0beb136851b598970bab5c9a9"
     },
     "claw-carcass-rig": {
       "asset": "landmarks/low-orbit/claw-carcass-rig.glb",
@@ -52,7 +51,7 @@
         "assets/raw/plate-e8-boss-salvage-kings-claw.png"
       ],
       "terrainConformed": false,
-      "triangles": 2964,
+      "triangles": 2972,
       "triangleBudget": 3000,
       "bounds": {
         "min": [
@@ -66,7 +65,7 @@
           6.63
         ]
       },
-      "sha256": "fd6e49fcc3d79a6dc1e233e7cfa2479d419caf66fafd58a158d751109e8985fd",
+      "sha256": "8d6dbf8259826812b01e01cc135ce42cda78554db52cab79d3cd7716edd198ae",
       "footprint": {
         "kind": "rect",
         "w": 6.117,
@@ -81,20 +80,6 @@
         "trianglesAfter": 2972,
         "oneSharedAtlasAndMaterial": true,
         "collisionFootprintUnchanged": true
-      },
-      "fidelityCorrection": {
-        "recipe": "sources/e8-low-orbit-fidelity-2/refine-salvage-rig.py",
-        "trianglesBefore": 2972,
-        "trianglesAfter": 2964,
-        "preserved": "exact full-body bounds, chamfered deck height, mount, station, collision footprint",
-        "features": [
-          "deep annular recovery housing",
-          "integrated rim and locking bolts",
-          "four socket-foot pressure turrets",
-          "articulated jaws with hydraulics",
-          "braced hoist and pulley",
-          "physically scaled housing UVs and native material swatches"
-        ]
       }
     },
     "east-scaffold-handhold-frame": {
@@ -119,7 +104,7 @@
           5.91
         ]
       },
-      "sha256": "cc2178190953399bc35b34a1cef5ee589099e27c97bf8b6966e65c3cb537efa4"
+      "sha256": "e4527406284d527b104c9d2442a10b09ae52b9d3b3c11ef284c6e453c76d4833"
     },
     "north-debris-catcher": {
       "asset": "landmarks/low-orbit/north-debris-catcher.glb",
@@ -143,7 +128,7 @@
           6.3
         ]
       },
-      "sha256": "31587e29d7aae65dd016b182a85e6c3c9e1b2e7e2e62998875e850b46f99c698",
+      "sha256": "b28f13a149e1a4783738893c2f4d989626de69619968efd315528f519bc5b3d2",
       "footprint": {
         "kind": "rect",
         "w": 3.744,
@@ -172,7 +157,7 @@
           6.87
         ]
       },
-      "sha256": "754cb6ee9941d2b37193b08b1e95ab265e39e44fb3041b1565fc7c1ba57b5974",
+      "sha256": "06d02201ad02e7825e2d94a8735be3488ae155bb5cf62330f0fe16efe8e717e2",
       "footprint": {
         "kind": "rect",
         "w": 3.312,
