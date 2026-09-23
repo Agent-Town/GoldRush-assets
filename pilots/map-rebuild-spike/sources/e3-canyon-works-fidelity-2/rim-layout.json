@@ -1,0 +1,310 @@
+[
+  {
+    "center": [
+      -44,
+      67
+    ],
+    "radii": [
+      12,
+      10
+    ],
+    "height": 16,
+    "vertices": 48,
+    "outsidePlayfield": true
+  },
+  {
+    "center": [
+      -24,
+      72
+    ],
+    "radii": [
+      12,
+      13
+    ],
+    "height": 14,
+    "vertices": 48,
+    "outsidePlayfield": true
+  },
+  {
+    "center": [
+      -5,
+      82
+    ],
+    "radii": [
+      14,
+      16
+    ],
+    "height": 10,
+    "vertices": 48,
+    "outsidePlayfield": true
+  },
+  {
+    "center": [
+      19,
+      77
+    ],
+    "radii": [
+      14,
+      14
+    ],
+    "height": 13,
+    "vertices": 48,
+    "outsidePlayfield": true
+  },
+  {
+    "center": [
+      41,
+      69
+    ],
+    "radii": [
+      13,
+      11
+    ],
+    "height": 18,
+    "vertices": 48,
+    "outsidePlayfield": true
+  },
+  {
+    "center": [
+      -34,
+      106
+    ],
+    "radii": [
+      23,
+      17
+    ],
+    "height": 29,
+    "vertices": 48,
+    "outsidePlayfield": true
+  },
+  {
+    "center": [
+      16,
+      113
+    ],
+    "radii": [
+      24,
+      18
+    ],
+    "height": 25,
+    "vertices": 48,
+    "outsidePlayfield": true
+  },
+  {
+    "center": [
+      -63,
+      33
+    ],
+    "radii": [
+      11,
+      22
+    ],
+    "height": 21,
+    "vertices": 48,
+    "outsidePlayfield": true
+  },
+  {
+    "center": [
+      65,
+      30
+    ],
+    "radii": [
+      12,
+      21
+    ],
+    "height": 24,
+    "vertices": 48,
+    "outsidePlayfield": true
+  },
+  {
+    "center": [
+      -66,
+      -23
+    ],
+    "radii": [
+      12,
+      22
+    ],
+    "height": 24,
+    "vertices": 48,
+    "outsidePlayfield": true
+  },
+  {
+    "center": [
+      64,
+      -25
+    ],
+    "radii": [
+      12,
+      24
+    ],
+    "height": 21,
+    "vertices": 48,
+    "outsidePlayfield": true
+  },
+  {
+    "center": [
+      -40,
+      -72
+    ],
+    "radii": [
+      17,
+      13
+    ],
+    "height": 17,
+    "vertices": 48,
+    "outsidePlayfield": true
+  },
+  {
+    "center": [
+      7,
+      -82
+    ],
+    "radii": [
+      23,
+      16
+    ],
+    "height": 20,
+    "vertices": 48,
+    "outsidePlayfield": true
+  },
+  {
+    "center": [
+      40,
+      -72
+    ],
+    "radii": [
+      16,
+      13
+    ],
+    "height": 23,
+    "vertices": 48,
+    "outsidePlayfield": true
+  },
+  {
+    "center": [
+      -44,
+      60
+    ],
+    "height": 1.6679621934890747,
+    "outsidePlayfield": true,
+    "kind": "talus"
+  },
+  {
+    "center": [
+      -40,
+      58.3
+    ],
+    "height": 1.44480299949646,
+    "outsidePlayfield": true,
+    "kind": "talus"
+  },
+  {
+    "center": [
+      -34,
+      62
+    ],
+    "height": 1.826615810394287,
+    "outsidePlayfield": true,
+    "kind": "talus"
+  },
+  {
+    "center": [
+      -26,
+      61
+    ],
+    "height": 1.688668966293335,
+    "outsidePlayfield": true,
+    "kind": "talus"
+  },
+  {
+    "center": [
+      -23,
+      58
+    ],
+    "height": 1.6437488794326782,
+    "outsidePlayfield": true,
+    "kind": "talus"
+  },
+  {
+    "center": [
+      -8,
+      64
+    ],
+    "height": 2.7910993099212646,
+    "outsidePlayfield": true,
+    "kind": "talus"
+  },
+  {
+    "center": [
+      -3,
+      59
+    ],
+    "height": 1.213401436805725,
+    "outsidePlayfield": true,
+    "kind": "talus"
+  },
+  {
+    "center": [
+      14,
+      58
+    ],
+    "height": 2.717698812484741,
+    "outsidePlayfield": true,
+    "kind": "talus"
+  },
+  {
+    "center": [
+      18,
+      63
+    ],
+    "height": 0.9012160301208496,
+    "outsidePlayfield": true,
+    "kind": "talus"
+  },
+  {
+    "center": [
+      29,
+      60
+    ],
+    "height": 1.0049911737442017,
+    "outsidePlayfield": true,
+    "kind": "talus"
+  },
+  {
+    "center": [
+      32,
+      59
+    ],
+    "height": 0.8408252596855164,
+    "outsidePlayfield": true,
+    "kind": "talus"
+  },
+  {
+    "center": [
+      36,
+      64
+    ],
+    "height": 1.5974122285842896,
+    "outsidePlayfield": true,
+    "kind": "talus"
+  },
+  {
+    "center": [
+      41,
+      58.4
+    ],
+    "height": 1.0345792770385742,
+    "outsidePlayfield": true,
+    "kind": "talus"
+  },
+  {
+    "center": [
+      45,
+      62
+    ],
+    "height": 2.1335251331329346,
+    "outsidePlayfield": true,
+    "kind": "talus"
+  }
+]

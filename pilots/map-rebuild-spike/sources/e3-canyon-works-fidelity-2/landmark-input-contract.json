@@ -17,7 +17,7 @@
   },
   "blend": {
     "asset": "landmarks/canyon-works/canyon-works-landmarks.blend",
-    "sha256": "0408ec1016c8261dec57e23764381ecfb90c853b3bbc4341fcddf40acbccce0f"
+    "sha256": "ed03453445e07431a5442e8774b8ab519a518b95b2850450f6c41ef96faea42d"
   },
   "assets": {
     "sub-hall-dynamo-house": {
@@ -29,7 +29,7 @@
         "assets/raw/ter-canyon-atlas.png"
       ],
       "terrainConformed": false,
-      "triangles": 2552,
+      "triangles": 1768,
       "triangleBudget": 3000,
       "bounds": {
         "min": [
@@ -43,25 +43,11 @@
           6.55
         ]
       },
-      "sha256": "46ab6511e9c77dfd3677b4e4018298a55e7ffa7acd3b8e3a162b6df6d9c7cfa4",
+      "sha256": "fa1022631542ba25f4610601296c017ebbcc9ca2db7d41a4d75ce2a6f903c7ff",
       "footprint": {
         "kind": "rect",
         "w": 5.616,
         "d": 3.6
-      },
-      "fidelityCorrection": {
-        "recipe": "sources/e3-canyon-works-fidelity-2/refine-canyon.py",
-        "trianglesBefore": 1768,
-        "trianglesAfter": 2552,
-        "preserved": "bounds, mount, collision footprint, inspection station, four sibling bodies and shared atlas bytes",
-        "features": [
-          "deep ribbed dynamo barrel",
-          "six-spoke rotor, hub and bearing supports",
-          "pitched metal roof and timber hall",
-          "recessed louver windows",
-          "ceramic terminals and offline copper bus",
-          "masonry plinth and recessed footing"
-        ]
       }
     },
     "west-switchback-line-house": {

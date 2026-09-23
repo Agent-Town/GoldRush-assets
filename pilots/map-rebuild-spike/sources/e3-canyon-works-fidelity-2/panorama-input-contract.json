@@ -72,20 +72,17 @@
     "fogGating": "unchanged",
     "waterBuildSpawnMasks": "unchanged"
   },
-  "meshCount": 3,
-  "primitiveCount": 3,
-  "materialCount": 3,
-  "vertices": 2771,
-  "triangles": 3980,
+  "meshCount": 1,
+  "primitiveCount": 1,
+  "materialCount": 1,
+  "vertices": 1931,
+  "triangles": 2496,
   "triangleBudget": 4000,
   "texture": {
-    "count": 3,
+    "count": 1,
     "width": 2048,
     "height": 2048,
-    "embedded": true,
-    "thirdAtlas": "canyon-works-terrain-atlas.png",
-    "secondAtlas": "assets/raw/ter-canyon-atlas.png",
-    "secondAtlasEncoding": "existing native plate resampled to 2048 square only in embedded GLB; source pixels remain unchanged; UVs restricted to rocky upper-right quadrant"
+    "embedded": true
   },
   "sourceArt": [
     "assets/processed/kit-era-3.png",
@@ -93,25 +90,16 @@
   ],
   "files": {
     "blend": {
-      "bytes": 16203398,
-      "sha256": "0d33823ad084bbb77127ec03f1fab0672bf1eba1b09e4ba7e155048e7b9be1cd"
+      "bytes": 676275,
+      "sha256": "aaa7b4e37c2a41b820cd285e84e873e6b035ee5ecbb3b4f95b2279a69d92f9fe"
     },
     "glb": {
-      "bytes": 16459928,
-      "sha256": "9fe5358f1c6846c948e903a38a02feabcabe3221997fecd23c9cd910b97127ae"
+      "bytes": 836136,
+      "sha256": "0ede694c463988536a48d07dbe3d1ffb09b8b8f9d9edd256122f4ccf220f92d4"
     },
     "atlas": {
       "bytes": 555017,
       "sha256": "17cddd1fafea2f2daa7768f571a6ef682b427223a0f9ddb5e1c03b6ba9c9304d"
     }
-  },
-  "rimScenery": {
-    "recipe": "sources/e3-canyon-works-fidelity-2/dress-canyon-rim.py",
-    "count": 28,
-    "triangles": 1484,
-    "renderOnly": true,
-    "allVerticesOutsidePlayfield": true,
-    "heightAuthority": false,
-    "preserved": "original sky geometry/UVs/tint and atlas; all original apron positions and seam-closing ring; apron uses unchanged terrain atlas"
   }
 }
