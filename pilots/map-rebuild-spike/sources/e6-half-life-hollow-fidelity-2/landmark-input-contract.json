@@ -16,7 +16,7 @@
   },
   "blend": {
     "asset": "landmarks/half-life-hollow/half-life-hollow-landmarks.blend",
-    "sha256": "2883a01c31e28debc4cde5477e035953fdb33dc65620fb46b4f8d2520263f535"
+    "sha256": "c4e459e7cd545b7681e9ad54d4b064263b6c1cff5bb1b9764d5f23b4e526e523"
   },
   "assets": {
     "south-countdown-gate": {
@@ -27,7 +27,7 @@
         "assets/processed/kit-era-6.png"
       ],
       "terrainConformed": false,
-      "triangles": 1956,
+      "triangles": 508,
       "triangleBudget": 3000,
       "bounds": {
         "min": [
@@ -41,19 +41,7 @@
           9.11
         ]
       },
-      "sha256": "178ddd92768f371647e4fab76a2dfbe179be081abcc9769efff3957ce9d23594",
-      "fidelityCorrection": {
-        "recipe": "sources/e6-half-life-hollow-fidelity-2/refine-countdown-gate.py",
-        "trianglesBefore": 508,
-        "trianglesAfter": 1956,
-        "features": [
-          "stepped masonry piers and pilasters",
-          "double arch ribs and support knees",
-          "recessed framed dial with layered bezel",
-          "caged lanterns and engraved hour marks"
-        ],
-        "preserved": "exact source envelope, atlas pixels, mount, clear passage, inspection station, collision and all sibling bodies"
-      }
+      "sha256": "6e4037fcbd2a55e7d0dccaefccbdcb00f36dc08aac1f37b5b3a1d1ab0edaa12f"
     },
     "west-hollow-warning-pylon": {
       "asset": "landmarks/half-life-hollow/west-hollow-warning-pylon.glb",
