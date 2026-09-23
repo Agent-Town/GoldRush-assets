@@ -12,12 +12,11 @@
     "width": 1024,
     "height": 1024,
     "sharedByEveryAsset": true,
-    "sha256": "3b23219ef04870fa71a73f3006a8f80225c95d1f3be56f66a8b4e0975e3b721b",
-    "provenance": "Native image_gen; sources/e9-seed-run-fidelity-2/native-material-swatches-v2.png; sips resize 1024 square."
+    "sha256": "2522b65a4aa152f0c4f9278204ebb46e035c2d95d221f5ed49da372bc146a1b7"
   },
   "blend": {
     "asset": "landmarks/seed-run/seed-run-landmarks.blend",
-    "sha256": "02e9352e173b3e2b0b546f5ebda5e63c780fc34f0441d5875c7946f1ff4db480"
+    "sha256": "ae309847dff14306f2c9cdf506dd901eab707d7a070ba7ea4a8811d46ad8a22f"
   },
   "assets": {
     "south-seed-caravan-gate": {
@@ -42,7 +41,7 @@
           6.94
         ]
       },
-      "sha256": "a648d5c6f6d4e2c6ad403abd2cfac6597135986b22529db7c16fb6212276e5e7"
+      "sha256": "7c73c5b2986640672f03efebeeba4c86fa8e3d5016c7af47641916f418780edf"
     },
     "west-seed-vault": {
       "asset": "landmarks/seed-run/west-seed-vault.glb",
@@ -66,7 +65,7 @@
           6.4164
         ]
       },
-      "sha256": "a9c05126c92f961436756c8fa9913f4b7b10725d600d60846e7008e318fbea4a",
+      "sha256": "5e5e5d1d5c4728a7e6e7471e740c22055fc03e784e5b1975b7343b71f10dcf5c",
       "footprint": {
         "kind": "rect",
         "w": 3.744,
@@ -81,7 +80,7 @@
         "assets/raw/plate-e9-bld-canal-works.png"
       ],
       "terrainConformed": false,
-      "triangles": 2828,
+      "triangles": 2148,
       "triangleBudget": 3000,
       "bounds": {
         "min": [
@@ -95,25 +94,19 @@
           7.1664
         ]
       },
-      "sha256": "c915048294c9fca9d0bf72185f07675c433f3d38a9e6ea6b7abd6997d14911ce",
+      "sha256": "da729f516ddec7575b552b337b9318ec72184256e6d25df510a2e1e914299482",
       "footprint": {
         "kind": "rect",
         "w": 4.104,
         "d": 3.103
       },
       "artRevision": {
-        "date": "2026-09-24",
-        "recipe": "sources/e9-seed-run-fidelity-2/refine-seed-vault.py",
-        "trianglesBefore": 2148,
-        "trianglesAfter": 2828,
-        "preserved": "source envelope, mounts, collision footprint and all original geometry",
-        "features": [
-          "physical UV proportions",
-          "native surfaces",
-          "recessed door reveal and four-spoke handwheel",
-          "hinges and threshold",
-          "framed sight windows and post bearings"
-        ]
+        "date": "2026-09-21",
+        "recipe": "dress_seed_vault.py",
+        "baseBlendSha256": "eadff552358784628008bfdbb5e49666bec77fe81f00381f9820433607cf0d3b",
+        "change": "Replace flat red roof with ribbed curved teal shell, add seed canisters and chamfered footing; retain tall seed emblem, exact bounds and collision footprint. Four stanchions and bearing shoes visibly seat the roof on the footing. Enclosed storage and doorway remain within the existing blocked footprint; roof headers/brackets clarify joins, brass emblem ring separates from canopy.",
+        "trianglesBefore": 800,
+        "trianglesAfter": 2148
       }
     },
     "east-seed-vault": {
@@ -138,7 +131,7 @@
           8.0
         ]
       },
-      "sha256": "8e0d3c943292fa7709c8eb2b0d6e9209c936aaa231fa45f63890c7c24a2e8028",
+      "sha256": "0bdf5896e9a31b80d78bb84b579dba050a1f2c53bcb4b00f5abfd56523396307",
       "footprint": {
         "kind": "rect",
         "w": 4.464,
@@ -167,7 +160,7 @@
           8.52
         ]
       },
-      "sha256": "01cdda79de37717c46682e30b444c87655830eafff69365aa1a5069037f93079"
+      "sha256": "1af0f66f88f535b360ba623720b2f0afb25b935ffc10662ae976ac5ace34e487"
     }
   },
   "mounts": [
