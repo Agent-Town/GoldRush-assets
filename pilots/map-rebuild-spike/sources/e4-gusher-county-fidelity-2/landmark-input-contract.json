@@ -16,7 +16,7 @@
   },
   "blend": {
     "asset": "landmarks/gusher-county/gusher-county-landmarks.blend",
-    "sha256": "1f2990e63c0f52f15ca94a15c2183e532c56552210ea5d981137178bed858b3a"
+    "sha256": "e2808a578f926fd1ba3b588dbdf01cc383996078e8c5b38da9d28f409295192f"
   },
   "assets": {
     "derrick-01": {
@@ -27,7 +27,7 @@
         "assets/raw/plate-e4-bld-set.png"
       ],
       "terrainConformed": false,
-      "triangles": 2252,
+      "triangles": 868,
       "triangleBudget": 3000,
       "bounds": {
         "min": [
@@ -41,22 +41,10 @@
           7.245
         ]
       },
-      "sha256": "79dd963e9248beb4505770b28a8b559af09ba3450dedf1b2eff9450ce5b6930f",
+      "sha256": "916cfb5af0041472c448245507995e44f2ed71966fd18a63b2cce452188ac286",
       "footprint": {
         "kind": "radius",
         "radius": 1.661
-      },
-      "fidelityCorrection": {
-        "recipe": "sources/e4-gusher-county-fidelity-2/refine-lease-derricks.py",
-        "trianglesBefore": 868,
-        "trianglesAfter": 2252,
-        "features": [
-          "tapered timber lattice with upper safety rail",
-          "connected local header and return pipes",
-          "couplings, supports, passive valve and gauge",
-          "exposed spoked flywheel, bolted flanges and alternating side winch/service vessel"
-        ],
-        "preserved": "exact bounds, atlas bytes, mount, collision footprint, inspection declarations"
       }
     },
     "derrick-02": {
@@ -67,7 +55,7 @@
         "assets/raw/plate-e4-bld-set.png"
       ],
       "terrainConformed": false,
-      "triangles": 2108,
+      "triangles": 536,
       "triangleBudget": 3000,
       "bounds": {
         "min": [
@@ -81,23 +69,11 @@
           4.92
         ]
       },
-      "sha256": "63b605084bb82e132956133f3a86759cbc0b795c288a5dbccbc750a5866d78c1",
+      "sha256": "dd40856dc193de08160d34c2eb8f50ad982f84b2da4c015974858296949442d6",
       "footprint": {
         "kind": "rect",
         "w": 3.888,
         "d": 3.024
-      },
-      "fidelityCorrection": {
-        "recipe": "sources/e4-gusher-county-fidelity-2/refine-lease-derricks.py",
-        "trianglesBefore": 536,
-        "trianglesAfter": 2108,
-        "features": [
-          "tapered timber lattice with upper safety rail",
-          "connected local header and return pipes",
-          "couplings, supports, passive valve and gauge",
-          "exposed spoked flywheel, bolted flanges and alternating side winch/service vessel"
-        ],
-        "preserved": "exact bounds, atlas bytes, mount, collision footprint, inspection declarations"
       }
     },
     "derrick-03": {
@@ -108,7 +84,7 @@
         "assets/raw/plate-e4-bld-set.png"
       ],
       "terrainConformed": false,
-      "triangles": 2252,
+      "triangles": 684,
       "triangleBudget": 3000,
       "bounds": {
         "min": [
@@ -122,23 +98,11 @@
           7.3
         ]
       },
-      "sha256": "1378e184a4dd3c702a719bfeead6d5703764f48bcab00291c1308b4ee470da5c",
+      "sha256": "6f5030bfa92a5f30c42b0a804fd5b046db3f35084097029c6f328766b0be5262",
       "footprint": {
         "kind": "rect",
         "w": 3.87,
         "d": 3.168
-      },
-      "fidelityCorrection": {
-        "recipe": "sources/e4-gusher-county-fidelity-2/refine-lease-derricks.py",
-        "trianglesBefore": 684,
-        "trianglesAfter": 2252,
-        "features": [
-          "tapered timber lattice with upper safety rail",
-          "connected local header and return pipes",
-          "couplings, supports, passive valve and gauge",
-          "exposed spoked flywheel, bolted flanges and alternating side winch/service vessel"
-        ],
-        "preserved": "exact bounds, atlas bytes, mount, collision footprint, inspection declarations"
       }
     },
     "derrick-04": {
@@ -149,7 +113,7 @@
         "assets/raw/plate-e4-bld-set.png"
       ],
       "terrainConformed": false,
-      "triangles": 2252,
+      "triangles": 564,
       "triangleBudget": 3000,
       "bounds": {
         "min": [
@@ -163,23 +127,11 @@
           6.75
         ]
       },
-      "sha256": "f5e4a795578f292bc3edaf4359828940958b015a0a5e437a6151b2b93a360db4",
+      "sha256": "c864fda9761c3e930a6fac2db4170b0f44a1532eaf4425658fee2fb28bd71d43",
       "footprint": {
         "kind": "rect",
         "w": 3.888,
         "d": 3.096
-      },
-      "fidelityCorrection": {
-        "recipe": "sources/e4-gusher-county-fidelity-2/refine-lease-derricks.py",
-        "trianglesBefore": 564,
-        "trianglesAfter": 2252,
-        "features": [
-          "tapered timber lattice with upper safety rail",
-          "connected local header and return pipes",
-          "couplings, supports, passive valve and gauge",
-          "exposed spoked flywheel, bolted flanges and alternating side winch/service vessel"
-        ],
-        "preserved": "exact bounds, atlas bytes, mount, collision footprint, inspection declarations"
       }
     },
     "derrick-05": {
@@ -190,7 +142,7 @@
         "assets/raw/plate-e4-bld-set.png"
       ],
       "terrainConformed": false,
-      "triangles": 2252,
+      "triangles": 892,
       "triangleBudget": 3000,
       "bounds": {
         "min": [
@@ -204,22 +156,10 @@
           7.245
         ]
       },
-      "sha256": "3e388464a9696e2b504e0210ecb4040c0c700407570d288f74ead8ebf54d81c0",
+      "sha256": "61e966ec242f1fa7416e68b06651333cc815b46dc066e751dcff47616e9a5952",
       "footprint": {
         "kind": "radius",
         "radius": 1.595
-      },
-      "fidelityCorrection": {
-        "recipe": "sources/e4-gusher-county-fidelity-2/refine-lease-derricks.py",
-        "trianglesBefore": 892,
-        "trianglesAfter": 2252,
-        "features": [
-          "tapered timber lattice with upper safety rail",
-          "connected local header and return pipes",
-          "couplings, supports, passive valve and gauge",
-          "exposed spoked flywheel, bolted flanges and alternating side winch/service vessel"
-        ],
-        "preserved": "exact bounds, atlas bytes, mount, collision footprint, inspection declarations"
       }
     },
     "derrick-06": {
@@ -230,7 +170,7 @@
         "assets/raw/plate-e4-bld-set.png"
       ],
       "terrainConformed": false,
-      "triangles": 2108,
+      "triangles": 536,
       "triangleBudget": 3000,
       "bounds": {
         "min": [
@@ -244,23 +184,11 @@
           4.92
         ]
       },
-      "sha256": "2632f559651120a6d47d90eb682c0de2b52a0294cfb45cc360bbba859db80f78",
+      "sha256": "cc775c09277376d5bbb022d0d839816ff35d130888da8aab5235cbf9316112a8",
       "footprint": {
         "kind": "rect",
         "w": 3.888,
         "d": 3.024
-      },
-      "fidelityCorrection": {
-        "recipe": "sources/e4-gusher-county-fidelity-2/refine-lease-derricks.py",
-        "trianglesBefore": 536,
-        "trianglesAfter": 2108,
-        "features": [
-          "tapered timber lattice with upper safety rail",
-          "connected local header and return pipes",
-          "couplings, supports, passive valve and gauge",
-          "exposed spoked flywheel, bolted flanges and alternating side winch/service vessel"
-        ],
-        "preserved": "exact bounds, atlas bytes, mount, collision footprint, inspection declarations"
       }
     },
     "derrick-07": {
@@ -271,7 +199,7 @@
         "assets/raw/plate-e4-bld-set.png"
       ],
       "terrainConformed": false,
-      "triangles": 2252,
+      "triangles": 684,
       "triangleBudget": 3000,
       "bounds": {
         "min": [
@@ -285,23 +213,11 @@
           7.3
         ]
       },
-      "sha256": "33264a950b6c854ed69c48faa7e6374c880b8fd619279fec42e736c8c728293a",
+      "sha256": "914eb5fdf38f4e81aa9bde2ba8ff110305e666ef797ba56389537bf6007ed191",
       "footprint": {
         "kind": "rect",
         "w": 3.87,
         "d": 3.168
-      },
-      "fidelityCorrection": {
-        "recipe": "sources/e4-gusher-county-fidelity-2/refine-lease-derricks.py",
-        "trianglesBefore": 684,
-        "trianglesAfter": 2252,
-        "features": [
-          "tapered timber lattice with upper safety rail",
-          "connected local header and return pipes",
-          "couplings, supports, passive valve and gauge",
-          "exposed spoked flywheel, bolted flanges and alternating side winch/service vessel"
-        ],
-        "preserved": "exact bounds, atlas bytes, mount, collision footprint, inspection declarations"
       }
     },
     "derrick-08": {
@@ -312,7 +228,7 @@
         "assets/raw/plate-e4-bld-set.png"
       ],
       "terrainConformed": false,
-      "triangles": 2252,
+      "triangles": 564,
       "triangleBudget": 3000,
       "bounds": {
         "min": [
@@ -326,23 +242,11 @@
           7.35
         ]
       },
-      "sha256": "b64b8fe714e1908de58101ce3bd13f924b6226c5ddcf329e9150166c594d9a1b",
+      "sha256": "4131b96844c84efa4b5d8ff6f2b844c602bedff0c20bcf413bdb9ec20d60cd85",
       "footprint": {
         "kind": "rect",
         "w": 3.888,
         "d": 3.096
-      },
-      "fidelityCorrection": {
-        "recipe": "sources/e4-gusher-county-fidelity-2/refine-lease-derricks.py",
-        "trianglesBefore": 564,
-        "trianglesAfter": 2252,
-        "features": [
-          "tapered timber lattice with upper safety rail",
-          "connected local header and return pipes",
-          "couplings, supports, passive valve and gauge",
-          "exposed spoked flywheel, bolted flanges and alternating side winch/service vessel"
-        ],
-        "preserved": "exact bounds, atlas bytes, mount, collision footprint, inspection declarations"
       }
     },
     "outhouse-geyser": {
