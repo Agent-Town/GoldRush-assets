@@ -16,7 +16,7 @@
   },
   "blend": {
     "asset": "landmarks/dust-flats/dust-flats-landmarks.blend",
-    "sha256": "46780e73924017ed0202e50568173cd4f2098bf39c6c12e198a6fc2a058de1fa"
+    "sha256": "c82cbf9cb928466cfd8e19106bcd51355cd756324c9531dfae7223ab1cb96ef4"
   },
   "assets": {
     "north-railhead-storm-tower": {
@@ -27,7 +27,7 @@
         "assets/pilots/plaza-props-3d/road-marker.e4.glb"
       ],
       "terrainConformed": false,
-      "triangles": 826,
+      "triangles": 628,
       "triangleBudget": 3000,
       "bounds": {
         "min": [
@@ -41,22 +41,10 @@
           9.63
         ]
       },
-      "sha256": "9ba1744a8c4b6879f48a730eb9f9c35b354c3556298047fe96b265afb5ce010b",
+      "sha256": "65e905b780d209cfe97d9ea45c9ade7bca145dda6929da5ddbb648350a86ef14",
       "footprint": {
         "kind": "radius",
         "radius": 1.44
-      },
-      "fidelityCorrection": {
-        "recipe": "sources/e4-dust-flats-fidelity-2/refine-service-chain.py",
-        "trianglesBefore": 628,
-        "trianglesAfter": 826,
-        "features": [
-          "tapered open lattice supports",
-          "observation cabin with open windows",
-          "railed balcony and hipped metal roof",
-          "passive teal weather vane"
-        ],
-        "preserved": "exact bounds, atlas bytes, mount, collision footprint, inspection declarations"
       }
     },
     "west-road-wrecker-shed": {
@@ -96,7 +84,7 @@
         "assets/pilots/plaza-props-3d/water_trough.e4.glb"
       ],
       "terrainConformed": false,
-      "triangles": 2224,
+      "triangles": 2380,
       "triangleBudget": 3000,
       "bounds": {
         "min": [
@@ -110,23 +98,11 @@
           3.43
         ]
       },
-      "sha256": "c385acec37966824b140144a1193e057c29003aee826027cf6f7f62da940f3a2",
+      "sha256": "e5efcee5a9a27d883b18712810b9b7a8472984765f0c171d094b0d41ffc68770",
       "footprint": {
         "kind": "rect",
         "w": 5.328,
         "d": 3.456
-      },
-      "fidelityCorrection": {
-        "recipe": "sources/e4-dust-flats-fidelity-2/refine-service-chain.py",
-        "trianglesBefore": 2380,
-        "trianglesAfter": 2224,
-        "features": [
-          "three hooped storage vessels",
-          "ribbed staves and sloped iron lids",
-          "connected passive manifold and taps",
-          "boarded deck and rails"
-        ],
-        "preserved": "exact bounds, atlas bytes, mount, collision footprint, inspection declarations"
       }
     },
     "south-grade-charting-post": {
