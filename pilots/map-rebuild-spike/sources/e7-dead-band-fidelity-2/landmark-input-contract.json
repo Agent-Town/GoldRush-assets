@@ -16,7 +16,7 @@
   },
   "blend": {
     "asset": "landmarks/dead-band/dead-band-landmarks.blend",
-    "sha256": "4611f6c75c0e8e102e77fdfb9c1af62700d4da89d4e831b9c2022fda68fbd48f"
+    "sha256": "c3e95a973cfdc4c951716403773137bf6fc373233d0a16e8120e535f47beb7dc"
   },
   "assets": {
     "dead-band-yard-null-post": {
@@ -113,7 +113,7 @@
         "assets/contracts/epoch-7-signal/mask-tables/e7-dead-band.json"
       ],
       "terrainConformed": false,
-      "triangles": 1464,
+      "triangles": 156,
       "triangleBudget": 3000,
       "bounds": {
         "min": [
@@ -127,19 +127,7 @@
           4.91
         ]
       },
-      "sha256": "c22c7bdc3f29f155617df7da394935c29b1670eed9155d65650a8eb912de9eda",
-      "fidelityCorrection": {
-        "recipe": "sources/e7-dead-band-fidelity-2/refine-silent-frames.py",
-        "trianglesBefore": 156,
-        "trianglesAfter": 1464,
-        "features": [
-          "twin layered lattice pylons",
-          "socket feet and riveted collars",
-          "open truss header and knees",
-          "unlit ceramic aerials and double null bezel"
-        ],
-        "preserved": "exact source envelope, original atlas pixels, mount, inspection station, collision and sibling bodies"
-      }
+      "sha256": "306aaf65231ce1da69a5c27c5dd57c81e8312bdc9f0742092536e5c335481f94"
     },
     "north-silence-gate": {
       "asset": "landmarks/dead-band/north-silence-gate.glb",
@@ -149,7 +137,7 @@
         "assets/raw/plate-e7-bld-relay-tower.png"
       ],
       "terrainConformed": false,
-      "triangles": 1548,
+      "triangles": 180,
       "triangleBudget": 3000,
       "bounds": {
         "min": [
@@ -163,19 +151,7 @@
           6.41
         ]
       },
-      "sha256": "e5f0e7d5a24aab782c87d1b4f91d526fb6c276fa4d731bac014c188fb620bc64",
-      "fidelityCorrection": {
-        "recipe": "sources/e7-dead-band-fidelity-2/refine-silent-frames.py",
-        "trianglesBefore": 180,
-        "trianglesAfter": 1548,
-        "features": [
-          "twin layered lattice pylons",
-          "socket feet and riveted collars",
-          "open truss header and knees",
-          "unlit ceramic aerials and double null bezel"
-        ],
-        "preserved": "exact source envelope, original atlas pixels, mount, inspection station, collision and sibling bodies"
-      }
+      "sha256": "b92eec113c392515270b6aed8266ee78bc2133172badb0b8be9dd8575c32d17d"
     }
   },
   "mounts": [
