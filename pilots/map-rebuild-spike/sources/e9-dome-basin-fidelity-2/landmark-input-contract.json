@@ -12,12 +12,11 @@
     "width": 1024,
     "height": 1024,
     "sharedByEveryAsset": true,
-    "sha256": "3b23219ef04870fa71a73f3006a8f80225c95d1f3be56f66a8b4e0975e3b721b",
-    "provenance": "Native image_gen; sources/e9-dome-basin-fidelity-2/native-material-swatches-v2.png; sips resize 1024 square."
+    "sha256": "f92189af7b358669928803da9af4c26c2f509f1f301a40ee1f326d4360a5f643"
   },
   "blend": {
     "asset": "landmarks/dome-basin/dome-basin-landmarks.blend",
-    "sha256": "c61676d78c5c07cc182b0f56f8dcf3a99a1b608e20451cab1df799a2c3f1dfdb"
+    "sha256": "4eaee88d717c7e3f843cc2926cb57ba322febfc21d478a32c4768f88b95564a3"
   },
   "assets": {
     "canal-gate-works": {
@@ -28,7 +27,7 @@
         "assets/raw/plate-e9-bld-canal-works.png"
       ],
       "terrainConformed": false,
-      "triangles": 2308,
+      "triangles": 1580,
       "triangleBudget": 3000,
       "bounds": {
         "min": [
@@ -42,20 +41,14 @@
           3.605
         ]
       },
-      "sha256": "b58afdf92c73e8e65ee39d63b7ee97858f9005384b93fec7d50de24efc3c022d",
+      "sha256": "41740fe984866b67f1673ac6041e9bc66a97e38740804da07c0d2e8fb36bf56c",
       "artRevision": {
-        "date": "2026-09-24",
-        "recipe": "sources/e9-dome-basin-fidelity-2/refine-lock-works.py",
-        "trianglesBefore": 1580,
-        "trianglesAfter": 2308,
-        "preserved": "source envelope, mounts, nonblocking crossing and all original geometry",
-        "features": [
-          "physical surface UV scale",
-          "native masonry and metals",
-          "stepped wheel pedestals and bearing flanges",
-          "pier courses and contact plinths",
-          "connected apron railwork"
-        ]
+        "date": "2026-09-21",
+        "recipe": "dress_dome_lock_wheel.py",
+        "baseBlendSha256": "2e75fea973de8fa0768dd5ccf1758861293713adab0f90023c7db55b757efc9e",
+        "change": "Add geared double-rim lock wheel, spokes, spindle and bearing supports within original bounds; preserve all original geometry and mounts. Low base/approaches reuse stone atlas cell for consistent footing.",
+        "trianglesBefore": 452,
+        "trianglesAfter": 1580
       }
     },
     "ice-quarry-hoist": {
@@ -80,7 +73,7 @@
           4.73
         ]
       },
-      "sha256": "f1bc6c7846a4df9e90292fdd705f8bb48bad6df4f456e387062c374e5e13bb75",
+      "sha256": "f5910999b56799da81ec56776b96b1e60d8b96e1b1f46ed99131615bc97b4044",
       "footprint": {
         "kind": "rect",
         "w": 4.5,
@@ -109,7 +102,7 @@
           6.3
         ]
       },
-      "sha256": "95452133af0bbfe6d7735f0dec82354110bddcc8ee63f3cfb7d75d7a26229836",
+      "sha256": "6766077a07488fd810f094659943e9a25ffb450b1486913d6e34d387ae9596ed",
       "footprint": {
         "kind": "rect",
         "w": 3.384,
@@ -138,7 +131,7 @@
           4.45
         ]
       },
-      "sha256": "e79915d8a38833d2a700706faed07e498722e6579591e2737ffe8eb8f625c8ac",
+      "sha256": "1199c1032244ce75cc2a9643e5b86b8e5b060a87939908df4929bd7fbb939e60",
       "footprint": {
         "kind": "rect",
         "w": 4.752,
@@ -167,7 +160,7 @@
           7.3
         ]
       },
-      "sha256": "4bd3bbdc29cf45969b1ab0266ebb67802edb8403be632f9f65b191bb82631bb2",
+      "sha256": "dc96dd834bacfe161fb360acc685598f2262d1c34a1bd91408880727cf97e4f5",
       "footprint": {
         "kind": "radius",
         "radius": 1.08
