@@ -16,7 +16,7 @@
   },
   "blend": {
     "asset": "landmarks/picnic/picnic-landmarks.blend",
-    "sha256": "49e6454a6fe4b531ac41086c7f50b2039abe31dcdc9a0726b9c0bfee41b76f6c"
+    "sha256": "e4657dbef2c2794b5dc1b5d0c0699ec38d8403f9140b52d603acd4f451c4cb47"
   },
   "assets": {
     "picnic-staging-gate": {
@@ -51,7 +51,7 @@
         "assets/contracts/epoch-6-atomic/mask-tables/e6-picnic.json"
       ],
       "terrainConformed": false,
-      "triangles": 1888,
+      "triangles": 324,
       "triangleBudget": 3000,
       "bounds": {
         "min": [
@@ -65,21 +65,7 @@
           1.64
         ]
       },
-      "sha256": "7fbdab427330dbee78eaa749fd9f69deac905be3de029dce33ab46f99d5cbc12",
-      "fidelityCorrection": {
-        "recipe": "sources/e6-picnic-fidelity-2/refine-picnic-props.py",
-        "trianglesBefore": 324,
-        "trianglesAfter": 1888,
-        "features": [
-          "folded cloth and woven checks",
-          "open cups with handles and rimmed dishes",
-          "rounded wicker basket with arched handle",
-          "bread board and thick sandwiches"
-        ],
-        "preserved": "exact source envelope, atlas pixels, mounts, collision footprints, inspection stations"
-      },
-      "meshCount": 2,
-      "materialCount": 2
+      "sha256": "214473b7765e30bc3b820e2e8f15d9a60a67cadf022d789544913f14cede8a0a"
     },
     "center-picnic-blanket": {
       "asset": "landmarks/picnic/center-picnic-blanket.glb",
@@ -89,7 +75,7 @@
         "assets/contracts/epoch-6-atomic/mask-tables/e6-picnic.json"
       ],
       "terrainConformed": false,
-      "triangles": 2480,
+      "triangles": 516,
       "triangleBudget": 3000,
       "bounds": {
         "min": [
@@ -103,22 +89,7 @@
           2.25
         ]
       },
-      "sha256": "92853e3f50eceb7bde033f8a0a48b82883e495421be31d1189e9f532518d3b92",
-      "fidelityCorrection": {
-        "recipe": "sources/e6-picnic-fidelity-2/refine-picnic-props.py",
-        "trianglesBefore": 516,
-        "trianglesAfter": 2480,
-        "features": [
-          "folded cloth and woven checks",
-          "open cups with handles and rimmed dishes",
-          "rounded wicker basket with arched handle",
-          "bread board and thick sandwiches",
-          "small brass atom centerpiece"
-        ],
-        "preserved": "exact source envelope, atlas pixels, mounts, collision footprints, inspection stations"
-      },
-      "meshCount": 2,
-      "materialCount": 2
+      "sha256": "7b2f1f863e8005cbdf06089484c4d13478776d3356d191fe7988a2ad99633b99"
     },
     "east-picnic-blanket": {
       "asset": "landmarks/picnic/east-picnic-blanket.glb",
@@ -128,7 +99,7 @@
         "assets/contracts/epoch-6-atomic/mask-tables/e6-picnic.json"
       ],
       "terrainConformed": false,
-      "triangles": 1888,
+      "triangles": 324,
       "triangleBudget": 3000,
       "bounds": {
         "min": [
@@ -142,21 +113,7 @@
           1.64
         ]
       },
-      "sha256": "f62146d103c557ba9b73a8a7ad6654360d2ea98e7d04cb279f67db63ff73b09a",
-      "fidelityCorrection": {
-        "recipe": "sources/e6-picnic-fidelity-2/refine-picnic-props.py",
-        "trianglesBefore": 324,
-        "trianglesAfter": 1888,
-        "features": [
-          "folded cloth and woven checks",
-          "open cups with handles and rimmed dishes",
-          "rounded wicker basket with arched handle",
-          "bread board and thick sandwiches"
-        ],
-        "preserved": "exact source envelope, atlas pixels, mounts, collision footprints, inspection stations"
-      },
-      "meshCount": 2,
-      "materialCount": 2
+      "sha256": "fb18ef8ddf162ac6928b071a413ef6d4dd1325c937bca2f9c1c0155fd1ef9661"
     },
     "mesa-civilian-shade": {
       "asset": "landmarks/picnic/mesa-civilian-shade.glb",
@@ -166,7 +123,7 @@
         "assets/pilots/map-rebuild-spike/glow-mesa-terrain.glb"
       ],
       "terrainConformed": false,
-      "triangles": 1960,
+      "triangles": 216,
       "triangleBudget": 3000,
       "bounds": {
         "min": [
@@ -180,26 +137,12 @@
           4.3882
         ]
       },
-      "sha256": "f4fc9ddc0ce1b31cd9f59070a51412d5f8b4c3f802e4c41fc87f06f9ecc741ca",
+      "sha256": "7be61299d70ee0f633a607c5811cf86539d18e7eb6a798a9c3e0123779a566ac",
       "footprint": {
         "kind": "rect",
         "w": 6.797,
         "d": 4.725
-      },
-      "fidelityCorrection": {
-        "recipe": "sources/e6-picnic-fidelity-2/refine-picnic-props.py",
-        "trianglesBefore": 216,
-        "trianglesAfter": 1960,
-        "features": [
-          "sagging closed canvas with soft folds",
-          "stitched continuous hems",
-          "four capped support posts with footings",
-          "retained authored bench and atom pendant with bench feet"
-        ],
-        "preserved": "exact source envelope, atlas pixels, mounts, collision footprints, inspection stations"
-      },
-      "meshCount": 2,
-      "materialCount": 2
+      }
     }
   },
   "mounts": [
@@ -374,12 +317,5 @@
     "additionalDressing": "Three authored nonblocking blankets and the passable staging gate mount through the existing contractIds filter.",
     "heldMounts": {},
     "additionalSolids": "Owner ruling F-CORR4-2, 2026-09-22: mesa-civilian-shade. Mounted at the registered transforms; variant footprints supplement the unchanged parent blockers."
-  },
-  "fidelityTextures": {
-    "clothWicker": {
-      "path": "../../sources/e6-picnic-fidelity-2/cloth-wicker-atlas.png",
-      "sha256": "112d0fd9be7df6d6f4d05856d1d766f677cae7ab3e43d6ad16334fe21f556010",
-      "provenance": "../../sources/e6-picnic-fidelity-2/image-provenance.md"
-    }
   }
 }
