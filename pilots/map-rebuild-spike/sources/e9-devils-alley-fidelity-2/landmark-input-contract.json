@@ -12,12 +12,11 @@
     "width": 1024,
     "height": 1024,
     "sharedByEveryAsset": true,
-    "sha256": "3b23219ef04870fa71a73f3006a8f80225c95d1f3be56f66a8b4e0975e3b721b",
-    "provenance": "Native image_gen; sources/e9-devils-alley-fidelity-2/native-material-swatches-v2.png; sips resize 1024 square."
+    "sha256": "d4a8511eeb3b9bbbe9a61ea4e61db8ae0a6a690f7af87724cd1a85fba227af29"
   },
   "blend": {
     "asset": "landmarks/devils-alley/devils-alley-landmarks.blend",
-    "sha256": "bf12db5667984e7aad013c43bcddd65a2cdc61a27efe335f45582b5c34a9f4ac"
+    "sha256": "ecf1a39f1fe5af2a4b1f742609bb545ffa2b1def401141f279226ba3898dc7fd"
   },
   "assets": {
     "south-anchor-gate": {
@@ -42,7 +41,7 @@
           6.92
         ]
       },
-      "sha256": "ba924699bf9b620db706af8ff04cd53188548c3f3a1d27c78ea24d1caca7b947"
+      "sha256": "c69349a8c9adf1e4b974eb5b4f622cb1f172837a8dde5da7ea2232b39ca1edf4"
     },
     "west-wind-anchor": {
       "asset": "landmarks/devils-alley/west-wind-anchor.glb",
@@ -52,7 +51,7 @@
         "assets/raw/plate-e9-enemy-dust-devil.png"
       ],
       "terrainConformed": false,
-      "triangles": 2284,
+      "triangles": 1848,
       "triangleBudget": 3000,
       "bounds": {
         "min": [
@@ -66,25 +65,16 @@
           6.3
         ]
       },
-      "sha256": "7eb5bd131806887fb8a4af0846c6f62bd13c1fee90f6b9d5792d7ea9a6101c22",
+      "sha256": "c91b61a21036e7ffd64ef62f141c55766e11e4bb43de8a7071b0ed25668a1275",
       "footprint": {
         "kind": "rect",
         "w": 4.27,
         "d": 3.312
       },
       "artRevision": {
-        "date": "2026-09-24",
-        "recipe": "sources/e9-devils-alley-fidelity-2/refine-wind-anchors.py",
-        "trianglesBefore": 1848,
-        "trianglesAfter": 2284,
-        "preserved": "source envelope, mounts, collision footprint and all original geometry",
-        "features": [
-          "physical UV proportions",
-          "native metal and stone surfaces",
-          "mounted pressure gauge",
-          "hex anchor bolts",
-          "spindle and drive collars"
-        ]
+        "recipe": "dress_wind_anchors.py",
+        "sourceBlendSha256": "219484f55babbbd74d5c6bd3cf6bae79b0584680ed73fd9a46f813393b6f12f6",
+        "change": "Braced coil housing and chamfered footing within original bounds and collision footprint."
       }
     },
     "center-wind-anchor": {
@@ -95,7 +85,7 @@
         "assets/raw/plate-e9-enemy-dust-devil.png"
       ],
       "terrainConformed": false,
-      "triangles": 2628,
+      "triangles": 2192,
       "triangleBudget": 3000,
       "bounds": {
         "min": [
@@ -109,25 +99,16 @@
           7.13
         ]
       },
-      "sha256": "22d4ba9b930d39e9d57b55e726f7b85a7187cb0dd94371acb3befdf7e53a4f06",
+      "sha256": "597d8f87f16497275be81229d4b023d2940e504154176fb98f697443486aa28d",
       "footprint": {
         "kind": "rect",
         "w": 4.558,
         "d": 3.312
       },
       "artRevision": {
-        "date": "2026-09-24",
-        "recipe": "sources/e9-devils-alley-fidelity-2/refine-wind-anchors.py",
-        "trianglesBefore": 2192,
-        "trianglesAfter": 2628,
-        "preserved": "source envelope, mounts, collision footprint and all original geometry",
-        "features": [
-          "physical UV proportions",
-          "native metal and stone surfaces",
-          "mounted pressure gauge",
-          "hex anchor bolts",
-          "spindle and drive collars"
-        ]
+        "recipe": "dress_wind_anchors.py",
+        "sourceBlendSha256": "219484f55babbbd74d5c6bd3cf6bae79b0584680ed73fd9a46f813393b6f12f6",
+        "change": "Braced coil housing and chamfered footing within original bounds and collision footprint."
       }
     },
     "east-wind-anchor": {
@@ -138,7 +119,7 @@
         "assets/raw/plate-e9-enemy-dust-devil.png"
       ],
       "terrainConformed": false,
-      "triangles": 2972,
+      "triangles": 2536,
       "triangleBudget": 3000,
       "bounds": {
         "min": [
@@ -152,25 +133,16 @@
           8.01
         ]
       },
-      "sha256": "94c9fa3f7ebb58e501a6539e8ff85c62de0cc2490a17559c1c5734155dc19abc",
+      "sha256": "c388e4f7cfc855cbf74d19331e81e00633df70c7fa020a866647543aa73dc1eb",
       "footprint": {
         "kind": "rect",
         "w": 4.846,
         "d": 3.312
       },
       "artRevision": {
-        "date": "2026-09-24",
-        "recipe": "sources/e9-devils-alley-fidelity-2/refine-wind-anchors.py",
-        "trianglesBefore": 2536,
-        "trianglesAfter": 2972,
-        "preserved": "source envelope, mounts, collision footprint and all original geometry",
-        "features": [
-          "physical UV proportions",
-          "native metal and stone surfaces",
-          "mounted pressure gauge",
-          "hex anchor bolts",
-          "spindle and drive collars"
-        ]
+        "recipe": "dress_wind_anchors.py",
+        "sourceBlendSha256": "219484f55babbbd74d5c6bd3cf6bae79b0584680ed73fd9a46f813393b6f12f6",
+        "change": "Braced coil housing and chamfered footing within original bounds and collision footprint."
       }
     },
     "north-anchor-gate": {
@@ -195,7 +167,7 @@
           8.08
         ]
       },
-      "sha256": "96bd7bbd0533ff6b1a6a67560ad856afe105d726b1fcd533e2b4c18744ed5b04"
+      "sha256": "42ef6ec52049237a63dcf9c5f65302cb5bc99870eb8687937a2fdae78a1111a9"
     }
   },
   "mounts": [
