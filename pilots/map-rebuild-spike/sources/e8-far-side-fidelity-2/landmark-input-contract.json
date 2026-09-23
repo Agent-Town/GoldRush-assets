@@ -12,12 +12,11 @@
     "width": 1024,
     "height": 1024,
     "sharedByEveryAsset": true,
-    "sha256": "13761f2d577be9ce03cdd44029ba3f6ad1ba465d3747bbe5b4511724feafde53",
-    "provenance": "Native image_gen; sources/e8-far-side-fidelity-2/native-metal-swatches.png, resized to 1024 square with sips. No painted object imagery."
+    "sha256": "239c6c7d9dd89ab9e48f99aec69a1ee627c8cb386143711706727b769393a7e3"
   },
   "blend": {
     "asset": "landmarks/far-side/far-side-landmarks.blend",
-    "sha256": "de5a4778f18fb10f07d6b481485aaf8906a106a5abf9f1b92f352733c1238b02"
+    "sha256": "838edd6ab8891c1ca8f6a5e514cbdcca2987daeff609cef0651d4d0182921a4b"
   },
   "assets": {
     "far-side-landing-frame": {
@@ -28,7 +27,7 @@
         "assets/raw/plate-e8-bld-set.png"
       ],
       "terrainConformed": false,
-      "triangles": 2966,
+      "triangles": 600,
       "triangleBudget": 3000,
       "bounds": {
         "min": [
@@ -42,20 +41,7 @@
           6.99
         ]
       },
-      "sha256": "0bd49148cd689ae23c264b6b3e1a71320d3da6f34fc1589f06cfe20edefaa32a",
-      "fidelityCorrection": {
-        "recipe": "sources/e8-far-side-fidelity-2/refine-pressure-vessel.py",
-        "trianglesBefore": 600,
-        "trianglesAfter": 2966,
-        "preserved": "exact bounds, mount, station, nonblocking identity",
-        "features": [
-          "domed pressure shell",
-          "five seam collars and longitudinal ribs",
-          "recessed pressure hatch and fasteners",
-          "splayed cradle and socket shoes",
-          "service tubes and telemetry mast"
-        ]
-      }
+      "sha256": "49e6ec198595087895aeb35ee9603a5b7d133ac6b4a7c438cacef52ae658d807"
     },
     "probe-recovery-cradle": {
       "asset": "landmarks/far-side/probe-recovery-cradle.glb",
@@ -79,7 +65,7 @@
           1.94
         ]
       },
-      "sha256": "8ff8a838cc8c6850b9c943f27fdad28c250f4294d33a97a1c066fc52d5611440",
+      "sha256": "13848b6e6b4ea80e2b00f92c2ae427b855384ac80a5bc0282855b3459864e2b0",
       "footprint": {
         "kind": "rect",
         "w": 5.04,
@@ -108,7 +94,7 @@
           7.1574
         ]
       },
-      "sha256": "8c0eab78ad5f4b50c72f9e03488d1b413e138a973bbd11380fc90caf66d42c51",
+      "sha256": "1239d01afbe096faf0755e8f18c77ac20cf37337bec378fd34099a5ea362da5a",
       "footprint": {
         "kind": "radius",
         "radius": 1.08
@@ -136,7 +122,7 @@
           5.31
         ]
       },
-      "sha256": "bdf93df52557dce32159b0ea6f15d548f55c2d72de67134c3771fb4d08af49d7",
+      "sha256": "e57e1d8b6e9a77ed139289b1533248f6a846f5421f6cb9bd743bac8714f8bbfd",
       "footprint": {
         "kind": "rect",
         "w": 5.04,
@@ -165,7 +151,7 @@
           8.35
         ]
       },
-      "sha256": "a5e4880f65557bc37492050ee6b2f49c4384db08ec5b22f3d59a48ed7874780d",
+      "sha256": "e6a1934ae2c2dc5515c4d165ddd2d04026d9f835e3024c82c452264369d80710",
       "footprint": {
         "kind": "radius",
         "radius": 1.512
@@ -317,7 +303,7 @@
     "activeBase": "Mare Claim sculpt, panorama, five selected original bodies and active collision footprints are retained unchanged.",
     "additionalDressing": "The authored nonblocking landing frame remains selected alongside the registered variant solids.",
     "heldMounts": {},
-    "additionalSolids": "Owner ruling F-CORR4-2, 2026-09-22: probe-recovery-cradle, west-comms-shadow-marker, east-suit-cache-rack, far-horizon-listening-post. Mounted at the registered transforms; variant footprints supplement the unchanged parent blockers. \u2014 the probe-recovery-cradle moved from (0,45) to (0,50.5) and became solid again by owner ruling F-FC2-5, 2026-09-22 (verbatim: \"lets move it\"). At the crater centre its 5.04 x 3.6 m footprint made Terrain.sample(0,45).walkable false, so the ride's MOVE_HERO to the recovery point was refused outright (UNREACHABLE_TERRAIN) and the hero never left its stake. At (0,50.5) the footprint spans z 48.7..52.3, straddling the zone's north rim at z 52, 2.2 m clear of far-horizon-listening-post (z >= 54.5); the recovery zone, the E8 air crossing it doubles as, and every other gameplay number are untouched."
+    "additionalSolids": "Owner ruling F-CORR4-2, 2026-09-22: probe-recovery-cradle, west-comms-shadow-marker, east-suit-cache-rack, far-horizon-listening-post. Mounted at the registered transforms; variant footprints supplement the unchanged parent blockers. — the probe-recovery-cradle moved from (0,45) to (0,50.5) and became solid again by owner ruling F-FC2-5, 2026-09-22 (verbatim: \"lets move it\"). At the crater centre its 5.04 x 3.6 m footprint made Terrain.sample(0,45).walkable false, so the ride's MOVE_HERO to the recovery point was refused outright (UNREACHABLE_TERRAIN) and the hero never left its stake. At (0,50.5) the footprint spans z 48.7..52.3, straddling the zone's north rim at z 52, 2.2 m clear of far-horizon-listening-post (z >= 54.5); the recovery zone, the E8 air crossing it doubles as, and every other gameplay number are untouched."
   },
   "entryLandmark": {
     "mountId": "earthrise-listening-array",
