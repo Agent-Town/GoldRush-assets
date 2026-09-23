@@ -16,7 +16,7 @@
   },
   "blend": {
     "asset": "landmarks/long-road/long-road-landmarks.blend",
-    "sha256": "127f50093646d5ce7fa583ed35bd627455e36f330ab8bac6afb56ac6636b4ec7"
+    "sha256": "03fafcd06dc54a4d71d97e3435900373057bb822f712c8c49479f00b0aef1d1d"
   },
   "assets": {
     "west-way-station": {
@@ -27,7 +27,7 @@
         "assets/pilots/plaza-props-3d/fuel-rack.e4.glb"
       ],
       "terrainConformed": false,
-      "triangles": 1268,
+      "triangles": 2248,
       "triangleBudget": 3000,
       "bounds": {
         "min": [
@@ -41,23 +41,11 @@
           6.32
         ]
       },
-      "sha256": "de2d6e9777be399fa2e3214a7f259ea9c33a190fbd16fda495b2a733119d64a3",
+      "sha256": "7d5df54632a942687237ff8f7cfdaf30c88039ac59f6667139b5aca6e9964e38",
       "footprint": {
         "kind": "rect",
         "w": 6.192,
         "d": 4.3
-      },
-      "fidelityCorrection": {
-        "recipe": "sources/e4-long-road-fidelity-2/refine-roadside-service.py",
-        "trianglesBefore": 2248,
-        "trianglesAfter": 1268,
-        "features": [
-          "open teal canvas service canopy",
-          "elevated hooped water tank and connected faucet",
-          "braced timber trestle",
-          "counter, freight crates and rain barrel"
-        ],
-        "preserved": "exact bounds, atlas bytes, mount, collision footprint, inspection declarations"
       }
     },
     "middle-way-station": {
@@ -127,7 +115,7 @@
         "assets/raw/boss-land-yacht.png"
       ],
       "terrainConformed": false,
-      "triangles": 2140,
+      "triangles": 2504,
       "triangleBudget": 3000,
       "bounds": {
         "min": [
@@ -141,23 +129,11 @@
           6.4
         ]
       },
-      "sha256": "656d8d08ab3d6436aec7a9bcb38261b801c262fbde2416f1abd32823d1e4dbd5",
+      "sha256": "8731d8e982d701fcf27cf8e9491f369cc25c12f9156c476fa7b5c02c7faa93ec",
       "footprint": {
         "kind": "rect",
         "w": 6.203,
         "d": 2.83
-      },
-      "fidelityCorrection": {
-        "recipe": "sources/e4-long-road-fidelity-2/refine-roadside-service.py",
-        "trianglesBefore": 2504,
-        "trianglesAfter": 2140,
-        "features": [
-          "open freight bed and cab canopy",
-          "spoked iron wheels and exposed axles",
-          "banded boiler and pipe feeds",
-          "separated cargo with iron straps"
-        ],
-        "preserved": "exact bounds, atlas bytes, mount, collision footprint, inspection declarations"
       }
     },
     "east-railhead": {
