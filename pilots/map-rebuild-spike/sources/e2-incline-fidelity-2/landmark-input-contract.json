@@ -16,7 +16,7 @@
   },
   "blend": {
     "asset": "landmarks/incline/incline-landmarks.blend",
-    "sha256": "a810e8f8ebe37cc4460e5609ce8c4c861abe146f2d58123761f7676fe4738e4f"
+    "sha256": "5c2c55d4376649e54bb68ec5a868f6f8d4f6607b03f132ecb9bae56aff0d65e2"
   },
   "assets": {
     "lower-yard-engine-crane": {
@@ -111,7 +111,7 @@
         "assets/pilots/plaza-props-3d/coal-bin.e2.glb"
       ],
       "terrainConformed": false,
-      "triangles": 2136,
+      "triangles": 2028,
       "triangleBudget": 3000,
       "bounds": {
         "min": [
@@ -125,7 +125,7 @@
           5.51
         ]
       },
-      "sha256": "76bff4fb7e4a7ccc3e32fb678a528f051132153ce79da477081d33c8cb888177",
+      "sha256": "0aae8d0429910833a2efb8c7843357fe6e8bc8f9955e05be08682440dc133da9",
       "footprint": {
         "kind": "rect",
         "w": 6.48,
@@ -139,22 +139,6 @@
         "serviceBinWheels": 8,
         "bounds": "unchanged",
         "atlas": "existing iron tile; pixels unchanged"
-      },
-      "fidelityCorrection": {
-        "recipe": "sources/e2-incline-fidelity-2/refine-cable-house.py",
-        "trianglesBefore": 2028,
-        "trianglesAfter": 2136,
-        "uvLoopsRestoredToMaterialLayer": 576,
-        "preserved": "mount, collision, within original bounds, stations, atlas pixels, source siblings",
-        "features": [
-          "eight spokes and hub with bearings",
-          "lower drum and cheeks",
-          "thicker boarded deck and fascia",
-          "pitched timber roof",
-          "framed facade apertures",
-          "exhaust neck at the existing steam vent",
-          "replaced buried reused winch and crossed struts with direct cable returns and wound drum"
-        ]
       }
     },
     "ford-service-pump": {
