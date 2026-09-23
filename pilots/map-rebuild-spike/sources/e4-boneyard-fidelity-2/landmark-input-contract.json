@@ -16,7 +16,7 @@
   },
   "blend": {
     "asset": "landmarks/boneyard/boneyard-landmarks.blend",
-    "sha256": "e113ff7fa7b67759fe3a8b79695a2dd7b50cd7314aa125ea2ef9d5d5c48b7f6e"
+    "sha256": "c47cc6dc3617dfe3667943ee1da2b0a9bfbe1ed71aaffe32be7115450577ebde"
   },
   "assets": {
     "flivver-row-west-a": {
@@ -56,7 +56,7 @@
         "assets/raw/plate-e4-enemy-motorgang.png"
       ],
       "terrainConformed": false,
-      "triangles": 1370,
+      "triangles": 512,
       "triangleBudget": 3000,
       "bounds": {
         "min": [
@@ -70,25 +70,12 @@
           2.85
         ]
       },
-      "sha256": "a14bd1da743cf69febff202bb9c63d01d4a2e7146ba92eb980f172a1b6a88e4d",
+      "sha256": "6c7b8c7aff703dc375f0ff8292e1fe40032e2aaeb2fb67ca1ed0606d3889e99e",
       "footprint": {
         "kind": "rect",
         "w": 4.249,
         "d": 2.485
-      },
-      "fidelityCorrection": {
-        "recipe": "sources/e4-boneyard-fidelity-2/refine-buried-wrecks.py",
-        "trianglesBefore": 512,
-        "trianglesAfter": 1370,
-        "features": [
-          "two distinct stripped salvage silhouettes",
-          "spoked wheels partly covered by drift",
-          "weathered metal with exposed frames and pipes"
-        ],
-        "preserved": "exact bounds, atlas bytes, mount, collision footprint, inspection declarations"
-      },
-      "meshCount": 2,
-      "materialCount": 2
+      }
     },
     "flivver-row-west-c": {
       "asset": "landmarks/boneyard/flivver-row-west-c.glb",
@@ -214,7 +201,7 @@
         "assets/raw/plate-e4-enemy-motorgang.png"
       ],
       "terrainConformed": false,
-      "triangles": 1250,
+      "triangles": 512,
       "triangleBudget": 3000,
       "bounds": {
         "min": [
@@ -228,25 +215,12 @@
           2.85
         ]
       },
-      "sha256": "bc694ab66677489138f0fa934a5fc79944622bb3f3ecc9dabcd42a5fa77f45ba",
+      "sha256": "e3ecd0451c10d11d7be2617428c4a73dc6017d1db3ebf851686ff35f74e57cce",
       "footprint": {
         "kind": "rect",
         "w": 4.191,
         "d": 2.41
-      },
-      "fidelityCorrection": {
-        "recipe": "sources/e4-boneyard-fidelity-2/refine-buried-wrecks.py",
-        "trianglesBefore": 512,
-        "trianglesAfter": 1250,
-        "features": [
-          "two distinct stripped salvage silhouettes",
-          "spoked wheels partly covered by drift",
-          "weathered metal with exposed frames and pipes"
-        ],
-        "preserved": "exact bounds, atlas bytes, mount, collision footprint, inspection declarations"
-      },
-      "meshCount": 2,
-      "materialCount": 2
+      }
     },
     "flivver-row-east-c": {
       "asset": "landmarks/boneyard/flivver-row-east-c.glb",
@@ -343,7 +317,7 @@
         "assets/raw/plate-e4-bld-set.png"
       ],
       "terrainConformed": false,
-      "triangles": 2926,
+      "triangles": 1842,
       "triangleBudget": 3000,
       "bounds": {
         "min": [
@@ -357,26 +331,12 @@
           5.1372
         ]
       },
-      "sha256": "a6ff8a9fd602ef3a3871a278ae95ac66a20ee11e26b84ee0d6c234f40fa9609e",
+      "sha256": "954655fdb1fafa558a2195d89cbfe386c03e1e9463e88768d36afaa1d00d1149",
       "footprint": {
         "kind": "rect",
         "w": 7.058,
         "d": 3.951
-      },
-      "fidelityCorrection": {
-        "recipe": "sources/e4-boneyard-fidelity-2/refine-buried-wrecks.py",
-        "trianglesBefore": 1842,
-        "trianglesAfter": 2926,
-        "features": [
-          "riveted weathered metal shell and inset front door",
-          "dull drive rods and pressure pipes",
-          "buried lower wheels in continuous uneven soil",
-          "collapsed cab frame and oxidized repair plates"
-        ],
-        "preserved": "exact bounds, atlas bytes, mount, collision footprint, inspection declarations"
-      },
-      "meshCount": 2,
-      "materialCount": 2
+      }
     },
     "unmarked-wagon": {
       "asset": "landmarks/boneyard/unmarked-wagon.glb",
