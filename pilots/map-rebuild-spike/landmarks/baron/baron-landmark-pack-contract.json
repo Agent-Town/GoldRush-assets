@@ -375,5 +375,9 @@
       "backMeters": 5,
       "purpose": "Normal-HUD diagnostic viewing station at 1280x800 and 390x844; full cart bounds fit both views with zero persistent HUD coverage. Original mount, collision and entry camera unchanged."
     }
-  ]
+  ],
+  "entryLandmark": {
+    "mountId": "seized_headframe",
+    "reason": "The seized headframe identifies the Baron's occupied workings and fits a single glance; the 55.21 m fort remains a separate layout hold."
+  }
 }
