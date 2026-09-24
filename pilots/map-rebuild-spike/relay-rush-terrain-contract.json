@@ -297,5 +297,19 @@
     "additionalDressing": "Four authored nonblocking relay frames mount through the existing contractIds filter. These frames do not write or imply a lit relay state.",
     "heldMounts": {},
     "additionalSolids": "Owner ruling F-CORR4-2, 2026-09-22: rush-start-horn. Mounted at the registered transforms; variant footprints supplement the unchanged parent blockers."
-  }
+  },
+  "entryLandmark": {
+    "mountId": "dead-gap-charting-station",
+    "reason": "The charting station is the route-reading landmark beyond the already-visible R2 frame; its ordinary phone entry is offscreen."
+  },
+  "entryLandmarks": [
+    {
+      "mountId": "dead-gap-charting-station",
+      "reason": "The charting station is the route-reading landmark beyond the already-visible R2 frame; its ordinary phone entry is offscreen."
+    },
+    {
+      "mountId": "west-ridge-dish-cluster",
+      "reason": "The offscreen west dishes give the relay route its listening silhouette beyond the charting station."
+    }
+  ]
 }
