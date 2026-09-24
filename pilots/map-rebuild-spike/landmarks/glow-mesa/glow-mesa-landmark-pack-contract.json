@@ -322,5 +322,15 @@
   "entryLandmark": {
     "mountId": "mesa-starstone-derrick",
     "reason": "The plate anchors its raised cap with the tall starstone derrick and its working compound; the derrick is the mounted silhouette that identifies that cap."
-  }
+  },
+  "entryLandmarks": [
+    {
+      "mountId": "mesa-starstone-derrick",
+      "reason": "The plate anchors its raised cap with the tall starstone derrick and its working compound; the derrick is the mounted silhouette that identifies that cap."
+    },
+    {
+      "mountId": "isotope-cooling-rack",
+      "reason": "The plate groups its facilities around the mesa; the cooling rack is the offscreen body the first derrick glance did not reach."
+    }
+  ]
 }
