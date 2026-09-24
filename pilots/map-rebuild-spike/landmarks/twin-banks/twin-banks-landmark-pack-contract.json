@@ -591,5 +591,9 @@
       "backMeters": 5,
       "purpose": "Declared diagnostic viewing station at normal HUD and 1280x800 / 390x844; mount, collision and entry camera unchanged."
     }
-  ]
+  ],
+  "entryLandmark": {
+    "mountId": "south_bank_homestead",
+    "reason": "The plate pairs worked homesteads across the braids; the southern homestead supplies one bounded landmark without pretending the fixed camera can frame both banks."
+  }
 }
