@@ -356,5 +356,9 @@
       "backMeters": 9,
       "purpose": "Partial-yard diagnostic station: desktop full bounds fit; phone bounds exceed the horizontal frame with about 13% persistent HUD coverage. More distant 14/20 m views raise phone HUD coverage to 81/92%; camera/UI owner holds the full-yard view."
     }
-  ]
+  ],
+  "entryLandmark": {
+    "mountId": "trestle-crossing",
+    "reason": "The plate leads with the bridge span over the gorge; the existing crossing mount is the view's central structure."
+  }
 }
