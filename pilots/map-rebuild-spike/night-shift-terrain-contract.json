@@ -263,5 +263,9 @@
       "purpose": "Declared diagnostic viewing station with normal HUD at 1280x800 and 390x844; not a boot camera or a gameplay/mount change.",
       "plainEntry": "Original spawn and footprint retained. Entry cropping and HUD coverage remain held by camera/UI ownership."
     }
-  ]
+  ],
+  "entryLandmark": {
+    "mountId": "lampworks_yard",
+    "reason": "The plate's foreground working yard and lamp rig establish the night work beside the lantern route; this is the declared yard mount at (8,18)."
+  }
 }
